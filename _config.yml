@@ -12,9 +12,9 @@ description:      "趣味でプログラミングをしている Mako(tex2e) に
 keywords:         Programming
 language:         ja # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
 
-baseurl:          "" # the subpath of your site, e.g. /blog
+baseurl:          "/blog" # the subpath of your site, e.g. /blog
 url:              "http://tex2e.github.io/blog" # the base hostname & protocol for your site. Have a look at robots.txt as well!
-permalink:        /blog/:categories/:title
+permalink:        /:categories/:title
 cover:            /assets/mountain-cover.jpg
 disqus_shortname: "jekylldecent"
 
