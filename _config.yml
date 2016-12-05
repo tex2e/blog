@@ -1,0 +1,32 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:            "晴耕雨読"
+subtitle:         "work in the field in fine weather and stay at home reading when it is wet"
+description:      "趣味でプログラミングをしている Mako(tex2e) によるブログです。"
+keywords:         Programming
+language:         ja # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
+
+baseurl:          "" # the subpath of your site, e.g. /blog
+url:              "http://tex2e.github.io/blog" # the base hostname & protocol for your site. Have a look at robots.txt as well!
+permalink:        /blog/:categories/:title
+cover:            /assets/mountain-cover.jpg
+disqus_shortname: "jekylldecent"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+include: ['_pages']
+exclude: [vendor]
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from

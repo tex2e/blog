@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h2 class="post-title">All posts in one long list</h2>
+<hr />
+
+{% for post in site.posts | sort %}
+{% unless post.draft %}
+{% include post-list-item.html %}
+{% endunless %}
+{% endfor %}
+
+{% include post_scripts.html %}

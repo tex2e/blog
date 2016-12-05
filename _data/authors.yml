@@ -1,0 +1,29 @@
+# Fallback if nothing is specified
+mako:
+  # used for author lookup in posts and for first two characters in the about page back button
+  initial:      tex2e
+  # used to display author name
+  name:         mako
+  # defines location of cover image in about page
+  cover:        /assets/book-reading-library-literature.jpg
+  # author picture
+  picture:      /assets/web-optim.png
+  # text below author name in posts
+  bio:          All about technology
+  # used to display location of the author
+  location:     Germany
+  # link to the author of a post
+  #website:      "http://jwillmer.de/about"
+  email:
+  twitter:      tex2e
+  linkedin:
+  xing:
+  github:       tex2e
+  stackoverflow:
+  facebook:
+  gplus:
+  soundcloud:
+  youtube:
+  pinterest:
+  dribble:
+  behance:

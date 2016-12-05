@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{% if page.language %}{{ page.language | downcase }}{% else %}{{ site.language | downcase }}{% endif %}">
+{% include head.html %}
+
+<body class="home-template">
+  <div class="site-wrapper">
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </div>
+</body>
+
+<script src="{{ site.github.url | prepend: site.baseurl }}/js/global.js"></script>
+</script>
+</html>
