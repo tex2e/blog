@@ -22,7 +22,7 @@ published:     true
 
 ```ruby
 def sort_array(array)
-  members.sort
+  array.sort
 end
 ```
 
@@ -39,8 +39,8 @@ sorted = sort_array(members)
 中身を一つずつ引数に渡すような関数を作りたいとする。
 
 ```ruby
-sort_array(members) do |member|
-  puts member
+sort_array(members) do |elem|
+  puts elem
 end
 # >> Alice
 # >> Carol
@@ -60,8 +60,8 @@ yield というキーワードは、与えられたブロックに対して引�
 これらを使って、例の sort_array を再実装すると次のようになる。
 
 ```ruby
-def sort_array(members)
-  members.sort.tap do |sorted|
+def sort_array(array)
+  array.sort.tap do |sorted|
     sorted.each { |elem| yield elem } if block_given?
   end
 end
@@ -71,8 +71,8 @@ Object#tap は、ブロックに自分自身（self）を渡し、自分自身�
 もし、Object#tap を使わないでこれを書く場合は、次のように書く。
 
 ```ruby
-def sort_array(members)
-  sorted = members.sort
+def sort_array(array)
+  sorted = array.sort
   sorted.each { |elem| yield elem } if block_given?
   sorted
 end
@@ -109,8 +109,8 @@ end
 ```ruby
 members = ['Alice', 'Carol', 'Bob', 'Dave']
 
-def sort_array(members, &block)
-  members.sort.tap do |sorted|
+def sort_array(array, &block)
+  array.sort.tap do |sorted|
     sorted.each(&block) if block
   end
 end
