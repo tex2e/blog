@@ -15,7 +15,7 @@ layout: headless
   {% endunless %}
 {% endfor %}
 
-<a href="{{ site.github.url }}/" class="logo-readium"><span class="logo">{{ author.initial | slice: 0, 2 }}</span></a>
+<a href="{{ site.baseurl | prepend: site.github.url }}/" class="logo-readium"><span class="logo">{{ author.initial | slice: 0, 2 }}</span></a>
 
 <section class="author-profile" itemprop="author" itemscope itemtype="http://schema.org/Person">
   {% if author.cover %}
