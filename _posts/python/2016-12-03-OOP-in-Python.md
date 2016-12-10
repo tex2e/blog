@@ -269,12 +269,10 @@ sub.foo()
 # => "Super's method foo()"
 ```
 
-%callout-danger{
-    title: "Python2 におけるオーバーライド"
-    body: |
-        Python2で親クラスのメソッドのオーバーライドは、親クラスが object クラスを継承していないとできません。
-        Python3では全てのクラスが object クラスを継承しているため、この問題は起こりません。
-}
+<div class="tip">
+Python2で親クラスのメソッドのオーバーライドは、親クラスが object クラスを継承していないとできません。
+Python3では全てのクラスが object クラスを継承しているため、この問題は起こりません。
+</div>
 
 
 <a name="decorator"></a>
