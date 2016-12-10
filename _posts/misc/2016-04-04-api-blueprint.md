@@ -4,7 +4,7 @@ title:         "API Blueprint の書き方"
 menutitle:     "API Blueprint の書き方"
 date:          2016-04-04
 tags:          API Blueprint
-category:      Miscellaneous
+category:      Misc
 author:        tex2e
 cover:         /assets/mountain-alternative-cover.jpg
 redirect_from:

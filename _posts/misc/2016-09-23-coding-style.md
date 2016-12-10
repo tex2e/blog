@@ -4,7 +4,7 @@ title:         "Coding Style Guide"
 menutitle:     "Coding Style Guide"
 date:          2016-09-23
 tags:          API Blueprint
-category:      Miscellaneous
+category:      Misc
 author:        tex2e
 cover:         /assets/mountain-alternative-cover.jpg
 redirect_from:
