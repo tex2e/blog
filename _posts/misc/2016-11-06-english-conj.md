@@ -52,7 +52,7 @@ published:     true
 | つまり | in short, in sum, in brief, in conclusion, basically, i.e.
 | より正確に言えば | more precisely, namely
 | 言い換えれば | that is, or, in other words, i.e.
-| 概して | generally, in general, generally speaking, all in all, as/on the whole
+| 概して | generally, in general, generally speaking, overall, all in all, as/on the whole
 | 結局 | after all, in the end, eventually, in the event, finally, at last, lastly
 | 一般的に | generally, usually, most commonly
 
@@ -108,7 +108,9 @@ published:     true
 | 確かに | certainly, surely, true
 | 明らかに | clearly, obviously, certainly, undoubtedly
 | 実際 | actually, realistically, indeed, in fact
+| ところが実際は | as it turns out, as it is
 | 繰り返して言うが | once again
+| 最も重要なことに | most importantly
 
 
 条件
@@ -157,3 +159,5 @@ published:     true
 | いったん〜すると | once
 | ただし | only
 | ただ〜なので（できない）| only <reason>
+| いつものように | as always
+| 願わくば | hopefully
