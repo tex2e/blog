@@ -15,7 +15,7 @@ language:         ja # default language of the blog. Language codes: http://www.
 baseurl:          "/blog" # the subpath of your site, e.g. /blog
 url:              "http://tex2e.github.io/blog" # the base hostname & protocol for your site. Have a look at robots.txt as well!
 permalink:        /:categories/:title
-cover:            /assets/mountain-cover.jpg
+cover:            /assets/cover0.jpg
 disqus_shortname: "jekylldecent"
 
 # Build settings

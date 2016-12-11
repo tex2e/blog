@@ -6,7 +6,7 @@ date:          2016-11-21
 tags:          Database
 category:      DB
 author:        tex2e
-cover:         /assets/mountain-alternative-cover.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

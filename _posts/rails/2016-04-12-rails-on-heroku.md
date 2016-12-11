@@ -6,7 +6,7 @@ date:          2016-04-12
 tags:          Ruby on Rails
 category:      Rails
 author:        tex2e
-cover:         /assets/mountain-alternative-cover.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

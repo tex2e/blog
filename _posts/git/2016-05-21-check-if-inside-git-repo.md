@@ -6,7 +6,7 @@ date:          2016-05-21
 tags:          Git Commands
 category:      Git
 author:        tex2e
-cover:         /assets/mountain-alternative-cover.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

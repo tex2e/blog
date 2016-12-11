@@ -6,7 +6,7 @@ date:          2016-09-24
 tags:          Programming Language Ruby
 category:      Ruby
 author:        tex2e
-cover:         /assets/mountain-alternative-cover.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

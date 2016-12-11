@@ -6,7 +6,7 @@ date:          2016-12-03
 tags:          Programming Language Elixir OOP
 category:      Elixir
 author:        tex2e
-cover:         /assets/mountain-alternative-cover.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

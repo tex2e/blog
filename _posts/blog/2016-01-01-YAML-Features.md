@@ -6,7 +6,7 @@ date:          2016-04-06 00:40:00 +0300
 tags:          Jekyll YAML Features Explained
 category:      Features
 author:        jwillmer
-cover:         /assets/mountain-alternative-cover.jpg
+cover:         /assets/cover1.jpg
 redirect_from: "/YAML-Features-Redirect/"
 language:      EN
 comments:      true
@@ -45,7 +45,7 @@ I also changed the cover image for this block via YAML.
 
 ```bash
 ---
-cover:         /assets/mountain-alternative-cover.jpg
+cover:         /assets/cover1.jpg
 ---
 ``````
 

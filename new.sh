@@ -16,7 +16,7 @@ date:          $(date +%Y-%m-%d)
 tags:          Programming Language Foo
 category:      Foo
 author:        tex2e
-cover:         /assets/mountain-alternative-cover.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     false # set to be true
