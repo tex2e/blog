@@ -1,0 +1,64 @@
+---
+layout:        post
+title:         "Python で Enumerable#each_with_index"
+menutitle:     "Python で Enumerable#each_with_index"
+date:          2016-12-15
+tags:          Programming Language Python
+category:      Python
+author:        tex2e
+cover:         /assets/cover2.jpg
+redirect_from:
+comments:      false
+published:     true
+---
+
+Python で Ruby の Enumerable#each_with_index を行う方法。
+
+
+組み込み関数 enumerate を使う
+--------------------
+
+配列をループで順番にアクセスするときに、そのインデックスも使いたいときがある。
+
+```python
+members = ['Alice', 'Carol', 'Bob', 'Dave']
+
+i = 0
+for member in members:
+    print("{}: {}".format(i, member))
+    i += 1
+
+```
+
+インデックスをカウントするために変数 i を定義しているが、
+正直、このコードを見ていると吐き気がする。
+
+代わりに、enumerate という組み込み関数を使って、変数 i のスコープを小さくすることができる。
+
+```python
+members = ['Alice', 'Carol', 'Bob', 'Dave']
+
+for i, member in enumerate(members):
+    print("{}: {}".format(i, member))
+
+```
+
+
+### 余談
+
+
+enumerate はジェネレータ関数であり、次のコードと等価である。
+
+```python
+def enumerate(sequence, start=0):
+    n = start
+    for elem in sequence:
+        yield n, elem
+        n += 1
+```
+
+
+See Also
+--------------------
+
+[Python3 library functions enumerate](http://docs.python.jp/3/library/functions.html#enumerate)
