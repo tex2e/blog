@@ -6,7 +6,7 @@ date:          2016-11-06
 tags:          English
 category:      Misc
 author:        tex2e
-cover:         /assets/cover3.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true
@@ -50,11 +50,12 @@ published:     true
 
 | :---
 | つまり | in short, in sum, in brief, in conclusion, basically, i.e.
-| より正確に言えば | more precisely, namely
-| 言い換えれば | that is, or, in other words, i.e.
+| より正確に言えば | more precisely, namely, or rather
+| 言い換えれば | that is, or, in other words, i.e., (I mean)
 | 概して | generally, in general, generally speaking, overall, all in all, as/on the whole
 | 結局 | after all, in the end, eventually, in the event, finally, at last, lastly
 | 一般的に | generally, usually, most commonly
+| 通常は | usually, generally, normally
 
 
 目的
@@ -71,13 +72,16 @@ published:     true
 | そして | and, then
 | そのうえ〜 | also, in addition, besides, plus, furthermore, moreover
 | 〜に加えて | apart from, aside from, as well as, not only/merely
+| 〜だけでなく〜も | not only/merely...but also
 | 例えば | such as, like, including, for example, for instance, e.g., :(colon), --(dash)
 | とりわけ | especially, specially, particularly, in particular
-| 代わりに | instead of, alternatively, in place of, in lieu of
+| 代わりに | instead, instead of, alternatively, in place of, in lieu of
 | 〜を除いて | except, but, apart from, aside from
 | 〜は別として | apart from, aside from
 | 〜については | about, on, as for, as to, with regard to, in regard to, as regards
 | 〜に関する | regarding, concerning, relating to
+| 〜と言うよりむしろ | rather, or rather
+| 後から考えれば | in/with hindsight
 
 
 文章
@@ -86,7 +90,7 @@ published:     true
 | :---
 | 初めに | (at) first, firstly, to being with, to start with
 | 留意すべきことは | note that
-| 〜で説明されている通り | as described, as shown
+| 〜で説明されている通り | as described/shown above/below, as I said before/earlier
 | デフォルトでは | by default
 | 〜によれば | according to
 
@@ -95,6 +99,7 @@ published:     true
 ---------------
 
 | :---
+| さて | well（話）, now
 | ところで | by the way, anyway, anyhow
 | とにかく | anyway, at any rate, in any case, in any event, at all events
 | 〜と言えば | speaking of, as for, as to, about
@@ -123,6 +128,7 @@ published:     true
 | 〜の条件でのみ | only if
 | 〜の場合を除いて | except if, unless
 | 〜の条件なら | only do
+| 場合によっては | in some cases
 
 
 時間
@@ -135,9 +141,20 @@ published:     true
 | 〜するまで | till, until
 | 〜して以来 | since, ever since
 | 〜している間 | while, meanwhile
+| 今では | now, today
+| 最近では | these days, recently, nowadays
+| かつては | formerly, in the past
+| 将来 | in the future
 | 今頃はもう | by now（推量の助動詞と共に）
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately
+
+
+推量
+
+| 十中八九 | probably
+| おそらく | maybe, perhaps, apparently
+| ひょっとすると | possibly
 
 
 その他
@@ -161,3 +178,7 @@ published:     true
 | ただ〜なので（できない）| only <reason>
 | いつものように | as always
 | 願わくば | hopefully
+| 一見すると〜 | at a glance
+| ある意味で | in a sense, in a way
+| 幸運にも | luckily, fortunately
+| あいにく | unfortunately

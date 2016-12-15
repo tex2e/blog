@@ -6,7 +6,7 @@ date:          2016-10-09
 tags:          Shell
 category:      Shell
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover3.jpg
 redirect_from:
 comments:      false
 published:     true

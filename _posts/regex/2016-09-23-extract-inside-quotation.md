@@ -6,7 +6,7 @@ date:          2016-09-23
 tags:          Regex
 category:      Regex
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover2.jpg
 redirect_from:
 comments:      false
 published:     true
