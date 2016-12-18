@@ -30,18 +30,21 @@ published:     true
 | 〜に反して | contrary to
 | 一方で | on the other hand, meanwhile
 | 同様に | like, as, similarly, similar to, equally, likewise
+| 少なくとも | at least, at the very least
 
 
 原因・結果
 ---------------
 
 | :---
-| 〜だから | so, so that, because, since, as, for, therefore, thus
+| 〜だから | so, so that, because, since, as, for, on account of, therefore, thus
+| 〜が原因で | bacause of, due to, on account of, owing to
+| 〜のおかげで | thanks to
 | 〜なので・〜を考えると | with
 | 〜の結果 | as a result, consequently, accordingly
-| 〜であるにも関わらず | despite, in spite of, nevertheless, nonetheless
+| 〜であるにも関わらず | despite, in spite of, nevertheless, nonetheless, for all ~ , with all ~
 | 〜が原因で | due to A
-| 〜を考慮して | in consideration of, (take A into account, make allowances for)
+| 〜を考慮して | in consideration of, in light of, <br>(take A into account, make allowances for)
 | 〜を考慮すれば | considering
 
 
@@ -52,8 +55,9 @@ published:     true
 | つまり | in short, in sum, in brief, in conclusion, basically, i.e.
 | より正確に言えば | more precisely, namely, or rather
 | 言い換えれば | that is, or, in other words, i.e., (I mean)
-| 概して | generally, in general, generally speaking, overall, all in all, as/on the whole
-| 結局 | after all, in the end, eventually, in the event, finally, at last, lastly
+| 概して | generally, in general, generally speaking, overall, all in all, as/on the whole, by and large（話）
+| 結局 | after all, in the end, eventually, in the event, finally, lastly
+| やっと | at last, at length, eventually, finally
 | 一般的に | generally, usually, most commonly
 | 通常は | usually, generally, normally
 
@@ -82,17 +86,20 @@ published:     true
 | 〜に関する | regarding, concerning, relating to
 | 〜と言うよりむしろ | rather, or rather
 | 後から考えれば | in/with hindsight
+| この場合は | in this case, in some cases
+| 何よりも | above all (things), most of all, first and foremost
 
 
 文章
 ---------------
 
 | :---
-| 初めに | (at) first, firstly, to being with, to start with
+| 初めに | (at) first, firstly, to being with, to start with, first of all（話）, foremost
 | 留意すべきことは | note that
 | 〜で説明されている通り | as described/shown above/below, as I said before/earlier
 | デフォルトでは | by default
 | 〜によれば | according to
+| 私の意見では | in my opinion
 
 
 話題
@@ -139,22 +146,45 @@ published:     true
 | 〜する前に | before
 | 〜した後に | after
 | 〜するまで | till, until
+| 〜するまでには | by the time ~
 | 〜して以来 | since, ever since
 | 〜している間 | while, meanwhile
 | 今では | now, today
+| 現在 | now, today, at presence
 | 最近では | these days, recently, nowadays
 | かつては | formerly, in the past
 | 将来 | in the future
 | 今頃はもう | by now（推量の助動詞と共に）
+| 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately
 
 
 推量
+---------------
 
+| :---
 | 十中八九 | probably
 | おそらく | maybe, perhaps, apparently
 | ひょっとすると | possibly
+
+
+状態
+---------------
+
+| :---
+| 驚いたことに | to my surprise, to my astonishment
+| 喜ばしいことに | to my delight
+| 残念なことに | to my chagrin
+| がっかりしたことに | to my disappointment
+| 不快なことに | to my discomfort
+| 不名誉なことに | to my disgrace
+| むかつくことに | to my disgust
+| 恥ずかしいことに | to my embarrassment
+| 恐ろしいことに | in my horror
+| ほっとしたことに | in my relief
+| 満足なことに | in my satisfaction
+| 残念なことに | in my sorrow
 
 
 その他
@@ -179,6 +209,8 @@ published:     true
 | いつものように | as always
 | 願わくば | hopefully
 | 一見すると〜 | at a glance
-| ある意味で | in a sense, in a way
-| 幸運にも | luckily, fortunately
+| ある意味で | in a way, in a sense
+| 幸運にも | luckily, fortunately, happily
 | あいにく | unfortunately
+| 理論上は | in theory
+| 実際には | in practice
