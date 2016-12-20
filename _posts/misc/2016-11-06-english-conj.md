@@ -24,12 +24,13 @@ published:     true
 ---------------
 
 | :---
-| 〜であるが・しかし | but, and yet, while, where, whereas
-| 〜であるけれど | but, though, even though, although, however, notwithstanding
+| 〜であるが・しかし | but, and yet, while, where, whereas, though yet
+| 〜であるけれど | but, though, even though, although, however
 | 対照的に | in contrast
 | 〜に反して | contrary to
-| 一方で | on the other hand, meanwhile
+| 一方で | on the other hand/side, meanwhile
 | 同様に | like, as, similarly, similar to, equally, likewise
+| でなければ | otherwise
 | 少なくとも | at least, at the very least
 
 
@@ -37,12 +38,12 @@ published:     true
 ---------------
 
 | :---
-| 〜だから | so, so that, because, since, as, for, on account of, therefore, thus
+| 〜だから | so, so that, because, since, as, for, on account of, therefore, thus, hence
 | 〜が原因で | bacause of, due to, on account of, owing to
 | 〜のおかげで | thanks to
 | 〜なので・〜を考えると | with
 | 〜の結果 | as a result, consequently, accordingly
-| 〜であるにも関わらず | despite, in spite of, nevertheless, nonetheless, for all ~ , with all ~
+| 〜であるにも関わらず | despite, in spite of, for all ~ , with all ~, <br>nevertheless, nonetheless, notwithstanding
 | 〜が原因で | due to A
 | 〜を考慮して | in consideration of, in light of, <br>(take A into account, make allowances for)
 | 〜を考慮すれば | considering
@@ -52,10 +53,10 @@ published:     true
 ---------------
 
 | :---
-| つまり | in short, in sum, in brief, in conclusion, basically, i.e.
+| つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically
 | より正確に言えば | more precisely, namely, or rather
 | 言い換えれば | that is, or, in other words, i.e., (I mean)
-| 概して | generally, in general, generally speaking, overall, all in all, as/on the whole, by and large（話）
+| 概して | generally, in general, generally speaking, overall, all in all, on/as the whole, altogether, by and large（話）
 | 結局 | after all, in the end, eventually, in the event, finally, lastly
 | やっと | at last, at length, eventually, finally
 | 一般的に | generally, usually, most commonly
@@ -74,7 +75,7 @@ published:     true
 
 | :---
 | そして | and, then
-| そのうえ〜 | also, in addition, besides, plus, furthermore, moreover
+| そのうえ〜 | also, in addition, besides, plus, furthermore, moreover, as well（話）
 | 〜に加えて | apart from, aside from, as well as, not only/merely
 | 〜だけでなく〜も | not only/merely...but also
 | 例えば | such as, like, including, for example, for instance, e.g., :(colon), --(dash)
@@ -95,6 +96,7 @@ published:     true
 
 | :---
 | 初めに | (at) first, firstly, to being with, to start with, first of all（話）, foremost
+| 最後に | finally, lastly, in conclusion
 | 留意すべきことは | note that
 | 〜で説明されている通り | as described/shown above/below, as I said before/earlier
 | デフォルトでは | by default
@@ -197,15 +199,14 @@ published:     true
 | 〜のところはどこでも | wherever
 | 〜かどうか | whether
 | 〜でなければ | without（米）-> unless
-| 正直に言うと | honestly
+| 正直に言うと・実を言えば | honestly, truly
 | そもそも | basically, originally
 | 基本的には | basically, essentially
 | 〜の限りでは | as far as
-| 別名 | a.k.a.
+| 別名 | a.k.a.（カジュアル）
 | 〜しないように | lest, for fear that
 | いったん〜すると | once
-| ただし | only
-| ただ〜なので（できない）| only <reason>
+| ただし・ただ〜なので（できない）| only <reason>
 | いつものように | as always
 | 願わくば | hopefully
 | 一見すると〜 | at a glance
