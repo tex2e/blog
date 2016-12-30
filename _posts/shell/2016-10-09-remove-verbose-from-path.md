@@ -3,7 +3,7 @@ layout:        post
 title:         "冗長なパス foo/bar/../lib を foo/lib に変換する"
 menutitle:     "冗長なパス foo/bar/../lib を foo/lib に変換する"
 date:          2016-10-09
-tags:          Shell
+tags:          Programming Language Bash
 category:      Shell
 author:        tex2e
 cover:         /assets/cover3.jpg

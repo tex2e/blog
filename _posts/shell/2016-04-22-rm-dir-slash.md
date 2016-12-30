@@ -3,7 +3,7 @@ layout:        post
 title:         "ディレクトリのパスの最後に/を付けてはいけない"
 menutitle:     "ディレクトリのパスの最後に/を付けてはいけない"
 date:          2016-04-22
-tags:          Shell
+tags:          Programming Language Bash
 category:      Shell
 author:        tex2e
 cover:         /assets/cover2.jpg
