@@ -5,8 +5,6 @@ if [[ $# -ne 2 ]]; then
   exit 1
 fi
 
-mkdir -p $1
-
 cat > _posts/$1/$(date +%Y-%m-%d)-${2:-post}.md <<EOS
 ---
 layout:        post
