@@ -75,7 +75,7 @@ published:     true
 
 | :---
 | そして | and, then
-| そのうえ〜 | also, in addition, besides, plus, furthermore, moreover, as well（話）
+| そのうえ〜 | also, in addition, additionally, besides, plus, furthermore, moreover, over and above, as well（話）
 | 〜に加えて | apart from, aside from, as well as, not only/merely
 | 〜だけでなく〜も | not only/merely...but also
 | 例えば | such as, like, including, for example, for instance, e.g., :(colon), --(dash)
