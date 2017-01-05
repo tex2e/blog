@@ -89,7 +89,7 @@ published:     true
 | 後から考えれば | in/with hindsight
 | この場合は | in this case, in some cases
 | 何よりも | above all (things), most of all, first and foremost
-| 〜の観点から | in term of
+| 〜の観点から | in terms of
 
 
 文章
