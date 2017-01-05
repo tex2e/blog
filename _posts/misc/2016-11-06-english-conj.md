@@ -55,7 +55,7 @@ published:     true
 | :---
 | つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically
 | より正確に言えば | more precisely, namely, or rather
-| 言い換えれば | that is, or, in other words, i.e., (I mean)
+| 言い換えれば | that is, or, in other words, i.e., I mean, this means
 | 概して | generally, in general, generally speaking, overall, all in all, on/as the whole, altogether, by and large（話）
 | 結局 | after all, in the end, eventually, in the event, finally, lastly
 | やっと | at last, at length, eventually, finally
@@ -76,7 +76,7 @@ published:     true
 | :---
 | そして | and, then
 | そのうえ〜 | also, in addition, additionally, besides, plus, furthermore, moreover, over and above, as well（話）
-| 〜に加えて | apart from, aside from, as well as, not only/merely
+| 〜に加えて | apart from, aside from, as well as, not only/merely, along with
 | 〜だけでなく〜も | not only/merely...but also
 | 例えば | such as, like, including, for example, for instance, e.g., :(colon), --(dash)
 | とりわけ | especially, specially, particularly, in particular
@@ -84,11 +84,12 @@ published:     true
 | 〜を除いて | except, but, apart from, aside from
 | 〜は別として | apart from, aside from
 | 〜については | about, on, as for, as to, with regard to, in regard to, as regards
-| 〜に関する | regarding, concerning, relating to
+| 〜に関する | about, on, regarding, concerning, relating to
 | 〜と言うよりむしろ | rather, or rather
 | 後から考えれば | in/with hindsight
 | この場合は | in this case, in some cases
 | 何よりも | above all (things), most of all, first and foremost
+| 〜の観点から | in term of
 
 
 文章
@@ -157,6 +158,7 @@ published:     true
 | かつては | formerly, in the past
 | 将来 | in the future
 | 今頃はもう | by now（推量の助動詞と共に）
+| 今のところ | for now
 | 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately
@@ -198,6 +200,7 @@ published:     true
 | 〜であるが | whereas
 | 〜のところはどこでも | wherever
 | 〜かどうか | whether
+| それによって〜する | whereby
 | 〜でなければ | without（米）-> unless
 | 正直に言うと・実を言えば | honestly, truly
 | そもそも | basically, originally
