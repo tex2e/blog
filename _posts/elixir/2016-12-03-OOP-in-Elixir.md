@@ -24,6 +24,7 @@ Elixirにおけるオブジェクト指向のまとめ
 - [オーバーロード](#overload)
 - [継承](#extends)
 - [インターフェース](#interface)
+- [プロトコル](#protocol)
 
 
 この文章は筆者が Ruby のコードを Elixir に書き落とすために書いたものなので、
@@ -248,7 +249,51 @@ Elixirのモジュールや構造体も同じように継承という考え方�
 インターフェース
 -----------------
 
-Javaでいう「インターフェース」に近いものがElixirにはあります。__プロトコル__（__Protocol__）です。
+Javaでいう「インターフェース」に近いものがElixirにはあります。
+__ビヘイビア__ （__Behaviours__） です。
+
+ビヘイビアはモジュールの宣言と同じように宣言しますが、
+抽象メソッドや抽象マクロを定義する時は `@callback` と `@macrocallback` を使います。
+これらのモジュール属性の値には
+[Typespecs](http://elixir-lang.org/docs/stable/elixir/typespecs.html)
+を使用します。
+
+```elixir
+defmodule MyBehaviour do
+  @callback my_fun(arg :: any) :: any
+  @macrocallback my_macro(arg :: any) :: Macro.t
+
+  # @optional_callbacks を使うことで、そのcallbackの実装を強制しないようになる
+  # 引数は {関数orマクロ名, 引数} のリスト
+  @optional_callbacks my_fun: 0, my_macro: 1
+end
+```
+
+ビヘイビアの実装は、実装するモジュール側で `@behaviour モジュール名` と記述します。
+
+```elixir
+defmodule MyBehaviour do
+  @callback my_fun(arg :: any) :: any
+end
+
+defmodule MyCallbackModule do
+  @behaviour MyBehaviour
+  def my_fun(arg), do: arg
+end
+```
+
+
+<a name="protocol"></a>
+
+プロトコル
+-----------------
+
+ビヘイビア（Java で言うところの Interface）は先に抽象メソッドを定義するのに対して、
+__プロトコル__（__Protocol__）は後からその型（ユーザ定義も含む）に対応する関数を書く方法です。
+
+具体的な組み込みプロトコルの例としては、Enumerable や String.Chars などがあります。
+なお、Enumerable を実装していると Enum の関数が、
+String.Chars を実装していると to_string が使えるようになります。
 
 Elixirではfalseとnilだけがfalseとして扱われ、他の全てはtrueと評価されます。
 ここでは、オブジェクトがブランクなとき（空文字、空リストなど）に true を返すような blank? プロトコルを規定する例を示します。
