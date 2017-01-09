@@ -16,7 +16,7 @@ baseurl:          "/blog" # the subpath of your site, e.g. /blog
 url:              "http://tex2e.github.io/blog" # the base hostname & protocol for your site. Have a look at robots.txt as well!
 permalink:        /:categories/:title
 cover:            /assets/cover0.jpg
-disqus_shortname: "jekylldecent"
+disqus_shortname: "tex2e"
 
 # Build settings
 markdown: kramdown

@@ -11,13 +11,14 @@ layout:        post
 title:         "This_is_Awesome"
 menutitle:     "Menu_Title"
 date:          $(date +%Y-%m-%d)
-tags:          Programming Language Foo
-category:      Foo
+tags:          Programming Language Foo_Bar
+category:      Foo_Bar
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     false # set to be true
+comments:      false
 ---
 
 preface
