@@ -3,7 +3,7 @@
 - Jekyll Theme: **jekyllDecent**
 - syntax highlighter: **prism.js**
 
-## jekyllDecent
+## [jekyllDecent](https://github.com/jwillmer/jekyllDecent)
 
 > [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
 >
