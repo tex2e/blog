@@ -97,6 +97,7 @@ published:     true
 
 | :---
 | 初めに | (at) first, firstly, to being with, to start with, first of all（話）, foremost
+| 初めは | initially
 | 最後に | finally, lastly, in conclusion
 | 留意すべきことは | note that
 | 〜で説明されている通り | as described/shown above/below, as I said before/earlier
@@ -161,7 +162,7 @@ published:     true
 | 今のところ | for now
 | 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
-| 〜するとすぐに | directly, immediately
+| 〜するとすぐに | directly, immediately, right away, (as soon as ~)
 
 
 推量
@@ -202,11 +203,16 @@ published:     true
 | 〜かどうか | whether
 | それによって〜する | whereby
 | 〜でなければ | without（米）-> unless
-| 正直に言うと・実を言えば | honestly, truly
+| 厳密に言えば | strictly speaking
+| 個人的に言えば | personally speaking
+| 現実的に言えば | practically speaking
+| 統計的に言えば | statistically speaking
+| 技術的に言えば | technically speaking
 | そもそも | basically, originally
 | 基本的には | basically, essentially
 | 〜の限りでは | as far as
-| 別名 | a.k.a.（カジュアル）
+| 別名 | a.k.a.
+| 正直に言うと・実を言えば | honestly, truly
 | 〜しないように | lest, for fear that
 | いったん〜すると | once
 | ただし・ただ〜なので（できない）| only <reason>
@@ -218,3 +224,5 @@ published:     true
 | あいにく | unfortunately
 | 理論上は | in theory
 | 実際には | in practice
+| この点については | in this regard
+| 慣例によれば | by convention
