@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/flori/json.git
+  revision: c7a6e31f3abde6efbf0629dea68b43bebb62c94a
+  branch: v1.8
+  specs:
+    json (1.8.5)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -125,7 +132,8 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  github-pages (= 87)
+  github-pages
+  json!
 
 BUNDLED WITH
    1.13.7
