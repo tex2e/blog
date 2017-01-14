@@ -28,8 +28,9 @@ published:     true
 | 〜であるけれど | but, though, even though, although, however
 | 対照的に | in contrast
 | 〜に反して | contrary to
-| 一方で | on the other hand/side, meanwhile
+| 一方で・対して | on the other hand/side, while, meanwhile
 | 同様に | like, as, similarly, similar to, equally, likewise
+| 〜と違って | unlike
 | でなければ | otherwise
 | 少なくとも | at least, at the very least
 
@@ -87,7 +88,7 @@ published:     true
 | 〜に関する | about, on, regarding, concerning, relating to
 | 〜と言うよりむしろ | rather, or rather
 | 後から考えれば | in/with hindsight
-| この場合は | in this case, in some cases
+| この場合は | in this case, in some cases, in those cases
 | 何よりも | above all (things), most of all, first and foremost
 | 〜の観点から | in terms of
 
@@ -148,18 +149,18 @@ published:     true
 | :---
 | 〜するときに | when, as
 | 〜する前に | before
-| 〜した後に | after
+| 〜した後に | after, afterword
 | 〜するまで | till, until
 | 〜するまでには | by the time ~
 | 〜して以来 | since, ever since
 | 〜している間 | while, meanwhile
 | 今では | now, today
-| 現在 | now, today, at presence
+| 現在 | now, today, currently, at present, presently
 | 最近では | these days, recently, nowadays
 | かつては | formerly, in the past
 | 将来 | in the future
 | 今頃はもう | by now（推量の助動詞と共に）
-| 今のところ | for now
+| 今のところ | for now, for the moment, for the present, for the time being, so far
 | 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately, right away, (as soon as ~)
@@ -226,3 +227,4 @@ published:     true
 | 実際には | in practice
 | この点については | in this regard
 | 慣例によれば | by convention
+| 単に | merely, simply
