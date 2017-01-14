@@ -13,6 +13,9 @@ published:     true
 comments:      false
 ---
 
+（この問題は gem 提供側の対応によって、すでに解決している問題です。）
+
+
 問題
 -------------------
 
@@ -37,6 +40,9 @@ Gemfile で json のバージョン 1.8.5 を github から取ってくれば良
 gem 'json', github: 'flori/json', branch: 'v1.8'
 gem 'github-pages'
 ```
+
+追加（2017年1月12日）：Rubygems に 1.8.5 の json がリリースされたので、
+この問題はもう発生しない。
 
 
 原因
