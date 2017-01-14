@@ -5,7 +5,7 @@ layout: default
 <h2 class="post-title">All posts in one long list</h2>
 <hr />
 
-{% for post in site.posts | sort %}
+{% for post in site.posts %}
 {% unless post.draft %}
 {% include post-list-item.html %}
 {% endunless %}
