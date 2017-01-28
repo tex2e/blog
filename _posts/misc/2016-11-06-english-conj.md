@@ -43,7 +43,7 @@ published:     true
 | 〜が原因で | bacause of, due to, on account of, owing to
 | 〜のおかげで | thanks to
 | 〜なので・〜を考えると | with
-| 〜の結果 | as a result, consequently, accordingly
+| 〜の結果 | as a result (of ~), consequently, accordingly
 | 〜であるにも関わらず | despite, in spite of, for all ~ , with all ~, <br>nevertheless, nonetheless, notwithstanding
 | 〜が原因で | due to A
 | 〜を考慮して | in consideration of, in light of, <br>(take A into account, make allowances for)
@@ -113,8 +113,7 @@ published:     true
 ---------------
 
 | :---
-| さて | well（話）, now
-| ところで | by the way, anyway, anyhow
+| さて・ところで | well（話）, now, by the way
 | とにかく | anyway, at any rate, in any case, in any event, at all events
 | 〜と言えば | speaking of, as for, as to, about
 
@@ -184,7 +183,7 @@ published:     true
 ---------------
 
 | :---
-| 驚いたことに | to my surprise, to my astonishment
+| 驚くべきことに | to my surprise, to my astonishment, remarkably
 | 喜ばしいことに | to my delight
 | 残念なことに | to my chagrin
 | がっかりしたことに | to my disappointment
@@ -234,3 +233,4 @@ published:     true
 | 慣例によれば | by convention
 | 単に | merely, simply
 | （どんなに良くても）せいぜい | at best
+| 可能な限り | wherever possible
