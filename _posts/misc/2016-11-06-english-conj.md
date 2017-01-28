@@ -28,8 +28,8 @@ published:     true
 | 〜であるけれど | but, though, even though, although, however
 | 対照的に | in contrast
 | 〜に反して | contrary to
-| 一方で・対して | on the other hand/side, while, meanwhile
-| 同様に | like, as, similarly, similar to, equally, likewise
+| 一方で・対して | on the other hand/side, while, meanwhile, conversely
+| 同様に | like, as, similarly, similar to, equally, likewise, equally
 | 〜と違って | unlike
 | でなければ | otherwise
 | 少なくとも | at least, at the very least
@@ -56,6 +56,7 @@ published:     true
 | :---
 | つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically
 | より正確に言えば | more precisely, namely, or rather
+| 正確ではないですが | "not precisely, but"
 | 言い換えれば | that is, or, in other words, i.e., I mean, this means
 | 概して | generally, in general, generally speaking, overall, all in all, on/as the whole, altogether, by and large（話）
 | 結局 | after all, in the end, eventually, in the event, finally, lastly
@@ -69,6 +70,7 @@ published:     true
 
 | :---
 | 〜するためには | in order that, in order to, so that, so as to
+| 〜しようとして | in an effort to do
 
 
 情報追加
@@ -80,7 +82,7 @@ published:     true
 | 〜に加えて | apart from, aside from, as well as, not only/merely, along with
 | 〜だけでなく〜も | not only/merely...but also
 | 例えば | such as, like, including, for example, for instance, e.g., :(colon), --(dash)
-| とりわけ | especially, specially, particularly, in particular
+| とりわけ | especially, specially, particularly, in particular, not least
 | 代わりに | instead, instead of, alternatively, in place of, in lieu of
 | 〜を除いて | except, but, apart from, aside from
 | 〜は別として | apart from, aside from
@@ -101,10 +103,10 @@ published:     true
 | 初めは | initially
 | 最後に | finally, lastly, in conclusion
 | 留意すべきことは | note that
-| 〜で説明されている通り | as described/shown above/below, as I said before/earlier
+| 〜で説明されている通り | as described/shown above/below, as I said before/earlier, as seen earlier,
 | デフォルトでは | by default
 | 〜によれば | according to
-| 私の意見では | in my opinion
+| 私の意見では | in my opinion, in my book（話）
 
 
 話題
@@ -141,6 +143,7 @@ published:     true
 | 〜の場合を除いて | except if, unless
 | 〜の条件なら | only do
 | 場合によっては | in some cases
+| もしもそうなった場合には | in which case
 
 
 時間
@@ -161,9 +164,11 @@ published:     true
 | 将来 | in the future
 | 今頃はもう | by now（推量の助動詞と共に）
 | 今のところ | for now, for the moment, for the present, for the time being, so far
+| これまで | so far, up to this point
 | 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately, right away, (as soon as ~)
+| それまでの間 | in the meantime
 
 
 推量
@@ -223,8 +228,9 @@ published:     true
 | ある意味で | in a way, in a sense
 | 幸運にも | luckily, fortunately, happily
 | あいにく | unfortunately
-| 理論上は | in theory
+| 理論上は | in theory, on paper
 | 実際には | in practice
 | この点については | in this regard
 | 慣例によれば | by convention
 | 単に | merely, simply
+| （どんなに良くても）せいぜい | at best
