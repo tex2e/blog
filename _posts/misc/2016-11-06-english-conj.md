@@ -19,15 +19,17 @@ published:     true
 どちらかというと書き言葉中心に偏りがちになるかもしれないし、
 分類の仕方がいまいちかもしれませんが、ご留意ください。
 
+Note: 主に話し言葉で使われる語には（話）という印をつけています。
+
 
 対照・対比
 ---------------
 
 | :---
-| 〜であるが・しかし | but, and yet, while, where, whereas, though yet
-| 〜であるけれど | but, though, even though, although, however
-| 対照的に | in contrast
-| 〜に反して | contrary to
+| 〜しかし | but, and yet, while, however, where, whereas
+| 〜だけれども | but, though, even though, although, however, while, yet, though yet, as
+| 対照的に | in contrast, in contrast to A
+| 〜に反して | contrary to A
 | 一方で・対して | on the other hand/side, while, meanwhile, conversely
 | 同様に | like, as, similarly, similar to, equally, likewise, equally
 | 〜と違って | unlike
@@ -54,12 +56,12 @@ published:     true
 ---------------
 
 | :---
-| つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically
+| つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically（話）
 | より正確に言えば | more precisely, namely, or rather
 | 正確ではないですが | "not precisely, but"
 | 言い換えれば | that is, or, in other words, i.e., I mean, this means
 | 概して | generally, in general, generally speaking, overall, all in all, on/as the whole, altogether, by and large（話）
-| 結局 | after all, in the end, eventually, in the event, finally, lastly
+| 結局 | after all, in the end, eventually, in the event, finally, lastly, <br>at the end of the day（話）
 | やっと | at last, at length, eventually, finally
 | 一般的に | generally, usually, most commonly
 | 通常は | usually, generally, normally
@@ -86,8 +88,7 @@ published:     true
 | 代わりに | instead, instead of, alternatively, in place of, in lieu of
 | 〜を除いて | except, but, apart from, aside from
 | 〜は別として | apart from, aside from
-| 〜については | about, on, as for, as to, with regard to, in regard to, as regards
-| 〜に関する | about, on, regarding, concerning, relating to
+| 〜については・〜に関して | about, on, as for, as to, with regard to, in regard to, as regards, <br>regarding, concerning, relating to, in terms of, with respect to, -wise（話）
 | 〜と言うよりむしろ | rather, or rather
 | 後から考えれば | in/with hindsight
 | この場合は | in this case, in some cases, in those cases
@@ -99,7 +100,7 @@ published:     true
 ---------------
 
 | :---
-| 初めに | (at) first, firstly, to being with, to start with, first of all（話）, foremost
+| 初めに | (at) first, firstly, to being with, to start with, <br>first of all（話）, first things first（話）, foremost
 | 初めは | initially
 | 最後に | finally, lastly, in conclusion
 | 留意すべきことは | note that
@@ -107,6 +108,7 @@ published:     true
 | デフォルトでは | by default
 | 〜によれば | according to
 | 私の意見では | in my opinion, in my book（話）
+| ここでは | here
 
 
 話題
@@ -163,11 +165,12 @@ published:     true
 | 将来 | in the future
 | 今頃はもう | by now（推量の助動詞と共に）
 | 今のところ | for now, for the moment, for the present, for the time being, so far
-| これまで | so far, up to this point
+| これまで | so far, up to this point, thus far
 | 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately, right away, (as soon as ~)
 | それまでの間 | in the meantime
+| するにつれて〜 | as（As time passed, ~）
 
 
 推量
@@ -175,14 +178,16 @@ published:     true
 
 | :---
 | 十中八九 | probably
-| おそらく | maybe, perhaps, apparently
+| おそらく | maybe, perhaps, apparently, very/more/most likely
 | ひょっとすると | possibly
 
 
-状態
+状態・様態
 ---------------
 
 | :---
+| 〜のように | as（前置詞）
+| するような〜 | ~ as do（関係代名詞としての as）
 | 驚くべきことに | to my surprise, to my astonishment, remarkably
 | 喜ばしいことに | to my delight
 | 残念なことに | to my chagrin
@@ -213,7 +218,7 @@ published:     true
 | 現実的に言えば | practically speaking
 | 統計的に言えば | statistically speaking
 | 技術的に言えば | technically speaking
-| そもそも | basically, originally
+| もともと | originally
 | 基本的には | basically, essentially
 | 〜の限りでは | as far as
 | 別名 | a.k.a.
@@ -234,3 +239,6 @@ published:     true
 | 単に | merely, simply
 | （どんなに良くても）せいぜい | at best
 | 可能な限り | wherever possible
+| 歴史的に | historically
+| 具体的にいうと | concretely
+| この点において | at this point
