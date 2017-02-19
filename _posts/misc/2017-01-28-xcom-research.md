@@ -24,18 +24,6 @@ Having examined several of the alien corpses, we've also observed a trend - key 
 In any case, further research is imperative... and while we've obviously made a number of discoveries working with the alien corpses, I feel we may need to acquire a living specimen if we truly hope to find the answers to these questions.
 
 
-Weapon Fragments
------------------------------
-
-Although the alien weapon fragments provide a limited glimpse into the system utilized in their equipment, we've seen enough to confirm my worst suspicions about their technology... that is it is vastly superior to our own. However, I have been encouraged by the rapid developments the research team has made in studying the damaged circuitry and electronics we recovered. Our initial efforts have already yielded a successful outcome. The new integrated sighting module created for our weaponry was heavily influenced by the aliens' own targeting system.
-
-
-Alien Materials
------------------------------
-
-Our understanding of the alien materials is limited at best, and we could spend years deciphering the complex manufacturing processes required to produce and manipulate these substances. However, we have managed to crudely adapt some of the observed techniques into our own research. Our first development, a multi-walled carbon nanotube weave, was modeled after an unusual pattern mirrored in several of the alien materials. This new configuration has proven to possess a greater tensile strength than any material previously recorded in known science. Adapting this fiber into an armor reinforcing vest will surely afford our soldiers increased protection on the battlefield.
-
-
 Experimental Warfare
 -----------------------------
 
@@ -126,7 +114,194 @@ Meld Recombination
 This amazing material's most salient feature is its versatility. In early testing, we were able to devise several methods that allow for direct manipulation of the Meld substance and its physiochemical properties. While searching our records for any references to a material with similar properties, I uncovered a number of redacted data stores created in the 1960s, but much of that information appears to be lost. In any case, the advances we've made should allow for a wide range of applications in the fields of genetic modification and cybernetic enhancement, although we will need to build dedicated facilities to enable these potential research pathways. It is probable that the invaders are more familiar with Meld than we are, and may already be fielding combat elements that take full advantage of its capabilities.
 
 
+
 -----
+
+Sectoid Autopsy
+-----------------------------
+
+We've found no discernible genetic variance between any of the small humanoid aliens that have been examined thus far. They are perfect genetic copies, each and every one of them. The subject's brain is quite sizable with respect to its body, and appears to have been augmented even further with cybernetic implants of some kind. Considering the... fragile nature of this creatures physical form, it is safe to assume that these implants were intended to somehow improve the combat effectiveness of the species. Dr. Shen and the engineering team have already developed several theories as to how we might be able to adapt these implants for our own use. Additional tactical information may be available in the field when viewing hostile targets in the Unit Analysis View.
+
+Dr. Vahlen's Personal Note: Cloning, genetic manipulation, biomedical implants... the implications of this technology and the alien's motives are not reassuring.
+
+
+Interrogate Sectoid
+-----------------------------
+
+Our interrogation of the small alien captive was a learning experience for all parties involved. Although traditionally an interrogation would imply a discussion of sorts, perhaps under coercion, that possibility was out of the question given these unique circumstances. We were instead forced to undertake a more aggressive approach, namely, through a series of invasive cranial probes inserted into the subject's prefrontal cortex.
+
+By interpreting the captive's responses to various stimuli, we were able to discern a great deal of information... more so than I had originally anticipated. Although it seemed to have little understanding of the various modifications it had been subjected to at some point in the past, we did garner some information relating to the aliens miniaturized implants and power cells used in their weaponry. We've already begun analyzing this data for possible incorporation into future advanced weapons prototypes, including several power-intensive beam weapons.
+
+
+Thin Man Autopsy
+-----------------------------
+
+The subject's external appearance is that of a caucasian male. I would guess its age to be approximately 35 years old, although it's quite likely this is an artificial effect intentionally affixed by the aliens. The specimen is roughly two meters in height, and weighs just over 80 kilograms. Despite its outward appearance, upon dissection, the creature's unique organ and bone structure is revealed to be distinctly alien in nature. The subject's bones are segmented, rather like the vertebrae of a serpent. This segmented structure appears to give the creature a spectacular range of motion in combat.
+
+A large portion of the specimen's thoracic cavity is devoted to enormous glands capable of producing a toxin that is then expelled via ducts with considerable force. After a thorough chemical analysis of the subject's venom, we've theorized that it could be used as a powerful disinfectant to treat our soldiers injuries in the field. Dr. Shen is working to develop a means to integrate this substance into our existing Medikits for future deployment. Targeting another example of this specimen in the field using the Unit Analysis View may reveal further details about its distinctive combat abilities.
+
+
+Interrogate Thin Man
+-----------------------------
+
+Capturing one of the invaders' infiltration specialists has proven both illuminating and disturbing. Although at first glance they resemble the human form, and are trained to communicate in a range of terrestrial languages, this specimen is far from human. We had assumed its role as an infiltration unit would preclude us from gaining anything of value during our interrogation. However, as it turns out, the captive was surprisingly...pliable once we began the procedure.
+
+Aside from its primary role as a reconnaissance and infiltration specialist, the Thin Man also proved to be quite familiar with the alien's navigation systems and celestial cartography. The information gained from this interrogation is of crucial importance to our efforts in reverse engineering the alien navigational computers and related systems.
+
+
+Floater Autopsy
+-----------------------------
+
+As frightening and vicious as this species is on the battlefield, it is hard not to feel some sympathy for them on the dissection table. The specimen has been subjected to extensive biomedical modifications, some of which were undoubtedly quite painful and intrusive. The combination of living tissue and mechanical components gives the creature the look of a cruel, half-finished experiment. Most of the subject's internal organs have been replaced with a mechanical life support system that mimics their original functionality.
+
+A rather conventional propulsion system has been grafted onto the subjects torso, although the power cells supplying the necessary thrust are extremely advanced by our own standards. I have removed a number of neural implants from the subject that appear to aid in the evasion of incoming projectile file. The engineering team has already suggested several ways in which this technology might benefit our soldiers. You may find additional information about the combat capabilities of this species by targeting one in the field using the Unit Analysis View.
+
+
+Interrogate Floater
+-----------------------------
+
+As far as we can tell, the specimen known as the Floater is barely sentient, at least in any discernible fashion that would imply intelligence. Perhaps this was an intentional move on the part of the aliens, but in any case, the Floater was extremely aggressive throughout the interrogation process. The most interesting aspect of its bizarre physique is the propulsion module integrated into the remaining portion of its upper torso. During controlled flight testing within the labs, we were able to observe how the Floater is capable of controlling and modulating the flow of power into the propulsion system itself. This was a significant discovery, one that will surely benefit our ongoing research into the alien technology as we attempt to adapt these concepts for our own purposes.
+
+
+Chryssalid Autopsy
+-----------------------------
+
+Even after years of research and study, until now I have never encountered something that is quite as beautiful, yet equally as deadly, as this species. Unlike the other aliens we've encountered thus far, it is arthropodal in nature, plated in a sleek, black exoskeleton. The "Chryssalids", as we're calling them, based on their reproductive habits, measure over three meters long from nose to tail, and stand almost two meters high when perched on their hind legs. Their attack is not only extremely deadly, but also necessary for their reproduction, as the intended victim is not immediately killed, but instead turned into what can only be described as a mindless shell, akin to a Zombie, which serves as host to its offspring. When a human is bitten an embryo is injected into the host and immediately begins to gestate. Once gestation is complete, which remarkably lasts only minutes, a newborn Chryssalid will emerge, destroying its host in the process.
+
+One can only wonder why the aliens would use what appears to be a savage, unpredictable creature... in any case, this is certainly not a creature to be trifled with, and our troops would do well to exercise extreme caution when engaging this species. Targeting another example in the field through the Unit Analysis View may provide additional information as to its combat capabilities.
+
+
+Cyberdisc Autopsy
+-----------------------------
+
+So far, we've been unable to ascertain whether this is strictly a mechanical creation or a living organism. Based on our findings, it has an alternative biochemical system based on the silicon atom. Like carbon, silicon can create molecules that are sufficiently large to carry biological information, and since silicon has several chemical properties similar to carbon, it is possible this could be a new and completely alien life form, with respect to the specimens we've already encountered. Its internal mechanisms seem to operate like organs, giving it the ability to circulate plasma through its core systems, much in the same way blood flows through our bodies. Our Unit Analysis View available in the field should provide additional specifics regarding this species' various combat abilities.
+
+
+Drone Autopsy
+-----------------------------
+
+The "drones" we've disassembled seems to have a singular purpose: to repair the alien technology, including its robotic counterparts. Although they act as robotic medics, and lack any kind of offensive weaponry, we did discover a large explosive charge is located deep within the sub-structure it draws on as a power source. With this and several of the alien devices, I continue to be amazed by what their creators have been able to accomplish. Dr. Shen believes it may be possible to "hack" these drones, allowing us to utilize them for our own purposes. Further details as to this specimen's complete combat capabilities may be available in the field if targeted in the Unit Analysis View.
+
+
+Muton Autopsy
+-----------------------------
+
+Standing well over two meters tall, the ratio of this subject's lean muscle to the rest of its body mass is staggering. Its bones are highly durable yet very light in weight, and it seems to lack extramuscular fatty tissue of any kind. There is no part of this subject that has not been genetically engineered for combat. These "Mutons" (a moniker given by the troops) have clearly been bred and modified from birth, with every enhancement contributing to its function as a sort of "organic tank." As such, the Mutons are capable of withstanding otherworldly amounts of damage and seem to have an incredible tolerance for pain.
+
+During the autopsy, we also noted a variety of ritualistic markings and unusual tattoos, which imply some sort of past tribal structure among the Muton species. We've also noticed a number of distinct similarities between the genetic structure of the Muton and Floater specimens. Although I can only guess as to the alien's intentions, it certainly appears that the Floaters may have at one time been Mutons themselves. If the aliens have been experimenting with the Muton physiology, perhaps the Floaters are a byproduct of their less successful attempts at genetic manipulation.
+
+We may be able to gain further insight into this creature's combat capabilities by targeting another example in the field in the Unit Analysis View.
+
+
+Interrogate Muton
+-----------------------------
+
+On first impressions, the captive Muton would appear to be among the least intelligent of any of the alien species we've encountered. Hulking and brutish in form, we were surprised to discover a great deal of knowledge had been ingrained in this subject's memory. We realized during the interrogation process that it was only logical for the aliens to provide the Muton with a complete understanding of their weaponry and tactics, as this beast represents their most formidable front-line combatant.
+
+Although the Muton was quite resistant to our techniques, despite heavy sedation, we've learned a great deal from the captive about the alien weaponry, particularly their advanced plasma-based armaments. The research team will begin analyzing this data for possible use in a new breed of weapons of our own design.
+
+
+Berserker Autopsy
+-----------------------------
+
+Although similar to the previously cataloged Muton species, this particular specimen is... different. Our troops have taken to calling this beast the "Berserker," based on its uncharacteristically aggressive tactics in the field. Despite sharing the same physiological structure of the other Mutons, for reasons yet unknown to us, the Berserker seems to be consumed by blood lust, charging into combat with little regard for its own safety. Current theories as to the cause of this behavior have led us to begin investigating possible genetic manipulation of the subject's endocrine glands, or, in the case, the equivalent glands that appear to secrete androgenic hormones. If the aliens enlarged or modified the action of these glands, it could explain the Berserker's outbursts. Specifics on this creature's abilities in combat should be available when using the Unit Analysis View on another specimen of the same type in the field.
+
+
+Interrogate Berserker
+-----------------------------
+
+This captive was even more violent and aggressive than we expected, exceeding the previous limit established by the Floater and Muton species. Despite heavy sedation, it was virtually impossible to control the subject, leaving us with little recourse other than to increase the vigor of our tactics. After probing several regions of the captive's brain, we managed to find the appropriate stimulus to calm the beast, after which we put the captive through a number of controlled physical tests.
+
+By observing the subject's movements while burdened by the massive suit of armor it is outfitted with, we've gained enormous insight into how the invaders approach the difficult design questions associated with creating a heavy armor suit. Striking a balance between effective armor coverage and maneuverability in the field is no easy task, but this data should prove invaluable to our own efforts.
+
+
+Sectoid Commander Autopsy
+-----------------------------
+
+After an extensive analysis of this specimen's brain tissue, we've discovered some unusual activity in the synaptic connections that may be the source of the... abilities our troops encountered in the field. Although somewhat similar in physical appearance to the Sectoid we previously identified, this "Commander" variant has an easily differentiated internal composition. We've theorized that these "enhanced electrical synapses," capable of transmitting nerve impulses at nearly three times the normal rate, are the product of careful genetic manipulation. If our theory holds true, that means the aliens are capable of modifying even the most complex tissue at a genetic level...
+
+
+Interrogate Sectoid Commander
+-----------------------------
+
+This specimen has a uniquely defined cellular structure within its brain, augmented by a series of advanced cybernetic implants that must have been ingrained shortly after its "birth." Due to the unusual abilities exhibited by this captive in the field, we've had to be particularly cautious during the interrogation process. Evidence of a telekinetic power unlike anything previously recorded in known science has left some members of the research team unwilling to approach the subject.
+
+We were met with limited success in retrieving new information directly from the captive, although we have come to understand how the captive was able to interact with the mysterious device we found within the alien base. We've also had to to further analyze the modules implanted in the subject's body, which will likely lead to a number of unexpected advances.
+
+
+Heavy Floater Autopsy
+-----------------------------
+
+Another variation on a previously identified specimen, this is the "Heavy Floater." A cursory examination reveals substantial improvements to the armor and weapons systems available to the creature. Much of the exposed tissue, the Floater's most obvious vulnerability, has ether been shielded or removed entirely. With these modifications in mind, it would appear the aliens chose to move towards a greater reliance on mechanical and cybernetic upgrades rather than continue developing the specimen's organic form. We may be able to gain further insight into this creature's unique abilities in combat of another specimen is targeted in the field in the Unit Analysis View.
+
+
+Interrogate Heavy Floater
+-----------------------------
+
+Similar in overall appearance to the Floater specimen we've previously encountered, this captive has been enhanced further with an ever more complex network of cybernetic implants. There is also a significant reduction in exposed living tissue, including the cranial region, which slowed the progression of our interrogation process. Despite these initial setbacks, we were able to gauge the captive's response to various stimuli, while also conducting a battery of tests on the propulsion systems integrated into its body. Having observed a number of subtle improvements in this specimen's augmented frame, we should be able to enhance the flight characteristics and propulsion systems of our aircraft.
+
+
+Muton Elite Autopsy
+-----------------------------
+
+Although they seem to have the distinct honor of serving as guards within the alien hierarchy, our autopsy of this specimen reveals little in the way of distinguishing anatomical traits versus the typical Muton. Aside from various improvements to their armor, the primary difference appears to be a slightly enhanced intelligence which makes them more effective combatants. The details surrounding this creature's specific combat capabilities should be available during future encounters by targeting one in the Unit Analysis View.
+
+
+Interrogate Muton Elite
+-----------------------------
+
+Although similar in general appearance to the Muton species our troops have battled in the field, this particular captive is different. We've seen evidence of an inherent intellectual capacity not found in the other variants, and we believe this "Elite" Muton serves a more defined role within the invasion force.
+
+The captive's sheer physical power and increased savvy made its interrogation both dangerous and exhilarating. After establishing an enhanced security protocol to deal with the risks involved, we began the interrogation process using our previously established techniques. As it turns out, this captive had the distinct honor of serving as a guard within the alien force, and had a complete understanding of the various weapon systems available to the invaders. With this knowledge in hand, I believe this information will greatly reduce the time we spend researching and developing these advanced new weapons.
+
+
+Sectopod Autopsy
+-----------------------------
+
+Although this robot is neither alive nor sentient, it is strangely self-aware of its surroundings. We've still uncovering the functional details for this "species," but from what we've seen so far, this machine is a masterpiece of technology. Based on our initial testing, we've discovered an extremely intricate program that's implanted in their macro-processors. This combat control program, combined with the Sectopods imposing ten meter frame, makes for an extremely dangerous weapon. Powered by the same energy source that fuels the alien craft, these machines wield unparalleled destructive power. Perhaps the biggest mystery is the secret of how they're being controlled. Additional information regarding this specimen's tactical abilities may be available in the field if another of these machines is targeted in the Unit Analysis View.
+
+
+Ethereal Autopsy
+-----------------------------
+
+This specimen appears to be at the top of the alien hierarchy, and for good reason. As we've noted in the field, its physical form is not suited for combat by any means. Their bodies actually appear to be quite frail, with evidence of atrophy and muscular degeneration having occurred over an extended period of time. This is not surprising, as initial radiocarbon dating indicates this particular creature could be... several thousand years old. Unlike the other specimens we've examined, there is little to indicate that it was genetically enhanced, at least not with the same ambition as the others.
+
+Strangely enough, we have uncovered similarities between the "Ethereal" brain and that of the Sectoid Commander. Both show the same enhanced synaptic connections, confirming our suspicion that this is the likely source of their power. These Ethereals appear to have an incredible pool of psionic energy at their disposal... more than anything we've previously encountered, which helps to explain why the other species are subordinate to them. The Unit Analysis View should provide additional information about this creature's combat capabilities in the field.
+
+
+Interrogate Ethereal
+-----------------------------
+
+This creature, clearly a member of the alien leadership caste responsible for this invasion, presented us with an extremely risky and difficult interrogation prospect. Despite our previous experience in safeguarding the facility from the potential effects of the...abilities... exhibited by the psionic alien species, this captive's power exceeded the previously established limits of our testing.
+
+Much of the information we were able to discern from this creature was cryptic at best, as it made every effort to resist even our most invasive procedures during the interrogation. However, the experimental imaging equipment we had been using to monitor the alien's brain activity did reveal a very unusual pattern of neural activity that we believe is closely tied to the creature's "power." This information should prove useful in reducing the time required for our research in a variety of fields.
+
+
+Mechtoid Autopsy
+-----------------------------
+
+As it appears that the Sectoid creature within this mechanized armor is of the same biological makeup we had seen previously, most of our efforts were spent disassembling and analyzing the inner workings of the armor itself - in close collaboration with Dr. Shen's team, of course. As our soldiers quickly discovered in the field, this suit is equipped with two substantially larger and more powerful plasma weapons when compared with the standard Sectoid equipment. The armor itself provides a great deal of protection to the operator, while also maintaining an impressive degree of mobility. The suit is capable of climbing over rough terrain and seems to have no trouble even with staircases and other obstacles, as it is also maneuverable enough to operate confidently in enclosed spaces.
+
+One of the more interesting discoveries we made while examining this subject is that the suit's armor plating appears to interfere to some degree with the Sectoid pilot's unique mental capabilities. I can assume that this was an unintended consequence of the additional armor plating - the aliens sacrificed what would appear to be an extremely powerful ability as a tradeoff for an increase in sheer combat power. However, it should be noted that the aliens seem to have offset this potential disadvantage by implementing a new technology. A small module located within the armor's core appears to serve as a sort of "amplifier" for these telepathic abilities. When targeted by an allied unit, rather than linking the two, the amplifier seems to takes this power and use it to form a sort of shield around the suit. Our troops should be wary of this capability, as the suit is already quite formidable without the additional shielding in place.
+
+
+Seeker Autopsy
+-----------------------------
+
+Although each of the autopsies we've conducted on the various alien species could be considered unusual, this latest specimen continues to push the boundaries of how we might define that characteristic. It's been referred to as a "Seeker" by our soldiers in the field due to its propensity for tracking and engaging with single targets - and its actual means of attack is quite shocking. Once it has located a target, the Seeker physically seizes the victim, and remains attached until it is either removed by force or the target expires.
+
+As one might imagine, this is an extraordinarily disturbing situation for both the victim and anyone witnessing the attack. The challenge in stopping the Seeker comes from its inherent agility and nimbleness, making it extremely difficult to intercept before it manages to reach its intended target. We believe the micro-motors employed in its design are responsible for this notable degree of mobility. The Seeker has also been observed deploying a type of defensive smoke screen, making it even more troublesome to engage during the limited window of opportunity when it is immobile.
+
+It is my hope that we can adapt these various concealment techniques into a form that allows our soldiers greater stealth capabilities in combat, which should reduce casualties. It may also be possible to use what we've learned to develop weapons systems and equipment that mirror some of these techniques. Our Unit Analysis View available in the field should provide additional specifics regarding this species' various combat abilities.
+
+
+-----
+
+Weapon Fragments
+-----------------------------
+
+Although the alien weapon fragments provide a limited glimpse into the system utilized in their equipment, we've seen enough to confirm my worst suspicions about their technology... that is it is vastly superior to our own. However, I have been encouraged by the rapid developments the research team has made in studying the damaged circuitry and electronics we recovered. Our initial efforts have already yielded a successful outcome. The new integrated sighting module created for our weaponry was heavily influenced by the aliens' own targeting system.
+
 
 Beam Weapons
 -----------------------------
@@ -197,6 +372,12 @@ We've also improved on the integrated targeting module by implementing several o
 
 
 -----
+
+Alien Materials
+-----------------------------
+
+Our understanding of the alien materials is limited at best, and we could spend years deciphering the complex manufacturing processes required to produce and manipulate these substances. However, we have managed to crudely adapt some of the observed techniques into our own research. Our first development, a multi-walled carbon nanotube weave, was modeled after an unusual pattern mirrored in several of the alien materials. This new configuration has proven to possess a greater tensile strength than any material previously recorded in known science. Adapting this fiber into an armor reinforcing vest will surely afford our soldiers increased protection on the battlefield.
+
 
 Carapace Armor
 -----------------------------
@@ -276,185 +457,3 @@ Fusion Lance
 This weapon is among the most powerful we've recovered from the aliens, and we've already evidence of its devastating effect against our own aircraft. Unfortunately, it was clearly designed for a much larger craft with a greater payload capacity than anything we have currently available. In order to adapt the mechanism for use on our own ships, we've had to redesign the integrated power and cooling systems to a much smaller form factor.
 
 If we do manage to successfully deploy this weapon, I have no doubt we'll finally level the playing field with the aliens in terms of air superiority.
-
-
------
-
-Sectoid Autopsy
------------------------------
-
-We've found no discernible genetic variance between any of the small humanoid aliens that have been examined thus far. They are perfect genetic copies, each and every one of them. The subject's brain is quite sizable with respect to its body, and appears to have been augmented even further with cybernetic implants of some kind. Considering the... fragile nature of this creatures physical form, it is safe to assume that these implants were intended to somehow improve the combat effectiveness of the species. Dr. Shen and the engineering team have already developed several theories as to how we might be able to adapt these implants for our own use. Additional tactical information may be available in the field when viewing hostile targets in the Unit Analysis View.
-
-Dr. Vahlen's Personal Note: Cloning, genetic manipulation, biomedical implants... the implications of this technology and the alien's motives are not reassuring.
-
-
-Thin Man Autopsy
------------------------------
-
-The subject's external appearance is that of a caucasian male. I would guess its age to be approximately 35 years old, although it's quite likely this is an artificial effect intentionally affixed by the aliens. The specimen is roughly two meters in height, and weighs just over 80 kilograms. Despite its outward appearance, upon dissection, the creature's unique organ and bone structure is revealed to be distinctly alien in nature. The subject's bones are segmented, rather like the vertebrae of a serpent. This segmented structure appears to give the creature a spectacular range of motion in combat.
-
-A large portion of the specimen's thoracic cavity is devoted to enormous glands capable of producing a toxin that is then expelled via ducts with considerable force. After a thorough chemical analysis of the subject's venom, we've theorized that it could be used as a powerful disinfectant to treat our soldiers injuries in the field. Dr. Shen is working to develop a means to integrate this substance into our existing Medikits for future deployment. Targeting another example of this specimen in the field using the Unit Analysis View may reveal further details about its distinctive combat abilities.
-
-
-Floater Autopsy
------------------------------
-
-As frightening and vicious as this species is on the battlefield, it is hard not to feel some sympathy for them on the dissection table. The specimen has been subjected to extensive biomedical modifications, some of which were undoubtedly quite painful and intrusive. The combination of living tissue and mechanical components gives the creature the look of a cruel, half-finished experiment. Most of the subject's internal organs have been replaced with a mechanical life support system that mimics their original functionality.
-
-A rather conventional propulsion system has been grafted onto the subjects torso, although the power cells supplying the necessary thrust are extremely advanced by our own standards. I have removed a number of neural implants from the subject that appear to aid in the evasion of incoming projectile file. The engineering team has already suggested several ways in which this technology might benefit our soldiers. You may find additional information about the combat capabilities of this species by targeting one in the field using the Unit Analysis View.
-
-
-Chryssalid Autopsy
------------------------------
-
-Even after years of research and study, until now I have never encountered something that is quite as beautiful, yet equally as deadly, as this species. Unlike the other aliens we've encountered thus far, it is arthropodal in nature, plated in a sleek, black exoskeleton. The "Chryssalids", as we're calling them, based on their reproductive habits, measure over three meters long from nose to tail, and stand almost two meters high when perched on their hind legs. Their attack is not only extremely deadly, but also necessary for their reproduction, as the intended victim is not immediately killed, but instead turned into what can only be described as a mindless shell, akin to a Zombie, which serves as host to its offspring. When a human is bitten an embryo is injected into the host and immediately begins to gestate. Once gestation is complete, which remarkably lasts only minutes, a newborn Chryssalid will emerge, destroying its host in the process.
-
-One can only wonder why the aliens would use what appears to be a savage, unpredictable creature... in any case, this is certainly not a creature to be trifled with, and our troops would do well to exercise extreme caution when engaging this species. Targeting another example in the field through the Unit Analysis View may provide additional information as to its combat capabilities.
-
-
-Cyberdisc Autopsy
------------------------------
-
-So far, we've been unable to ascertain whether this is strictly a mechanical creation or a living organism. Based on our findings, it has an alternative biochemical system based on the silicon atom. Like carbon, silicon can create molecules that are sufficiently large to carry biological information, and since silicon has several chemical properties similar to carbon, it is possible this could be a new and completely alien life form, with respect to the specimens we've already encountered. Its internal mechanisms seem to operate like organs, giving it the ability to circulate plasma through its core systems, much in the same way blood flows through our bodies. Our Unit Analysis View available in the field should provide additional specifics regarding this species' various combat abilities.
-
-
-Drone Autopsy
------------------------------
-
-The "drones" we've disassembled seems to have a singular purpose: to repair the alien technology, including its robotic counterparts. Although they act as robotic medics, and lack any kind of offensive weaponry, we did discover a large explosive charge is located deep within the sub-structure it draws on as a power source. With this and several of the alien devices, I continue to be amazed by what their creators have been able to accomplish. Dr. Shen believes it may be possible to "hack" these drones, allowing us to utilize them for our own purposes. Further details as to this specimen's complete combat capabilities may be available in the field if targeted in the Unit Analysis View.
-
-
-Muton Autopsy
------------------------------
-
-Standing well over two meters tall, the ratio of this subject's lean muscle to the rest of its body mass is staggering. Its bones are highly durable yet very light in weight, and it seems to lack extramuscular fatty tissue of any kind. There is no part of this subject that has not been genetically engineered for combat. These "Mutons" (a moniker given by the troops) have clearly been bred and modified from birth, with every enhancement contributing to its function as a sort of "organic tank." As such, the Mutons are capable of withstanding otherworldly amounts of damage and seem to have an incredible tolerance for pain.
-
-During the autopsy, we also noted a variety of ritualistic markings and unusual tattoos, which imply some sort of past tribal structure among the Muton species. We've also noticed a number of distinct similarities between the genetic structure of the Muton and Floater specimens. Although I can only guess as to the alien's intentions, it certainly appears that the Floaters may have at one time been Mutons themselves. If the aliens have been experimenting with the Muton physiology, perhaps the Floaters are a byproduct of their less successful attempts at genetic manipulation.
-
-We may be able to gain further insight into this creature's combat capabilities by targeting another example in the field in the Unit Analysis View.
-
-
-Berserker Autopsy
------------------------------
-
-Although similar to the previously cataloged Muton species, this particular specimen is... different. Our troops have taken to calling this beast the "Berserker," based on its uncharacteristically aggressive tactics in the field. Despite sharing the same physiological structure of the other Mutons, for reasons yet unknown to us, the Berserker seems to be consumed by blood lust, charging into combat with little regard for its own safety. Current theories as to the cause of this behavior have led us to begin investigating possible genetic manipulation of the subject's endocrine glands, or, in the case, the equivalent glands that appear to secrete androgenic hormones. If the aliens enlarged or modified the action of these glands, it could explain the Berserker's outbursts. Specifics on this creature's abilities in combat should be available when using the Unit Analysis View on another specimen of the same type in the field.
-
-
-Sectoid Commander Autopsy
------------------------------
-
-After an extensive analysis of this specimen's brain tissue, we've discovered some unusual activity in the synaptic connections that may be the source of the... abilities our troops encountered in the field. Although somewhat similar in physical appearance to the Sectoid we previously identified, this "Commander" variant has an easily differentiated internal composition. We've theorized that these "enhanced electrical synapses," capable of transmitting nerve impulses at nearly three times the normal rate, are the product of careful genetic manipulation. If our theory holds true, that means the aliens are capable of modifying even the most complex tissue at a genetic level...
-
-
-Heavy Floater Autopsy
------------------------------
-
-Another variation on a previously identified specimen, this is the "Heavy Floater." A cursory examination reveals substantial improvements to the armor and weapons systems available to the creature. Much of the exposed tissue, the Floater's most obvious vulnerability, has ether been shielded or removed entirely. With these modifications in mind, it would appear the aliens chose to move towards a greater reliance on mechanical and cybernetic upgrades rather than continue developing the specimen's organic form. We may be able to gain further insight into this creature's unique abilities in combat of another specimen is targeted in the field in the Unit Analysis View.
-
-
-Muton Elite Autopsy
------------------------------
-
-Although they seem to have the distinct honor of serving as guards within the alien hierarchy, our autopsy of this specimen reveals little in the way of distinguishing anatomical traits versus the typical Muton. Aside from various improvements to their armor, the primary difference appears to be a slightly enhanced intelligence which makes them more effective combatants. The details surrounding this creature's specific combat capabilities should be available during future encounters by targeting one in the Unit Analysis View.
-
-
-Sectopod Autopsy
------------------------------
-
-Although this robot is neither alive nor sentient, it is strangely self-aware of its surroundings. We've still uncovering the functional details for this "species," but from what we've seen so far, this machine is a masterpiece of technology. Based on our initial testing, we've discovered an extremely intricate program that's implanted in their macro-processors. This combat control program, combined with the Sectopods imposing ten meter frame, makes for an extremely dangerous weapon. Powered by the same energy source that fuels the alien craft, these machines wield unparalleled destructive power. Perhaps the biggest mystery is the secret of how they're being controlled. Additional information regarding this specimen's tactical abilities may be available in the field if another of these machines is targeted in the Unit Analysis View.
-
-
-Ethereal Autopsy
------------------------------
-
-This specimen appears to be at the top of the alien hierarchy, and for good reason. As we've noted in the field, its physical form is not suited for combat by any means. Their bodies actually appear to be quite frail, with evidence of atrophy and muscular degeneration having occurred over an extended period of time. This is not surprising, as initial radiocarbon dating indicates this particular creature could be... several thousand years old. Unlike the other specimens we've examined, there is little to indicate that it was genetically enhanced, at least not with the same ambition as the others.
-
-Strangely enough, we have uncovered similarities between the "Ethereal" brain and that of the Sectoid Commander. Both show the same enhanced synaptic connections, confirming our suspicion that this is the likely source of their power. These Ethereals appear to have an incredible pool of psionic energy at their disposal... more than anything we've previously encountered, which helps to explain why the other species are subordinate to them. The Unit Analysis View should provide additional information about this creature's combat capabilities in the field.
-
-
-Mechtoid Autopsy
------------------------------
-
-As it appears that the Sectoid creature within this mechanized armor is of the same biological makeup we had seen previously, most of our efforts were spent disassembling and analyzing the inner workings of the armor itself - in close collaboration with Dr. Shen's team, of course. As our soldiers quickly discovered in the field, this suit is equipped with two substantially larger and more powerful plasma weapons when compared with the standard Sectoid equipment. The armor itself provides a great deal of protection to the operator, while also maintaining an impressive degree of mobility. The suit is capable of climbing over rough terrain and seems to have no trouble even with staircases and other obstacles, as it is also maneuverable enough to operate confidently in enclosed spaces.
-
-One of the more interesting discoveries we made while examining this subject is that the suit's armor plating appears to interfere to some degree with the Sectoid pilot's unique mental capabilities. I can assume that this was an unintended consequence of the additional armor plating - the aliens sacrificed what would appear to be an extremely powerful ability as a tradeoff for an increase in sheer combat power. However, it should be noted that the aliens seem to have offset this potential disadvantage by implementing a new technology. A small module located within the armor's core appears to serve as a sort of "amplifier" for these telepathic abilities. When targeted by an allied unit, rather than linking the two, the amplifier seems to takes this power and use it to form a sort of shield around the suit. Our troops should be wary of this capability, as the suit is already quite formidable without the additional shielding in place.
-
-
-Seeker Autopsy
------------------------------
-
-Although each of the autopsies we've conducted on the various alien species could be considered unusual, this latest specimen continues to push the boundaries of how we might define that characteristic. It's been referred to as a "Seeker" by our soldiers in the field due to its propensity for tracking and engaging with single targets - and its actual means of attack is quite shocking. Once it has located a target, the Seeker physically seizes the victim, and remains attached until it is either removed by force or the target expires.
-
-As one might imagine, this is an extraordinarily disturbing situation for both the victim and anyone witnessing the attack. The challenge in stopping the Seeker comes from its inherent agility and nimbleness, making it extremely difficult to intercept before it manages to reach its intended target. We believe the micro-motors employed in its design are responsible for this notable degree of mobility. The Seeker has also been observed deploying a type of defensive smoke screen, making it even more troublesome to engage during the limited window of opportunity when it is immobile.
-
-It is my hope that we can adapt these various concealment techniques into a form that allows our soldiers greater stealth capabilities in combat, which should reduce casualties. It may also be possible to use what we've learned to develop weapons systems and equipment that mirror some of these techniques. Our Unit Analysis View available in the field should provide additional specifics regarding this species' various combat abilities.
-
-
------
-
-Interrogate Sectoid
------------------------------
-
-Our interrogation of the small alien captive was a learning experience for all parties involved. Although traditionally an interrogation would imply a discussion of sorts, perhaps under coercion, that possibility was out of the question given these unique circumstances. We were instead forced to undertake a more aggressive approach, namely, through a series of invasive cranial probes inserted into the subject's prefrontal cortex.
-
-By interpreting the captive's responses to various stimuli, we were able to discern a great deal of information... more so than I had originally anticipated. Although it seemed to have little understanding of the various modifications it had been subjected to at some point in the past, we did garner some information relating to the aliens miniaturized implants and power cells used in their weaponry. We've already begun analyzing this data for possible incorporation into future advanced weapons prototypes, including several power-intensive beam weapons.
-
-
-Interrogate Thin Man
------------------------------
-
-Capturing one of the invaders' infiltration specialists has proven both illuminating and disturbing. Although at first glance they resemble the human form, and are trained to communicate in a range of terrestrial languages, this specimen is far from human. We had assumed its role as an infiltration unit would preclude us from gaining anything of value during our interrogation. However, as it turns out, the captive was surprisingly...pliable once we began the procedure.
-
-Aside from its primary role as a reconnaissance and infiltration specialist, the Thin Man also proved to be quite familiar with the alien's navigation systems and celestial cartography. The information gained from this interrogation is of crucial importance to our efforts in reverse engineering the alien navigational computers and related systems.
-
-
-Interrogate Floater
------------------------------
-
-As far as we can tell, the specimen known as the Floater is barely sentient, at least in any discernible fashion that would imply intelligence. Perhaps this was an intentional move on the part of the aliens, but in any case, the Floater was extremely aggressive throughout the interrogation process. The most interesting aspect of its bizarre physique is the propulsion module integrated into the remaining portion of its upper torso. During controlled flight testing within the labs, we were able to observe how the Floater is capable of controlling and modulating the flow of power into the propulsion system itself. This was a significant discovery, one that will surely benefit our ongoing research into the alien technology as we attempt to adapt these concepts for our own purposes.
-
-
-Interrogate Muton
------------------------------
-
-On first impressions, the captive Muton would appear to be among the least intelligent of any of the alien species we've encountered. Hulking and brutish in form, we were surprised to discover a great deal of knowledge had been ingrained in this subject's memory. We realized during the interrogation process that it was only logical for the aliens to provide the Muton with a complete understanding of their weaponry and tactics, as this beast represents their most formidable front-line combatant.
-
-Although the Muton was quite resistant to our techniques, despite heavy sedation, we've learned a great deal from the captive about the alien weaponry, particularly their advanced plasma-based armaments. The research team will begin analyzing this data for possible use in a new breed of weapons of our own design.
-
-
-Interrogate Berserker
------------------------------
-
-This captive was even more violent and aggressive than we expected, exceeding the previous limit established by the Floater and Muton species. Despite heavy sedation, it was virtually impossible to control the subject, leaving us with little recourse other than to increase the vigor of our tactics. After probing several regions of the captive's brain, we managed to find the appropriate stimulus to calm the beast, after which we put the captive through a number of controlled physical tests.
-
-By observing the subject's movements while burdened by the massive suit of armor it is outfitted with, we've gained enormous insight into how the invaders approach the difficult design questions associated with creating a heavy armor suit. Striking a balance between effective armor coverage and maneuverability in the field is no easy task, but this data should prove invaluable to our own efforts.
-
-
-Interrogate Sectoid Commander
------------------------------
-
-This specimen has a uniquely defined cellular structure within its brain, augmented by a series of advanced cybernetic implants that must have been ingrained shortly after its "birth." Due to the unusual abilities exhibited by this captive in the field, we've had to be particularly cautious during the interrogation process. Evidence of a telekinetic power unlike anything previously recorded in known science has left some members of the research team unwilling to approach the subject.
-
-We were met with limited success in retrieving new information directly from the captive, although we have come to understand how the captive was able to interact with the mysterious device we found within the alien base. We've also had to to further analyze the modules implanted in the subject's body, which will likely lead to a number of unexpected advances.
-
-
-Interrogate Heavy Floater
------------------------------
-
-Similar in overall appearance to the Floater specimen we've previously encountered, this captive has been enhanced further with an ever more complex network of cybernetic implants. There is also a significant reduction in exposed living tissue, including the cranial region, which slowed the progression of our interrogation process. Despite these initial setbacks, we were able to gauge the captive's response to various stimuli, while also conducting a battery of tests on the propulsion systems integrated into its body. Having observed a number of subtle improvements in this specimen's augmented frame, we should be able to enhance the flight characteristics and propulsion systems of our aircraft.
-
-
-Interrogate Muton Elite
------------------------------
-
-Although similar in general appearance to the Muton species our troops have battled in the field, this particular captive is different. We've seen evidence of an inherent intellectual capacity not found in the other variants, and we believe this "Elite" Muton serves a more defined role within the invasion force.
-
-The captive's sheer physical power and increased savvy made its interrogation both dangerous and exhilarating. After establishing an enhanced security protocol to deal with the risks involved, we began the interrogation process using our previously established techniques. As it turns out, this captive had the distinct honor of serving as a guard within the alien force, and had a complete understanding of the various weapon systems available to the invaders. With this knowledge in hand, I believe this information will greatly reduce the time we spend researching and developing these advanced new weapons.
-
-
-Interrogate Ethereal
------------------------------
-
-This creature, clearly a member of the alien leadership caste responsible for this invasion, presented us with an extremely risky and difficult interrogation prospect. Despite our previous experience in safeguarding the facility from the potential effects of the...abilities... exhibited by the psionic alien species, this captive's power exceeded the previously established limits of our testing.
-
-Much of the information we were able to discern from this creature was cryptic at best, as it made every effort to resist even our most invasive procedures during the interrogation. However, the experimental imaging equipment we had been using to monitor the alien's brain activity did reveal a very unusual pattern of neural activity that we believe is closely tied to the creature's "power." This information should prove useful in reducing the time required for our research in a variety of fields.
