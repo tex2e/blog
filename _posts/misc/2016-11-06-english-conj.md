@@ -42,7 +42,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 
 | :---
 | 〜だから | so, so that, because, since, as, for, on account of, therefore, thus, hence
-| 〜が原因で | bacause of, due to, on account of, owing to
+| したがって | consequently, accordingly
+| 〜が原因で | bacause of, due to, on account of, owing to, this is caused by ~
 | 〜のおかげで | thanks to
 | 〜なので・〜を考えると | with
 | 〜の結果 | as a result (of ~), consequently, accordingly
