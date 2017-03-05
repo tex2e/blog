@@ -5,6 +5,10 @@
  * @author Lea Verou
  */
 
+pre code {
+	font-size: 95%;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
