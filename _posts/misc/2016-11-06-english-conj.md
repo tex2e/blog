@@ -104,7 +104,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 初めに | (at) first, firstly, to being with, to start with, <br>first of all（話）, first things first（話）, foremost
 | 初めは | initially
 | 最後に | finally, lastly, in conclusion
-| 留意すべきことは | note that
+| 留意すべきことは | note that, keep in mind that
 | 〜で説明されている通り | as described/shown above/below, as I said before/earlier, as seen earlier,
 | デフォルトでは | by default
 | 〜によれば | according to
@@ -116,7 +116,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| さて・ところで | well（話）, now, by the way
+| さて・ところで | well（話）, now, now that, by the way
 | とにかく | anyway, at any rate, in any case, in any event, at all events
 | 〜と言えば | speaking of, as for, as to, about
 
@@ -166,7 +166,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 将来 | in the future
 | 今頃はもう | by now（推量の助動詞と共に）
 | 今のところ | for now, for the moment, for the present, for the time being, so far
-| これまで | so far, up to this point, thus far
+| これまで | so far, up to this point, up until this point, thus far
 | 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately, right away, (as soon as ~)
