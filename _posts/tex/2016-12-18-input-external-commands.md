@@ -9,7 +9,7 @@ author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
-published:     true # set to be true
+published:     true
 ---
 
 TeXから外部コマンドを実行する方法について。

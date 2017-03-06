@@ -18,7 +18,6 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     false # set to be true
-comments:      false
 ---
 
 preface

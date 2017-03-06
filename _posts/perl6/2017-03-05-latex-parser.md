@@ -10,7 +10,6 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true
-comments:      false
 ---
 
 Grammar による構文解析

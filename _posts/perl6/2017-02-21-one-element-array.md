@@ -10,7 +10,6 @@ cover:         /assets/cover2.jpg
 redirect_from:
 comments:      false
 published:     true # set to be true
-comments:      false
 ---
 
 Perl6 で要素が一つの配列（特にハッシュの配列または配列の配列）を定義しようとしたときに、Rubyのように書いていたらつまづいたので、ここにメモします。

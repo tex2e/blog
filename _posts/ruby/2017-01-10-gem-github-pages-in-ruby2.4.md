@@ -10,7 +10,6 @@ cover:         /assets/cover2.jpg
 redirect_from:
 comments:      false
 published:     true
-comments:      false
 ---
 
 （この問題は gem 提供側の対応によって、すでに解決している問題です。）
