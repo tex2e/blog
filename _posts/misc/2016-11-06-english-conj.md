@@ -110,6 +110,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜によれば | according to
 | 私の意見では | in my opinion, in my book（話）
 | ここでは | here
+| 理論上は | in theory, on paper
+| 実際には | in practice, in effect
 
 
 話題
@@ -233,8 +235,6 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | ある意味で | in a way, in a sense
 | 幸運にも | luckily, fortunately, happily
 | あいにく | unfortunately
-| 理論上は | in theory, on paper
-| 実際には | in practice
 | この点については | in this regard
 | 慣例によれば | by convention
 | 単に | merely, simply
