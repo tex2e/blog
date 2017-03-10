@@ -77,7 +77,7 @@ Perl6 の正規表現は Perl5 の正規表現と全く違うので、
 
 先ほどの拡張 BNF を Perl6 の Grammar で表すと次のようになる。
 
-```perl
+```perl6
 use v6;
 
 grammar Grammar {
@@ -164,7 +164,7 @@ exp => ｢\documentclass{jsarticle}
 
 とりあえず次のような Action を作成した。
 
-```perl
+```perl6
 class Latex::Action {
     method TOP($/) {
         make $<exp>».ast;
@@ -207,7 +207,7 @@ Action によって作成されたオブジェクトを得るとこができる�
 また、そのままでは読みにくいので、JSON::Fast の to-json を使って、整形した出力を得るには、
 次のようにすれば良い。
 
-```perl
+```perl6
 use JSON::Fast;
 
 my $actions = Latex::Action;
