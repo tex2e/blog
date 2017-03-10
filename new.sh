@@ -16,8 +16,8 @@ category:      Foo_Bar
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:
-comments:      false
-published:     false # set to be true
+comments:      true
+published:     true
 ---
 
 preface
