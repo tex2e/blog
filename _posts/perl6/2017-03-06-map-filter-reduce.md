@@ -39,6 +39,8 @@ sub double($a) { $a * 2 }
 say @array.map(&double);
 say @array.map: { $_ * 2 }
 say @array.map(-> $a { $a * 2 });
+say @array.map(* * 2);
+say @array.map: * * 2;
 ```
 
 もしメソッドチェインが嫌いな場合は、次のような関数的な書き方もできます。
@@ -85,6 +87,8 @@ say @array.grep(&filter);
 say @array.grep: { $_ > 5 }
 say @array.grep(-> $a { $a > 5 });
 say @array.grep: -> $a { $a > 5 }
+say @array.grep(* > 5);
+say @array.grep: * > 5;
 ```
 
 もしメソッドチェインが嫌いな場合は、次のような関数的な書き方もできます。
@@ -112,7 +116,9 @@ sub plus($a, $b) { $a + $b };
 say @array.reduce(&plus);
 say @array.reduce: { $^a + $^b }
 say @array.reduce(-> $a, $b { $a + $b });
+say @array.reduce(* + *);
 say @array.reduce(&[+]);
+say @array.reduce(&infix:<+>);
 ```
 
 もしメソッドチェインが嫌いな場合は、次のような関数的な書き方もできます。
