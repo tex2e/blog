@@ -31,7 +31,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 対照的に | in contrast, in contrast to A
 | 〜に反して | contrary to A
 | 一方で・対して | on the other hand/side, while, meanwhile, conversely
-| 同様に | like, as, similarly, similar to, equally, likewise, equally
+| 同様に | like, as, similarly, similar to, equally, likewise, equally, in the same way
 | 〜と違って | unlike
 | でなければ | otherwise
 | 少なくとも | at least, at the very least
@@ -85,7 +85,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜に加えて | apart from, aside from, as well as, not only/merely, along with
 | 〜だけでなく〜も | not only/merely...but also
 | 例えば | such as, like, including, for example, for instance, e.g., :(colon), --(dash)
-| とりわけ | especially, specially, particularly, in particular, not least
+| とりわけ | especially, specially, specifically, particularly, in particular, not least
 | 代わりに | instead, instead of, alternatively, in place of, in lieu of
 | 〜を除いて | except, but, apart from, aside from
 | 〜は別として | apart from, aside from
@@ -95,6 +95,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | この場合は | in this case, in some cases, in those cases
 | 何よりも | above all (things), most of all, first and foremost
 | 〜の観点から | in terms of
+| 主に | mainly, chiefly, mostly, largely, typically, primarily
 
 
 文章
@@ -111,7 +112,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 私の意見では | in my opinion, in my book（話）
 | ここでは | here
 | 理論上は | in theory, on paper
-| 実際には | in practice, in effect
+| 実際には | in practice, in effect, effectively
 
 
 話題
@@ -181,7 +182,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 
 | :---
 | 十中八九 | probably
-| おそらく | maybe, perhaps, apparently, very/more/most likely
+| おそらく | maybe, perhaps, apparently, very/more/most likely, seemingly
 | ひょっとすると | possibly
 
 
@@ -243,3 +244,4 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 歴史的に | historically
 | 具体的にいうと | concretely
 | この点において | at this point
+| 直感的に見れば | intuitively
