@@ -245,3 +245,4 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 具体的にいうと | concretely
 | この点において | at this point
 | 直感的に見れば | intuitively
+| 実験的に・経験的に | empirically
