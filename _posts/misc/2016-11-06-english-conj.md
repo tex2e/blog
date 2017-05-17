@@ -182,7 +182,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 
 | :---
 | 十中八九 | probably
-| おそらく | maybe, perhaps, apparently, very/more/most likely, seemingly
+| おそらく | maybe, perhaps, apparently, very/more/most likely, seemingly, supposedly, presumably
 | ひょっとすると | possibly
 
 
@@ -246,3 +246,4 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | この点において | at this point
 | 直感的に見れば | intuitively
 | 実験的に・経験的に | empirically
+| 皮肉をこめて | sarcastically
