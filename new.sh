@@ -2,6 +2,7 @@
 
 if [[ $# -ne 2 ]]; then
   echo "ArguemntError: wrong number of arguments (given $#, expected 2)"
+  echo "./new.sh <category> <postname>"
   exit 1
 fi
 
