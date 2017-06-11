@@ -234,16 +234,18 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 願わくば | hopefully
 | 一見すると〜 | at a glance
 | ある意味で | in a way, in a sense
-| 幸運にも | luckily, fortunately, happily
-| あいにく | unfortunately
+| 幸運にも | fortunately, happily, luckily
+| あいにく | unfortunately, unhappily, sadly
 | この点については | in this regard
 | 慣例によれば | by convention
 | 単に | merely, simply
 | （どんなに良くても）せいぜい | at best
 | 可能な限り | wherever possible
 | 歴史的に | historically
+| 慣習的に | traditionally
 | 具体的にいうと | concretely
 | この点において | at this point
 | 直感的に見れば | intuitively
 | 実験的に・経験的に | empirically
 | 皮肉をこめて | sarcastically
+| 個人的には | personally
