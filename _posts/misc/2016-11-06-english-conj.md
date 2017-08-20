@@ -58,6 +58,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 
 | :---
 | つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically（話）
+| すなわち | namely, in other words
 | より正確に言えば | more precisely, namely, or rather
 | 正確ではないですが | "not precisely, but"
 | 言い換えれば | that is, or, in other words, i.e., I mean, this means
@@ -129,7 +130,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 
 | :---
 | もちろん | of course
-| 確かに | certainly, surely, true
+| 確かに | certainly, surely, true, admittedly
 | 明らかに | clearly, obviously, certainly, undoubtedly
 | 実際 | actually, realistically, indeed, in fact
 | ところが実際は | as it turns out, as it is
@@ -249,3 +250,4 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 実験的に・経験的に | empirically
 | 皮肉をこめて | sarcastically
 | 個人的には | personally
+| 意図的に | intentionally, by intention
