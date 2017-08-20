@@ -2,7 +2,7 @@
 layout:        post
 title:         "テンプレートエンジンを使わないで、コードの埋め込みを行う"
 menutitle:     "テンプレートエンジンを使わないで、コードの埋め込みを行う"
-date:          2016-09-24
+date:          2016-09-25
 tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
@@ -11,8 +11,6 @@ redirect_from:
 comments:      false
 published:     true
 ---
-
-{% raw %}
 
 JavaScriptでテンプレートエンジンを使わないで、コードの埋め込みを行う方法とか。
 
@@ -24,12 +22,14 @@ JavaScriptでテンプレートエンジンを使わないで、コードの埋�
 
 ES2015（ES6）の Template literal が使える場合は、これを使います。
 
+{% raw %}
 ```js
 var templateHTML = `<li>
   <ul>{{ 1 + 1 }}</ul>
   <ul><a href="{{ this.path }}">{{ this.name }}</a></ul>
 </li>`
 ```
+{% endraw %}
 
 なお、IE11 は ES2015 にほとんど対応していないので、
 どの環境でも動かせるようにするには次のやり方でテンプレートを作成します。
@@ -39,6 +39,7 @@ var templateHTML = `<li>
 Function.prototype.toString は関数のソースコードを表す文字列（コメントも含む）
 を返してくれるので、この1行目と最後の行を消した残りの行をテンプレートとして使います。
 
+{% raw %}
 ```js
 var templateHTML = (function () {/*
 <li>
@@ -47,6 +48,7 @@ var templateHTML = (function () {/*
 </li>
 */}).toString().split("\n").slice(1, -1).join("\n");
 ```
+{% endraw %}
 
 
 変数の埋め込み
@@ -59,6 +61,7 @@ replaceを使って、`{{ ... }}` の中の部分を取り出します。
 この replacer は無名関数なので、bind でオブジェクトと束縛させると、
 オブジェクトに定義した任意の名前が this を介してアクセスできるようになります。
 
+{% raw %}
 ```js
 console.log(templateHTML);
 // <li>
@@ -81,6 +84,7 @@ console.log(boundTemplateHTML);
 //   <ul><a href="/path/to/index.html">index</a></ul>
 // </li>
 ```
+{% endraw %}
 
 
 まとめ
@@ -89,5 +93,3 @@ console.log(boundTemplateHTML);
 この方法を使うことで、テンプレートエンジンを使わなくてもテンプレートエンジンみたいなことができるようになります。
 ただし、変数へのアクセスに this を使わないといけないので、
 それがいやならテンプレートエンジンを使うことをお勧めします。
-
-{% endraw %}
