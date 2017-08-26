@@ -65,8 +65,9 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 概して | generally, in general, generally speaking, overall, all in all, on/as the whole, altogether, by and large（話）
 | 結局 | after all, in the end, eventually, in the event, finally, lastly, <br>at the end of the day（話）
 | やっと | at last, at length, eventually, finally
-| 一般的に | generally, usually, most commonly
+| 一般的に | generally, usually, most commonly, on average
 | 通常は | usually, generally, normally
+| 規範的に | canonically
 
 
 目的
@@ -176,12 +177,15 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜するとすぐに | directly, immediately, right away, (as soon as ~)
 | それまでの間 | in the meantime
 | するにつれて〜 | as（As time passed, ~）
+| たまに | occasionally
 
 
 推量
 ---------------
 
 | :---
+| 必ず | surely, certainly
+| まず間違いなく | arguably
 | 十中八九 | probably
 | おそらく | maybe, perhaps, apparently, very/more/most likely, seemingly, supposedly, presumably
 | ひょっとすると | possibly
@@ -234,7 +238,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | いつものように | as always
 | 願わくば | hopefully
 | 一見すると〜 | at a glance
-| ある意味で | in a way, in a sense
+| ある意味で | in a way, in a sense, in the way, in the sense
 | 幸運にも | fortunately, happily, luckily
 | あいにく | unfortunately, unhappily, sadly
 | この点については | in this regard
