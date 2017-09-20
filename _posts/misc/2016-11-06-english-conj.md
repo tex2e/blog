@@ -255,3 +255,4 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 皮肉をこめて | sarcastically
 | 個人的には | personally
 | 意図的に | intentionally, by intention
+| 現状では | as it stands,
