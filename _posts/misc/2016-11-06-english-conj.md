@@ -231,7 +231,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 基本的には | basically, essentially
 | 〜の限りでは | as far as
 | 別名 | a.k.a.
-| 正直に言うと・実を言えば | honestly, truly
+| 正直に言うと・実を言えば | to be honest, honestly, truly
 | 〜しないように | lest, for fear that
 | いったん〜すると | once
 | ただし・ただ〜なので（できない）| only <reason>
@@ -255,4 +255,4 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 皮肉をこめて | sarcastically
 | 個人的には | personally
 | 意図的に | intentionally, by intention
-| 現状では | as it stands,
+| 現状では | as it stands, as things stands
