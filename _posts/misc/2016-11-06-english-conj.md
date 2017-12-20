@@ -205,10 +205,10 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 不名誉なことに | to my disgrace
 | むかつくことに | to my disgust
 | 恥ずかしいことに | to my embarrassment
-| 恐ろしいことに | in my horror
-| ほっとしたことに | in my relief
-| 満足なことに | in my satisfaction
-| 残念なことに | in my sorrow
+| 恐ろしいことに | to my horror
+| ほっとしたことに | to my relief
+| 満足なことに | to my satisfaction
+| 残念なことに | unfortunately, to my sorrow
 
 
 その他
