@@ -14,7 +14,7 @@ published:     true
 
 英語の文と文のつなぎの言葉はたくさんあり、
 英語の文章を書くときにどんなものがあったのかいちいち思い出すのも面倒だし、忘れやすいのでメモ。
-ここにメモするのは必ずしも接続詞だけではない。副詞もあれば、熟語もある。
+ここにメモするのは必ずしも接続詞だけではない。副詞もあれば、熟語もあります。
 
 どちらかというと書き言葉中心に偏りがちになるかもしれないし、
 分類の仕方がいまいちかもしれませんが、ご留意ください。
@@ -107,7 +107,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 初めに | (at) first, firstly, to being with, to start with, <br>first of all（話）, first things first（話）, foremost
 | 初めは | initially
 | 最後に | finally, lastly, in conclusion
-| 留意すべきことは | note that, keep in mind that
+| 留意すべきことは | note that, keep in mind that, nota bene, N.B.
 | 〜で説明されている通り | as described/shown above/below, as I said before/earlier, as seen earlier,
 | デフォルトでは | by default
 | 〜によれば | according to
@@ -132,6 +132,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | :---
 | もちろん | of course
 | 確かに | certainly, surely, true, admittedly
+| 絶対に | absolutely, definitely（話）, positively（話）, hell（話）
 | 明らかに | clearly, obviously, certainly, undoubtedly
 | 実際 | actually, realistically, indeed, in fact
 | ところが実際は | as it turns out, as it is
@@ -199,7 +200,6 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | するような〜 | ~ as do（関係代名詞としての as）
 | 驚くべきことに | to my surprise, to my astonishment, remarkably
 | 喜ばしいことに | to my delight
-| 残念なことに | to my chagrin
 | がっかりしたことに | to my disappointment
 | 不快なことに | to my discomfort
 | 不名誉なことに | to my disgrace
@@ -208,7 +208,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 恐ろしいことに | to my horror
 | ほっとしたことに | to my relief
 | 満足なことに | to my satisfaction
-| 残念なことに | unfortunately, to my sorrow
+| 残念なことに | unfortunately, to my sorrow, to my chagrin
 
 
 その他
@@ -231,14 +231,15 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 基本的には | basically, essentially
 | 〜の限りでは | as far as
 | 別名 | a.k.a.
-| 正直に言うと・実を言えば | to be honest, honestly, truly
+| 正直に言うと・実を言えば | to be honest, honestly, truly, really
+| 大まじめに | in all seriousness
 | 〜しないように | lest, for fear that
 | いったん〜すると | once
 | ただし・ただ〜なので（できない）| only <reason>
 | いつものように | as always
-| 願わくば | hopefully
 | 一見すると〜 | at a glance
 | ある意味で | in a way, in a sense, in the way, in the sense
+| 願わくば | hopefully
 | 幸運にも | fortunately, happily, luckily
 | あいにく | unfortunately, unhappily, sadly
 | この点については | in this regard
@@ -246,16 +247,18 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 単に | merely, simply
 | （どんなに良くても）せいぜい | at best
 | 可能な限り | wherever possible
+| この点において | at this point
 | 歴史的に | historically
 | 慣習的に | traditionally
 | 具体的にいうと | concretely
-| この点において | at this point
 | 直感的に見れば | intuitively
 | 実験的に・経験的に | empirically
 | 皮肉をこめて | sarcastically
 | 個人的には | personally
 | 意図的に | intentionally, by intention
 | 現状では | as it stands, as things stands
+| はるかに、圧倒的に | by far
+| ありがたいことに | thankfully
 
 
 <br>
@@ -265,3 +268,9 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 内容について指摘・推敲をしてくださった以下の方に感謝申し上げます。
 
 - Eugen Dück
+
+
+### See also
+
+- [Weblio英語例文検索](https://ejje.weblio.jp/sentence/)
+- [Nyanglish -- 世界最大の英語例文検索エンジン](http://nyanglish.com/)
