@@ -30,7 +30,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜だけれども | but, though, even though, although, however, while, yet, though yet, as
 | 対照的に | in contrast, in contrast to A
 | 〜に反して | contrary to A
-| 一方で・対して | on the other hand/side, while, meanwhile, conversely
+| 一方で・対して | on the other hand/side, while, meanwhile, conversely, whilst
 | 同様に | like, as, similarly, similar to, equally, likewise, equally, in the same way
 | 〜と違って | unlike
 | でなければ | otherwise
@@ -164,7 +164,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜するまで | till, until
 | 〜するまでには | by the time ~
 | 〜して以来 | since, ever since
-| 〜している間 | while, meanwhile
+| 〜している間 | while, meanwhile, whilst
 | 今では | now, today
 | 現在 | now, today, currently, at present, presently
 | 最近では | these days, recently, nowadays
@@ -259,6 +259,10 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 現状では | as it stands, as things stands
 | はるかに、圧倒的に | by far
 | ありがたいことに | thankfully
+| 私が知る限りでは | as far as I know, AFAIK
+| 私見を申し上げますと | in my humble opinion, IMHO
+| 長い目で見れば | in the long run
+| 目先の計算では | in the short run
 
 
 <br>
