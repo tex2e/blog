@@ -30,7 +30,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜だけれども | but, though, even though, although, however, while, yet, though yet, as
 | 対照的に | in contrast, in contrast to A
 | 〜に反して | contrary to A
-| 一方で・対して | on the other hand/side, while, meanwhile, conversely, whilst
+| 一方で・対して | on the other hand/side, on the flip side, while, meanwhile, conversely, whilst
+| 悪い面は | on the downside
 | 同様に | like, as, similarly, similar to, equally, likewise, equally, in the same way
 | 〜と違って | unlike
 | でなければ | otherwise
@@ -84,12 +85,14 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | :---
 | そして | and, then
 | そのうえ〜 | also, in addition, additionally, besides, plus, furthermore, moreover, over and above, as well（話）
-| 〜に加えて | apart from, aside from, as well as, not only/merely, along with
+| 〜に加えて | apart from, aside from, as well as, not only/merely, along with, other than
 | 〜だけでなく〜も | not only/merely...but also
 | 例えば | such as, like, including, for example, for instance, e.g., :(colon), --(dash)
+| 具体的にいうと | concretely, specifically
+| （例えば）〜のように | as in
 | とりわけ | especially, specially, specifically, particularly, in particular, not least
 | 代わりに | instead, instead of, alternatively, in place of, in lieu of
-| 〜を除いて | except, but, apart from, aside from
+| 〜を除いて | except, but, apart from, aside from, other than
 | 〜は別として | apart from, aside from
 | 〜については・〜に関して | about, on, as for, as to, with regard to, in regard to, as regards, <br>regarding, concerning, relating to, in terms of, with respect to, -wise（話）
 | 〜と言うよりむしろ | rather, or rather
@@ -104,12 +107,11 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| 初めに | (at) first, firstly, to being with, to start with, <br>first of all（話）, first things first（話）, foremost
+| 初めに | (at) first, firstly, to being with, to start with, primarily, <br>first of all（話）, first things first（話）, foremost
 | 初めは | initially
 | 最後に | finally, lastly, in conclusion
 | 留意すべきことは | note that, keep in mind that, nota bene, N.B.
 | 〜で説明されている通り | as described/shown above/below, as I said before/earlier, as seen earlier,
-| デフォルトでは | by default
 | 〜によれば | according to
 | 私の意見では | in my opinion, in my book（話）
 | ここでは | here
@@ -160,7 +162,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | :---
 | 〜するときに | when, as
 | 〜する前に | before
-| 〜した後に | after, afterword
+| 〜した後に | after
+| その後 | later, afterword, subsequently
 | 〜するまで | till, until
 | 〜するまでには | by the time ~
 | 〜して以来 | since, ever since
@@ -188,7 +191,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 必ず | surely, certainly
 | まず間違いなく | arguably
 | 十中八九 | probably
-| おそらく | maybe, perhaps, apparently, very/more/most likely, seemingly, supposedly, presumably
+| おそらく | maybe, perhaps, apparently, very/more/most likely, seemingly, <br>supposedly, presumably
 | ひょっとすると | possibly
 
 
@@ -250,7 +253,6 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | この点において | at this point
 | 歴史的に | historically
 | 慣習的に | traditionally
-| 具体的にいうと | concretely
 | 直感的に見れば | intuitively
 | 実験的に・経験的に | empirically
 | 皮肉をこめて | sarcastically
@@ -263,6 +265,15 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 私見を申し上げますと | in my humble opinion, IMHO
 | 長い目で見れば | in the long run
 | 目先の計算では | in the short run
+| なるべく | preferably
+| デフォルトでは | by default
+| オプションで | optionally
+| 便宜上 | for convenience
+| 前者は | for the former
+| 後者は | for the latter
+| 原則として | in principle
+| 言うまでもなく | needless to say
+| 参考までに言うけど | for what it's worth（話）
 
 
 <br>
