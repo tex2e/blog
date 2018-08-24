@@ -15,16 +15,16 @@
 
 {% if page.url %}
 {% capture page_url %}{{ page.url | replace: '/index.html','/' }}{% endcapture %}
-<meta property="og:url" content="{{ page_url }}">
+<meta property="twitter:url" content="{{ page_url }}">
 {% endif %}
 
 {% if page.title %}
-<meta property="og:title" content="{{ page.title }}">
+<meta property="twitter:title" content="{{ page.title }}">
 {% else %}
-<meta property="og:title" content="{{ site.title }}">
+<meta property="twitter:title" content="{{ site.title }}">
 {% endif %}
 
-<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-<meta property="og:image" content="/assets/web-optim.png">
+<meta property="twitter:image" content="/assets/web-optim.png">
 <!-- End: Twitter data -->
