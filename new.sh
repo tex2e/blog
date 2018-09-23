@@ -10,7 +10,7 @@ cat > _posts/$1/$(date +%Y-%m-%d)-${2:-post}.md <<EOS
 ---
 layout:        post
 title:         "This_is_Awesome"
-menutitle:     "Menu_Title"
+menutitle:     "This_is_Awesome"
 date:          $(date +%Y-%m-%d)
 tags:          Programming Language Foo_Bar
 category:      Foo_Bar
