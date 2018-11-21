@@ -55,6 +55,6 @@ platex -shell-escape main.tex
 Rubyのコードは現在時間を返すプログラムなので、正しく埋め込まれているのが確認できます。
 
 <figure>
-<img src="{{ site.baseurl }}/media/post/tex-input-external-commands.png" width="200" />
+<img src="{{ site.baseurl }}/media/post/tex-input-external-commands.png" />
 <figcaption>Rubyの結果がTeXに埋め込まれている様子</figcaption>
 </figure>
