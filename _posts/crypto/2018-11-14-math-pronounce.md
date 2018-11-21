@@ -118,3 +118,14 @@ The pronunciations of mathematical symbols are given in the list below.
 
 記号を描くと似ている記号とそのLaTeXコマンドを表示するツール
 [http://detexify.kirelabs.org/classify.html](http://detexify.kirelabs.org/classify.html)
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+    "HTML-CSS": {
+      fonts: ["TeX", "Gyre-Pagella"]
+    },
+  });
+</script>
