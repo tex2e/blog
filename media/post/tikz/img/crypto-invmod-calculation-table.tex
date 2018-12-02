@@ -1,0 +1,71 @@
+
+\documentclass[dvipdfmx]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext, newtxmath}
+
+\usepackage{tikz} % xcolor -> graphicx -> tikz
+% \usetikzlibrary{fit}
+% calc, positioning, quotes, topaths, scopes, spy
+% matrix, graphs, graph.standard, trees, chains, automata, mindmap, er, calendar
+% shapes.(geometric|symbols|arrows|multipart|callouts|misc)?
+% arrows, patterns, fadings, shadings, shadows, backgrounds
+% circuits.logic.US, circuits.ee.IEC, lindenmayersystems, folding, petri, svg.path
+% decorations.(pathmorphing|pathreplacing|markings|footprints|shapes|text|fractals)?
+% datavisualization, datavisualization.formats.functions
+% intersections, plothandlers, plotmarks, through
+
+% \begin{document}
+%   \begin{tikzpicture}[> = latex]
+%     \tikzset{
+%       int/.style={draw, fill=blue!20, minimum size=2em},
+%       init/.style={pin edge={to-,thin,black}},
+%     }
+%     \node [int, pin={[init]above:$v_0$}] (a) {$\frac{1}{s}$};
+%     \node (b) [left of=a, node distance=2cm, coordinate] {a};
+%     \node [int, pin={[init]above:$p_0$}] (c) [right of=a, node distance=2cm] {$\frac{1}{s}$};
+%     \node [coordinate] (end) [right of=c, node distance=2cm]{};
+%     \path[->] (b) edge node[above] {$a$} (a);
+%     \path[->] (a) edge node[above] {$v$} (c);
+%     \draw[->] (c) edge node[above] {$p$} (end) ;
+%
+%   \end{tikzpicture}
+% \end{document}
+
+\usepackage{xcolor}
+
+\begin{document}
+  \small
+  \scalebox{0.8}{
+  \begin{minipage}{0.35\hsize}
+    \begin{table}
+      \centering
+      % \caption
+      {$\mathbb{Z}/4\mathbb{Z}$の乗算表}
+      \begin{tabular}{c|ccccc}
+        $\times$ & 0 & 1 & 2 & 3 \\
+        \hline
+        0        & 0 & 0 & 0 & 0 \\
+        1        & 0 & {\color{red}1} & 2 & 3 \\
+        2        & 0 & 2 & 0 & 2 \\
+        3        & 0 & 3 & 2 & {\color{red}1} \\
+      \end{tabular}
+    \end{table}
+  \end{minipage}
+  \begin{minipage}{0.35\hsize}
+    \begin{table}
+      \centering
+      % \caption
+      {$\mathbb{Z}/5\mathbb{Z}$の乗算表}
+      \begin{tabular}{c|ccccc}
+        $\times$ & 0 & 1 & 2 & 3 & 4 \\
+        \hline
+        0        & 0 & 0 & 0 & 0 & 0 \\
+        1        & 0 & {\color{red}1} & 2 & 3 & 4 \\
+        2        & 0 & 2 & 4 & {\color{red}1} & 3 \\
+        3        & 0 & 3 & {\color{red}1} & 4 & 2 \\
+        4        & 0 & 4 & 3 & 2 & {\color{red}1} \\
+      \end{tabular}
+    \end{table}
+  \end{minipage}
+  }
+\end{document}
