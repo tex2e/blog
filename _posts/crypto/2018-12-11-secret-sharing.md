@@ -29,7 +29,7 @@ published:     true
 
 みなさんは DNSSEC のルートサーバの秘密鍵は誰が管理しているかご存知ですか？
 実は、世界中にいる7人が秘密鍵の一部分を持っていて、その内の5つが集まると秘密鍵を復元できる仕組みになっています[^1] [^2]。
-一般的に、情報を $n$ 個に分割し、そのうちの $k$ 個を集まると復元できる秘密分散法を $(k,n)$ 閾値法と呼びます。
+一般的に、情報を $n$ 個に分割し、そのうちの $k$ 個が集まると復元できる秘密分散法を $(k,n)$ 閾値法と呼びます。
 
 [^1]: [DNSSEC Root Key Split Among Seven People](https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html)
 [^2]: [DNSSEC KEY SIGNING PROCESS](http://www.cdns.net/dnssec.html#signing)
