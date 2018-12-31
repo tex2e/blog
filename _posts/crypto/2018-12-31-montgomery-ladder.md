@@ -52,7 +52,7 @@ $$
 
 [^1]: [Modular exponentiation (Wikipedia)](https://en.wikipedia.org/wiki/Modular_exponentiation)
 [^squaring1]: [Basic method -- Exponentiation by squaring (Wikipedia)](https://en.wikipedia.org/wiki/Exponentiation_by_squaring#Basic_method)
-[^IPUSIRON]: IPUSIRON『暗号技術のすべて』翔泳社 2018, p278 高速べき乗剰余計算
+[^IPUSIRON]: IPUSIRON『暗号技術のすべて』翔泳社 2018, p.278 高速べき乗剰余計算
 
 ```python
 def binary(n):
