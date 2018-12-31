@@ -51,7 +51,7 @@ $$
 以下は $a^x \mod{n}$ をバイナリ法によって計算するプログラムです。
 
 [^1]: [Modular exponentiation (Wikipedia)](https://en.wikipedia.org/wiki/Modular_exponentiation)
-[^squaring1]: [Basic method -- Exponentiation by squaring](https://en.wikipedia.org/wiki/Exponentiation_by_squaring#Basic_method)
+[^squaring1]: [Basic method -- Exponentiation by squaring (Wikipedia)](https://en.wikipedia.org/wiki/Exponentiation_by_squaring#Basic_method)
 [^IPUSIRON]: IPUSIRON『暗号技術のすべて』翔泳社 2018, p278 高速べき乗剰余計算
 
 ```python
@@ -83,7 +83,7 @@ $x$ の値によって出力までの処理時間が変わるということは�
 モンゴメリ法はサイドチャネル攻撃に強いので、暗号化・復号アルゴリズムの一部として使えます。
 以下は $a^x \mod{n}$ をモンゴメリ冪乗法によって計算するプログラムです。
 
-[^squaring2]: [Montgomery's ladder technique -- Exponentiation by squaring](https://en.wikipedia.org/wiki/Exponentiation_by_squaring#Montgomery's_ladder_technique)
+[^squaring2]: [Montgomery's ladder technique -- Exponentiation by squaring (Wikipedia)](https://en.wikipedia.org/wiki/Exponentiation_by_squaring#Montgomery's_ladder_technique)
 [^2]: [モンゴメリ乗算 (Wikipedia)](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%A1%E3%83%AA%E4%B9%97%E7%AE%97)
 [^3]: [The Montgomery Powering Ladder](https://cr.yp.to/bib/2003/joye-ladder.pdf)
 
@@ -115,4 +115,4 @@ Pythonのpow（冪剰余）の実装はどうなっているのか確認した�
 代わりに、Pythonの暗号ライブラリ「pycryptodome」がビルドイン関数 pow を使っているか調べたところ、ビルドイン関数 pow を使う代わりに、C言語でモンゴメリ乗算を実装してその上でモンゴメリ冪剰余を実装しているので[^monty_pow]、おそらくビルドイン関数 pow はバイナリ法か何かのサイドチャネル攻撃に弱いアルゴリズムで実装されている可能性が高いと思われます。
 なので、暗号の本番環境でPythonのpow関数を使うのは、サイドチャネル攻撃の危険があると思われるので注意が必要です。
 
-[^monty_pow]: [monty_pow -- Legrandin/pycryptodome](https://github.com/Legrandin/pycryptodome/blob/d13e46b02d/src/montgomery.c#L412-L510)
+[^monty_pow]: [monty_pow -- Legrandin/pycryptodome (GitHub)](https://github.com/Legrandin/pycryptodome/blob/d13e46b02d/src/montgomery.c#L412-L510)
