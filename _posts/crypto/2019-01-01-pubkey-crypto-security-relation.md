@@ -56,7 +56,7 @@ published:     true
 図の矢印は、例えば $A \Rightarrow B$ のとき、$A$の安全性を満たせば$B$の安全性も満たすことを示しています。
 
 <figure>
-<img src="{{ site.baseurl }}/media/post/tikz/img/crypto-asym-security-relation.png" />
+<img src="{{ site.baseurl }}/media/post/tikz/img/crypto-security-relation.png" />
 <figcaption>公開鍵暗号の安全性の関係</figcaption>
 </figure>
 
