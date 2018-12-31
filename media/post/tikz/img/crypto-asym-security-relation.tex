@@ -1,0 +1,76 @@
+
+\documentclass[dvipdfmx]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext, newtxmath}
+
+\usepackage{tikz} % xcolor -> graphicx -> tikz
+% \usetikzlibrary{fit}
+% calc, positioning, quotes, topaths, scopes, spy
+% matrix, graphs, graph.standard, trees, chains, automata, mindmap, er, calendar
+% shapes.(geometric|symbols|arrows|multipart|callouts|misc)?
+% arrows, patterns, fadings, shadings, shadows, backgrounds
+% circuits.logic.US, circuits.ee.IEC, lindenmayersystems, folding, petri, svg.path
+% decorations.(pathmorphing|pathreplacing|markings|footprints|shapes|text|fractals)?
+% datavisualization, datavisualization.formats.functions
+% intersections, plothandlers, plotmarks, through
+\usetikzlibrary{arrows}
+\usetikzlibrary{fit}
+\usetikzlibrary{backgrounds}
+
+\begin{document}
+  \begin{tikzpicture}[> = latex]
+    \tikzset{
+      weak_sec/.style={fill=green!20},
+      minimal_sec/.style={fill=blue!20},
+      strong_sec/.style={fill=yellow!20},
+      my_arrow/.style={double, double equal sign distance, -implies},
+    }
+
+    \node (OW-CPA)   [node distance=2.5cm] {OW-CPA};
+    \node (IND-CPA)  [node distance=2.5cm, right of=OW-CPA] {IND-CPA};
+    \node (NM-CPA)   [node distance=2.5cm, right of=IND-CPA] {NM-CPA};
+    \node (OW-CCA1)  [node distance=1.0cm, below of=OW-CPA] {OW-CCA1};
+    \node (IND-CCA1) [node distance=2.5cm, right of=OW-CCA1] {IND-CCA1};
+    \node (NM-CCA1)  [node distance=2.5cm, right of=IND-CCA1] {NM-CCA1};
+    \node (OW-CCA2)  [node distance=1.0cm, below of=OW-CCA1] {OW-CCA2};
+    \node (IND-CCA2) [node distance=2.5cm, right of=OW-CCA2] {IND-CCA2};
+    \node (NM-CCA2)  [node distance=2.5cm, right of=IND-CCA2] {NM-CCA2};
+
+    \node (left1) [node distance=2.8cm, left of=OW-CPA] {選択平文攻撃};
+    \node (left2) [node distance=2.8cm, left of=OW-CCA1] {選択暗号文攻撃};
+    \node (left3) [node distance=2.8cm, left of=OW-CCA2] {適応的選択暗号文攻撃};
+    \node [node distance=0.4cm, below of=left1] {(CPA)};
+    \node [node distance=0.4cm, below of=left2] {(CCA1)};
+    \node [node distance=0.4cm, below of=left3] {(CCA2)};
+
+    \node (above1) [node distance=1.0cm, above of=OW-CPA] {一方向性};
+    \node (above2) [node distance=1.0cm, above of=IND-CPA] {強秘匿性};
+    \node (above3) [node distance=1.0cm, above of=NM-CPA] {頑強性};
+    \node [node distance=0.4cm, below of=above1] {(OW)};
+    \node [node distance=0.4cm, below of=above2] {(IND)};
+    \node [node distance=0.4cm, below of=above3] {(NM)};
+
+    \draw[->] (left1) ++(-2.2,0) node [rotate=90, right] {弱} --
+      node [rotate=90, above] {攻撃モデル} ++(0,-2.2) node [rotate=90, left] {強};
+    \draw[->] (above1) ++(-0.5,0.7) node [left] {易} --
+      node [above] {解読モデル} ++(6,0) node [right] {難};
+
+    \begin{scope}[on background layer]
+      \node[fit=(IND-CCA2)(NM-CCA2), strong_sec, label=below:{Strong Security}] {};
+    \end{scope}
+
+    \draw[->, my_arrow] (IND-CPA) -- (OW-CPA);
+    \draw[->, my_arrow] (NM-CPA) -- (IND-CPA);
+    \draw[->, my_arrow] (OW-CCA1) -- (OW-CPA);
+    \draw[->, my_arrow] (OW-CCA1) -- (IND-CCA1);
+    \draw[->, my_arrow] (IND-CCA1) -- (IND-CPA);
+    \draw[->, my_arrow] (NM-CCA1) -- (IND-CCA1);
+    \draw[->, my_arrow] (NM-CCA1) -- (NM-CPA);
+    \draw[->, my_arrow] (OW-CCA2) -- (OW-CCA1);
+    \draw[->, my_arrow] (IND-CCA2) -- (OW-CCA2);
+    \draw[->, my_arrow] (IND-CCA2) -- (IND-CCA1);
+    \draw[->, my_arrow] (NM-CCA2) -- (NM-CCA1);
+    \draw[->, my_arrow, implies-implies] (IND-CCA2) -- (NM-CCA2);
+
+  \end{tikzpicture}
+\end{document}
