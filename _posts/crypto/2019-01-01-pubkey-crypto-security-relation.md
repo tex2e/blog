@@ -2,7 +2,7 @@
 layout:        post
 title:         "公開鍵暗号の安全性レベル"
 menutitle:     "公開鍵暗号の安全性レベル（IND-CCA2など）"
-date:          2018-01-01
+date:          2019-01-01
 tags:          Crypto
 category:      Crypto
 author:        tex2e

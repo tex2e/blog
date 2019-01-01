@@ -11,10 +11,13 @@
 }
 
 .single-post {
-    .post-content img, .post-title , .post-meta {
-        // max-width: 700px;
+    .post-content img {
         max-width: 600px;
+        margin: auto;
+    }
+    .post-title , .post-meta {
         // width: 100%;
+        max-width: 700px;
         margin: auto;
     }
 
