@@ -12,7 +12,7 @@ layout:        post
 title:         "This_is_Awesome"
 menutitle:     "This_is_Awesome"
 date:          $(date +%Y-%m-%d)
-tags:          Programming Language Foo_Bar
+tags:          Foo_Bar
 category:      Foo_Bar
 author:        tex2e
 cover:         /assets/cover1.jpg
