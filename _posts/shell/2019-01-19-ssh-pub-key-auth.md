@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "sshで公開鍵認証"
-menutitle:     "sshで公開鍵認証"
+title:         "SSHで公開鍵認証"
+menutitle:     "SSHで公開鍵認証"
 date:          2019-01-19
 tags:          Shell
 category:      Shell
