@@ -227,7 +227,7 @@ def combine(shares):
     return secret
 
 
-secret = recover_secret(shares)
+secret = combine(shares)
 
 print(secret)
 # => 7508744586914983219
