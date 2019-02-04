@@ -50,11 +50,13 @@ $ ssh-keygen -t rsa -f ~/.ssh/local_rsa
 生成した公開鍵をリモートの ~/.ssh/authorized_keys に追加する。
 ディレクトリの作成やパーミッションの設定なども行う。
 
+#### 選択肢A）コマンド直打ち
+
 ```
 $ cat ~/.ssh/local_rsa.pub | ssh ホスト名 'mkdir -p ~/.ssh; chmod 700 ~/.ssh; cat >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys'
 ```
 
-### ssh-copy-idコマンドでサーバに公開鍵の登録
+#### 選択肢B) ssh-copy-idコマンド
 
 ローカルにある鍵を指定すると、
 リモートで ~/.ssh/authorized_keys の作成やパーミッションを適切に設定してくれる。
