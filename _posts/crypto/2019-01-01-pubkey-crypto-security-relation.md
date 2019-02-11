@@ -12,15 +12,6 @@ comments:      true
 published:     true
 ---
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-    "HTML-CSS": {
-      fonts: ["TeX", "Gyre-Pagella"]
-    },
-  });
-</script>
-
 公開鍵暗号の安全性のレベルは、「攻撃モデル」と「解読モデル」の組み合わせで決定されます[^IPUSIRON]。
 
 #### 攻撃モデル

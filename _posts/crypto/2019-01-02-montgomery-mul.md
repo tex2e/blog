@@ -12,19 +12,11 @@ comments:      true
 published:     true
 ---
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-    "HTML-CSS": {
-      fonts: ["TeX", "Gyre-Pagella"]
-    },
-  });
-</script>
+
+モンゴメリ乗算（Montgomery modular multiplication）とは、乗算剰余計算 $a \times b \mod{N}$ において剰余を求めるときの除算の回数を減らして処理の速度を早くしようというアルゴリズムで[^montgomery]、サイドチャネル攻撃に対しても強いので暗号理論の分野でも重要なアルゴリズムです[^side_channel_attacks]。
 $$
 \def\mod{ {\;\mathrm{mod}\;} }
 $$
-
-モンゴメリ乗算（Montgomery modular multiplication）とは、乗算剰余計算 $a \times b \mod{N}$ において剰余を求めるときの除算の回数を減らして処理の速度を早くしようというアルゴリズムで[^montgomery]、サイドチャネル攻撃に対しても強いので暗号理論の分野でも重要なアルゴリズムです[^side_channel_attacks]。
 
 [^montgomery]: [モンゴメリ乗算 (Wikipedia)](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%A1%E3%83%AA%E4%B9%97%E7%AE%97)
 [^side_channel_attacks]: [Side channel attacks -- Montgomery modular multiplication (Wikipedia)](https://en.wikipedia.org/wiki/Montgomery_modular_multiplication#Side_channel_attacks)

@@ -12,15 +12,6 @@ comments:      true
 published:     true
 ---
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-    "HTML-CSS": {
-      fonts: ["TeX", "Gyre-Pagella"]
-    },
-  });
-</script>
-
 サイドチャネル攻撃に強くて高速冪剰余計算ができる、モンゴメリの冪乗法（Montgomery Powering Ladder）について、と Python の pow 関数の使用に対する注意喚起。
 $$\def\mod{ {\;\mathrm{mod}\;} }$$
 

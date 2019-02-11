@@ -12,15 +12,6 @@ comments:      true
 published:     true
 ---
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-    "HTML-CSS": {
-      fonts: ["TeX", "Gyre-Pagella"]
-    },
-  });
-</script>
-
 🎄
 この記事は「[セキュリティキャンプ 修了生進捗 Advent Calendar 2018](https://adventar.org/calendars/3191)」の12日目です
 🎄
