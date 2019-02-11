@@ -4,10 +4,10 @@ title:         "RailsをHerokuにpushするときにsqlite3でエラーが起こ
 menutitle:     "RailsをHerokuにpushするときにsqlite3でエラーが起こる"
 date:          2016-04-12
 tags:          Ruby on Rails
-category:      Rails
+category:      Ruby
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /rails/rails-on-heroku
 comments:      false
 published:     true
 ---
@@ -42,7 +42,7 @@ RailsをHerokuにpushする際に、gemfileにsqlite3を入れているとpush�
     remote:        Make sure that `gem install sqlite3 -v '1.3.11'` succeeds before bundling.
     remote:  !
     remote:  !     Failed to install gems via Bundler.
-    remote:  !     
+    remote:  !
     remote:  !     Detected sqlite3 gem which is not supported on Heroku.
     remote:  !     https://devcenter.heroku.com/articles/sqlite3
     remote:  !
