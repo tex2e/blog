@@ -58,8 +58,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically（話）
-| すなわち | namely, in other words
+| つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically（話）, in a nutshell（話）
+| すなわち | namely, in other words, to wit
 | より正確に言えば | more precisely, namely, or rather
 | 正確ではないですが | "not precisely, but"
 | 言い換えれば | that is, or, in other words, i.e., I mean, this means
@@ -69,6 +69,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 一般的に | generally, usually, most commonly, on average
 | 通常は | usually, generally, normally
 | 規範的に | canonically
+| どちらにせよ | either way, in either case
 
 
 目的
@@ -123,7 +124,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| さて・ところで | well（話）, now, now that, by the way
+| さて・ところで | well（話）, now, now that, by the way, in the meantime
 | とにかく | anyway, at any rate, in any case, in any event, at all events
 | 〜と言えば | speaking of, as for, as to, about
 
@@ -148,6 +149,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | :---
 | もし〜ならば | if, in the event that/of
 | もし〜でなければ | unless
+| 〜とすれば・〜と仮定して | assuming (that), providing (that), provided (that), given (that), as long as
 | 〜になるという条件で | providing, provided that
 | 〜の条件でのみ | only if
 | 〜の場合を除いて | except if, unless
@@ -167,7 +169,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜するまで | till, until
 | 〜するまでには | by the time ~
 | 〜して以来 | since, ever since
-| 〜している間 | while, meanwhile, whilst
+| 〜している間 | while, meanwhile, in the meantime, whilst
+| しばらくは | for the meantime
 | 今では | now, today
 | 現在 | now, today, currently, at present, presently
 | 最近では | these days, recently, nowadays
@@ -230,6 +233,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 現実的に言えば | practically speaking
 | 統計的に言えば | statistically speaking
 | 技術的に言えば | technically speaking
+| 大まかに言えば | roughly speaking
 | もともと | originally
 | 基本的には | basically, essentially
 | 〜の限りでは | as far as
@@ -238,7 +242,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 大まじめに | in all seriousness
 | 〜しないように | lest, for fear that
 | いったん〜すると | once
-| ただし・ただ〜なので（できない）| only <reason>
+| ただし・ただ〜なので（できない）| only *reason*
 | いつものように | as always
 | 一見すると〜 | at a glance
 | ある意味で | in a way, in a sense, in the way, in the sense
@@ -257,7 +261,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 実験的に・経験的に | empirically
 | 皮肉をこめて | sarcastically
 | 個人的には | personally
-| 意図的に | intentionally, by intention
+| 意図的に | intentionally, by intention, purposefully
 | 現状では | as it stands, as things stands
 | はるかに、圧倒的に | by far
 | ありがたいことに | thankfully
@@ -269,6 +273,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | デフォルトでは | by default
 | オプションで | optionally
 | 便宜上 | for convenience
+| 簡単にするために | for simplicity
 | 前者は | for the former
 | 後者は | for the latter
 | 原則として | in principle
