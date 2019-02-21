@@ -84,9 +84,9 @@ $p$ を法とする平方剰余の判定はより高速化することができ�
     $$
 
     $a$ は平方剰余で $a^{\frac{p - 1}{2}} \equiv 1 \pmod{p}$ を満たすので、
-    結果的に式($\ref{2}$)は $1 \cdot a \pmod{p}$ となる。
+    式($\ref{2}$)は $1 \cdot a \pmod{p}$ となる。
     よって $a$ の $p$ を法とする平方剰余は $\pm a^{\frac{p + 1}{4}}$ と求まる。
-    したがって、平方剰余問題では式($\ref{3}$)を使うことができる。
+    したがって、平方剰余問題は式($\ref{3}$)で表される。
 
     $$
     a^{\frac{p+1}{4}} \equiv 1 \pmod{p} \;\;\;\;\;\;\;\; \text{where} \;\; p \equiv 3 \pmod{4}
@@ -98,7 +98,7 @@ $p$ を法とする平方剰余の判定はより高速化することができ�
 ```python
 def quadratic_residue(a, p):
     if p % 4 == 3:
-        return pow(a, (p + 1) // 4, p)
+        return pow(a, (p + 1) // 4, p) == 1
     return pow(a, (p - 1) // 2, p) == 1
 ```
 
