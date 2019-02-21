@@ -66,9 +66,44 @@ QR(9, 11)? = True      ... 3^2 ≡ 9 (mod 11)
 QR(10, 11)? = False
 ```
 
+さらに、素数 $p \equiv 3 \pmod{4}$ の場合、
+$p$ を法とする平方剰余の判定はより高速化することができます。
+具体的には指数部の値を先ほど説明したのより1/2にすることができます[^3mod4]。
 
+- **オイラーの規準** ($p \equiv 3 \pmod{4}$ のとき)
+
+    素数 $p \equiv 3 \pmod{4}$ のとき、$p+1$ は 4 で割り切れるので、
+    $a$ の $p$ を法とする平方剰余を求めるとき、式($\ref{2}$)と変形できる。
+
+    $$
+    \left( \pm a^{\frac{p + 1}{4}} \right)^2
+    \equiv a^{\frac{p + 1}{2}}
+    \equiv a^{\frac{p - 1}{2} + 1}
+    \equiv a^{\frac{p - 1}{2}} \cdot a \pmod{p}
+    \tag{2}\label{2}
+    $$
+
+    $a$ は平方剰余で $a^{\frac{p - 1}{2}} \equiv 1 \pmod{p}$ を満たすので、
+    結果的に式($\ref{2}$)は $1 \cdot a \pmod{p}$ となる。
+    よって $a$ の $p$ を法とする平方剰余は $\pm a^{\frac{p + 1}{4}}$ と求まる。
+    したがって、平方剰余問題では式($\ref{3}$)を使うことができる。
+
+    $$
+    a^{\frac{p+1}{4}} \equiv 1 \pmod{p} \;\;\;\;\;\;\;\; \text{where} \;\; p \equiv 3 \pmod{4}
+    \tag{3}\label{3}
+    $$
+
+これをPythonの実装に加えると次のようになります。
+
+```python
+def quadratic_residue(a, p):
+    if p % 4 == 3:
+        return pow(a, (p + 1) // 4, p)
+    return pow(a, (p - 1) // 2, p) == 1
+```
 
 
 
 [^QR]: [Quadratic residue -- Wikipedia](https://en.wikipedia.org/wiki/Quadratic_residue)
 [^Euler_criterion]: [Euler's criterion -- Wikipedia](https://en.wikipedia.org/wiki/Euler%27s_criterion)
+[^3mod4]: [Significance of 3mod4 in squares and square roots mod n? -- StackExchange](https://crypto.stackexchange.com/questions/20993/significance-of-3mod4-in-squares-and-square-roots-mod-n)
