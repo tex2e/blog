@@ -124,13 +124,19 @@ def calc_y(z, p):
     return res % p, -res % p
 
 p = 11
+points = []
 for x in range(p):
     z = f(x, p)
     if quadratic_residue(z, p):
         y = calc_y(z, p)
         print('x = %2d, z = %d, QR(%2d, 11)? = True, y = %s' % (x, z, x, y))
+        points.append((x, y[0]))
+        points.append((x, y[1]))
     else:
         print('x = %2d, z = %d, QR(%2d, 11)? = False' % (x, z, x))
+
+print("points:")
+print(sorted(points))
 ```
 
 結果は以下のようになりました。
@@ -147,6 +153,8 @@ x =  7, z = 4, QR( 7, 11)? = True, y = (9, 2)
 x =  8, z = 9, QR( 8, 11)? = True, y = (3, 8)
 x =  9, z = 7, QR( 9, 11)? = False
 x = 10, z = 4, QR(10, 11)? = True, y = (9, 2)
+points:
+[(2, 4), (2, 7), (3, 5), (3, 6), (5, 2), (5, 9), (7, 2), (7, 9), (8, 3), (8, 8), (10, 2), (10, 9)]
 ```
 
 これにより点集合は無限遠点 $O = \infty$ を加えて、次のようになります。
