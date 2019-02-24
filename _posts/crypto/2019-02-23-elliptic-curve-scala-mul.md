@@ -179,9 +179,14 @@ class PointOverEC:
 
     # 楕円曲線上の点のスカラー倍算
     def __rmul__(self, n):
-        point = self
-        for i in range(1, n):
-            point += self
+        # O(log2(n))
+        tmp = self
+        point = PointOverEC.get_infinity()
+        while n > 0:
+            if n & 1 == 1:
+                point += tmp
+            n >>= 1
+            tmp += tmp
         return point
 
 
