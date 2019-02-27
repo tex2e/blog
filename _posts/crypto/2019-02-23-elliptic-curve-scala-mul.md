@@ -264,8 +264,8 @@ a = PointOverEC(curve,
     y=0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8)
 ```
 
-secp256k1 の Test Vectors を書いてくれている方の記事を参考に secp256k1 のテストをしました。
-k < 20 までは計算結果が合っているのを確認しました。
+secp256k1 の Test Vectors を書いてくれている方の記事を参考に secp256k1 のテストをしました[^testvectors]。
+k < 20 までは計算結果が合っているのを確認しています。
 
 
 ### 余談
@@ -278,3 +278,4 @@ k < 20 までは計算結果が合っているのを確認しました。
 
 [^DRS]: Douglas R. Stinson 著, 櫻井幸一 訳『暗号理論の基礎』共立出版 1996
 [^secp256k1]: [Secp256k1 - Bitcoin Wiki](https://en.bitcoin.it/wiki/Secp256k1)
+[^testvectors]: [secp256k1 Test Vectors | Chuck Batson](https://chuckbatson.wordpress.com/2014/11/26/secp256k1-test-vectors/)
