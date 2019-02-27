@@ -165,7 +165,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜するときに | when, as
 | 〜する前に | before
 | 〜した後に | after
-| その後 | later, afterword, subsequently
+| その後 | later, afterward(s), subsequently
 | 〜するまで | till, until
 | 〜するまでには | by the time ~
 | 〜して以来 | since, ever since
