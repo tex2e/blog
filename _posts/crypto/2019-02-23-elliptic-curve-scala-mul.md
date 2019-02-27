@@ -252,10 +252,25 @@ $$
 p = 2^{256} - 2^{32} - 2^9 - 2^8 - 2^7 - 2^6 - 2^4 - 1,\;\; a = 0,\;\; b = 7
 $$
 
+また、ベースポイントと呼ばれる点 $G$ の座標も示されていて、それを上のプログラムで書き換えると次のようになります。
+
+```python
+curve = EllipticCurveOverFp(
+    a=0x0000000000000000000000000000000000000000000000000000000000000000,
+    b=0x0000000000000000000000000000000000000000000000000000000000000007,
+    p=0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F)
+a = PointOverEC(curve,
+    x=0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798,
+    y=0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8)
+```
+
+secp256k1 の Test Vectors を書いてくれている方の記事を参考に secp256k1 のテストをしました。
+k < 20 までは計算結果が合っているのを確認しました。
+
 
 ### 余談
 
-実装したプログラムの確認には「[Elliptic Curve Calculator](http://www.christelbach.com/ECCalculator.aspx)」を使いました。
+実装したプログラムの確認には「[Elliptic Curve Calculator](http://www.christelbach.com/ECCalculator.aspx)」も使いました。
 ちょっと計算してみたいけどプログラム書くのが面倒なときに重宝すると思います。
 
 
