@@ -278,4 +278,4 @@ k < 20 までは計算結果が合っているのを確認しています。
 
 [^DRS]: Douglas R. Stinson 著, 櫻井幸一 訳『暗号理論の基礎』共立出版 1996
 [^secp256k1]: [Secp256k1 - Bitcoin Wiki](https://en.bitcoin.it/wiki/Secp256k1)
-[^testvectors]: [secp256k1 Test Vectors | Chuck Batson](https://chuckbatson.wordpress.com/2014/11/26/secp256k1-test-vectors/)
+[^testvectors]: [secp256k1 Test Vectors - Chuck Batson](https://chuckbatson.wordpress.com/2014/11/26/secp256k1-test-vectors/)
