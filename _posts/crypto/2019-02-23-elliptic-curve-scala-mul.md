@@ -246,7 +246,7 @@ a = PointOverEC(curve, x=2, y=1)
 
 安全な楕円曲線は位数が大きくなるようにパラメータが決められているので、
 楕円曲線暗号を実装する場合はガイドラインで決められているパラメータを使用するようにしましょう。
-例えば楕円曲線暗号として secp256k1 を使いたい場合は次のようになっています[^secp256k1]。
+例えば楕円曲線暗号として secp256k1 を使いたい場合は次のようになっています[^secp256k1] [^sec2]。
 
 $$
 p = 2^{256} - 2^{32} - 2^9 - 2^8 - 2^7 - 2^6 - 2^4 - 1,\;\; a = 0,\;\; b = 7
@@ -278,4 +278,5 @@ k < 20 までは計算結果が合っているのを確認しています。
 
 [^DRS]: Douglas R. Stinson 著, 櫻井幸一 訳『暗号理論の基礎』共立出版 1996
 [^secp256k1]: [Secp256k1 - Bitcoin Wiki](https://en.bitcoin.it/wiki/Secp256k1)
+[^sec2]: [SEC 2: Recommended Elliptic Curve Domain Parameters (pdf)](http://www.secg.org/sec2-v2.pdf)
 [^testvectors]: [secp256k1 Test Vectors - Chuck Batson](https://chuckbatson.wordpress.com/2014/11/26/secp256k1-test-vectors/)
