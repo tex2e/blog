@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "レポート提出前に確認する事"
-menutitle:     "レポート提出前に確認する事"
+menutitle:     "レポート提出前に確認する事（自分用）"
 date:          2018-07-08
 tags:          Misc
 category:      Misc
