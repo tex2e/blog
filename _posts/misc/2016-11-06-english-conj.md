@@ -43,13 +43,13 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 
 | :---
 | 〜だから | so, so that, because, since, as, for, on account of, therefore, thus, hence
+| 〜が原因で | for, because of, due to, on account of, owing to, this is caused by ~
+| 〜したので | for doing
 | したがって | consequently, accordingly
-| 〜が原因で | because of, due to, on account of, owing to, this is caused by ~
 | 〜のおかげで | thanks to
 | 〜なので・〜を考えると | with
 | 〜の結果 | as a result (of ~), consequently, accordingly
 | 〜であるにも関わらず | despite, in spite of, for all ~ , with all ~, <br>nevertheless, nonetheless, notwithstanding
-| 〜が原因で | due to A
 | 〜を考慮して | in consideration of, in light of, <br>(take A into account, make allowances for)
 | 〜を考慮すれば | considering
 
