@@ -14,7 +14,7 @@ published:     true
 
 英語の文と文のつなぎの言葉はたくさんあり、
 英語の文章を書くときにどんなものがあったのかいちいち思い出すのも面倒だし、忘れやすいのでメモ。
-ここにメモするのは必ずしも接続詞だけではない。副詞もあれば、熟語もあります。
+ここにメモするのは必ずしも接続詞だけではないです。副詞もあれば、熟語もあります。
 
 どちらかというと書き言葉中心に偏りがちになるかもしれないし、
 分類の仕方がいまいちかもしれませんが、ご留意ください。
@@ -36,18 +36,21 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜と違って | unlike
 | でなければ | otherwise
 | 少なくとも | at least, at the very least
+| 前者は | for the former
+| 後者は | for the latter
 
 
 原因・結果
 ---------------
 
 | :---
-| 〜だから | so, so that, because, since, as, for, on account of, therefore, thus, hence
-| 〜が原因で | for, because of, due to, on account of, owing to, this is caused by ~
+| 〜だから | so, so that, because, since, as, for, on account of, <br>therefore, thus, hence
+| 〜が原因で | for, because of, due to, on account of, owing to, <br>this is caused by ~
 | 〜したので | for doing
 | したがって | consequently, accordingly
 | 〜のおかげで | thanks to
 | 〜なので・〜を考えると | with
+| 〜なので・〜という点で | in that
 | 〜の結果 | as a result (of ~), consequently, accordingly
 | 〜であるにも関わらず | despite, in spite of, for all ~ , with all ~, <br>nevertheless, nonetheless, notwithstanding
 | 〜を考慮して | in consideration of, in light of, <br>(take A into account, make allowances for)
@@ -58,12 +61,12 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| つまり | in short, in sum, in brief, in conclusion, in summary, to summarize, i.e., basically（話）, in a nutshell（話）
+| つまり | in short, in sum, in brief, in conclusion, in summary, <br>to summarize, i.e., basically（話）, in a nutshell（話）
 | すなわち | namely, in other words, to wit
 | より正確に言えば | more precisely, namely, or rather
 | 正確ではないですが | "not precisely, but"
 | 言い換えれば | that is, or, in other words, i.e., I mean, this means
-| 概して | generally, in general, generally speaking, overall, all in all, on/as the whole, altogether, by and large（話）
+| 概して | generally, in general, generally speaking, overall, all in all, <br>on/as the whole, altogether, by and large（話）
 | 結局 | after all, in the end, eventually, in the event, finally, lastly, <br>at the end of the day（話）
 | やっと | at last, at length, eventually, finally
 | 一般的に | generally, usually, most commonly, on average
@@ -85,17 +88,17 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 
 | :---
 | そして | and, then
-| そのうえ〜 | also, in addition, additionally, besides, plus, furthermore, moreover, over and above, as well（話）
-| 〜に加えて | apart from, aside from, as well as, not only/merely, along with, other than
-| 〜だけでなく〜も | not only/merely...but also
-| 例えば | such as, like, including, for example, for instance, e.g., :(colon), --(dash)
+| そのうえ〜 | also, in addition, additionally, besides, plus, furthermore, <br>moreover, over and above, as well（話）
+| 〜に加えて | apart from, aside from, as well as, not only/merely, along with, <br>other than
+| 〜だけでなく〜も | not only/merely ... but also
+| 例えば | such as, like, including, for example, for instance, <br>e.g., : (*colon*), --- (*dash*)
 | 具体的にいうと | concretely, specifically
 | （例えば）〜のように | as in
 | とりわけ | especially, specially, specifically, particularly, in particular, not least
 | 代わりに | instead, instead of, alternatively, in place of, in lieu of
 | 〜を除いて | except, but, apart from, aside from, other than
 | 〜は別として | apart from, aside from
-| 〜については・〜に関して | about, on, as for, as to, with regard to, in regard to, as regards, <br>regarding, concerning, relating to, in terms of, with respect to, -wise（話）
+| 〜については・<br>〜に関して | about, on, as for, as to, with regard to, in regard to, <br>as regards, regarding, concerning, relating to, in terms of, <br>with respect to, -wise（話）
 | 〜と言うよりむしろ | rather, or rather
 | 後から考えれば | in/with hindsight
 | この場合は | in this case, in some cases, in those cases
@@ -112,7 +115,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 初めは | initially
 | 最後に | finally, lastly, in conclusion
 | 留意すべきことは | note that, keep in mind that, nota bene, N.B.
-| 〜で説明されている通り | as described/shown above/below, as I said before/earlier, as seen earlier,
+| 〜で説明されている通り | as described/shown above/below, as I said before/earlier, <br>as seen earlier,
 | 〜によれば | according to
 | 私の意見では | in my opinion, in my book（話）
 | ここでは | here
@@ -125,6 +128,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 
 | :---
 | さて・ところで | well（話）, now, now that, by the way, in the meantime
+| ついでに・ところで | incidentally
 | とにかく | anyway, at any rate, in any case, in any event, at all events
 | 〜と言えば | speaking of, as for, as to, about
 
@@ -149,7 +153,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | :---
 | もし〜ならば | if, in the event that/of
 | もし〜でなければ | unless
-| 〜とすれば・〜と仮定して | assuming (that), providing (that), provided (that), given (that), as long as
+| 〜とすれば・〜と仮定して | assuming (that), providing (that), provided (that), <br>given (that), as long as
 | 〜になるという条件で | providing, provided that
 | 〜の条件でのみ | only if
 | 〜の場合を除いて | except if, unless
@@ -170,6 +174,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜するまでには | by the time ~
 | 〜して以来 | since, ever since
 | 〜している間 | while, meanwhile, in the meantime, whilst
+| 〜している間はずっと | all the time
 | しばらくは | for the meantime
 | 今では | now, today
 | 現在 | now, today, currently, at present, presently
@@ -185,6 +190,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | それまでの間 | in the meantime
 | するにつれて〜 | as（As time passed, ~）
 | たまに | occasionally
+| よくあることだが | as is often the case
+| 衝動的に | impulsively, on impulse, on the spur of the moment
 
 
 推量
@@ -193,7 +200,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | :---
 | 必ず | surely, certainly
 | まず間違いなく | arguably
-| 十中八九 | probably
+| 十中八九 | probably, in all likelihood
 | おそらく | maybe, perhaps, apparently, very/more/most likely, seemingly, <br>supposedly, presumably
 | ひょっとすると | possibly
 
@@ -237,8 +244,11 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | もともと | originally
 | 基本的には | basically, essentially
 | 〜の限りでは | as far as
-| 別名 | a.k.a.
+| 別名 | a.k.a., AKA
+| 私が知る限りでは | as far as I know, AFAIK
+| 私見を申し上げますと | in my humble opinion, IMHO
 | 正直に言うと・実を言えば | to be honest, honestly, truly, really
+| 本当に（心から、純粋に） | genuinely
 | 大まじめに | in all seriousness
 | 〜しないように | lest, for fear that
 | いったん〜すると | once
@@ -247,12 +257,14 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 一見すると〜 | at a glance
 | ある意味で | in a way, in a sense, in the way, in the sense
 | 願わくば | hopefully
+| ありがたいことに | thankfully
 | 幸運にも | fortunately, happily, luckily
 | あいにく | unfortunately, unhappily, sadly
 | この点については | in this regard
 | 慣例によれば | by convention
 | 単に | merely, simply
 | （どんなに良くても）せいぜい | at best
+| 最悪の場合 | at worst, worst case
 | 可能な限り | wherever possible
 | この点において | at this point
 | 歴史的に | historically
@@ -262,11 +274,10 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 皮肉をこめて | sarcastically
 | 個人的には | personally
 | 意図的に | intentionally, by intention, purposefully
+| 意識的に | consciously
+| 潜在的に | subconsciously
 | 現状では | as it stands, as things stands
 | はるかに、圧倒的に | by far
-| ありがたいことに | thankfully
-| 私が知る限りでは | as far as I know, AFAIK
-| 私見を申し上げますと | in my humble opinion, IMHO
 | 長い目で見れば | in the long run
 | 目先の計算では | in the short run
 | なるべく | preferably
@@ -274,11 +285,16 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | オプションで | optionally
 | 便宜上 | for convenience
 | 簡単にするために | for simplicity
-| 前者は | for the former
-| 後者は | for the latter
 | 原則として | in principle
 | 言うまでもなく | needless to say
 | 参考までに言うけど | for what it's worth（話）
+| 当然 | naturally
+| まさか | as if（話）
+| あらかじめ | in advance
+| 考えてみると | come to think of it
+| なぜか | somehow, for some reason（話）
+| このままでは | at this rate
+| 少しずつ | gradually, little by little
 
 
 <br>
