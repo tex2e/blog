@@ -1,18 +1,18 @@
 ---
 layout:        post
-title:         "My Report Check List"
-menutitle:     "My Report Check List"
+title:         "レポート提出前に確認する事"
+menutitle:     "レポート提出前に確認する事"
 date:          2018-07-08
 tags:          Misc
 category:      Misc
 author:        tex2e
 cover:         /assets/cover2.jpg
 redirect_from:
-comments:      false
+comments:      true
 published:     true
 ---
 
-今までの経験より
+自分用。今までの経験より
 
 
 ## 図
