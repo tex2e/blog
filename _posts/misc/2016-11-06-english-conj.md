@@ -143,7 +143,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 明らかに | clearly, obviously, certainly, undoubtedly
 | 実際 | actually, realistically, indeed, in fact
 | ところが実際は | as it turns out, as it is
-| 繰り返して言うが | once again
+| 繰り返して言うが | once again, again（話）
 | 最も重要なことに | most importantly
 
 
