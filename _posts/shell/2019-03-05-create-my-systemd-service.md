@@ -124,6 +124,72 @@ WantedBy=multi-user.target
 [CREATING AND MODIFYING SYSTEMD UNIT FILES](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sect-managing_services_with_systemd-unit_files)
 に書かれているので参考までに。
 
+
+### サンプルアプリケーション
+
+ここでは簡単なWebサーバをsystemctlで動かしたいと思います。
+
+まず、ユニットファイル /etc/systemd/system/tinyhttpd.service は次のように定義します。
+
+```
+[Unit]
+Description=Tiny HTTPD
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /usr/local/bin/tinyhttpd.py
+
+[Install]
+WantedBy=multi-user.target
+```
+
+実行するアプリケーション（簡易Webサーバ）のプログラムは /usr/local/bin/tinyhttpd.py に配置して、内容は次のようにしました。
+
+```python
+#!/usr/bin/env python2
+
+import os
+import sys
+import SimpleHTTPServer
+import SocketServer
+
+if __name__ == "__main__":
+    out = sys.stderr
+
+    host = os.getenv("TINYHTTPD_HOST", "")
+    port = os.getenv("TINYHTTPD_PORT", 8000)
+    listen = (str(host), port)
+    httpd = SocketServer.TCPServer(
+        listen,
+        SimpleHTTPServer.SimpleHTTPRequestHandler,
+    )
+
+    out.write("listen: host=%s, port=%s\n" % (host, port))
+    httpd.serve_forever()
+```
+
+systemctlをリロードして、Webサーバを起動します。
+必要に応じて firewall のポート 8000 を開けるか、firewall無効にするなどしてください。
+
+```
+systemctl daemon-reload
+systemctl start tinyhttpd
+```
+
+curlで叩いてレスポンスがあれば成功。
+
+```
+curl localhost:8000
+```
+
+最後にWebサーバの停止。
+
+```
+systemctl stop tinyhttpd
+```
+
+
 ---
 
 [^note1]: ユニットの起動順（After と Before）と依存関係（Wants と Requires）はそれぞれ独立した機能であるが、ほとんどの場合は After と Before で事足りる。
