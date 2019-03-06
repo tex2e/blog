@@ -30,7 +30,7 @@ SSH接続のできるターミナルからWebサーバにアクセスしてベ�
 `/var/lib/git` にしました。
 
 
-```
+```terminal
 [server]$ sudo yum install git
 [server]$ sudo mkdir -p /var/lib/git         # 全てのGitリポジトリは、この下に作成する
 [server]$ cd /var/lib/git
@@ -48,7 +48,7 @@ git init のオプションで shared の値に 0777 とありますが、これ
 余談ですが、毎回 sudo をGitルートディレクトリ下で使いたくない人は
 chown で /var/lib/git の所有者を変えて置くと良いでしょう。
 
-```
+```terminal
 [server]$ sudo chown -R ユーザ名:グループ名 /var/lib/git
 ```
 
@@ -56,14 +56,14 @@ chown で /var/lib/git の所有者を変えて置くと良いでしょう。
 ここではリモート名は「my-web-server」としていますが、Gitサーバーであることが分かればなんでも良いです。
 URLパスの書き方は「ssh://ユーザ名@ホスト名:ボート番号/リポジトリまでのフルパス」となります。
 
-```
+```terminal
 [local]$ git remote add my-web-server ssh://user@hostname:22/var/lib/git/my-repo.git
 [local]$ git push my-web-server master
 ```
 
 git clone などでリポジトリを取ってくるときも同様に書きます。
 
-```
+```terminal
 [local]$ git clone ssh://user@hostname:22/var/lib/git/my-repo.git
 ```
 
@@ -81,7 +81,7 @@ GitWeb とはサーバにある Git サーバーの中身を web で閲覧でき
 gitweb は yum を使って簡単にインストールすることができます。
 また、gitweb を使うためには Apache もインストールしておく必要があります。
 
-```
+```terminal
 [server]$ sudo yum install httpd gitweb
 ```
 
@@ -89,7 +89,7 @@ gitweb は yum を使って簡単にインストールすることができま�
 Apache で http の80番ポートを使えるようにするために、CentOS 7 では firewall-cmd を使います。
 CentOS 6 では iptables を使ってください（ここでは説明しません）。
 
-```
+```terminal
 [server]$ sudo systemctl start httpd.service
 [server]$ sudo firewall-cmd --permanent --zone=public --add-port=80/tcp
 [server]$ sudo firewall-cmd --reload
@@ -99,7 +99,7 @@ GitWebはデフォルトで `/var/lib/git` をGitルートディレクトリに�
 自分の好きな場所にGitルートディレクトリを配置したい場合は、/etc/gitweb.conf を編集します。
 ちなみに、この設定ファイルは perl コードです。
 
-```
+```terminal
 [server]$ sudo yum install vim
 [server]$ sudo vim /etc/gitweb.conf
 
@@ -118,7 +118,7 @@ Web サイトの更新を git push したタイミングで行うには、
 ベアリポジトリとは別にサイト公開用のベアではないリポジトリを配置する必要があります。
 Apache は /var/www/html 以下を表示するので、サイト公開用のリポジトリはそこに配置します。
 
-```
+```terminal
 [server]$ cd /var/www/html
 [server]$ sudo git clone /var/lib/git/my-repo.git
 [server]$ sudo chmod 777 my-repo
@@ -129,7 +129,7 @@ Apache は /var/www/html 以下を表示するので、サイト公開用のリ�
 サイト公開用のベアではないリポジトリから、ベアリポジトリを pull する hook スクリプトを、
 ベアリポジトリの hooks/post-update に書きます。
 
-```
+```terminal
 [server]$ cd /var/lib/git/my-repo.git
 [server]$ cp post-update.sample post-update
 [server]$ vim post-update
@@ -154,7 +154,7 @@ exec git update-server-info
 
 ここまで出来たら、試しにローカル環境で index.html を作成して、push してみましょう。
 
-```
+```terminal
 [local]$ echo "hello, world" > index.html
 [local]$ git add index.html
 [local]$ git commit -m 'create index.html'
@@ -184,7 +184,7 @@ http://hostname/my-repo/.git/ にアクセスすると .git の中身が公開�
 今回は Apache を使っているので、まず .htaccess によるアクセス権の上書きを有効にするために、
 /etc/httpd/conf/httpd.conf を編集します。
 
-```
+```conf
 <Directory "/var/www/html">
     # ...
     Options Indexes FollowSymLinks
@@ -203,13 +203,13 @@ http://hostname/my-repo/.git/ にアクセスすると .git の中身が公開�
 
 編集し終えたら、Apache を再起動しておきます。
 
-```
+```terminal
 [server]$ sudo systemctl restart httpd.service
 ```
 
 次に、ドキュメントルート（/var/www/html）の直下に .htaccess を以下の内容で作成します。
 
-```
+```conf
 RedirectMatch 404 /\.git
 ```
 
@@ -235,7 +235,7 @@ FAQ
 
 #### Q. /var/lib/git のディレクトリがないと言われる
 
-A. なければ自分で作ってください。
+A. なければ自分で作ります。
 Gitルートディレクトリは自分の好きな場所に作れるので、
 ディレクトリの場所とかは自分が分かればどこでも良いです。
 
