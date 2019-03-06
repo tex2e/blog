@@ -242,7 +242,7 @@ Gitルートディレクトリは自分の好きな場所に作れるので、
 #### Q. 他の人が push すると失敗する
 
 A. ディレクトリの権限を 777 にして、他の人も書き換え可能にします。
-```
+```terminal
 [server]$ cd /var/lib/git/my-repo.git
 [server]$ sudo chmod -R 777 branches hooks info objects refs
 ```
