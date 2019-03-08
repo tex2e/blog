@@ -4,10 +4,10 @@ title:         "SQLite で VARCHAR 型の文字数を制限する方法"
 menutitle:     "SQLite で VARCHAR 型の文字数を制限する方法"
 date:          2016-12-10
 tags:          Database
-category:      DB
+category:      Database
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /db/sqlite-varchar-length
 comments:      false
 published:     true
 ---

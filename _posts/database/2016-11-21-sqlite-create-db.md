@@ -4,10 +4,10 @@ title:         "SQLiteでデーターベースを作る方法"
 menutitle:     "SQLiteでデーターベースを作る方法"
 date:          2016-11-21
 tags:          Database
-category:      DB
+category:      Database
 author:        tex2e
-cover:         /assets/cover1.jpg
-redirect_from:
+cover:         /assets/cover2.jpg
+redirect_from: /db/sqlite-create-db
 comments:      false
 published:     true
 ---
