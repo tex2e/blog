@@ -32,7 +32,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜に反して | contrary to A
 | 一方で・対して | on the other hand/side, on the flip side, while, meanwhile, conversely, whilst
 | 悪い面は | on the downside
-| 同様に | like, as, similarly, similar to, equally, likewise, equally, in the same way
+| 同様に | like, as, similarly, similar to, equally, likewise, equally, in the same way, as with, as is the case with
+| 〜の場合と同様に | as is the case in/for
 | 〜と違って | unlike
 | でなければ | otherwise
 | 少なくとも | at least, at the very least
@@ -51,7 +52,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜のおかげで | thanks to
 | 〜なので・〜を考えると | with
 | 〜なので・〜という点で | in that
-| 〜の結果 | as a result (of ~), consequently, accordingly
+| 〜の結果 | as a result (of ~), consequently, accordingly, in doing so
 | 〜であるにも関わらず | despite, in spite of, for all ~ , with all ~, <br>nevertheless, nonetheless, notwithstanding
 | 〜を考慮して | in consideration of, in light of, <br>(take A into account, make allowances for)
 | 〜を考慮すれば | considering
@@ -89,7 +90,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | :---
 | そして | and, then
 | そのうえ〜 | also, in addition, additionally, besides, plus, furthermore, <br>moreover, over and above, as well（話）
-| 〜に加えて | apart from, aside from, as well as, not only/merely, along with, <br>other than
+| 〜に加えて | apart from, aside from, as well as, not only/merely, along with, <br>other than, and again, again
+| 〜に加えて・一緒に | along with
 | 〜だけでなく〜も | not only/merely ... but also
 | 例えば | such as, like, including, for example, for instance, <br>e.g., : (*colon*), --- (*dash*)
 | 具体的にいうと | concretely, specifically
@@ -111,7 +113,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| 初めに | (at) first, firstly, to being with, to start with, primarily, <br>first of all（話）, first things first（話）, foremost
+| 初めに | (at) first, firstly, to being with, to start with, primarily, <br>in the first place, first of all（話）, first things first（話）, foremost
 | 初めは | initially
 | 最後に | finally, lastly, in conclusion
 | 留意すべきことは | note that, keep in mind that, nota bene, N.B.
@@ -141,7 +143,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 確かに | certainly, surely, true, admittedly
 | 絶対に | absolutely, definitely（話）, positively（話）, hell（話）
 | 明らかに | clearly, obviously, certainly, undoubtedly
-| 実際 | actually, realistically, indeed, in fact
+| 実際 | actually, realistically, indeed, in fact, in point of fact, in reality
 | ところが実際は | as it turns out, as it is
 | 繰り返して言うが | once again, again（話）
 | 最も重要なことに | most importantly
@@ -166,6 +168,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
+| いつ | when, at which time, at what time
 | 〜するときに | when, as
 | 〜する前に | before
 | 〜した後に | after
@@ -188,6 +191,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately, right away, (as soon as ~)
 | それまでの間 | in the meantime
+| あっという間に | in no time
 | するにつれて〜 | as（As time passed, ~）
 | たまに | occasionally
 | よくあることだが | as is often the case
@@ -247,6 +251,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 別名 | a.k.a., AKA
 | 私が知る限りでは | as far as I know, AFAIK
 | 私見を申し上げますと | in my humble opinion, IMHO
+| 私の率直な意見では | in my honest opinion
 | 正直に言うと・実を言えば | to be honest, honestly, truly, really
 | 本当に（心から、純粋に） | genuinely
 | 大まじめに | in all seriousness
@@ -295,6 +300,11 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | なぜか | somehow, for some reason（話）
 | このままでは | at this rate
 | 少しずつ | gradually, little by little
+| 当該の | in question
+| うっかり、無意識に | inadvertently
+| 表向きは | ostensibly
+| 私にとって | to me, for me
+
 
 
 <br>
