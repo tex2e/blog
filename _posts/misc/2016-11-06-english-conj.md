@@ -62,16 +62,16 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| つまり | in short, in sum, in brief, in conclusion, in summary, <br>to summarize, i.e., basically（話）, in a nutshell（話）
-| すなわち | namely, in other words, to wit
+| つまり | in short, in sum, in brief, in conclusion, in summary, <br>to summarize, in other words, i.e., basically（話）, in a nutshell（話）
+| すなわち | namely, to wit
 | より正確に言えば | more precisely, namely, or rather
 | 正確ではないですが | "not precisely, but"
 | 言い換えれば | that is, or, in other words, i.e., I mean, this means
 | 概して | generally, in general, generally speaking, overall, all in all, <br>on/as the whole, altogether, by and large（話）
 | 結局 | after all, in the end, eventually, in the event, finally, lastly, <br>at the end of the day（話）
 | やっと | at last, at length, eventually, finally
-| 一般的に | generally, usually, most commonly, on average
-| 通常は | usually, generally, normally
+| 一般的に | in general, generally, usually, most commonly, on average
+| 普通は | usually, normally, commonly
 | 規範的に | canonically
 | どちらにせよ | either way, in either case
 
@@ -101,11 +101,10 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜を除いて | except, but, apart from, aside from, other than
 | 〜は別として | apart from, aside from
 | 〜については・<br>〜に関して | about, on, as for, as to, with regard to, in regard to, <br>as regards, regarding, concerning, relating to, in terms of, <br>with respect to, -wise（話）
+| 〜の観点から | in terms of
 | 〜と言うよりむしろ | rather, or rather
-| 後から考えれば | in/with hindsight
 | この場合は | in this case, in some cases, in those cases
 | 何よりも | above all (things), most of all, first and foremost
-| 〜の観点から | in terms of
 | 主に | mainly, chiefly, mostly, largely, typically, primarily
 
 
@@ -155,9 +154,9 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | :---
 | もし〜ならば | if, in the event that/of
 | もし〜でなければ | unless
-| 〜とすれば・〜と仮定して | assuming (that), providing (that), provided (that), <br>given (that), as long as
+| 〜とすれば・〜と仮定して | assuming (that), providing (that), provided (that), <br>given (that)
 | 〜になるという条件で | providing, provided that
-| 〜の条件でのみ | only if
+| 〜である限り | only if, as long as
 | 〜の場合を除いて | except if, unless
 | 〜の条件なら | only do
 | 場合によっては | in some cases
@@ -190,8 +189,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
 | 〜するとすぐに | directly, immediately, right away, (as soon as ~)
-| それまでの間 | in the meantime
 | あっという間に | in no time
+| それまでの間 | in the meantime
 | するにつれて〜 | as（As time passed, ~）
 | たまに | occasionally
 | よくあることだが | as is often the case
@@ -304,6 +303,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | うっかり、無意識に | inadvertently
 | 表向きは | ostensibly
 | 私にとって | to me, for me
+| 後から考えれば | in/with hindsight
 
 
 
