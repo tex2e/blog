@@ -102,6 +102,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜は別として | apart from, aside from
 | 〜については・<br>〜に関して | about, on, as for, as to, with regard to, in regard to, <br>as regards, regarding, concerning, relating to, in terms of, <br>with respect to, -wise（話）
 | 〜の観点から | in terms of
+| 私の考えでは | in my view
+| 私にとって | to me, for me
 | 〜と言うよりむしろ | rather, or rather
 | この場合は | in this case, in some cases, in those cases
 | 何よりも | above all (things), most of all, first and foremost
@@ -182,13 +184,14 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 現在 | now, today, currently, at present, presently
 | 最近では | these days, recently, nowadays
 | かつては | formerly, in the past
-| 将来 | in the future
+| 将来 | in the future, someday, one day
+| 近い将来 | in the near future, in the not too distant future
 | 今頃はもう | by now（推量の助動詞と共に）
 | 今のところ | for now, for the moment, for the present, for the time being, so far
-| これまで | so far, up to this point, up until this point, thus far
+| これまで | so far, up to now, up to this point, up until this point, thus far
 | 同時に | at the same time, at once, simultaneously with
 | 突然 | suddenly, all of a sudden, all at once, unexpectedly
-| 〜するとすぐに | directly, immediately, right away, (as soon as ~)
+| 〜するとすぐに | directly, immediately, right away, at once, (as soon as ~)
 | あっという間に | in no time
 | それまでの間 | in the meantime
 | するにつれて〜 | as（As time passed, ~）
@@ -302,7 +305,6 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 当該の | in question
 | うっかり、無意識に | inadvertently
 | 表向きは | ostensibly
-| 私にとって | to me, for me
 | 後から考えれば | in/with hindsight
 
 
