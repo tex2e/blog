@@ -26,7 +26,7 @@ nroff -ms input-file | fix.pl > output-file
 
 #### RFCの元となる文書（roff形式）
 
-元となる文書には「[A Standard for the Transmission of IP Datagrams on Avian Carriers（鳥類キャリアによるIPデータグラムの伝送規格） -- RFC 1449](https://tools.ietf.org/rfc/rfc1149.txt)」というエイプリルフールにRFCで発表されたジョーク規格を使います。
+元となる文書には「[A Standard for the Transmission of IP Datagrams on Avian Carriers（鳥類キャリアによるIPデータグラムの伝送規格） -- RFC 1449](https://tools.ietf.org/rfc/rfc1149.txt)」というエイプリルフールにRFCで発表されたジョーク規格を使いました。
 
 input-file
 
