@@ -128,10 +128,10 @@ points = []
 for x in range(p):
     z = f(x, p)
     if quadratic_residue(z, p):
-        y = calc_y(z, p)
-        print('x = %2d, z = %d, QR(%2d, 11)? = True, y = %s' % (x, z, x, y))
-        points.append((x, y[0]))
-        points.append((x, y[1]))
+        y1, y2 = calc_y(z, p)
+        print('x = %2d, z = %d, QR(%2d, 11)? = True, y = %d, %d' % (x, z, x, y1, y2))
+        points.append((x, y1))
+        points.append((x, y2))
     else:
         print('x = %2d, z = %d, QR(%2d, 11)? = False' % (x, z, x))
 
@@ -144,15 +144,15 @@ print(sorted(points))
 ```
 x =  0, z = 6, QR( 0, 11)? = False
 x =  1, z = 8, QR( 1, 11)? = False
-x =  2, z = 5, QR( 2, 11)? = True, y = (4, 7)
-x =  3, z = 3, QR( 3, 11)? = True, y = (5, 6)
+x =  2, z = 5, QR( 2, 11)? = True, y = 4, 7
+x =  3, z = 3, QR( 3, 11)? = True, y = 5, 6
 x =  4, z = 8, QR( 4, 11)? = False
-x =  5, z = 4, QR( 5, 11)? = True, y = (9, 2)
+x =  5, z = 4, QR( 5, 11)? = True, y = 9, 2
 x =  6, z = 8, QR( 6, 11)? = False
-x =  7, z = 4, QR( 7, 11)? = True, y = (9, 2)
-x =  8, z = 9, QR( 8, 11)? = True, y = (3, 8)
+x =  7, z = 4, QR( 7, 11)? = True, y = 9, 2
+x =  8, z = 9, QR( 8, 11)? = True, y = 3, 8
 x =  9, z = 7, QR( 9, 11)? = False
-x = 10, z = 4, QR(10, 11)? = True, y = (9, 2)
+x = 10, z = 4, QR(10, 11)? = True, y = 9, 2
 points:
 [(2, 4), (2, 7), (3, 5), (3, 6), (5, 2), (5, 9), (7, 2), (7, 9), (8, 3), (8, 8), (10, 2), (10, 9)]
 ```
