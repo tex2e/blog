@@ -15,6 +15,7 @@ published:     true
 「センシティブ」とは「微妙で慎重を要するさま」という意味がある。
 センシティブなファイルをアップロードしちゃった！と言ったら、パスワードを含むファイルをアップロードした可能性が高い。
 JPCERT/CCの記事でセンシティブな情報をハードコードしない [^1] とあるように、プログラマが言う「センシティブな情報」は主には**パスワードを含む情報**のことを意味する。
+最近ではハッシュ化したパスワードもセンシティブな情報と言うようになっている [^docker-hub-user-notification]。
 
 この「センシティブな情報」という言葉はプログラマ以外の人には別の意味で捉えられてしまう。
 センシティブな情報という言葉はプライバシー保護の文脈で現れることが多く、例えば病歴や離婚歴、障がい等級などの**社会差別に繋がる情報**のことをセンシティブな情報という。
@@ -31,3 +32,4 @@ JIS Q 15001:2006 個人情報保護マネジメントシステム - 要求事項
 
 [^1]: [センシティブな情報をハードコードしない -- JPCERT/CC](https://www.jpcert.or.jp/java-rules/msc03-j.html)
 [^2]: [JIS Q 15001:2006 個人情報保護マネジメントシステム -- 要求事項](https://kikakurui.com/q/Q15001-2006-01.html)
+[^docker-hub-user-notification]: Docker が不正アクセスを受けたときの記事 [Unauthorized access to Docker Hub database](https://success.docker.com/article/docker-hub-user-notification) では "... sensitive data may have been exposed. Data includes usernames and hashed passwords ..." と書かれており、パスワードはハッシュ化されていてもセンシティブな情報であるという認識があるようだ
