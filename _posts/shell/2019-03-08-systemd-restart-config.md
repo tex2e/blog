@@ -113,7 +113,7 @@ Restartの値は no, on-success, on-failure, on-abnormal, on-watchdog, on-abort,
 
 ### サンプルアプリでプロセス自動再起動
 
-例えば、[以前](https://tex2e.github.io/blog/shell/create-my-systemd-service)作成した簡易Webサーバを例にプロセスの再起動を確認してみたいと思います。
+例えば、[以前]({{ site.baseurl }}/shell/create-my-systemd-service)作成した簡易Webサーバを例にプロセスの再起動を確認してみたいと思います。
 
 まず作成した必要なファイルは以下の通りです。
 再起動は `Restart=always` としています。
