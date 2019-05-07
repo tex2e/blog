@@ -1,5 +1,7 @@
 # Mako's Blog
 
+Mako(tex2e)の技術系ブログです。
+
 [tex2e.github.io/blog/](https://tex2e.github.io/blog/)
 
 - Jekyll Theme: **jekyllDecent**
