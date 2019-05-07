@@ -26,6 +26,12 @@
   <link rel="stylesheet" href="{{ "/css/screen.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/prism.css" | prepend: site.baseurl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+  <!-- fix prism.css -->
+  <style type="text/css">
+    .token.operator {
+      background: none;
+    }
+  </style>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -34,5 +40,17 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-75892425-1', 'auto');
     ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      messageStyle: "none",
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      "HTML-CSS": {
+        fonts: ["TeX", "Gyre-Pagella"],
+        undefinedFamily: "'Raleway', Helvetica, Arial, sans-serif"
+      },
+    });
   </script>
 </head>

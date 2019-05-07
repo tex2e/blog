@@ -7,7 +7,7 @@ tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover2.jpg
-redirect_from:
+redirect_from: /javascript/obfuscattion
 comments:      false
 published:     true
 ---
@@ -341,6 +341,7 @@ g = ("" + "".constructor)[14];
 ```
 
 こんな感じで、文字を作っていくのですが、作れる文字と作れない文字があるので、下にまとめておきます。
+String のところは `""['constructor']`、Math のところは `this['Math']` のように置き換えてください。
 
 ```js
 a = "false"[1]
@@ -349,25 +350,25 @@ c = "[object Object]"[5]
 d = "undefined"[2]
 e = "true"[3]
 f = "undefined"[4]
-g = ("" + String)[14]     // "".constructor === String
-h
+g = ("" + String)[14]     // 'function String() { [native code] }'[14]
+h = ("" + Math)[11]       // '[object Math]'[11]
 i = "undefined"[5]
 j = "[object Object]"[3]
-k
+k = ("" + WeakMap)[12]    // 'function WeakMap() { [native code] }'[12]
 l = "false"[2]
-m = ("" + Number)[11]     // (0).constructor === Number
+m = ("" + Number)[11]     // 'function Number() { [native code] }'[11]
 n = "undefined"[1]
 o = "[object Object]"[1]
-p = ("" + RegExp)[14]     // /$/.constructor === RegExp
+p = ("" + RegExp)[14]     // 'function RegExp() { [native code] }'[14]
 q
 r = "true"[1]
 s = "false"[3]
 t = "true"[0]
 u = "undefined"[0]
-v
-w
-x = ("" + RegExp)[13]     // /$/.constructor === RegExp
-y = ("" + Array)[13]      // [].constructor === Array
+v = ("" + eval)[10]       // 'function eval() { [native code] }'[10]
+w = ("" + DataView)[16]   // 'function DataView() { [native code] }'[16]
+x = ("" + RegExp)[13]     // 'function RegExp() { [native code] }'[13]
+y = ("" + Array)[13]      // 'function Array() { [native code] }'[13]
 z
 ```
 

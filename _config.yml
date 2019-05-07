@@ -25,7 +25,7 @@ kramdown:
     disable: true
 include: ['_pages']
 exclude: [vendor]
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap

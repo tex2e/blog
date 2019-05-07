@@ -3,11 +3,11 @@ layout:        post
 title:         "TeXから外部コマンドを実行する方法"
 menutitle:     "TeXから外部コマンドを実行する方法"
 date:          2016-12-18
-tags:          Programming Language LaTeX
-category:      TeX
+tags:          LaTeX
+category:      LaTeX
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /tex/input-external-commands
 comments:      false
 published:     true
 ---
@@ -55,6 +55,6 @@ platex -shell-escape main.tex
 Rubyのコードは現在時間を返すプログラムなので、正しく埋め込まれているのが確認できます。
 
 <figure>
-<img src="{{ site.baseurl }}/media/post/tex-input-external-commands.png" width="200" />
+<img src="{{ site.baseurl }}/media/post/tex-input-external-commands.png" />
 <figcaption>Rubyの結果がTeXに埋め込まれている様子</figcaption>
 </figure>

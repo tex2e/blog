@@ -154,7 +154,7 @@ class Program {
 ```
 
 
-<a name="auto-implemented-properties）"></a>
+<a name="auto-implemented-properties"></a>
 
 自動実装プロパティ
 ------------------------
