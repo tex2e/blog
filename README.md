@@ -1,5 +1,7 @@
 # Mako's Blog
 
+[tex2e.github.io/blog/](https://tex2e.github.io/blog/)
+
 - Jekyll Theme: **jekyllDecent**
 - syntax highlighter: **prism.js**
 
