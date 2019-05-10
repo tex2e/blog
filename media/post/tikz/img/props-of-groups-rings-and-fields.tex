@@ -1,0 +1,70 @@
+
+\documentclass[dvipdfmx]{standalone}
+\usepackage{plext}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext, newtxmath}
+
+\usepackage{tikz} % xcolor -> graphicx -> tikz
+% \usetikzlibrary{fit}
+% calc, positioning, quotes, topaths, scopes, spy
+% matrix, graphs, graph.standard, trees, chains, automata, mindmap, er, calendar
+% shapes.(geometric|symbols|arrows|multipart|callouts|misc)?
+% arrows, patterns, fadings, shadings, shadows, backgrounds
+% circuits.logic.US, circuits.ee.IEC, lindenmayersystems, folding, petri, svg.path
+% decorations.(pathmorphing|pathreplacing|markings|footprints|shapes|text|fractals)?
+% datavisualization, datavisualization.formats.functions
+% intersections, plothandlers, plotmarks, through
+
+\usepackage{xcolor}
+
+\begin{document}
+  \begin{tikzpicture}[> = latex]
+    \def\horizenLength{11.0cm}
+    \node[right] (A1) at (0,-0.0) { (A1) 加法について閉じている };
+    \node[right] (A2) at (0,-0.5) { (A2) 加法について結合法則が成り立つ };
+    \node[right] (A3) at (0,-1.0) { (A3) 加法について単位元が存在する };
+    \node[right] (A4) at (0,-1.5) { (A4) 加法について逆元が存在する };
+    \draw[dashed]        (0,-2.0) -- +(\horizenLength,0);
+    \node[right] (A5) at (0,-2.5) { (A5) 加法が可換である };
+    \draw[dashed]        (0,-3.0) -- +(\horizenLength,0);
+    \node[right] (M1) at (0,-3.5) { (M1) 乗法について閉じている };
+    \node[right] (M2) at (0,-4.0) { (M2) 乗法について結合法則が成り立つ };
+    \node[right] (M3) at (0,-4.5) { (M3) 乗法について分配法則が成り立つ };
+    \draw[dashed]        (0,-5.0) -- +(\horizenLength,0);
+    \node[right] (M4) at (0,-5.5) { (M4) 乗法について可換である };
+    \draw[dashed]        (0,-6.0) -- +(\horizenLength,0);
+    \node[right] (M5) at (0,-6.5) { (M5) 乗法について単位元が存在する };
+    \node[right] (M6) at (0,-7.0) { (M6) 乗法について0が唯一の零因子である };
+    \draw[dashed]        (0,-7.5) -- +(\horizenLength,0);
+    \node[right] (M7) at (0,-8.0) { (M7) 乗法について逆元が存在する };
+    \draw[dashed]        (0,-8.5) -- +(\horizenLength,0);
+
+    \def\mathFromCenter{7cm}
+    \node[right] at (\mathFromCenter, -0.0) {$\forall a, b \in S,\; a + b \in S$};
+    \node[right] at (\mathFromCenter, -0.5) {$a+(b+c) = (a+b)+c$};
+    \node[right] at (\mathFromCenter, -1.0) {$a+0=0+a=a$};
+    \node[right] at (\mathFromCenter, -1.5) {$a+(-a)=(-a)+a=0$};
+    \node[right] at (\mathFromCenter, -2.5) {$a+b = b+a$};
+    \node[right] at (\mathFromCenter, -3.5) {$\forall a, b \in S,\; ab \in S$};
+    \node[right] at (\mathFromCenter, -4.0) {$a(bc) = (ab)c$};
+    \node[right] at (\mathFromCenter, -4.5) {$a(b+c) = ab+ac$};
+    \node[right] at (\mathFromCenter, -5.5) {$ab = ba$};
+    \node[right] at (\mathFromCenter, -6.5) {$a \times 1 = 1 \times a = a$};
+    \node[right] at (\mathFromCenter, -7.0) {$\mathrm{If}\; ab = 0, \; a=0 \;\text{or}\; b=0$};
+    \node[right] at (\mathFromCenter, -8.0) {$aa^{-1} = a^{-1}a = 1$};
+
+    \def\leftLabelStep{0.6}
+    \draw[<->] (-\leftLabelStep*1,+0.2) -- node[left] {群}
+                             ++(0,-1.5 - 0.6);
+    \draw[<->] (-\leftLabelStep*2,+0.2) -- node[left] {\pbox<t>{アーベル群}}
+                             ++(0,-2.5 - 0.6);
+    \draw[<->] (-\leftLabelStep*3,+0.2) -- node[left] {環}
+                             ++(0,-4.5 - 0.6);
+    \draw[<->] (-\leftLabelStep*4,+0.2) -- node[left] {\pbox<t>{可換環}}
+                             ++(0,-5.5 - 0.6);
+    \draw[<->] (-\leftLabelStep*5,+0.2) -- node[left] {\pbox<t>{整域}}
+                             ++(0,-7.0 - 0.6);
+    \draw[<->] (-\leftLabelStep*6,+0.2) -- node[left] {体}
+                             ++(0,-8.0 - 0.6);
+  \end{tikzpicture}
+\end{document}
