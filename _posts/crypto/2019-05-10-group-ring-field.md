@@ -24,4 +24,4 @@ published:     true
 -----
 
 [^1]: William Stallings "[CRYPTOGRAPHY AND NETWORK SECURITY PRINCIPLES AND PRACTICE, SEVENTH EDITION, GLOBAL EDITION](https://tesisconsultor.files.wordpress.com/2018/08/cryptography-and-network-security_-principles-and-practice-7th-global-edition.pdf)" p. 147
-[^2]: 「アーベル群」と「可換群」と同等です。
+[^2]: 「アーベル群」は「可換群」と同等です。
