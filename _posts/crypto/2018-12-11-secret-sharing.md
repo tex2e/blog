@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "秘密分散技術とホワイトハッカ飴の解説"
-menutitle:     "秘密分散技術とホワイトハッカ飴の解説"
+menutitle:     "秘密分散技術とホワイトハッカ飴の解説 (Adv.Cal. 2018)"
 date:          2018-12-11
 tags:          Crypto
 category:      Crypto
