@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "Ring-LWEによる鍵共有"
-menutitle:     "Ring-LWEによる鍵共有"
+title:         "SageMathでRing-LWEによる鍵共有"
+menutitle:     "SageMathを使ったRing-LWEによる鍵共有"
 date:          2019-05-05
 tags:          Crypto
 category:      Crypto
@@ -39,64 +39,6 @@ $$
 $$
 
 ただし、多項式の演算は有限体上の多項式環 $R_q = \mathbb{F}_q[x] / (x^n + 1)$ 上で行います [^R_q]。
-有限体上の多項式環 $R_q$ の演算は、次のように行います。
-
-- 加算
-  1. 多項式同士で加算を行う
-  2. 各係数を $\mathrm{mod}\;q$ する
-- 乗算
-  1. 多項式同士で乗算を行う
-  2. 既約多項式 $x^n+1$ で割った余りの多項式を求める
-  3. 各係数を $\mathrm{mod}\;q$ する
-
-Ring-LWEの方程式の計算例を示します。例えば、多項式の項数 $n=2$、各係数の法 $q=101$ とし、各多項式 $a, s, e \in R_q$ を次のようにします。
-なお、$a(x)$ の各係数は有限体 $\mathbb{F}_q$ 上の**一様分布**の乱数で決め、$s(x), e(x)$ の各係数は有限体 $\mathbb{F}_q$ 上の**誤差分布**（正規分布 $N(0, \sigma)$ を整数に丸めた上で $\mathbb{mod}\;q$ したもの）の乱数で決めています。
-
-<!--
-n = 2
-q = 101
-Z.<X> = PolynomialRing(GF(q))
-R.<x> = Z.quotient(X^n + 1)
-a = R(13*x + 99)
-s = R(4*x + 6)
-e = R(99*x + 99)
-a*s + e
-
-
-n = 2
-q = 101
-e1 = 13*x + 99
-e2 = 4*x + 6
-e3 = 99*x + 99
-f = x^n + 1
-e1e2 = e1 * e2
-quo,rem = e1e2.maxima_methods().divide(f)
-[Mod(e, q) for e in rem.list()]
--->
-
-$$
-\begin{align}
-  a(x) &= 13x + 99 &\text{(0〜100 の一様分布)} \\
-  s(x) &= 4x + 6   &\text{(0を中心とする誤差分布)} \\
-  e(x) &= 99x + 99 &\text{(0を中心とする誤差分布)}
-\end{align}
-$$
-
-このときの $b(x) \in R_q$ を計算してみます。
-
-$$
-\begin{align}
-  b(x) &= a(x) \cdot{} s(x) + e(x) \\[0.5em]
-    &= (13x + 99) (4x + 6) + (99x + 99) \\
-    &= (52x^2 + 474x + 594) + (99x + 99) \\[0.5em]
-    &\;\;\;\;\;\;\;\; \text{ここで $a(x) \cdot{} s(x)$ を既約多項式 $(x^2 + 1)$ で割った余りを求める} \\
-    &\;\;\;\;\;\;\;\; (52x^2 + 474x + 594) = 52 (x^2 + 1) + (474x + 542) \text{が成立するので} \\[0.5em]
-    &= (474x + 542) + (99x + 99) \\
-    &= (573x + 641) \\[0.5em]
-    &\;\;\;\;\;\;\;\; \text{最後に多項式の各係数を $\mathrm{mod}\;101$ すると} \\[0.5em]
-    &= 68x + 35
-\end{align}
-$$
 
 多項式 $f(x) = a_n x^n + ... + a_0$ から係数だけを並べると $(a_0, ..., a_n)$ となり、格子上のベクトルを表していることから、Ring-LWEも格子暗号に分類されます。
 
@@ -258,6 +200,7 @@ key is 0xf0618ab81175a58c6ca431635f694874b38d42a6ae07cf7037c89bc798a0e1adc0ff3bf
 このようにして、共有鍵を共有することができます。
 実装は J. Ding "[A Simple Provably Secure Key Exchange Scheme Based on the Learning with Errors Problem](https://eprint.iacr.org/2012/688.pdf)" や [amir734jj/LWE-KEX: LWE-KEX implementations all using SageMath -- GitHub](https://github.com/amir734jj/LWE-KEX) を読みながらPython (SageMath) で実装していきました。正確性や安全性の証明などはこちらを参照してください。
 
+次回：[NumPyでRing-LWEによる鍵共有]({{ site.baseurl }}/crypto/ring-lwe-key-exchange-with-numpy)
 
 ---
 

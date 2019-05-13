@@ -428,7 +428,7 @@ key is 0x9ac8fe314c6e41d442452b98d6f6ea8803182311a9b6aadedee89bb30029fa1084bc64a
 実装は J. Ding "[A Simple Provably Secure Key Exchange Scheme Based on the Learning with Errors Problem](https://eprint.iacr.org/2012/688.pdf)" を読みながらPythonで実装していきました。正確性や安全性の証明などはこちらを参照してください。
 
 
-次回：[Ring-LWEによる鍵共有]({{ site.baseurl }}/crypto/ring-lwe-key-exchange)
+次回：[SageMathでRing-LWEによる鍵共有]({{ site.baseurl }}/crypto/ring-lwe-key-exchange)
 
 ---
 
