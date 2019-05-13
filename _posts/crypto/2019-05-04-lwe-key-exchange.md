@@ -68,6 +68,17 @@ LWE暗号というと、このLWE問題の計算量困難性に依存した暗�
 
 AliceとBobの2人が鍵共有をします。ただし、$E$ を符号化関数、$S$ をシグナル関数とします [^Ding12]。
 
+$$
+\begin{align}
+  S(v) &=
+  \begin{cases}
+    0 & \text{if}\; -\! \lfloor \frac{q}{4} \rfloor \le v \le \lfloor \frac{q}{4} \rceil \\
+    1 & \text{otherwise}
+  \end{cases} \\[10pt]
+  E(v, w) &= \left(v + w \cdot{}\frac{q-1}{2} \right) \;\mathrm{mod}\; q \;\mathrm{mod}\; 2
+\end{align}
+$$
+
 1. パラメータ $q, n, \vec{M}, \chi_\alpha$ を事前に共有します。ただし $q$ は3以上の素数で、$n \times n$ の行列 $\vec{M}$ の各要素は一様分布で選んだ乱数にします（$\vec{M} \in \Z_q^{n \times n}$）。$\chi_\alpha$ は誤差分布で、誤差を付加するときに使います。
 2. Aliceは誤差分布から秘密ベクトル $\vec{s}_A$ と誤差ベクトル $\vec{e}_A$ を作ります。そして、公開鍵 $\vec{p}_A = \vec{M} \cdot{} \vec{s}_A + 2\vec{e}_A$ を計算し、Bob に送信します。
 3. Bobは誤差分布から秘密ベクトル $\vec{s}_B$ と誤差ベクトル $\vec{e}_B$ と誤差 $e'_B$ を作ります。そして、公開鍵 $\vec{p}_B = \vec{M}^T \cdot{} \vec{s}_B + 2 \vec{e}_B$ を計算します。さらに、鍵の元となる値 $K_B = \vec{p}_A^T \cdot{} \vec{s}_B + 2 e'_B \mod{q}$ を計算し、$\sigma \leftarrow S(K_B)$ を求めます。ここでBobは共有鍵 $SK_B = E(K_B, \sigma)$ を得ます。最後に公開鍵 $(\vec{p}_B, \sigma)$ を送信します。

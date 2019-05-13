@@ -106,6 +106,17 @@ $$
 次にRing-LWEを使った鍵共有（**RLWE-KEX**）について説明します。
 AliceとBobの2人が鍵共有をします。ただし、$E$ を符号化関数、$S$ をシグナル関数とします [^Ding2012]。
 
+$$
+\begin{align}
+  S(v) &=
+  \begin{cases}
+    0 & \text{if}\; -\! \lfloor \frac{q}{4} \rfloor \le v \le \lfloor \frac{q}{4} \rceil \\
+    1 & \text{otherwise}
+  \end{cases} \\[10pt]
+  E(v, w) &= \left(v + w \cdot{}\frac{q-1}{2} \right) \;\mathrm{mod}\; q \;\mathrm{mod}\; 2
+\end{align}
+$$
+
 1. パラメータ $q, n, \chi, R = \Z[x] / f(x), m$ を事前に共有します。
   - 素数 $q$ ... 各係数の法として使います
   - 多項式の項数 $n$
