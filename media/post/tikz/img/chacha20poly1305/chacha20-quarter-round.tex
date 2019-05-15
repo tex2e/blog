@@ -38,35 +38,38 @@
     % --- nodes ---
 
     \node at (0,0) [above] (a) {$a$};
-    \node at (2,0) [above] (b) {$b$};
-    \node at (4,0) [above] (c) {$c$};
-    \node at (6,0) [above] (d) {$d$};
+    \node at (1,0) [above] (b) {$b$};
+    \node at (2,0) [above] (c) {$c$};
+    \node at (3,0) [above] (d) {$d$};
 
-    \node at (0,-0.5)     (a1) [ADD] {};
-    \node at (6,-1.0+0.1) (d1) [XOR] {};
-    \node at (6,-1.5)     (d2) [ROTATE] {$\lll_{16}$};
-    \node at (4,-2.0)     (c1) [ADD] {};
-    \node at (2,-2.5+0.1) (b1) [XOR] {};
-    \node at (2,-3.0)     (b2) [ROTATE] {$\lll_{12}$};
-    \node at (0,-3.5)     (a2) [ADD] {};
-    \node at (6,-4.0+0.1) (d3) [XOR] {};
-    \node at (6,-4.5)     (d4) [ROTATE] {$\lll_{8}$};
-    \node at (4,-5.0)     (c2) [ADD] {};
-    \node at (2,-5.5+0.1) (b3) [XOR] {};
-    \node at (2,-6.0)     (b4) [ROTATE] {$\lll_{7}$};
+    \def\ax{0.25}
+    \def\xr{0.5}
+    \def\ra{0.25}
+    \node at (0,-0.4) (a1) [ADD] {};
+    \node at (3,-0.4-\ax) (d1) [XOR] {};
+    \node at (3,-0.4-\ax-\xr) (d2) [ROTATE] {$\lll$ \footnotesize 16};
+    \node at (2,-0.4-\ax-\xr-\ra) (c1) [ADD] {};
+    \node at (1,-1.4-\ax) (b1) [XOR] {};
+    \node at (1,-1.4-\ax-\xr) (b2) [ROTATE] {$\lll$ \footnotesize 12};
+    \node at (0,-1.4-\ax-\xr-\ra) (a2) [ADD] {};
+    \node at (3,-2.4-\ax) (d3) [XOR] {};
+    \node at (3,-2.4-\ax-\xr) (d4) [ROTATE] {$\lll$ \footnotesize 8};
+    \node at (2,-2.4-\ax-\xr-\ra) (c2) [ADD] {};
+    \node at (1,-3.4-\ax) (b3) [XOR] {};
+    \node at (1,-3.4-\ax-\xr) (b4) [ROTATE] {$\lll$ \footnotesize 7};
 
-    \node at (0,-6.5) [below] (a') {$a'$};
-    \node at (2,-6.5) [below] (b') {$b'$};
-    \node at (4,-6.5) [below] (c') {$c'$};
-    \node at (6,-6.5) [below] (d') {$d'$};
+    \node at (0,-4.6) [below] (a') {$a'$};
+    \node at (1,-4.6) [below] (b') {$b'$};
+    \node at (2,-4.6) [below] (c') {$c'$};
+    \node at (3,-4.6) [below] (d') {$d'$};
 
     % --- paths ---
 
-    \path[->] (a) edge (a1) (a1) edge (a2) (a2) edge (a');
-    \path[->] (b) edge (b1) (b1) edge (b2) (b2) edge (b3)
+    \path[->] (a)  edge (a1) (a1) edge (a2) (a2) edge (a');
+    \path[->] (b)  edge (b1) (b1) edge (b2) (b2) edge (b3)
               (b3) edge (b4) (b4) edge (b');
-    \path[->] (c) edge (c1) (c1) edge (c2) (c2) edge (c');
-    \path[->] (d) edge (d1) (d1) edge (d2) (d2) edge (d3)
+    \path[->] (c)  edge (c1) (c1) edge (c2) (c2) edge (c');
+    \path[->] (d)  edge (d1) (d1) edge (d2) (d2) edge (d3)
               (d3) edge (d4) (d4) edge (d');
 
     \draw[<-] (a1) -| node[DOT] {} (b);
