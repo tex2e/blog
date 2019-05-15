@@ -1,0 +1,64 @@
+\documentclass[dvipdfmx]{standalone}
+\usepackage{plext}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext, newtxmath}
+
+\usepackage{tikz} % xcolor -> graphicx -> tikz
+
+\usetikzlibrary{fit}
+
+\begin{document}
+  \begin{tikzpicture}[> = latex]
+
+    % \draw[step=1.0,black] (-0,-4) grid (8,4);
+
+    \begin{scope}
+      \matrix (M1) {
+        \node (x0) {$x_0$}; & \node (x1) {$x_1$}; & \node (x2) {$x_2$}; & \node (x3) {$x_3$}; \\
+        \node (x4) {$x_4$}; & \node (x5) {$x_5$}; & \node (x6) {$x_6$}; & \node (x7) {$x_7$}; \\
+        \node (x8) {$x_8$}; & \node (x9) {$x_9$}; & \node (x10) {$x_{10}$}; & \node (x11) {$x_{11}$}; \\
+        \node (x12) {$x_{12}$}; & \node (x13) {$x_{13}$}; & \node (x14) {$x_{14}$}; & \node (x15) {$x_{15}$}; \\
+      };
+
+      \node[above=1.0cm] (M1) {列ラウンド};
+
+      \node[fit=(x0)(x12), draw, rounded corners, color=red!60, inner sep=-2pt] {};
+      \node[fit=(x1)(x13), draw, rounded corners, color=red!60, inner sep=-2pt] {};
+      \node[fit=(x2)(x14), draw, rounded corners, color=red!60, inner sep=-2pt] {};
+      \node[fit=(x3)(x15), draw, rounded corners, color=red!60, inner sep=-2pt] (M1_Qround) {};
+    \end{scope}
+
+    \begin{scope}[xshift=6cm]
+      \matrix (M2) {
+        \node (x0) {$x_0$}; & \node (x1) {$x_1$}; & \node (x2) {$x_2$}; & \node (x3) {$x_3$};
+          & & & \\
+        \node {$x_4$}; & \node (x5) {$x_5$}; & \node (x6) {$x_6$}; & \node (x7) {$x_7$};
+          & \node[opacity=0.6] (x4) {$x_4$}; & & \\
+        \node {$x_8$}; & \node {$x_9$}; & \node (x10) {$x_{10}$}; & \node (x11) {$x_{11}$};
+          & \node[opacity=0.6] (x8) {$x_8$}; & \node[opacity=0.6] (x9) {$x_9$}; & \\
+        \node {$x_{12}$}; & \node {$x_{13}$}; & \node {$x_{14}$}; & \node (x15) {$x_{15}$};
+          & \node[opacity=0.6] (x12) {$x_{12}$}; & \node[opacity=0.6] (x13) {$x_{13}$}; & \node[opacity=0.6] (x14) {$x_{14}$}; \\
+      };
+
+      \node[above=1.0cm, xshift=-1cm] (M1) {対角ラウンド};
+
+      \node[rotate fit=-33, fit=(x0)(x15), draw, rounded corners, color=red!60, inner sep=-1pt] (M2_Qround) {};
+      \node[rotate fit=-33, fit=(x1)(x12), draw, rounded corners, color=red!60, inner sep=-1pt] {};
+      \node[rotate fit=-33, fit=(x2)(x13), draw, rounded corners, color=red!60, inner sep=-1pt] {};
+      \node[rotate fit=-33, fit=(x3)(x14), draw, rounded corners, color=red!60, inner sep=-1pt] {};
+    \end{scope}
+
+    \node at (2.5,1) [font=\footnotesize] (Qround) {QuarterRound};
+    \draw[->] (Qround.west) -- (M1_Qround.70);
+    \draw[->] (Qround.east) -- (M2_Qround);
+
+    \begin{scope}[font=\footnotesize]
+      \node at (0,-1.3) {$\vdots$};
+      \node at (0,-2.3) [above] {奇数ラウンド};
+      \node at (5,-1.3) {$\vdots$};
+      \node at (5,-2.3) [above] {偶数ラウンド};
+      \draw (-1,-2.3) to[bend right=10] node[below] {ダブルラウンド} (6,-2.3);
+    \end{scope}
+
+  \end{tikzpicture}
+\end{document}

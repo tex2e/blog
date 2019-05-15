@@ -1,0 +1,115 @@
+\documentclass[dvipdfmx]{standalone}
+\usepackage{plext}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext, newtxmath}
+
+\usepackage{tikz} % xcolor -> graphicx -> tikz
+
+\usetikzlibrary{calc,fit,positioning}
+
+\begin{document}
+  \begin{tikzpicture}[> = latex]
+
+    \tikzset{
+      XOR/.style={
+        scale=0.9,
+        draw,circle,append after command={
+          [shorten >=\pgflinewidth, shorten <=\pgflinewidth,]
+          (\tikzlastnode.north) edge (\tikzlastnode.south)
+          (\tikzlastnode.east) edge (\tikzlastnode.west)
+        }
+      },
+      ADD/.style={
+        scale=1.2,
+        draw,rectangle,append after command={
+          [shorten >=\pgflinewidth, shorten <=\pgflinewidth,]
+          (\tikzlastnode.north) edge (\tikzlastnode.south)
+          (\tikzlastnode.east) edge (\tikzlastnode.west)
+        }
+      },
+      DOT/.style={
+        scale=0.2,
+        draw,circle,fill=black
+      }
+    }
+
+    % \draw[step=1.0,black] (-0,-4) grid (8,4);
+
+    \node at (+0.9,2.5) (Nonce) {Nonce};
+    \node at (-0.2,2.5) (Key) {鍵$K$};
+    \node at (-2.0,2.5) (AAD) {AAD};
+
+    \draw (Nonce) -- ++(0,-1.0) node[DOT] (Nonce_adj) {};
+    \draw (Key)   -- ++(0,-0.7) node[DOT] (Key_adj) {};
+
+    % --- ChaCha20 ---
+
+    \foreach \i/\x in {0/0, 1/3, n/7} {
+      \node at (\x,0) [draw, inner sep=6pt] (ChaCha\i) {ChaCha20};
+      \if\i1
+        \draw[->] (Nonce_adj) -| node[DOT] {} (ChaCha\i.90);
+        \draw[->] (Key_adj)   -| node[DOT] {} (ChaCha\i.140);
+      \else
+        \draw[->] (Nonce_adj) -| (ChaCha\i.90);
+        \draw[->] (Key_adj)   -| (ChaCha\i.140);
+      \fi
+      \draw[<-] (ChaCha\i.40) -- ++(0,0.3) node[above, xshift=0.5cm, font=\footnotesize] (Counter\i) {Counter=$\i$};
+    }
+
+    \node at ($(ChaCha1)!0.5!(ChaChan)$) (ChaChai) {$\dots$};
+
+    \node[below=0.8cm of ChaChai, draw, inner xsep=2cm] (Keystream) {\footnotesize 鍵ストリーム};
+    \draw[->] (ChaCha1.south) -- (ChaCha1.south|-Keystream.north);
+    \draw[->] (ChaChan.south) -- (ChaChan.south|-Keystream.north);
+
+    \node[right=of Keystream, XOR] (XOR) {};
+    \node at (Nonce-|XOR) (Plaintext) {平文$M$};
+    \draw[->] (Plaintext.south) -- (XOR);
+    \draw[->] (Keystream.east)  -- (XOR);
+
+    % chacha20 encription
+    \node[fit=(Counter1)(ChaCha1)(Keystream)(XOR),
+      draw, rounded corners, dashed,
+      label=below:{\footnotesize ChaCha20 のストリーム暗号}] {};
+
+    % --- mac_data ---
+
+    \begin{scope}[node distance=0, minimum height=16pt]
+      \node at (2,-4) [draw, inner xsep=15pt] (mac_A) {$A$};
+      \node[right=of mac_A, draw, inner xsep=1pt, font=\footnotesize] (mac_A_pad) {pad};
+      \node[right=of mac_A_pad, draw, inner xsep=15pt] (mac_C) {$C$};
+      \node[right=of mac_C, draw, inner xsep=1pt, font=\footnotesize] (mac_C_pad) {pad};
+      \node[right=of mac_C_pad, draw, inner xsep=5pt] (mac_A_len) {$\mathrm{len}(A)$};
+      \node[right=of mac_A_len, draw, inner xsep=5pt] (mac_C_len) {$\mathrm{len}(C)$};
+    \end{scope}
+
+    \draw[->] (AAD) -- ++(0,-5.5) -| node [DOT] {} (mac_A);
+    \draw[->] (AAD) -- ++(0,-5.5) -|               (mac_A_len);
+    \draw[->] (XOR) -- ++(0,-2.0) node [DOT] {} -| (mac_C);
+    \draw[->] (XOR) -- ++(0,-2.0) -| node [DOT] {} (mac_C_len);
+
+    % -- Poly1305 ---
+
+    \node[below=1.0cm of mac_C, draw, inner sep=6pt] (Poly1305) {Poly1305};
+
+    \draw[->] (mac_C) -- node[right] {\footnotesize 認証データ} (Poly1305);
+
+    % ChaCha0 からのデータの流れ
+    \node at (ChaCha0|-Keystream) [
+      draw, minimum width=50pt, minimum height=1.3em,
+      append after command={
+        [shorten >=\pgflinewidth, shorten <=\pgflinewidth,]
+        (\tikzlastnode.north) edge (\tikzlastnode.south)
+      }] (ChaCha0_keystream) {};
+    \draw (ChaCha0_keystream) ++(-0.45,0) node {\scriptsize 32bytes};
+    \draw[->] (ChaCha0) -- (ChaCha0_keystream);
+    \draw[->] (ChaCha0_keystream.south) +(-0.4,0) |-
+      node[above, pos=0.73] {\footnotesize 使い捨ての鍵$(r,s)$} (Poly1305);
+
+    % \draw[->] (ChaCha0) |- node[above, pos=0.75] {使い捨ての鍵} (Poly1305);
+    \draw[->] (Poly1305) -- ++(0,-1.0) node[below] (T) {認証タグ$T$};
+
+    \draw[->] (XOR) -- (XOR|-T.north) node[below] (C) {暗号文$C$};
+
+  \end{tikzpicture}
+\end{document}
