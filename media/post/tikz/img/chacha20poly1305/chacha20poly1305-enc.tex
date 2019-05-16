@@ -83,8 +83,8 @@
       \node[right=of mac_A_len, draw, inner xsep=5pt] (mac_C_len) {$\mathrm{len}(C)$};
     \end{scope}
 
-    \draw[->] (AAD) -- ++(0,-5.5) -| node [DOT] {} (mac_A);
-    \draw[->] (AAD) -- ++(0,-5.5) -|               (mac_A_len);
+    \draw[->] (AAD) -- ++(0,-5.3) -| node [DOT] {} (mac_A);
+    \draw[->] (AAD) -- ++(0,-5.3) -|               (mac_A_len);
     \draw[->] (XOR) -- ++(0,-2.0) node [DOT] {} -| (mac_C);
     \draw[->] (XOR) -- ++(0,-2.0) -| node [DOT] {} (mac_C_len);
 
