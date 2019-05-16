@@ -234,3 +234,17 @@
     margin-right: auto;
     word-wrap: break-word;
 }
+
+
+
+
+// my custom css
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
