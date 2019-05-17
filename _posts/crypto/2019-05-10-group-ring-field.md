@@ -17,7 +17,7 @@ published:     true
 図にまとめたものを以下に示します[^1] [^2]。
 
 <figure>
-<img src="{{ site.baseurl }}/media/post/tikz/img/props-of-groups-rings-and-fields.png" />
+<img src="{{ site.baseurl }}/media/post/tikz/props-of-groups-rings-and-fields.png" />
 <figcaption>群・環・体の性質</figcaption>
 </figure>
 

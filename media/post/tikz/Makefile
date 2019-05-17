@@ -4,30 +4,6 @@ UNAME := $(shell uname)
 .SUFFIXES:
 .SUFFIXES: .pdf .tex .dvi
 
-### Usage ###
-#
-# to make PDF from TeX, type:
-#
-#     make init
-#     make pdf
-#
-
-### Commands ###
-#
-# + init: write template tex file to create latex environment
-# + init-presen: write template for presentation.
-# + pdf: create pdf from tex file
-# + punctuation: replace "。" and "、" with "．" and "，"
-# + open: create pdf and open it
-# + clean: rm *.{aux,log,dvi,fls}
-# + distclean: rm *.{aux,log,dvi,fls,pdf}
-# + rebuild: force to build a pdf
-# + test: do test (requires ruby)
-# + pptx: create pptx from pdf file (requires python3, ImageMagic, python-pptx)
-# + install: install essensial latex packages
-# + install-presen: install essensial latex package for presentation
-#
-
 TEXENV_DIR := $(HOME)/.dotfiles/bash/texenvs
 TMP := /tmp
 
@@ -37,7 +13,7 @@ TEX_FILE  := $(wildcard *.tex)
 PDF_FILE  := $(patsubst %.tex, %.pdf, $(TEX_FILE))
 PPTX_FILE := $(patsubst %.tex, %.pptx, $(TEX_FILE))
 
-PNG_TEX   := $(shell find img -type f -name '*.tex')
+PNG_TEX   := $(shell find . -type f -name '*.tex')
 PNG_FILE  := $(patsubst %.tex, %.png, $(PNG_TEX))
 
 COMPILE_CNT := 1
