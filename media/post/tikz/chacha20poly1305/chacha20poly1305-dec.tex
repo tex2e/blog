@@ -63,8 +63,12 @@
     \draw[->] (ChaChan.south) -- (ChaChan.south|-Keystream.north);
 
     \node[right=of Keystream, XOR] (XOR) {};
-    \node at (Nonce-|XOR) (Plaintext) {平文$M$};
-    \draw[->] (Plaintext.south) -- (XOR);
+    \coordinate[above=0.3cm of XOR, inner sep=0] (XOR_adj) {};
+    \node at (Nonce-|XOR) (Plaintext_adj) {};
+    \node[right=0.00cm of Plaintext_adj] (Ciphertext) {暗号文$C$};
+
+    \draw[-] (Ciphertext.south) |- node[DOT] (XOR_adj2) {} (XOR_adj);
+    \draw[->] (XOR_adj) -- (XOR);
     \draw[->] (Keystream.east)  -- (XOR);
 
     % chacha20 encription
@@ -85,8 +89,8 @@
 
     \draw[->] (AAD) -- ++(0,-5.3) -| node [DOT] {} (mac_A);
     \draw[->] (AAD) -- ++(0,-5.3) -|               (mac_A_len);
-    \draw[->] (XOR) -- ++(0,-2.0) node [DOT] {} -| (mac_C);
-    \draw[->] (XOR) -- ++(0,-2.0) -| node [DOT] {} (mac_C_len);
+    \draw[->] (XOR_adj2) -- ++(0,-2.4) -| (mac_C);
+    \draw[->] (XOR_adj2) -- ++(0,-2.4) -| node [DOT] {} (mac_C_len);
 
     % -- Poly1305 ---
 
@@ -106,10 +110,16 @@
     \draw[->] (ChaCha0_keystream.south) +(-0.4,0) |-
       node[above, pos=0.73] {\footnotesize 使い捨ての鍵$(r,s)$} (Poly1305);
 
-    % \draw[->] (ChaCha0) |- node[above, pos=0.75] {使い捨ての鍵} (Poly1305);
-    \draw[->] (Poly1305) -- ++(0,-1.0) node[below] (T) {認証タグ$T$};
+    % --- compare tags ---
 
-    \draw[->] (XOR) -- (XOR|-T.north) node[below] (C) {暗号文$C$};
+    \node[right=0.1cm of Ciphertext] (Tag) {タグ $T$};
+    \node[right=1.7cm of Poly1305, draw] (Compare) {\footnotesize 比較};
+    \draw[->] (Poly1305) -- node[above] {\footnotesize 認証タグ $T'$} (Compare);
+    \draw[->] (Tag) |- (Compare);
+    \draw[->] (Compare) -- ++(0,-1.0) node[below] (CompareRes) {検証結果};
+
+
+    \draw[->] (XOR) -- (XOR|-CompareRes.north) node[below] (C) {平文$M$};
 
   \end{tikzpicture}
 \end{document}
