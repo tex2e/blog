@@ -7,6 +7,7 @@ menutitle: Offline
 title:     Offline Warning
 excerpt:   If you click on the link below it will render all content of the blog in one site. This can take some time!
 visible:   false
+sitemap:   false
 ---
 
 下のリンクをクリックすると、ブログのすべての記事が1つのページに表示されます。
