@@ -1,5 +1,0 @@
-
-User-agent: *
-Disallow: /offline
-
-Sitemap: https://tex2e.github.io/blog/sitemap.xml
