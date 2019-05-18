@@ -23,8 +23,17 @@ markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
     disable: true
-include: ['_pages']
-exclude: [vendor]
+include:
+  - _pages
+exclude:
+  - vendor
+  - Makefile
+  - new.sh
+  - server.sh
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
 plugins:
   - jekyll-mentions
   - jekyll-feed
