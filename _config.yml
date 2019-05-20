@@ -39,3 +39,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+
+jekyll-mentions:
+  base_url: https://twitter.com
