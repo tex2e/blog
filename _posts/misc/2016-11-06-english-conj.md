@@ -93,7 +93,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜に加えて | apart from, aside from, as well as, not only/merely, along with, <br>other than, and again, again
 | 〜に加えて・一緒に | along with
 | 〜だけでなく〜も | not only/merely ... but also
-| 例えば | such as, like, including, for example, for instance, <br>e.g., : (*colon*), --- (*dash*)
+| 例えば | such as, like, including, for example, for instance, say, <br>e.g., ex., : (*colon*), --- (*dash*)
 | 具体的にいうと | concretely, specifically
 | （例えば）〜のように | as in
 | とりわけ | especially, specially, specifically, particularly, in particular, not least
@@ -173,7 +173,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜するときに | when, as
 | 〜する前に | before
 | 〜した後に | after
-| その後 | later, afterward(s), subsequently
+| その後 | later, afterward(s), subsequently, thereafter
 | 〜するまで | till, until
 | 〜するまでには | by the time ~
 | 〜して以来 | since, ever since
