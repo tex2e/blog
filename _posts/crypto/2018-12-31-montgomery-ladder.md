@@ -19,9 +19,27 @@ RSAなどの公開鍵暗号では暗号化・復号アルゴリズムにおい�
 冪剰余（べき乗剰余）計算とは $a^x \mod{n}$ を求める計算のことです。
 現実の暗号では巨大な素数や乱数を使うので、律儀に $a$ を $x$ 回掛け算した後に $n$ で割った余りを求めるのはとても大変です。
 
+### 掛け算するごとに mod する
+
+まずは、掛け算するごとに剰余を求めることでオーバーフローを防ぎ、効率よく計算できるようにします。なお、Pythonは標準で多倍長演算ができるのでオーバーフローの心配はないですが、この方法を使うことで、桁数が一定以上は超えないので、桁数に依存する掛け算が効率よく計算できるようになります。
+
+$$
+  a^x \mod{n} = ((\dots ((a \times a \mod n) \times a \mod n) \dots ) \times a \mod n)
+$$
+
+Python でこれを簡単に実装してみると、以下のようになります。
+
+```python
+def pow_by_iter(a, x, n):
+    acc = a
+    for i in range(1, x):
+        acc = (acc * a) % n
+    return acc
+```
+
 ### Binary Exponentiation
 
-そこで、冪剰余を効率よく計算するための方法として
+次に、冪剰余を効率よく計算するための方法として
 **バイナリ法**（Binary Exponentiation）があります[^1] [^squaring1] [^IPUSIRON]。
 例えば、$3^4$ を求めるときに、$3 \times 3 \times 3 \times 3$ と計算するよりも、
 $(3^2)^2$ を計算する方が乗算の回数を少なくすることができます。
@@ -51,9 +69,9 @@ def binary(n):
 
 # バイナリ法
 def pow_by_binary_exponentiation(a, x, n): # a^x mod n
-    x = [int(b) for b in binary(x)[::-1]]
+    x = [int(b) for b in binary(x)]
     y = a
-    for i in range(len(x) - 2, -1, -1):
+    for i in range(1, len(x)):
         y = (y**2) % n
         if x[i] == 1:
             y = (y * a) % n
