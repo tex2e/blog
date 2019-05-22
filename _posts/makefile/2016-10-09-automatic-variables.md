@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "Makefile の特殊変数の一覧"
-menutitle:     "Makefile の特殊変数の一覧"
+title:         "Makefile の特殊変数・自動変数の一覧"
+menutitle:     "Makefile の特殊変数・自動変数の一覧"
 date:          2016-10-09
 tags:          Programming Makefile
 category:      Makefile
@@ -12,7 +12,8 @@ comments:      false
 published:     true
 ---
 
-Makefile でよく使う、特別な意味を持つ変数（自動変数）の備忘録。
+Makefile でよく使う、特別な意味を持つ変数（自動変数）の備忘録です。
+具体的には `$@`, `$<`, `$?` と、暗黙ルールで使われる変数（`$(CXX)`, `$(RM)` など）についてです。
 
 ## $@
 
