@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "数式の英語での読み方&MathJaxテスト"
-menutitle:     "数式の英語での読み方&MathJaxテスト"
+title:         "数学・数式・記号などの英語の読み方"
+menutitle:     "数学・数式・記号などの英語の読み方"
 date:          2018-11-14
 tags:          Crypto
 category:      Crypto
@@ -14,6 +14,7 @@ published:     true
 
 The pronunciations of mathematical symbols are given in the list below.
 
+| Math | Pronunciation | LaTeX
 |:-:|:-|:-|
 | $\dfrac{1}{2}$ | one over two | \\dfrac
 | $1.2$ | one point two | .
@@ -59,7 +60,7 @@ The pronunciations of mathematical symbols are given in the list below.
 | $a \equiv b \pmod{n}$ | $a$ is congruent to $b$ modulo $n$ | \\equiv \\pmod
 | $a\|b$ | $a$ is a divisor of $b$ | \|
 | $\vec{a}$ | vector $a$ | \\vec
-| $$\left(\begin{matrix} a_{11} & \cdots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{m1} & \cdots & a_{mn} \end{matrix}\right)$$ | $m$ times $n$ matrix $a$ one one to $a$ $m$ $n$ | \\left( \\begin{matrix} \\cdots \\vdots \\ddots
+| $$\begin{pmatrix} a_{11} & \cdots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{m1} & \cdots & a_{mn} \end{pmatrix}$$ | $m$ times $n$ matrix $a$ one one to $a$ $m$ $n$ | \\begin{pmatrix} \\cdots \\vdots \\ddots
 | $\left( a_{ij} \right)$ | matrix $a$ $i$ $j$ | \_{ij}
 | $\det A$ | determinant of $A$ | \\det
 | $\lvert A\rvert$ | determinant of $A$ | \\lvert \\rvert
@@ -114,18 +115,7 @@ The pronunciations of mathematical symbols are given in the list below.
 | $$\bigcap\limits_{k=1}^{n} E_k$$ | intersection of $E_k$ $k$ running from one to $n$ | \\bigcap\\limits
 
 
-## 参考
+### 参考
 
 記号を描くと似ている記号とそのLaTeXコマンドを表示するツール
 [http://detexify.kirelabs.org/classify.html](http://detexify.kirelabs.org/classify.html)
-
-
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-    "HTML-CSS": {
-      fonts: ["TeX", "Gyre-Pagella"]
-    },
-  });
-</script>
