@@ -52,10 +52,8 @@ def binary(n):
 # バイナリ法
 def pow_by_binary_exponentiation(a, x, n): # a^x mod n
     x = [int(b) for b in binary(x)[::-1]]
-    k = len(x)
-    i = k - 2
     y = a
-    for i in range(k - 2, -1, -1):
+    for i in range(len(x) - 2, -1, -1):
         y = (y**2) % n
         if x[i] == 1:
             y = (y * a) % n
