@@ -12,15 +12,16 @@ comments:      true
 published:     true
 ---
 
-自宅の CentOS 7 on Virtual Box に MacOS から ssh で接続するやり方のメモ書き。
+仮想環境の CentOS 7 on Virtual Box に MacOS から ssh で公開鍵認証するやり方について説明します。
+ただし、自分の仮想環境を作るためのメモ書き程度なので悪しからず。
 
 ### .ssh/config の設定
 
-3つの仮想環境に対する ssh 接続の設定。
+自宅には仮想環境が3つあるので、3つの仮想環境に対する ssh 接続の設定をします。
 `ssh ユーザ名@ホスト名` の代わりに `ssh local1` のように、
-自分のつけた名前で ssh 接続できるようになる。
+自分のつけた名前で ssh 接続できるようになります。
 
-```
+```command
 $ vi ~/.ssh/config
 
 Host local?
@@ -33,36 +34,35 @@ Host local2
   Port 1122
 Host local3
   Port 2222
-
 ```
 
 ### 秘密鍵と公開鍵の生成
 
-`ssh-keygen` コマンドで秘密鍵と公開鍵の生成をする。
-必要に応じて rsa を楕円曲線暗号の ed25519 に変えると安全性が上がる。
+`ssh-keygen` コマンドで秘密鍵と公開鍵の生成します。
+必要に応じて rsa を楕円曲線暗号の ed25519 に変えると安全性が上がります。
 
-```
+```command
 $ ssh-keygen -t rsa -f ~/.ssh/local_rsa
 ```
 
 ### サーバに公開鍵の登録
 
-生成した公開鍵をリモートの ~/.ssh/authorized_keys に追加する。
-ディレクトリの作成やパーミッションの設定なども行う。
+生成した公開鍵をリモートの ~/.ssh/authorized_keys に追加します。
+ディレクトリの作成やパーミッションの設定なども行います。
 
 #### 選択肢A）コマンド直打ち
 
-```
+```command
 $ cat ~/.ssh/local_rsa.pub | ssh ホスト名 'mkdir -p ~/.ssh; chmod 700 ~/.ssh; cat >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys'
 ```
 
 #### 選択肢B) ssh-copy-idコマンド
 
 ローカルにある鍵を指定すると、
-リモートで ~/.ssh/authorized_keys の作成やパーミッションを適切に設定してくれる。
-パーミッションの設定は特に忘れやすいので、このコマンドを使うのがおすすめ。
+リモートで ~/.ssh/authorized_keys の作成やパーミッションを適切に設定してくれます。
+パーミッションの設定は特に忘れやすいので、このコマンドを使うのがおすすめです。
 
-```
+```command
 $ ssh-copy-id -i .ssh/local_rsa local2
 
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: ".ssh/local_rsa.pub"
@@ -82,11 +82,11 @@ $ ssh local2
 
 ### CentOS 7 でパスワード認証を無効にする
 
-公開鍵認証が使えるようになればパスワード認証は不要なので、無効にすることもできる。
-CentOS では /etc/ssh/ 以下に設定ファイルがあるが ssh_config と sshd_config という
-似ているファイルがあるので注意。前者はsshクライアントの設定で、後者はsshサーバの設定。
+公開鍵認証が使えるようになればパスワード認証は不要なので、無効にすることもできます。
+CentOS では /etc/ssh/ 以下に設定ファイルがありますが ssh_config と sshd_config という
+似ているファイルがあるので注意。前者はsshクライアントの設定で、後者はsshサーバの設定です。
 
-```
+```command
 # vi /etc/ssh/sshd_config
 
 パスワード認証を無効にする
@@ -94,3 +94,5 @@ PasswordAuthentication no
 
 # systemctl restart sshd
 ```
+
+以上です。

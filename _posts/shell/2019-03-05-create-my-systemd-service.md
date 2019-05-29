@@ -22,7 +22,7 @@ published:     true
 参考までに Apache HTTP Server のサービスファイル
 /usr/lib/systemd/system/httpd.service の内容は次の通りです。
 
-```
+```command
 [Unit]
 Description=The Apache HTTP Server
 After=network.target remote-fs.target nss-lookup.target
@@ -115,7 +115,7 @@ WantedBy=multi-user.target
 
 4. 自作サービスを実行するには、まずリロードをする必要があります。
 
-    ```
+    ```command
     systemctl daemon-reload
     systemctl start name.service
     ```
@@ -172,20 +172,20 @@ if __name__ == "__main__":
 systemctlをリロードして、Webサーバを起動します。
 必要に応じて firewall のポート 8000 を開けるか、firewall無効にするなどしてください。
 
-```
+```command
 systemctl daemon-reload
 systemctl start tinyhttpd
 ```
 
 curlで叩いてレスポンスがあれば成功。
 
-```
+```command
 curl localhost:8000
 ```
 
 最後にWebサーバの停止。
 
-```
+```command
 systemctl stop tinyhttpd
 ```
 

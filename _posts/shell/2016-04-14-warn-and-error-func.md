@@ -8,7 +8,7 @@ category:      Shell
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:
-comments:      false
+comments:      true
 published:     true
 ---
 
@@ -19,7 +19,7 @@ shellscriptのエラーメッセージなどを装飾する関数は、それな
 
 メッセージを出力するためのそれぞれのシェル関数は、メッセージの先頭に色付きの文字を付け加えます。
 
-- 警告を出力するための`warn`は 黄色の`Warning:`  
+- 警告を出力するための`warn`は 黄色の`Warning:`
 - エラーを出力するための`error`は 赤色の`Error:`
 - 成功したことを出力するための`success`は 緑色の`✔ `
 - 失敗したことを出力するための`failed`は 赤色の`✘ `

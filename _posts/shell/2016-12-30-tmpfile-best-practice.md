@@ -8,7 +8,7 @@ category:      Shell
 author:        tex2e
 cover:         /assets/cover2.jpg
 redirect_from:
-comments:      false
+comments:      true
 published:     true
 ---
 

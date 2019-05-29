@@ -15,7 +15,7 @@ published:     true
 パイプから入力があるとはどういう状況かというと、
 以下のようにパイプ「|」を通して一つ前のコマンドの結果を受け取ることを指す。
 
-```
+```command
 $ cat filename | ./myprogram
 ```
 
