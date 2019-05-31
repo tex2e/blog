@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "有限体上の楕円曲線上のスカラー倍算"
-menutitle:     "有限体上の楕円曲線上のスカラー倍算"
+menutitle:     "有限体上の楕円曲線上のスカラー倍算とsecp256k1の計算"
 date:          2019-02-23
 tags:          Crypto
 category:      Crypto
