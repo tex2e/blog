@@ -4,7 +4,7 @@ title:         "YAML Custom Features"
 menutitle:     "JekyllDecent : YAML Features"
 date:          2016-04-06 00:40:00 +0300
 tags:          Jekyll YAML Features Explained
-category:      Features
+category:      Blog
 author:        jwillmer
 cover:         /assets/cover1.jpg
 redirect_from: "/YAML-Features-Redirect/"
