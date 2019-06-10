@@ -7,6 +7,31 @@ Mako(tex2e)の技術系ブログです。
 - Jekyll Theme: **jekyllDecent**
 - syntax highlighter: **prism.js**
 
+#### 新規記事の作成
+
+./new.sh を使って新規記事の作成をします。
+カテゴリ名は /_posts 以下のディレクトリ名にします（例えば python）。
+カテゴリ名の最初を大文字にしたものが、記事に埋め込まれます（記事のカテゴリは Python となる）。
+
+```
+./new.sh <category> <postname>
+```
+
+- 公開したくない記事は、ページ設定で `published: false` を追加します。
+- ドラフトとして公開したい記事（記事一覧やsitemap.xmlにはリンクがないが、閲覧可能な状態）は、ページ設定で `sitemap: false` と `draft: true` を追加します。
+
+#### サーバの起動
+
+./server.sh を使ってサーバの起動をします。
+Rubyを新しくインストールした際は `bundle install` する必要があります。
+
+```
+./server.sh
+```
+
+
+
+
 ## [jekyllDecent](https://github.com/jwillmer/jekyllDecent)
 
 > [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
