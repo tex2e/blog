@@ -33,6 +33,7 @@
     }
   </style>
 
+  {% if jekyll.environment == "production" %}
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,6 +42,7 @@
     ga('create', 'UA-75892425-1', 'auto');
     ga('send', 'pageview');
   </script>
+  {% endif %}
 
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full"></script>
   <script type="text/x-mathjax-config">
