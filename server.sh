@@ -1,1 +1,1 @@
-bundle exec jekyll server -I --livereload
+bundle exec jekyll server -I --livereload --future
