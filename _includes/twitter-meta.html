@@ -1,30 +1,9 @@
 <!-- Twitter data -->
-{% if site.data.authors and site.data.authors[page.author] %}
-{%   assign author = site.data.authors.[page.author] %}
-{% elsif site.data.authors %}
-{%   assign author = site.data.authors['default'] %}
-{% endif %}
-
 <meta name="twitter:card" content="summary">
-
-{% if author.twitter %}
-<meta name="twitter:site" content="@{{ author.twitter }}">
-{% else %}
 <meta name="twitter:site" content="@tex2e">
-{% endif %}
-
-{% if page.url %}
-{% capture page_url %}{{ page.url | replace: '/index.html','/' }}{% endcapture %}
-<meta property="twitter:url" content="{{ page_url }}">
-{% endif %}
-
-{% if page.title %}
-<meta property="twitter:title" content="{{ page.title }}">
-{% else %}
-<meta property="twitter:title" content="{{ site.title }}">
-{% endif %}
-
+<meta name="twitter:creator" content="@tex2e">
+<!-- <meta property="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/index.html','/' }}">
+<meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-<meta property="twitter:image" content="https://tex2e.github.io/blog/assets/web-optim.png">
+<meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/web-optim.png"> -->
 <!-- End: Twitter data -->

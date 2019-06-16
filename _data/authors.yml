@@ -11,10 +11,10 @@ mako:
   # text below author name in posts
   bio:          All about technology
   # used to display location of the author
-  location:     Germany
+  location:     Japan
   # link to the author of a post
   #website:      "http://jwillmer.de/about"
-  email:
+  email:        tex2eq@gmail.com
   twitter:      tex2e
   linkedin:
   xing:
