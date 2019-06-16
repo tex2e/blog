@@ -12,6 +12,9 @@ comments:      true
 published:     true
 ---
 
+Scalaのimplicitキーワードを使った、パイプライン演算子 `|>` の実装について説明します。
+
+
 パイプライン演算子
 ----------------
 
