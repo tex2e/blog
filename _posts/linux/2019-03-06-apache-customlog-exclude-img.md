@@ -3,11 +3,11 @@ layout:        post
 title:         "Apache で画像やJSやフォントなどのログを除外する"
 menutitle:     "Apache で画像やJSやフォントなどのログを除外する"
 date:          2019-03-06
-tags:          Shell
-category:      Shell
+tags:          Linux
+category:      Linux
 author:        tex2e
 cover:         /assets/cover8.jpg
-redirect_from:
+redirect_from: /shell/apache-customlog-exclude-img
 comments:      true
 published:     true
 ---

@@ -3,11 +3,11 @@ layout:        post
 title:         "systemdでプロセス自動再起動"
 menutitle:     "systemdのRestartでプロセス自動再起動"
 date:          2019-03-08
-tags:          Shell
-category:      Shell
+tags:          Linux
+category:      Linux
 author:        tex2e
 cover:         /assets/cover4.jpg
-redirect_from:
+redirect_from: /shell/systemd-restart-config
 comments:      true
 published:     true
 ---

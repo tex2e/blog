@@ -3,11 +3,11 @@ layout:        post
 title:         "踏み台サーバ経由の多段SSH"
 menutitle:     "踏み台サーバ経由の多段SSH"
 date:          2019-01-20
-tags:          Shell
-category:      Shell
+tags:          Linux
+category:      Linux
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /shell/ssh-proxy-command
 comments:      true
 published:     true
 ---

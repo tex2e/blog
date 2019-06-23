@@ -3,11 +3,11 @@ layout:        post
 title:         "/tmp/systemd-private-* について"
 menutitle:     "/tmp/systemd-private-* について"
 date:          2019-03-04
-tags:          Shell
-category:      Shell
+tags:          Linux
+category:      Linux
 author:        tex2e
 cover:         /assets/cover9.jpg
-redirect_from:
+redirect_from: /shell/tmp-systemd-private
 comments:      true
 published:     true
 ---

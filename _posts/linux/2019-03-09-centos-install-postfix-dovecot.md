@@ -3,11 +3,11 @@ layout:        post
 title:         "Postfix & Dovecot サーバ構築"
 menutitle:     "Postfix & Dovecot サーバ構築"
 date:          2019-03-09
-tags:          Shell
-category:      Shell
+tags:          Linux
+category:      Linux
 author:        tex2e
 cover:         /assets/cover2.jpg
-redirect_from:
+redirect_from: /shell/centos-install-postfix-dovecot
 comments:      true
 published:     true
 ---

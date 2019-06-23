@@ -3,11 +3,11 @@ layout:        post
 title:         "RPMパッケージのインストール"
 menutitle:     "RPMパッケージのインストール"
 date:          2019-03-07
-tags:          Shell
-category:      Shell
+tags:          Linux
+category:      Linux
 author:        tex2e
 cover:         /assets/cover4.jpg
-redirect_from:
+redirect_from: /shell/rpm-tutorial
 comments:      true
 published:     true
 ---
