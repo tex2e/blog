@@ -12,13 +12,15 @@ comments:      true
 published:     true
 ---
 
+Ubuntu で texlive2018 にアップデートしたので、その方法についてメモします。
+
 [http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
 にアクセスして install-tl.zip をダウンロードする（tl は texlive の略）．
 
 展開し，./install-tl を実行すると選択肢が現れるので，fullは重いのでbasicにするために
 S + Enter で set installation scheme を選択する．
 
-```
+```command
 $ ./install-tl
 
 ======================> TeX Live installation procedure <=====================
@@ -72,7 +74,7 @@ Enter command: S
 
 デフォルトは full になっているので，d + Enter で basic にする（fullだと1GB以上，basicだと174MB）．
 
-```
+```command
 ===============================================================================
 Select scheme:
 
@@ -97,7 +99,7 @@ Enter letter to select scheme: R
 
 インストール時にシンボリックリンクも追加するようにするために，O + Enter で options を選択．
 
-```
+```command
 Enter command: O
 
 ===============================================================================
@@ -124,7 +126,7 @@ Enter command: R
 
 元の画面に戻ったらIでインストール開始
 
-```
+```command
 Enter command: I
 ```
 
@@ -132,21 +134,21 @@ tlmgr を最新にするために，
 [http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
 にアクセスして update-tlmgr-latest.sh をダウンロードして実行する．
 
-```
+```command
 chmod +x update-tlmgr-latest.sh
 ./update-tlmgr-latest.sh
 ```
 
 tlmgr を使って必要なパッケージ群をインストール．
 
-```
+```command
 sudo tlmgr update --self --all
 sudo tlmgr install newtx collection-latexrecommended collection-fontsrecommended collection-langjapanese dvipdfmx
 ```
 
 インストールしただけではシンボリックリンクが作成されないこともあるので，必要の応じて自分でリンクを貼る．
 
-```
+```command
 ln -sf /usr/local/texlive/2018/bin/x86_64-linux/* /usr/local/bin
 ```
 
