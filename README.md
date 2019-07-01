@@ -41,7 +41,13 @@ Rubyを新しくインストールした際は `bundle install` する必要が�
 ./server.sh rebuild
 ```
 
+サブコマンドは rebuild の代わりに re でも実行できます。
 
+```
+./server.sh re
+```
+
+-----
 
 ## [jekyllDecent](https://github.com/jwillmer/jekyllDecent)
 
@@ -56,6 +62,9 @@ Rubyを新しくインストールした際は `bundle install` する必要が�
 > If you like to see the theme in production have a look at [jwillmer.de](http://jwillmer.de).
 >
 > [![](./media/img/2016-06-08-Readme-front-page-previewe.jpg)](http://jwillmer.github.io/jekyllDecent)
+
+
+-----
 
 ## [Prism](http://prismjs.com/)
 
