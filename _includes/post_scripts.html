@@ -1,11 +1,25 @@
-<script type="text/javascript">
-var config = {
-  'disqus_shortname': '{{ site.disqus_shortname }}'
-};
-</script>
+
 <script src="{{ site.baseurl }}/js/jquery-1.12.0.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery.fitvids.js"></script>
 <script src="{{ site.baseurl }}/js/prism.js"></script>
 <script src="{{ site.baseurl }}/js/photoswipe.js"></script>
 <script src="{{ site.baseurl }}/js/photoswipe-ui-default.js"></script>
 <script src="{{ site.baseurl }}/js/post.js"></script>
+
+<!-- Disqus -->
+<script type="text/javascript">
+  var config = {
+    'disqus_shortname': '{{ site.disqus_shortname }}'
+  };
+</script>
+
+<!-- Prism -->
+<script type="text/javascript">
+  Prism.languages.bash.prompt = /^\$ /m;
+</script>
+
+<style>
+  .token.prompt {
+    user-select: none;
+  }
+</style>
