@@ -132,7 +132,7 @@ CentOS7-1の仮想環境を起動していると 127.0.0.1:2222 にSSHサーバ�
 Host local?
   HostName 127.0.0.1
   User root
-  IdentityFile ~/.ssh/id_25519
+  IdentityFile ~/.ssh/id_ed25519
 Host local1
   Port 2222
 Host local2
