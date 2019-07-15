@@ -6,7 +6,7 @@ date:          2019-01-01
 tags:          Crypto
 category:      Crypto
 author:        tex2e
-cover:         /assets/cover8.jpg
+cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
