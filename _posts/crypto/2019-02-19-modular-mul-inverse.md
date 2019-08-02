@@ -12,8 +12,8 @@ comments:      true
 published:     true
 ---
 
-モジュラ逆数（Modular multiplicative inverse）を求めるPythonプログラムについて。
-
+モジュラ逆数（Modular multiplicative inverse）を求めるPythonプログラムについて説明します。
+剰余演算において逆数を求めるときにモジュラ逆数が出てきます。
 モジュラ逆数を求めるアルゴリズムをPythonで書くと次の通りです。
 
 ```python
