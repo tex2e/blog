@@ -25,7 +25,7 @@ def xgcd(a, b):
         y0, y1 = y1, y0 - q * y1
     return a, x0, y0
 
-def invmod(a, m):
+def modinv(a, m):
     g, x, y = xgcd(a, m)
     if g != 1:
         raise Exception('modular inverse does not exist')
