@@ -133,8 +133,8 @@ def jacobi_symbol(a, n):
     $$
     \bigg(\frac{2}{n}\bigg) =
     \begin{cases}
-      1 & \text{if} \; n \equiv \pm 1 \pmod{8} \\
-      0 & \text{if} \; n \equiv \pm 3 \pmod{8}
+      \phantom{-}1 & \text{if} \; n \equiv \pm 1 \pmod{8} \\
+                -1 & \text{if} \; n \equiv \pm 3 \pmod{8}
     \end{cases}
     $$
 
