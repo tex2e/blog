@@ -84,7 +84,7 @@ DNSSECのルートサーバの秘密鍵も、このシャミアの秘密分散�
 有限体 $\mathbb{F}_p$ 上のシャミアの秘密分散法のPython3での実装は以下のようになります。
 関数`split`の座標を求めるときに $x = 1,2,3,...$ としていますが本来は乱数で $x$ を決めるのが好ましいです。
 ですが、乱数だと過去に出した値と重複していないか調べる手間が増えてしまうので、その辺は簡単な実装にしています。
-関数`invmod`は有限体 $\mathbb{F}_p$ で除算をしたいときに使います。厳密に言うと、剰余環の乗法の逆元を求める関数です。
+関数`modinv`は有限体 $\mathbb{F}_p$ で除算をしたいときに使います。厳密に言うと、剰余環の乗法の逆元を求める関数です。
 
 ```python
 
@@ -116,7 +116,7 @@ def combine(shares, m):
                 numerator = (numerator * (-xj)) % m
                 denominator = (denominator * (xi - xj)) % m
 
-        secret = (secret + (yi * numerator * invmod(denominator, m))) % m
+        secret = (secret + (yi * numerator * modinv(denominator, m))) % m
 
     return secret
 
@@ -128,7 +128,7 @@ def xgcd(a, b):
         y0, y1 = y1, y0 - q * y1
     return a, x0, y0
 
-def invmod(a, m):
+def modinv(a, m):
     g, x, y = xgcd(a, m)
     if g != 1:
         raise Exception('modular inverse does not exist')

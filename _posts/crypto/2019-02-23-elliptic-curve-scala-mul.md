@@ -71,7 +71,7 @@ def xgcd(a, b):
     return a, x0, y0
 
 # 有限体の乗法逆元（モジュラ逆数）を求める
-def invmod(a, m):
+def modinv(a, m):
     g, x, y = xgcd(a, m)
     if g != 1:
         raise Exception('modular inverse does not exist')
@@ -95,7 +95,7 @@ def GF(p):
         def __pow__(self, e):
             return Fp(pow(self.val, int(e), Fp.p))
         def __floordiv__(self, other):
-            return self * invmod(other.val, Fp.p)
+            return self * modinv(other.val, Fp.p)
         def __mod__(self, m):
             return self.val % int(m)
         def __eq__(self, other):

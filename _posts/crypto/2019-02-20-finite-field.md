@@ -16,7 +16,7 @@ published:     true
 主に計算機関連の分野においては、発見者であるエヴァリスト・ガロアにちなんで**ガロア体**（Galois field）などとも呼ばれます。
 
 Pythonの演算子オーバーロードで有限体を実装したのが以下です。
-割り算で逆元を求めるために、拡張ユークリッド互除法の `xgcd` とモジュラ逆数を求める `invmod` を使っています。
+割り算で逆元を求めるために、拡張ユークリッド互除法の `xgcd` とモジュラ逆数を求める `modinv` を使っています。
 
 ```python
 
@@ -28,7 +28,7 @@ def xgcd(a, b):
         y0, y1 = y1, y0 - q * y1
     return a, x0, y0
 
-def invmod(a, m):
+def modinv(a, m):
     g, x, y = xgcd(a, m)
     if g != 1:
         raise Exception('modular inverse does not exist')
@@ -57,7 +57,7 @@ def GF(p):
             return Fp(pow(self.val, int(e), Fp.p))
 
         def __floordiv__(self, other):
-            return self * invmod(other.val, Fp.p)
+            return self * modinv(other.val, Fp.p)
 
         def __mod__(self, m):
             return self.val % int(m)
