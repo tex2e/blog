@@ -53,6 +53,9 @@ $$
 ```python
 import math
 
+def QR(a, p):
+    return pow(a, (p - 1) // 2, p) == 1
+
 def legendre_symbol(a, p):
     if math.gcd(a, p) != 1:
         return 0
