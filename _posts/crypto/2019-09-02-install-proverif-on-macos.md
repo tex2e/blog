@@ -16,7 +16,7 @@ published:     true
 ProVerifはOPAM経由でインストールするのが楽だと思いますので、まず始めに、必要なパッケージをインストールします。
 
 ```bash
-$ brew install ocaml opam graphviz gtk+3
+$ brew install ocaml opam graphviz gtk+
 ```
 
 OPAMの初期化と、最新版のProVerifをインストールできるようにupdateをしておきます。
@@ -108,7 +108,7 @@ to the PKG_CONFIG_PATH environment variable
 Package 'libffi', required by 'gobject-2.0', not found
 ```
 
-なので、改めて必要なパッケージをインストールします。
+なので、改めて libffi などの必要なパッケージをインストールします。
 
 ```bash
 $ brew install gobject-introspection libffi
