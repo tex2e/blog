@@ -20,7 +20,6 @@ cat > _posts/$1/$(date +%Y-%m-%d)-${2:-post}.md <<EOS
 ---
 layout:        post
 title:         "This_is_Awesome"
-menutitle:     "This_is_Awesome"
 date:          $(date +%Y-%m-%d)
 tags:          $category
 category:      $category
@@ -29,8 +28,9 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+# sitemap: false
+# draft:   true
 ---
 
 preface
-
 EOS
