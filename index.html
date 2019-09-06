@@ -5,8 +5,10 @@ layout: default
 <div id="content" class="content">
   <h3>Recent Posts</h3>
   <ul class="category recent-posts">
-    {% for post in site.posts limit:5 %}
+    {% assign count = 0 %}
+    {% for post in site.posts limit:10 %}
     {% unless post.draft %}
+    {% assign count = count | plus: 1 %}
 
     {% if post.menutitle %}
     {% assign title = post.menutitle %}
@@ -24,6 +26,11 @@ layout: default
         </article>
       </div>
     </li>
+
+    {% if count == 5 %}
+    {% break %}
+    {% endif %}
+
     {% endunless %}
     {% endfor %}
   </ul>
