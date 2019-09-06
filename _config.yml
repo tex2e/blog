@@ -26,15 +26,26 @@ kramdown:
 include:
   - _pages
 exclude:
+  - .bundle
+  - .git
+  - .gitignore
+  - .jekyll-metadata
+  - .sass-cache
   - vendor
-  - Makefile
-  - new.sh
-  - server.sh
   - Gemfile
   - Gemfile.lock
+  - new.sh
+  - server.sh
+  - Makefile
   - LICENSE
   - README.md
-  - offline.html
+keep_files:
+  - api
+  - assets
+  - css
+  - fonts
+  - js
+  - media
 plugins:
   - jekyll-mentions
   - jekyll-feed

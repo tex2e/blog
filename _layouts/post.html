@@ -19,15 +19,19 @@ layout: default
       {{content}}
     </section>
 
+    {% comment %}
     <footer class="post-footer">
       {% include authorinfo.html param=page.author %}
     </footer>
+    {% endcomment %}
 
+    {% if jekyll.environment == "production" %}
     {% if page.comments %}
     <div class="comments">
       <a href="javascript:;" class="view-comments"><i class="fa fa-comments"></i>View Comments...</a>
       <div id="disqus_thread"></div>
     </div>
+    {% endif %}
     {% endif %}
 
   </article>
