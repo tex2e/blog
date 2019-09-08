@@ -5,3 +5,5 @@ if [[ "$1" =~ ^re ]]; then
 fi
 
 bundle exec jekyll server -I --livereload --future
+
+# --limit_posts 1
