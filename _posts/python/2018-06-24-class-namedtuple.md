@@ -23,7 +23,7 @@ python3 には collections.namedtuple という構造体のような振る舞い
 ```python
 from collections import namedtuple
 
-class Person(namedtuple('Person', 'name age')):
+class Person(namedtuple('Person', ['name', 'age'])):
     def hello(self):
         return ("Hello! My name is {} and I'm {} years old." \
                 .format(self.name, self.age))
