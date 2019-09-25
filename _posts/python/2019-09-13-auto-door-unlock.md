@@ -31,7 +31,58 @@ published:     true
 
 完成したあとで、Raspberry Piを再起動しても自動開錠システムが自動的に起動するように、systemdでプロセス再起動の設定をしたり、自分のノートパソコンとLANケーブルで接続できるようにRaspberry PiのethXを固定のローカルIPアドレスにしたり、自分の公開鍵を入れて秒でsshログインできるようにしたりしました。
 
-後日、システムの詳細部分を写真に撮ると思うので、この下に写真が並ぶと思います (TODO)。
+システムの詳細部分を写真に撮りましたので、何かの参考になればと思います。
+
+<div class="album">
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img1.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img2.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img3.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img4.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img5.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img12.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img13.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img6.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img7.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img8.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img10.jpg" />
+      <figcaption></figcaption>
+   </figure>
+   <figure>
+      <img src="{{ site.baseurl }}/media/post/auto-door-unlock/img11.jpg" />
+      <figcaption></figcaption>
+   </figure>
+</div>
 
 
 システムのソースコードは [fjt-lab/auto-door-unlock -- GitHub](https://github.com/fjt-lab/auto-door-unlock) に上げていますので、興味のある方は参考にしてください。
