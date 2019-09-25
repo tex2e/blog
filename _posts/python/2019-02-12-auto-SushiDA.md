@@ -44,7 +44,7 @@ PyAutoGUIでクリックする座標をハードコードするのは同様の�
 画面上のどこにあってもスタートすることができます。
 
 <figure>
-<img src="{{ site.baseurl }}/media/post/python-auto-SushiDA-1.png" />
+<img src="{{ site.baseurl }}/media/post/sushiDA/python-auto-SushiDA-1.png" />
 <figcaption>画面上のどこかにあるゲーム画面を探す方法</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ PyAutoGUI には pyautogui.screenshot() という関数があるので簡単に�
 実際にはグレースケールにして2値化した画像の色を反転させるという画像処理をしています。
 
 <figure>
-<img src="{{ site.baseurl }}/media/post/python-auto-SushiDA-2.png" />
+<img src="{{ site.baseurl }}/media/post/sushiDA/python-auto-SushiDA-2.png" />
 <figcaption>光学文字認識のための画像処理の流れ</figcaption>
 </figure>
 
