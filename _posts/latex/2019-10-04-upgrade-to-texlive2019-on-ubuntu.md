@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "texlive2019へのアップグレード in Ubuntu"
+title:         "texlive2019へのアップグレード on Ubuntu"
 date:          2019-10-04
 tags:          LaTeX
 category:      LaTeX
@@ -13,14 +13,9 @@ sitemap: false
 draft:   true
 ---
 
-```
-cd /usr/local/texlive
-cp -a 2018 2019
-wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
-sudo tlmgr update --self --all
-ln -sf /usr/local/texlive/2019/bin/x86_64-linux/* /usr/local/bin
-```
+Ubuntuのtexliveを2018から2019にアップグレードしたので、その方法についての備忘録。
 
+tlmgrで新しいパッケージを入れようとしたら例のアップグレードが必要ですとのメッセージが...
 
 ```
 $ sudo tlmgr install tikzposter                           
@@ -30,7 +25,12 @@ Cross release updates are only supported with
 Please see https://tug.org/texlive/upgrade.html for details.
 ```
 
-https://tug.org/texlive/upgrade.html
+というわけで、このページを読みながら、アップグレードしていきます。
+
+[https://tug.org/texlive/upgrade.html](https://tug.org/texlive/upgrade.html)
+
+まず、texliveがインストールされているディレクトリに移動して、2018をコピーして2019を作成します。
+そしたら環境変数 PATH を 2019 に変更します。
 
 ```
 $ cd /usr/local/texlive
@@ -38,7 +38,7 @@ $ cp -a 2018 2019
 $ export PATH="/usr/local/texlive/2019/bin/x86_64-linux:$PATH" >> .bash_profile
 ```
 
-
+次に update-tlmgr-latest.sh をダウンロードして実行します。
 
 ```
 $ wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
@@ -88,6 +88,8 @@ DD:dumping $::progs = {
 ./runme.sh: done.
 ```
 
+最後に tlmgr 自身とパッケージのアップデートをします。
+
 ```
 $ sudo tlmgr update --self --all
 tlmgr: package repository ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/tlnet (verified)
@@ -123,6 +125,8 @@ done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-i
 running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --byfmt mf ...
 done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --byfmt mf.
 tlmgr: package log updated: /usr/local/texlive/2018/texmf-var/web2c/tlmgr.log
-
-$ ln -sf /usr/local/texlive/2019/bin/x86_64-linux/* /usr/local/bin
 ```
+
+texlive2019でtexコマンドが正しく使えることを確認したら古い方(2018)を削除しましょう。
+
+以上です。
