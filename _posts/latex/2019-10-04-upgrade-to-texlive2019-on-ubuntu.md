@@ -9,8 +9,6 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
-sitemap: false
-draft:   true
 ---
 
 Ubuntuのtexliveを2018から2019にアップグレードしたので、その方法についての備忘録。
@@ -18,7 +16,7 @@ Ubuntuのtexliveを2018から2019にアップグレードしたので、その�
 tlmgrで新しいパッケージを入れようとしたら例のアップグレードが必要ですとのメッセージが...
 
 ```
-$ sudo tlmgr install tikzposter                           
+$ sudo tlmgr install beamerposter
 tlmgr: Remote repository is newer than local (2018 < 2019)
 Cross release updates are only supported with
   update-tlmgr-latest(.sh/.exe) --update
@@ -44,7 +42,7 @@ $ export PATH="/usr/local/texlive/2019/bin/x86_64-linux:$PATH" >> .bash_profile
 $ wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
 $ sh update-tlmgr-latest.sh -- --upgrade
 Verifying archive integrity... All good.
-Uncompressing TeX Live Manager Updater  100%  
+Uncompressing TeX Live Manager Updater  100%
 ./runme.sh: updating in /usr/local/texlive/2018...
 ./runme.sh: tlmgr version says this is TeX Live 2018,
 ./runme.sh: and this updater script created: Sat Jul  6 02:28:20 CEST 2019.
@@ -105,28 +103,20 @@ running mktexlsr ...
 done running mktexlsr.
 running updmap-sys ...
 done running updmap-sys.
-regenerating fmtutil.cnf in /usr/local/texlive/2018/texmf-dist
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine tex ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine tex.
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine ptex ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine ptex.
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine pdftex ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine pdftex.
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine euptex ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine euptex.
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine luatex ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine luatex.
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine luajittex ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine luajittex.
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine eptex ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine eptex.
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine uptex ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --no-error-if-no-format --byengine uptex.
-running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --byfmt mf ...
-done running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --byfmt mf.
+...
 tlmgr: package log updated: /usr/local/texlive/2018/texmf-var/web2c/tlmgr.log
 ```
 
 texlive2019でtexコマンドが正しく使えることを確認したら古い方(2018)を削除しましょう。
 
 以上です。
+
+
+### 追記
+
+newtxtextとnewtxmathの読み込みでエラーになったので、newtxを再インストールしました。
+
+```
+$ sudo tlmgr uninstall newtx
+$ sudo tlmgr install newtx
+```
