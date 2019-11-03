@@ -3,8 +3,11 @@ layout: default
 ---
 
 <div id="content" class="content">
-  <h3>Recent Posts</h3>
+
   <ul class="category recent-posts">
+
+    <h3 class="category-title">Recent Posts</h3>
+
     {% assign count = 0 %}
     {% for post in site.posts limit:10 %}
     {% unless post.draft %}
@@ -39,8 +42,14 @@ layout: default
   {% assign sorted_cats = site.categories | sort %}
   {% for category in sorted_cats %}
   {% assign sorted_posts = category[1] | reversed %}
-  <h3 id="{{ category[0] | uri_escape | downcase | slugify }}">{{category[0] | camelcase }}</h3>
+
   <ul class="category {{ category[0] | uri_escape | downcase | slugify }}">
+
+    <h3 id="{{ category[0] | uri_escape | downcase | slugify }}"
+        class="category-title">
+      {{category[0] | camelcase }}
+    </h3>
+
     {% for post in sorted_posts %}
     {% unless post.draft %}
 

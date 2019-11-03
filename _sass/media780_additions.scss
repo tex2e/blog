@@ -2,13 +2,17 @@
 /* this allows us to simple replace the forked scss files on changes in the forked repo */
 
 @media only screen and (max-width: 780px) {
+  .category-title {
+    text-align: left;
+  }
+
   .category {
     .date {
-        display: none;
+      display: none;
     }
 
     // .article {
-    //     text-align: center;
+    //   text-align: center;
     // }
   }
 
