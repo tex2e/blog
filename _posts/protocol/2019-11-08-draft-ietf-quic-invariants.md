@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "draft-ietf-quic-invariants について"
+title:         "draft-ietf-quic-invariants の概要"
 date:          2019-11-08
 tags:          Protocol
 category:      Protocol
@@ -14,6 +14,7 @@ published:     true
 ---
 
 [Version-Independent Properties of QUIC](https://quicwg.org/base-drafts/draft-ietf-quic-invariants.html) を読んで要点だけをまとめた自分用の資料です。
+読んでいる時点では draft-07 です。
 
 
 ## Version-Independent Properties of QUIC
@@ -22,7 +23,7 @@ published:     true
 
 ### 概要
 
-- この文書では新しいバージョンになっても変わらないQUICの特性について定義します
+- この文書では新しいバージョンになっても変わらないQUICの特性について定義する
 
 ### 1. はじめに
 
