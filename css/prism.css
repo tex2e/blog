@@ -140,3 +140,8 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
+/* my setting */
+code.language-fig {
+	font-size: 0.95em;
+	line-height: 1.3;
+}
