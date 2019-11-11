@@ -62,7 +62,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| つまり | in short, in sum, in brief, in conclusion, in summary, <br>to summarize, in other words, i.e., basically（話）, in a nutshell（話）
+| つまり | in short, in sum, in brief, in conclusion, in summary, <br>to summarize, in other words, i.e., <br>basically（話）, in a nutshell（話）, in a word (話)
 | すなわち | namely, to wit
 | より正確に言えば | more precisely, namely, or rather
 | 正確ではないですが | "not precisely, but"
@@ -163,6 +163,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜の条件なら | only do
 | 場合によっては | in some cases
 | もしもそうなった場合には | in which case
+| もし〜であり、かつその場合に限り<br>(必要十分条件) | if and only if, iff
 
 
 時間
@@ -306,6 +307,9 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | うっかり、無意識に | inadvertently
 | 表向きは | ostensibly
 | 後から考えれば | in/with hindsight
+| もしそうなら | if so
+| もしそうでないなら | if not
+| Bとは言わないまでもA | A if not B
 
 
 
