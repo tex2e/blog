@@ -118,7 +118,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 初めは | initially
 | 最後に | finally, lastly, in conclusion
 | 留意すべきことは | note that, keep in mind that, nota bene, N.B.
-| 〜で説明されている通り | as described/shown above/below, as I said before/earlier, <br>as seen earlier,
+| 〜で説明されている通り | as described/shown above/below, as I said before/earlier, <br>as seen earlier, as discussed in Section N
 | 〜によれば | according to
 | 私の意見では | in my opinion, in my book（話）
 | ここでは | here
