@@ -122,7 +122,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜によれば | according to
 | 私の意見では | in my opinion, in my book（話）
 | ここでは | here
-| 理論上は | in theory, on paper
+| 理論上は | in theory, on paper, theoretically
 | 実際には | in practice, in effect, effectively
 
 
@@ -292,7 +292,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | デフォルトでは | by default
 | オプションで | optionally
 | 便宜上 | for convenience
-| 簡単にするために | for simplicity
+| 簡単/簡潔にするために | for simplicity, for brevity
 | 原則として | in principle
 | 言うまでもなく | needless to say
 | 参考までに言うけど | for what it's worth（話）
@@ -310,6 +310,9 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | もしそうなら | if so
 | もしそうでないなら | if not
 | Bとは言わないまでもA | A if not B
+| 興味深いことに | interestingly
+| 些細なことだが | trivially
+| 〜かどうかによる | depend on/upon whether
 
 
 
