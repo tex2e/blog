@@ -8,14 +8,7 @@ layout: headless
 {% assign author = site.data.authors[0] %}
 {% endif %}
 
-{% assign counter = 0 %}
-{% for post in site.posts %}
-  {% unless post.draft or post.author != author.initial %}
-    {% assign counter = counter | plus: 1 %}
-  {% endunless %}
-{% endfor %}
-
-<a href="{{ site.baseurl }}/" class="logo-readium"><span class="logo">{{ author.initial | slice: 0, 2 }}</span></a>
+<!-- <a href="{{ site.baseurl }}/" class="logo-readium"><span class="logo">{{ author.initial | slice: 0, 2 }}</span></a> -->
 
 <section class="author-profile" itemprop="author" itemscope itemtype="http://schema.org/Person">
   {% if author.cover %}
