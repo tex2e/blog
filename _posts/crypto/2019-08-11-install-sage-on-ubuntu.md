@@ -1,13 +1,11 @@
 ---
 layout:        post
 title:         "SageMathをUbuntu 16.04にインストール"
-menutitle:     "SageMathをUbuntu 16.04にインストール"
 date:          2019-08-11
-tags:          Linux
-category:      Linux
+category:      Crypto
 author:        tex2e
-cover:         /assets/cover1.jpg
-redirect_from:
+cover:         /assets/cover4.jpg
+redirect_from: /linux/install-sage-on-ubuntu
 comments:      true
 published:     true
 ---
