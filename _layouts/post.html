@@ -17,12 +17,6 @@ layout: default
       {{content}}
     </section>
 
-    {% comment %}
-    <footer class="post-footer">
-      {% include authorinfo.html param=page.author %}
-    </footer>
-    {% endcomment %}
-
     {% if jekyll.environment == "production" %}
     {% if page.comments %}
     <div class="comments">

@@ -22,7 +22,6 @@ layout:        post
 title:         "This_is_Awesome"
 date:          $(date +%Y-%m-%d)
 category:      $category
-author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
