@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "クロスプラットフォームで make"
-menutitle:     "クロスプラットフォームで make"
 date:          2016-12-05
-tags:          Programming Makefile
 category:      Makefile
 author:        tex2e
 cover:         /assets/cover1.jpg

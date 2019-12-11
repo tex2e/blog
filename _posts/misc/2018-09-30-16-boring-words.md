@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "16 Boring Words & What to Use Instead"
-menutitle:     "16 Boring Words & What to Use Instead"
 date:          2018-09-30
-tags:          English
 category:      Misc
 author:        tex2e
 cover:         /assets/cover1.jpg

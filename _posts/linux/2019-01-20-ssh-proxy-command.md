@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "踏み台サーバ経由の多段SSH"
-menutitle:     "踏み台サーバ経由の多段SSH"
 date:          2019-01-20
-tags:          Linux
 category:      Linux
 author:        tex2e
 cover:         /assets/cover1.jpg

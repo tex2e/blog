@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "公開鍵暗号の安全性レベル"
-menutitle:     "公開鍵暗号の安全性レベル"
 date:          2019-01-01
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

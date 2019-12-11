@@ -2,7 +2,6 @@
 layout:        post
 title:         "draft-ietf-quic-tls の概要"
 date:          2019-11-16
-tags:          Protocol
 category:      Protocol
 author:        tex2e
 cover:         /assets/cover1.jpg

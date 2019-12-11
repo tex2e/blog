@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "texlive2018 on Ubuntu"
-menutitle:     "texlive2018 on Ubuntu"
 date:          2018-06-16
-tags:          LaTeX
 category:      LaTeX
 author:        tex2e
-cover:         /assets/cover2.jpg
+cover:         /assets/cover1.jpg
 redirect_from: /tex/texlive2018-on-ubuntu
 comments:      true
 published:     true

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Gitの履歴からファイルを完全に削除する"
-menutitle:     "Gitの履歴からファイルを完全に削除する"
 date:          2019-06-10
-tags:          Git
 category:      Git
 author:        tex2e
 cover:         /assets/cover1.jpg

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "JavaScriptでGETパラメータの取得"
-menutitle:     "JavaScriptでGETパラメータの取得"
 date:          2016-09-23
-tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg

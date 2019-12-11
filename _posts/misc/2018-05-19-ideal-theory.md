@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "イデアル論入門の英語用語集"
-menutitle:     "イデアル論入門の英語用語集"
 date:          2018-05-19
-tags:          Math
 category:      Misc
 author:        tex2e
 cover:         /assets/cover1.jpg

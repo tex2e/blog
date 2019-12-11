@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "SSHで公開鍵認証"
-menutitle:     "SSHで公開鍵認証"
 date:          2019-01-19
-tags:          Linux
 category:      Linux
 author:        tex2e
 cover:         /assets/cover1.jpg

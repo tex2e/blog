@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "JSでRubyの .times .upto .downto メソッドを作る"
-menutitle:     "JSでRubyの .times .upto .downto メソッドを作る"
 date:          2016-04-03
-tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg

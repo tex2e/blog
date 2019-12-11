@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "平方剰余とルジャンドル記号とヤコビ記号"
-menutitle:     "平方剰余とルジャンドル記号とヤコビ記号"
 date:          2019-08-09
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

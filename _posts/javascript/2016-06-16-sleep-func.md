@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "sleep関数"
-menutitle:     "sleep関数"
 date:          2016-06-16
-tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg

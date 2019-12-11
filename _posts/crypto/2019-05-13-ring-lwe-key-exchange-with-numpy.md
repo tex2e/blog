@@ -3,7 +3,6 @@ layout:        post
 title:         "NumPyでRing-LWEによる鍵共有"
 menutitle:     "NumPyを使ったRing-LWEによる鍵共有"
 date:          2019-05-13
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

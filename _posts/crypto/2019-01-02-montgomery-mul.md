@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Pythonでモンゴメリ乗算"
-menutitle:     "Pythonでモンゴメリ乗算"
 date:          2019-01-02
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

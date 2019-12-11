@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Python で別ファイルの import"
-menutitle:     "Python で別ファイルの import"
 date:          2016-10-09
-tags:          Programming Language Python
 category:      Python
 author:        tex2e
 cover:         /assets/cover1.jpg

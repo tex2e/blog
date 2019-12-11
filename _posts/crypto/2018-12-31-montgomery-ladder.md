@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "高速冪剰余計算とモンゴメリ冪乗法"
-menutitle:     "高速冪剰余計算とモンゴメリ冪乗法"
 date:          2018-12-31
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

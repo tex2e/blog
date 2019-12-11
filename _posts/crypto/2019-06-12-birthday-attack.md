@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "誕生日攻撃 (Birthday Attack)"
-menutitle:     "誕生日攻撃 (Birthday Attack)"
 date:          2019-06-12
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

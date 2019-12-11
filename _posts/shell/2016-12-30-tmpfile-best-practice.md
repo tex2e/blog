@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "Bashで一時ファイルを作る方法"
-menutitle:     "Bashで一時ファイルを作る方法"
 date:          2016-12-30
-tags:          Programming Language Bash
 category:      Shell
 author:        tex2e
-cover:         /assets/cover2.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true

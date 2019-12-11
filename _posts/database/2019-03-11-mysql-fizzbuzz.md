@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "MySQL で FizzBuzz"
-menutitle:     "MySQL で FizzBuzz"
 date:          2019-03-11
-tags:          Database
 category:      Database
 author:        tex2e
 cover:         /assets/cover1.jpg

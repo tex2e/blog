@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "平方剰余問題とオイラーの規準"
-menutitle:     "平方剰余問題とオイラーの規準"
 date:          2019-02-21
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

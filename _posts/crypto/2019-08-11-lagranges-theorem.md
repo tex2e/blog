@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "ラグランジュの定理と群の位数"
-menutitle:     "ラグランジュの定理と群の位数"
 date:          2019-08-11
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Hakellでパイプライン演算子"
-menutitle:     "Hakellでパイプライン演算子"
 date:          2017-09-19
-tags:          Programming Language Haskell
 category:      Haskell
 author:        tex2e
 cover:         /assets/cover1.jpg

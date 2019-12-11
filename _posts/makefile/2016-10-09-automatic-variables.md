@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Makefile の特殊変数・自動変数の一覧"
-menutitle:     "Makefile の特殊変数・自動変数の一覧"
 date:          2016-10-09
-tags:          Programming Makefile
 category:      Makefile
 author:        tex2e
 cover:         /assets/cover1.jpg

@@ -3,7 +3,6 @@ layout:        post
 title:         "Perl6 で LaTeX 文章の構文解析をする"
 menutitle:     "Perl6 で LaTeX 文章の構文解析をする"
 date:          2017-03-05
-tags:          Programming Language Perl6
 category:      Perl6
 author:        tex2e
 cover:         /assets/cover1.jpg

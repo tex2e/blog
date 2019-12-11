@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "MySQLで1〜Nの数列を扱う"
-menutitle:     "MySQLで1〜Nの数列を扱う"
 date:          2019-03-10
-tags:          Database
 category:      Database
 author:        tex2e
 cover:         /assets/cover1.jpg

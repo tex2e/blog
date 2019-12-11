@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Tonelli-Shanks Algorithm"
-menutitle:     "Tonelli-Shanks Algorithm"
 date:          2019-08-15
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

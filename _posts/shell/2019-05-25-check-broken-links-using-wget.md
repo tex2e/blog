@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "wgetでWebサイトを巡回してリンク切れを確認する"
-menutitle:     "wgetでWebサイトを巡回してリンク切れを確認する"
 date:          2019-05-25
-tags:          Shell
 category:      Shell
 author:        tex2e
 cover:         /assets/cover1.jpg

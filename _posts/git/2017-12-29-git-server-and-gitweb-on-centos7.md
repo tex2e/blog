@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "GitサーバとGitWebをCentOS 7で構築する"
-menutitle:     "GitサーバとGitWebをCentOS 7で構築する"
 date:          2017-12-31
-tags:          Git Server
 category:      Git
 author:        tex2e
 cover:         /assets/cover1.jpg

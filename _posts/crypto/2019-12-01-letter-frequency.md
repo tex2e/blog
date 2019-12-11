@@ -2,7 +2,6 @@
 layout:        post
 title:         "アルファベット出現率"
 date:          2019-12-01
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

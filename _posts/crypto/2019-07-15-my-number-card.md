@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "マイナンバーカードの技術仕様"
-menutitle:     "マイナンバーカードの技術仕様"
 date:          2019-07-15
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

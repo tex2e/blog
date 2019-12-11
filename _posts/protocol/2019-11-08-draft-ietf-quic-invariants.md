@@ -2,7 +2,6 @@
 layout:        post
 title:         "draft-ietf-quic-invariants の概要"
 date:          2019-11-08
-tags:          Protocol
 category:      Protocol
 author:        tex2e
 cover:         /assets/cover1.jpg

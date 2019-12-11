@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "OOP in Java"
-menutitle:     "OOP in Java"
 date:          2016-12-03
-tags:          Programming Language Java OOP
 category:      Java
 author:        tex2e
 cover:         /assets/cover1.jpg

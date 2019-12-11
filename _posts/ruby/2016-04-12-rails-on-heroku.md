@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "RailsをHerokuにpushするときにsqlite3でエラーが起こる"
-menutitle:     "RailsをHerokuにpushするときにsqlite3でエラーが起こる"
 date:          2016-04-12
-tags:          Ruby on Rails
 category:      Ruby
 author:        tex2e
 cover:         /assets/cover1.jpg

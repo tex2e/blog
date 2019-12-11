@@ -3,7 +3,6 @@ layout:        post
 title:         "C言語で map と reduce を行う方法"
 menutitle:     "C言語で map と reduce"
 date:          2016-12-03
-tags:          Programming Language C
 category:      C
 author:        tex2e
 cover:         /assets/cover1.jpg

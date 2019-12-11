@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "node.js の EventEmitter をブラウザで使う"
-menutitle:     "node.js の EventEmitter をブラウザで使う"
 date:          2016-09-25
-tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg

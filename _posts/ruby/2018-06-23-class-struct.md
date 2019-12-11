@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "構造体を継承してコンストラクタをなくす(Ruby)"
-menutitle:     "構造体を継承してコンストラクタをなくす(Ruby)"
 date:          2018-06-23
-tags:          Programming Language Ruby
 category:      Ruby
 author:        tex2e
-cover:         /assets/cover3.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true

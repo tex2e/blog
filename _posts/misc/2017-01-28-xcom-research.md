@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "XCOM Research Report"
-menutitle:     "XCOM Research Report"
 date:          2017-01-28
-tags:          XCOM
 category:      Misc
 author:        tex2e
-cover:         /assets/cover3.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     false # set to be true

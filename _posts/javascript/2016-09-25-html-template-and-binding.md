@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "テンプレートエンジンを使わないで、コードの埋め込みを行う"
-menutitle:     "テンプレートエンジンを使わないで、コードの埋め込みを行う"
 date:          2016-09-25
-tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg

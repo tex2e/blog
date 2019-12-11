@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "難読化JavaScriptの作り方"
-menutitle:     "難読化JavaScriptの作り方"
 date:          2016-05-22
-tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
-cover:         /assets/cover2.jpg
+cover:         /assets/cover1.jpg
 redirect_from: /javascript/obfuscattion
 comments:      false
 published:     true

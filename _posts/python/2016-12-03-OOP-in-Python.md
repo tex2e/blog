@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "OOP in Python"
-menutitle:     "OOP in Python"
 date:          2016-12-03
-tags:          Programming Language Python
 category:      Python
 author:        tex2e
 cover:         /assets/cover1.jpg

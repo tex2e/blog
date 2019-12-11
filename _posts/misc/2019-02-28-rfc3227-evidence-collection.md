@@ -3,7 +3,6 @@ layout:        post
 title:         "証拠収集のためのガイドライン"
 menutitle:     "証拠収集とアーカイビングのためのガイドライン"
 date:          2019-02-28
-tags:          Misc
 category:      Misc
 author:        tex2e
 cover:         /assets/cover6.jpg

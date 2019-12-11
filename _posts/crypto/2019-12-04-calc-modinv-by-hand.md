@@ -2,7 +2,6 @@
 layout:        post
 title:         "剰余の逆元 (modinv) の手計算"
 date:          2019-12-04
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

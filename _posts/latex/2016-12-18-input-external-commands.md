@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "TeXから外部コマンドを実行する方法"
-menutitle:     "TeXから外部コマンドを実行する方法"
 date:          2016-12-18
-tags:          LaTeX
 category:      LaTeX
 author:        tex2e
 cover:         /assets/cover1.jpg

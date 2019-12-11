@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Scalaでパイプライン演算子"
-menutitle:     "Scalaでパイプライン演算子"
 date:          2017-09-19
-tags:          Programming Language Scala
 category:      Scala
 author:        tex2e
 cover:         /assets/cover1.jpg

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "OOP in Elixir"
-menutitle:     "OOP in Elixir"
 date:          2016-12-03
-tags:          Programming Language Elixir OOP
 category:      Elixir
 author:        tex2e
 cover:         /assets/cover1.jpg

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "ブログ始めました"
-menutitle:     "ブログ始めました"
 date:          2016-04-02
-tags:          Blog
 category:      Blog
 author:        tex2e
 cover:         /assets/cover1.jpg

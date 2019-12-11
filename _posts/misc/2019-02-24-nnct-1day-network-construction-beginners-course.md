@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "ネットワーク構築入門講座の参加メモ"
-menutitle:     "ネットワーク構築入門講座の参加メモ"
 date:          2019-02-24
-tags:          Misc
 category:      Misc
 author:        tex2e
 cover:         /assets/cover1.jpg

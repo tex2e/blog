@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "grepコマンドで特定のディレクトリを検索対象から除外する"
-menutitle:     "grepコマンドで特定のディレクトリを検索対象から除外する"
 date:          2019-05-27
-tags:          Shell
 category:      Shell
 author:        tex2e
 cover:         /assets/cover1.jpg

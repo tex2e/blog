@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "SQLiteでデーターベースを作る方法"
-menutitle:     "SQLiteでデーターベースを作る方法"
 date:          2016-11-21
-tags:          Database
 category:      Database
 author:        tex2e
 cover:         /assets/cover2.jpg

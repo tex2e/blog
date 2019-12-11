@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "OOP in C#"
-menutitle:     "OOP in C#"
 date:          2016-12-03
-tags:          Programming Language C# OOP
 category:      C#
 author:        tex2e
 cover:         /assets/cover1.jpg

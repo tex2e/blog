@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "有限体上の楕円曲線の点集合"
-menutitle:     "有限体上の楕円曲線の点集合"
 date:          2019-02-22
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

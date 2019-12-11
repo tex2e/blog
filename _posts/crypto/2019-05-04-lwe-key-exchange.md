@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "LWE格子暗号による鍵共有"
-menutitle:     "LWE格子暗号による鍵共有"
 date:          2019-05-04
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

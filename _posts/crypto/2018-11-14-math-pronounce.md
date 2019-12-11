@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "数学・数式・記号などの英語の読み方"
-menutitle:     "数学・数式・記号などの英語の読み方"
 date:          2018-11-14
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

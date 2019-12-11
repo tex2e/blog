@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Rake Guide"
-menutitle:     "Rake Guide"
 date:          2016-09-24
-tags:          Programming Language Ruby
 category:      Ruby
 author:        tex2e
 cover:         /assets/cover1.jpg

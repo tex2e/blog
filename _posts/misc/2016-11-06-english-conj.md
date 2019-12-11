@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "英語の文と文のつなぎの言葉"
-menutitle:     "英語の文と文のつなぎの言葉"
 date:          2016-11-06
-tags:          English
 category:      Misc
 author:        tex2e
 cover:         /assets/cover1.jpg

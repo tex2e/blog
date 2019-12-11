@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "技術検証用にCentOS7を仮想環境にインストールする"
-menutitle:     "技術検証用にCentOS7を仮想環境にインストールする"
 date:          2019-07-12
-tags:          Linux
 category:      Linux
 author:        tex2e
 cover:         /assets/cover1.jpg

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "文字数を数えるLaTeXマクロ"
-menutitle:     "文字数を数えるLaTeXマクロ"
 date:          2019-08-05
-tags:          LaTeX
 category:      LaTeX
 author:        tex2e
 cover:         /assets/cover1.jpg

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "D-CTF Quals 2018 Message Writeup"
-menutitle:     "D-CTF Quals 2018 Message Writeup"
 date:          2018-09-23
-tags:          Misc
 category:      Misc
 author:        tex2e
 cover:         /assets/cover1.jpg

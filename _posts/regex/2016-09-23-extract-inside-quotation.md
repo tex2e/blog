@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "正規表現でダブルクオート内の文字列を抽出する"
-menutitle:     "正規表現でダブルクオート内の文字列を抽出する"
 date:          2016-09-23
-tags:          Regex
 category:      Regex
 author:        tex2e
-cover:         /assets/cover2.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

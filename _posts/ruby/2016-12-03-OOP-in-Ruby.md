@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "OOP in Ruby"
-menutitle:     "OOP in Ruby"
 date:          2016-12-03
-tags:          Programming Language Ruby
 category:      Ruby
 author:        tex2e
 cover:         /assets/cover1.jpg

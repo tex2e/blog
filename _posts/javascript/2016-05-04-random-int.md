@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Javascriptで整数の乱数を得る"
-menutitle:     "Javascriptで整数の乱数を得る"
 date:          2016-05-04
-tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg

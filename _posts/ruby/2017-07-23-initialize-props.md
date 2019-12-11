@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "[Ruby] インスタンス変数の初期化をメタプロする"
-menutitle:     "[Ruby] インスタンス変数の初期化をメタプロする"
 date:          2017-07-23
-tags:          Programming Language Ruby
 category:      Ruby
 author:        tex2e
 cover:         /assets/cover1.jpg

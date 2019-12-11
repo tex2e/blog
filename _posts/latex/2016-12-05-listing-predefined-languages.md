@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "LaTeX の Listing 対応言語一覧"
-menutitle:     "LaTeX の Listing 対応言語一覧"
 date:          2016-12-05
-tags:          LaTeX
 category:      LaTeX
 author:        tex2e
 cover:         /assets/cover1.jpg

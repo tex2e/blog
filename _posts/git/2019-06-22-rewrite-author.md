@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Gitの履歴内のコミットしたユーザ名を全て変更する"
-menutitle:     "Gitの履歴内のコミットしたユーザ名を全て変更する"
 date:          2019-06-22
-tags:          Git
 category:      Git
 author:        tex2e
 cover:         /assets/cover1.jpg

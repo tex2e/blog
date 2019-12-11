@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "数論変換(NTT)による有限体上の多項式環の乗算"
-menutitle:     "数論変換(NTT)による有限体上の多項式環の乗算"
 date:          2019-05-31
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

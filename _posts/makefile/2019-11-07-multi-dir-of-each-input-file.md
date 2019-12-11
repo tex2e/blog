@@ -2,7 +2,6 @@
 layout:        post
 title:         "各入力ファイルのディレクトリが別々で、出力ディレクトリが同じときのMakefileルールの書き方"
 date:          2019-11-07
-tags:          Makefile
 category:      Makefile
 author:        tex2e
 cover:         /assets/cover1.jpg

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "有限体(ガロア体)をPythonで実装する"
-menutitle:     "有限体(ガロア体)をPythonで実装する"
 date:          2019-02-20
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

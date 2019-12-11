@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Python で Enumerable#each_with_index"
-menutitle:     "Python で Enumerable#each_with_index"
 date:          2016-12-15
-tags:          Programming Language Python
 category:      Python
 author:        tex2e
 cover:         /assets/cover2.jpg

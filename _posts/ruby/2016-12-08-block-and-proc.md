@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "配列を返すメソッドをブロックも受け付けるように拡張する"
-menutitle:     "配列を返すメソッドをブロックも受け付けるように拡張する"
 date:          2016-12-08
-tags:          Programming Language Ruby
 category:      Ruby
 author:        tex2e
 cover:         /assets/cover1.jpg

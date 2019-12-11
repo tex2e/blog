@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "冗長なパス foo/bar/../lib を foo/lib に変換する"
-menutitle:     "冗長なパス foo/bar/../lib を foo/lib に変換する"
 date:          2016-10-09
-tags:          Programming Language Bash
 category:      Shell
 author:        tex2e
-cover:         /assets/cover3.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true

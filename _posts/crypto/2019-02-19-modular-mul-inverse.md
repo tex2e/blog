@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Pythonでモジュラ逆数を求める"
-menutitle:     "Pythonでモジュラ逆数を求める"
 date:          2019-02-19
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

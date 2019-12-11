@@ -3,7 +3,6 @@ layout:        post
 title:         "AES (Rijndael) の MixColumns を理解する"
 menutitle:     "AES (Rijndael) の MixColumns を理解する (Adv.Cal. 2019)"
 date:          2019-12-11
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

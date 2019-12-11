@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Gitレポジトリの中にいるか確認する方法"
-menutitle:     "Gitレポジトリの中にいるか確認する方法"
 date:          2016-05-21
-tags:          Git Commands
 category:      Git
 author:        tex2e
 cover:         /assets/cover1.jpg

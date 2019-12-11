@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "/tmp ディレクトリのパーミッション"
-menutitle:     "/tmp ディレクトリのパーミッション"
 date:          2019-06-23
-tags:          Linux
 category:      Linux
 author:        tex2e
 cover:         /assets/cover1.jpg

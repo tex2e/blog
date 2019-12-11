@@ -3,7 +3,6 @@ layout:        post
 title:         "SageMathでRing-LWEによる鍵共有"
 menutitle:     "SageMathを使ったRing-LWEによる鍵共有"
 date:          2019-05-05
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

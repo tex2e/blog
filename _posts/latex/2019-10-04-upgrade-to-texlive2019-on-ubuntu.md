@@ -2,7 +2,6 @@
 layout:        post
 title:         "texlive2019へのアップグレード on Ubuntu"
 date:          2019-10-04
-tags:          LaTeX
 category:      LaTeX
 author:        tex2e
 cover:         /assets/cover1.jpg

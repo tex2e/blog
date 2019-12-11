@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "化学反応速度 (1次反応・2次反応)"
-menutitle:     "化学反応速度 (1次反応・2次反応)"
 date:          2019-06-11
-tags:          Misc
 category:      Misc
 author:        tex2e
 cover:         /assets/cover1.jpg

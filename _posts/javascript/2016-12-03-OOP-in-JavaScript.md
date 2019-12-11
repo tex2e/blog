@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "OOP in JavaScript"
-menutitle:     "OOP in JavaScript"
 date:          2016-12-03
-tags:          Programming Language Javascript
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg

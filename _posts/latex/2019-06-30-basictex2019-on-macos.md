@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "BasicTex2019 on MacOS"
-menutitle:     "BasicTex2019 on MacOS"
 date:          2019-06-30
-tags:          LaTeX
 category:      LaTeX
 author:        tex2e
 cover:         /assets/cover1.jpg

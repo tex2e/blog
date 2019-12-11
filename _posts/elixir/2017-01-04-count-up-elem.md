@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "Elixirで配列の要素数をカウントする"
-menutitle:     "Elixirで配列の要素数をカウントする"
 date:          2017-01-04
-tags:          Programming Language Elixir
 category:      Elixir
 author:        tex2e
-cover:         /assets/cover2.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

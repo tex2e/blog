@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "nroffマクロを使ったRFCの作成"
-menutitle:     "nroffマクロを使ったRFCの作成"
 date:          2019-03-20
-tags:          Misc
 category:      Misc
 author:        tex2e
 cover:         /assets/cover4.jpg

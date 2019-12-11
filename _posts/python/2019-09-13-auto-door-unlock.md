@@ -2,7 +2,6 @@
 layout:        post
 title:         "研究室の自動開錠システムを作った話"
 date:          2019-09-13
-tags:          Python
 category:      Python
 author:        tex2e
 cover:         /assets/cover1.jpg

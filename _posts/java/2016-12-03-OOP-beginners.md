@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Object Oriented Programming"
-menutitle:     "Object Oriented Programming"
 date:          2016-12-03
-tags:          Programming Language Java OOP Getting Started
 category:      Java
 author:        tex2e
 cover:         /assets/cover1.jpg
@@ -72,7 +70,7 @@ fork や pull request は自由にしてもらっても構いません。
 
 フィールドやメソッドを持つものを __オブジェクト__ と呼びます。
 
-__フィールド__ とはオブジェクトが持つ「情報を保存する場所」のことを指します。フィールドは「変数」に似ています。  
+__フィールド__ とはオブジェクトが持つ「情報を保存する場所」のことを指します。フィールドは「変数」に似ています。
 __メソッド__ とは、オブジェクトが持つ「情報を処理する場所」のことを指します。メソッドは、「関数」に似ています。
 
 また、オブジェクトのフィールドとメソッドをまとめて __メンバ__（member）と呼ぶことにします。
@@ -128,7 +126,7 @@ String str = "apple";
 
 #### フィールドの定義例
 
-はじめに、フィールドのみで構成される簡単なPointクラスを定義します。  
+はじめに、フィールドのみで構成される簡単なPointクラスを定義します。
 
 Main.java
 

@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "構造体を継承してコンストラクタをなくす(Python)"
-menutitle:     "構造体を継承してコンストラクタをなくす(Python)"
 date:          2018-06-24
-tags:          Programming Language Python
 category:      Python
 author:        tex2e
 cover:         /assets/cover1.jpg

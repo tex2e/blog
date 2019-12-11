@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "Coding Style Guide"
-menutitle:     "Coding Style Guide"
 date:          2016-09-23
-tags:          API Blueprint
 category:      Misc
 author:        tex2e
-cover:         /assets/cover2.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

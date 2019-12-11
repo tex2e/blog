@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "findコマンドで特定のディレクトリを検索対象から除外する"
-menutitle:     "findコマンドで特定のディレクトリを検索対象から除外する"
 date:          2016-05-04
-tags:          Programming Language Bash
 category:      Shell
 author:        tex2e
 cover:         /assets/cover1.jpg

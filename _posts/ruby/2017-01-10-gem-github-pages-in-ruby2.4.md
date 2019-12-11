@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "github-pages が Ruby2.4 で使えない問題"
-menutitle:     "github-pages が Ruby2.4 で使えない問題"
 date:          2017-01-10
-tags:          Programming Language Ruby
 category:      Ruby
 author:        tex2e
-cover:         /assets/cover2.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true

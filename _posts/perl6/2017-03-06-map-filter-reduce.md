@@ -3,7 +3,6 @@ layout:        post
 title:         "Map Filter Reduce in Perl6"
 menutitle:     "Map Filter Reduce in Perl6"
 date:          2017-03-06
-tags:          Programming Language Perl6
 category:      Perl6
 author:        tex2e
 cover:         /assets/cover1.jpg

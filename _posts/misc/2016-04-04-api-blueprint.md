@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "API Blueprint の書き方"
-menutitle:     "API Blueprint の書き方"
 date:          2016-04-04
-tags:          API Blueprint
 category:      Misc
 author:        tex2e
 cover:         /assets/cover1.jpg
@@ -15,10 +13,6 @@ published:     true
 [API Blueprint](https://apiblueprint.org/) とは
 API設計の形式的な書き方のことで、Markdownで書くことができます。
 
-<div class="tip">
-このページでは、API Blueprintについて自分なりに理解した部分をそのまま書いたので、
-間違っている部分やあまり説明になっていない部分が多いです。ご留意ください。
-</div>
 
 特徴
 -----

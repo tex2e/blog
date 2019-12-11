@@ -1,12 +1,10 @@
 ---
 layout:        post
 title:         "Makefileから別のMakefileをimportする・実行する"
-menutitle:     "Makefileから別のMakefileをimportする・実行する"
 date:          2017-12-09
-tags:          Programming Makefile
 category:      Makefile
 author:        tex2e
-cover:         /assets/cover3.jpg
+cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true

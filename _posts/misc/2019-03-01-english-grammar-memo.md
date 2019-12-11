@@ -3,7 +3,6 @@ layout:        post
 title:         "英語の文法のメモ"
 menutitle:     "英語の文法のメモ（自分用）"
 date:          2019-03-01
-tags:          Misc
 category:      Misc
 author:        tex2e
 cover:         /assets/cover2.jpg

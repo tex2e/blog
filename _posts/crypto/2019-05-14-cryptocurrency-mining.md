@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "なぜマイニングをするとお金が支払われるのか"
-menutitle:     "なぜマイニングをするとお金が支払われるのか"
 date:          2019-05-14
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

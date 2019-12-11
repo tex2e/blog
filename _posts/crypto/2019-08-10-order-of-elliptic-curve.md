@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "ルジャンドル記号による楕円曲線の位数計算"
-menutitle:     "ルジャンドル記号による楕円曲線の位数計算"
 date:          2019-08-10
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

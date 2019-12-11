@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "Bashでパイプからの入力があるかどうかを確認する方法"
-menutitle:     "Bashでパイプからの入力があるかどうかを確認する方法"
 date:          2017-08-21
-tags:          Programming Language Shell
 category:      Shell
 author:        tex2e
 cover:         /assets/cover1.jpg

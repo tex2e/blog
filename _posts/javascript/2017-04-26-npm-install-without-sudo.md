@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "npm install without sudo"
-menutitle:     "npm install without sudo"
 date:          2017-04-26
-tags:          Programming Language Node.js
 category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg

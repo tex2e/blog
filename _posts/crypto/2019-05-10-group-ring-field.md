@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "群・環・体の性質"
-menutitle:     "群・環・体の性質"
 date:          2019-05-10
-tags:          Crypto
 category:      Crypto
 author:        tex2e
 cover:         /assets/cover4.jpg

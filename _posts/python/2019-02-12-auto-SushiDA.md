@@ -1,9 +1,7 @@
 ---
 layout:        post
 title:         "RPAと画像認識によるタイピングゲームの自動化"
-menutitle:     "RPAと画像認識によるタイピングゲームの自動化"
 date:          2019-02-12
-tags:          Programming Language Python
 category:      Python
 author:        tex2e
 cover:         /assets/cover7.jpg
