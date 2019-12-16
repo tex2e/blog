@@ -14,7 +14,7 @@ published:     true
 Makefile の組み込み関数の一覧です。
 公式の[ドキュメント](https://www.gnu.org/software/make/manual/html_node/Functions.html)を読みながら、関数の引数と使い方について備忘録としてまとめました。
 
-Makefile での関数の書き方は `$(関数名 引数,...)` です。
+Makefile での関数の書き方は `$(関数名 引数,...)` または `${関数名 引数,...}` です。
 
 ## 文字列操作・検索の関数
 
@@ -267,7 +267,7 @@ all:
 ```makefile
 reverse = $(2) $(1)
 all:
-	@echo $(call reverse,A,B)
+	@echo $(call reverse,A,B) # => B A
 ```
 
 マクロは define で定義できます。
@@ -278,7 +278,7 @@ define HELLO
 endef
 
 all:
-	$(call HELLO,Japan)
+	$(call HELLO,Japan)  # => Hello, Japan!
 ```
 
 ### eval
@@ -328,3 +328,8 @@ RESULT = $(shell seq 1 10)
 all:
 	@echo $(RESULT)  # => 1 2 3 4 5 6 7 8 9 10
 ```
+
+#### 参考文献
+
+- [GNU make： Functions](https://www.gnu.org/software/make/manual/html_node/Functions.html)
+- [Makefile の特殊変数・自動変数の一覧](https://tex2e.github.io/blog/makefile/automatic-variables)
