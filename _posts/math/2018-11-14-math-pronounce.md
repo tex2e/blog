@@ -2,10 +2,10 @@
 layout:        post
 title:         "数学・数式・記号などの英語の読み方"
 date:          2018-11-14
-category:      Crypto
+category:      Math
 author:        tex2e
 cover:         /assets/cover4.jpg
-redirect_from:
+redirect_from: /crypto/math-pronounce
 comments:      true
 published:     true
 ---

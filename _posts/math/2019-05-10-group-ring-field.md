@@ -2,10 +2,10 @@
 layout:        post
 title:         "群・環・体の性質"
 date:          2019-05-10
-category:      Crypto
+category:      Math
 author:        tex2e
 cover:         /assets/cover4.jpg
-redirect_from:
+redirect_from: /crypto/group-ring-field
 comments:      true
 published:     true
 ---
