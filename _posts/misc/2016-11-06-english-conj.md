@@ -86,7 +86,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 ---------------
 
 | :---
-| そして | and, then
+| そして | and, then, and then
 | そのうえ〜 | also, in addition, additionally, besides, plus, furthermore, <br>moreover, over and above, as well（話）
 | 〜に加えて | apart from, aside from, as well as, not only/merely, along with, <br>other than, and again, again
 | 〜に加えて・一緒に | along with
@@ -98,7 +98,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 代わりに | instead, instead of, alternatively, in place of, in lieu of
 | 〜を除いて | except, but, apart from, aside from, other than
 | 〜は別として | apart from, aside from
-| 〜については・<br>〜に関して | about, on, as for, as to, with regard to, in regard to, <br>as regards, regarding, concerning, relating to, in terms of, <br>with respect to, -wise（話）
+| 〜については・<br>〜に関して | about, on, as for, as to, with regard to, with respect to, w.r.t., <br>in regard to, as regards, regarding, concerning, relating to, <br>in terms of, -wise（話）
 | 〜の観点から | in terms of
 | 私の考えでは | in my view
 | 私にとって | to me, for me
