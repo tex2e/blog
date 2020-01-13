@@ -32,3 +32,5 @@ published:     true
 
 preface
 EOS
+
+bundle exec jekyll build --future
