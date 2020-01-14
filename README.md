@@ -47,6 +47,14 @@ Rubyを新しくインストールした際は `bundle install` する必要が�
 ./server.sh re
 ```
 
+#### aliase
+
+blogのディレクトリに移動して、エディタを開き、ブラウザでページを開いて、サーバを立ち上げる一連の処理をする `blog` コマンド
+
+```
+alias blog="cd ~/path/to/blog; atom .; open http://localhost:4000/blog/; ./server.sh &"
+```
+
 -----
 
 ## [jekyllDecent](https://github.com/jwillmer/jekyllDecent)
