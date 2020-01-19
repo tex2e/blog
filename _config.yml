@@ -39,6 +39,7 @@ exclude:
   - Makefile
   - LICENSE
   - README.md
+  - _drafts
 keep_files:
   - api
   - assets
