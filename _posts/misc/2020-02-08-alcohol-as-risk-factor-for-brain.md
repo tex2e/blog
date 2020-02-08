@@ -4,7 +4,7 @@ menutitle:     "適量飲酒による認知機能低下の長期的な集団研�
 title:         "適量飲酒による認知機能低下の長期的な集団研究"
 date:          2020-02-08
 category:      Misc
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true
