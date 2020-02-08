@@ -14,7 +14,7 @@ published:     true
 
 適量飲酒でも認知機能低下があることを示す研究の日本語まとめです。
 元の論文は
-[Moderate alcohol consumption as risk factor for adverse brain outcomes and cognitive decline: longitudinal cohort study](https://www.bmj.com/content/357/bmj.j2353)
+[Moderate alcohol consumption as risk factor for adverse brain outcomes and cognitive decline: longitudinal cohort study](https://www.bmj.com/content/357/bmj.j2353) (2017)
 です。
 
 ### 目標
