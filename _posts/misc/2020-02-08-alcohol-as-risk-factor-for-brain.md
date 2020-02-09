@@ -17,6 +17,11 @@ published:     true
 [Moderate alcohol consumption as risk factor for adverse brain outcomes and cognitive decline: longitudinal cohort study](https://www.bmj.com/content/357/bmj.j2353) (2017)
 です。
 
+### TL;DR
+- 禁酒者と比較すると、飲酒は**脳機能や言語機能の低下**と関連している。
+- 飲酒によって**脳の海馬が萎縮**する。
+- 少量の飲酒でも、海馬萎縮の予防効果はない。
+
 ### 目標
 適量飲酒と脳の構造や機能との関連性について調べる。
 
@@ -57,3 +62,8 @@ published:     true
 [^alcohol-unit]: アルコールユニットについての説明：[What is an alcohol unit? \| Drinkaware](https://www.drinkaware.co.uk/alcohol-facts/alcoholic-drinks-units/what-is-an-alcohol-unit/)
 [^condition]: 訳注：ビールのアルコール度数を5%とし、缶ビールの大きさを350mlとする
 [^google-scholar]: [Moderate alcohol consumption as risk factor for adverse... - Google Scholar](https://scholar.google.com/scholar?hl=ja&as_sdt=0%2C5&q=Moderate+alcohol+consumption+as+risk+factor+for+adverse+brain+outcomes+and+cognitive+decline%3A+longitudinal+cohort+study&btnG=)
+
+<!--
+参考文献
+https://newsphere.jp/culture/20170708-1/
+-->
