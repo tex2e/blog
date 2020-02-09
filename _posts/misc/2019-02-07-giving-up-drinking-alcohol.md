@@ -10,13 +10,16 @@ comments:      true
 published:     true
 ---
 
-ここで取り上げるのは、適量飲酒という概念をぶち壊してくれるようなことを書いてくれている論文・記事です。
-飲酒を推奨する論文は酒造メーカーから多額の研究資金が流れているから信用してはいけない（という偏見）。
+ここで取り上げるのは、適量飲酒について否定的な論文・記事の一覧です。
+お酒を飲まない理由を説明するための自分用のメモです。
+飲酒を推奨する論文は酒造メーカーから多額の研究資金が流れているので信用してはいけない（地球温暖化はないと主張する論文の背後には石油会社がいるのと同じ構図です）。
 
 <br>
 ### お酒を飲むと海馬が縮む
 
 [Moderate alcohol consumption as risk factor for adverse brain outcomes and cognitive decline: longitudinal cohort study](https://www.bmj.com/content/357/bmj.j2353) (2017)
+
+英医師会誌「ブリティッシュ・メディカル・ジャーナル（BMJ）」で発表された論文で、アルコール摂取量と脳の構造と機能の関係について調査した研究。
 
 > What this study adds
 >
@@ -24,7 +27,7 @@ published:     true
 > - The hippocampus is particularly vulnerable, which has not been previously linked negatively with moderate alcohol use
 > - No protective effect was found for small amounts of alcohol over abstinence, and previous reports claiming a protective effect of light drinking might have been subject to confounding by associations between increased alcohol and higher social class or IQ
 
-- 禁酒者と比較すると、飲酒は脳機能や急激な言語機能の低下と関連している。
+- 禁酒者と比較すると、飲酒は脳機能や言語機能の低下と関連している。
 - 海馬は特に脆弱で、これまで飲酒との関連がされていなかった。
 - 禁酒者と比較して、少量の飲酒には保護効果がないことがわかった。
 
@@ -36,6 +39,8 @@ published:     true
 ### お酒を飲むとガンや病気のリスクが上がる
 
 [Alcohol use and burden for 195 countries and territories, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2818%2931310-2/fulltext) (2018)
+
+査読制の医学雑誌「ランセット（Lancet）」で発表された論文で、アルコール摂取と病気や死亡との関係性について調査した研究。
 
 > Alcohol use is a leading risk factor for disease burden worldwide, accounting for nearly 10% of global deaths among populations aged 15–49 years, and poses dire ramifications for future population health in the absence of policy action today. The widely held view of the health benefits of alcohol needs revising, particularly as improved methods and analyses continue to show how much alcohol use contributes to global death and disability. Our results show that the safest level of drinking is none. This level is in conflict with most health guidelines, which espouse health benefits associated with consuming up to two drinks per day. Alcohol use contributes to health loss from many causes and exacts its toll across the lifespan, particularly among men. Policies that focus on reducing population-level consumption will be most effective in reducing the health loss from alcohol use.
 
@@ -63,10 +68,12 @@ published:     true
 
 [Conventional and genetic evidence on alcohol and vascular disease aetiology： a prospective study of 500 000 men and women in China - The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2818%2931772-0/fulltext) (2019)
 
+査読制の医学雑誌「ランセット（Lancet）」で発表された論文で、これまでの適量飲酒に否定的な研究を踏まえて、東アジア（中国）で前向き研究（コホート研究）をした研究。
+
 > Genetic epidemiology shows that the apparently protective effects of moderate alcohol intake against stroke are largely non-causal. Alcohol consumption uniformly increases blood pressure and stroke risk, and appears in this one study to have little net effect on the risk of myocardial infarction.
 
-- 遺伝疫学によると、適正飲酒による脳卒中のリスク低下はない
 - アルコールの摂取は血圧と脳卒中のリスクを均一に増加させる
+- 遺伝疫学によると、適正飲酒によって脳卒中のリスクが低下することはない
 
 
 <br>
