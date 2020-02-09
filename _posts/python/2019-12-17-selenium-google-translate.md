@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[Python3] Selenium で Google 翻訳する"
+title:         "SeleniumでGoogle翻訳を自動化する"
 date:          2019-12-17
 category:      Python
 cover:         /assets/cover1.jpg
@@ -36,9 +36,9 @@ class Translator:
         url = "https://translate.google.co.jp/#en/ja/{0}".format(text_for_url)
         self.browser.get(url)
 
-        # 数秒待機する
-        wait_time = 2 + len(text) / 100
-        time.sleep(wait_time)
+        # # 数秒待機する（大量の文書を連続して翻訳するときはコメントアウトしてください）
+        # wait_time = 2 + len(text) / 100
+        # time.sleep(wait_time)
 
         # 翻訳結果を抽出する
         ja = BeautifulSoup(self.browser.page_source, "html.parser") \
