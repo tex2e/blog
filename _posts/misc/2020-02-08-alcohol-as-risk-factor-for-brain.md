@@ -56,6 +56,10 @@ published:     true
 この結果は、イギリスの最近のアルコールガイドラインに根拠を与え、アメリカで推奨されている現在の摂取制限に異議を唱える。
 
 
+<br>
+#### 関連記事
+
+[禁酒するために読むべき論文・記事](giving-up-drinking-alcohol)
 
 -----
 
@@ -65,5 +69,5 @@ published:     true
 
 <!--
 参考文献
-https://newsphere.jp/culture/20170708-1/
+- [350ml缶ビールを週に9本以上飲むと脳の海馬が萎縮する？ 英研究 \| NewSphere](https://newsphere.jp/culture/20170708-1/)
 -->
