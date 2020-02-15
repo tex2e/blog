@@ -3,7 +3,7 @@ layout:        post
 title:         "楕円曲線上の加算のグラフ作成"
 date:          2020-02-14
 category:      Crypto
-cover:         /assets/cover1.jpg
+cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
