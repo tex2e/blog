@@ -18,11 +18,11 @@ SageMath を使ってヴェイユペアリング (Weil pairing) を超特異楕�
 
 - **$n$ねじれ群**
 
-    体 $K$ 上の楕円曲線 $E/K$ 上の各点 $P$ について、$n$ 倍すると無限遠点 $\mathcal{O}$ になる点の集合を $n$ ねじれ群 (n-torsion group) といい、$E[n]$ で表される。また、$n$ ねじれ群の元を $n$ ねじれ点 (n-torsion point) といい、これらの点は全部で $n^2$ 個存在する。
+    体 $K$ 上の楕円曲線 $E/K$ 上の各点 $P$ について、$n$ 倍すると無限遠点 $\mathcal{O}$ になる点の集合を $n$ ねじれ群 (n-torsion group) といい、$E[n]$ で表される。また、$n$ ねじれ群の元を $n$ ねじれ点 (n-torsion point) [^n-torsion-point]といい、これらの点は全部で $n^2$ 個存在する。
 
     $$E[n] = \{ P \in E(\overline{K}) \,|\, nP = \mathcal{O} \}$$
 
-
+[^n-torsion-point]: $n$ねじれ点 (n-torsion point) は、$n$等分点 (n-division point) ともいいます。
 
 体 $K$ ではなく、その代数的閉包 $\overline{K}$ を使うことで、全ての点が確実に位数 $n$ になります。
 
