@@ -11,7 +11,7 @@ comments:      true
 published:     true
 ---
 
-NumPyを使ったRing-LWEによる鍵共有について説明します。前回のSageMathを使ったRing-LWEによる鍵共有の続きです。
+NumPyを使ったRing-LWE格子暗号による鍵共有について説明します。前回のSageMathを使ったRing-LWE格子暗号による鍵共有の続きです。
 SageMathを使ったのは多項式環の演算を簡単にするためでした。
 $$\def\Z{ \mathbb{Z} }$$
 $$\def\vec#1{ \textbf{#1} }$$

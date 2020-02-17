@@ -11,7 +11,7 @@ comments:      true
 published:     true
 ---
 
-Ring-LWEによる鍵共有について説明します。前回のLWEによる鍵共有の続きです。
+Ring-LWE格子暗号による鍵共有について説明します。前回のLWEによる鍵共有の続きです。
 $$\def\Z{ \mathbb{Z} }$$
 $$\def\vec#1{ \textbf{#1} }$$
 
@@ -44,7 +44,7 @@ $$
 
 ### RLWE-KEX の実装
 
-次にRing-LWEを使った鍵共有（**RLWE-KEX**）について説明します。
+次にRing-LWE格子暗号を使った鍵共有（**RLWE-KEX**）について説明します。
 AliceとBobの2人が鍵共有をします。ただし、$E$ を符号化関数、$S$ をシグナル関数とします [^Ding2012]。
 
 $$
