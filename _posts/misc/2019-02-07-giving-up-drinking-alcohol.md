@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "禁酒するために読むべき論文・記事"
+menutitle:     "禁酒するために読むべき論文・記事 (対飲み会用資料)"
 date:          2019-02-07
 category:      Misc
 author:        tex2e
