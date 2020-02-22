@@ -137,7 +137,7 @@ d: 3141592
 Paillier暗号は加法準同型性を持ちます。
 
 $$
-\text{Dec}(\text{Enc}(m_1, r_1) \times \text{Enc}(m_2, r_2)) = m_1 + m_2 \;\text{mod}\; n
+\text{Dec}(\text{Enc}(m_1, r_1) \times \text{Enc}(m_2, r_2) \;\text{mod}\; n^2) = m_1 + m_2 \;\text{mod}\; n
 $$
 
 次のプログラムで実験してみます。
@@ -176,7 +176,7 @@ d: 10
 正確には準同型ではないのですが、Paillier暗号では暗号化したまま乗算をすることができます。
 
 $$
-\text{Dec}(\text{Enc}(m_1, r_1)^{m_2}) = m_1 \times m_2 \;\text{mod}\; n
+\text{Dec}(\text{Enc}(m_1, r_1)^{m_2} \;\text{mod}\; n^2) = m_1 \times m_2 \;\text{mod}\; n
 $$
 
 次のプログラムで実験してみます。
