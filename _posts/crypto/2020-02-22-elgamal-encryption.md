@@ -47,10 +47,25 @@ from Crypto.Util import number
 
 # 鍵生成アルゴリズム
 def elgamal_gen_key(bits):
-    p = number.getPrime(bits)         # 素数p
-    g = number.getRandomRange(3, p)   # 原始元g
-    x = number.getRandomRange(2, p-1) # 秘密値x
-    y = pow(g, x, p)                  # 公開値y
+    # 素数p
+    while True:
+        q = number.getPrime(bits-1)
+        p = 2*q + 1
+        if number.isPrime(p):
+            break
+    # 原始元g
+    while True:
+        g = number.getRandomRange(3, p)
+        # 原始元判定
+        if pow(g, 2, p) == 1:
+            continue
+        if pow(g, q, p) == 1:
+            continue
+        break
+    # 秘密値x
+    x = number.getRandomRange(2, p-1)
+    # 公開値y
+    y = pow(g, x, p)
     return (p, g, y), x
 
 # 暗号化アルゴリズム
@@ -84,11 +99,11 @@ print('d:', d)
 実行結果は次のようになります（公開鍵、秘密鍵、暗号文は毎回ランダムです）。
 
 ```
-pk: (983243, 51092, 334017)
-sk: 82452
+pk: (814829, 722592, 149977)
+sk: 109984
 
 m: 314159
-c: (278864, 285129)
+c: (299442, 126502)
 d: 314159
 ```
 
@@ -125,14 +140,14 @@ print('d:', d)
 実行結果は次のようになります（公開鍵、秘密鍵、暗号文は毎回ランダムです）。
 
 ```
-pk: (867121, 227569, 303875)
-sk: 159766
+pk: (722027, 286579, 294883)
+sk: 56582
 
 m1: 3
 m2: 7
-c1: (84634, 589353)
-c2: (41442, 843260)
-c1*c2: (764904, 416445)
+c1: (358570, 110955)
+c2: (544625, 262346)
+c1*c2: (265587, 81925)
 d: 21
 ```
 
