@@ -105,6 +105,7 @@ def paillier_decrypt(c, pk, sk):
     return (L(pow(c, λ, n*n), n) * μ) % n
 
 
+# 鍵ペアの生成
 pk, sk = paillier_key_gen(bits=40)
 n, _ = pk
 print('pk:', pk)
@@ -207,6 +208,8 @@ c1*c2: 33233824602878182680429
 d: 45
 ```
 
+- 前回：[修正ElGamal暗号の加法準同型性](/blog/crypto/modified-elgamal-encryption)
+- 次回：[Paillier暗号と電子投票](/blog/crypto/homomorphic-tallying-with-paillier)
 
 ### 参考文献
 
