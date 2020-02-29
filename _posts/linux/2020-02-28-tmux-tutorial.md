@@ -151,6 +151,47 @@ $ tmux attach
 設定ファイルは ~/.tmux.conf に配置する。
 編集してすぐに反映させたいときは `tmux source ~/.tmux.conf` を実行する。
 
+tmux設定ファイルのサンプル：
+
+```tmux
+# 設定ファイルをリロードする
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
+# | でペインを縦に分割する
+bind | split-window -h
+# - でペインを横に分割する
+bind - split-window -v
+
+# Vimのキーバインドでペインを移動する
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Vimのキーバインドでペインをリサイズする
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+
+# 256色端末を使用する
+set -g default-terminal "screen-256color"
+
+# キーストロークのディレイを減らす (Escキーの反応を速くする)
+set -sg escape-time 1
+
+# マウス操作を有効にする
+setw -g mouse on
+
+# --- コピーモードの設定 ---
+
+# viのキーバインドを使用する
+setw -g mode-keys vi
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy" # MacOS
+# 範囲を選択しながらyを押すとクリップボードにコピーされる
+```
+
 
 
 ### 参考文献
@@ -158,3 +199,4 @@ $ tmux attach
 - [Tmux Cheat Sheet & Quick Reference](https://tmuxcheatsheet.com/)
 - [tmuxチートシート - Qiita](https://qiita.com/nmrmsys/items/03f97f5eabec18a3a18b)
 - [達人に学ぶ.tmux.confの基本設定 - Qiita](https://qiita.com/succi0303/items/cb396704493476373edf)
+- [tmux 2.6とreattach-user-namespace](https://blog.nijohando.jp/post/tmux-2.6-and-reattach-to-user-namespace/)
