@@ -187,6 +187,7 @@ setw -g mouse on
 
 # viのキーバインドを使用する
 setw -g mode-keys vi
+# クリップボードへのコピー
 bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy" # MacOS
 # 範囲を選択しながらyを押すとクリップボードにコピーされる
