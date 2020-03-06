@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "コンピュータ関連犯罪を裁く罪"
+title:         "コンピュータ関連犯罪を裁く法律"
 date:          2020-03-06
 category:      Misc
 cover:         /assets/cover1.jpg
