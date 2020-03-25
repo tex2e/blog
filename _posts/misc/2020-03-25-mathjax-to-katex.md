@@ -25,7 +25,7 @@ $$
 
 ### KaTeX の導入
 
-KaTeX 導入の仕方は、まず html の header に以下のコードを追加します。
+KaTeX 導入の仕方は、まず html の head に以下のコードを追加します。
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
@@ -86,6 +86,51 @@ kramdown:
 1. エンジンはデフォルトで mathjax になっているので、katex に変更します。
 2. kramdown の影響で数式内の「' (\\u0027)」が「’ (\\u2019)」に変更されるのを防ぐために smart_quotes を指定します。これによって微分などの記号が正しく表示されます。
 
+### Github Pages で使う場合
+
+GitHub Pages ではセキュリティポリシーの関係で kramdown しか使えず、さらに math_engine には mathjax が強制的に使用される設定なので [^1] [^2]、JavaScript書いて何とかするしかありません。
+
+[^1]: [GitHub PagesとJekyllについて](https://help.github.com/ja/enterprise/2.15/user/articles/about-github-pages-and-jekyll)
+[^2]: [pages-gem/configuration.rb at master -- 上書きされるオプション](https://github.com/github/pages-gem/blob/master/lib/github-pages/configuration.rb#L50-L55)
+
+```yaml
+# _config.yml
+kramdown:
+  math_engine: mathjax # katexと書いてもGithubPagesはmathjaxに上書きする
+```
+
+html の head を以下のコードに変更します。
+
+```js
+document.addEventListener("DOMContentLoaded", function() {
+  $("script[type='math/tex']").replaceWith(
+    function () {
+      var tex = $(this).text();
+      return "<span class=\"inline-equation kdmath\">$" + tex + "$</span>";
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+    function () {
+      var tex = $(this).text();
+      tex = tex.replace('% <![CDATA[', '').replace('%]]>', '');
+      return "<div class=\"equation kdmath\">$$" + tex + "$$</div>";
+  });
+
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false},
+    ]
+  });
+});
+```
+
+kramdownが出力した `<script type='math/tex'>` の形式を JavaScript で再度 `$$` の形に戻すという何とも不毛なことをやっています。
+
+`$` と `$$` を使うと、kramdown が書き換えてしまうので、`\( \)` と `\[ \]` を使う選択肢もありますが、`$` の方が慣れているからな...という理由でこんな感じの運用になっています。
+Github Pages が kramdown の math_engine の設定を上書きしなければ、こんな面倒なことにはならないのですがね。
+
+
 ### 数式を表示したいページだけ KaTeX を読み込む
 
 すべてのページで KaTeX を読み込むと、数式を使わないページの読み込み速度が落ちます。
@@ -123,3 +168,5 @@ latex:  true
 これで、指定したページのみ KaTeX を読み込ませることができます。
 
 以上です。
+
+---
