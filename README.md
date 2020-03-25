@@ -4,8 +4,9 @@ Mako(tex2e)の技術系ブログです。
 
 [tex2e.github.io/blog/](https://tex2e.github.io/blog/)
 
-- Jekyll Theme: **jekyllDecent**
-- syntax highlighter: **prism.js**
+- Jekyll Theme: [**jekyllDecent**](https://github.com/jwillmer/jekyllDecent)
+- syntax highlighter: [**Prism**](http://prismjs.com/)
+- Math Engine: [**KaTeX**](https://katex.org/)
 
 #### 新規記事の作成
 
@@ -70,16 +71,3 @@ alias blog="cd ~/path/to/blog; atom .; open http://localhost:4000/blog/; ./serve
 > If you like to see the theme in production have a look at [jwillmer.de](http://jwillmer.de).
 >
 > [![](./media/img/2016-06-08-Readme-front-page-previewe.jpg)](http://jwillmer.github.io/jekyllDecent)
-
-
------
-
-## [Prism](http://prismjs.com/)
-
-> Prism is a lightweight, robust, elegant syntax highlighting library.
-> It's a spin-off project from [Dabblet](http://dabblet.com/).
->
-> You can learn more on http://prismjs.com/.
->
-> Why another syntax highlighter?:
-> http://lea.verou.me/2012/07/introducing-prism-an-awesome-new-syntax-highlighter/#more-1841
