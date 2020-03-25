@@ -21,8 +21,12 @@ disqus_shortname: "tex2e"
 # Build settings
 markdown: kramdown
 kramdown:
+  # 数式はKaTeXでレンダリングする
   math_engine: katex
   math_engine_opts: {}
+  # 数式で'が別文字に変換するのを防ぐための設定
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  # Prism.jsでシンタックスハイライトするため
   syntax_highlighter_opts:
     disable: true
 include:
