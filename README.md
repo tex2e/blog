@@ -4,8 +4,10 @@ Mako(tex2e)の技術系ブログです。
 
 [tex2e.github.io/blog/](https://tex2e.github.io/blog/)
 
-- Jekyll Theme: [**jekyllDecent**](https://github.com/jwillmer/jekyllDecent)
-- syntax highlighter: [**Prism**](http://prismjs.com/)
+- Framework: [**Jekyll**](https://jekyllrb.com/)
+- Theme: [**jekyllDecent**](https://github.com/jwillmer/jekyllDecent)
+- Template: [**Liquid**](https://shopify.github.io/liquid/)
+- Syntax Highlighter: [**Prism**](http://prismjs.com/)
 - Math Engine: [**KaTeX**](https://katex.org/)
 
 #### 新規記事の作成
