@@ -22,7 +22,7 @@ disqus_shortname: "tex2e"
 markdown: kramdown
 kramdown:
   # 数式はKaTeXでレンダリングする
-  math_engine: katex
+  math_engine: mathjax # katex
   math_engine_opts: {}
   # 数式で'が別文字に変換するのを防ぐための設定
   smart_quotes: ["apos", "apos", "quot", "quot"]
