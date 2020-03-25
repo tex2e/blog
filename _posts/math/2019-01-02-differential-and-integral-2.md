@@ -7,6 +7,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -17,12 +18,11 @@ published:     true
 
 #### 多項式による近似
 
-関数 $f(x)$ が定数 $a$ を含む区間で $n$ 回微分可能なとき
+関数 $f(x)$ が定数 $a$ を含む区間で $n$ 回微分可能なとき（$\mathcal{O}$ はランダウの記号）
 
 $$
 f(x) = f(a) + f'(a)(x - a) + \frac{f''(a)}{2!}(x - a)^2 + \cdots{}
-+ \frac{f^{(n)}(a)}{n!}(x - a)^n + \mathcal{O}((x-a)^n) \\[3pt]
-(\mathcal{O} \text{はランダウの記号})
++ \frac{f^{(n)}(a)}{n!}(x - a)^n + \mathcal{O}((x-a)^n)
 $$
 
 #### 級数の収束
@@ -63,15 +63,19 @@ $$
 #### 偏微分係数
 
 $$
+\begin{aligned}
 f_x(a,b) = \lim_{x \to a}\frac{f(x,b) - f(a,b)}{x-a} = \lim_{h \to 0}\frac{f(a+h,b) - f(a,b)}{h} \\[3pt]
 f_y(a,b) = \lim_{x \to b}\frac{f(a,y) - f(a,b)}{y-a} = \lim_{h \to 0}\frac{f(a,b+k) - f(a,b)}{k}
+\end{aligned}
 $$
 
 #### 偏導関数
 
 $$
+\begin{aligned}
 f_x(a,b) = \lim_{X \to x}\frac{f(X,y) - f(x,y)}{X-x} = \lim_{\Delta x \to 0}\frac{f(x + \Delta x, y) - f(x,y)}{\Delta x} \\[3pt]
 f_y(a,b) = \lim_{Y \to y}\frac{f(x,Y) - f(x,y)}{Y-y} = \lim_{\Delta y \to 0}\frac{f(x, y + \Delta y) - f(x,y)}{\Delta y}
+\end{aligned}
 $$
 
 #### 全微分
@@ -79,10 +83,10 @@ $$
 $z = f(x, y)$ のとき
 
 $$
-\begin{align}
-dz &= f_x dx + f_y dy \\
+\begin{aligned}
+dz &= f_x dx + f_y dy \\[3pt]
 dz &= \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy
-\end{align}
+\end{aligned}
 $$
 
 #### 接平面の方程式
@@ -120,7 +124,7 @@ $$
 $$
 
 $$
-f_{xy} \;と\; f_{yx} \;が存在して共に連続\; \Longrightarrow \; f_{xy} = f_{yx}
+f_{xy} \;\text{と}\; f_{yx} \;\text{が存在して共に連続}\; \Longrightarrow \; f_{xy} = f_{yx}
 $$
 
 #### 極大・極小
@@ -177,7 +181,7 @@ $$
 $$
 
 $$
-f_x = \lambda \varphi_x,\;\; f_y = \lambda \varphi_y \;\;\;(\lambda は定数)
+f_x = \lambda \varphi_x,\;\; f_y = \lambda \varphi_y \;\;\;(\lambda \text{は定数})
 $$
 
 #### 包絡線
@@ -197,7 +201,7 @@ $$
 
 $$
 \iint_D f(x,y) \;dxdy =
-\lim_{\Delta x_i \to 0 \\ \Delta y_j \to 0} \sum_{j=1}^n\sum_{i=1}^m f(\xi_{ij}, \eta_{ij}) \Delta x_i \Delta y_j
+\lim_{\small\begin{matrix} \Delta x_i \to 0 \\ \Delta y_j \to 0 \end{matrix}} \sum_{j=1}^n\sum_{i=1}^m f(\xi_{ij}, \eta_{ij}) \Delta x_i \Delta y_j
 $$
 
 #### 2重積分の性質
@@ -247,13 +251,16 @@ $$
 $x = \varphi(u,v),\; y = \psi(u,v)$ のとき
 
 $$
-\iint_D f(x,y) \;dxdy = \iint_D f(\varphi(u,v), \psi(u,v)) \left\lvert \frac{\partial (x,y)}{\partial (u,v)} \right\lvert \;dudv \\[4pt]
-ここで\; \frac{\partial (x,y)}{\partial (u,v)} = J(u,v) =
+\iint_D f(x,y) \;dxdy = \iint_D f(\varphi(u,v), \psi(u,v)) \left\lvert \frac{\partial (x,y)}{\partial (u,v)} \right\lvert \;dudv
+$$
+
+$$
+\text{ここで}\; \frac{\partial (x,y)}{\partial (u,v)} = J(u,v) =
 \begin{vmatrix}
 \varphi_u & \varphi_v \\
 \psi_u    & \psi_v \\
 \end{vmatrix}
-\;はヤコビアン
+\;\text{はヤコビアン}
 $$
 
 #### 広義積分の例
@@ -353,7 +360,7 @@ $$
 2つの関数 $u(t), v(t)$ と定数 $c_1, c_2$ について
 
 $$
-c_1 u(t) + c_2 v(t) \; が恒等的に 0 である \;\iff\; c_1 = c_2 = 0
+c_1 u(t) + c_2 v(t) \; \text{が恒等的に 0 である} \;\iff\; c_1 = c_2 = 0
 $$
 
 が成り立つとき、$u(t)$ と $v(t)$ は線形独立である。
@@ -366,7 +373,7 @@ W(u,v) =
 u & v \\[2pt]
 \dfrac{du}{dt} & \dfrac{dv}{dt}
 \end{vmatrix}
-\;\;\;(ロンスキアン)
+\;\;\;\text{(ロンスキアン)}
 $$
 
 #### 2階斉次線形微分方程式

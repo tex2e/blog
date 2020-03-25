@@ -8,6 +8,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -67,10 +68,10 @@ $$
 
 | 原関数 | 像関数 |
 |:-----:|:-----:|
-| $f'(t)$ | $sF(s) - f(0)$
-| $f''(t)$ | $s^2F(s) - f(0)s - f'(0)$
-| $f^{(n)}(t)$ | $s^nF(s) - f(0)s^{n-1} - f'(0)s^{n-2} - \cdots{} - f^{(n-1)}(0)$
-| $t f(t)$ | $-F'(s)$
+| $f^\prime(t)$ | $sF(s) - f(0)$
+| $f^{\prime\prime}(t)$ | $s^2F(s) - f(0)s - f^\prime(0)$
+| $f^{(n)}(t)$ | $s^nF(s) - f(0)s^{n-1} - f^\prime(0)s^{n-2} - \cdots{} - f^{(n-1)}(0)$
+| $t f(t)$ | $-F^\prime(s)$
 | $t^n f(t)$ | $(-1)^n F^{(n)}(s)$
 | $\displaystyle\int_0^t f(\tau) \;d\tau$ | $\dfrac{1}{s} F(s)$
 | $\dfrac{f(t)}{t}$ | $\displaystyle\int_s^\infty F(\sigma) \;d\sigma$
@@ -131,9 +132,18 @@ $$
 $$
 
 $$
-\mathcal{L}[ \delta(t) ] = 1 \\
-\int_0^\infty \delta(t) \;dt = 1 \\
-t > 0 のとき \delta(t) = 0 \\
+\mathcal{L}[ \delta(t) ] = 1
+$$
+
+$$
+\int_0^\infty \delta(t) \;dt = 1
+$$
+
+$$
+t > 0 \text{のとき} \delta(t) = 0
+$$
+
+$$
 f(t) * \delta(t) = \delta(t) * f(t) = f(t)
 $$
 

@@ -8,6 +8,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -19,19 +20,21 @@ published:     true
 #### 空間ベクトル
 
 $$
-\vec{a} \pm \vec{b} = (a_x \pm b_x, a_y \pm b_y, a_z \pm b_z) \\[3pt]
-m\vec{a} = (ma_x, ma_y, ma_z) \\[3pt]
-\lvert \vec{a} \rvert = \sqrt{a_x^2 + a_y^2 + a_z^2}
+\begin{aligned}
+\vec{a} \pm \vec{b} &= (a_x \pm b_x, a_y \pm b_y, a_z \pm b_z) \\[3pt]
+m\vec{a} &= (ma_x, ma_y, ma_z) \\[3pt]
+\lvert \vec{a} \rvert &= \sqrt{a_x^2 + a_y^2 + a_z^2}
+\end{aligned}
 $$
 
 #### 内積
 
 $$
-\begin{align}
+\begin{aligned}
 \vec{a}\cdot{}\vec{b}
 &= \lvert \vec{a} \rvert \lvert \vec{b} \rvert \cos\theta \\
-&= a_x b_x + a_y b_y + a_z b_z \;\;\;(\theta \;は\; \vec{a} \;と\; \vec{b} \;がなす角)
-\end{align}
+&= a_x b_x + a_y b_y + a_z b_z \;\;\;(\theta \;\text{は}\; \vec{a} \;\text{と}\; \vec{b} \;\text{がなす角})
+\end{aligned}
 $$
 
 $$
@@ -46,7 +49,7 @@ $$
 #### 外積
 
 $$
-\begin{align}
+\begin{aligned}
 \vec{a} \times \vec{b}
 &= (a_y b_z - a_z b_y)\vec{i} + (a_z b_x - a_x b_z)\vec{j} + (a_x b_y - a_y b_x)\vec{k} \\[2pt]
 &=
@@ -55,7 +58,7 @@ $$
 a_x & a_y & a_z \\
 b_x & b_y & b_z
 \end{vmatrix}
-\end{align}
+\end{aligned}
 $$
 
 $$
@@ -81,10 +84,10 @@ $$
 $$
 
 $$
-\begin{align}
+\begin{aligned}
 (\vec{a} \cdot{} \vec{b})' &= \vec{a}' \cdot \vec{b} + \vec{a} \cdot \vec{b}' \\
 (\vec{a} \times \vec{b})' &= \vec{a}' \times \vec{b} + \vec{a} \times \vec{b}'
-\end{align}
+\end{aligned}
 $$
 
 #### 曲線
@@ -143,11 +146,11 @@ $$
 $\varphi, \psi$ をスカラー場、$f$ を1変数の関数とするとき
 
 $$
-\begin{align}
+\begin{aligned}
 \nabla(\varphi + \psi) &= \nabla\varphi + \nabla\psi \\[3pt]
 \nabla(\varphi \psi) &= (\nabla\varphi)\psi + \varphi(\nabla\psi) \\[3pt]
 \nabla(f(\varphi)) &= f'(\varphi) \nabla \varphi
-\end{align}
+\end{aligned}
 $$
 
 任意の単位ベクトル $\vec{e}$ 方向への方向微分係数は $\nabla \varphi \cdot{} \vec{e}$
@@ -178,19 +181,19 @@ $$
 $\vec{a}, \vec{b}$ をベクトル場、$\varphi$ をスカラー場とするとき
 
 $$
-\begin{align}
+\begin{aligned}
 \nabla \cdot{} (\vec{a} + \vec{b}) &= \nabla \cdot{} \vec{a} + \nabla \cdot{} \vec{b} \\
 \nabla \cdot{} (\varphi \vec{a}) &= (\nabla \varphi ) \cdot{} \vec{a} + \varphi (\nabla \cdot{} \vec{b}) \\
 \nabla \times (\nabla \varphi) &= 0
-\end{align}
+\end{aligned}
 $$
 
 $$
-\begin{align}
+\begin{aligned}
 \nabla \times (\vec{a} + \vec{b}) &= \nabla \times \vec{a} + \nabla \times \vec{b} \\
 \nabla \times (\varphi \vec{a}) &= (\nabla \varphi ) \times \vec{a} + \varphi (\nabla \times \vec{b}) \\
 \nabla \cdot{} (\nabla \times \vec{a}) &= 0
-\end{align}
+\end{aligned}
 $$
 
 #### 位置ベクトルに関する性質
@@ -223,13 +226,13 @@ $$
 $\vec{r}(t) = (x(t), y(t), z(t))$ の表す曲線 $C$ に沿う線積分は
 
 $$
-\begin{align}
+\begin{aligned}
 \int_C \varphi \;ds &= \int_a^b \varphi(x(t), y(t), z(t)) \frac{ds}{dt}\;dt
 \;\;\;\left( \frac{ds}{dt} = \left| \frac{d\vec{r}}{dt} \right| \right) \\[3pt]
 \int_C \varphi \;dx &= \int_a^b \varphi(x(t), y(t), z(t)) \frac{dx}{dt}\;dt
-\;\;\;(y, z \;成分についても同様) \\[3pt]
+\;\;\;(y, z \;\text{成分についても同様}) \\[3pt]
 \int_{C_1 + C_2} \vec{a} \cdot{} d\vec{r} &= \int_a^b \vec{a} \cdot{} \frac{d\vec{r}}{dt} dt
-\end{align}
+\end{aligned}
 $$
 
 $C_1, C_2$ をつなぐ曲線を $C_1 + C_2$、$C$ と逆向きの曲線を $-C$ とするとき

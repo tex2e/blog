@@ -7,6 +7,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -49,10 +50,10 @@ $$
 ##### 分散
 
 $$
-\begin{align}
+\begin{aligned}
 v_x &= \frac{1}{n} \sum_{i=1}^n (x_i - \overline{x})^2 \\
     &= \overline{x^2} - \overline{x}^2
-\end{align}
+\end{aligned}
 $$
 
 ##### 標準偏差
@@ -66,10 +67,10 @@ $$
 ##### 共分散
 
 $$
-\begin{align}
+\begin{aligned}
 s_{xy} &= \frac{1}{n} \sum_{i=1}^n (x_i - \overline{x}) (y_i - \overline{y}) \\
        &= \overline{xy} - \overline{x}\,\overline{y}
-\end{align}
+\end{aligned}
 $$
 
 ##### 相関係数
@@ -114,8 +115,8 @@ $$
 
 $$
 \begin{array}{lll}
-二項分布 B(n,p) & P(X=k) = {}_nC_k p^k q^{n-k} & 平均\; np, 分散\; npq \\
-ポアソン分布 P_o(\lambda) & P(X=k) = e^{-\lambda} \dfrac{\lambda^k}{k!} & 平均\; \lambda, 分散\; \lambda
+\text{二項分布} B(n,p) & P(X=k) = {}_nC_k p^k q^{n-k} & \text{平均}\; np, \text{分散}\; npq \\
+\text{ポアソン分布} P_o(\lambda) & P(X=k) = e^{-\lambda} \dfrac{\lambda^k}{k!} & \text{平均}\; \lambda, \text{分散}\; \lambda
 \end{array}
 $$
 

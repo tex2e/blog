@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "数学・数式・記号などの英語の読み方"
+title:         "数式・記号の英語の読み方とLaTeXの書き方"
 date:          2018-11-14
 category:      Math
 author:        tex2e
@@ -8,9 +8,10 @@ cover:         /assets/cover4.jpg
 redirect_from: /crypto/math-pronounce
 comments:      true
 published:     true
+latex:         true
 ---
 
-The pronunciations of mathematical symbols are given in the list below.
+数式・記号の英語の読み方とLaTeXの書き方を以下のリストに示します。
 
 | Math | Pronunciation | LaTeX
 |:-:|:-|:-|
@@ -27,8 +28,8 @@ The pronunciations of mathematical symbols are given in the list below.
 | $p \Rightarrow q$ | if $p$ then $q$ | \\Rightarrow
 | $p \leftrightarrow q$ | $p$ is equivalent to $q$ | \\leftrightarrow
 | $p \Leftrightarrow q$ | $p$ if and only if \[iff] $q$ | \\Leftrightarrow
-| $a'$ | $a$ prime | '
-| $a''$ | $a$ double prime | ''
+| $a^\prime$ | $a$ prime | ^\prime
+| $a^{\prime\prime}$ | $a$ double prime | ^{\prime\prime}
 | $\bar{a}$ | $a$ bar | \\var
 | $\widetilde{a}$ | $a$ tilde | \\widetilde
 | $\hat{a}$ | $a$ hat | \\hat
@@ -56,7 +57,7 @@ The pronunciations of mathematical symbols are given in the list below.
 | $_nP_r$ | permutation of $n$ things (taken) $r$ at a time | \_nP\_r
 | $_nC_r$ | combination of $n$ things (taken) $r$ at a time | \_nC\_r
 | $a \equiv b \pmod{n}$ | $a$ is congruent to $b$ modulo $n$ | \\equiv \\pmod
-| $a\|b$ | $a$ is a divisor of $b$ | \|
+| $a \vert b$ | $a$ is a divisor of $b$ | \vert
 | $\vec{a}$ | vector $a$ | \\vec
 | $$\begin{pmatrix} a_{11} & \cdots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{m1} & \cdots & a_{mn} \end{pmatrix}$$ | $m$ times $n$ matrix $a$ one one to $a$ $m$ $n$ | \\begin{pmatrix} \\cdots \\vdots \\ddots
 | $\left( a_{ij} \right)$ | matrix $a$ $i$ $j$ | \_{ij}
@@ -67,9 +68,9 @@ The pronunciations of mathematical symbols are given in the list below.
 | $\mathrm{adj}\, A$ | adjoint of $A$ | \\mathrm{adj}\\,
 | $\mathrm{tr}\, A$ | trace of $A$ | \\mathrm{tr}\\,
 | $A \bigotimes B$ | Kronecker product (tensor product) of $A$ $B$ | \\bigotimes
-| $$\{x\,\|\,C\}$$ | set of $x$ satisfying $C$ | { \\,\|\\, }
+| $$\{x\,\vert\,C\}$$ | set of $x$ satisfying $C$ | { \\,\vert\\, }
 | $$\{x_n\}$$ | sequence $x$ sub $n$ | {}
-| $x_1, x_2, ...$ | $x$ one $x$ two and so on | ...
+| $x_1, x_2, \ldots$ | $x$ one $x$ two and so on | \ldots
 | $x \in \mathbb{Z}$ | $x$ is an element of $\mathbb{Z}$ | \\in \\mathbb
 | $\mathbb{Z} \ni x$ | $\mathbb{Z}$ contains $x$ | \\mathbb \\ni
 | $A \subset B$ | $A$ is contained in $B$, $A$ is a subset of $B$ | \\subset
@@ -89,7 +90,7 @@ The pronunciations of mathematical symbols are given in the list below.
 | $$\prod_{k=1}^k x_k$$ | product of $x_k$ k equals one to $n$ | \\prod
 | $f: X \to Y$ | function $f$ mapping $X$ into $Y$ | \\to
 | $f: x \mapsto x$ | function $f$ mapping $x$ to $y$ | \\mapsto
-| $f \| E$ | $f$ restricted on $E$ | \|
+| $f \vert E$ | $f$ restricted on $E$ | \vert
 | $\mathrm{Im}\,f$ | image of $f$ | \\mathrm{Im}\,
 | $\mathrm{Ker}\,f$ | kernel of $f$ | \\mathrm{Ker}\,
 | $f \circ g$ | $f$ composition $g$ | \\circ
