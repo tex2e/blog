@@ -2,10 +2,10 @@
 layout:        post
 title:         "Webページでコマンド例の「$」の部分をコピペさせない"
 date:          2019-07-02
-category:      Blog
+category:      Misc
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /blog/command-prompt-user-select-none
 comments:      true
 published:     true
 ---
