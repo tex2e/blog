@@ -8,11 +8,12 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 反応速度式とは、温度、圧力などを一定にして濃度を変えた場合の反応速度の変化を濃度の関数として表した式のことです。
 ここでは、1次反応と2次反応についての微分方程式の解 (積分形速度則) と半減期の導出方法について説明します。
-$$\def\A{ {\mathrm{[A]}} }$$
+$$\gdef\A{ {\mathrm{[A]}} }$$
 
 ### 1次反応
 
@@ -26,25 +27,25 @@ $$
 微分方程式を解くと、次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
   -\dfrac{d\A}{dt} &= k\A \\
   \dfrac{d\A}{\A} &= -k\,dt \\
   \int_{\A_0}^{\A} \dfrac{1}{\A} d\A &= - k \int_0^t dt \\
   \ln\A - \ln\A_0 &= -kt \\
   \ln\A &= \ln\A_0 - kt
-\end{align}
+\end{aligned}
 $$
 
 また、半減期は $\A = \frac{1}{2}\A_0$ として計算すると次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
   \ln \dfrac{1}{2} \A_0 &= \ln \A_0 - kt \\
   kt &= \ln \A_0 - \ln \dfrac{1}{2} \A_0 \\
   kt &= \ln \dfrac{\A_0}{\dfrac{1}{2} \A_0} \\
   kt &= \ln 2 \\
   t  &= \dfrac{\ln 2}{k}
-\end{align}
+\end{aligned}
 $$
 
 よって、1次反応では次のことが言えます。
@@ -66,7 +67,7 @@ $$
 微分方程式を解くと、次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
   -\dfrac{d\A}{dt} &= k\A^2 \\
   -\dfrac{d\A}{\A^2} &= k\,dt \\
   -\int_{\A_0}^{\A} \dfrac{1}{\A^2} d\A &= k \int_0^t dt \\
@@ -74,18 +75,18 @@ $$
   \dfrac{1}{\A} &= kt + \dfrac{1}{\A_0} \\
   \A &= \dfrac{1}{kt + \frac{1}{\A_0}} \\
   \A &= \dfrac{\A_0}{kt\A_0 + 1}
-\end{align}
+\end{aligned}
 $$
 
 また、半減期は $\A = \frac{1}{2}\A_0$ として計算すると次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
   \frac{1}{2} \A_0 &= \dfrac{\A_0}{kt\A_0 + 1} \\
   kt\A_0 + 1 &= 2 \\
   kt\A_0 &= 1 \\
   t &= \dfrac{1}{k \A_0}
-\end{align}
+\end{aligned}
 $$
 
 よって、2次反応では次のことが言えます。
