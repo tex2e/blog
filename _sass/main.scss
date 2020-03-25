@@ -248,3 +248,13 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+// Fix prism.css
+.token.operator {
+  background: none;
+}
+
+// katex
+.kdmath {
+  text-align: center;
+}
