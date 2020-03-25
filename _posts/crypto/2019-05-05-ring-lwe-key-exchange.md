@@ -9,11 +9,14 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 Ring-LWE格子暗号による鍵共有について説明します。前回のLWEによる鍵共有の続きです。
-$$\def\Z{ \mathbb{Z} }$$
-$$\def\vec#1{ \textbf{#1} }$$
+$$
+\gdef\Z{\mathbb{Z}}
+\gdef\vec#1{\textbf{#1}}
+$$
 
 前回：[LWE格子暗号による鍵共有]({{ site.baseurl }}/crypto/lwe-key-exchange)
 
@@ -22,10 +25,10 @@ $$\def\vec#1{ \textbf{#1} }$$
 そしてこの問題は困難であると予想されています。
 
 $$
-  \vec{A} \vec{s} + \vec{e} \equiv \vec{b} \pmod{q}
+\vec{A} \vec{s} + \vec{e} \equiv \vec{b} \pmod{q}
 $$
 
-しかし、LWEは送信する鍵のサイズ $n$ が大きくなるほど、事前に共有する行列$\vec{A}$のサイズが $O(n^2)$ で大きくなるので、送信量を減らす方法を考える必要があります [^LWE-matrix-byte-size]。そこでRing-LWEが登場します。
+しかし、LWEは送信する鍵のサイズ $n$ が大きくなるほど、事前に共有する行列 $\vec{A}$ のサイズが $O(n^2)$ で大きくなるので、送信量を減らす方法を考える必要があります [^LWE-matrix-byte-size]。そこでRing-LWEが登場します。
 
 
 ### Ring-LWE問題
@@ -34,7 +37,7 @@ $$
 簡単に説明すると、以下の方程式で多項式 $a(x), b(x)$ が与えられたとき、秘密の多項式 $s(x)$ を求める問題です。
 
 $$
-  b(x) = a(x) \cdot{} s(x) + e(x)
+b(x) = a(x) \cdot{} s(x) + e(x)
 $$
 
 ただし、多項式の演算は有限体上の多項式環 $R_q = \mathbb{F}_q[x] / (x^n + 1)$ 上で行います [^R_q]。
@@ -48,22 +51,22 @@ $$
 AliceとBobの2人が鍵共有をします。ただし、$E$ を符号化関数、$S$ をシグナル関数とします [^Ding2012]。
 
 $$
-\begin{align}
+\begin{aligned}
   S(v) &=
   \begin{cases}
     0 & \text{if}\; -\! \lfloor \frac{q}{4} \rfloor \le v \le \lfloor \frac{q}{4} \rceil \\
     1 & \text{otherwise}
   \end{cases} \\[10pt]
   E(v, w) &= \left(v + w \cdot{}\frac{q-1}{2} \right) \;\mathrm{mod}\; q \;\mathrm{mod}\; 2
-\end{align}
+\end{aligned}
 $$
 
 1. パラメータ $q, n, \chi, R = \Z[x] / f(x), m$ を事前に共有します。
   - 素数 $q$ ... 各係数の法として使います
   - 多項式の項数 $n$
   - 誤差分布 $\chi$
-  - 多項式環 $R = \Z[x] / f(x)$ ... ただし、$f(x) = x^n + 1$ とし、$n$ は$2$のべき乗とします。
-  - 多項式 $m$ ... 各係数は $\Z_q$ 上の一様分布の乱数で決めます
+  - 多項式環 $R = \Z[x] / f(x)$ : ただし、$f(x) = x^n + 1$ とし、$n$ は$2$のべき乗とします。
+  - 多項式 $m$ : 各係数は $\Z_q$ 上の一様分布の乱数で決めます
 2. Aliceは誤差分布から秘密多項式 $s_A$ と誤差多項式 $e_A$ を作ります。そして、公開鍵 $p_A = m \cdot{} s_A + 2e_A$ を計算し、Bob に送信します（実際には多項式に代わりに、多項式の各係数のリストを送信します）。
 3. Bobは誤差分布から秘密多項式 $s_B$ と誤差多項式 $e_B, e'_B$ を作ります。そして、公開鍵 $p_B = m \cdot{} s_B + 2 e_B$ を計算します。さらに、鍵の元となる値 $K_B = p_A \cdot{} s_B + 2 e'_B \mod{q}$ を計算し、$\sigma \leftarrow S(K_B)$ を求めます。ここでBobは共有鍵 $SK_B = E(K_B, \sigma)$ を得ます。最後に公開鍵 $(p_B, \sigma)$ を送信します。
 4. Aliceは誤差分布から誤差多項式 $e'_A$ を作ります。そして $K_B = s_A \cdot{} p_B + 2 e'_A \mod{q}$ を計算し、共有鍵 $SK_A = E(K_A, \sigma)$ を得ます。

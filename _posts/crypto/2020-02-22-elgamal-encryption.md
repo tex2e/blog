@@ -7,6 +7,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -182,20 +183,20 @@ $3 \times 7 = 21$ となったので、ElGamal暗号は乗法準同型暗号で�
 数式で確認すると $m_1, m_2$ に対する暗号文は次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
   \text{Enc}(m_1) = (c_{11}, c_{12}) = (g^{r_1}, m_1 y^{r_1}) \\
   \text{Enc}(m_2) = (c_{21}, c_{22}) = (g^{r_2}, m_2 y^{r_2})
-\end{align}
+\end{aligned}
 $$
 
 この2つの暗号文をかけ合わせると、次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
   \text{Enc}(m_1) \times \text{Enc}(m_2)
   &= (c_{11} \times c_{21}, c_{12} \times c_{22}) \\
   &= (g^{r_1 + r_2}, m_1 m_2 y^{r_1 + r_2})
-\end{align}
+\end{aligned}
 $$
 
 この結果を復号すると、平文として $m_1 m_2$ が現れるので、乗法準同型性を有することが確認できます。

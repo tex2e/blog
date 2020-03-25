@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -39,10 +40,10 @@ $$\mathbb{\overline{F}}_q = \bigcup_{k \gt 1} \mathbb{F}_{q^k}$$
     体 $K$ (つまり $\mathbb{F}_{p^k}$) の標数 $p$ は $n$ を割り切らない ($p \nmid n$) とき、次のペアリングが存在する。
 
     $$
-    \begin{align}
+    \begin{aligned}
     e_n : E[n] \times E[n] &\rightarrow \mu_n \subset \overline{K} \\[5pt]
     (P,Q) &\mapsto e_n(P,Q)
-    \end{align}
+    \end{aligned}
     $$
 
 - **ヴェイユペアリングの性質**

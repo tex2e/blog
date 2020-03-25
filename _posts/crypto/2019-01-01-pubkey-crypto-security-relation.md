@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 公開鍵暗号の安全性のレベルは、「攻撃モデル」と「解読モデル」の組み合わせで決定されます[^IPUSIRON]。
@@ -53,3 +54,5 @@ NMの条件は論理的に扱うのが難しいため、NM-CCA2の代わりにIN
 なので、公開鍵暗号を設計するときには、IND-CCA2安全を満たすことが目標の1つになります。
 
 [^david]: [II – Encryption -- Provable Security in the Computational Model](https://www.di.ens.fr/david.pointcheval/enseignement/mpri2/cm2.pdf)
+
+----

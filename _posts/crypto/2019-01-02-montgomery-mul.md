@@ -8,13 +8,10 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
-
 モンゴメリ乗算（Montgomery modular multiplication）とは、乗算剰余計算 $a \times b \mod{N}$ において剰余を求めるときの除算の回数を減らして処理の速度を早くしようというアルゴリズムで[^montgomery]、サイドチャネル攻撃に対しても強いので暗号理論の分野でも重要なアルゴリズムです[^side_channel_attacks]。
-$$
-\def\mod{ {\;\mathrm{mod}\;} }
-$$
 
 [^montgomery]: [モンゴメリ乗算 (Wikipedia)](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%A1%E3%83%AA%E4%B9%97%E7%AE%97)
 [^side_channel_attacks]: [Side channel attacks -- Montgomery modular multiplication (Wikipedia)](https://en.wikipedia.org/wiki/Montgomery_modular_multiplication#Side_channel_attacks)
@@ -42,10 +39,10 @@ $$
 ただし、$N'$ は $NN' = -1 \mod R$ を満たす値で、拡張ユークリッドの互除法で $xR + yN = 1$ を計算し、$N' = -y$ とすれば求まります。
 
 $$
-\begin{align}
-  & t \leftarrow (T + (T N' \mod R) N ) / R \\
+\begin{aligned}
+  & t \leftarrow (T + (T N' \,\mathrm{mod}\, R) N ) / R \\
   & \text{if}\; t \gt N \;\text{then}\;\text{return}\; t - N \;\text{else}\;\text{return}\; t
-\end{align}
+\end{aligned}
 $$
 
 具体的な実装について言及すると $R$ は2の冪で $2^n$（$n$ は任意の整数）なので、剰余 $A \mod R$ はビット演算で `A & (R-1)` となり、除算 $A / R$ はビット演算で `A >> n` と書き換えることができます[^project_nayuki]。
@@ -59,7 +56,7 @@ $$
 ただし、$R_2 = R^2 \mod N$ を事前に計算しておきます。
 
 $$
- c \leftarrow \mathrm{MR}(\mathrm{MR(ab) R_2})
+c \leftarrow \mathrm{MR}(\mathrm{MR(ab) R_2})
 $$
 
 詳しい説明は
@@ -115,14 +112,14 @@ if __name__ == '__main__':
     a = 7866740167593846871725862646742594555435501859012590216351651260431131858865591312030037924525294849521618094581
     b = 5955442980786932364112398010391457189776910235916081036999618654431748490263235796535834039163225118090615818501
 
-    print("--- Montgomery ---")
+    print("--- Python Montgomery ---")
     with Timer():
         monty = Montgomery(mod=N)
         for i in range(100000):
             res = monty.mul(a, b)
     print(res)
 
-    print("--- Python ---")
+    print("--- Python Build-in ---")
     with Timer():
         for i in range(100000):
             res = (a * b) % N
@@ -132,10 +129,10 @@ if __name__ == '__main__':
 実行結果：
 
 ```
---- Montgomery ---
+--- Python Montgomery ---
 time: 517.564ms
 5168589600225447600241927327463383441144656924030874498539387807356437874009044420324606634917532081215396404061564162200854757731712513530297703564316705
---- Python ---
+--- Python Build-in ---
 time: 87.222ms
 5168589600225447600241927327463383441144656924030874498539387807356437874009044420324606634917532081215396404061564162200854757731712513530297703564316705
 ```
@@ -145,6 +142,8 @@ time: 87.222ms
 
 ### 結論
 
-Pythonでモンゴメリ乗算を実装しても逆に遅くなるので、C言語で実装するのが正しい[^mont_mult]。
+Pythonでモンゴメリ乗算を実装しても逆に遅くなるので、C言語で実装するのが正しいです[^mont_mult]。
 
 [^mont_mult]: [montgomery.c -- Legrandin/pycryptodome](https://github.com/Legrandin/pycryptodome/blob/d13e46b02d/src/montgomery.c#L202-L258)
+
+----

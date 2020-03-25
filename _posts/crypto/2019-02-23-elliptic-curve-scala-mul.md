@@ -9,6 +9,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 有限体上の楕円曲線上のスカラー倍算のPython実装について。
@@ -19,36 +20,36 @@ published:     true
 まず、有限体上の楕円曲線上の点の加算 $(x_3, y_3) = (x_1, y_1) + (x_2, y_2)$ は次の通りです。
 
 $$
-\begin{align}
+\begin{aligned}
   x_3 &= \lambda^2 - x_1 - x_2     \mod{p} \\
   y_3 &= \lambda (x_1 - x_3) - y_1 \mod{p} \\[10pt]
   \lambda &= \begin{cases}
     \cfrac{y_2 - y_1}{x_2 - x_1} \mod{p} & \mathrm{if}\; P \ne Q \\[3pt]
     \cfrac{3 x_1^2 + a}{2 y_1}   \mod{p} & \mathrm{if}\; P = Q
   \end{cases}
-\end{align}
+\end{aligned}
 $$
 
 例えば、有限体 $F_{11}$ 上の楕円曲線 $y^2 = x^3 + x + 6$ とする（$a = 1,\, b = 6$）。曲線上の点 $\alpha = (2,7)$ を選んだとき、$2\alpha = (2,7) + (2,7)$ を計算するには[^DRS]、
 楕円曲線上の2倍算の式より、
 
 $$
-\begin{align}
+\begin{aligned}
   \lambda &= (3 \times 2^2 + 1) (2 \times 7)^{-1} \;\mathrm{mod}\; 11  = 8 \\[5pt]
   x_3 &= 8^2 - 2 - 2 \;\mathrm{mod}\; 11 = 5 \\
   y_3 &= 8 (2-5) - 7 \;\mathrm{mod}\; 11 = 2
-\end{align}
+\end{aligned}
 $$
 
 となり、$2\alpha = (5,2)$ となります。
 次に $3 \alpha = 2 \alpha + \alpha = (5,2) + (2,7)$ を計算すると、
 
 $$
-\begin{align}
+\begin{aligned}
   \lambda &= (7 - 2) (2 - 5)^{-1} \;\mathrm{mod}\; 11  = 2 \\[5pt]
   x_3 &= 2^2 - 5 - 2 \;\mathrm{mod}\; 11 = 8 \\
   y_3 &= 2 (5-8) - 2 \;\mathrm{mod}\; 11 = 3
-\end{align}
+\end{aligned}
 $$
 
 となり、$3\alpha = (8,3)$ となります。

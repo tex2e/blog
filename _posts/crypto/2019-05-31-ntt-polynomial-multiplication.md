@@ -8,12 +8,15 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 RingLWE問題を使った鍵交換の方法としてNewHopeがあります。
 そのNewHopeの論文を読んでいると多項式環の乗算のところで数論変換(NTT)を利用した高速化をしているので、数論変換による有限体上の多項式環の乗算について調べたことをまとめます。
-$$\def\Z{ \mathbb{Z} }$$
-$$\def\vec#1{ \textbf{#1} }$$
+$$
+\gdef\Z{\mathbb{Z}}
+\gdef\vec#1{\textbf{#1}}
+$$
 
 ### 多項式環の乗算
 
@@ -31,11 +34,11 @@ $$
 まず始めに、以下のように、多項式はベクトルに変換することができることを前提とします。
 
 $$
-\begin{align}
+\begin{aligned}
   a(x)    &= a_0 + a_1 x^1 + a_2 x^2 + \cdots + a_{n-1} x^{n-1} \\
           &\Updownarrow \\
   \vec{a} &= (a_0, a_1, ..., a_{n-1})
-\end{align}
+\end{aligned}
 $$
 
 多項式 $a(x), b(x)$ があるとき、次の手順で有限体上の多項式環の乗算を計算します。

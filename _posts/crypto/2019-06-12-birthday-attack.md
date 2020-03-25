@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 誕生日攻撃はハッシュ関数の衝突を見つけるときに出てくるものです。
@@ -57,10 +58,10 @@ $$
 もし $x$ が小さい実数なら、一番次数の小さい $x$ を除く全ての次数 ($x^2, x^3, ...$) を無視することができます。つまり、$x$ が小さい実数なら次のように近似して書くことができます。
 
 $$
-\begin{align}
+\begin{aligned}
 e^{-x} &= 1 - x + \dfrac{x^2}{2!} - \dfrac{x^3}{3!} \cdots \\[5pt]
 e^{-x} &\approx 1 - x
-\end{align}
+\end{aligned}
 $$
 
 これを踏まえて、衝突しない確率 $p$ の式を変形します。
@@ -68,12 +69,12 @@ $n$ は大きい数[^1]なので $\frac{1}{n}$ は小さくなり、ネイピア
 さらに、等差数列の和（自然数の和 $\frac{n(n-1)}{2}$）の公式を使えば、総乗の記号を消すことができます。
 
 $$
-\begin{align}
+\begin{aligned}
 p =
 \prod_{i=1}^{k-1} (1 - \frac{i}{n})
 &\approx \prod_{i=1}^{k-1} e^\frac{-i}{n} \\
 &= e^\frac{-k(k-1)}{2n}
-\end{align}
+\end{aligned}
 $$
 
 ここまでは衝突しない確率 $p$ についてでしたが、逆に衝突する確率 $\epsilon$ は次式となります。
@@ -85,13 +86,13 @@ $$
 試行回数 $k$ についての式に変形すると、次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
 e^\frac{-k(k-1)}{2n} &\approx 1 - \epsilon \\
 \frac{-k(k-1)}{2n} &\approx \ln (1-\epsilon) \\
 k^2 - k &\approx -2n \ln (1-\epsilon) \\
 k^2 - k &\approx 2n \ln \frac{1}{1-\epsilon} \\
 k &\approx \sqrt{2n \ln \frac{1}{1-\epsilon}}
-\end{align}
+\end{aligned}
 $$
 
 ただし途中で、$k$ は大きい数[^2]と見なして $k^2 - k$ から $-k$ を無視しています。
@@ -100,12 +101,12 @@ $$
 冒頭の誕生日のパラドックス「何人集まれば、その中に誕生日が同一の2人 (以上) がいる確率が、50%を超えるか?」について考えると、一年は365日あるので集合のサイズ $n=365$、衝突する確率 $\epsilon = 0.5$ として、式を計算すると次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
 k &\approx \sqrt{2n \ln \frac{1}{1-0.5}} \\
 &\approx \sqrt{2n \ln 2} \\
 &\approx 1.1774 \sqrt{n} \\
 &\approx 22.5
-\end{align}
+\end{aligned}
 $$
 
 よって、23人を集めれば、誕生日が同じになる人が少なくとも確率 $0.5$ で存在することになります。

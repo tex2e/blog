@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 数論において、下の合同式が解 $x$ をもつならば、整数 $a$ は法 $n$ の**平方剰余**（quadratic residues; QR）と定義されます[^QR]。
@@ -30,7 +31,7 @@ $$
 
     $$
     a^{\frac{p-1}{2}} \equiv 1 \pmod{p}
-    \tag{1}\label{1}
+    \tag{1}
     $$
 
 $p$ が奇素数（$p > 2$ の素数）であるとき、$x$ を求めるプログラムを Python で実装すると2行で書けます。

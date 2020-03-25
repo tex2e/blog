@@ -7,6 +7,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -49,10 +50,10 @@ $$T = \prod_{i=1}^{N_v} c_i \;\mathrm{mod}\; n^2$$
 最後に復号すると、集計結果 $r_i$ ($i$ は候補者の番号) が得られます。
 
 $$
-\begin{align}
+\begin{aligned}
 \mathrm{result} &= \mathrm{Dec}(T) \\
 &= r_1 b^0 + r_2 b^1 + \cdots{} + r_{N_c} b^{N_c-1}
-\end{align}
+\end{aligned}
 $$
 
 <br>

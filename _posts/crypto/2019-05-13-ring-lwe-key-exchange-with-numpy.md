@@ -9,12 +9,15 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 NumPyを使ったRing-LWE格子暗号による鍵共有について説明します。前回のSageMathを使ったRing-LWE格子暗号による鍵共有の続きです。
 SageMathを使ったのは多項式環の演算を簡単にするためでした。
-$$\def\Z{ \mathbb{Z} }$$
-$$\def\vec#1{ \textbf{#1} }$$
+$$
+\gdef\Z{\mathbb{Z}}
+\gdef\vec#1{\textbf{#1}}
+$$
 
 前回：[SageMathでRing-LWEによる鍵共有]({{ site.baseurl }}/crypto/ring-lwe-key-exchange)
 
@@ -24,7 +27,7 @@ $$\def\vec#1{ \textbf{#1} }$$
 簡単に説明すると、以下の方程式で多項式 $a(x), b(x)$ が与えられたとき、秘密の多項式 $s(x)$ を求める問題です。
 
 $$
-  b(x) = a(x) \cdot{} s(x) + e(x)
+b(x) = a(x) \cdot{} s(x) + e(x)
 $$
 
 ただし、多項式の演算は有限体上の多項式環 $R_q = \mathbb{F}_q[x] / (x^n + 1)$ 上で行います。
@@ -67,17 +70,17 @@ quo,rem = e1e2.maxima_methods().divide(f)
 -->
 
 $$
-\begin{align}
+\begin{aligned}
   a(x) &= 13x + 99 &\text{(0〜100 の一様分布)} \\
   s(x) &= 4x + 6   &\text{(0を中心とする誤差分布)} \\
   e(x) &= 99x + 99 &\text{(0を中心とする誤差分布)}
-\end{align}
+\end{aligned}
 $$
 
 このときの $b(x) \in R_q$ を計算してみます。
 
 $$
-\begin{align}
+\begin{aligned}
   b(x) &= a(x) \cdot{} s(x) + e(x) \\[0.5em]
     &= (13x + 99) (4x + 6) + (99x + 99) \\
     &= (52x^2 + 474x + 594) + (99x + 99) \\[0.5em]
@@ -87,7 +90,7 @@ $$
     &= (573x + 641) \\[0.5em]
     &\;\;\;\;\;\;\;\; \text{最後に多項式の各係数を $\mathrm{mod}\;101$ すると} \\[0.5em]
     &= 68x + 35
-\end{align}
+\end{aligned}
 $$
 
 上式 $b(x) = a(x) \cdot{} s(x) + e(x)$ を「SageMath」では次のようにプログラムを書くことで計算することができます。

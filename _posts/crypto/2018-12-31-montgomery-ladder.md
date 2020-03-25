@@ -8,10 +8,10 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 サイドチャネル攻撃に強くて高速冪剰余計算ができる、モンゴメリの冪乗法（Montgomery Powering Ladder）について、と Python の pow 関数の使用に対する注意喚起。
-$$\def\mod{ {\;\mathrm{mod}\;} }$$
 
 RSAなどの公開鍵暗号では暗号化・復号アルゴリズムにおいて、冪剰余（Modular exponentiation）計算が発生します。
 冪剰余（べき乗剰余）計算とは $a^x \mod{n}$ を求める計算のことです。
@@ -22,7 +22,8 @@ RSAなどの公開鍵暗号では暗号化・復号アルゴリズムにおい�
 まずは、掛け算するごとに剰余を求めることでオーバーフローを防ぎ、効率よく計算できるようにします。なお、Pythonは標準で多倍長演算ができるのでオーバーフローの心配はないですが、この方法を使うことで、桁数が一定以上は超えないので、桁数に依存する掛け算が効率よく計算できるようになります。
 
 $$
-  a^x \mod{n} = ((\dots ((a \times a \mod n) \times a \mod n) \dots ) \times a \mod n)
+\def\mod{ {\;\mathrm{mod}\;} }
+a^x \mod{n} = ((\dots ((a \times a \mod n) \times a \mod n) \dots ) \times a \mod n)
 $$
 
 Python でこれを簡単に実装してみると、以下のようになります。
@@ -44,14 +45,14 @@ $(3^2)^2$ を計算する方が乗算の回数を少なくすることができ�
 $a^4$ 以降は以下の式にすることで乗算回数を減らしていきます。
 
 $$
-\begin{align}
+\begin{aligned}
   a^4 &= (a^2)^2 \\
   a^5 &= a(a^2)^2 \\
   a^6 &= (a \cdot a^2)^2 \\
   a^7 &= a(a \cdot a^2)^2 \\
   a^8 &= ((a^2)^2)^2 \\
       &\;\;\vdots
-\end{align}
+\end{aligned}
 $$
 
 2進数にしたべきの数の i 番目の値が偶数か奇数かによって処理が変わるので、バイナリ法と呼ばれています。

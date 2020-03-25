@@ -7,6 +7,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -18,14 +19,14 @@ published:     true
 ### ヒル暗号の定義
 
 $m$ はある固定された正の整数とし、$P = C = (\mathbb{Z}_{26})^m$ とします (つまり平文と暗号文の型とサイズは同じです)。
-さらに $$K = \{\mathbb{Z}_{26} \;上の\; m \times m \;の可逆行列 \}$$ とします。
+さらに $$K = \{\mathbb{Z}_{26} \;\text{上の}\; m \times m \;\text{の可逆行列} \}$$ とします。
 鍵 $K$ に対して、暗号化と復号を次のように定義します。
 
 $$
-\begin{align}
+\begin{aligned}
 \mathrm{enc}_K(x) &= xK \\
 \mathrm{dec}_K(y) &= yK^{-1} \\
-\end{align}
+\end{aligned}
 $$
 
 ただし、全ての演算は $\mathbb{Z}_{26}$ 上で行われます。
@@ -48,7 +49,7 @@ $$
 つまり全ての演算が法 26 の下で行われます。
 
 $$
-\begin{align}
+\begin{aligned}
 K^{-1} &=
 (ad - bc)^{-1}
 \begin{pmatrix}
@@ -79,7 +80,7 @@ d & -b \\
 24 & 21 \\
 21 & 17
 \end{pmatrix}
-\end{align}
+\end{aligned}
 $$
 
 プログラムによるモジュラ逆数の求め方は [Pythonでモジュラ逆数を求める](https://tex2e.github.io/blog/crypto/modular-mul-inverse) を参照してください。
@@ -96,7 +97,7 @@ $$
 平文 $P$ を暗号化した暗号文 $C$ は次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
 C &\equiv
 \begin{pmatrix}
 14 & 10
@@ -115,13 +116,13 @@ C &\equiv
 \begin{pmatrix}
 22 & 4
 \end{pmatrix}
-\end{align}
+\end{aligned}
 $$
 
 暗号文 $C$ を復号した平文 $P'$ は次のようになります。
 
 $$
-\begin{align}
+\begin{aligned}
 P' &\equiv
 \begin{pmatrix}
 22 & 4
@@ -140,7 +141,7 @@ P' &\equiv
 \begin{pmatrix}
 14 & 10
 \end{pmatrix}
-\end{align}
+\end{aligned}
 $$
 
 

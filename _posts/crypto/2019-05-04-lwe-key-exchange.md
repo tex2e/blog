@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 量子コンピュータの進歩に伴い、**耐量子暗号**（Post-Quantum Cryptography; PQC）[^PQC] と呼ばれる量子コンピュータでも解読が難しいとされる暗号が注目されています。
@@ -18,8 +19,10 @@ published:     true
 なお、2019年2月にGoogleが発表した最新の量子プロセッサ「Bristlecone」の量子ビット数は72です。
 実際のRSA暗号では2048ビットのモジュロが使われています。
 これに加えて、量子ビットはエラーが発生しやすいため、正しい計算結果を得るには数百万量子ビットが必要とされています。なので、量子コンピュータで解読できるようになるまでにはまだ時間がかかりそうというのが現在の状況です。
-$$\def\Z{ \mathbb{Z} }$$
-$$\def\vec#1{ \textbf{#1} }$$
+$$
+\gdef\Z{\mathbb{Z}}
+\gdef\vec#1{\textbf{#1}}
+$$
 
 ## 格子とLWE問題
 
@@ -27,7 +30,7 @@ LWE（Learning with Errors）問題とは、誤差を付加した多元連立一
 簡単に説明すると、$\Z_q$ 上の誤差 $\vec{e}$ を付加した連立方程式について、行列 $\vec{A}, \vec{b}$ が与えられたときに、秘密 $\vec{s}$ を求める問題です。
 
 $$
-  \vec{A} \vec{s} + \vec{e} \equiv \vec{b} \pmod{q}
+\vec{A} \vec{s} + \vec{e} \equiv \vec{b} \pmod{q}
 $$
 
 具体的な例は、次のようになります [^cryptrec-report2015]。
@@ -67,14 +70,14 @@ LWE暗号というと、このLWE問題の計算量困難性に依存した暗�
 AliceとBobの2人が鍵共有をします。ただし、$E$ を符号化関数、$S$ をシグナル関数とします [^Ding12]。
 
 $$
-\begin{align}
+\begin{aligned}
   S(v) &=
   \begin{cases}
     0 & \text{if}\; -\! \lfloor \frac{q}{4} \rfloor \le v \le \lfloor \frac{q}{4} \rceil \\
     1 & \text{otherwise}
   \end{cases} \\[10pt]
   E(v, w) &= \left(v + w \cdot{}\frac{q-1}{2} \right) \;\mathrm{mod}\; q \;\mathrm{mod}\; 2
-\end{align}
+\end{aligned}
 $$
 
 1. パラメータ $q, n, \vec{M}, \chi_\alpha$ を事前に共有します。ただし $q$ は3以上の素数で、$n \times n$ の行列 $\vec{M}$ の各要素は一様分布で選んだ乱数にします（$\vec{M} \in \Z_q^{n \times n}$）。$\chi_\alpha$ は誤差分布で、誤差を付加するときに使います。

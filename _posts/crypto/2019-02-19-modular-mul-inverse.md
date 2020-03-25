@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 モジュラ逆数（Modular multiplicative inverse）を求めるPythonプログラムについて説明します。
@@ -42,11 +43,11 @@ $$
 もし $a$ には法 $m$ の乗法逆元が存在するなら、二つの整数 $a, m$ の最大公約数 $\gcd(a,m)$ は $1$ になります。すなわち、拡張ユークリッドの互除法で出てきたベズーの等式を使うと、次式が成り立ちます。
 
 $$
-\begin{align}
+\begin{aligned}
 ax + my &= \gcd(a,m) = 1 \\
 ax &= 1 + (-y)m \\
 ax &\equiv 1 \pmod{m}
-\end{align}
+\end{aligned}
 $$
 
 つまり、拡張ユークリッドの互除法を計算することで $a$ の乗法逆元 $x$ を求めることができます。

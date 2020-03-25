@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 有限体上 $\mathbb{F}_q$ の楕円曲線 $E(\mathbb{F}_q)$ の位数 (曲線上にある全ての点の個数) を計算する最も簡単な方法として、ルジャンドル記号を用いるものがあります[^tsuji]。
@@ -55,10 +56,10 @@ $$
 よって、楕円曲線の位数を式で表すと次のようになります。
 
 $$
-\begin{align}
-\text{#}E(\mathbb{F}_p) &= 1 + \sum_{x \in \mathbb{F}_p} \left( 1 + \bigg(\frac{f(x)}{p}\bigg) \right) \\
+\begin{aligned}
+\#E(\mathbb{F}_p) &= 1 + \sum_{x \in \mathbb{F}_p} \left( 1 + \bigg(\frac{f(x)}{p}\bigg) \right) \\
   &= p + 1 + \sum_{x \in \mathbb{F}_p} \bigg(\frac{f(x)}{p}\bigg)
-\end{align}
+\end{aligned}
 $$
 
 ルジャンドル記号を用いた楕円曲線の位数計算をPythonで書くと以下のようになります。

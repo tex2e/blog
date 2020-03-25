@@ -7,6 +7,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -29,12 +30,12 @@ published:     true
 例）荷物の集合 $W$ と、荷物に入れる(1)入れない(0)を表す集合 $X$ とするとき、部分和 $C$ は次のように計算できます。
 
 $$
-\begin{align}
+\begin{aligned}
 W &= \{5, 3, 8, 7, 10, 13\} \\
 X &= \{0, 1, 0, 1, 1, 0\} \\[5pt]
 C &= 5 \cdot{} 0 + 3 \cdot{} 1 + 8 \cdot{} 0 + 7 \cdot{} 1 + 10 \cdot{} 1 + 13 \cdot{} 0 \\
   &= 20
-\end{align}
+\end{aligned}
 $$
 
 なお、$C=20$ になる組み合わせには $$X = \{0, 0, 0, 1, 1, 1\}$$ もあり、$X$ が一意に求まらないため、簡単に解くことができず、暗号に適さないです。

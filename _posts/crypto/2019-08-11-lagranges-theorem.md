@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 群論において、ラグランジュの定理とは次のような定理のことです。
@@ -42,26 +43,26 @@ published:     true
 例えば $\mathbb{Z}_6$ は位数が非素数なので、単位元以外の任意の元が作る巡回群の位数は $1,2,3,6$ のどれかになります。
 
 $$
-\begin{align}
+\begin{aligned}
 1 + 1 + 1 + 1 + 1 + 1 &\equiv 0 \pmod{6} \\
 2 + 2 + 2 &\equiv 0 \pmod{6} \\
 3 + 3 &\equiv 0 \pmod{6} \\
 4 + 4 + 4 &\equiv 0 \pmod{6} \\
 5 + 5 + 5 + 5 + 5 + 5 &\equiv 0 \pmod{6}
-\end{align}
+\end{aligned}
 $$
 
 一方で、$\mathbb{Z}_7$ は位数が素数なので、単位元以外の任意の元が作る巡回群の位数は必ず $7$ になります。
 
 $$
-\begin{align}
+\begin{aligned}
 1 + 1 + 1 + 1 + 1 + 1 + 1 &\equiv 0 \pmod{7} \\
 2 + 2 + 2 + 2 + 2 + 2 + 2 &\equiv 0 \pmod{7} \\
 3 + 3 + 3 + 3 + 3 + 3 + 3 &\equiv 0 \pmod{7} \\
 4 + 4 + 4 + 4 + 4 + 4 + 4 &\equiv 0 \pmod{7} \\
 5 + 5 + 5 + 5 + 5 + 5 + 5 &\equiv 0 \pmod{7} \\
 6 + 6 + 6 + 6 + 6 + 6 + 6 &\equiv 0 \pmod{7}
-\end{align}
+\end{aligned}
 $$
 
 <br>

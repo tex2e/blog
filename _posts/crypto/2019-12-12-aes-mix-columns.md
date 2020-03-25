@@ -9,6 +9,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
@@ -74,11 +75,11 @@ $$
 以下の数式は全て正しく、表現形式は異なりますが全て同じ意味です。
 
 $$
-\begin{align}
+\begin{aligned}
 (x^6 + x^4 + x^2 + x + 1) + (x^7 + x + 1) &= x^7 + x^6 + x^4 + x^2 & \text{(多項式による表現)} \\
 \{\text{01010111}\} \oplus \{\text{10000011}\} &= \{\text{11010100}\} & \text{(バイナリによる表現)} \\
 \{\text{57}\} \oplus \{\text{83}\} &= \{\text{d4}\} & \text{(16進数による表現)}
-\end{align}
+\end{aligned}
 $$
 
 #### 掛け算
@@ -91,25 +92,25 @@ $$
 式変形して考えてみると：
 
 $$
-\begin{align}
+\begin{aligned}
 \{\text{57}\} \cdot{} \{\text{83}\}
 &= (x^6 + x^4 + x^2 + x + 1) (x^7 + x + 1) \\
 &= x^{13} + x^{11} + x^9 + x^8 + x^7 + \\
 &\phantom{=}\;\; x^7 + x^5 + x^3 + x^2 + x + \\
 &\phantom{=}\;\; x^6 + x^4 + x^2 + x + 1 \\[2pt]
 &= x^{13} + x^{11} + x^9 + x^8 + x^6 + x^5 + x^4 + x^3 + 1
-\end{align}
+\end{aligned}
 $$
 
 これを、法既約多項式で剰余をとると、右辺と一致します。
 
 $$
-\begin{align}
+\begin{aligned}
 &\phantom{=}\;\; x^{13} + x^{11} + x^9 + x^8 + x^6 + x^5 + x^4 + x^3 + 1 \pmod{x^8 + x^4 + x^3 + x + 1} \\[2pt]
 &= x^7 + x^6 + 1 \\
 &= \{\text{11000001}\} \\
 &= \{\text{c1}\}
-\end{align}
+\end{aligned}
 $$
 
 #### 行列の掛け算
@@ -139,7 +140,7 @@ $$
 $$
 
 $$
-\begin{align}
+\begin{aligned}
   d_0 &= (\{\text{02}\} \cdot{} b_0) \oplus (\{\text{03}\} \cdot{} b_1) \oplus
          (\{\text{01}\} \cdot{} b_2) \oplus (\{\text{01}\} \cdot{} b_3) \\
   d_1 &= (\{\text{01}\} \cdot{} b_0) \oplus (\{\text{02}\} \cdot{} b_1) \oplus
@@ -148,7 +149,7 @@ $$
          (\{\text{02}\} \cdot{} b_2) \oplus (\{\text{03}\} \cdot{} b_3) \\
   d_3 &= (\{\text{03}\} \cdot{} b_0) \oplus (\{\text{01}\} \cdot{} b_1) \oplus
          (\{\text{01}\} \cdot{} b_2) \oplus (\{\text{02}\} \cdot{} b_3) \\
-\end{align}
+\end{aligned}
 $$
 
 次の章では、これを計算するためのプログラムを作る方法について説明していきます。
@@ -158,7 +159,7 @@ $$
 ### アルゴリズム
 
 足し算にあたる「$\oplus$」は `^` で計算できます。
-なので、実装する必要があるのは、要素同士の掛け算「$\cdot{}$」です。
+なので、実装する必要があるのは、要素同士の掛け算にあたる「$\cdot{}$」です。
 
 #### 掛け算のアルゴリズム
 
@@ -229,13 +230,13 @@ $$
 よって、バイナリ法の考え方で
 
 $$
-\begin{align}
+\begin{aligned}
 \{\text{57}\} \cdot{} \{83\}
 &= \{\text{57}\} \cdot{} ( \{80\} \oplus \{02\} \oplus \{01\} ) \\
 &= (\{\text{57}\} \cdot{} \{80\}) \oplus (\{\text{57}\} \cdot{} \{02\}) \oplus (\{\text{57}\} \cdot{} \{01\}) \\
 &= \{\text{38}\} \oplus \{\text{ae}\} \oplus \{\text{57}\} \\
 &= \{\text{c1}\}
-\end{align}
+\end{aligned}
 $$
 
 となり、これを応用すれば任意の要素同士の掛け算を行うことができます。
@@ -285,7 +286,7 @@ $$
 $$
 
 $$
-\begin{align}
+\begin{aligned}
   d_0 &= (\{\text{02}\} \cdot{} b_0) \oplus (\{\text{03}\} \cdot{} b_1) \oplus
          (\{\text{01}\} \cdot{} b_2) \oplus (\{\text{01}\} \cdot{} b_3) \\
   d_1 &= (\{\text{01}\} \cdot{} b_0) \oplus (\{\text{02}\} \cdot{} b_1) \oplus
@@ -294,7 +295,7 @@ $$
          (\{\text{02}\} \cdot{} b_2) \oplus (\{\text{03}\} \cdot{} b_3) \\
   d_3 &= (\{\text{03}\} \cdot{} b_0) \oplus (\{\text{01}\} \cdot{} b_1) \oplus
          (\{\text{01}\} \cdot{} b_2) \oplus (\{\text{02}\} \cdot{} b_3) \\
-\end{align}
+\end{aligned}
 $$
 
 この処理を `mix_columns(s)` という関数にして、C言語で実装すると次のようになります。
@@ -405,7 +406,7 @@ $$
 $$
 
 $$
-\begin{align}
+\begin{aligned}
   b_0 &= (\{\text{0e}\} \cdot{} d_0) \oplus (\{\text{0b}\} \cdot{} d_1) \oplus
          (\{\text{0d}\} \cdot{} d_2) \oplus (\{\text{09}\} \cdot{} d_3) \\
   b_1 &= (\{\text{09}\} \cdot{} d_0) \oplus (\{\text{0e}\} \cdot{} d_1) \oplus
@@ -414,7 +415,7 @@ $$
          (\{\text{0e}\} \cdot{} d_2) \oplus (\{\text{0b}\} \cdot{} d_3) \\
   b_3 &= (\{\text{0b}\} \cdot{} d_0) \oplus (\{\text{0d}\} \cdot{} d_1) \oplus
          (\{\text{09}\} \cdot{} d_2) \oplus (\{\text{0e}\} \cdot{} d_3) \\
-\end{align}
+\end{aligned}
 $$
 
 この処理を `inv_mix_columns(s)` という関数にして、C言語で実装すると次のようになります。

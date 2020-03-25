@@ -8,6 +8,7 @@ cover:         /assets/cover4.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         true
 ---
 
 有限体上の楕円曲線の点集合を求める方法について説明します。
@@ -28,7 +29,7 @@ published:     true
 
     $$
     y^2 \equiv x^3 + ax + b \pmod{p}
-    \tag{1}\label{ec1}
+    \tag{1}
     $$
 
     の解 $(x,y) \in \mathbb{Z}_p \times \mathbb{Z}_p$ 全体の集合である。
@@ -41,15 +42,14 @@ published:     true
     そうでないなら $P + Q = (x_3, y_3)$ とする。ただし：
 
     $$
-    \begin{align}
-      x_3 &= \lambda^2 - x_1 - x_2     \mod{p} \tag{2}\\
-      y_3 &= \lambda (x_1 - x_3) - y_1 \mod{p} \tag{3}\\[10pt]
+    \begin{aligned}
+      x_3 &= \lambda^2 - x_1 - x_2     \mod{p} \\
+      y_3 &= \lambda (x_1 - x_3) - y_1 \mod{p} \\[10pt]
       \lambda &= \begin{cases}
-        \cfrac{y_2 - y_1}{x_2 - x_1} \mod{p} & \mathrm{if}\; P \ne Q \\[3pt]
+        \cfrac{y_2 - y_1}{x_2 - x_1} \mod{p} & \mathrm{if}\; P \ne Q \\[9pt]
         \cfrac{3 x_1^2 + a}{2 y_1}   \mod{p} & \mathrm{if}\; P = Q
       \end{cases}
-      \tag{4}
-    \end{align}
+    \end{aligned}
     $$
 
     最後に全ての $P \in E$ について $P + O = O + P = P$ と定義する。
@@ -60,7 +60,7 @@ published:     true
 
 ここまでで有限体上の楕円曲線の演算はできますが、どの点が楕円曲線上にあるのか調べる必要があります。
 つまり、適当な座標 $(1,2)$ を選んでもそれが楕円曲線上の点でなければ意味がないのです。
-任意の座標 $(x, y) \in \mathbb{Z}_p \times \mathbb{Z}_p$ について一つずつ式($\ref{ec1}$)の合同式を満たすかを調べるのは非常に時間がかかるので、ここでは合同式の右辺が平方剰余かどうかを調べるというアプローチについて説明します[^IPUSIRON]。
+任意の座標 $(x, y) \in \mathbb{Z}_p \times \mathbb{Z}_p$ について一つずつ式(1)の合同式を満たすかを調べるのは非常に時間がかかるので、ここでは合同式の右辺が平方剰余かどうかを調べるというアプローチについて説明します[^IPUSIRON]。
 
 まず平方剰余を調べるために必要なオイラーの規準について説明します。
 
@@ -71,24 +71,23 @@ published:     true
 
     $$
     a^{\frac{p-1}{2}} \equiv 1 \pmod{p}
-    \tag{5}\label{eulers_criterion1}
+    \tag{5}
     $$
 
 - **オイラーの規準** ($p \equiv 3 \pmod{4}$ のとき)
 
     素数 $p \equiv 3 \pmod{4}$ のとき、$p+1$ は 4 で割り切れるので、
-    $a$ の $p$ を法とする平方剰余を求めるとき、式($\ref{eulers_criterion2}$)と変形できる[^3mod4]。
+    $a$ の $p$ を法とする平方剰余を求めるとき、式(6)と変形できる[^3mod4]。
 
     $$
     \left( \pm a^{\frac{p + 1}{4}} \right)^2
     \equiv a^{\frac{p + 1}{2}}
     \equiv a^{\frac{p - 1}{2} + 1}
     \equiv a^{\frac{p - 1}{2}} \cdot a \pmod{p}
-    \tag{6}\label{eulers_criterion2}
+    \tag{6}
     $$
 
-    $a$ は平方剰余で $a^{\frac{p - 1}{2}} \equiv 1 \pmod{p}$ を満たすので、
-    式($\ref{eulers_criterion2}$)は $1 \cdot a \pmod{p}$ となる。
+    $a$ は平方剰余で $a^{\frac{p - 1}{2}} \equiv 1 \pmod{p}$ を満たすので、式(6)は $1 \cdot a \pmod{p}$ となる。
     よって $a$ の $p$ を法とする平方剰余は $\pm a^{\frac{p + 1}{4}}$ と求まる。
 
 
@@ -96,7 +95,7 @@ published:     true
 
 有限体上の楕円曲線の点集合を求める例として、
 例えば素数 $p = 11$ とする有限体 $F_{11}$ 上の楕円曲線 $y^2 = x^3 + x + 6$ について考えてみます。
-素数は $p \equiv 3 \pmod{4}$ を満たしているので、楕円曲線上の点を決めるにはまず、可能性のある $x \in F_{11}$ をとって $y^2 = x^3 + x + 6$ を計算し、$y$ についての方程式 ($\ref{ec1}$) を解くことで求めることができます。
+素数は $p \equiv 3 \pmod{4}$ を満たしているので、楕円曲線上の点を決めるにはまず、可能性のある $x \in F_{11}$ をとって $y^2 = x^3 + x + 6$ を計算し、$y$ についての方程式 (1) を解くことで求めることができます。
 解く手順について簡単に述べると以下のようになります。
 
 1. 整数 $x \in \mathbb{Z}_{11}$ を選ぶ
@@ -172,7 +171,7 @@ $$
 $x_1 = 2,\, y_1 = 4,\, x_2 = 10,\, y_2 = 9$ なので、楕円曲線上の加算の式に当てはめると、
 
 $$
-\begin{align}
+\begin{aligned}
   \lambda &= (9 - 4)(10 - 2)^{-1} \mod 11 \\
           &= 5 \times 8^{-1} \mod 11 \\
           &= 5 \times 7 \mod 11 \\
@@ -183,7 +182,7 @@ $$
   y_3 &= \lambda (2 - 3) - 4 \mod 11 \\
       &= -6 \mod 11 \\
       &= 5
-\end{align}
+\end{aligned}
 $$
 
 よって、$\alpha + \beta = (x_3, y_3) = (3, 5) \in E(F_{11})$ となり、
