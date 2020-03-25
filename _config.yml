@@ -21,6 +21,8 @@ disqus_shortname: "tex2e"
 # Build settings
 markdown: kramdown
 kramdown:
+  math_engine: katex
+  math_engine_opts: {}
   syntax_highlighter_opts:
     disable: true
 include:
