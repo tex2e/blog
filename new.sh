@@ -26,6 +26,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+latex:         false
 # sitemap: false
 # draft:   true
 ---
