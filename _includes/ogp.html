@@ -1,12 +1,6 @@
 <!-- Open Graph data -->
-{% if page.title %}
-<meta property="og:title" content="{{ page.title | escape }}" />
-<meta property="og:type" content="article" />
-{% else %}
-<meta property="og:title" content="{{ site.title | escape }}" />
-<meta property="og:type" content="website" />
-{% endif %}
-
+<meta property="og:title" content="{{ page.title | default: site.title | escape }}" />
+<meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
 <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/web-optim.png" />
 <meta property="og:site_name" content="{{ site.title | escape }}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
