@@ -6,14 +6,6 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  {% if page.tags %}
-  <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}" />
-  {% elsif page.keywords %}
-  <meta name="keywords" content="{{ page.keywords | split: ' ' | join: ', ' | escape }}" />
-  {% elsif site.keywords %}
-  <meta name="keywords" content="{{ site.keywords | split: ' ' | join: ', ' | escape }}" />
-  {% endif %}
-
   {% include ogp.html %}
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
@@ -33,18 +25,16 @@
   <!-- Automatically render math in text elements -->
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    $("script[type='math/tex']").replaceWith(
-      function () {
-        var tex = $(this).text();
-        return "<span class=\"inline-equation kdmath\">$" + tex + "$</span>";
+  document.addEventListener("DOMContentLoaded", function () {
+    $("script[type='math/tex']").replaceWith(function () {
+      var tex = $(this).text();
+      return "<span class=\"kdmath\">$" + tex + "$</span>";
     });
 
-    $("script[type='math/tex; mode=display']").replaceWith(
-      function () {
-        var tex = $(this).text();
-        tex = tex.replace('% <![CDATA[', '').replace('%]]>', '');
-        return "<div class=\"equation kdmath\">$$" + tex + "$$</div>";
+    $("script[type='math/tex; mode=display']").replaceWith(function () {
+      var tex = $(this).text();
+      tex = tex.replace('% <![CDATA[', '').replace('%]]>', '');
+      return "<div class=\"kdmath\">$$" + tex + "$$</div>";
     });
 
     renderMathInElement(document.body, {
@@ -53,8 +43,6 @@
         {left: "$", right: "$", display: false},
       ]
     });
-
-    console.log('KaTeX done!');
   });
   </script>
   {% endif %}
