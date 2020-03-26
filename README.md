@@ -6,6 +6,7 @@ Mako(tex2e)の技術系ブログです。
 
 - Framework: [**Jekyll**](https://jekyllrb.com/)
 - Theme: [**jekyllDecent**](https://github.com/jwillmer/jekyllDecent)
+- Markdown: [**kramdown**](https://kramdown.gettalong.org/)
 - Template: [**Liquid**](https://shopify.github.io/liquid/)
 - Syntax Highlighter: [**Prism**](http://prismjs.com/)
 - Math Engine: [**KaTeX**](https://katex.org/)
