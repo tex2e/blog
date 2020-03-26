@@ -88,7 +88,9 @@ kramdown:
 
 ### Github Pages で使う場合
 
-GitHub Pages ではセキュリティポリシーの関係で kramdown しか使えず、さらに math_engine には mathjax が強制的に使用される設定なので [^1] [^2]、JavaScript書いて何とかするしかありません。
+GitHub Pages ではセキュリティポリシーの関係で kramdown しか使えず、さらに math_engine には mathjax が強制的に使用される設定になっています [^1] [^2]。
+つまり、katex の gem を利用できず、しかも `math_engine: null` も反映されません (強制的に mathjax になる)。
+なので、JavaScript書いて何とかするしかありません。
 
 [^1]: [GitHub PagesとJekyllについて](https://help.github.com/ja/enterprise/2.15/user/articles/about-github-pages-and-jekyll)
 [^2]: [pages-gem/configuration.rb at master -- 上書きされるオプション](https://github.com/github/pages-gem/blob/master/lib/github-pages/configuration.rb#L50-L55)
