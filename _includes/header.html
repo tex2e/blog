@@ -13,20 +13,9 @@
   <div class="nav">
     <ul>
       <li><a class="page-link" href="{{ site.baseurl }}/" title="Home">Home</a></li>
+      <li><a class="page-link" href="{{ site.baseurl }}/privacy/" title="Privacy">Privacy</a></li>
+      <li><a class="page-link" href="{{ site.baseurl }}/about/" title="About">About</a></li>
 
-      {% assign pages = site.pages | sort: "weight" %}
-      {% for my_page in pages %}
-
-      {% if my_page.menutitle %}
-      {% assign title = my_page.menutitle %}
-      {% elsif site.title %}
-      {% assign title = my_page.title %}
-      {% endif %}
-
-      {% if title and my_page.visible != false %}
-      <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}" title="{{ title }}">{{ title }}</a></li>
-      {% endif %}
-      {% endfor %}
     </ul>
   </div>
 </header>
