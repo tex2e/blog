@@ -14,13 +14,12 @@ latex:         true
 RingLWE問題を使った鍵交換の方法としてNewHopeがあります。
 そのNewHopeの論文を読んでいると多項式環の乗算のところで数論変換(NTT)を利用した高速化をしているので、数論変換による有限体上の多項式環の乗算について調べたことをまとめます。
 $$
-\gdef\Z{\mathbb{Z}}
 \gdef\vec#1{\textbf{#1}}
 $$
 
 ### 多項式環の乗算
 
-多項式 $a(x), b(x)$ があるとき、多項式環 $R_q = \Z_q/f(x)$ の乗算は次のようになります（ただし$f(x)$は$n$次の既約多項式）。
+多項式 $a(x), b(x)$ があるとき、多項式環 $R_q = \mathbb{Z}_q/f(x)$ の乗算は次のようになります（ただし $f(x)$ は $n$ 次の既約多項式）。
 
 $$
 a(x) \cdot{} b(x) = \sum_{i=0}^{n-1} \sum_{j=0}^{n-1} a_i b_j x^{i+j} \;\mathrm{mod}\; f(x)
@@ -43,7 +42,7 @@ $$
 
 多項式 $a(x), b(x)$ があるとき、次の手順で有限体上の多項式環の乗算を計算します。
 
-1. $\omega^n \equiv 1 \;\mathrm{mod}\; p$ を満たす $\omega$ を求めます（$\omega$ は有限体 $\Z_p$ 上の原始$n$乗根です）
+1. $\omega^n \equiv 1 \;\mathrm{mod}\; p$ を満たす $\omega$ を求めます（$\omega$ は有限体 $\mathbb{Z}_p$ 上の原始$n$乗根です）
 2. $\phi^2 \equiv \omega \;\mathrm{mod}\; p$ を満たす $\phi$ を求めます
 3. $i = 0,1,...,n-1$ のときの $w^i$ と $\phi^i$ を計算して、それぞれを配列に保存します
 5. $$\overline{a}_i \leftarrow a_i \phi^i \;\mathrm{mod}\; p$$ を計算して $$\vec{a} = (a_0,...,a_{n-1})$$ を求めます

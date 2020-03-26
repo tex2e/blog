@@ -13,16 +13,16 @@ latex:         true
 高専専攻科の数学の授業で教科書として使用した「[線形代数学 (新装版)](https://www.nippyo.co.jp/shop/book/5396.html)」(日本評論社) のベクトル空間に関する定義と定理の一覧をまとめたものです。
 
 $$
-  \global\def\a{\vec{a}}
-  \global\def\b{\vec{b}}
-  \global\def\x{\vec{x}}
-  \global\def\y{\vec{y}}
-  \global\def\u{\vec{u}}
-  \global\def\v{\vec{v}}
-  \global\def\w{\vec{w}}
-  \global\def\zero{\vec{0}}
-  \global\def{\Ker}{\mathop{\mathrm{Ker}}\nolimits}
-  \global\def{\Im}{\mathop{\mathrm{Im}}\nolimits}
+\gdef\a{\vec{a}}
+\gdef\b{\vec{b}}
+\gdef\x{\vec{x}}
+\gdef\y{\vec{y}}
+\gdef\u{\vec{u}}
+\gdef\v{\vec{v}}
+\gdef\w{\vec{w}}
+\gdef\zero{\vec{0}}
+\gdef{\Ker}{\mathop{\mathrm{Ker}}\nolimits}
+\gdef{\Im}{\mathop{\mathrm{Im}}\nolimits}
 $$
 
 ### 6.1. 抽象的ベクトル空間

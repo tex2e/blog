@@ -14,10 +14,6 @@ latex:         true
 
 NumPyを使ったRing-LWE格子暗号による鍵共有について説明します。前回のSageMathを使ったRing-LWE格子暗号による鍵共有の続きです。
 SageMathを使ったのは多項式環の演算を簡単にするためでした。
-$$
-\gdef\Z{\mathbb{Z}}
-\gdef\vec#1{\textbf{#1}}
-$$
 
 前回：[SageMathでRing-LWEによる鍵共有]({{ site.baseurl }}/crypto/ring-lwe-key-exchange)
 
