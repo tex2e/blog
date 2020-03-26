@@ -105,17 +105,15 @@ html の head を以下のコードに変更します。
 
 ```js
 document.addEventListener("DOMContentLoaded", function() {
-  $("script[type='math/tex']").replaceWith(
-    function () {
-      var tex = $(this).text();
-      return "<span class=\"inline-equation kdmath\">$" + tex + "$</span>";
+  $("script[type='math/tex']").replaceWith(function () {
+    var tex = $(this).text();
+    return "<span class=\"kdmath\">$" + tex + "$</span>";
   });
 
-  $("script[type='math/tex; mode=display']").replaceWith(
-    function () {
-      var tex = $(this).text();
-      tex = tex.replace('% <![CDATA[', '').replace('%]]>', '');
-      return "<div class=\"equation kdmath\">$$" + tex + "$$</div>";
+  $("script[type='math/tex; mode=display']").replaceWith(function () {
+    var tex = $(this).text();
+    tex = tex.replace('% <![CDATA[', '').replace('%]]>', '');
+    return "<div class=\"kdmath\">$$" + tex + "$$</div>";
   });
 
   renderMathInElement(document.body, {
