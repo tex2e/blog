@@ -58,15 +58,18 @@ KaTeX の設定はこれで終わりです。
 注意点は、まずそのまま移しても正しく表示されないでエラーになることがある点です。
 自身のサイトで移行するときに LaTeX の数式を修正した内容の一覧をリストにしてまとめました。
 
-- `\begin{align}` --> `\begin{aligned}` : align は aligned に変更します。
+- `\begin{align}` --> `\begin{aligned}` : align は aligned に変更します。厳密な話をすると LaTeX では数式内で align 環境は使えなくて、数式内で aligned 環境は使えます。より LaTeX に忠実な仕様になったと言えるでしょう。
 - `\def` --> `\gdef` : マクロをすべての数式で使いたい場合は `\gdef` (Global DEFine) に変更します。
 - Unicode文字 --> `\text{}` : 数式内での説明は text の中に入れます。
 - `\text{sample_variable}` はダメ : MathJaxではtextの中でアンダースコアが使えたのですが...
 - `\tag{}` は複数回使えない : MathJaxではalign環境で複数の `\tag{}` が使えたのですが...
-- `\text{#}` --> `\#` : #は生では使えないし、textの中でも使えないようになってる。
+- `\text{#}` --> `\#` : #は生では使えないし、textの中でも使えないようになってます。
 - `\begin{eqnarray}` --> `\begin{aligned}` : eqnarrayはもう古いです。
+- `'` --> `^\prime` : Jekyll や GitHub Pages を使う人で、シングルクオートを良い感じに変換してくれる smart_quotes 機能を有効にしていると、シングルクオートの表示がおかしくなります。Jekyll で使う場合の設定は後述します。
 
 MathJax は細かいエラーに寛容でしたが、KaTeX はエラーに対して厳しくなっています。
+
+KaTeX で使える記号・関数は [Support Table · KaTeX](https://katex.org/docs/support_table.html) を参照してください。
 
 <br>
 ### Jekyll で KaTeX を使う場合
