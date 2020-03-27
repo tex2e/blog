@@ -66,10 +66,11 @@ $$
   - 多項式の項数 $n$
   - 誤差分布 $\chi$
   - 多項式環 $R = \Z[x] / f(x)$ : ただし、$f(x) = x^n + 1$ とし、$n$ は$2$のべき乗とします。
+  - 有限体上の多項式環 $R_q = R/qR$
   - 多項式 $m$ : 各係数は $\Z_q$ 上の一様分布の乱数で決めます
-2. Aliceは誤差分布から秘密多項式 $s_A$ と誤差多項式 $e_A$ を作ります。そして、公開鍵 $p_A = m \cdot{} s_A + 2e_A$ を計算し、Bob に送信します（実際には多項式に代わりに、多項式の各係数のリストを送信します）。
-3. Bobは誤差分布から秘密多項式 $s_B$ と誤差多項式 $e_B, e'_B$ を作ります。そして、公開鍵 $p_B = m \cdot{} s_B + 2 e_B$ を計算します。さらに、鍵の元となる値 $K_B = p_A \cdot{} s_B + 2 e'_B \mod{q}$ を計算し、$\sigma \leftarrow S(K_B)$ を求めます。ここでBobは共有鍵 $SK_B = E(K_B, \sigma)$ を得ます。最後に公開鍵 $(p_B, \sigma)$ を送信します。
-4. Aliceは誤差分布から誤差多項式 $e'_A$ を作ります。そして $K_B = s_A \cdot{} p_B + 2 e'_A \mod{q}$ を計算し、共有鍵 $SK_A = E(K_A, \sigma)$ を得ます。
+2. Aliceは誤差分布から秘密多項式 $s_A \in R_q$ と誤差多項式 $e_A \in R_q$ を作ります。そして、公開鍵 $p_A = m \cdot{} s_A + 2e_A$ を計算し、Bob に送信します（実際には多項式に代わりに、多項式の各係数のリストを送信します）。
+3. Bobは誤差分布から秘密多項式 $s_B \in R_q$ と誤差多項式 $e_B, e'_B \in R_q$ を作ります。そして、公開鍵 $p_B = m \cdot{} s_B + 2 e_B$ を計算します。さらに、鍵の元となる値 $K_B = p_A \cdot{} s_B + 2 e'_B \mod{q}$ を計算し、$\sigma \leftarrow S(K_B)$ を求めます。ここでBobは共有鍵 $SK_B = E(K_B, \sigma)$ を得ます。最後に公開鍵 $(p_B, \sigma)$ を送信します。
+4. Aliceは誤差分布から誤差多項式 $e'_A \in R_q$ を作ります。そして $K_A = p_B \cdot{} s_A + 2 e'_A \mod{q}$ を計算し、共有鍵 $SK_A = E(K_A, \sigma)$ を得ます。
 
 上の手順をSageMathで書くと以下のようになります（多項式環の演算を実装するのが大変なのでSageMathを使いました）。
 なお、事前に共有するパラメータは $n=1024, q=40961$ としました [^RLWE-parameter-choices]。
@@ -200,6 +201,21 @@ key is 0xf0618ab81175a58c6ca431635f694874b38d42a6ae07cf7037c89bc798a0e1adc0ff3bf
 ```
 
 このようにして、共有鍵を共有することができます。
+
+共有鍵が一致することを式で確認すると、以下のようになります。ただし、途中で誤差多項式 $e, e'$ は無視しています。
+
+$$
+\begin{aligned}
+K_A &= p_B \cdot{} s_A + 2 e_A' \\
+    &= (m \cdot{} s_B + 2 e_B) s_A + 2 e_A' \\
+    &= m \cdot{} s_B \cdot{} s_A \\[6pt]
+K_B &= p_A \cdot{} s_B + 2 e_B' \\
+    &= (m \cdot{} s_A + 2 e_A) s_B + 2 e_B' \\
+    &= m \cdot{} s_A \cdot{} s_B \\
+    &= m \cdot{} s_B \cdot{} s_A \\
+\end{aligned}
+$$
+
 実装は J. Ding "[A Simple Provably Secure Key Exchange Scheme Based on the Learning with Errors Problem](https://eprint.iacr.org/2012/688.pdf)" や [amir734jj/LWE-KEX: LWE-KEX implementations all using SageMath -- GitHub](https://github.com/amir734jj/LWE-KEX) を読みながらPython (SageMath) で実装していきました。正確性や安全性の証明などはこちらを参照してください。
 
 次回：[NumPyでRing-LWEによる鍵共有]({{ site.baseurl }}/crypto/ring-lwe-key-exchange-with-numpy)
