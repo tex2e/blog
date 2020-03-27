@@ -235,7 +235,28 @@ skA: [[1]]（Aliceが得た共有鍵）
 skA == skB: True
 ```
 
-何回か繰り返して実行してみると、ほとんどの場合において共有鍵（0 or 1）を共有することができています。
+何回か繰り返して実行してみると、共有鍵（0 or 1）を共有していることが確認できます。
+
+共有鍵が一致することを式で確認すると、以下のようになります。
+
+$$
+\begin{aligned}
+K_A &= \vec{s}_A^T \cdot{} \vec{p}_B + 2e_A' \\
+    &= \vec{s}_A^T \cdot{} \left( \vec{M}^T \cdot{} \vec{s}_B + 2\vec{e}_B \right) + 2e_A' \\
+    &= \vec{s}_A^T \vec{M}^T \vec{s}_B + 2\,\vec{s}_A^T \vec{e}_B + 2e_A' \\
+    &= \vec{s}_A^T \vec{M}^T \vec{s}_B \\
+    &= \left( \vec{M} \,\vec{s}_A \right)^T \vec{s}_B \\[6pt]
+K_B &= \vec{p}_A^T \cdot{} \vec{s}_B + 2e_B' \\
+    &= \vec{s}_B^T \cdot{} \vec{p}_A + 2e_B' \\
+    &= \vec{s}_B^T \cdot{} \left( \vec{M} \cdot{} \vec{s}_A + 2\vec{e}_A \right) + 2e_B' \\
+    &= \vec{s}_B^T \vec{M} \,\vec{s}_A + 2\,\vec{s}_B^T \vec{e}_A + 2e_B' \\
+    &= \vec{s}_B^T \vec{M} \,\vec{s}_A \\
+    &= \left(\vec{M} \,\vec{s}_A\right)^T \vec{s}_B
+\end{aligned}
+$$
+
+ただし、途中で誤差 $\vec{e}$ と $e'$ を無視したり、積の転置行列 $(AB)^T = B^TA^T$ の操作をしています。
+誤差を無視できるのはシグナル関数 $S$ によって誤差が丸め込まれているからということらしいですが、詳細はよくわからないので、元の論文読んでください。
 
 ## LWE格子暗号による複数bitの鍵共有
 
