@@ -81,8 +81,8 @@ $$
 $$
 
 1. パラメータ $q, n, \vec{M} \in \Z_q^{n \times n}, \chi_\alpha$ を事前に共有します。ただし $q$ は3以上の素数で、$n \times n$ の行列 $\vec{M}$ の各要素は一様分布で選んだ乱数にします。$\chi_\alpha$ は誤差分布で、誤差を付加するときに使います。
-2. Aliceは誤差分布を使って秘密ベクトル $\vec{s}_A \in \Z_q^{1 \times n}$ と誤差ベクトル $\vec{e}_A \in \Z_q^{1 \times n}$ を作ります。そして、公開鍵 $\Z_q^{1 \times n} \ni \vec{p}_A = \vec{M} \cdot{} \vec{s}_A + 2\vec{e}_A$ を計算し、Bob に送信します。
-3. Bobは誤差分布を使って秘密ベクトル $\vec{s}_B \in \Z_q^{1 \times n}$ と誤差ベクトル $\vec{e}_B \in \Z_q^{1 \times n}$ と誤差 $e'_B \in \Z_q$ を作ります。そして、公開鍵 $\Z_q^{1 \times n} \ni \vec{p}_B = \vec{M}^T \cdot{} \vec{s}_B + 2 \vec{e}_B$ を計算します。さらに、鍵の元となる値 $\Z_q \ni K_B = \vec{p}_A^T \cdot{} \vec{s}_B + 2 e'_B \mod{q}$ を計算し、$$\sigma \leftarrow S(K_B) \in \{0,1\}$$ を求めます。ここで Bob は共有鍵 $$SK_B = E(K_B, \sigma) \in \{0,1\}$$ を得ます。最後に公開鍵 $\vec{p}_B$ と $\sigma$ を Alice に送信します。
+2. Aliceは誤差分布を使って秘密ベクトル $\vec{s}_A \in \Z_q^{n \times 1}$ と誤差ベクトル $\vec{e}_A \in \Z_q^{n \times 1}$ を作ります。そして、公開鍵 $\Z_q^{n \times 1} \ni \vec{p}_A = \vec{M} \cdot{} \vec{s}_A + 2\vec{e}_A$ を計算し、Bob に送信します。
+3. Bobは誤差分布を使って秘密ベクトル $\vec{s}_B \in \Z_q^{n \times 1}$ と誤差ベクトル $\vec{e}_B \in \Z_q^{n \times 1}$ と誤差 $e'_B \in \Z_q$ を作ります。そして、公開鍵 $\Z_q^{n \times 1} \ni \vec{p}_B = \vec{M}^T \cdot{} \vec{s}_B + 2 \vec{e}_B$ を計算します。さらに、鍵の元となる値 $\Z_q \ni K_B = \vec{p}_A^T \cdot{} \vec{s}_B + 2 e'_B \mod{q}$ を計算し、$$\sigma \leftarrow S(K_B) \in \{0,1\}$$ を求めます。ここで Bob は共有鍵 $$SK_B = E(K_B, \sigma) \in \{0,1\}$$ を得ます。最後に公開鍵 $\vec{p}_B$ と $\sigma$ を Alice に送信します。
 4. Aliceは誤差分布を使って誤差 $e'_A \in \Z_q$ を作ります。そして $\Z_q \ni K_A = \vec{s}_A^T \cdot{} \vec{p}_B + 2 e'_A \mod{q}$ を計算し、共有鍵 $$SK_A = E(K_A, \sigma) \in \{0,1\}$$ を得ます。
 
 行列の形を意識しながら、計算していく必要があります。
