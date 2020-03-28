@@ -64,7 +64,7 @@ def randint_from_gaussian(size):
     x = np.random.normal(0, sigma, size)
     return np.rint(x)
 
-def encrypt(plaintext):
+def encrypt(plaintext, T):
     r = randint_from_gaussian(size=n)
     C1 = r.dot(A) % q
     M = (q+1)/2 * plaintext
@@ -96,7 +96,7 @@ print()
 plain_bit = random.randint(0, 1)
 print('[+] plain_bit = %d' % plain_bit)
 print()
-C1, C2 = encrypt(plain_bit)
+C1, C2 = encrypt(plain_bit, T)
 print('[+] ciphertext')
 print('C1 =\n', C1)
 print('C2 =\n', C2)
@@ -164,7 +164,7 @@ def randint_from_gaussian(size):
     x = np.random.normal(0, sigma, size)
     return np.rint(x)
 
-def encrypt(plaintext):
+def encrypt(plaintext, T):
     R = randint_from_gaussian(size=(n, n))
     C1 = R.dot(A) % q
     M = (q+1)/2 * plaintext
@@ -196,7 +196,7 @@ print()
 plain_bits = np.random.randint(0, 2, size=(n, n))
 print('[+] plain_bits = \n', plain_bits)
 print()
-C1, C2 = encrypt(plain_bits)
+C1, C2 = encrypt(plain_bits, T)
 print('[+] ciphertext')
 print('C1 =\n', C1)
 print('C2 =\n', C2)
