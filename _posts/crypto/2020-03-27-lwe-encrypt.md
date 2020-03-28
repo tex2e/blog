@@ -288,3 +288,9 @@ plain_bits == decrypted_bits: True
 ```
 
 以上です。
+
+
+#### 参考文献
+
+- [LWE格子暗号による暗号化をやってみる - ももいろテクノロジー](http://inaz2.hatenablog.com/entry/2017/05/27/003343)
+- [量子コンピュータの解読に耐えうる暗号アルゴリズム「格子暗号」の最新動向 -- 日本銀行金融研究所](https://www.imes.boj.or.jp/research/papers/japanese/15-J-09.pdf)
