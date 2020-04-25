@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "Markdown用のリンクを作るbookmarklet"
-date:          2020-03-05
+title:         "Markdown/HTML用のリンクを作るbookmarklet"
+date:          2020-04-25
 category:      Misc
 cover:         /assets/cover1.jpg
 redirect_from:
@@ -13,7 +13,29 @@ published:     true
 
 Markdownで書いているときに他のページへのリンクを作るブックマークレットが便利なので、メモとして残しておきます。
 
-Markdown用のリンクを作ってクリップボードにコピーするJS：
+ブックマークレットの追加方法は Chrome > 上部のブックマークを右クリック > ページを追加 > URLにjavascriptを書いて保存、の手順です。
+
+使用方法は、作成したブックマークレットをクリックすると、そのページのリンクを生成して、クリップボードにコピーされます。
+
+### タイトルとURLからMarkdown用のリンク生成
+
+**Markdown**用のリンクを生成するブックマークレットです。
+
+名前：page title and url (**md**)
+
+URL：
+
+```
+javascript:!function(){var e=document.createElement("textarea"),t=document.title.replace(/\[/g,"\\[").replace(/]/g,"\\]").replace(/\|/g,"\\|"),c=document.URL.replace(/\(/g,"%2528").replace(/\)/g,"%2529");e.textContent="["+t+"]("+c+")",document.querySelector("body").append(e),e.select(),document.execCommand("copy"),e.remove()}();
+```
+
+リンク生成の結果：
+
+```
+[JavaScript リファレンス - JavaScript \| MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference)
+```
+
+圧縮する前のオリジナルのJavaScriptは以下の通りです。
 
 ```javascript
 (function() {
@@ -31,15 +53,46 @@ Markdown用のリンクを作ってクリップボードにコピーするJS：
 })();
 ```
 
-ワンライナーにして、ブックマークレットに保存するもの：
+正しくリンクが貼られるように、タイトルに含まれる角括弧(`[]`)とパイプ(`|`)をエスケープし、URLに含まれる丸括弧(`()`)をエスケープする処理をしています。
+また、`|` をエスケープするのは、Markdownの処理系によっては（具体的にはkramdownですが）、上手に解釈できない場合があるからです。
 
-```javascript
-javascript:!function(){var e=document.createElement("textarea"),t=document.title.replace(/\[/g,"\\[").replace(/]/g,"\\]").replace(/\|/g,"\\|"),c=document.URL.replace(/\(/g,"%2528").replace(/\)/g,"%2529");e.textContent="["+t+"]("+c+")",document.querySelector("body").append(e),e.select(),document.execCommand("copy"),e.remove()}();
+### タイトルとURLからHTML用のリンク生成
+
+**HTML**用のリンクを生成するブックマークレットです。
+
+名前：page title and url (**href**)
+
+URL：
+
+```
+javascript:!function(){var e=document.createElement("textarea"),t=document.title,c=document.URL;e.textContent="<a href=\""+c+"\">"+t+"</a>",document.querySelector("body").append(e),e.select(),document.execCommand("copy"),e.remove()}();
 ```
 
-正しくリンクが貼られるように、タイトルに含まれる角括弧(`[]`)とパイプ(`|`)をエスケープし、URLに含まれる丸括弧(`()`)をエスケープする処理をしています。
+リンク生成の結果：
 
-`|` をエスケープするのは、Markdownの処理系によっては（具体的にはkramdownですが）、上手に解釈できない場合があるからです。
+```
+<a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference">JavaScript リファレンス - JavaScript | MDN</a>
+```
+
+### タイトルとURLからテキスト用のリンク生成
+
+**テキスト**用にリンクを生成するブックマークレットです。
+
+名前：page title and url (**txt**)
+
+URL：
+
+```
+javascript:!function(){var e=document.createElement("textarea"),t=document.title,c=document.URL;e.textContent=t+"\n"+c,document.querySelector("body").append(e),e.select(),document.execCommand("copy"),e.remove()}();
+```
+
+リンク生成の結果：
+
+```
+JavaScript リファレンス - JavaScript | MDN
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference
+```
+
 
 #### 参考文献
 
