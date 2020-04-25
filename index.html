@@ -12,9 +12,9 @@ layout: default
     <div class="article">
     <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
     <a href="{{ post.url | prepend: site.baseurl }}"
-        title="{{ post.menutitle | default: post.title }}">
+        title="{{ post.menutitle | default: post.title | strip_html }}">
       <header class="post-header">
-        <span class="title" itemprop="name">{{ post.menutitle | default: post.title }}</span>
+        <span class="title" itemprop="name">{{ post.menutitle | default: post.title | strip_html }}</span>
         <time class="date" itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{post.date | date: "%b %e, %Y"}}</time>
       </header>
     </a>
@@ -39,9 +39,9 @@ layout: default
     <div class="article">
     <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
     <a href="{{ post.url | prepend: site.baseurl }}"
-        title="{{ post.menutitle | default: post.title }}">
+        title="{{ post.menutitle | default: post.title | strip_html }}">
       <header class="post-header">
-      <span class="title" itemprop="name">{{ post.menutitle | default: post.title  }}</span>
+      <span class="title" itemprop="name">{{ post.menutitle | default: post.title | strip_html }}</span>
       <time class="date" itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{post.date | date: "%b %e, %Y"}}</time>
       </header>
     </a>
