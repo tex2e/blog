@@ -4,7 +4,7 @@ title:         "Markdown/HTML用のリンクを作るbookmarklet"
 date:          2020-04-25
 category:      Misc
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/bookmarklet-for-markdown-link
 comments:      true
 published:     true
 # sitemap: false
