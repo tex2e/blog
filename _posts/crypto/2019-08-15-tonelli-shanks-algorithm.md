@@ -20,25 +20,21 @@ def legendre(a, p):
 def tonelli_shanks(a, p):
     if legendre(a, p) != 1:
         raise Exception("not a square (mod p)")
-
     # Step 1. By factoring out powers of 2, find q and s such that p - 1 = q 2^s with Q odd
     q = p - 1
     s = 0
     while q % 2 == 0:
         q >>= 1
         s += 1
-
     # Step 2. Search for a z in Z/pZ which is a quadratic non-residue
     for z in range(2, p):
         if legendre(z, p) == p - 1:
             break
-
     # Step 3.
     m = s
     c = pow(z, q, p) # quadratic non residue
-    t = pow(n, q, p) # quadratic residue
-    r = pow(n, (q + 1) // 2, p)
-
+    t = pow(a, q, p) # quadratic residue
+    r = pow(a, (q + 1) // 2, p)
     # Step 4.
     t2 = 0
     while True:
@@ -49,7 +45,6 @@ def tonelli_shanks(a, p):
             if t2 % p == 1:
                 break
             t2 = (t2 * t2) % p
-
         b = pow(c, 1 << (m - i - 1), p)
         m = i
         c = (b * b) % p
@@ -62,7 +57,7 @@ if __name__ == '__main__':
 
     ttest = [
         (10, 13), (56, 101), (1030, 10009), (44402, 100049),
-	    (665820697, 1000000009), (881398088036, 1000000000039),
+        (665820697, 1000000009), (881398088036, 1000000000039),
         (41660815127637347468140745042827704103445750172002, 10**50 + 577)
     ]
 
