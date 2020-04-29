@@ -14,15 +14,26 @@ Mako(tex2e)の技術系ブログです。
 #### 新規記事の作成
 
 ./new.sh を使って新規記事の作成をします。
-カテゴリ名は /_posts 以下のディレクトリ名にします（例えば python）。
-カテゴリ名の最初を大文字にしたものが、記事に埋め込まれます（記事のカテゴリは Python となる）。
+カテゴリ名は /_posts 以下のディレクトリ名にします（例 : python）。
+カテゴリ名の最初を大文字にしたものが、記事に埋め込まれます（例 : 記事のカテゴリは Python）。
 
 ```
 ./new.sh <category> <postname>
 ```
 
-- 公開したくない記事は、ページ設定で `published: false` を追加します。
-- ドラフトとして公開したい記事（記事一覧やsitemap.xmlにはリンクがないが、閲覧可能な状態）は、ページ設定で `sitemap: false` と `draft: true` を追加します。
+ページ設定：
+- `cover: /assets/cover1.jpg` : ヘッダー画像
+- `redirect_from: /PATH` : 変更元のPATHからこのページにリダイレクトする
+- `comments: true` : Disqusによるコメント投稿を有効にする
+- `published: false` : ページを非公開にする
+- `latex: true` : 数式レンダリングを許可する
+- `sitemap: false` : sitemap.xmlにリンクを追加しない (検索エンジンから少しだけ見つかりにくくなる)
+- `feed: false` : feed.xmlにリンクを追加しない (RSSで更新情報を知らせない)
+
+#### 固定ページの作成
+
+/_pages 以下のディレクトリに作成します。
+ページ設定で `permalink: /PATH` と書くことで、そのPATHの場所にページを配置することができます。
 
 #### サーバの起動
 
