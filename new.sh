@@ -28,7 +28,7 @@ comments:      true
 published:     true
 latex:         false
 # sitemap: false
-# draft:   true
+# feed:    false
 ---
 
 preface
