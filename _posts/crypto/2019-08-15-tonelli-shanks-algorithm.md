@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "Tonelli-Shanks Algorithm"
+menutitle:     "Tonelli-Shanks Algorithm (平方剰余の根を求めるアルゴリズム)"
 date:          2019-08-15
 category:      Crypto
 author:        tex2e
