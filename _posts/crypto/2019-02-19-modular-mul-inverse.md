@@ -1,6 +1,7 @@
 ---
 layout:        post
-title:         "Pythonでモジュラ逆数を求める"
+title:         "Pythonでモジュラ逆数を求める (modinv)"
+menutitle:     "Pythonでモジュラ逆数を求める (modinv)"
 date:          2019-02-19
 category:      Crypto
 author:        tex2e
