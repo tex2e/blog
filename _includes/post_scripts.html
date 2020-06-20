@@ -15,10 +15,13 @@
 
 <!-- Prism -->
 <script type="text/javascript">
-  Prism.languages.bash.prompt = /^\$ /m;
+  Prism.languages.bash.prompt = /^\$ /m; // 字句解析でPromptの部分もtokenにする
+
+  Prism.languages.vb = Prism.languages.dotnet; // Markdownで言語を「vb」としたときに、Prism.jsの「dotnet」を適用する
 </script>
 
 <style>
+  /* Propmtの部分は選択できないように（コピーしないように）する */
   .token.prompt {
     user-select: none;
   }
