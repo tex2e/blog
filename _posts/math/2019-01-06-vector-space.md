@@ -8,6 +8,7 @@ redirect_from:
 comments:      true
 published:     true
 latex:         true
+syntaxhighlight: false
 ---
 
 高専専攻科の数学の授業で教科書として使用した「[線形代数学 (新装版)](https://www.nippyo.co.jp/shop/book/5396.html)」(日本評論社) のベクトル空間に関する定義と定理の一覧をまとめたものです。

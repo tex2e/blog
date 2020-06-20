@@ -8,6 +8,7 @@ cover:         /assets/cover7.jpg
 redirect_from:
 comments:      true
 published:     true
+photoswipe:    true
 ---
 
 タイピングゲーム「寿司打」を Python によるGUIオートメーションで光学文字認識（OCR）で自動化してみたら上手く動いたので、システム構成とか工夫した点について簡単にまとめます。

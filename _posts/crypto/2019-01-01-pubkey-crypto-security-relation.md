@@ -9,6 +9,7 @@ redirect_from:
 comments:      true
 published:     true
 latex:         true
+photoswipe:    true
 ---
 
 公開鍵暗号の安全性のレベルは、「攻撃モデル」と「解読モデル」の組み合わせで決定されます[^IPUSIRON]。

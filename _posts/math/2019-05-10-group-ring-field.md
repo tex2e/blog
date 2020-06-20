@@ -8,6 +8,8 @@ cover:         /assets/cover4.jpg
 redirect_from: /crypto/group-ring-field
 comments:      true
 published:     true
+photoswipe:    true
+syntaxhighlight: false
 ---
 
 群・環・体の性質についてのまとめ。

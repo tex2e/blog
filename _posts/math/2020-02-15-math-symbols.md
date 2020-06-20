@@ -8,6 +8,7 @@ redirect_from:
 comments:      true
 published:     true
 latex:         true
+syntaxhighlight: false
 # sitemap: false
 # draft:   true
 ---

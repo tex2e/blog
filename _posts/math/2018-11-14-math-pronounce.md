@@ -9,6 +9,7 @@ redirect_from: /crypto/math-pronounce
 comments:      true
 published:     true
 latex:         true
+syntaxhighlight: false
 ---
 
 数式・記号の英語の読み方とLaTeXの書き方を以下のリストに示します。

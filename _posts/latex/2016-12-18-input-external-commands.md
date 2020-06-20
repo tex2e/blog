@@ -8,6 +8,7 @@ cover:         /assets/cover1.jpg
 redirect_from: /tex/input-external-commands
 comments:      false
 published:     true
+photoswipe:    true
 ---
 
 TeXから外部コマンドを実行する方法について。

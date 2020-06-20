@@ -15,7 +15,7 @@
     /*
       Fix video size.
      */
-    $postContent.fitVids();
+    // $postContent.fitVids();
 
 
     /*

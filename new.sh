@@ -10,6 +10,8 @@ fi
 case $1 in
   latex )
     category="LaTeX" ;;
+  vb.net )
+    category="VB.NET" ;;
   * )
     # Uppercase first character (e.g. python => Python)
     category="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
@@ -27,6 +29,8 @@ redirect_from:
 comments:      true
 published:     true
 latex:         false
+photoswipe:    false
+syntaxhighlight: true
 # sitemap: false
 # feed:    false
 ---

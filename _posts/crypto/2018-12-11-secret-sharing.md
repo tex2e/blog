@@ -10,6 +10,7 @@ redirect_from:
 comments:      true
 published:     true
 latex:         true
+photoswipe:    true
 ---
 
 🎄

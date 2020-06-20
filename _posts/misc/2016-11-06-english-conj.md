@@ -8,6 +8,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true
+syntaxhighlight: false
 ---
 
 英語の文と文のつなぎの言葉はたくさんあり、

@@ -8,6 +8,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+photoswipe:    true
 ---
 
 研究室の自動開錠システムを後輩と協力して作ったので、そのシステム概要について少しお話したいと思います。

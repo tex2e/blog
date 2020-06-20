@@ -8,6 +8,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      false
 published:     true
+photoswipe:    true
 ---
 
 新年度から新たな心で始めるために、ブログを書くことにしました。
