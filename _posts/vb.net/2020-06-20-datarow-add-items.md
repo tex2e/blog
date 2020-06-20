@@ -12,7 +12,8 @@ latex:         false
 # feed:    false
 ---
 
-DataRowに値を格納する例として、1. 要素を一つずつDataRowに格納する例、2. 配列をDataRowに変換する例、3. CSVをDataRowに変換する例 のVB.NETプログラムを以下に示します。
+DataRowに複数の値を格納するには Add を使う方法と、ItemArray を使う方法があります。
+ここではサンプルとして、1. 要素を一つずつDataRowに格納する例、2. 配列をDataRowに変換する例、3. CSVをDataRowに変換する例 のVB.NETプログラムを示します。
 
 ```vb
 Imports System
