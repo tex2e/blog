@@ -24,7 +24,7 @@ $$
   x_3 &= \lambda^2 - x_1 - x_2     \mod{p} \\
   y_3 &= \lambda (x_1 - x_3) - y_1 \mod{p} \\[10pt]
   \lambda &= \begin{cases}
-    \cfrac{y_2 - y_1}{x_2 - x_1} \mod{p} & \mathrm{if}\; P \ne Q \\[3pt]
+    \cfrac{y_2 - y_1}{x_2 - x_1} \mod{p} & \mathrm{if}\; P \ne Q \\[8pt]
     \cfrac{3 x_1^2 + a}{2 y_1}   \mod{p} & \mathrm{if}\; P = Q
   \end{cases}
 \end{aligned}
@@ -56,7 +56,7 @@ $$
 
 次に、これを $k \,\alpha$（$k$は任意の整数）のときでも計算できるようにPythonで実装していきます。
 楕円曲線を実装する前に、有限体の演算ができるようにする必要があります。
-有限体上の足し算と掛け算は簡単だが、割り算では逆元を求める必要があるので、
+有限体上の足し算と掛け算は簡単ですが、割り算では逆元を求める必要があるので、
 拡張ユークリッドの互除法と乗法逆元を求める関数も定義しておきます。
 
 ```python
@@ -267,6 +267,15 @@ a = PointOverEC(curve,
 
 secp256k1 の Test Vectors を書いてくれている方の記事を参考に secp256k1 のテストをしました[^testvectors]。
 k < 20 までは計算結果が合っているのを確認しています。
+
+```python
+for k in range(1, 20):
+    ka = k * a
+    res = '(%x, %x)' % (int(ka.x), int(ka.y))  # 座標を16進数で表示
+    print('%2d: %s' % (k, res))
+    if ka.is_infinity():
+        break
+```
 
 ```
  1: (79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798, 483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8)
