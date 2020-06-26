@@ -37,5 +37,8 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
 
 ## Contact
 
-Twitterで @tex2e 宛てにDMを送るか、
-tex2eq(a)gmail.com へメールをお願いします。
+当サイトやブログに対しての質問等は tex2eq(a)gmail.com へメールを送るか、Twitterで @tex2e 宛てにDMをお願いします。
+
+<small>
+ブログ記事についての質問で、Disqusアカウントをお持ちの方は、記事の一番下の「View Comments...」（記事によっては非表示）からコメントを投稿することもできます。
+</small>
