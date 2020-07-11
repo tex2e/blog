@@ -2,9 +2,9 @@
 layout:        post
 title:         "AutoHotKeyで今日の日付を入力する"
 date:          2020-05-17
-category:      Misc
+category:      Keyboard
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/ahk-type-today-date
 comments:      true
 published:     true
 latex:         false

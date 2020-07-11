@@ -2,9 +2,9 @@
 layout:        post
 title:         "AutoHotKeyでMacOS風のキーボード"
 date:          2020-05-18
-category:      Misc
+category:      Keyboard
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/ahk-mac-like-keyboard
 comments:      true
 published:     true
 latex:         false

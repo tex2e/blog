@@ -2,9 +2,9 @@
 layout:        post
 title:         "AutoHotKeyで結合セルに1行ずつペースト"
 date:          2020-06-18
-category:      Misc
+category:      Keyboard
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/ahk-paste-to-excel-merged-cell
 comments:      true
 published:     true
 latex:         false
@@ -19,7 +19,7 @@ latex:         false
 Excelの複数行の結合セルに貼り付けるためのAutoHotKeyは次の通りです。
 Alt + Shift + V で発動します。
 
-```
+```code
 ; Excelの複数行の結合セルに貼り付ける
 !+v::
   Critical

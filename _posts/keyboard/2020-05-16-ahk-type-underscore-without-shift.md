@@ -2,9 +2,9 @@
 layout:        post
 title:         "AutoHotKeyでアンダースコアをShiftなしで入力する"
 date:          2020-05-16
-category:      Misc
+category:      Keyboard
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/ahk-type-underscore-without-shift
 comments:      true
 published:     true
 latex:         false
