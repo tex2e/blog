@@ -64,14 +64,6 @@ Rubyを新しくインストールした際は `bundle install` する必要が�
 ./server.sh re
 ```
 
-#### aliase
-
-blogのディレクトリに移動して、エディタを開き、ブラウザでページを開いて、サーバを立ち上げる一連の処理をする `blog` コマンド
-
-```
-alias blog="cd ~/path/to/blog; atom .; open http://localhost:4000/blog/; ./server.sh &"
-```
-
 -----
 
 ## [jekyllDecent](https://github.com/jwillmer/jekyllDecent)
@@ -87,3 +79,25 @@ alias blog="cd ~/path/to/blog; atom .; open http://localhost:4000/blog/; ./serve
 > If you like to see the theme in production have a look at [jwillmer.de](http://jwillmer.de).
 >
 > [![](./media/img/2016-06-08-Readme-front-page-previewe.jpg)](http://jwillmer.github.io/jekyllDecent)
+
+
+
+### 環境構築手順
+
+Ubuntu
+
+```
+sudo apt install build-essential git ruby ruby-dev zlib1g-dev
+gem install bundler
+git clone git@github.com:tex2e/blog.git
+cd blog
+bundle install
+```
+
+#### alias
+
+blogのディレクトリに移動して、エディタを開き、ブラウザでページを開いて、サーバを立ち上げる一連の処理をする `blog` コマンド
+
+```
+alias blog="cd ~/path/to/blog; atom .; open http://localhost:4000/blog/; ./server.sh &"
+```
