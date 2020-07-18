@@ -14,7 +14,7 @@ syntaxhighlight: true
 # feed:    false
 ---
 
-Macのホットコーナーは非常に便利ですがWindowsにはありません、そこでAutoHotkeyを使ってホットコーナー機能を実現させたいと思います。
+Macのホットコーナーは非常に便利ですがWindowsにはありません。そこでAutoHotkeyを使ってホットコーナー機能を実現させたいと思います。AutoHotkeyを使っている人向けの説明となります。
 
 まず、以下のスクリプトを HotCorners.ahk などの名前で保存します。
 
