@@ -18,7 +18,7 @@ case $1 in
     ;;
 esac
 
-cat > _posts/$1/$(date +%Y-%m-%d)-${2:-post}.md <<EOS
+cat > _posts/$1/$(date +%Y-%m-%d)-${2%.md}.md <<EOS
 ---
 layout:        post
 title:         "This_is_Awesome"
