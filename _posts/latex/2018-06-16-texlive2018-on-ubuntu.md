@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "texlive2018 on Ubuntu"
+title:         "texlive2018(basic)のインストール on Ubuntu"
 date:          2018-06-16
 category:      LaTeX
 author:        tex2e
