@@ -80,7 +80,7 @@ install-standalone:
 	mkdir -p $(TMP)/$$$$ && \
 	platex -shell-escape -halt-on-error -output-directory=$(TMP)/$$$$ $< && \
 	dvipdfmx -d5 -o $(TMP)/$$$$/$(basename $(notdir $<)).pdf $(TMP)/$$$$/$(basename $(notdir $<)).dvi && \
-	convert -density 200 $(TMP)/$$$$/$(basename $(notdir $<)).pdf -quality 90 $@ && \
+	convert -density 200 $(TMP)/$$$$/$(basename $(notdir $<)).pdf[0] -quality 90 $@ && \
 	touch $@ \
 	&& rm -r $(TMP)/$$$$ \
 	|| rm -r $(TMP)/$$$$
