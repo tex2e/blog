@@ -99,5 +99,14 @@ bundle install
 blogのディレクトリに移動して、エディタを開き、ブラウザでページを開いて、サーバを立ち上げる一連の処理をする `blog` コマンド
 
 ```
-alias blog="cd ~/path/to/blog; atom .; open http://localhost:4000/blog/; ./server.sh &"
+alias blog="cd ~/path/to/blog; open http://localhost:4000/blog/; ./server.sh &"
+```
+
+#### latexによる画像作成
+
+latex + standalone の環境を構築しておく
+
+```
+sudo apt-get install imagemagick
+make png
 ```
