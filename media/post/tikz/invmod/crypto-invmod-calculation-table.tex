@@ -1,5 +1,5 @@
 
-\documentclass[dvipdfmx]{standalone}
+\documentclass[dvipdfmx, tikz]{standalone}
 \usepackage[T1]{fontenc}
 \usepackage{newtxtext, newtxmath}
 
@@ -17,13 +17,9 @@
 \usepackage{xcolor}
 
 \begin{document}
-  \small
-  \scalebox{0.8}{
-  \begin{minipage}{0.35\hsize}
-    \begin{table}
-      \centering
-      % \caption
-      {$\mathbb{Z}/4\mathbb{Z}$の乗算表}
+  \begin{tikzpicture}[> = latex]
+    \node at (0,1.5) {$\mathbb{Z}/4\mathbb{Z}$の乗算表};
+    \node at (0,0) {
       \begin{tabular}{c|ccccc}
         $\times$ & 0 & 1 & 2 & 3 \\
         \hline
@@ -32,13 +28,9 @@
         2        & 0 & 2 & 0 & 2 \\
         3        & 0 & 3 & 2 & {\color{red}1} \\
       \end{tabular}
-    \end{table}
-  \end{minipage}
-  \begin{minipage}{0.35\hsize}
-    \begin{table}
-      \centering
-      % \caption
-      {$\mathbb{Z}/5\mathbb{Z}$の乗算表}
+    };
+    \node at (4,1.5) {$\mathbb{Z}/5\mathbb{Z}$の乗算表};
+    \node at (4,0) {
       \begin{tabular}{c|ccccc}
         $\times$ & 0 & 1 & 2 & 3 & 4 \\
         \hline
@@ -48,7 +40,6 @@
         3        & 0 & 3 & {\color{red}1} & 4 & 2 \\
         4        & 0 & 4 & 3 & 2 & {\color{red}1} \\
       \end{tabular}
-    \end{table}
-  \end{minipage}
-  }
+    };
+  \end{tikzpicture}
 \end{document}
