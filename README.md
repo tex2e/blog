@@ -64,23 +64,6 @@ Rubyを新しくインストールした際は `bundle install` する必要が�
 ./server.sh re
 ```
 
------
-
-## [jekyllDecent](https://github.com/jwillmer/jekyllDecent)
-
-> [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
->
-> This is a blog template for a static site generator named [Jekyll](https://jekyllrb.com/docs/home/)
-> based on a [Ghost](https://ghost.org) template named [Decent](https://github.com/serenader2014/decent).
->
-> Installation instructions, features, previews and more can be found in the
-> **[GitHub generated blog](http://jwillmer.github.io/jekyllDecent)**.
-> This blog is automatically generated out of the source code in the `gh-pages` branch.
-> If you like to see the theme in production have a look at [jwillmer.de](http://jwillmer.de).
->
-> [![](./media/img/2016-06-08-Readme-front-page-previewe.jpg)](http://jwillmer.github.io/jekyllDecent)
-
-
 
 ### 環境構築手順
 
@@ -96,7 +79,7 @@ bundle install
 
 #### alias
 
-blogのディレクトリに移動して、エディタを開き、ブラウザでページを開いて、サーバを立ち上げる一連の処理をする `blog` コマンド
+blogのディレクトリに移動して、エディタを開き、ブラウザでページを開いて、サーバを立ち上げる一連の処理をする `blog` コマンド (エイリアス) を定義しておくと、気づいたときにすぐに記事が書けて便利です。
 
 ```
 alias blog="cd ~/path/to/blog; open http://localhost:4000/blog/; ./server.sh &"
@@ -104,9 +87,62 @@ alias blog="cd ~/path/to/blog; open http://localhost:4000/blog/; ./server.sh &"
 
 #### latexによる画像作成
 
-latex + standalone の環境を構築しておく
+事前に latex + standalone の環境を構築します（参照：[texlive2020(basic)のインストール on WSL](https://tex2e.github.io/blog/latex/texlive2020-in-wsl)）。
+その上で、ImageMagickをインストールします。
 
 ```
 sudo apt-get install imagemagick
+```
+
+ImageMagickは脆弱性への対策としてPDFがデフォルトでは入力できませんが、入力PDFは自分で作成したもののみを使用するため、ImageMagickのポリシーを変更しても問題ないです。
+/etc/ImageMagick-6/policy.xml のポリシーを変更して、PDFをpngに変換できるようにします。
+
+```
+<policymap>
+  ...
+  <!-- disable ghostscript format types -->
+  <policy domain="coder" rights="none" pattern="PS" />
+  <policy domain="coder" rights="none" pattern="PS2" />
+  <policy domain="coder" rights="none" pattern="PS3" />
+  <policy domain="coder" rights="none" pattern="EPS" />
+  <!-- <policy domain="coder" rights="none" pattern="PDF" /> -->
+  <policy domain="coder" rights="none" pattern="XPS" />
+</policymap>
+```
+
+platex, standalone, ImageMagick の3つを用意することで tex から画像を生成できるようになります。
+
+レポジトリの一番上のディレクトリで以下のコマンドを叩くと、更新日時が新しい tex から png を作成します。
+
+```
 make png
 ```
+
+特定のtexに対応する画像のみを生成したいときは以下のコマンドを叩きます。
+
+```
+cd media/post/tikz
+make path/to/file.tex
+```
+
+
+
+<br>
+
+-----
+
+jekyllDecent について：
+
+## [jekyllDecent](https://github.com/jwillmer/jekyllDecent)
+
+> [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
+>
+> This is a blog template for a static site generator named [Jekyll](https://jekyllrb.com/docs/home/)
+> based on a [Ghost](https://ghost.org) template named [Decent](https://github.com/serenader2014/decent).
+>
+> Installation instructions, features, previews and more can be found in the
+> **[GitHub generated blog](http://jwillmer.github.io/jekyllDecent)**.
+> This blog is automatically generated out of the source code in the `gh-pages` branch.
+> If you like to see the theme in production have a look at [jwillmer.de](http://jwillmer.de).
+>
+> [![](./media/img/2016-06-08-Readme-front-page-previewe.jpg)](http://jwillmer.github.io/jekyllDecent)
