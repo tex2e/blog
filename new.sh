@@ -16,7 +16,7 @@ case $1 in
     category="VB.NET" ;;
   *batch )
     directory="windowsbatch"
-    category="Windows Batch" ;;
+    category="WindowsBatch" ;;
   * )
     # Uppercase first character (e.g. python => Python)
     category="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
