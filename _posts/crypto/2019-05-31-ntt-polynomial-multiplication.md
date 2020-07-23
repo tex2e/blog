@@ -11,11 +11,12 @@ published:     true
 latex:         true
 ---
 
-RingLWE問題を使った鍵交換の方法としてNewHopeがあります。
-そのNewHopeの論文を読んでいると多項式環の乗算のところで数論変換(NTT)を利用した高速化をしているので、数論変換による有限体上の多項式環の乗算について調べたことをまとめます。
+多項式環の乗算のところで数論変換(NTT)を利用して高速化する方法がNewHope [^newhope] の論文にあったので、数論変換による有限体上の多項式環の乗算について調べたことをまとめます。
 $$
 \gdef\vec#1{\textbf{#1}}
 $$
+
+[^newhope]: RingLWE問題を使った鍵交換の方法としてNewHopeがあります。ただし2020/7時点でPQC Round3の候補から除外されているので、実運用で使用することはないと思います。
 
 ### 多項式環の乗算
 
@@ -136,9 +137,9 @@ print(p3)
 どちらも同じ結果になるので、正しく実装できたと思います。
 
 
----
-
 ### 参照
 
 - [Fast Fourier Transforms -- Vitalik Buterin's website](https://vitalik.ca/general/2019/05/12/fft.html) では、FFTによる整数同士の乗算についてPythonコードを交えながら説明されています。
 - [High-speed Polynomial Multiplication Architecture for Ring-LWE and SHE Cryptosystems](https://eprint.iacr.org/2014/646.pdf) では、有限体上の多項式環の乗算を数論変換（具体的には高速フーリエ変換）を使って計算するアルゴリズムについて書かれています (Algorithm 2. Polynomial multipolication using FFT)。
+
+---
