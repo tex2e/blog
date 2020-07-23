@@ -6,19 +6,24 @@ if [[ $# -ne 2 ]]; then
   exit 1
 fi
 
+directory=$1
+
 # Set category of article.
 case $1 in
   latex )
     category="LaTeX" ;;
   vb.net )
     category="VB.NET" ;;
+  *batch )
+    directory="windowsbatch"
+    category="Windows Batch" ;;
   * )
     # Uppercase first character (e.g. python => Python)
     category="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
     ;;
 esac
 
-cat > _posts/$1/$(date +%Y-%m-%d)-${2%.md}.md <<EOS
+cat > "_posts/$directory/$(date +%Y-%m-%d)-${2%.md}.md" <<EOS
 ---
 layout:        post
 title:         "This_is_Awesome"
