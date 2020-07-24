@@ -83,7 +83,7 @@ for /l %%i in (0,1,5) do (
   echo !result!
 )
 
-setlocal disabledelayedexpansion
+endlocal
 ```
 
 出力結果：
