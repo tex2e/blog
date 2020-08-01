@@ -33,7 +33,7 @@ set length=切取り長
 call set result=%%変数:~%start%,%length%%%
 ```
 
-### Examples
+### 固定長文字列切り取り
 
 3文字目以降を切り取る：
 
@@ -61,6 +61,8 @@ set result=%input:~-3%
 echo %result%             & rem => def
 ```
 
+### 可変長文字列切り取り
+
 callを使うことで、開始位置と切取り長を変数にすることができます。
 
 ```batch
@@ -79,7 +81,7 @@ set input=abcdef
 setlocal enabledelayedexpansion
 
 for /l %%i in (0,1,5) do (
-  call set result=!!input:~%%i,1!!
+  set result=!input:~%%i,1!
   echo !result!
 )
 
@@ -96,6 +98,42 @@ d
 e
 f
 ```
+
+### (おまけ) 遅延環境で変数展開結果を再評価する
+
+for文で設定した`%%i`の変数を遅延環境変数内で使うこと(`!array[%%i]!`など)は簡単にできますが、遅延環境変数(`!var!`)を別の変数に埋め込むときは CALL を使う必要があります。
+CALL は `%%` で囲んだ式を再評価することができます。遅延評価変数展開が有効だからといって `!!` で囲む必要はないです。
+
+以下はインデックス`j`から変数`index`を計算して入力を逆順に表示する例です。
+インデックスを`i`にしなかったのは、CALL の `%%input...%%` のところで `%%i` が先に評価されてしまい、`0nput`, `1nput`, ... となるのを防ぐために、使用するインデックスを`%%j`に変えました。
+
+```batch
+@echo off
+
+set input=abcdef
+
+setlocal enabledelayedexpansion
+
+for /l %%j in (0,1,5) do (
+  set /a index=5 - %%j
+  call set result=%%input:~!index!,1%%
+  echo !result!
+)
+
+endlocal
+```
+
+出力結果：
+
+```output
+f
+e
+d
+c
+b
+a
+```
+
 
 ### 参考
 
