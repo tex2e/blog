@@ -16,9 +16,9 @@ syntaxhighlight: true
 
 Macのホットコーナーは非常に便利ですがWindowsにはありません。そこでAutoHotkeyを使ってホットコーナー機能を実現させたいと思います。AutoHotkeyを使っている人向けの説明となります。
 
-まず、以下のスクリプトを HotCorners.ahk などの名前で保存します。
+まず、以下のスクリプトを HotCorners.ahk などの名前で保存します（すでにあるAutoHotKey用のスクリプトとは別のファイルに保存してください）。
 
-```code
+```ahk
 #Persistent  ; スクリプトを常駐させる
 SetTimer, HotCorners, 0  ; タイマーを使ってサブルーチンを0秒ごとに実行する
 return
@@ -57,7 +57,7 @@ if IsCorner("TopRight")
   Loop
   {
     if ! IsCorner("TopRight")
-      break ; exits loop when mouse is no longer in the corner
+      break  ; マウスが画面角から離れたときに処理を抜ける
   }
 }
 
@@ -69,7 +69,7 @@ if IsCorner("BottomRight")
   Loop
   {
     if ! IsCorner("BottomRight")
-      break ; exits loop when mouse is no longer in the corner
+      break  ; マウスが画面角から離れたときに処理を抜ける
   }
 }
 
@@ -81,18 +81,48 @@ if IsCorner("BottomLeft")
   Loop
   {
     if ! IsCorner("BottomLeft")
-      break ; exits loop when mouse is no longer in the corner
+      break  ; マウスが画面角から離れたときに処理を抜ける
   }
 }
 ```
 
 次に保存したスクリプトを実行します。
 このときの注意点ですが、HotCorners.ahk は単体で実行してください。
-つまり、既存のAutoHotkeyのスクリプトに付け加えたり、`#Include`で呼び出してはいけません。
-タスクバーには、既存のAutoHotkey.exeと新規作成したHotCorners.exeの2つのプロセスが常駐しているのが正しい状態です。
+つまり、上記のコードを既存のAutoHotkeyのスクリプトに付け加えたり、`#Include`で呼び出してはいけません。
+タスクバーには、キーマップをカスタマイズしている既存のAutoHotkey.exeと、本記事で新規作成したHotCorners.exeの2つのプロセスが常駐しているのが正しい状態です。
 
 実行したらマウスを画面の左下や右下に移動して、スタートメニューやアクションセンターが表示されれば成功です。
-
 スタートアップに、HotCorners.exe を配置するのも忘れずに。
 
+
+### ディスプレイが複数ある場合
+
+ディスプレイが複数ある場合は、上記のやりかたではホットコーナーを実現できません。
+なぜなら、WinGetPos はメインのディスプレイの幅・高さを取得しますが、
+MouseGetPos は全てのディスプレイを包含する最小包囲長方形 (Minimum Bounding Rectangle; MBR) での位置を取得するので、
+座標の原点がそもそも異なってしまうためです。
+
+解決方法は見つけられなかったのですが、複数ディスプレイの環境でも、画面右下の部分だけはAutoHotKeyで検出することが可能です。
+具体的には、上記コードのコーナー判定部分を以下のように修正します。
+
+```ahk
+IsCorner(cornerID)
+{
+  ...
+
+  CornerBottomRight := (OutputVarControl = "TrayShowDesktopButtonWClass1")  ; 右下判定
+
+  ...
+}
+```
+
+`TrayShowDesktopButtonWClass1` はタスクバーの一番右にある細い縦線の部分です。
+このコントロールの上にマウスが乗ったときに、マウスが画面右下にあると判断します。
+
+
 以上です。
+
+
+### おまけ
+
+- [AutoHotKeyで通知領域のカレンダーを表示する](./ahk-hot-corner-trayclock)
