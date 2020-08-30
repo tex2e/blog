@@ -94,7 +94,7 @@ alias blog="cd ~/path/to/blog; open http://localhost:4000/blog/; ./server.sh &"
 sudo apt-get install imagemagick
 ```
 
-ImageMagickは脆弱性への対策としてPDFがデフォルトでは入力できませんが、入力PDFは自分で作成したもののみを使用するため、ImageMagickのポリシーを変更しても問題ないです。
+ImageMagickは脆弱性への対策としてPDFがデフォルトでは入力できませんが、入力PDFは自分で作成したもののみを使用するため、ImageMagickのポリシーを変更しても問題ないです（他で使用しないことが前提ですが）。
 /etc/ImageMagick-6/policy.xml のポリシーを変更して、PDFをpngに変換できるようにします。
 
 ```
