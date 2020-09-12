@@ -36,6 +36,9 @@ $ sudo apt-get install sagemath-upstream-binary
 
 こうすることで、Linuxの背景色が暗いターミナル向けにコンソールの色が調整されます[^asksagemath]。
 
+
+追記：[SageMathをUbuntu 20.04にインストール](install-sage-on-ubuntu20.04)
+
 -----
 
 [^linuxpitstop]: [How to install mathematical application Sage  on Ubuntu Linux \| LinuxPitStop](http://linuxpitstop.com/install-sage-on-ubuntu/)
