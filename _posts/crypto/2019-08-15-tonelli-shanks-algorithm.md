@@ -82,4 +82,4 @@ if __name__ == '__main__':
 
 - [Tonelli-Shanks algorithm -- Rosetta Code](https://rosettacode.org/wiki/Tonelli-Shanks_algorithm#Python)
 
-- [Sympy residue_ntheory source code](https://docs.sympy.org/latest/_modules/sympy/ntheory/residue_ntheory.html)
+- [sympy/residue_ntheory.py at master · sympy/sympy](https://github.com/sympy/sympy/blob/master/sympy/ntheory/residue_ntheory.py)

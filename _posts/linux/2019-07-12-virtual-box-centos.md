@@ -15,7 +15,7 @@ published:     true
 
 ### OSインストール
 
-1. [CentOSのミラーサイト一覧](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso)にアクセスして、住んでいる場所から一番近いミラーサイトからCentOSをダウンロードする (私は ftp.jaist.ca.jp にしました)
+1. [CentOSのミラーサイト一覧](http://isoredirect.centos.org/centos/7/isos/x86_64/)にアクセスして、住んでいる場所から一番近いミラーサイトからCentOSをダウンロードする (私は ftp.jaist.ca.jp にしました)
 
 2. VirtualBoxの「新規」から新しい仮想環境を作る。HDDは**可変**で**8GB**のままで良い
 

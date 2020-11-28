@@ -59,7 +59,7 @@ published:     true
 <br>
 #### 関連記事
 
-[禁酒するために読むべき論文・記事](giving-up-drinking-alcohol)
+[禁酒するために読むべき論文・記事](./giving-up-drinking-alcohol)
 
 -----
 

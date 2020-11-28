@@ -272,5 +272,5 @@ LaTeX の構文解析ツールを作ったが、これは普通の LaTeX には�
 
 -----
 
-[^block]: 正式名称は環境（environment）
+[^block]: 正式名称は環境 Environment
 [^bnf]: この BNF では不十分で、実際の LaTeX にはコメント `%` や数式モード `$` や命令のオプション `[ ]` などもある。

@@ -118,9 +118,7 @@ WantedBy=multi-user.target
     systemctl start name.service
     ```
 
-ユニットファイルの作成例がRHELの
-[CREATING AND MODIFYING SYSTEMD UNIT FILES](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sect-managing_services_with_systemd-unit_files)
-に書かれているので参考までに。
+ユニットファイルの作成例がRHELの公式に書かれているので参考までに。
 
 
 ### サンプルアプリケーション

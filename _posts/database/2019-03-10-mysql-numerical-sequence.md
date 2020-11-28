@@ -8,6 +8,7 @@ cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
 published:     true
+latex: true
 ---
 
 MySQL で1〜Nの数列を作る方法について説明します。

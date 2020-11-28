@@ -1,0 +1,21 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^/blog/"
+    },
+    {
+      "pattern": "^./"
+    },
+    {
+      "pattern": "^http://localhost"
+    },
+    {
+      "pattern": "^http://hostname"
+    }
+  ],
+  "aliveStatusCodes": [
+    200,
+    206,
+    0
+  ]
+}

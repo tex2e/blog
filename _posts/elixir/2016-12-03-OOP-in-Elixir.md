@@ -265,9 +265,7 @@ __ビヘイビア__ （__Behaviours__） です。
 
 ビヘイビアはモジュールの宣言と同じように宣言しますが、
 抽象メソッドや抽象マクロを定義する時は `@callback` と `@macrocallback` を使います。
-これらのモジュール属性の値には
-[Typespecs](http://elixir-lang.org/docs/stable/elixir/typespecs.html)
-を使用します。
+これらのモジュール属性の値にはTypespecsを使用します。
 
 ```elixir
 defmodule MyBehaviour do

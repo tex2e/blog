@@ -217,7 +217,7 @@ tallying result: 1241
 
 
 
-- 前回：[Paillier暗号と準同型性](/blog/crypto/paillier-cryptosystem)
+- 前回：[Paillier暗号と準同型性](./paillier-cryptosystem)
 
 ### 参考文献
 

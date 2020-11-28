@@ -199,5 +199,4 @@ bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy" # MacOS
 
 - [Tmux Cheat Sheet & Quick Reference](https://tmuxcheatsheet.com/)
 - [tmuxチートシート - Qiita](https://qiita.com/nmrmsys/items/03f97f5eabec18a3a18b)
-- [達人に学ぶ.tmux.confの基本設定 - Qiita](https://qiita.com/succi0303/items/cb396704493476373edf)
 - [tmux 2.6とreattach-user-namespace](https://blog.nijohando.jp/post/tmux-2.6-and-reattach-to-user-namespace/)

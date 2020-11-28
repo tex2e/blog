@@ -10,7 +10,7 @@ comments:      true
 published:     true
 ---
 
-まず FizzBuzz をするためには数列が必要ですが、1,2,...,100 の数列を作る場合は次のようになります（前回の [MySQLで1〜Nの数列を扱う](/blog/database/mysql-numerical-sequence) を参照）。
+まず FizzBuzz をするためには数列が必要ですが、1,2,...,100 の数列を作る場合は次のようになります（前回の [MySQLで1〜Nの数列を扱う](./mysql-numerical-sequence) を参照）。
 
 ```sql
 select @num := @num+1 n

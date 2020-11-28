@@ -66,5 +66,5 @@ $ sudo apt-get install sagemath
 ### 参照
 
 - [software installation - failing to install sagemath on ubuntu 18.04 LTS - Ask Ubuntu](https://askubuntu.com/questions/1031170/failing-to-install-sagemath-on-ubuntu-18-04-lts)
-- [SageMathをUbuntu 16.04にインストール](install-sage-on-ubuntu)
+- [SageMathをUbuntu 16.04にインストール](./install-sage-on-ubuntu)
 - [sage terminal colors - ASKSAGE: Sage Q&A Forum](https://ask.sagemath.org/question/10060/sage-terminal-colors/)

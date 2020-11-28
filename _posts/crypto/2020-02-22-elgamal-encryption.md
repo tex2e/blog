@@ -202,7 +202,7 @@ $$
 この結果を復号すると、平文として $m_1 m_2$ が現れるので、乗法準同型性を有することが確認できます。
 
 
-- 次回：[修正ElGamal暗号の加法準同型性](/blog/crypto/modified-elgamal-encryption)
+- 次回：[修正ElGamal暗号の加法準同型性](./modified-elgamal-encryption)
 
 ### 参考文献
 

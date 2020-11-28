@@ -169,8 +169,8 @@ d: 10
 修正ElGamal暗号にすることで、離散対数問題を解かないといけない欠点がありますが、加法準同型性を有するようになりました。
 
 
-- 前回：[ElGamal暗号と乗法準同型性](/blog/crypto/elgamal-encryption)
-- 次回：[Paillier暗号と準同型性](/blog/crypto/paillier-cryptosystem)
+- 前回：[ElGamal暗号と乗法準同型性](./elgamal-encryption)
+- 次回：[Paillier暗号と準同型性](./paillier-cryptosystem)
 
 ### 参考文献
 

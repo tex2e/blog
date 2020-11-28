@@ -15,7 +15,7 @@ latex:         true
 有限体上の楕円曲線上のスカラー倍算のPython実装について。
 
 有限体上の楕円曲線や、曲線上の点を探す方法、点同士の演算などについては同サイトの
-[有限体上の楕円曲線の点集合](/blog/crypto/point-of-elliptic-curve-over-GF)
+[有限体上の楕円曲線の点集合](./point-of-elliptic-curve-over-GF)
 を参照してください。
 まず、有限体上の楕円曲線上の点の加算 $(x_3, y_3) = (x_1, y_1) + (x_2, y_2)$ は次の通りです。
 

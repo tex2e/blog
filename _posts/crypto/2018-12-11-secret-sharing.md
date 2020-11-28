@@ -29,7 +29,7 @@ DNSSEC のルートサーバの秘密鍵は誰が管理しているかご存知�
 秘密分散法で一番有名なものはシャミアの秘密分散法（Shamir's Secret Sharing）です[^sss]。
 DNSSECのルートサーバの秘密鍵も、このシャミアの秘密分散法を使って秘密分散しています。
 
-[^sss]: Shamir, Adi (1979), ["How to share a secret"](https://cs.jhu.edu/~sdoshi/crypto/papers/shamirturing.pdf), Communications of the ACM, 22
+[^sss]: Shamir, Adi (1979), "How to share a secret", Communications of the ACM, 22
 
 シャミアの秘密分散法は次の手順で行います。
 
@@ -166,7 +166,7 @@ print("restored:", restored)
 長いメッセージを暗号化したい場合はECBなどのブロック暗号を使います。
 暗号化においてはECBモードは危険なのですが[^ECB]、秘密分散においては乱数が入るのでECBモードでも異なる結果になります。
 
-[^ECB]: [暗号利用モード（ブロック暗号）](https://ja.wikipedia.org/wiki/%E6%9A%97%E5%8F%B7%E5%88%A9%E7%94%A8%E3%83%A2%E3%83%BC%E3%83%89)
+[^ECB]: [暗号利用モード - Wikipedia](https://ja.wikipedia.org/wiki/%E6%9A%97%E5%8F%B7%E5%88%A9%E7%94%A8%E3%83%A2%E3%83%BC%E3%83%89)
 
 
 ## ホワイトハッカ飴の解説
@@ -242,7 +242,7 @@ print(bytes.fromhex(hex(secret)[2:]).decode('ascii'))
 [^3]: [情報理論的安全性 (Information-theoretic security)](https://ja.wikipedia.org/wiki/%E6%83%85%E5%A0%B1%E7%90%86%E8%AB%96%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7)
 [^4]: 「情報分散管理技術（電子的割符技術を利用した情報管理）に関する意見書」（財団法人日本情報処理開発協会（現一般財団法人日本情報経済社会推進協会：JIPDEC）電子商取引推進センター：2010年2月）
 [^5]: [情報セキュリティ―ツール「電子割符」株式会社イフェクト ](https://www.effect-inc.jp/product/tally.php)
-[^6]: [電子割符ゲートウェイ Tally-WariZen -- Soliton](https://www.soliton.co.jp/products/assets/docs/tally-warizen/TWZ-1309A.pdf)
+[^6]: 電子割符ゲートウェイ Tally-WariZen -- Soliton
 [^7]: [電子記録管理に関する調査検討報告書 2014 - 3章 電子記録利活用の情報セキュリティ推進の検討](http://www.cdns.net/dnssec.html#signing)
 
 

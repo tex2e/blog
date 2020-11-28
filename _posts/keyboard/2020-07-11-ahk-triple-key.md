@@ -36,4 +36,4 @@ CapsLock(F13) + N を押したときは Ctrl + N が入力されます。
 ### 参考
 
 - [GetKeyState - Syntax & Usage \| AutoHotkey](https://www.autohotkey.com/docs/commands/GetKeyState.htm)
-- [WindowsでCapsLockをF13に変更する](/blog/keyboard/win-keymap-caps-to-ctrl)
+- [WindowsでCapsLockをF13に変更する](./win-keymap-caps-to-ctrl)

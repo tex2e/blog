@@ -20,7 +20,7 @@ published:     true
 
 [Moderate alcohol consumption as risk factor for adverse brain outcomes and cognitive decline: longitudinal cohort study](https://www.bmj.com/content/357/bmj.j2353) (2017)
 
-日本語訳：[適量飲酒による認知機能低下の長期的な集団研究](alcohol-as-risk-factor-for-brain)
+日本語訳：[適量飲酒による認知機能低下の長期的な集団研究](./alcohol-as-risk-factor-for-brain)
 
 英医師会誌「ブリティッシュ・メディカル・ジャーナル（BMJ）」に投稿された論文で、アルコール摂取量と脳の構造と機能の関係について調査した研究。
 
@@ -78,7 +78,7 @@ CBS Newsが書いた記事で、適量飲酒が体に良いとしている87の�
 
 [Conventional and genetic evidence on alcohol and vascular disease aetiology： a prospective study of 500 000 men and women in China - The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2818%2931772-0/fulltext) (2019)
 
-日本語訳：[アルコールと血管疾患についての研究](alcohol-and-vascular-disease)
+日本語訳：[アルコールと血管疾患についての研究](./alcohol-and-vascular-disease)
 
 査読制の医学雑誌「ランセット（Lancet）」に投稿された論文で、これまでの適量飲酒に否定的な研究を踏まえて、東アジア（中国）で前向き研究（コホート研究）をした研究。
 
