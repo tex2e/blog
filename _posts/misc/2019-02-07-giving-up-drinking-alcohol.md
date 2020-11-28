@@ -76,7 +76,7 @@ CBS Newsが書いた記事で、適量飲酒が体に良いとしている87の�
 <br>
 ### 適量飲酒であっても脳卒中のリスクは高まる
 
-[Conventional and genetic evidence on alcohol and vascular disease aetiology： a prospective study of 500 000 men and women in China - The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2818%2931772-0/fulltext) (2019)
+Conventional and genetic evidence on alcohol and vascular disease aetiology： a prospective study of 500 000 men and women in China - The Lancet (2019)
 
 日本語訳：[アルコールと血管疾患についての研究](./alcohol-and-vascular-disease)
 
@@ -91,7 +91,7 @@ CBS Newsが書いた記事で、適量飲酒が体に良いとしている87の�
 <br>
 ### お酒を飲むとガンや病気のリスクが上がる
 
-[Alcohol use and burden for 195 countries and territories, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2818%2931310-2/fulltext) (2018)
+Alcohol use and burden for 195 countries and territories, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016 (2018)
 
 査読制の医学雑誌「ランセット（Lancet）」に投稿された論文で、アルコール摂取と病気や死亡との関係性について調査した研究。
 

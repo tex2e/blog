@@ -14,7 +14,7 @@ published:     true
 
 適量飲酒であっても脳卒中のリスクは高まることを示す研究の日本語まとめです。
 元の論文は
-[Conventional and genetic evidence on alcohol and vascular disease aetiology： a prospective study of 500 000 men and women in China - The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2818%2931772-0/fulltext) (2019)
+「Conventional and genetic evidence on alcohol and vascular disease aetiology： a prospective study of 500 000 men and women in China - The Lancet」(2019)
 です。
 
 ### TL;DR

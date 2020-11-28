@@ -460,8 +460,8 @@ key is 0x9ac8fe314c6e41d442452b98d6f6ea8803182311a9b6aadedee89bb30029fa1084bc64a
 
 ---
 
-[^PQC]: 耐量子暗号は「耐量子計算機暗号」や「ポスト量子暗号」とも呼ばれる
-[^QFT]: 量子コンピュータで離散フーリエ変換することを量子フーリエ変換という
+[^PQC]: 耐量子暗号は「耐量子計算機暗号」や「ポスト量子暗号」とも呼ばれる .
+[^QFT]: 量子コンピュータで離散フーリエ変換することを量子フーリエ変換という .
 [^QFT-wiki]: [Quantum Fourier transform - Wikipedia](https://en.wikipedia.org/wiki/Quantum_Fourier_transform)
 [^Reg05]: O. Regev, "[On lattices, learning with errors, random linear codes, and cryptography](https://cims.nyu.edu/~regev/papers/qcrypto.pdf)," J. ACM, 56(6) (2009), pp. 1–40 (Preliminary version was presented at STOC 2005), 2009.
 [^Pei09]: C. Peikert, "[Public-key cryptosystems from the worst-case shortest vector problems: extended abstract](https://web.eecs.umich.edu/~cpeikert/pubs/svpcrypto.pdf)," In Proc. 41st ACM Symp. on Theory of Computing–STOC 2009, ACM, pp. 333–342, 2009.
