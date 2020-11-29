@@ -7,7 +7,7 @@
       "pattern": "^./"
     },
     {
-      "pattern": "^http://localhost"
+      "pattern": "^https?://localhost"
     },
     {
       "pattern": "^http://hostname"
