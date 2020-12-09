@@ -32,6 +32,7 @@ kramdown:
 include:
   - _pages
 exclude:
+  - .github
   - .bundle
   - .git
   - .gitignore
