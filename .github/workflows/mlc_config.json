@@ -4,7 +4,10 @@
       "pattern": "^/blog/"
     },
     {
-      "pattern": "^./"
+      "pattern": "^\\./"
+    },
+    {
+      "pattern": "^\\.\\./"
     },
     {
       "pattern": "^https?://localhost"
