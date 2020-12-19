@@ -17,36 +17,37 @@ published:     true
 
 ```python
 import time
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from bs4 import BeautifulSoup
 import urllib.parse
+from selenium import webdriver  # pip install selenium
+from selenium.webdriver.firefox.options import Options
 
 class Translator:
 
     def __init__(self):
-        self.options = Options()
-        self.options.add_argument('--headless')
-        self.browser = webdriver.Chrome(options=self.options)
-        self.browser.implicitly_wait(3)
+        options = Options()
+        options.add_argument('--headless')
+        browser = webdriver.Chrome(options=options)
+        browser.implicitly_wait(3)
+        self._browser = browser
 
     def translate(self, text, dest='ja'):
+        browser = self._browser
+
         # 翻訳したい文をURLに埋め込んでからアクセスする
         text_for_url = urllib.parse.quote_plus(text, safe='')
         url = "https://translate.google.co.jp/#en/ja/{0}".format(text_for_url)
-        self.browser.get(url)
+        browser.get(url)
 
-        # # 数秒待機する（大量の文書を連続して翻訳するときはコメントアウトしてください）
-        # wait_time = 2 + len(text) / 100
-        # time.sleep(wait_time)
+        # 数秒待機する
+        wait_time = 2 + len(text) / 100
+        time.sleep(wait_time)
 
         # 翻訳結果を抽出する
-        ja = BeautifulSoup(self.browser.page_source, "html.parser") \
-             .find(class_="tlid-translation translation")
+        ja = browser.find_element_by_css_selector("span[jsname='W297wb']")
         return ja.text
 
     def quit(self):
-        self.browser.quit()
+        self._browser.quit()
 
 
 translator = Translator()
@@ -60,11 +61,15 @@ print(ja) # => 自然言語処理
 
 プログラムについて補足
 
-- Selenium は Chrome を Headless モードで起動することで、ブラウザ画面を表示せずに動作させます。
+- Headless モードで起動することで、ブラウザ画面を表示せずに動作させます。
 - 翻訳したい文をURLに入れてアクセスします。例えば「machine learning」を翻訳したいときは「https://translate.google.co.jp/#en/ja/machine+learning」にアクセスします。
-- 数秒待機するのは、短い時間に大量のアクセスをするとブロックされるのを回避するためです。
-- 翻訳結果は (CSSセレクタの書き方で) `.tlid-translation.translation` に格納されるので、そこからテキストを抽出することで、翻訳結果を得ることができます。
+- 数秒待機するのは、翻訳結果が表示するまでに時間がかかることがあるからです。
+- 翻訳結果は (CSSセレクタで) `span[jsname='W297wb']` に格納されるので、そこからテキストを抽出することで、翻訳結果を得ることができます[^1]。
+
+[^1]: 2019年くらいは翻訳結果を `.tlid-translation.translation` で取得できましたが、2020年の後半に確認したら `span[jsname='W297wb']` になっていました。
 
 翻訳する選択肢として [Googletrans](https://github.com/ssut/py-googletrans) を使う方法もありますが、大量にアクセスした時に Googletrans の方がブロックされやすいので、システムとして長時間回す場合は Selenium を使う方が良いと思います。ちなみにブロックされると24時間程度使えなくなるので、節度を持って利用してください。
 
 以上です。
+
+---
