@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 if [[ $# -ne 2 ]]; then
   echo "ArguemntError: wrong number of arguments (given $#, expected 2)"
@@ -17,6 +17,9 @@ case $1 in
   *batch )
     directory="windowsbatch"
     category="WindowsBatch" ;;
+  powershell|pwsh )
+    directory="powershell"
+    category="PowerShell" ;;
   * )
     # Uppercase first character (e.g. python => Python)
     category="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
