@@ -2,7 +2,7 @@
 layout:        post
 title:         "PowerShellで使える型の一覧"
 date:          2020-11-29
-category:      Powershell
+category:      PowerShell
 cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true

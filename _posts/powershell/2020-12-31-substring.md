@@ -2,7 +2,7 @@
 layout:        post
 title:         "PowerShellで部分文字列を抽出する"
 date:          2020-12-31
-category:      Powershell
+category:      PowerShell
 cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
