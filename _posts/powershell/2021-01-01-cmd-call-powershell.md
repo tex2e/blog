@@ -66,7 +66,13 @@ opt1: 123
 opt2: 456
 ```
 
+#### 補足
 
+もし、実行時にセキュリティエラーが発生する場合は、システムでスクリプトを実行が無効になっている可能性があるので、次のコマンドを管理者権限のPowerShellコマンドプロンプトで入力してから実行してください。
+
+```PowerShell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
 
 以上です。
