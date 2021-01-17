@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "マイナンバーカードとAPDUで通信する"
+title:         "マイナンバーカードとAPDUで通信して署名データ作成"
 date:          2021-01-16
 category:      Protocol
 cover:         /assets/cover5.jpg
@@ -135,6 +135,7 @@ COMPUTE DIGITAL SIGNATURE コマンドのパラメータは以下の通りです
 
 [^apdu-compute-digital-signature]: マイナンバーカードで使えるものとは異なるが、COMPUTE DIGITAL SIGNATUREのコマンドについて説明あり : [JISX6319-3:2011 ＩＣカード実装仕様－第３部：共通コマンド](https://kikakurui.com/x6/X6319-3-2011-01.html)
 
+<br>
 
 ## マイナンバーカードとお話する
 
@@ -295,8 +296,8 @@ COMPUTE DIGITAL SIGNATURE コマンドのパラメータは以下の通りです
 
 #### DigestInfo の作成方法
 
-認証用・署名用の両方で、送信する対象データは ASN.1 形式で DigestInfo という名前の構造を使用します。
-RFC 2315 を読むと DigestInfo は次の構造になっています[^rfc2315]。
+認証用・署名用の両方で、COMPUTE DIGITAL SIGNATURE 時に送信する署名対象データは ASN.1 形式で DigestInfo という名前の構造を使用します。
+[RFC 2315: PKCS #7](https://tools.ietf.org/html/rfc2315#section-9.4) を読むと DigestInfo は次の構造になっています[^rfc2315]。
 
 ```
 DigestInfo ::= SEQUENCE {
@@ -310,7 +311,7 @@ DigestAlgorithmIdentifier ::= AlgorithmIdentifier
 
 [^rfc2315]: [RFC 2315 - PKCS #7: Cryptographic Message Syntax Version 1.5](https://tools.ietf.org/html/rfc2315)
 
-また、RFC 5280 を読むと AlgorithmIdentifier の構造について書かれています[^rfc5280]。
+また、[RFC 5280: X.509](https://tools.ietf.org/html/rfc5280#section-4.1.1.2) を読むと AlgorithmIdentifier の構造について書かれています[^rfc5280]。
 
 ```
 AlgorithmIdentifier  ::=  SEQUENCE  {
@@ -334,10 +335,10 @@ DigestInfo ::= SEQUENCE {
 
 次に、ハッシュ値を求めるときはSHA256を使うようにするので、SHA256 アルゴリズムの OID = 2.16.840.1.101.3.4.2.1 をバイト列に変換した `60 86 48 01 65 03 04 02 01` を使用します（[OIDとバイト列の変換方法](./oids) 参照）。
 
-RFC 5754 を読むと[^rfc5754]、SHA256 のパラメータはNULL必須で、DERエンコーディングのサンプルを見ることができるので、これも参考にします。
-最終的に、DERエンコードされたDigestInfoは次のような感じになります。
+[RFC 5754: SHA2 Cryptographic Message Syntax](https://tools.ietf.org/html/rfc5754#section-2) を読むと[^rfc5754]、SHA256 のパラメータはNULL必須で、DERエンコーディングのサンプルを見ることができるので、これも参考にします。
+最終的に、DERエンコードされたDigestInfoは次のような感じになります（ハッシュ値は署名対象ファイルごとに変化します）。
 
-[^rfc5754]: [RFC 5754 - Using SHA2 Algorithms with Cryptographic Message Syntax](https://tools.ietf.org/html/rfc5754#section-2)
+[^rfc5754]: [RFC 5754 - Using SHA2 Algorithms with Cryptographic Message Syntax](https://tools.ietf.org/html/rfc5754)
 
 ```
 30 31 30 0D 06 09 60 86 48 01 65 03 04 02 01 05
@@ -357,7 +358,7 @@ FE 71 E7
     - `22 D6 28 ... FE 71 E7` ... 署名対象ファイルのハッシュ値(SHA256)
 
 
-上のデータを COMPUTE DIGITAL SIGNATURE の署名対象データ部分に入れてあげることで、OpenSSLなどで検証可能な署名が作成されます。
+上のデータを COMPUTE DIGITAL SIGNATURE の署名対象データ部分に入れてあげることで、OpenSSLなどで検証可能な署名が作成され、レスポンスデータとして返ってきます。
 
 #### OpenSSLによる検証
 
@@ -370,6 +371,8 @@ FE 71 E7
 7. OpenSSLのコマンド `openssl dgst -verify sig-pub.pem -signature target.txt.sig target.txt` を実行します。
 8. 「Verified OK」と表示されれば検証成功です。
 
+
+<br>
 
 ### マイナンバー (個人番号) の取得
 
@@ -450,6 +453,7 @@ FE 71 E7
   DF 23 39 ...住所... DF 24 08 ...生年月日... DF 25 01 性別 90 0
 ```
 
+名前、住所のバイト列はUTF-8エンコードされているので、UTF-8でデコードすると正しい文字列を取り出すことができます。
 
 以上です。
 
