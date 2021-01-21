@@ -362,13 +362,23 @@ FE 71 E7
 
 #### OpenSSLによる検証
 
-1. 署名するファイルを target.txt とします。
+1. 署名するファイルを TARGET.txt とします。
 2. 署名するファイルのハッシュ値を求めます。
 3. DigestInfoを作成します。
-4. COMPUTE DIGITAL SIGNATUREコマンドを実行して、レスポンスデータをファイル target.txt.sig に保存します。
-5. READ BINARYなどで署名用証明書を読み取ってファイル sig-cert.pem に保存します。
-6. 署名用証明書 sig-cert.pem から公開鍵を取り出してファイル sig-pub.pem に保存します。
-7. OpenSSLのコマンド `openssl dgst -verify sig-pub.pem -signature target.txt.sig target.txt` を実行します。
+4. COMPUTE DIGITAL SIGNATUREコマンドを実行して、レスポンスデータをファイル TARGET.txt.sig に保存します。
+5. READ BINARYなどで署名用証明書を読み取ってファイル SigCert.der に保存します（カード内の証明書はDER形式）。
+6. DER形式をPEM形式に変換します。
+
+    `openssl x509 -in SigCert.der -inform der -out SigCert.pem -outform pem`
+
+6. 署名用証明書 SigCert.pem から公開鍵を取り出してファイル SigPub.pem に保存します。
+
+    `openssl x509 -pubkey -noout -in SigCert.pem -out SigPub.pem`
+
+7. OpenSSLで検証します。
+
+    `openssl dgst -verify SigPub.pem -signature TARGET.txt.sig TARGET.txt`
+
 8. 「Verified OK」と表示されれば検証成功です。
 
 
