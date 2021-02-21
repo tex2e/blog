@@ -16,9 +16,9 @@ Makefile の組み込み関数の一覧です。
 
 Makefile での関数の書き方は `$(関数名 引数,...)` または `${関数名 引数,...}` です。
 
-## 文字列操作・検索の関数
+### 文字列操作・検索の関数
 
-### subst
+#### subst
 
 文字列の置換です。使い方は \$(subst 置換前,置換後,対象)
 
@@ -28,7 +28,7 @@ all:
 	@echo $(subst hoge,piyo,$(FILES))  # => piyo.c piyo.h fuga.c fuga.h
 ```
 
-### patsubst
+#### patsubst
 
 パターンマッチによる文字列の置換です。使い方は \$(patsubst 置換前,置換後,対象)
 
@@ -46,7 +46,7 @@ all:
 	@echo $(FILES:.c=.cpp)  # => hoge.cpp hoge.h fuga.cpp fuga.h
 ```
 
-### strip
+#### strip
 
 文字列から余分な空白を取り除きます。
 
@@ -57,7 +57,7 @@ all:
 	@echo $(strip $(VAR))  # =>  just do it
 ```
 
-### findstr
+#### findstr
 
 文字列が含まれているか調べます。使い方は \$(findstr 検索文字列,対象)
 
@@ -67,7 +67,7 @@ all:
 	@echo $(findstring a,b c)   # =>
 ```
 
-### filter
+#### filter
 
 パターンに一致した文字列だけを抽出します。使い方は \$(filter パターン,対象)
 
@@ -77,7 +77,7 @@ all:
 	@echo $(filter %.c,$(FILES))  # => hoge.c fuga.c
 ```
 
-### filter-out
+#### filter-out
 
 パターンに一致しない文字列だけを抽出します。使い方は \$(filter-out パターン,対象)
 
@@ -87,7 +87,7 @@ all:
 	@echo $(filter %.c,$(FILES))  # => hoge.h fuga.h
 ```
 
-### sort
+#### sort
 
 ソートします。使い方は \$(sort 対象)
 
@@ -97,7 +97,7 @@ all:
 	@echo $(sort $(FILES))  # => Eggs Ham Spam
 ```
 
-### word
+#### word
 
 n番目の文字列を抽出します。先頭から 1,2,... と数えます。使い方は \$(word N,対象)
 
@@ -107,7 +107,7 @@ all:
 	@echo $(word 2,$(FILES))  # => Ham
 ```
 
-### wordlist
+#### wordlist
 
 n番目からm番目の文字列を抽出します。先頭から 1,2,... と数えます。使い方は \$(wordlist N,M,対象)
 
@@ -117,7 +117,7 @@ all:
 	@echo $(wordlist 2,3,$(FILES))  # => Ham Eggs
 ```
 
-### words
+#### words
 
 文字列の個数を数えます。一番最後の文字列を取り出すために使えます。
 
@@ -128,7 +128,7 @@ all:
 	@echo $(word $(words $(FILES)),$(FILES))  # => Eggs
 ```
 
-### firstword
+#### firstword
 
 一番最初の文字列を取り出します。
 
@@ -138,7 +138,7 @@ all:
 	@echo $(firstword $(FILES))  # => Spam
 ```
 
-### lastword
+#### lastword
 
 一番最後の文字列を取り出します。
 
@@ -148,11 +148,11 @@ all:
 	@echo $(lastword $(FILES))  # => Eggs
 ```
 
----
+<br>
 
-## ファイル名操作の関数
+### ファイル名操作の関数
 
-### dir
+#### dir
 
 ディレクトリだけを抽出します。
 
@@ -162,7 +162,7 @@ all:
 	@echo $(dir $(FILES))  # => src/ src/ ./
 ```
 
-### notdir
+#### notdir
 
 ディレクトリ以外を抽出します。
 
@@ -172,7 +172,7 @@ all:
 	@echo $(notdir $(FILES))  # => hoge.c hoge.h index.html
 ```
 
-### suffix
+#### suffix
 
 拡張子だけを抽出します。
 
@@ -182,7 +182,7 @@ all:
 	@echo $(suffix $(FILES))  # => .c .h .html
 ```
 
-### basename
+#### basename
 
 ベース名 (拡張子以外) を抽出します。
 
@@ -192,7 +192,7 @@ all:
 	@echo $(basename $(FILES))  # => src/hoge src/hoge index
 ```
 
-### addsuffix
+#### addsuffix
 
 末尾に文字列を追加します。使い方は \$(addsuffix 追加したい文字,対象)
 
@@ -202,7 +202,7 @@ all:
 	@echo $(addsuffix .c,$(FILES))  # => foo.c bar.c
 ```
 
-### addprefix
+#### addprefix
 
 先頭に文字列を追加します。使い方は \$(addprefix 追加したい文字,対象)
 
@@ -212,7 +212,7 @@ all:
 	@echo $(addprefix src/,$(FILES))  # => src/foo src/bar
 ```
 
-### join
+#### join
 
 2つの文字列リストを要素ごとに結合します。使い方は \$(join リスト1,リスト2)
 
@@ -223,7 +223,7 @@ all:
 	@echo $(join $(LIST1)$,$(LIST2))  # => foo.c bar.h
 ```
 
-### wildcard
+#### wildcard
 
 ワイルドカードでディレクトリにあるファイル名を抽出します。
 
@@ -233,7 +233,7 @@ all:
 	@echo $(wildcard *.c)  # => foo.c bar.c
 ```
 
-### abspath, realpath
+#### abspath, realpath
 
 abspath はファイルの絶対パスを表示します。
 realpath はシンボリックリンクが指すファイルの絶対パスを表示します。
@@ -245,11 +245,11 @@ all:
 ```
 
 
----
+<br>
 
-## その他の関数
+### その他の関数
 
-### foreach
+#### foreach
 
 リストから文字列を一つずつ取り出して処理をします。使い方は \$(foreach 変数,リスト,処理)
 
@@ -260,7 +260,7 @@ all:
 	# $(wildcard a/* b/* c/* d/*) と同じ処理をする
 ```
 
-### call
+#### call
 
 関数やマクロを呼び出します。使い方は \$(call 変数名,引数...)
 
@@ -281,7 +281,7 @@ all:
 	$(call HELLO,Japan)  # => Hello, Japan!
 ```
 
-### eval
+#### eval
 
 文字列を評価します。類似するルールを大量に作るときに役立ちます。特に foreach と組み合わせると最強です。
 
@@ -319,7 +319,7 @@ client:
 client_a.o client_b.o client_c.o
 ```
 
-### shell
+#### shell
 
 シェルコマンドを実行します。
 
@@ -329,7 +329,7 @@ all:
 	@echo $(RESULT)  # => 1 2 3 4 5 6 7 8 9 10
 ```
 
-#### 参考文献
+### 参考文献
 
 - [GNU make： Functions](https://www.gnu.org/software/make/manual/html_node/Functions.html)
 - [Makefile の特殊変数・自動変数の一覧](https://tex2e.github.io/blog/makefile/automatic-variables)
