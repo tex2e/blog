@@ -24,9 +24,10 @@ from selenium.webdriver.firefox.options import Options
 class Translator:
 
     def __init__(self):
+        WEBDRIVER_EXE_PATH = '/mnt/c/Apps/webdriver/geckodriver.exe'
         options = Options()
         options.add_argument('--headless')
-        browser = webdriver.Chrome(options=options)
+        browser = webdriver.Firefox(executable_path=WEBDRIVER_EXE_PATH, options=options)
         browser.implicitly_wait(3)
         self._browser = browser
 
