@@ -62,6 +62,7 @@ print(ja) # => 自然言語処理
 
 プログラムについて補足
 
+- ブラウザにFireFoxを使う場合は、事前にFireFoxをインストールしてから、geckodriverをダウンロードしてください
 - Headless モードで起動することで、ブラウザ画面を表示せずに動作させます。
 - 翻訳したい文をURLに入れてアクセスします。例えば「machine learning」を翻訳したいときは「https://translate.google.co.jp/#en/ja/machine+learning」にアクセスします。
 - 数秒待機するのは、翻訳結果が表示するまでに時間がかかることがあるからです。
