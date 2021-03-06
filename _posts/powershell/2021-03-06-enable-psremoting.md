@@ -136,6 +136,13 @@ function MyTest {
 Invoke-Command -ScriptBlock $function:MyTest -ComputerName サーバIP -Credential ユーザ名
 ```
 
+実行ファイルを指定したい場合は、FilePath 引数を使います。
+
+```cmd
+Invoke-Command -FilePath C:\path\to\file.ps1 -ComputerName サーバIP -Credential ユーザ名
+```
+
+
 以上です。
 
 
@@ -147,3 +154,4 @@ Invoke-Command -ScriptBlock $function:MyTest -ComputerName サーバIP -Credenti
 - [PowerShell ネットワークのカテゴリを変更する～PublicからPrivateへ - 元「なんでもエンジニ屋」のダメ日記](https://nasunoblog.blogspot.com/2014/12/powershell-how-to-change-network-category-public-to-private.html)
 - [PowerShellでリモートからコマンドを実行する - Masato's IT Library](https://mstn.hateblo.jp/entry/2016/09/13/193124)
 - [Enable-PSRemoting (Microsoft.PowerShell.Core) - PowerShell \| Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/Microsoft.PowerShell.Core/Enable-PSRemoting?view=powershell-5.1)
+- [Invoke-Command (Microsoft.PowerShell.Core) - PowerShell \| Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-5.1)
