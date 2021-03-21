@@ -147,7 +147,7 @@ select pgp_sym_encrypt('test text', get_passwd());
  \xc30d04070302b9c992796f8183007dd23a01127dda549ad8ccfc06d3578fc40c92ac74b1799f9ac6c2671811e4e6dfba7589a579832f03158045b4eddf6ced0a3ab2fb601b770801666717
 ```
 
-よって、pgp_sym_encrypt を使えば、自前でソルト（salt）のカラムをテーブルに追加する必要がなくなります。
+よって、pgp_sym_encrypt を使えば、自前でソルト（salt）が追加されるため、ソルトのカラムをテーブルに追加する必要がなくなります。
 
 
 ### 参考文献
