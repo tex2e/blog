@@ -2,10 +2,10 @@
 layout:        post
 title:         "nroffマクロを使ったRFCの作成"
 date:          2019-03-20
-category:      Misc
+category:      Protocol
 author:        tex2e
 cover:         /assets/cover4.jpg
-redirect_from:
+redirect_from: /misc/rfc2223-instructions-to-rfc-authors
 comments:      true
 published:     true
 ---

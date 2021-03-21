@@ -2,9 +2,9 @@
 layout:        post
 title:         "Windowsで作成したZIPファイルをmacOSで解凍する"
 date:          2020-05-12
-category:      Misc
+category:      Windows
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/mac-unzip-windows-file
 comments:      true
 published:     true
 latex:         false
