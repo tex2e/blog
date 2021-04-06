@@ -3,10 +3,10 @@ layout:        post
 title:         "センシティブな情報とは"
 menutitle:     "センシティブな情報（sensitive information）とは"
 date:          2019-04-18
-category:      Misc
+category:      Security
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/sensitive-info
 comments:      true
 published:     true
 ---

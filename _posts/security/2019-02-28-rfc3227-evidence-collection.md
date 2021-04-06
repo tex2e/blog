@@ -3,10 +3,10 @@ layout:        post
 title:         "証拠収集のためのガイドライン"
 menutitle:     "証拠収集とアーカイビングのためのガイドライン"
 date:          2019-02-28
-category:      Misc
+category:      Security
 author:        tex2e
 cover:         /assets/cover6.jpg
-redirect_from:
+redirect_from: /misc/rfc3227-evidence-collection
 comments:      true
 published:     true
 ---
@@ -65,7 +65,7 @@ RFC 2828「インターネットセキュリティ用語集」で定義されて
 揮発性の高い順に並べると以下の通りです。
 
 1. レジスタ、キャッシュ
-2. リーティングテーブル、arpキャッシュ、プロセステーブル、カーネル統計、メモリ
+2. ルーティングテーブル、arpキャッシュ、プロセステーブル、カーネル統計、メモリ
 3. 一時ファイルシステム（/tmp）
 4. ディスク
 5. 当該システムに関連する遠隔操作ログと監視データ
