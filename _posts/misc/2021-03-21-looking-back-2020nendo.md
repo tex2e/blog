@@ -75,7 +75,7 @@ JavaScript はどのブラウザまでをサポートするか開発時に明示
 特に断る理由もないので承諾しました。
 
 まとめると、全体を通してWindowsの年でした。.NET Framework, Visual C++, MFC, Visual Studio, MSBuild, devenv, exe, dll, GAC, IIS, DCOM, ClickOnce, Excel VBA, Batch, VBScript, PowerShell, Hyper-V あたりは初めて見る・触る技術でいろいろ勉強になりました。
-Windows嫌いの意識はだいぶなくなりました。今では AutoHotkey と Keypirinha が使いやすくて、MacOSに戻れない体になってしまいました。
+セキュリティの道を歩くにしてもWindowsの知識は必要なので、いい勉強になりました。今では AutoHotkey と Keypirinha が使いやすくて、MacOSに戻れない体になってしまいました。
 MacOSは今ではElasticSearchが動くだけのサーバと化しています。
 
 来年度はやることが一気に変わると思いますが、来年度も引き続き、面白そうなところに足を突っ込んでいきたいと思います。
