@@ -67,7 +67,7 @@ Rubyを新しくインストールした際は `bundle install` する必要が�
 
 ### 環境構築手順
 
-Ubuntu
+Ubuntu, WSL
 
 ```
 sudo apt install build-essential git ruby ruby-dev zlib1g-dev
@@ -79,7 +79,7 @@ bundle install
 
 #### alias
 
-blogのディレクトリに移動して、エディタを開き、ブラウザでページを開いて、サーバを立ち上げる一連の処理をする `blog` コマンド (エイリアス) を定義しておくと、気づいたときにすぐに記事が書けて便利です。
+blogのディレクトリに移動して、エディタを開き、ブラウザでページを開いて、サーバを立ち上げる一連の処理をする `blog` コマンドを定義しておくと、気づいたときにすぐに記事が書けて便利です。
 
 ```
 alias blog="cd ~/path/to/blog; open http://localhost:4000/blog/; ./server.sh &"
@@ -94,7 +94,7 @@ alias blog="cd ~/path/to/blog; open http://localhost:4000/blog/; ./server.sh &"
 sudo apt-get install imagemagick
 ```
 
-ImageMagickは脆弱性への対策としてPDFがデフォルトでは入力できませんが、入力PDFは自分で作成したもののみを使用するため、ImageMagickのポリシーを変更しても問題ないです（他で使用しないことが前提ですが）。
+ImageMagickは脆弱性への対策としてデフォルトではPDFが入力できませんが、入力PDFは自分で作成したもののみを使用するため、ImageMagickのポリシーを変更します。
 /etc/ImageMagick-6/policy.xml のポリシーを変更して、PDFをpngに変換できるようにします。
 
 ```
@@ -105,7 +105,7 @@ ImageMagickは脆弱性への対策としてPDFがデフォルトでは入力で
   <policy domain="coder" rights="none" pattern="PS2" />
   <policy domain="coder" rights="none" pattern="PS3" />
   <policy domain="coder" rights="none" pattern="EPS" />
-  <!-- <policy domain="coder" rights="none" pattern="PDF" /> -->
+  <!-- <policy domain="coder" rights="none" pattern="PDF" /> この行をコメントアウト-->
   <policy domain="coder" rights="none" pattern="XPS" />
 </policymap>
 ```
