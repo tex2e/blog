@@ -5,7 +5,7 @@ date:          2016-04-14
 category:      Shell
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /shell/warn-and-error-func
 comments:      true
 published:     true
 ---
