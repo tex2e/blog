@@ -20,6 +20,14 @@ case $1 in
   powershell|pwsh )
     directory="powershell"
     category="PowerShell" ;;
+  pentest-enumeration )
+    category="Pentest Enumeration" ;;
+  pentest-foothold )
+    category="Pentest Foothold" ;;
+  pentest-escalation )
+    category="Pentest Escalation" ;;
+  pentest-misc )
+    category="Pentest Misc" ;;
   * )
     # Uppercase first character (e.g. python => Python)
     category="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
