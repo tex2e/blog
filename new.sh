@@ -20,7 +20,8 @@ case $1 in
   powershell|pwsh )
     directory="powershell"
     category="PowerShell" ;;
-  pentest-enumeration )
+  pentest-enum* )
+    directory="pentest-enumeration"
     category="Pentest Enumeration" ;;
   pentest-foothold )
     category="Pentest Foothold" ;;
