@@ -22,7 +22,7 @@ case $1 in
     directory="powershell"
     category="PowerShell" ;;
   crypto )
-    cover="cover4"
+    cover="cover4" ;;
   * )
     # Uppercase first character (e.g. python => Python)
     category="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
