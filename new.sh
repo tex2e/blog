@@ -15,6 +15,8 @@ case $1 in
     category="LaTeX" ;;
   vb.net )
     category="VB.NET" ;;
+  php )
+    category="PHP" ;;
   *batch )
     directory="windowsbatch"
     category="WindowsBatch" ;;
@@ -34,7 +36,7 @@ if ! [[ -e "_posts/$directory" ]]; then
   exit
 fi
 
-cat > "_posts/$directory/$(date +%Y-%m-%d)-${2%.md}.md" <<EOS
+cat <<EOS > "_posts/$directory/$(date +%Y-%m-%d)-${2%.md}.md"
 ---
 layout:        post
 title:         "This_is_Awesome"
