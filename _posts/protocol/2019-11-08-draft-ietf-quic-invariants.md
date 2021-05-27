@@ -12,7 +12,7 @@ published:     true
 # draft:   true
 ---
 
-[Version-Independent Properties of QUIC](https://quicwg.org/base-drafts/draft-ietf-quic-invariants.html) を読んで要点だけをまとめた自分用の資料です。
+[Version-Independent Properties of QUIC](https://quicwg.org/base-drafts/boilerplate/draft-ietf-quic-invariants.html) を読んで要点だけをまとめた自分用の資料です。
 読んでいる時点では draft-07 です。
 
 
