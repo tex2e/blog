@@ -224,7 +224,7 @@ tallying result: 1241
 - [Homomorphic Tallying with Paillier Cryptosystem](http://security.hsr.ch/msevote/seminar-papers/HS09_Homomorphic_Tallying_with_Paillier.pdf)
 - [A Homomorphic Crypto System for Electronic Election Schemes](https://file.scirp.org/pdf/CS_2016082314213901.pdf)
 - [homomorphic encryption - Anonymity of Paillier cryptosystem in e-voting system - Cryptography Stack Exchange](https://crypto.stackexchange.com/questions/60493/anonymity-of-paillier-cryptosystem-in-e-voting-system)
-- [電子投票 - Wikipedia](https://nlp.cs.nyu.edu/meyers/controversial-wikipedia-corpus/japanese-html/main/main_0219.xml.html)
+- [電子投票 - Wikipedia](https://web.archive.org/web/20150315165852/https://nlp.cs.nyu.edu/meyers/controversial-wikipedia-corpus/japanese-html/main/main_0219.xml.html)
 - [ozsaygin/elgamal-evoting： ElGamal E-Voting Scheme Implementation](https://github.com/ozsaygin/elgamal-evoting)
 - [data61/python-paillier： A library for Partially Homomorphic Encryption in Python](https://github.com/data61/python-paillier)
 - [Cryptography - Electronic Voting](https://crypto.stanford.edu/pbc/notes/crypto/voting.html)

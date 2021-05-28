@@ -16,7 +16,7 @@ SageMath (セイジ) とは数学の幅広い処理を行うソフトウェア�
 
 ### Sage のインストール
 
-以下のコマンドを入力すると Sage の PPA が apt パッケージ管理システムに追加されるので、sage コマンドが使えるようになります[^linuxpitstop]。
+以下のコマンドを入力すると Sage の PPA が apt パッケージ管理システムに追加されるので、sage コマンドが使えるようになります[^unixmen]。
 
 ```bash
 $ sudo apt-add-repository ppa:aims/sagemath
@@ -41,5 +41,5 @@ $ sudo apt-get install sagemath-upstream-binary
 
 -----
 
-[^linuxpitstop]: [How to install mathematical application Sage on Ubuntu Linux \| LinuxPitStop](http://linuxpitstop.com/install-sage-on-ubuntu/)
+[^unixmen]: [How to install mathematical application Sage on Ubuntu Linux \| Unixmen](http://unixmen.com/install-sage-on-ubuntu/)
 [^asksagemath]: [sage terminal colors - ASKSAGE: Sage Q&amp;A Forum](https://ask.sagemath.org/question/10060/sage-terminal-colors/)
