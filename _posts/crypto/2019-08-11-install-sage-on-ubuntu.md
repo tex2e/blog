@@ -41,5 +41,5 @@ $ sudo apt-get install sagemath-upstream-binary
 
 -----
 
-[^unixmen]: [How to install mathematical application Sage on Ubuntu Linux \| Unixmen](http://unixmen.com/install-sage-on-ubuntu/)
+[^unixmen]: [How to install mathematical application Sage on Ubuntu Linux \| Unixmen](https://unixmen.com/install-sage-on-ubuntu/)
 [^asksagemath]: [sage terminal colors - ASKSAGE: Sage Q&amp;A Forum](https://ask.sagemath.org/question/10060/sage-terminal-colors/)
