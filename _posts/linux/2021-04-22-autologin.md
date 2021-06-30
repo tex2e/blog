@@ -14,21 +14,33 @@ syntaxhighlight: true
 # feed:    false
 ---
 
-Kali 2021.1 (Ubuntu) で起動時にパスワードを入力するのが面倒なので、自動でログインできるようにします。
+Kali 2021.1 で起動時にパスワードを入力するのが面倒なので、自動でログインできるようにします。
 
 まず、Display Managerを確認します。
 
 ```bash
 $ cat /etc/X11/default-display-manager
 /usr/sbin/lightdm
+または
+/usr/sbin/gdm3
 ```
 
-lightdmを使っているので、/etc/lightdm/lightdm.conf の設定を以下のように修正します（ユーザ名は自分の使っているものを指定してください）。
+lightdmを使っている場合は、/etc/lightdm/lightdm.conf の設定を以下のように修正します（ユーザ名は自分の使っているものを指定してください）。
 
 ```
 [Seat:*]
 autologin-user=kali
 ```
+
+gdm3を使っている場合は、/etc/gdm3/daemon.conf の設定を以下のように修正します
+（ユーザ名は自分の使っているものを指定してください）。
+
+```
+[daemon]
+AutomaticLoginEnable = true
+AutomaticLogin = parallels
+```
+
 
 変更を適用するために再起動します。
 
