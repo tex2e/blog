@@ -312,7 +312,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 興味深いことに | interestingly
 | 些細なことだが | trivially
 | 〜かどうかによる | depend on/upon whether
-
+| 皮肉にも | Ironically
 
 
 <br>
