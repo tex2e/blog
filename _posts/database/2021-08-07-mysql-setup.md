@@ -73,8 +73,8 @@ mysqlx-bind-address = 192.168.xx.xx
 
 mysqlの設定後、サービス再起動する。
 
-```
-sudo systemctl restart mysql
+```bash
+$ sudo systemctl restart mysql
 ```
 
 mysqldが自身のサーバのIPアドレスでLISTENしているか確認する。
@@ -87,7 +87,7 @@ LISTEN     192.168.xx.xx:3306     users:(("mysqld",pid=6337,fd=24))
 
 （必要に応じて）ファイアウォールをufwでMySQLの3306番を開ける。
 
-```
+```bash
 $ sudo ufw status
 $ sudo ufw allow 3306
 ```
