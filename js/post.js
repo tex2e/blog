@@ -12,13 +12,13 @@
     var windowHeight = win.height();
     var timeoutHandler;
 
-    /*
+    /* -------------------------------------------------------------------------
       Fix video size.
      */
     // $postContent.fitVids();
 
 
-    /*
+    /* -------------------------------------------------------------------------
       Image gallery
      */
     $('.post-content img').each(function () {
@@ -104,7 +104,7 @@
     });
 
 
-    /*
+    /* -------------------------------------------------------------------------
       Scroll To Top button
      */
     win.on('scroll', function () {
@@ -129,7 +129,7 @@
     });
 
 
-    /*
+    /* -------------------------------------------------------------------------
       Disqus comments
     */
     function loadDisqusComments() {
