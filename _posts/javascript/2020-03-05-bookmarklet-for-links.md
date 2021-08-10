@@ -2,9 +2,11 @@
 layout:        post
 title:         "Markdown/HTML用のリンクを作るbookmarklet"
 date:          2020-04-25
-category:      Misc
+category:      Javascript
 cover:         /assets/cover1.jpg
-redirect_from: /misc/bookmarklet-for-markdown-link
+redirect_from:
+  - /misc/bookmarklet-for-markdown-link
+  - /misc/bookmarklet-for-links
 comments:      true
 published:     true
 # sitemap: false
@@ -28,7 +30,7 @@ javascript:!function(){var e=document.createElement("textarea"),t=document.title
 
 リンク生成の結果：
 
-```
+```markdown
 [JavaScript リファレンス - JavaScript \| MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference)
 ```
 
@@ -67,7 +69,7 @@ javascript:!function(){var e=document.createElement("textarea"),t=document.title
 
 リンク生成の結果：
 
-```
+```markdown
 <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference">JavaScript リファレンス - JavaScript | MDN</a>
 ```
 
@@ -85,7 +87,7 @@ javascript:!function(){var e=document.createElement("textarea"),t=document.title
 
 リンク生成の結果：
 
-```
+```markdown
 JavaScript リファレンス - JavaScript | MDN
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference
 ```
