@@ -468,6 +468,10 @@ FE 71 E7
 
 以上です。
 
+
+2021/8/12追記：seccamp2021 LT大会で「マイナンバーカードで署名する」という題で発表した資料をSpeaker Deckで公開しました。
+[https://speakerdeck.com/tex2e/mainanbakadodeshu-ming-suru](https://speakerdeck.com/tex2e/mainanbakadodeshu-ming-suru)
+
 ### 参考文献
 
 - [pyscard user’s guide — pyscard 1.9.5 documentation](https://pyscard.sourceforge.io/user-guide.html#quick-start)
