@@ -84,8 +84,10 @@ $$
 
 #### 逆関数の導関数
 
+$f^\prime(y) \ne 0$ のとき
+
 $$
-\{f^{-1}(x)\}^\prime = \frac{1}{f^\prime(y)} \;\;\;\text{(ただし $f^\prime(y) \ne 0$)}
+\{f^{-1}(x)\}^\prime = \frac{1}{f^\prime(y)}
 $$
 
 #### 導関数の公式
@@ -111,14 +113,15 @@ $$
 
 $y = f(x)$ の導関数を次の手順で求める
 
+1. 両辺の絶対値の自然対数をとる
+2. 両辺を $x$ について微分する
+3. 両辺に $y$ をかける
+
 $$
 \begin{aligned}
-\log\lvert y\rvert &= \log\lvert f(x)\rvert
-\;\;\;\text{... 両辺の絶対値の自然対数をとる} \\
-\frac{1}{y} y^\prime &= (\log\lvert f(x)\rvert)^\prime
-\;\;\;\text{... 両辺を $x$ について微分する} \\
+\log\lvert y\rvert &= \log\lvert f(x)\rvert \\
+\frac{1}{y} y^\prime &= (\log\lvert f(x)\rvert)^\prime \\
 y^\prime &= y (\log\lvert f(x)\rvert)^\prime
-\;\;\;\text{... 両辺に $y$ をかける}
 \end{aligned}
 $$
 
