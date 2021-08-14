@@ -641,6 +641,8 @@ Cloudflareが公開しているHTTP/3のRust実装である[cloudflare/quiche](h
 
 実験に使用したプログラムは Gist の [decrypt-quic-initial-packet.py](https://gist.github.com/tex2e/a5fd72c8a0c56f43d77bbfa446a820f1) と [metastruct.py, metatype.py, utils.py](https://gist.github.com/tex2e/a55cfe8f006799ff745dc888a0149183) に置いておきますので、参考にしてください。一部 TLS 1.3 の実装で使ったものが残っていて、今回の実験では使わなかった関数やクラスもありますので、適宜無視して読み進めてください。
 
+TLS 1.3 実装経験者としては、[tex2e/mako-tls13](https://github.com/tex2e/mako-tls13) から TLS 1.3 関連の実装を全部持ってくれば、CRYPTO Frame内のTLS Messageも簡単に解析できるのではないかと思っているのですが、その辺の検証は次回にしたいと思います。
+
 
 ### 参考文献
 
