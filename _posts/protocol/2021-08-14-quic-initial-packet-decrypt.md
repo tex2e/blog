@@ -82,9 +82,9 @@ Long Header Packet {
 筆者自身が TLS 1.3 実装時に作った、データ型を扱う [metatype.py](https://gist.github.com/tex2e/a55cfe8f006799ff745dc888a0149183#file-metatype-py) とデータ構造を扱う [metastruct.py](https://gist.github.com/tex2e/a55cfe8f006799ff745dc888a0149183#file-metastruct-py) を使って、Long Packet と Initial Packet を扱うデータ構造クラスを定義します。
 
 metatype.py について簡単に説明すると、型とバイト列を相互変換するためのクラスで、例えば Uint8 は整数 `1` とバイト列 `0x01` の変換、Uint32 は `1` と `0x00000001` の変換、OpaqueUint8 はデータ長とデータのペアで `0x0401020304` のような形式を扱うためのクラスです。
-追加で、QUIC 特有の整数エンコード方式に「可変長整数エンコード ([RFC 9000 - 16. Variable-Length Integer Encoding](https://www.rfc-editor.org/rfc/rfc9000.html#section-16))」があり、の最上位2ビットの値でデータ長を表し、残りのビットで整数の値を表す整数型の亜種です。ここでは VarLenIntEncoding クラスとして定義・使用しています。
+追加で、QUIC 特有の整数エンコード方式に「可変長整数エンコード ([RFC 9000 - 16. Variable-Length Integer Encoding](https://www.rfc-editor.org/rfc/rfc9000.html#section-16))」があり、最上位2ビットの値でデータ長を表して残りのビットで整数の値を表す、符号なし整数型の亜種です。ここでは VarLenIntEncoding クラスとして定義・使用しています。
 
-また、metastruct.py については、クラス変数にType Hintsで型を指定すると、定義したクラス変数の順番に型がバイト列やストリーム文字列を読みながらデータ構造を復元していくための meta.MetaStruct 抽象クラスと構造体を定義するための meta.struct デコレータを定義・使用しています。
+また、metastruct.py については、クラス変数にType Hintsで型を指定すると、定義したクラス変数の順番に型がバイト列やストリーム文字列を読みながらデータ構造を復元していくための meta.MetaStruct 抽象クラスと、構造体を定義するための meta.struct デコレータを定義・使用しています。
 
 ```python
 from metatype import Uint8, Uint32, Opaque, OpaqueUint8, VarLenIntEncoding, Type, Enum
@@ -180,9 +180,9 @@ LongPacket:
 クライアントからの送信情報から導出できる初期シークレットは求め方は [RFC 9001 - 5.2. Initial Secrets](https://www.rfc-editor.org/rfc/rfc9001.html#section-5.2) に書かれています。
 さらに、初期シークレットから暗号化・復号とヘッダ保護・解除のために以下の3つの値を鍵導出関数で求めます ([RFC 9001 - 5.1. Packet Protection Keys](https://www.rfc-editor.org/rfc/rfc9001.html#section-5.1) や [RFC 9001 - A.1. Keys](https://www.rfc-editor.org/rfc/rfc9001.html#section-a.1) 参照)。
 
-- 鍵 (key) : AEADでの暗号化・復号に使用するため
+- 鍵 (key) : AEADでの暗号化・復号に使用する
 - 初期ベクタ (iv; Initialization Vector) : AEADでの暗号化・復号で必要なナンス (Nonce) を作るために必要な値
-- ヘッダー保護鍵 (hp; Header Protection Key) : ヘッダーにあるパケット番号情報を保護・解除をするため
+- ヘッダー保護鍵 (hp; Header Protection Key) : ヘッダーにあるパケット番号情報を保護・解除をする
 
 鍵導出関数は TLS 1.3 の鍵スケジュールで使用しているHMACベースの鍵導出関数HKDFを使います。
 仕様の詳細は [RFC 5869 - HKDF-Extract](https://datatracker.ietf.org/doc/html/rfc5869#section-2.2) と [RFC 8446 - HKDF-Expand-Label](https://datatracker.ietf.org/doc/html/rfc8446#section-7.1) に書かれています。
@@ -238,7 +238,7 @@ def HKDF_expand_label(secret, label, hash_value, length,
     return out
 ```
 
-次に鍵導出で使う初期ソルトと、鍵、初期ベクトル、ヘッダー保護鍵を生成する関数をPythonで書くと以下のようになります。
+次に、鍵導出で使う初期ソルトと、鍵、初期ベクトル、ヘッダー保護鍵を生成する関数をPythonで書くと以下のようになります。
 初期ソルトはQUICバージョンごとに異なる値が使われますが、RFCに定義されている固定値が使用されます ([RFC 9001 - 5.2. Initial Secrets](https://www.rfc-editor.org/rfc/rfc9001.html#section-5.2))。
 また、今回は暗号スイートに TLS_AES_128_GCM_SHA256 を使っていることを想定しているので、SHA256でHash.lengthは32、AES128-GCMでAEAD.key_lengthは16、AEAD.iv_lengthは12となります。
 補足ですが、AEADで ChaCha20-Poly1305 を使う場合は鍵長AEAD.key_lengthは32となるので注意が必要です。
@@ -311,7 +311,20 @@ Initial Packetにおいて、ヘッダー保護されている部分の情報は
 <figcaption>QUICパケットのヘッダ保護解除の流れ</figcaption>
 </figure>
 
-パケットのヘッダー保護を解除する図の流れをPythonで実装すると、次のようになります。
+暗号化ペイロードから一部分がサンプリングされて、マスクの作成に使われますが、この sample は以下の擬似Pythonコードで定義されています ([RFC 9001 - 5.4.2. Header Protection Sample](https://www.rfc-editor.org/rfc/rfc9001#section-5.4.2))。
+
+```
+pn_offset = 7 + len(destination_connection_id) + len(source_connection_id) +
+                len(payload_length)
+if packet_type == Initial:
+    pn_offset += len(token_length) + len(token)
+
+sample_offset = pn_offset + 4
+
+sample = packet[sample_offset..sample_offset+sample_length]
+```
+
+以上より、パケットのヘッダー保護を解除する図の流れをPythonで実装すると次のようになります。
 
 ```python
 def header_protection(long_packet: LongPacket, sc_hp_key) -> bytes:
@@ -325,7 +338,7 @@ def header_protection(long_packet: LongPacket, sc_hp_key) -> bytes:
         if PacketType(long_packet.flags.long_packet_type) == PacketType.INITIAL:
             pn_offset += len(bytes(long_packet.token))
 
-        sample_offset = pn_offset + 4  # パケット番号を含まない位置
+        sample_offset = pn_offset + 4  # パケット番号(最大4byte)を含まない位置から開始
 
         return pn_offset, sample_offset
 
@@ -375,7 +388,7 @@ print(hexdump(initial_packet_bytes))
 ```
 
 例のヘッダー保護されているLong Packetに対して、
-ヘッダー保護の解除をしたときのsampleとmaskのバイト列は次のようになります。
+ヘッダー保護の解除をするときのsampleとmaskのバイト列は次のようになります。
 
 ```
 sample:
@@ -384,7 +397,7 @@ mask:
 00000000: 43 7B 9A EC 36                                    C{..6
 ```
 
-また、Long Packetのヘッダー保護を解除して、データ構造を表すInitialPacketクラスに解析させて作成されたオブジェクトを確認すると、次のようになります。
+Long Packetのヘッダー保護を解除して、データ構造を表すInitialPacketクラスに解析させて作成されたオブジェクトを確認すると、次のようになります。
 ヘッダー保護でわからなかったパケット番号 (packet_number) が 0x00000002 のように正しく取得できている点に注目してください。
 
 ```
@@ -626,7 +639,7 @@ decrypted
 Cloudflareが公開しているHTTP/3のRust実装である[cloudflare/quiche](https://github.com/cloudflare/quiche)で通信したときのInitial Packetをバイト列にして自作したプログラムに渡しても正しく復号できました。そのときの結果をGistの [quic-packet-decrypt-result.txt](https://gist.github.com/tex2e/f12bb48c39f7d99903e91c8be1fee6ad) に乗せておきます。
 テストベクタが欲しい人はこちらもご覧ください。
 
-実験に使用したプログラムは Gist の [decrypt-quic-initail-packet.py](https://gist.github.com/tex2e/a5fd72c8a0c56f43d77bbfa446a820f1) と [metastruct.py, metatype.py, utils.py](https://gist.github.com/tex2e/a55cfe8f006799ff745dc888a0149183) に置いておきますので、参考にしてください。一部 TLS 1.3 の実装で使ったものが残っていて、今回の実験では使わなかった関数やクラスもありますので、適宜無視して読み進めてください。
+実験に使用したプログラムは Gist の [decrypt-quic-initial-packet.py](https://gist.github.com/tex2e/a5fd72c8a0c56f43d77bbfa446a820f1) と [metastruct.py, metatype.py, utils.py](https://gist.github.com/tex2e/a55cfe8f006799ff745dc888a0149183) に置いておきますので、参考にしてください。一部 TLS 1.3 の実装で使ったものが残っていて、今回の実験では使わなかった関数やクラスもありますので、適宜無視して読み進めてください。
 
 
 ### 参考文献
