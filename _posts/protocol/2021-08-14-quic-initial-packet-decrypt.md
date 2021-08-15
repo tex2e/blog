@@ -325,6 +325,7 @@ sample = packet[sample_offset..sample_offset+sample_length]
 ```
 
 以上より、パケットのヘッダー保護を解除する図の流れをPythonで実装すると次のようになります。
+なお、AES は ECB モードで行い、cryptographyライブラリを使用しました ([Cryptography - Symmetric encryption](https://cryptography.io/en/latest/hazmat/primitives/symmetric-encryption/#module-cryptography.hazmat.primitives.ciphers))。
 
 ```python
 def header_protection(long_packet: LongPacket, sc_hp_key) -> bytes:
@@ -446,6 +447,7 @@ AEADの暗号化・復号で必要な値は次の4つです。
 </figure>
 
 QUICパケットのペイロードを復号する図の流れをPythonで実装すると、次のようになります。
+なお、暗号化・復号には cryptographyライブラリのAESGCMを使用しました ([Cryptography - AESGCM](https://cryptography.io/en/latest/hazmat/primitives/aead/#cryptography.hazmat.primitives.ciphers.aead.AESGCM))。
 
 ```python
 packet_number = initial_packet.get_packet_number_int()
@@ -471,7 +473,7 @@ print('decrypted')
 print(hexdump(decrypted))
 ```
 
-例のInitialPacketを復号する際にAEADに入力する鍵、ナンス、AADは次の通りです。
+例のInitialPacketを復号する際にAEADに入力するパケット番号、ナンス、AADは次の通りです。
 
 ```
 packet_number:
@@ -631,7 +633,8 @@ decrypted
 00000060: 02 03 04                                          ...
 ```
 
-[RFC 9001 - A.3. Server Initial](https://www.rfc-editor.org/rfc/rfc9001.html#section-a.3) の暗号化前のACK FrameとCRYPTO Frameに一致していることが確認できます。
+[RFC 9001 - A.3. Server Initial](https://www.rfc-editor.org/rfc/rfc9001.html#section-a.3) の暗号化前の 0x02 から始まる ACK Frame と 0x06 から始まる CRYPTO Frame に一致していることが確認できます。
+以上より、QUICパケットのペイロードの復号ができるプログラムが完成しました。
 
 
 ### おわりに
