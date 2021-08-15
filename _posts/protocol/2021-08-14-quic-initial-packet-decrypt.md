@@ -343,7 +343,7 @@ def header_protection(long_packet: LongPacket, sc_hp_key) -> bytes:
 
         return pn_offset, sample_offset
 
-    pn_offset, sample_offset = get_np_offset_and_sample_offset(recv_packet)
+    pn_offset, sample_offset = get_np_offset_and_sample_offset(long_packet)
 
     sample_length = 16  # AESの鍵長
     # Sample取得
