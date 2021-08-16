@@ -646,6 +646,8 @@ Cloudflareが公開しているHTTP/3のRust実装である[cloudflare/quiche](h
 
 TLS 1.3 実装経験者としては、自作の [tex2e/mako-tls13](https://github.com/tex2e/mako-tls13) から TLS 1.3 関連の実装を全部持ってくれば、CRYPTO Frame内のTLS Messageも簡単に解析できるのではないかと思っているのですが、その辺の検証は次回にしたいと思います。
 
+- 次回：[QUIC の TLS ClientHello を解析する](./quic-tls-clienthello)
+
 
 ### 参考文献
 
