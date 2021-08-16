@@ -2,9 +2,9 @@
 layout:        post
 title:         "HTB easy (Linux): searchsploit > msf"
 date:          2021-05-25
-category:      Pentest
+category:      Security
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /pentest/htb-easy-lame
 comments:      true
 published:     true
 latex:         false

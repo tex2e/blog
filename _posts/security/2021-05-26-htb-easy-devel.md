@@ -2,9 +2,9 @@
 layout:        post
 title:         "HTB easy (Win): ftp > webshell > msf > recon"
 date:          2021-05-26
-category:      Pentest
+category:      Security
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /pentest/htb-easy-devel
 comments:      true
 published:     true
 latex:         false
