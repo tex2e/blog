@@ -235,13 +235,11 @@
     word-wrap: break-word;
 }
 
+// -----------------------------------------------------------------------------
+// My Custom CSS
 
-
-
-// my custom css
-
+// Image not draggable
 img {
-  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -257,4 +255,90 @@ img {
 // katex
 .kdmath {
   text-align: center;
+}
+
+// Book
+.single-book .post-content > h1,
+.single-book .post-content > h2,
+.single-book .post-content > h3,
+.single-book .post-content > h4,
+.single-book .post-content > h5,
+.single-book .post-content > h6,
+.single-book .post-content > p,
+.single-book .post-content > ul,
+.single-book .post-content > ol,
+.single-book .post-content > blockquote,
+.single-book .post-content .single-book-header,
+.single-book .post-content > table,
+.single-book .post-content > address,
+.single-book .post-content > article,
+.single-book .post-content > aside,
+.single-book .post-content > canvas,
+.single-book .post-content > dd,
+.single-book .post-content > dl,
+.single-book .post-content > fieldset,
+.single-book .post-content > figcaption,
+.single-book .post-content > figure,
+.single-book .post-content > footer,
+.single-book .post-content > form,
+.single-book .post-content > header,
+.single-book .post-content > hgroup,
+.single-book .post-content > li,
+.single-book .post-content > main,
+.single-book .post-content > nav,
+.single-book .post-content > noscript,
+.single-book .post-content > output,
+.single-book .post-content > section,
+.single-book .post-content > tfoot,
+.single-book .post-content > video,
+.single-book .post-content > iframe,
+.single-book .post-content > .tip {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+.single-book h1.book-section-title {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.single-book li {
+    margin: 0;
+}
+.single-book p,
+.single-book ul,
+.single-book ol,
+.single-book dl {
+    margin: 0 0 1.0em 0;
+}
+.single-book .post-content {
+    font-size: 14px;
+}
+.single-book h1,
+.single-book h2,
+.single-book h3,
+.single-book h4,
+.single-book h5,
+.single-book h6 {
+    margin: 2.0rem 0 .5em 0;
+}
+.single-book figure {
+    text-align: center;
+}
+// .single-book .post-content img {
+//     cursor: inherit;
+// }
+.single-book pre code {
+    display: block;
+    font-size: 90%;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+.single-book :not(pre) > code {
+    font-size: 90%;
+}
+.single-book span.katex-html {
+    font-size: 95%;
 }

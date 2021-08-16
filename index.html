@@ -2,22 +2,6 @@
 layout: default
 ---
 
-<!-- Navbar sidebar -->
-<nav class="toppage-nav">
-  <ul>
-    {%- assign sorted_cats = site.categories | sort -%}
-    {%- for category in sorted_cats -%}
-    <li class="toppage-navli">
-      <a href="#{{ category[0] | uri_escape | downcase | slugify }}">
-        <span class="nav-dot"></span>
-        <span class="nav-label" data-target="{{ category[0] | uri_escape | downcase | slugify }}">{{ category[0] | camelcase }}</span>
-      </a>
-    </li>
-    {%- endfor -%}
-  </ul>
-</nav>
-
-
 <div id="content" class="content">
 
 <ul class="category recent-posts">
@@ -72,10 +56,25 @@ layout: default
 </div><!-- end #content -->
 
 
+<!-- Navbar sidebar -->
+<nav class="toppage-nav">
+  <ul>
+    {%- assign sorted_cats = site.categories | sort -%}
+    {%- for category in sorted_cats -%}
+    <li class="toppage-navli">
+      <a href="#{{ category[0] | uri_escape | downcase | slugify }}">
+        <span class="nav-dot"></span>
+        <span class="nav-label" data-target="{{ category[0] | uri_escape | downcase | slugify }}">{{ category[0] | camelcase }}</span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</nav>
+
 <script>
   /* --- Navbar sidebar ----------------------------------------------------- */
-  const SHOW_NAV_SCROLLTOP = 100;
-  const SHOW_NAVDOT_MARGIN = 80
+  const SHOW_NAV_SCROLLTOP = 200; // ナビゲーションを表示する境界値
+  const SHOW_NAVDOT_MARGIN = 80;  // ドットを大きくする境界値
   function renderNavbarSidebar() {
     const nav = document.querySelector('nav.toppage-nav');
     const scrollTop = document.documentElement.scrollTop;
