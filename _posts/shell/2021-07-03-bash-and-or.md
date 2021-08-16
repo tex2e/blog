@@ -35,10 +35,23 @@ if [ "$1" = "-h" -o "$1" = "--help" ]; then
     # 引数が -h または --help のとき
 fi
 
-if [ "$1" = "run" -a "$2" != "" ] \
-    || [ "$1" = "setup" -o "$1" = "init" ]; then
+if [ "$1" = "run" -a "$2" != "" ] || [ "$1" = "setup" -o "$1" = "init" ]; then
     # 引数が run PARAM または setup または init のとき
 fi
 ```
+
+### 追記
+
+「[シェルスクリプトの \[ -a (AND) と -o (OR) \] は非推奨だかんね - Qiita](https://qiita.com/ko1nksm/items/6201b2ce47f4d6126521)」によると、-a と -o は非推奨らしいです。
+複雑な条件文を使いたい場合は `{ }` を使って優先順位を指定します。
+
+```bash
+if { [ "$1" = "run" ] && [ "$2" != "" ] } || { [ "$1" = "setup" ] || [ "$1" = "init" ] }; then
+    # 引数が run PARAM または setup または init のとき
+fi
+```
+
+
+
 
 以上です。
