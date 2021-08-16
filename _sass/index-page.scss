@@ -93,6 +93,7 @@ nav .nav-dot {
     transition: all 0.3s;
 }
 nav .nav-dot.active {
+    top: 30%;
     width: 6px;
     height: 6px;
     background-color: rgb(36, 141, 43);
