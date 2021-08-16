@@ -24,3 +24,5 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
 - **tex2eq(a)gmail.com** へメールする
 - ページ最下部の「View Comments...」から**Disqus**でコメント投稿する
 - Twitterで @tex2e 宛てにDMを送信する
+
+<br>
