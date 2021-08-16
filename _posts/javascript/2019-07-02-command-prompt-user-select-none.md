@@ -1,11 +1,14 @@
 ---
 layout:        post
-title:         "Webページでコマンド例の「$」の部分をコピペさせない"
+title:         "コマンド例の「$」の部分をコピペさせない"
+menutitle:     "Webページでコマンド例の「$」の部分をコピペさせない"
 date:          2019-07-02
-category:      Misc
+category:      Javascript
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from: /blog/command-prompt-user-select-none
+redirect_from: 
+  - /blog/command-prompt-user-select-none
+  - /misc/command-prompt-user-select-none
 comments:      true
 published:     true
 ---

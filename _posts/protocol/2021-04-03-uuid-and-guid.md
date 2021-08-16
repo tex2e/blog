@@ -2,9 +2,9 @@
 layout:        post
 title:         "UUID (GUID) とは"
 date:          2021-04-03
-category:      Misc
+category:      Protocol
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/uuid-and-guid
 comments:      true
 published:     true
 latex:         false

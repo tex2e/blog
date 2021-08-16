@@ -3,10 +3,10 @@ layout:        post
 title:         "英語の文法のメモ"
 menutitle:     "英語の文法のメモ（自分用）"
 date:          2019-03-01
-category:      Misc
+category:      English
 author:        tex2e
 cover:         /assets/cover2.jpg
-redirect_from:
+redirect_from: /misc/english-grammar-memo
 comments:      true
 published:     true
 ---

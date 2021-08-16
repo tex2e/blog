@@ -1,10 +1,10 @@
 ---
 layout:        post
-title:         "排他的な範囲コメントで片方のコードのみを有効にする"
+title:         "C言語風の範囲コメントで排他的に片方のコードのみを有効にする"
 date:          2020-05-29
-category:      Misc
+category:      C
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/block-comment
 comments:      true
 published:     true
 latex:         false
