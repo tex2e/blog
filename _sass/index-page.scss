@@ -48,7 +48,6 @@ h3.category-title {
 
 // Navigation
 nav {
-    // visibility: hidden;
     // display: none;
     opacity: 1;
     position: fixed;
@@ -59,11 +58,6 @@ nav {
             transform: translateY(-50%);
     text-align: right;
     z-index: 100;
-    // -webkit-transition: all 0.3s;
-    // -moz-transition: all 0.3s;
-    // -ms-transition: all 0.3s;
-    // -o-transition: all 0.3s;
-    // transition: all 0.3s;
 }
 nav.active {
     opacity: 0;
@@ -96,6 +90,7 @@ nav .nav-dot {
     top: 50%;
     background-color: rgba(50, 50, 50, 0.9);
     border-radius: 100%;
+    transition: all 0.3s;
 }
 nav .nav-dot.active {
     width: 6px;
@@ -116,7 +111,6 @@ nav li {
     width: auto;
     list-style: none;
 }
-
 @media screen and (max-width:850px) {
     nav {
         visibility: hidden;
