@@ -1,17 +1,17 @@
 ---
 layout:        post
-title:         "Map Filter Reduce in Perl6"
-menutitle:     "Map Filter Reduce in Perl6"
+title:         "Map Filter Reduce in Perl6 (Raku)"
+menutitle:     "Map Filter Reduce in Perl6 (Raku)"
 date:          2017-03-06
-category:      Perl6
+category:      Raku
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /perl6/map-filter-reduce
 comments:      true
 published:     true
 ---
 
-関数型言語の三種の神器である Map, Filter, Reduce を Perl6 で行う方法。
+関数型言語の三種の神器である Map, Filter, Reduce を Perl6 (Raku) で行う方法。
 
 Map: map
 ----------------

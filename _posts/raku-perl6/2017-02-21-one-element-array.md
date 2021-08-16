@@ -1,17 +1,17 @@
 ---
 layout:        post
-title:         "Perl6 要素が一つの配列"
-menutitle:     "Perl6 要素が一つの配列の作り方"
+title:         "Perl6 (Raku) で要素が一つの配列の作り方"
+menutitle:     "Perl6 (Raku) で要素が一つの配列の作り方"
 date:          2017-02-21
-category:      Perl6
+category:      Raku
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /perl6/one-element-array
 comments:      false
-published:     true # set to be true
+published:     true
 ---
 
-Perl6 で要素が一つの配列（特にハッシュの配列または配列の配列）を定義しようとしたときに、Rubyのように書いていたらつまづいたので、ここにメモします。
+Perl6 (Raku) で要素が一つの配列（特にハッシュの配列または配列の配列）を定義しようとしたときに、Rubyのように書いていたらつまづいたので、ここにメモします。
 
 
 よくやるパターン

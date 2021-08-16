@@ -1,12 +1,12 @@
 ---
 layout:        post
-title:         "Perl6 で LaTeX 文章の構文解析をする"
-menutitle:     "Perl6 で LaTeX 文章の構文解析をする"
+title:         "Perl6 (Raku) で LaTeX 文章の構文解析をする"
+menutitle:     "Perl6 (Raku) で LaTeX 文章の構文解析をする"
 date:          2017-03-05
-category:      Perl6
+category:      Raku
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /perl6/latex-parser
 comments:      false
 published:     true
 ---
@@ -14,7 +14,7 @@ published:     true
 Grammar による構文解析
 ----------------------
 
-Perl6 では新しい機能として Grammar が導入されたので、ちょっと遊んでみた。
+Perl6 (Raku) では新しい機能として Grammar が導入されたので、ちょっと遊んでみました。
 
 例えば、LaTeX は
 
