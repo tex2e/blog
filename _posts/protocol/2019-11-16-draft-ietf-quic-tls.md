@@ -12,7 +12,7 @@ published:     true
 # draft:   true
 ---
 
-[Using TLS to Secure QUIC](https://quicwg.org/base-drafts/boilerplate/draft-ietf-quic-tls.html) を読んで要点だけをまとめた自分用の資料です。
+[Using TLS to Secure QUIC](https://www.rfc-editor.org/rfc/rfc9001.html) を読んで要点だけをまとめた自分用の資料です。
 読んでいる時点では draft-24 です。
 
 ## Using TLS to Secure QUIC
