@@ -1,13 +1,19 @@
 
-<script src="{{ site.baseurl }}/js/jquery-1.12.0.min.js"></script>
+<!-- <script src="{{ site.baseurl }}/js/jquery-1.12.0.min.js"></script> -->
 <!-- <script src="{{ site.baseurl }}/js/jquery.fitvids.js"></script> -->
+
+<!-- Syntax Highlight -->
 {% if page.syntaxhighlight != false %}
 <script src="{{ site.baseurl }}/js/prism.js"></script>
 {% endif %}
+
+<!-- Photo Swipe -->
 {% if page.photoswipe %}
 <script src="{{ site.baseurl }}/js/photoswipe.js"></script>
 <script src="{{ site.baseurl }}/js/photoswipe-ui-default.js"></script>
 {% endif %}
+
+<!-- Main -->
 <script src="{{ site.baseurl }}/js/post.js"></script>
 
 <!-- Disqus -->
@@ -20,13 +26,12 @@
 <!-- Prism -->
 {% if page.syntaxhighlight != false %}
 <script type="text/javascript">
-  Prism.languages.bash.prompt = /^\$ /m; // 字句解析でPromptの部分もtokenにする
-
+  Prism.languages.bash.prompt = /^\$ /m; // Bashの字句解析でPromptの部分「$」もtokenにする
   Prism.languages.vb = Prism.languages.vbnet; // Markdownで言語を「vb」としたときに、Prism.jsの「vbnet」を適用する
 </script>
 
 <style>
-  /* Propmtの部分は選択できないように（コピーしないように）する */
+  /* Propmtの部分「$」は選択・コピーできないようにする */
   .token.prompt {
     user-select: none;
   }

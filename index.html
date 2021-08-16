@@ -2,6 +2,22 @@
 layout: default
 ---
 
+<!-- Navbar sidebar -->
+<nav class="toppage-nav">
+  <ul>
+    {%- assign sorted_cats = site.categories | sort -%}
+    {%- for category in sorted_cats -%}
+    <li class="toppage-navli">
+      <a href="#{{ category[0] | uri_escape | downcase | slugify }}">
+        <span class="nav-dot"></span>
+        <span class="nav-label" data-target="{{ category[0] | uri_escape | downcase | slugify }}">{{ category[0] | camelcase }}</span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</nav>
+
+
 <div id="content" class="content">
 
 <ul class="category recent-posts">
@@ -54,3 +70,37 @@ layout: default
 {%- endfor -%}
 
 </div><!-- end #content -->
+
+
+<script>
+  /* --- Navbar sidebar ----------------------------------------------------- */
+  const SHOW_NAV_SCROLLTOP = 100;
+  const SHOW_NAVDOT_MARGIN = 80
+  function renderNavbarSidebar() {
+    const nav = document.querySelector('nav.toppage-nav');
+    const scrollTop = document.documentElement.scrollTop;
+    if (scrollTop < SHOW_NAV_SCROLLTOP) {
+      nav.classList.add('active');
+    } else {
+      nav.classList.remove('active');
+    }
+    const lis = document.querySelectorAll('li.toppage-navli');
+    lis.forEach(function (li) {
+      const navdot = li.querySelector('.nav-dot');
+      const navlabel = li.querySelector('.nav-label');
+      const li_category = document.querySelector('.category.' + navlabel.dataset.target);
+      const rect = li_category.getBoundingClientRect();
+      const isInView = (0 < rect.bottom - SHOW_NAVDOT_MARGIN && 
+                            rect.top + SHOW_NAVDOT_MARGIN < window.innerHeight);
+      if (isInView) {
+        navdot.classList.add('active');
+      } else {
+        navdot.classList.remove('active');
+      }
+    });
+  }
+  renderNavbarSidebar();
+  window.addEventListener('scroll', renderNavbarSidebar);
+  const nav = document.querySelector('nav.toppage-nav');
+  nav.style.transition = 'all 0.3s'
+</script>
