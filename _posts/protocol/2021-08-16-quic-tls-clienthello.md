@@ -263,6 +263,8 @@ List<lambda>:
   + frame_content: Padding[917]
 ```
 
+#### QUIC Transport Parameters Extension
+
 ClientHelloのTLS拡張の中に一つだけ ExtensionType.unknown (0x0039) となっている拡張があります。
 この拡張は未実装のために unknown と表示されてしまいました。
 これは、QUICが独自に定義しているTLS拡張 quic_transport_parameters で、QUICの通信で使用するパラメータを相手に送信するために使います。
