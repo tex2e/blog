@@ -17,7 +17,7 @@ syntaxhighlight: true
 CompTIA Security+の出題範囲に現れる用語の一覧とその用語の説明です。
 試験の出題範囲の詳細は「SY0-501 出題範囲 (pdf)」をご確認ください。
 
-https://www.comptia.jp/pdf/Security%2B%20SY0-501%20Exam%20Objectives_JA.pdf
+`https://www.comptia.jp/pdf/Security%2B%20SY0-501%20Exam%20Objectives_JA.pdf`
 
 あくまで備忘録程度のまとめですので、内容の正確性は保証しませんのでご注意ください。
 

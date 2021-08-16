@@ -12,7 +12,7 @@ published:     true
 # draft:   true
 ---
 
-[QUIC: A UDP-Based Multiplexed and Secure Transport](https://quicwg.org/base-drafts/boilerplate/draft-ietf-quic-transport.html) を読んで要点だけをまとめた自分用の資料です。
+[QUIC: A UDP-Based Multiplexed and Secure Transport](https://www.rfc-editor.org/rfc/rfc9000.html) を読んで要点だけをまとめた自分用の資料です。
 読んでいる時点では draft-24 です。
 
 
@@ -65,9 +65,9 @@ QUIC: UDPに基づく多重化・セキュアなトランスポート層のプ�
   - 第19章 : フレーム
   - 第20章 : エラー
 - 付随するドキュメント
-  - [QUIC-RECOVERY](https://quicwg.org/base-drafts/boilerplate/draft-ietf-quic-transport.html#QUIC-RECOVERY) : QUICの損失検出と輻輳制御について
-  - [QUIC-TLS](https://quicwg.org/base-drafts/boilerplate/draft-ietf-quic-transport.html#QUIC-TLS) : TLSによる鍵交換について
-  - [QUIC-INVARIANTS](https://quicwg.org/base-drafts/boilerplate/draft-ietf-quic-transport.html#QUIC-INVARIANTS) : QUICの一般的な特性について
+  - [QUIC-RECOVERY](https://www.rfc-editor.org/rfc/rfc9002.html) : QUICの損失検出と輻輳制御について
+  - [QUIC-TLS](https://www.rfc-editor.org/rfc/rfc9001.html) : TLSによる鍵交換について
+  - [QUIC-INVARIANTS](https://www.rfc-editor.org/info/rfc8999) : QUICの一般的な特性について
 
 #### 1.2. 用語と定義
 
@@ -336,7 +336,7 @@ QUIC: UDPに基づく多重化・セキュアなトランスポート層のプ�
 #### 4.5. 並列性の制御
 
 - エンドポイントは、相手が開くことのできるストリーム数を制限する
-- (ストリームの最大数 * 4 + タイプの初期ストリームID) 未満のストリームIDを持つストリームのみを開くことができる ([表5](https://quicwg.org/base-drafts/boilerplate/draft-ietf-quic-transport.html#long-packet-types)参照)
+- (ストリームの最大数 * 4 + タイプの初期ストリームID) 未満のストリームIDを持つストリームのみを開くことができる
 - 初期の制限はトランスポートパラメータで設定され、MAX_STREAMS で通知される
 - 単方向と双方向では別の制限が適用される
 - max_streams トランスポートパラメータや受信した MAX_STREAMS が 2^60 より大きい場合は、可変長整数で表現できない最大ストリームIDが許可されるので、どちらかを受信した場合は STREAM_LIMIT_ERROR エラーですぐに閉じなければならない (MUST)
@@ -452,7 +452,7 @@ QUIC: UDPに基づく多重化・セキュアなトランスポート層のプ�
 
 - QUICは暗号化とトランスポートハンドシェイクを組み合わせ、接続確立の遅延を最小限にする
 - QUICは CRYPTO フレームで暗号化ハンドシェイクを送信する
-- バージョン 0x00000001 では、[QUIC-TLS](https://quicwg.org/base-drafts/boilerplate/draft-ietf-quic-tls.html) で説明されている TLS を使用する
+- バージョン 0x00000001 では、[QUIC-TLS](https://www.rfc-editor.org/rfc/rfc9001.html) で説明されている TLS を使用する
 - 異なるQUICバージョンでは、異なる暗号化ハンドシェイクプロトコルが使用されている可能性がある
 - QUICは暗号化ハンドシェイクデータを信頼性が高く、正しい順序で送信する
 - QUICパケット保護では、次の機能を提供する
