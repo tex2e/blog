@@ -2,7 +2,7 @@
 layout:        post
 title:         "sleep関数"
 date:          2016-06-16
-category:      Javascript
+category:      JavaScript
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:

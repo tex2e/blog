@@ -11,6 +11,8 @@ cover="cover1"
 
 # Set category of article.
 case $1 in
+  javascript )
+    category="JavaScript" ;;
   latex )
     category="LaTeX" ;;
   vb.net )

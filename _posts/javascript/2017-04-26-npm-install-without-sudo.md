@@ -2,7 +2,7 @@
 layout:        post
 title:         "npm install without sudo"
 date:          2017-04-26
-category:      Javascript
+category:      JavaScript
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:

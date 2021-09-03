@@ -2,7 +2,7 @@
 layout:        post
 title:         "WebAssemblyで32bit整数配列をC言語で処理する"
 date:          2020-08-09
-category:      Javascript
+category:      JavaScript
 cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true

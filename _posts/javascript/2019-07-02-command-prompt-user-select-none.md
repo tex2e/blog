@@ -3,7 +3,7 @@ layout:        post
 title:         "コマンド例の「$」の部分をコピペさせない"
 menutitle:     "Webページでコマンド例の「$」の部分をコピペさせない"
 date:          2019-07-02
-category:      Javascript
+category:      JavaScript
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from: 

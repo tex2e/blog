@@ -2,7 +2,7 @@
 layout:        post
 title:         "Vue.js 入門"
 date:          2021-03-13
-category:      Javascript
+category:      JavaScript
 cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true
