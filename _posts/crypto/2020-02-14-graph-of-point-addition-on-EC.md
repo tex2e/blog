@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "楕円曲線上の加算のグラフ作成"
+title:         "楕円曲線上の加算・2倍算のグラフを作成する"
 date:          2020-02-14
 category:      Crypto
 cover:         /assets/cover4.jpg
@@ -8,13 +8,32 @@ redirect_from:
 comments:      true
 published:     true
 photoswipe:    true
+latex:         true
 # sitemap: false
 # draft:   true
 ---
 
 SageMath で楕円曲線を描いて、その上で楕円曲線上の加算の様子をグラフ (画像) にする方法について説明します。
+加算や2倍算がどのように行われているかを説明するときに便利です。
 
-まず、SageMathを起動して、notebookを起動します。
+楕円曲線の式を点集合を直接プログラムに直書きして、「evaluate」ボタンを押すと、以下のようなセレクターとグラフ画像が出力されます。
+
+点 $P$ と $Q$ の楕円曲線 $E$ 上の加算は、直線 $PQ$ と曲線 $E$ の交点をもとめて、その座標をx軸で折り返した点が $P + Q$ です。
+
+<figure>
+<img src="{{ site.baseurl }}/media/post/crypto/point-addition-on-EC-1.png" />
+<figcaption>楕円曲線上の加算のグラフ</figcaption>
+</figure>
+
+点 $P$ の楕円曲線上での2倍算は、曲線 $E$ の点 $P$ における接線と曲線 $E$ の交点をもとめて、その座標をx軸で折り返した点が $P + P = 2P$ です。
+2倍算のグラフも以下のように正しく描画できています。
+
+<figure>
+<img src="{{ site.baseurl }}/media/post/crypto/point-addition-on-EC-2.png" />
+<figcaption>楕円曲線上の2倍算のグラフ</figcaption>
+</figure>
+
+グラフの作り方は、まずSageMathを起動して、notebookを起動します。
 
 ```bash
 $ sage
@@ -148,12 +167,9 @@ def line_from_curve_points(E, P, Q, style='-', rgb=(1, 0, 0), length=25):
                     linestyle=style, rgbcolor=rgb)
 ```
 
-入力して「evaluate」ボタンを押すと、以下のようなセレクターとグラフ画像が出力されます。
+入力して「evaluate」ボタンを押すと、セレクターとグラフ画像が出力されます。
 
-![楕円曲線上の加算のグラフ](/blog/media/post/crypto/point-addition-on-EC-1.png)
-
-楕円曲線上での2倍算も正しく出力できます。
-
-![楕円曲線上の2倍算のグラフ](/blog/media/post/crypto/point-addition-on-EC-2.png)
+実数体上の楕円曲線の式をいろいろ変えてみると面白いかもしれません。
+自分で試してみましょう！
 
 以上です。
