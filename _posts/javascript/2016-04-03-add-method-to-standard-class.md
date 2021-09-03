@@ -2,7 +2,7 @@
 layout:        post
 title:         "JSでRubyの .times .upto .downto メソッドを作る"
 date:          2016-04-03
-category:      Javascript
+category:      JavaScript
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:

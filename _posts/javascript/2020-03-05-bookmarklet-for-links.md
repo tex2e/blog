@@ -2,7 +2,7 @@
 layout:        post
 title:         "Markdown/HTML用のリンクを作るbookmarklet"
 date:          2020-04-25
-category:      Javascript
+category:      JavaScript
 cover:         /assets/cover1.jpg
 redirect_from:
   - /misc/bookmarklet-for-markdown-link

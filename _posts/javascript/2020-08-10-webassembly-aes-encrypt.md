@@ -3,7 +3,7 @@ layout:        post
 title:         "WebAssemblyでAES暗号"
 menutitle:     "WebAssemblyでAES暗号 (+CryptoJSと実行速度比較)"
 date:          2020-08-10
-category:      Javascript
+category:      JavaScript
 cover:         /assets/cover1.jpg
 redirect_from:
 comments:      true

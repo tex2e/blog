@@ -2,7 +2,7 @@
 layout:        post
 title:         "node.js の EventEmitter をブラウザで使う"
 date:          2016-09-25
-category:      Javascript
+category:      JavaScript
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:
