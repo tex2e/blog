@@ -167,3 +167,8 @@ QUIC IETF
 ```
 
 以上です。
+
+#### 参考文献
+
+- [n月刊ラムダノート Vol.2, No.1(2020) – 技術書出版と販売のラムダノート: #1 パケットの設計から見るQUIC（西田佳史）](https://www.lambdanote.com/collections/frontpage/products/nmonthly-vol-2-no-1-2020)
+- [RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport](https://www.rfc-editor.org/rfc/rfc9000)
