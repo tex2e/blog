@@ -6,11 +6,11 @@ category:      Ruby
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:
-comments:      false
+comments:      true
 published:     true
 ---
 
-配列を返すメソッドをブロックも受け付けるように拡張する方法について。
+Rubyで配列を返すメソッドをブロックも受け付けるように拡張する方法について説明します。
 
 
 問題
@@ -51,8 +51,7 @@ end
 block_given?, yield
 --------------------
 
-さて、Ruby には Kernel#block_given? というメソッドがあり、
-関数にブロックが渡されると、true を返す。
+Ruby には Kernel#block_given? というメソッドがあり、関数にブロックが渡されると、true を返す。
 yield というキーワードは、与えられたブロックに対して引数を渡す。
 
 これらを使って、例の sort_array を再実装すると次のようになる。
@@ -125,3 +124,5 @@ end
 # >> Dave
 # => ['Alice', 'Carol', 'Bob', 'Dave']
 ```
+
+以上です。
