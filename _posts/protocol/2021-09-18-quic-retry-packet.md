@@ -32,8 +32,8 @@ Retry Packet を受信したクライアントは、宛先コネクションID�
 
 [RFC 9000 - Figure 9: Example Handshake with Retry](https://www.rfc-editor.org/rfc/rfc9000#fig-retry) に書かれている、サーバがRetryパケットを送信する際のハンドシェイクの流れが以下の図になります。
 左側がクライアント、右側がサーバです。
-Initial[0] はパケット番号が「0」のInitial Packetを送信することを意味しており、その後ろの CRYPTO[CH] はペイロードがTLSメッセージのClientHello(CH)を含むCRYPTOフレームであることを表しています。
-Initial+Token[1] はパケット番号が「1」のInitial Packetでトークンが含まれていることを表しています。
+Initial[0] はパケット番号が「1」のInitial Packetを送信することを意味しており、その後ろの CRYPTO[CH] はペイロードがTLSメッセージのClientHello(CH)を含むCRYPTOフレームであることを表しています。
+Initial+Token[1] はパケット番号が「2」のInitial Packetでトークンが含まれていることを表しています。
 
 ```fig
 Client                                                  Server
@@ -58,7 +58,7 @@ Initial+Token[1]: CRYPTO[CH] ->
 
 Retry時のハンドシェイクをパケットキャプチャした結果の抜粋を以下に示しました。
 
-`Initial[0]: CRYPTO[CH] ->` ではパケット番号「0」で Initial Packet を送信します。
+`Initial[0]: CRYPTO[CH] ->` ではパケット番号「1」で Initial Packet を送信します。
 
 ```output
 # Initial[0]: CRYPTO[CH]
@@ -122,7 +122,7 @@ QUIC IETF
 ```
 
 `Initial+Token[1]: CRYPTO[CH] ->` では受信したサーバの送信元コネクションIDを宛先コネクションID (Destination Connection ID) に格納し、受信したRetry Tokenをトークン (Token) に格納して再送信します。
-ペイロードの中身は1回目と同じです。
+ペイロードの中身は1回目と同じです。パケット番号は1つ増えて「2」になります。
 
 ```output
 Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
