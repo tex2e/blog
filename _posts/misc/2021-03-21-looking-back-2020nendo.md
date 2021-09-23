@@ -74,8 +74,8 @@ JavaScript はどのブラウザまでをサポートするか開発時に明示
 3月、人事部から、来年度から職場が変わってもいいか、セキュリティの仕事（研修出向）があるけどやりたいかと聞かれ、
 特に断る理由もないので承諾しました。
 
-まとめると、全体を通してWindowsの年でした。.NET Framework, Visual C++, MFC, Visual Studio, MSBuild, devenv, exe, dll, GAC, IIS, DCOM, ClickOnce, Excel VBA, Batch, VBScript, PowerShell, Hyper-V あたりは初めて見る・触る技術でいろいろ勉強になりました。
-セキュリティの道を歩くにしてもWindowsの知識は必要なので、いい勉強になりました。今では AutoHotkey と Keypirinha が使いやすくて、MacOSに戻れない体になってしまいました。
-MacOSは今ではElasticSearchが動くだけのサーバと化しています。
+まとめると、全体を通してWindowsの年でした。.NET Framework, Visual C++, MFC, Visual Studio, MSBuild, devenv, exe, dll, GAC, IIS, DCOM, ClickOnce, Excel VBA, Batch, VBScript, PowerShell, Hyper-V あたりは初めて見る・触る技術でいろいろ勉強になりました (Silverlight、お前も忘れてないぞ)。
+会社の技術的には残念な部分が多く目立ちますが、セキュリティの道を歩くにしてもWindowsの知識は必要なので、いい勉強になりました。今では AutoHotkey と Keypirinha が使いやすくて、MacOSに戻れない体になってしまいました。
+<!-- MacOSは今ではElasticSearchが動くだけのサーバと化しています。 -->
 
 来年度はやることが一気に変わると思いますが、来年度も引き続き、面白そうなところに足を突っ込んでいきたいと思います。
