@@ -424,14 +424,15 @@ InitialPacket:
 ヘッダー保護が解除できたことでパケット番号がわかるため、続いてペイロードの復号ができるようになります。
 ペイロードは複数のフレーム ([RFC 9000 - 12.4. Frames and Frame Types](https://www.rfc-editor.org/rfc/rfc9000#section-12.4)) を含めることができます。フレームは種類とデータから構成されます。フレーム種類には ACKフレームは 0x02、TLSの暗号化通信に関連するフレームは 0x06、パディングフレームは 0x00 などがあります。
 
-ペイロードはAEADで暗号化されます。[RFC 9001 - 5.4.1. Header Protection Application](https://www.rfc-editor.org/rfc/rfc9001#section-5.4.1) ではQUICペイロードの暗号化に以下の4つのAEADアルゴリズムについて書かれています。
+ペイロードはAEADで暗号化されます。QUICペイロードの暗号化に以下の4つのAEADアルゴリズムが使われます。
 
 - AEAD_AES_128_GCM
 - AEAD_AES_256_GCM
 - AEAD_AES_128_CCM
 - AEAD_CHACHA20_POLY1305
 
-今回は AEAD_AES_128_GCM で暗号化されていることを想定して、ペイロードを復号します。
+しかし、どの暗号スイートを使用するかは TLS ハンドシェイク後に決定するため、TLS ハンドシェイク前に送信する Initial Packet や Retry Packet は固定で AEAD_AES_128_GCM を使用することになっています ([RFC 9001 - 5. Packet Protection](https://www.rfc-editor.org/rfc/rfc9001#section-5))。
+なので、ペイロードを AEAD_AES_128_GCM で復号します。
 AEADの暗号化・復号で必要な値は次の4つです。
 
 - ペイロード / 暗号化ペイロード : AEADへ入力する平文 / 暗号文
