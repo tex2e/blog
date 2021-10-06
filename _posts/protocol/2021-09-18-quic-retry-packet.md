@@ -28,6 +28,8 @@ QUICではコネクションIDと呼ばれる識別子でコネクションを�
 Retry Packet にはサーバ側の「送信元コネクションID」と認証のために使われる「トークン」が含まれています。
 Retry Packet を受信したクライアントは、宛先コネクションIDとしてサーバ側の送信元コネクションIDを使用し、Retry Packetに含まれているトークンを Initial Packet に含めてペイロードを再送信します。
 
+コネクションIDの認証について、サーバがRetryパケットを送信するときの詳細な説明は [RFC 9000 - 7.3. Authenticating Connection IDs](https://www.rfc-editor.org/rfc/rfc9000.html#section-7.3) に書かれています。
+
 #### Retry時のハンドシェイクの流れ
 
 [RFC 9000 - Figure 9: Example Handshake with Retry](https://www.rfc-editor.org/rfc/rfc9000#fig-retry) に書かれている、サーバがRetryパケットを送信する際のハンドシェイクの流れが以下の図になります。
