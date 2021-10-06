@@ -38,6 +38,8 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 少なくとも | at least, at the very least
 | 前者は | for the former
 | 後者は | for the latter
+| 比較的 | relatively
+| 比較して言えば | relatively speaking
 
 
 原因・結果
@@ -68,7 +70,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 言い換えれば | that is, or, in other words, i.e., I mean, this means
 | 概して | generally, in general, generally speaking, overall, all in all, <br>on/as the whole, altogether, by and large（話）
 | 結局 | after all, in the end, eventually, in the event, finally, lastly, <br>at the end of the day（話）
-| やっと | at last, at length, eventually, finally
+| やっと・ついに | at last, at length, eventually, finally
 | 一般的に | in general, generally, usually, most commonly, on average
 | 普通は | usually, normally, commonly
 | 規範的に | canonically
@@ -241,6 +243,11 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 〜かどうか | whether
 | それによって〜する | whereby
 | 〜でなければ | without（米）-> unless
+| 個人的に | personally
+| 事実上・実際には | practically
+| 統計的に | statistically
+| 厳密には | technically
+| 大体 | roughly
 | 厳密に言えば | strictly speaking
 | 個人的に言えば | personally speaking
 | 現実的に言えば | practically speaking
@@ -263,7 +270,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | いつものように | as always
 | 一見すると〜 | at a glance
 | ある意味で | in a way, in a sense, in the way, in the sense
-| 願わくば | hopefully
+| 希望としては | hopefully
 | ありがたいことに | thankfully
 | 幸運にも | fortunately, happily, luckily
 | あいにく | unfortunately, unhappily, sadly
@@ -287,7 +294,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | はるかに、圧倒的に | by far
 | 長い目で見れば | in the long run
 | 目先の計算では | in the short run
-| なるべく | preferably
+| なるべく・できれば | preferably
 | デフォルトでは | by default
 | オプションで | optionally
 | 便宜上 | for convenience
@@ -312,7 +319,11 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 興味深いことに | interestingly
 | 些細なことだが | trivially
 | 〜かどうかによる | depend on/upon whether
-| 皮肉にも | Ironically
+| 皮肉にも | ironically
+| 仮に | hypothetically
+| 意外にも | surprisingly
+| 理想的には | ideally
+| 真面目な話をすると | seriously（話）
 
 
 <br>
