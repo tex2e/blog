@@ -3,7 +3,7 @@ layout:        post
 title:         "QUIC の Initial Packet を暗号化する"
 date:          2021-09-10
 category:      Protocol
-cover:         /assets/cover4.jpg
+cover:         /assets/cover5.jpg
 redirect_from:
 comments:      true
 published:     true
@@ -14,7 +14,7 @@ syntaxhighlight: true
 # feed:    false
 ---
 
-QUICパケットでTLSメッセージを運ぶ Initial Packet を暗号化するまでの処理をPythonで実装しつつ説明していきたいと思います。
+QUICパケットでTLSメッセージを運ぶ Initial Packet を**暗号化**するまでの処理をPythonで実装しつつ説明していきたいと思います。
 
 本記事は、前回の「[QUIC の Initial Packet を復号する](./quic-initial-packet-decrypt)」の続きとなります。
 前回は、Pythonで暗号化されたQUICのペイロードを復号する実装を行いました。
@@ -149,6 +149,15 @@ plaintext_payload_bytes = plaintext_payload_bytes_orig + bytes.fromhex("00" * pa
 
 ペイロードにパディングを追加したらペイロード長も決定するので、Initial Packet のインスタンス化時に null を設定していた部分を埋めていきます。
 
+平文を暗号化する前に、認証付き暗号(AEAD)に入力するAAD(追加の認証データ)には、暗号化した後のペイロードの長さ(bytes)を使用するため、これを計算によって求める必要があります。
+必要な情報は以下の2つです。
+
+* Initial Packet のQUIC暗号化はハンドシェイク前なので AEAD_AES_128_GCM しか使えません。よって、AEADで暗号化したデータには16byteの認証タグが末尾に付加されます。
+* 暗号化ペイロードにはパケット番号長を表すフィールドも含まれています。パケット番号長を持つフィールドの長さは、ヘッダの最初の1byteの最下位2bitを見ればわかります。
+
+つまり、「平文の長さ」＋「AEADの認証タグ長(16bytes)」＋「パケット番号長」が暗号化後のペイロード長になります。
+ここまでの情報が揃って、ようやく暗号化に必要なAADのバイト列を求められるようになります。
+
 ```py
 # Initial Packetの再作成
 initial_packet.packet_payload = plaintext_payload_bytes
@@ -216,7 +225,6 @@ def create_aad(flags: LongPacketFlags, version: Uint32, dest_conn_id: OpaqueUint
 
 平文ペイロードを含むInitial Packetからヘッダを取得して、ペイロードを暗号化します。
 
-
 ```py
 aad = initial_packet.get_header_bytes()
 # => 00000000: C3 00 00 00 01 08 83 94  C8 F0 3E 51 57 08 00 00  ..........>QW...
@@ -227,7 +235,32 @@ print('encrypted:')
 print(hexdump(ciphertext_payload_bytes))
 ```
 
-暗号化ペイロードを16進数ダンプした結果は以下のようになります（途中省略）。
+なお、平文ペイロードを暗号化する関数 encrypt_payload は次のようになっています。
+
+```python
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+
+def _enc_dec_payload(input_bytes, key, iv, aad, packet_number, mode='encrypt'):
+    packet_number_bytes = packet_number.to_bytes(len(iv), 'big')
+    nonce = bytexor(packet_number_bytes, iv)
+    aesgcm = AESGCM(key=key)
+    output_bytes = b''
+    if mode == 'encrypt':
+        output_bytes = aesgcm.encrypt(nonce, input_bytes, aad)
+    else:
+        output_bytes = aesgcm.decrypt(nonce, input_bytes, aad)
+    return output_bytes
+
+def decrypt_payload(payload: bytes, cs_key: bytes, cs_iv: bytes, aad: bytes,
+                    packet_number: int) -> bytes:
+    return _enc_dec_payload(payload, cs_key, cs_iv, aad, packet_number, mode='decrypt')
+
+def encrypt_payload(payload: bytes, cs_key: bytes, cs_iv: bytes, aad: bytes,
+                    packet_number: int) -> bytes:
+    return _enc_dec_payload(payload, cs_key, cs_iv, aad, packet_number, mode='encrypt')
+```
+
+暗号化した結果について、暗号化ペイロードを16進数ダンプした結果は以下のようになります。
 
 ```
 encrypted:

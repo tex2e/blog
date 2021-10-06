@@ -4,7 +4,7 @@ title:         "QUICのRetryパケット"
 menutitle:     "QUIC の Retryパケット"
 date:          2021-09-18
 category:      Protocol
-cover:         /assets/cover4.jpg
+cover:         /assets/cover5.jpg
 redirect_from:
 comments:      true
 published:     true
