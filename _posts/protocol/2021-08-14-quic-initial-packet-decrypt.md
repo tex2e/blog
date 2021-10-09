@@ -192,7 +192,7 @@ QUICのパケット暗号化で必要な鍵は次の手順で求めます。
 
 <figure>
 <img src="{{ site.baseurl }}/media/post/quic/quic-initial-packet-decrypt-keyschedule.png" />
-<figcaption>QUICの鍵導出プロセス</figcaption>
+<figcaption>QUICの初期鍵導出プロセス</figcaption>
 </figure>
 
 必要な鍵導出関数HKDFをPythonで定義したものが次のプログラムです。
