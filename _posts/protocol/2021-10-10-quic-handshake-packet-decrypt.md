@@ -27,7 +27,7 @@ QUIC の Initial Packet で交換したDiffie-Hellmanの公開鍵から共有鍵
 一方向性関数は TLS 1.3 ([RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446)) で使用している HKDF ([RFC 5869](https://datatracker.ietf.org/doc/html/rfc5869)) を使用します。
 ハッシュベースの鍵導出関数 HKDF は、HMAC を使って安全な擬似乱数鍵を生成する関数です。
 HKDF は2種類の関数 HKDF-Extract と HKDF-Expand があります。
-HKDF-Extract は入力がパスワードや(EC)DHE鍵共有などの一様分布ではない共有の秘密の値であっても、出力が安全な擬似乱数となる関数です[^RFC5869][^1]。
+HKDF-Extract は入力がパスワードや(EC)DH鍵共有などの一様分布ではない共有の秘密の値であっても、出力が安全な擬似乱数となる関数です[^RFC5869][^1]。
 もう一つの HKDF-Expand は、入力の擬似乱数鍵を使って、指定の長さの（入力よりも長い）擬似乱数鍵を出力するための関数です。
 
 [^RFC5869]: [RFC 5869](https://datatracker.ietf.org/doc/html/rfc5869#section-1) の In many applications, the input keying material is not necessarily distributed uniformly, ... あたりに HKDF-Extract が必要な場合について書かれています。
@@ -74,7 +74,7 @@ QUIC でも同様に、ペイロード内のCRYPTO Frameの中にあるClient He
 <figcaption>QUICのServer Helloにある(EC)DHE公開鍵</figcaption>
 </figure>
 
-TLS における x25519 での(EC)DHE鍵交換の手順は次の通りです。
+TLS における x25519 での(EC)DH鍵交換の手順は次の通りです。
 ここではクライアントは C、サーバは S で表し、小文字 $c, s$ はスカラー値、大文字 $C, S$ は楕円曲線上の座標を表しています。
 
 1. ランダムな値を生成し、秘密鍵 $c_\text{sec}$ とする
@@ -132,7 +132,7 @@ crypto_frame = Frame(
 
 # ...(省略)...
 
-# 受信した Server Hello からECDHE鍵交換の公開鍵を取得する
+# 受信した Server Hello からECDH鍵交換の公開鍵を取得する
 for ext in server_hello.msg.extensions:
     if ext.extension_type == ExtensionType.key_share:
         peer_share = ext.extension_data.shares
