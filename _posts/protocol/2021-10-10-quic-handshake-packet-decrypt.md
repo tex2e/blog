@@ -320,6 +320,11 @@ Handshake:
     xf6\x10/h\x15\xae\x06\xd5\x1d\xce\xbc\x84\t\x92')
 ```
 
+追加で注意点なのですが、Finished のデータ構造が TLS と QUIC で違うようです。
+TLS ではメッセージタイプの 0x14 の直後に verify_data が存在していましたが、QUIC が送信する Finished は uint24 のデータ長を表すフィールドが存在します。
+TLS のバイト列解析のプログラムがそのまま使えなかったので、そのだけ注意です。
+
+
 ### まとめ
 
 前回までの記事を含めて、Initial Packet と Handshake Packet の暗号化についてまとめると次のようになります。
