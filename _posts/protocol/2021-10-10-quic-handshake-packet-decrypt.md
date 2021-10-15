@@ -92,6 +92,7 @@ ECDHEでの鍵について表にまとめると以下のようになります。
 | (3) ECDHE共有鍵 | $K = c_\text{sec} S_\text{pub}$    | $K = s_\text{sec} C_\text{pub}$
 
 以上の流れをプログラム的に書くと次のようになります（注意：疑似コードなので動きません）。
+なお、x25519 の実装は [tex2e/elliptic-curves](https://github.com/tex2e/elliptic-curves) を使っています。
 
 ```python
 from crypto_x25519 import x25519
