@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "findコマンドで特定のディレクトリを検索対象から除外する"
+title:         "findコマンドで特定のディレクトリを -not -path で検索対象から除外する"
 date:          2016-05-04
 category:      Shell
 author:        tex2e
