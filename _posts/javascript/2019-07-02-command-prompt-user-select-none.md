@@ -43,8 +43,6 @@ Webページで <code><span style="user-select: none">$ </span>command args</cod
   <pre><code><span style="user-select: none">$ </span>command args</code></pre>
 
 
-<br>
-
 ### Prism.js で \$ をコピペさせない
 
 Webページで表示させるプログラムのシンタックスハイライトに Prism.js を使っている場合は、`$` の部分を token として認識させることで簡単に、user-select: none を適用させることができます。
@@ -79,9 +77,22 @@ $ echo hello world
 $ echo $PATH
 ```
 
-以上です。
-
 ちなみに元ネタは @junya さんのツイートです[^1]。
+
+### Prism.js で PS> をコピペさせない
+
+2021/10追記：PowerShellのプロンプトである `PS>` を選択できないようにするには、次のJavaScriptを追加します。
+
+```js
+Prism.languages.insertBefore('powershell', 'function', {
+  'prompt': /^PS> /m,
+})
+```
+
+PowerShellの字句解析でPromptの部分「PS>」もtokenにするためのプログラムです。
+デフォルトだとPSがfunctionと判定されるので、insertBeforeでfunctionの解析を前に先に評価するようにする必要があります。
+
+以上です。
 
 -----
 

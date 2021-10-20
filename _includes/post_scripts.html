@@ -30,9 +30,7 @@
   // PowerShellの字句解析でPromptの部分「PS>」もtokenにする
   //（デフォルトだとPSがfunctionと判定されるので、insertBeforeで先に評価する）
   Prism.languages.insertBefore('powershell', 'function', {
-    'prompt': {
-      pattern: /^PS> /m
-    }
+    'prompt': /^PS> /m,
   })
   Prism.languages.vb = Prism.languages.vbnet; // Markdownで言語を「vb」としたときに、Prism.jsの「vbnet」を適用する
 </script>
