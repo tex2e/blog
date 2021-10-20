@@ -3,7 +3,7 @@ layout:        post
 title:         "QUIC の TLS ClientHello を解析する"
 date:          2021-08-16
 category:      Protocol
-cover:         /assets/cover4.jpg
+cover:         /assets/cover5.jpg
 redirect_from:
 comments:      true
 published:     true

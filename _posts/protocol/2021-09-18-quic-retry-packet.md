@@ -4,7 +4,7 @@ title:         "QUICのRetryパケット"
 menutitle:     "QUIC の Retryパケット"
 date:          2021-09-18
 category:      Protocol
-cover:         /assets/cover4.jpg
+cover:         /assets/cover5.jpg
 redirect_from:
 comments:      true
 published:     true
@@ -27,6 +27,8 @@ QUICではコネクションIDと呼ばれる識別子でコネクションを�
 逆に、一番最初のハンドシェイクなので**クライアントが生成した接続先コネクションIDを使いたくないとき**や、通信元アドレスが本物かどうかを確認したいときは、サーバは Retry Packet をクライアントに送り返します。
 Retry Packet にはサーバ側の「送信元コネクションID」と認証のために使われる「トークン」が含まれています。
 Retry Packet を受信したクライアントは、宛先コネクションIDとしてサーバ側の送信元コネクションIDを使用し、Retry Packetに含まれているトークンを Initial Packet に含めてペイロードを再送信します。
+
+コネクションIDの認証について、サーバがRetryパケットを送信するときの詳細な説明は [RFC 9000 - 7.3. Authenticating Connection IDs](https://www.rfc-editor.org/rfc/rfc9000.html#section-7.3) に書かれています。
 
 #### Retry時のハンドシェイクの流れ
 
