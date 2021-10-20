@@ -1,11 +1,10 @@
 ---
 layout:        post
-title:         "OpenVASをKaliにインストール"
-menutitle:     "OpenVASをKali Linuxにインストール"
+title:         "OpenVASをKali Linuxにインストール"
 date:          2021-04-06
-category:      Security
+category:      Linux
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /security/openvas-installation
 comments:      true
 published:     true
 latex:         false

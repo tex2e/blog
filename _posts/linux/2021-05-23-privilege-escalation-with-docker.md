@@ -1,10 +1,10 @@
 ---
 layout:        post
-title:         "Dockerを使った権限昇格"
+title:         "DockerやLXDを使った権限昇格手法"
 date:          2021-05-23
-category:      Security
+category:      Linux
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /security/privilege-escalation-with-docker
 comments:      true
 published:     true
 latex:         false
@@ -15,7 +15,7 @@ syntaxhighlight: true
 ---
 
 sudoを実行できないユーザでも、dockerグループに所属していれば、Dockerを使うことで権限昇格ができるようになります。
-ここでは超軽量なAlpine Linuxを使ってroot権限に昇格する例を紹介します。
+LXDでも同様です。ここでは超軽量なAlpine Linuxを使ってroot権限に昇格する例を紹介します。
 
 ### Docker
 
