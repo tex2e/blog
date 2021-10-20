@@ -26,8 +26,11 @@ PowerShellでSSHのように接続するには次の手順で行います。
 
 ネットワーク接続の種類が1つでもPublicになっていると `Enable-PSRemoting` でエラーになります。
 
-```cmd
+```powershell
 PS> Enable-PSRemoting
+```
+実行結果：
+```output
 WinRM は要求を受信するように更新されました。
 WinRM サービスの種類を正しく変更できました。
 WinRM サービスが開始されました。
@@ -49,7 +52,7 @@ sage>このコンピューターのネットワーク接続の種類の 1 つが
 ネットワーク接続カテゴリの変更は `Set-NetConnectionProfile` コマンドレットを使います。
 管理者権限のPowerShellで以下を実行します。
 
-```cmd
+```powershell
 PS> Get-NetConnectionProfile
 
 Name             : Wi-Fiの名前
@@ -73,7 +76,7 @@ PS> Get-NetConnectionProfile -Name "識別されていないネットワーク" 
 
 設定したら再度 `Enable-PSRemoting` コマンドレットを実行すると成功します。
 
-```cmd
+```powershell
 PS> Enable-PSRemoting
 WinRM は既にこのコンピューター上で要求を受信するように設定されています。
 WinRM はリモート管理用に更新されました。
@@ -86,7 +89,7 @@ WinRM ファイアウォールの例外を有効にしました。
 WinRM（Windows Remote Management）という、Windowsを遠隔操作をする仕組みを使います。
 クライアント側で管理者権限で以下を実行します。
 
-```cmd
+```powershell
 PS> net start WinRM
 ```
 
@@ -94,7 +97,7 @@ PS> net start WinRM
 
 管理者権限で `Set-Item WSMan:\localhost\Client\TrustedHosts -Value "サーバIP"` を実行します。
 
-```cmd
+```powershell
 PS> Set-Item WSMan:\localhost\Client\TrustedHosts -Value "サーバIP"
 PS> Get-Item WSMan:\localhost\Client\TrustedHosts
 
@@ -113,22 +116,22 @@ System.String   TrustedHosts                                   サーバIP
 サーバ名とログインユーザ名を指定して `Enter-PSSession` を実行すると、対話的なプロンプトが表示され、コマンドレットを入力するとサーバで実行されます。
 なお、ユーザ名は「サーバ名\ログイン名」です。
 
-```cmd
+```powershell
 PS> Enter-PSSession -ComputerName サーバIP -Credential ユーザ名
 (パスワード入力)
-[サーバIP]: PS>
+[サーバIP]: 
 ```
 
 リモートPCにバッチ操作をしたいときは、`Invoke-Command` を使うと、コマンドを連続して実行することができます。
 ScriptBlock 内に書いたコマンドがリモートで実行されます。
 
-```cmd
+```powershell
 PS> Invoke-Command -ScriptBlock { hostname } -ComputerName サーバIP -Credential ユーザ名
 ```
 
 ScriptBlock に関数を渡したい場合は、`$function:関数名` を指定します。
 
-```cmd
+```powershell
 function MyTest {
   echo "Hello, $(hostname)!"
 }
@@ -138,7 +141,7 @@ Invoke-Command -ScriptBlock $function:MyTest -ComputerName サーバIP -Credenti
 
 実行ファイルを指定したい場合は、FilePath 引数を使います。
 
-```cmd
+```powershell
 Invoke-Command -FilePath C:\path\to\file.ps1 -ComputerName サーバIP -Credential ユーザ名
 ```
 
