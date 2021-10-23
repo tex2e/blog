@@ -27,6 +27,10 @@
 {% if page.syntaxhighlight != false %}
 <script type="text/javascript">
   Prism.languages.bash.prompt = /^\$ /m; // Bashの字句解析でPromptの部分「$」もtokenにする
+  // Bashでroot時のプロンプト「~]#」もtokenにする
+  Prism.languages.insertBefore('bash', 'comment', {
+    'prompt': /^\~\]# /m,
+  })
   // PowerShellの字句解析でPromptの部分「PS>」もtokenにする
   //（デフォルトだとPSがfunctionと判定されるので、insertBeforeで先に評価する）
   Prism.languages.insertBefore('powershell', 'function', {
