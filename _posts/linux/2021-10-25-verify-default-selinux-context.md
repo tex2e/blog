@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "ファイルのデフォルトSELinuxコンテキストを確認する (matchpathcon -V)"
-menutitle:     "[SELinux] ファイルのデフォルトSELinuxコンテキストを確認する (matchpathcon -V)"
+title:         "ファイルのデフォルトSELinuxコンテキストを確認する"
+menutitle:     "ファイルのデフォルトSELinuxコンテキストを確認する (matchpathcon -V)"
 date:          2021-10-25
 category:      Linux
 cover:         /assets/cover1.jpg

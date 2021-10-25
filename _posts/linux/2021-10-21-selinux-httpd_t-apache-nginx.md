@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "ApacheとNginxプロセスのSELinuxコンテキスト (httpd_tタイプ) について"
-menutitle:     "[SELinux] ApacheとNginxプロセスのSELinuxコンテキスト (httpd_tタイプ) について"
+title:         "ApacheとNginxプロセスのSELinuxコンテキスト"
+menutitle:     "ApacheとNginxプロセスのSELinuxコンテキスト (httpd_tタイプ) "
 date:          2021-10-21
 category:      Linux
 cover:         /assets/cover1.jpg

@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "永続的にSELinuxコンテキストを変更する (semanage fcontext)"
-menutitle:     "[SELinux] 永続的にSELinuxコンテキストを変更する (semanage fcontext)"
+menutitle:     "永続的にSELinuxコンテキストを変更する (semanage fcontext)"
 date:          2021-10-23
 category:      Linux
 cover:         /assets/cover1.jpg

@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "一時的にSELinuxコンテキストを変更する (chcon)"
-menutitle:     "[SELinux] 一時的にSELinuxコンテキストを変更する (chcon)"
+menutitle:     "一時的にSELinuxコンテキストを変更する (chcon)"
 date:          2021-10-22
 category:      Linux
 cover:         /assets/cover1.jpg

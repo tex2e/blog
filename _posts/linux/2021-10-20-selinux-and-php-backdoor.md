@@ -1,7 +1,6 @@
 ---
 layout:        post
-title:         "SELinuxによるWebのOSコマンド実行拒否と例外ルール作成"
-menutitle:     "[SELinux] SELinuxによるWebのOSコマンド実行拒否と例外ルール作成"
+title:         "SELinuxによるPHPバックドア(WebShell)の<br>OSコマンド実行拒否と例外ルール作成"
 date:          2021-10-20
 category:      Linux
 cover:         /assets/cover1.jpg
