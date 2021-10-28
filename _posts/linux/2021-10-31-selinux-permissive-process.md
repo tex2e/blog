@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxで特定のドメイン（プロセスに紐づくタイプ）を許容する"
+menutitle:     "SELinuxで特定のドメイン（プロセスに紐づくタイプ）を許容する (semanage permissive)"
 date:          2021-10-31
 category:      Linux
 cover:         /assets/cover1.jpg
@@ -17,15 +18,28 @@ syntaxhighlight: true
 SELinuxにはPermissiveモードという、アクセス拒否ログが出すけどアクセスは許可する、というものがあります。
 システム全体をPermissiveにする方法の代わりに、特定のドメイン（プロセス）だけをPermissiveにする方法もあります。
 
+ドメインは ps -eZ でプロセス名の前にある *_t の部分で見ると、わかります。
+Apache や Nginx は httpd_t、BIND は named_t など、それぞれ決まったタイプが割り当てられています。
+
 例えば、Apacheが実行するドメイン httpd_t だけを Permissive にする場合は、semanage permissive コマンドを使用します。
-実行したら、semodule -l コマンドで登録できたか確認します。
+実行したら、semanage permissive -l コマンドで登録できたか確認します。
 ```bash
 ~]# semanage permissive -a httpd_t
+~]# semanage permissive -l
 
+Builtin Permissive Types
+
+
+Customized Permissive Types
+
+httpd_t
+```
+
+<!--
 ~]# semodule -l | grep permissive
 permissive_httpd_t
 permissivedomains
-```
+-->
 
 続いて、Apacheのサービスを、デフォルトではアクセス拒否される3131番ポートで起動します。
 http_port_t に 3131 が含まれていない状態で、httpd.conf を Listen 3131 に修正してから、Apacheを起動します。
@@ -56,7 +70,12 @@ type=AVC msg=audit(1635213334.520:1607): avc:  denied  { name_bind } for  pid=92
 ~]# sealert -l '*'
 ```
 
-最後に、元に戻すために httpd_t の Permissive の設定を削除する場合は、次のコマンドを入力します。
+最後に、元に戻すために httpd_t の Permissive の設定を削除する場合は、-d オプションで実行します。
 ```bash
 ~]# semanage permissive -d httpd_t
+libsemanage.semanage_direct_remove_key: Removing last permissive_httpd_t module (no other permissive_httpd_t module exists at another priority).
+~]# semanage permissive -l
+~]#
 ```
+
+以上です。
