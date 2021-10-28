@@ -28,7 +28,7 @@
 <script type="text/javascript">
   // Bashの字句解析でPromptの部分「$」と「~]#」もtokenにする
   Prism.languages.insertBefore('bash', 'comment', {
-    'prompt': /^\~\]# |^\$ /m,
+    'prompt': /^\~\][#$] |^\$ /m,
   })
   // PowerShellの字句解析でPromptの部分「PS>」もtokenにする
   //（デフォルトだとPSがfunctionと判定されるので、insertBeforeで先に評価する）
