@@ -89,7 +89,7 @@ type=AVC msg=audit(1635399463.747:146): avc:  denied  { name_bind } for  pid=184
 
 ### Enforcingモード
 EnforcingはSELinuxが有効でアクセス拒否も実施するモードです。
-setenforce コマンドで一時的にSELinuxを無効化（監査ログのみ記録）することもできますが、再起動すると元のモードに戻ります。
+setenforce コマンドで一時的にSELinuxを無効化（監査ログのみ記録）することもできますが、再起動するとEnforcingモードに戻ります。
 
 ```bash
 ~]# getenforce
