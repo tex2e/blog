@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "Postfix & Dovecot サーバ構築"
-menutitle:     "Postfix & Dovecot サーバ構築"
+title:         "Postfix & Dovecot のサーバ構築"
+menutitle:     "Postfix & Dovecot のサーバ構築"
 date:          2019-03-09
 tags:          Linux
 category:      Linux
@@ -12,7 +12,7 @@ comments:      true
 published:     true
 ---
 
-CentOS で Postfix と Dovecot を使って smtp と pop3 サーバを構築する方法について。
+CentOS で Postfix と Dovecot を使って smtp と pop3 サーバを構築する方法について説明します。
 
 
 ### Postfix で SMTP サーバ
@@ -20,16 +20,16 @@ CentOS で Postfix と Dovecot を使って smtp と pop3 サーバを構築す�
 まずは smtp サーバを構築する方法について。
 はじめに  Postfix のインストールをします。
 
-```
-# yum install postfix
+```bash
+~]# yum install postfix
 ```
 
 設定ファイルは /etc/postfix/ にあるので、バックアップを取っておいて main.cf 編集します。
 
-```
-# cd /etc/postfix
-# cp main.cf main.cf.bak
-# vim main.cf
+```bash
+~]# cd /etc/postfix
+~]# cp main.cf main.cf.bak
+~]# vim main.cf
 ```
 
 /etc/postfix/main.cf の編集
@@ -46,8 +46,8 @@ home_mailbox = Maildir/      # メールの保存場所と保存形式（「/」
 
 最後に Postfix を起動します。
 
-```
-# systemctl start postfix
+```bash
+~]# systemctl start postfix
 ```
 
 メールの送信は telnet で確認できます。
@@ -55,8 +55,8 @@ home_mailbox = Maildir/      # メールの保存場所と保存形式（「/」
 ポートフォーワーディングでホストポートの 25 番をゲストポートの 25 番にしてから、
 MacOS上のターミナルで telnet で接続後、helo, mail from, ... と入力していきます。
 
-```
-# telnet localhost 25
+```bash
+~]$ telnet localhost 25
 helo a
 mail from: test@example.com
 rcpt to: root@example.co.jp
@@ -67,14 +67,15 @@ hello!
 quit
 ```
 
-送信後に、サーバ側の /root/Maildir/new/ にメールが入っていれば成功です。
+送信後に、サーバ側の **/root/Maildir/new/** にメールが入っていれば成功です。
+（test@example.co.jp 宛に送信した場合は、**/home/test/Maildir/new/** に入ります）
 
 上手く送信できない場合は、次の項目を確認してください。
 
-- `netstat -tap` コマンドで smtp（プログラム名は master）が LISTEN しているか
+- `ss -talpn` コマンドで smtp（プログラム名は master）が LISTEN しているか
 - Firewall で tcp/25 が開いているか
 - メールサーバの /var/log/maillog にエラーは表示されていないか
-- SELinux で拒否されていないか（拒否のログは ausearch -m avc で見れる）
+- SELinux で拒否されていないか
 
 
 <br>
@@ -85,8 +86,8 @@ quit
 はじめに Dovecot のインストールをします。
 dovecot の他に clucene-core もインストールされます。
 
-```
-# yum install dovecot
+```bash
+~]# yum install dovecot
 ```
 
 設定ファイルは /etc/dovecot/ にあるので、バックアップを取っておいて編集していきます。
@@ -118,21 +119,21 @@ ssl = no                            # SSL/TLSを使用しない
 
 最後に dovecot を起動します。
 
-```
-# systemctl start dovecot
+```bash
+~]# systemctl start dovecot
 ```
 
 dovecot は root でのログインができないので、適当に test ユーザを作っておきます。
 
-```
-# useradd test
-# passwd test
+```bash
+~]# useradd test
+~]# passwd test
 ```
 
 まずは test ユーザ宛てにメールを送信
 
-```
-$ telnet localhost 25
+```bash
+~]$ telnet localhost 25
 helo a
 mail from: a@a.a
 rcpt to: test@example.co.jp
@@ -146,8 +147,8 @@ quit
 続いて、pop3 は 100 番を使うので同様にポートフォーワードして、ホスト側から telnet を使って受信します。
 pass では test ユーザのパスワードを入力します（平文認証が許可されているので、パスワードは平文になります）。
 
-```
-$ telnet localhost 110
+```bash
+~]$ telnet localhost 110
 user test
 pass test
 list
