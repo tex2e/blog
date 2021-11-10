@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "SELinuxで特定のプロセスの制限を解除する"
-menutitle:     "SELinuxで特定のプロセスの制限を解除する (bin_t, unconfined_service_t)"
+title:         "SELinuxによるコマンドに対する制限を完全に無くす"
+menutitle:     "SELinuxによるコマンドに対する制限を完全に無くす (bin_t, unconfined_service_t)"
 date:          2021-10-27
 category:      Linux
 cover:         /assets/cover1.jpg

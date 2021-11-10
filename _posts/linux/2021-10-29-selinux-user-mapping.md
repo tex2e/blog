@@ -1,6 +1,7 @@
 ---
 layout:        post
-title:         "SELinuxユーザのデフォルトマッピングの変更"
+title:         "SELinuxユーザのデフォルトマッピングを変更する"
+menutitle:     "SELinuxユーザのデフォルトマッピングを変更する (semanage login -m)"
 date:          2021-10-29
 category:      Linux
 cover:         /assets/cover1.jpg

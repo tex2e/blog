@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxの監査ログから一括で許可ルールを作成する"
+menutitle:     "SELinuxの監査ログから一括で許可ルールを作成する (audit2allow -a)"
 date:          2021-11-04
 category:      Linux
 cover:         /assets/cover1.jpg

@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "SELinuxのサイレント拒否の無効化/有効化"
-menutitle:     "SELinuxのサイレント拒否の無効化/有効化 (semodule -DB)"
+title:         "SELinuxのサイレント拒否を無効化/有効化する"
+menutitle:     "SELinuxのサイレント拒否を無効化/有効化する (semodule -DB)"
 date:          2021-11-02
 category:      Linux
 cover:         /assets/cover1.jpg

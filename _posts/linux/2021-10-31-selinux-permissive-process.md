@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "SELinuxで特定のドメイン（プロセスに紐づくタイプ）を許容する"
-menutitle:     "SELinuxで特定のドメイン（プロセスに紐づくタイプ）を許容する (semanage permissive)"
+title:         "SELinuxによるドメインに対する制限を完全に無くす"
+menutitle:     "SELinuxによるドメインに対する制限を完全に無くす (semanage permissive)"
 date:          2021-10-31
 category:      Linux
 cover:         /assets/cover1.jpg
@@ -16,7 +16,7 @@ syntaxhighlight: true
 ---
 
 SELinuxにはPermissiveモードという、アクセス拒否ログが出すけどアクセスは許可する、というものがあります。
-システム全体をPermissiveにする方法の代わりに、特定のドメイン（プロセス）だけをPermissiveにする方法もあります。
+システム全体をPermissiveにする方法の代わりに、特定のドメイン（プロセスに紐づくタイプ）だけをPermissiveにする方法もあります。
 
 ドメインは ps -eZ でプロセス名の前にある *_t の部分で見ると、わかります。
 Apache や Nginx は httpd_t、BIND は named_t など、それぞれ決まったタイプが割り当てられています。

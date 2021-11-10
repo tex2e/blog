@@ -1,6 +1,7 @@
 ---
 layout:        post
-title:         "SELinuxによる許可ポート番号の追加と削除"
+title:         "SELinuxで許可ポート番号を追加/削除する"
+menutitle:     "SELinuxで許可ポート番号を追加/削除する (semanage port)"
 date:          2021-10-30
 category:      Linux
 cover:         /assets/cover1.jpg

@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxを有効化する"
+menutitle:     "SELinuxを有効化する (/etc/selinux/config)"
 date:          2021-10-19
 category:      Linux
 cover:         /assets/cover1.jpg

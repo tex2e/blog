@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxユーザによる権限昇格対策"
+menutitle:     "SELinuxユーザによる権限昇格対策 (unconfined_u, staff_u, user_u)"
 date:          2021-10-28
 category:      Linux
 cover:         /assets/cover1.jpg
