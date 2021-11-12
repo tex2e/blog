@@ -20,5 +20,11 @@ from telnetlib import Telnet
 with Telnet('接続先IP', ポート番号) as tn:
     tn.interact()
 ```
+PythonのREPLを開いて、プログラムを貼り付けるだけで実行したい方は、以下をコピペして接続先 IP とポートを入力してください。
+```python
+from telnetlib import Telnet
+with Telnet(input('Dest IP:'), int(input('port:'))) as tn:
+    tn.interact()
+```
 
 以上です。
