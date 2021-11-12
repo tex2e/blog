@@ -41,5 +41,11 @@ httpd に関するSELinuxタイプの一覧：
 - httpd_sys_script_exec_t : 実行可能なコンテンツ (cgi-binの下など)
 - httpd_log_t : ログを記録する場所
 
+ApacheとNginxのドキュメントルート：
+```
+/usr/share/nginx/html(/.*)?    all files    system_u:object_r:httpd_sys_content_t:s0
+/var/www(/.*)?                 all files    system_u:object_r:httpd_sys_content_t:s0
+```
+
 #### 参考文献
 - [14.3. ブール値 Red Hat Enterprise Linux 7 \| Red Hat Customer Portal](https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-managing_confined_services-the_apache_http_server-booleans)

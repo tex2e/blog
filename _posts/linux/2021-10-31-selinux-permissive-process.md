@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "SELinuxによるドメインに対する制限を完全に無くす"
-menutitle:     "SELinuxによるドメインに対する制限を完全に無くす (semanage permissive)"
+title:         "SELinuxによるドメインに対する制限を無くす"
+menutitle:     "SELinuxによるドメインに対する制限を無くす (semanage permissive)"
 date:          2021-10-31
 category:      Linux
 cover:         /assets/cover1.jpg

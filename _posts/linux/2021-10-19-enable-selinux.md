@@ -1,7 +1,6 @@
 ---
 layout:        post
 title:         "SELinuxを有効化する"
-menutitle:     "SELinuxを有効化する (/etc/selinux/config)"
 date:          2021-10-19
 category:      Linux
 cover:         /assets/cover1.jpg
@@ -17,6 +16,18 @@ syntaxhighlight: true
 
 SELinuxを有効化する方法について説明します。
 設定ファイルを SELINUX=enforcing に修正して再起動する方法と、setenforce で一時的に有効化する方法があります。
+
+### ブートローダーの設定でSELinuxが有効
+まず、以下のコマンドで出力がないことを確認します。
+```bash
+~]# grep -E 'kernelopts=(\S+\s+)*(selinux=0|enforcing=0)+\b' /boot/grub2/grubenv
+```
+もし出力がある場合は、ブートローダーの設定でSELinuxが無効化されているので、SELinuxの設定ファイルである /etc/selinux/config を編集しても無駄になります。
+修正するには /etc/default/grub ファイルの変数 GRUB_CMDLINE_LINUX_DEFAULT や GRUB_CMDLINE_LINUX から `selinux=0` と `enforcing=0` の文字列を削除した後、以下のコマンドを実行します。
+```bash
+~]# grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+そして、システムを再起動します。
 
 ### DisabledモードからSELinuxを有効化
 Disabledモード（SELinux無効化）から、有効化するには /etc/selinux/config を修正して、SELINUX=enforcing にしてから再起動する必要があります。

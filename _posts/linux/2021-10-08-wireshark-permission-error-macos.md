@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "MacOS の Wireshark が権限エラーでキャプチャできないときの解決方法"
+title:         "MacOSのWiresharkが権限エラーでキャプチャできないとき"
 date:          2021-10-08
 category:      Linux
 cover:         /assets/cover1.jpg

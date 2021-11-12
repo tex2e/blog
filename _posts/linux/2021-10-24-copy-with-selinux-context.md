@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "コピーするときにSELinuxコンテキストもコピーする"
-menutitle:     "コピーするときにSELinuxコンテキストもコピーする (cp --preserve=context)"
+title:         "cpでSELinuxコンテキストもコピーする"
+menutitle:     "cpでSELinuxコンテキストもコピーする (cp --preserve=context)"
 date:          2021-10-24
 category:      Linux
 cover:         /assets/cover1.jpg
