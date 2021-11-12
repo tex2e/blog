@@ -16,9 +16,10 @@ syntaxhighlight: true
 
 CentOSでBINDでDNSサーバを立てて、正引きと逆引きと設定と、digやnslookupコマンドによる確認方法について説明します。
 
-まず、BINDをインストールします。
+まず、BINDをインストールします。インストール時は bind ですが、サービス名は named です。
 ```bash
 ~]# yum install bind
+~]# systemctl start named
 ```
 次に設定ファイルを修正して、待ち受けIPアドレス (listen-on) と問い合わせ可能IPアドレス (allow-query) を設定します。
 また、ここではテストで example.local というゾーンを定義します。
@@ -114,11 +115,11 @@ $TTL      86400
 102   IN PTR server02.example.local.
 ```
 
-設定後は named-checkconf でBINDの設定が正しいか確認してから、named を再起動します。
+設定後は named-checkconf でBINDの設定が正しいか確認してから、named.confとゾーン情報をリロードします。
 起動後は、namedが53/udpで起動しているか確認します。
 ```bash
 ~]# named-checkconf
-~]# systemctl restart named
+~]# rndc reload
 ~]# ss -ualpn
 State    Recv-Q   Send-Q    Local Address:Port   Peer Address:Port   Process
 UNCONN   0        0        192.168.56.102:53          0.0.0.0:*       users:(("named",pid=10870,fd=512))
