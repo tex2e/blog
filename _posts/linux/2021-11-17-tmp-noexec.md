@@ -19,7 +19,7 @@ syntaxhighlight: true
 
 まず始めに、systemctl の tmp.mount は初期状態で disabled になっています。
 ここでは /tmp ディレクトリを noexec オプション付きでマウントするために、tmp.mount を利用します。
-```
+```bash
 ~]# systemctl is-enabled tmp.mount
 
 disabled
@@ -28,7 +28,7 @@ disabled
 ```bash
 ~]# cp -vi /usr/lib/systemd/system/tmp.mount /etc/systemd/system/tmp.mount
 ```
-/etc/systemd/system/tmp.mount ファイルを以下のように修正します。Optionsの行に「noexec」を追加ます。
+/etc/systemd/system/tmp.mount ファイルを以下のように修正します。Optionsの行に「noexec」を追加します。
 ```conf
 [Mount]
 What=tmpfs
@@ -58,7 +58,7 @@ echo hello!
 ~]# /tmp/test.sh
 -bash: /tmp/test.sh: Permission denied
 ```
-なお、/tmp では実行できないので、/var/tmp などに移動すれば実行することができます。
+なお、/tmp では実行できないのですが、/var/tmp などに移動すれば実行することができます。
 ```bash
 ~]# cp /tmp/test.sh /var/tmp/test.sh
 ~]# /var/tmp/test.sh
