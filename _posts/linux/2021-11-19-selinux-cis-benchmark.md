@@ -93,3 +93,9 @@ package mcstrans is not installed
 ```
 
 以上です。
+
+
+#### 参考文献
+
+- [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/)
+- [CIS Downloads > CentOS](https://downloads.cisecurity.org/#/)
