@@ -32,7 +32,7 @@ libselinux-<version>
 ~]# dnf install libselinux
 ```
 
-#### ブートローダーの設定でSELinuxが有効
+#### ブートローダーの設定でSELinuxが有効 (CentOS7)
 確認方法：以下のコマンドで出力がないこと
 ```bash
 ~]# grep -E 'kernelopts=(\S+\s+)*(selinux=0|enforcing=0)+\b' /boot/grub2/grubenv
@@ -41,6 +41,13 @@ libselinux-<version>
 ```bash
 ~]# grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
+
+#### ブートローダーの設定でSELinuxが有効 (CentOS6)
+確認方法：以下のコマンドで出力がないこと
+```bash
+~]# [ -f /boot/efi/EFI/*/grub.conf ] && grep '^\s*kernel' /boot/efi/EFI/*/grub.conf | grep -E '(selinux=0|enforcing=0)' || grep '^\s*kernel' /boot/grub/grub.conf | grep -E '(selinux=0|enforcing=0)'
+```
+修正方法：/boot/efi/EFI/*/grub.confファイルから `selinux=0` と `enforcing=0` の文字列を削除した後、システムの再起動をします。
 
 #### SELinuxポリシーが設定済み
 確認方法：以下のコマンドで出力されること
