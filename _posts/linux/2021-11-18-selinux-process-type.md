@@ -15,7 +15,7 @@ syntaxhighlight: true
 ---
 
 各プロセスのSELinuxのタイプの一覧を以下に示します。
-対象は sshd, httpd, named, postfix, dovecot, mysqld です。
+対象は sshd, httpd, named, postfix, dovecot, mysqld, docker です。
 
 ```bash
 ~]# ps -eZ | grep sshd
@@ -42,6 +42,9 @@ system_u:system_r:dovecot_t:s0     7241 ?        00:00:00 config
 ~]# ps -eZ | grep mysqld
 system_u:system_r:mysqld_safe_t:s0 1178 ?        00:00:00 mysqld_safe
 system_u:system_r:mysqld_t:s0      1280 ?        00:00:02 mysqld
+
+~]# ps -eZ | grep docker
+system_u:system_r:container_runtime_t:s0 78488 ? 00:00:03 dockerd
 ```
 
 以上です。
