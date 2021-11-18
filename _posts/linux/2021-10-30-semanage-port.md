@@ -26,7 +26,7 @@ SELinuxポリシーの設定では、サービスは特定のポート番号で�
 ~]# semanage port -l | grep http
 http_port_t         tcp      80, 81, 443, 488, 8008, 8009, 8443, 9000
 ```
-次に、semanage port コマンドの -a (Add: 追加) でルールを登録します。
+次に、semanage port コマンドの -a (Add: 追加) でルールを登録します（追加に失敗した場合は -m (Modify: 修正) でルールを追加します）。
 -t (SELinuxタイプ) と -p (プロトコル tcp/udp) を指定します。
 ここでは http がポート 3131 番でLISTENできるようします。
 ```bash
