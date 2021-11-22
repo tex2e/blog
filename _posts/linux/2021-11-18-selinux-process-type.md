@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "プロセスのSELinuxコンテキスト"
+title:         "プロセスのSELinuxコンテキスト (ドメイン)"
 date:          2021-11-18
 category:      Linux
 cover:         /assets/cover1.jpg
@@ -14,7 +14,7 @@ syntaxhighlight: true
 # feed:    false
 ---
 
-各プロセスのSELinuxのタイプの一覧を以下に示します。
+各プロセスのSELinuxのタイプ (ドメイン) の一覧を以下に示します。
 対象は sshd, httpd, named, postfix, dovecot, mysqld, docker です。
 
 ```bash
