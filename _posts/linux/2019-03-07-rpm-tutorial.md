@@ -17,14 +17,14 @@ Red Hat系では rpm（Red hat Package Manager）を使うことによってパ�
 
 rpmパッケージだけをダウンロードするには、CentOS 7 では downloadonly プラグインがデフォルトで使えるので、次のコマンドを入力します。
 
-```
-# yum install --downloadonly --downloaddir=./ <package>
+```bash
+~]# yum install --downloadonly --downloaddir=./ <package>
 ```
 
 ダウンロードしたパッケージをインストールするには、次のコマンドを入力します。
 
-```
-# rpm -ivh ./*.rpm
+```bash
+~]# rpm -ivh ./*.rpm
 ```
 
 オプションの意味は、インストールの `i`、詳細表示の `v`、プログレスバー表示の `h` です。
@@ -33,27 +33,27 @@ rpmパッケージだけをダウンロードするには、CentOS 7 では down
 既存のパッケージをアップデートするときは、オプションで `U` を指定します。
 `i` と `U` を同時に指定することも可能です。
 
-```
-# rpm -Uvh ./*.rpm
+```bash
+~]# rpm -Uvh ./*.rpm
 ```
 
 バージョンの確認は `q`（Query）オプションを使います。
 次のコマンドのどちらかでインストールしたパッケージのバージョンが確認できます。
 
-```
-# rpm -q <package>
-# rpm -qa | grep <package>
+```bash
+~]# rpm -q <package>
+~]# rpm -qa | grep <package>
 ```
 
 パッケージの中のファイルの中身を表示するには query で `l` オプションを使います。
 これを使うことで、どこにどのようなファイルが配置されるかを確認することができます。
 
-```
-# rpm -ql <package>
+```bash
+~]# rpm -ql <package>
 ```
 
 パッケージをアンインストールするには `e` オプションを使います。
 
-```
-# rpm -evh <package>
+```bash
+~]# rpm -evh <package>
 ```
