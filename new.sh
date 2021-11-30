@@ -7,10 +7,12 @@ if [[ $# -ne 2 ]]; then
 fi
 
 directory=$1
+directory_list=(${1//\// })
+directory1=${directory_list[0]}
 cover="cover1"
 
 # Set category of article.
-case $1 in
+case $directory1 in
   javascript )
     category="JavaScript" ;;
   latex )
@@ -20,16 +22,14 @@ case $1 in
   php )
     category="PHP" ;;
   *batch )
-    directory="windowsbatch"
     category="WindowsBatch" ;;
-  powershell|pwsh )
-    directory="powershell"
+  powershell )
     category="PowerShell" ;;
   crypto )
     cover="cover4" ;;
   * )
     # Uppercase first character (e.g. python => Python)
-    category="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
+    category="$(tr '[:lower:]' '[:upper:]' <<< ${directory1:0:1})${directory1:1}"
     ;;
 esac
 
