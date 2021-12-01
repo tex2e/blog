@@ -129,7 +129,7 @@ root権限になっても、SELinuxによって staff_t タイプのユーザが
 
 /var/log/audit/audit.log
 ```
-type=AVC msg=audit(1635145544.942:819): avc:  denied  { read } for  pid=4827 comm="cat" name="example.txt" dev="dm-0" ino=33575049 scontext=staff_u:staff_r:staff_t:s0-s0:c0.c1023 tcontext=unconfined_u:object_r:admin_home_t:s0 tclass=file permissive=0
+type=AVC msg=audit(0000000000.942:819): avc:  denied  { read } for  pid=4827 comm="cat" name="example.txt" dev="dm-0" ino=33575049 scontext=staff_u:staff_r:staff_t:s0-s0:c0.c1023 tcontext=unconfined_u:object_r:admin_home_t:s0 tclass=file permissive=0
 ```
 実験が終わったら、サイレント拒否を有効化にしておきましょう。
 

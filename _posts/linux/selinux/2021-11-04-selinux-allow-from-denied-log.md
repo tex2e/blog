@@ -22,7 +22,7 @@ audit2allow によって、監査ログから許可ルールを作るための�
 ```
 出力結果：
 ```
-type=AVC msg=audit(1634697972.864:348): avc:  denied  { read } for  pid=3183 comm="ls" name="home" dev="dm-0" ino=50710033 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:home_root_t:s0 tclass=dir permissive=0
+type=AVC msg=audit(0000000000.864:348): avc:  denied  { read } for  pid=3183 comm="ls" name="home" dev="dm-0" ino=50710033 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:home_root_t:s0 tclass=dir permissive=0
         Was caused by:
         The boolean httpd_enable_homedirs was set incorrectly.
         Description:

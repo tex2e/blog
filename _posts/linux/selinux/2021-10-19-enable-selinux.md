@@ -81,7 +81,7 @@ Permissive
 ```
 監査ログ出力結果：
 ```
-type=AVC msg=audit(1635399381.641:141): avc:  denied  { name_bind } for  pid=1592 comm="httpd" src=3131 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=1
+type=AVC msg=audit(0000000000.641:141): avc:  denied  { name_bind } for  pid=1592 comm="httpd" src=3131 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=1
 ```
 
 Enforcingにした場合は、アクセス拒否ログの記録に permissive=0 と出力され、実際にアクセス拒否が行われます。
@@ -96,7 +96,7 @@ See "systemctl status httpd.service" and "journalctl -xe" for details.
 ```
 監査ログ出力結果：
 ```
-type=AVC msg=audit(1635399463.747:146): avc:  denied  { name_bind } for  pid=1841 comm="httpd" src=3131 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
+type=AVC msg=audit(0000000000.747:146): avc:  denied  { name_bind } for  pid=1841 comm="httpd" src=3131 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
 ```
 
 ### Enforcingモード

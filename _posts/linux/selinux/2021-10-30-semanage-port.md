@@ -61,7 +61,7 @@ localhost httpd[8698]: (13)Permission denied: AH00072: make_sock: could not bind
 ```
 /var/log/audit/audit.log
 ```
-type=AVC msg=audit(1635210822.214:1561): avc:  denied  { name_bind } for  pid=8698 comm="httpd" src=3131 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
+type=AVC msg=audit(0000000000.214:1561): avc:  denied  { name_bind } for  pid=8698 comm="httpd" src=3131 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
 ```
 SELinuxのポリシーに基づいて、httpd が3131ポートでソケット通信を待ち受けることが拒否されたことがログに残っています。
 

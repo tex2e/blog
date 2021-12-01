@@ -44,7 +44,7 @@ audit.logに記録されたアクセス拒否のログは次のコマンドで�
 ```
 /var/log/audit/audit.log のログ例：
 ```
-type=AVC msg=audit(1635396133.773:166): avc:  denied  { name_bind } for  pid=1756 comm="isc-worker0000" src=5353 scontext=system_u:system_r:named_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
+type=AVC msg=audit(0000000000.773:166): avc:  denied  { name_bind } for  pid=1756 comm="isc-worker0000" src=5353 scontext=system_u:system_r:named_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=0
 ```
 アクセス拒否されましたが、プロセス自体は5353番ポートで起動できているようです（named は起動できたが、isc-worker0000 は起動できなかったか？）。
 ```bash

@@ -26,7 +26,7 @@ SELinuxに関するログを見つけるには「SELinux is preventing」や「d
 ```
 ログ記録例：
 ```
-type=AVC msg=audit(1635145463.639:792): avc:  denied  { read } for  pid=4635 comm="cat" name="example.txt" dev="dm-0" ino=33575049 scontext=staff_u:staff_r:staff_t:s0-s0:c0.c1023 tcontext=unconfined_u:object_r:admin_home_t:s0 tclass=file permissive=0
+type=AVC msg=audit(0000000000.639:792): avc:  denied  { read } for  pid=4635 comm="cat" name="example.txt" dev="dm-0" ino=33575049 scontext=staff_u:staff_r:staff_t:s0-s0:c0.c1023 tcontext=unconfined_u:object_r:admin_home_t:s0 tclass=file permissive=0
 ```
 
 #### /var/log/messages

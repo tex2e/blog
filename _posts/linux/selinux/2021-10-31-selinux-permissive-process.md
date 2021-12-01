@@ -53,7 +53,7 @@ Listen 3131
 
 このとき、/var/log/audit/audit.log には httpd がポート3131番で起動することを拒否するログが出ます。
 ```
-type=AVC msg=audit(1635213334.520:1607): avc:  denied  { name_bind } for  pid=9247 comm="httpd" src=3131 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=1
+type=AVC msg=audit(0000000000.520:1607): avc:  denied  { name_bind } for  pid=9247 comm="httpd" src=3131 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:unreserved_port_t:s0 tclass=tcp_socket permissive=1
 ```
 しかし、httpdは問題なく起動できています。
 ```bash
