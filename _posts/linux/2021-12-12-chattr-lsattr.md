@@ -16,7 +16,7 @@ syntaxhighlight: true
 
 chattrコマンドはext2/ext3/ext4ファイルシステムで拡張属性を設定するためのコマンドで、設定した属性はlsattrコマンドでのみ確認できます。
 
-ファイルに対してi属性を付与 (chattr +i) すると、不変 (Immutable) になり、編集も削除もできなくなります。
+ファイルに対してi属性を付与 (chattr +i) すると、不変 (Immutable) になり、root権限であっても、編集も削除もできなくなります。
 以下は不変の属性を付与すると編集も削除もできないことを確認する例です。
 ```bash
 ~]# id
@@ -43,3 +43,7 @@ rm: 通常の空ファイル 'test.txt' を削除しますか? y
 ```
 
 以上です。
+
+#### 参考文献
+- [特定のファイルをrmコマンドなどで削除できないようにする方法(chattr、lsattrコマンド) - Qiita](https://qiita.com/riekure/items/6def7f813ebe03dd5850)
+- [chattr - コマンド (プログラム) の説明 - Linux コマンド集 一覧表](https://kazmax.zpp.jp/cmd/c/chattr.1.html)
