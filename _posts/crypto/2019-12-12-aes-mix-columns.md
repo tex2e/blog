@@ -320,8 +320,35 @@ static void mix_columns(unsigned char s[][4])
 }
 ```
 
-実は MixColumns で使う行列は、4つの暗号化用の多項式を1つにまとめた行列です。
-多項式環上の暗号化用の多項式なので、その逆元を求めれば復号用の多項式が求まります。
+なお、MixColumns で使う暗号化行列は、MDS行列と呼ばれる行列で、各行が線形変換 $f(x) = Ax$ によって生成されています。
+符号理論におけるMDN行列（最大距離分離行列）は各符号の距離はシングルトン限界 (Singleton bound) の最大値の $d = n - k + 1$ であるため、入力を効率よく攪拌することができることから、暗号プリミティブとしてよく使用されます [^MDS_matrix]。
+AESではまず、以下の逆元が存在する多項式を最初の行としています。
+
+[^MDS_matrix]: [MDS matrix - Wikipedia](https://en.wikipedia.org/wiki/MDS_matrix)
+
+$$
+\text{\{03\}} k^3 + \text{\{01\}} k^2 + \text{\{01\}} k + \text{\{02\}}
+$$
+
+$n$ 行目から $n+1$ 行目は線形変換 $f(x) = Ax$ によって生成され、$N$ 行目まで繰り返したものを $N \times N$ 行列にまとめたものが暗号化行列になります。
+余談ですが、以下のプログラムでは4行目、3行目、...の順に各行を生成してAESで使われる暗号化行列を生成している様子です。
+```python
+G.<x> = GF(2^8)
+F.<K> = PolynomialRing(G)
+R.<k> = F.quotient(K^4 + 1)
+
+row4 = R(G.fetch_int(0x03)*k^3 + G.fetch_int(0x01)*k^2 + G.fetch_int(0x01)*k + G.fetch_int(0x02))
+row3 = row4 * k
+row2 = row3 * k
+row1 = row2 * k
+matrix([[row1], [row2], [row3], [row4]])
+# => [x*k^3 + (x + 1)*k^2 + k + 1]              ... [02 03 01 01]  多項式の係数を行列で表したもの
+# => [k^3 + x*k^2 + (x + 1)*k + 1]              ... [01 02 03 01]
+# => [  k^3 + k^2 + x*k + (x + 1)]              ... [01 01 02 03]
+# => [  (x + 1)*k^3 + k^2 + k + x]              ... [03 01 01 02]
+```
+
+暗号化行列の各行は、多項式環上の多項式なので、その逆元を求めれば復号用の多項式が求まり、最終的に復号行列が求まります。
 続いては復号の話です。
 
 <br>
@@ -376,10 +403,14 @@ R.<x> = F.quotient(X^8 + X^4 + X^3 + X + 1)
 S.<K> = PolynomialRing(R)
 T.<k> = S.quotient(K^4 + 1)
 
+# 暗号化多項式 [03 01 01 02]
 enc = (X+1)*k^3 + (1)*k^2 + (1)*k + (X)
 # => (x + 1)*k^3 + k^2 + k + x
+
+# 復号多項式 [0b 0d 09 0e]
 dec = (X^3+X+1)*k^3 + (X^3+X^2+1)*k^2 + (X^3+1)*k + (X^3+X^2+X)
 # => (x^3 + x + 1)*k^3 + (x^3 + x^2 + 1)*k^2 + (x^3 + 1)*k + x^3 + x^2 + x
+
 enc * dec
 # => 1
 ```
@@ -390,28 +421,28 @@ G.<x> = GF(2^8)
 F.<K> = PolynomialRing(G)
 R.<k> = F.quotient(K^4 + 1)
 
-# 暗号化多項式 [03 01 01 02] と復号多項式 [0b 0d 09 0e]
-enc = R(G.fetch_int(0x03)*k^3 + G.fetch_int(0x01)*k^2 + G.fetch_int(0x01)*k + G.fetch_int(0x02))
-dec = R(G.fetch_int(0x0b)*k^3 + G.fetch_int(0x0d)*k^2 + G.fetch_int(0x09)*k + G.fetch_int(0x0e))
-enc*dec
-# => 1
-
 # 暗号化多項式 [02 03 01 01] と復号多項式 [0d 09 0e 0b]
 enc = R(G.fetch_int(0x02)*k^3 + G.fetch_int(0x03)*k^2 + G.fetch_int(0x01)*k + G.fetch_int(0x01))
 dec = R(G.fetch_int(0x0d)*k^3 + G.fetch_int(0x09)*k^2 + G.fetch_int(0x0e)*k + G.fetch_int(0x0b))
-enc*dec
+enc * dec
 # => 1
 
 # 暗号化多項式 [01 02 03 01] と復号多項式 [09 0e 0b 0d]
 enc = R(G.fetch_int(0x01)*k^3 + G.fetch_int(0x02)*k^2 + G.fetch_int(0x03)*k + G.fetch_int(0x01))
 dec = R(G.fetch_int(0x09)*k^3 + G.fetch_int(0x0e)*k^2 + G.fetch_int(0x0b)*k + G.fetch_int(0x0d))
-enc*dec
+enc * dec
 # => 1
 
 # 暗号化多項式 [01 01 02 03] と復号多項式 [0e 0b 0d 09]
 enc = R(G.fetch_int(0x01)*k^3 + G.fetch_int(0x01)*k^2 + G.fetch_int(0x02)*k + G.fetch_int(0x03))
 dec = R(G.fetch_int(0x0e)*k^3 + G.fetch_int(0x0b)*k^2 + G.fetch_int(0x0d)*k + G.fetch_int(0x09))
-enc*dec
+enc * dec
+# => 1
+
+# 暗号化多項式 [03 01 01 02] と復号多項式 [0b 0d 09 0e]
+enc = R(G.fetch_int(0x03)*k^3 + G.fetch_int(0x01)*k^2 + G.fetch_int(0x01)*k + G.fetch_int(0x02))
+dec = R(G.fetch_int(0x0b)*k^3 + G.fetch_int(0x0d)*k^2 + G.fetch_int(0x09)*k + G.fetch_int(0x0e))
+enc * dec
 # => 1
 ```
 
@@ -493,10 +524,18 @@ static void inv_mix_columns(unsigned char s[][4])
 この記事は「[セキュリティキャンプ 修了生進捗 Advent Calendar 2019](https://adventar.org/calendars/4047)」の12日目です
 🎄
 
+#### 参考文献
+
+- [FIPS 197, Advanced Encryption Standard (AES) ](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) 
+- [Rijndael MixColumns - Wikipedia](https://en.wikipedia.org/wiki/Rijndael_MixColumns)
+- [MDS matrix - Wikipedia](https://en.wikipedia.org/wiki/MDS_matrix)
+- [平澤 茂一『符号理論』, 平成20年4月9日](https://www.hirasa.mgmt.waseda.ac.jp/lab/ct.pdf)
+- [金子敏信『解説論文 共通鍵暗号の安全性評価』](https://www.jstage.jst.go.jp/article/essfr/7/1/7_14/_pdf)
+
 ----
 
 [^SPN]: SPN (Substitution Permutation Network Structure) 構造とは、シャノンが対象鍵ブロック暗号について提案した「多くの階層を使うか、拡散 (Diffusion) と攪拌 (Confusion) の繰り返しを使う混合変換 (Mixing Transformation) で安全で実用的な合成暗号は作成できる」というアイデアに基づいています
-[^NIST]: AESは米国連邦標準の暗号規格 [FIPS 197, Advanced Encryption Standard (AES) ](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) として公開されています
+[^NIST]: AES は米国連邦標準の暗号規格として公開されています
 [^Okamoto2019]: 岡本 龍明「現代暗号の誕生と発展：ポスト量子暗号・仮想通貨・新しい暗号」近代科学社 2019
 [^AES-round]: AES の鍵長が 128, 192, 256 のとき、ラウンド関数を繰り返す回数は 10, 12, 14 回となります
 [^kkent030315]: [C#でAES暗号化アルゴリズムを外部ライブラリに一切頼らず完全実装してみた - Qiita](https://qiita.com/kkent030315/items/ab0792aa1e8948b57490) の著者は自己紹介で(2019/12時点では)「もうすぐ高校1年生です」と書いているので中学生と判断しました
