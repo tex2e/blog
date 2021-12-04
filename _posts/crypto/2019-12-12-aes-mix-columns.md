@@ -374,7 +374,7 @@ G = GF(2^8)
 F.<X> = PolynomialRing(G)
 R.<x> = F.quotient(X^8 + X^4 + X^3 + X + 1)
 S.<K> = PolynomialRing(R)
-T.<k> = S.quotient(s^4 + 1)
+T.<k> = S.quotient(K^4 + 1)
 
 enc = (X+1)*k^3 + (1)*k^2 + (1)*k + (X)
 # => (x + 1)*k^3 + k^2 + k + x
