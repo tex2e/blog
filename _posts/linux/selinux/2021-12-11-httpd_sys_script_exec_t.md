@@ -1,6 +1,7 @@
 ---
 layout:        post
-title:         "SELinux上でApache(httpd)がファイルを実行できるようにする"
+title:         "SELinux上でApache(httpd)がファイルを実行可能にする"
+menutitle:     "SELinux上でApache(httpd)がファイルを実行可能にする (httpd_sys_script_exec_t)"
 date:          2021-12-11
 category:      Linux
 cover:         /assets/cover1.jpg
