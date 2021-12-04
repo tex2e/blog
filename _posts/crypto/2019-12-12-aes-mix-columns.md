@@ -320,8 +320,8 @@ static void mix_columns(unsigned char s[][4])
 }
 ```
 
-なお、MixColumns で使う暗号化行列は、MDS行列と呼ばれる行列で、各行が線形変換 $f(x) = Ax$ によって生成されています。
-符号理論におけるMDN行列（最大距離分離行列）は各符号の距離はシングルトン限界 (Singleton bound) の最大値の $d = n - k + 1$ であるため、入力を効率よく攪拌することができることから、暗号プリミティブとしてよく使用されます [^MDS_matrix]。
+なお、MixColumns で使う暗号化行列は、MDS行列と呼ばれる行列で、各行が線形変換 $f(k) = Ak$ によって生成されています。
+符号理論におけるMDS（最大距離分離）は各符号の距離はシングルトン限界 (Singleton bound) の最大値の $d = n - k + 1$ であるため、入力を効率よく攪拌することができることから、MDS行列は暗号プリミティブとしてよく使用されます [^MDS_matrix]。
 AESではまず、以下の逆元が存在する多項式を最初の行としています。
 
 [^MDS_matrix]: [MDS matrix - Wikipedia](https://en.wikipedia.org/wiki/MDS_matrix)
@@ -330,8 +330,8 @@ $$
 \text{\{03\}} k^3 + \text{\{01\}} k^2 + \text{\{01\}} k + \text{\{02\}}
 $$
 
-$n$ 行目から $n+1$ 行目は線形変換 $f(x) = Ax$ によって生成され、$N$ 行目まで繰り返したものを $N \times N$ 行列にまとめたものが暗号化行列になります。
-余談ですが、以下のプログラムでは4行目、3行目、...の順に各行を生成してAESで使われる暗号化行列を生成している様子です。
+$n$ 行目から $n+1$ 行目は線形変換 $f(k) = Ak$ によって生成され、$N$ 行目まで繰り返したものを $N \times N$ 行列にまとめたものが暗号化行列になります。
+以下のプログラムでは4行目、3行目、...の順に各行を生成してAESで使われる暗号化行列を生成している様子です。
 ```python
 G.<x> = GF(2^8)
 F.<K> = PolynomialRing(G)
@@ -529,6 +529,7 @@ static void inv_mix_columns(unsigned char s[][4])
 - [FIPS 197, Advanced Encryption Standard (AES) ](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) 
 - [Rijndael MixColumns - Wikipedia](https://en.wikipedia.org/wiki/Rijndael_MixColumns)
 - [MDS matrix - Wikipedia](https://en.wikipedia.org/wiki/MDS_matrix)
+- [株式会社 東芝『暗号技術仕様書:Hierocrypt—L1』, May 2002](https://www.cryptrec.go.jp/cryptrec_03_spec_cypherlist_files/PDF/04_02jspec.pdf)
 - [平澤 茂一『符号理論』, 平成20年4月9日](https://www.hirasa.mgmt.waseda.ac.jp/lab/ct.pdf)
 - [金子敏信『解説論文 共通鍵暗号の安全性評価』](https://www.jstage.jst.go.jp/article/essfr/7/1/7_14/_pdf)
 
