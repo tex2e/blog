@@ -320,6 +320,10 @@ static void mix_columns(unsigned char s[][4])
 }
 ```
 
+実は MixColumns で使う行列は、4つの暗号化用の多項式を1つにまとめた行列です。
+多項式環上の暗号化用の多項式なので、その逆元を求めれば復号用の多項式が求まります。
+続いては復号の話です。
+
 <br>
 
 ### InvMixColumns (逆演算)
@@ -349,39 +353,72 @@ $$
 \end{bmatrix}
 $$
 
-なぜこの数字になるかというと、$\mathrm{GF}(2^8)$上の法を $x^4 + 1$ とする多項式環について、まず、暗号化の多項式 $a(x)$ が次のように書けます。
+なぜこの数字になるかというと、まず MixColumns の暗号化とは、法を $k^4 + 1$ とする多項式環上の多項式の掛け算で表されており、4つの暗号化多項式を1つの行列として扱っています（※説明のために要素同士の掛け算には変数 $x$、多項式同士の掛け算には変数 $k$ を使っています）。
+MixColumns (暗号化処理) の各行は多項式を表しているため、その逆演算である InvMixColumns (復号処理) の各行は逆元となる多項式にしないといけません。
+多項式の最大次数は3なので、法を $k^4 + 1$ とする多項式環について、まず、暗号化の多項式 $a(k)$ が次のように書けます。
 
 $$
-a(x) = \{\text{03}\} x^3 + \{\text{01}\} x^2 + \{\text{01}\} x + \{\text{02}\}
+a(k) = \{\text{03}\} k^3 + \{\text{01}\} k^2 + \{\text{01}\} k + \{\text{02}\}
 $$
 
-そして、その逆元 $a^{-1}(x)$ は次のように書けるからです。
+そして、その逆元 $a^{-1}(k)$ は次のように書けるからです。
 
 $$
-a^{-1}(x) = \{\text{0b}\} x^3 + \{\text{0d}\} x^2 + \{\text{09}\} x + \{\text{0e}\}
+a^{-1}(k) = \{\text{0b}\} k^3 + \{\text{0d}\} k^2 + \{\text{09}\} k + \{\text{0e}\}
 $$
 
-実際に、この2つの暗号化多項式と復号多項式を SageMath を使って、$\mathrm{GF}(2^8)$上で法を $x^4 + 1$ とする多項式環上で掛け算したプログラムを以下に示します。
+実際に、この2つの暗号化多項式と復号多項式を SageMath を使って、法を $k^4 + 1$ とする多項式環上で掛け算したプログラムを以下に示します。
 
 ```python
-G.<k> = GF(2^8)
+G = GF(2^8)
 F.<X> = PolynomialRing(G)
-R.<x> = F.quotient(X^4 + 1)
-enc = R(G.fetch_int(0x03)*x^3 + G.fetch_int(0x01)*x^2 + G.fetch_int(0x01)*x + G.fetch_int(0x02))
-dec = R(G.fetch_int(0x0b)*x^3 + G.fetch_int(0x0d)*x^2 + G.fetch_int(0x09)*x + G.fetch_int(0x0e))
+R.<x> = F.quotient(X^8 + X^4 + X^3 + X + 1)
+S.<K> = PolynomialRing(R)
+T.<k> = S.quotient(s^4 + 1)
 
-enc
-# => (k + 1)*x^3 + x^2 + x + k
-dec
-# => (k^3 + k + 1)*x^3 + (k^3 + k^2 + 1)*x^2 + (k^3 + 1)*x + k^3 + k^2 + k
+enc = (X+1)*k^3 + (1)*k^2 + (1)*k + (X)
+# => (x + 1)*k^3 + k^2 + k + x
+dec = (X^3+X+1)*k^3 + (X^3+X^2+1)*k^2 + (X^3+1)*k + (X^3+X^2+X)
+# => (x^3 + x + 1)*k^3 + (x^3 + x^2 + 1)*k^2 + (x^3 + 1)*k + x^3 + x^2 + x
 enc * dec
+# => 1
+```
+
+補足で、GF(2^8).fetch_int を使った別の解き方のプログラムも記載しておきます（こちらの方が読みやすいです）。
+```python
+G.<x> = GF(2^8)
+F.<X> = PolynomialRing(G)
+R.<k> = F.quotient(X^4 + 1)
+
+# 暗号化多項式 [03 01 01 02] と復号多項式 [0b 0d 09 0e]
+enc = R(G.fetch_int(0x03)*k^3 + G.fetch_int(0x01)*k^2 + G.fetch_int(0x01)*k + G.fetch_int(0x02))
+dec = R(G.fetch_int(0x0b)*k^3 + G.fetch_int(0x0d)*k^2 + G.fetch_int(0x09)*k + G.fetch_int(0x0e))
+enc*dec
+# => 1
+
+# 暗号化多項式 [02 03 01 01] と復号多項式 [0d 09 0e 0b]
+enc = R(G.fetch_int(0x02)*k^3 + G.fetch_int(0x03)*k^2 + G.fetch_int(0x01)*k + G.fetch_int(0x01))
+dec = R(G.fetch_int(0x0d)*k^3 + G.fetch_int(0x09)*k^2 + G.fetch_int(0x0e)*k + G.fetch_int(0x0b))
+enc*dec
+# => 1
+
+# 暗号化多項式 [01 02 03 01] と復号多項式 [09 0e 0b 0d]
+enc = R(G.fetch_int(0x01)*k^3 + G.fetch_int(0x02)*k^2 + G.fetch_int(0x03)*k + G.fetch_int(0x01))
+dec = R(G.fetch_int(0x09)*k^3 + G.fetch_int(0x0e)*k^2 + G.fetch_int(0x0b)*k + G.fetch_int(0x0d))
+enc*dec
+# => 1
+
+# 暗号化多項式 [01 01 02 03] と復号多項式 [0e 0b 0d 09]
+enc = R(G.fetch_int(0x01)*k^3 + G.fetch_int(0x01)*k^2 + G.fetch_int(0x02)*k + G.fetch_int(0x03))
+dec = R(G.fetch_int(0x0e)*k^3 + G.fetch_int(0x0b)*k^2 + G.fetch_int(0x0d)*k + G.fetch_int(0x09))
+enc*dec
 # => 1
 ```
 
 2つを掛け算すると単位元 $1$ になることから、確かに、暗号化多項式の逆元が復号多項式になっていることが確認できます。
 つまり、暗号化多項式を掛けた後に、復号多項式を掛けると、元に戻ることがわかります。
 
-話を戻して、復号における行列の掛け算を表す変換式は次のように書けます。
+最終的に、復号における行列の掛け算を表す変換式は次のように書けます。
 
 $$
 \begin{bmatrix}
