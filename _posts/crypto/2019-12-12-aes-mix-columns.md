@@ -387,8 +387,8 @@ enc * dec
 補足で、GF(2^8).fetch_int を使った別の解き方のプログラムも記載しておきます（こちらの方が読みやすい＆書きやすいです）。
 ```python
 G.<x> = GF(2^8)
-F.<X> = PolynomialRing(G)
-R.<k> = F.quotient(X^4 + 1)
+F.<K> = PolynomialRing(G)
+R.<k> = F.quotient(K^4 + 1)
 
 # 暗号化多項式 [03 01 01 02] と復号多項式 [0b 0d 09 0e]
 enc = R(G.fetch_int(0x03)*k^3 + G.fetch_int(0x01)*k^2 + G.fetch_int(0x01)*k + G.fetch_int(0x02))
