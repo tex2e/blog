@@ -17,6 +17,9 @@
     },
     {
       "pattern": "^https://docs.raku.org"
+    },
+    {
+      "pattern": "^hxxps?://"
     }
   ],
   "aliveStatusCodes": [
