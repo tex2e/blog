@@ -323,7 +323,7 @@ static void mix_columns(unsigned char s[][4])
 #### 暗号化行列 (MDS行列)
 
 MixColumns で使う暗号化行列は、MDS行列と呼ばれる行列で、各行が線形変換 $f(k) = Ak$ によって生成されています。
-符号理論におけるMDS（最大距離分離）の各符号の距離はシングルトン限界 (Singleton bound) の最大値の $d = n - k + 1$ であるため、入力を効率よく攪拌することができることから、MDS行列は暗号プリミティブとしてよく使用されます [^MDS_matrix]。
+符号理論におけるMDS（最大距離分離）の各符号の距離はシングルトン限界 (Singleton bound) の最大値の $d = m - k + 1$ であるため、入力を効率よく攪拌することができることから、MDS行列は暗号プリミティブとしてよく使用されます [^MDS_matrix]。
 AESではまず、以下の逆元が存在する多項式を最初の行としています。
 
 [^MDS_matrix]: [MDS matrix - Wikipedia](https://en.wikipedia.org/wiki/MDS_matrix)
