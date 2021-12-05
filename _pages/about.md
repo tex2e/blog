@@ -26,3 +26,11 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
 - Twitterで @tex2e 宛てにDMを送信する
 
 <br>
+
+---
+
+## Misc
+
+リンク切れチェックを自動化しており、機械的にリンクへアクセスできなかった場合は以下の対応をしております。
+- アクセス先のURLがリンク切れした(404になった)場合、WayBack Machine に保存されたページに変更します
+- アクセス先のURLが機械的なアクセスに対して403を返す場合、URLのプロトコルを hxxp に変えてドメインの最後の「.」を「[.]」に置換します
