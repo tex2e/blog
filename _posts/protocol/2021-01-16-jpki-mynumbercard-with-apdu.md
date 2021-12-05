@@ -478,7 +478,7 @@ FE 71 E7
 - [LudovicRousseau/pyscard: pyscard smartcard library for python](https://github.com/LudovicRousseau/pyscard)
 - [マイナンバーカード検証#1 - まえおき - Qiita](https://qiita.com/gebo/items/6a334b5453817a587683)
 - [マイナンバーカード検証#2 - 利用者証明用電子証明書 - Qiita](https://qiita.com/gebo/items/fa35c1f725f4c443f3f3)
-- [/docs/man1.0.2/man1/openssl-dgst.html](https://www.openssl.org/docs/man1.0.2/man1/openssl-dgst.html)
+- [/docs/manmaster/man1/openssl-dgst.html](https://www.openssl.org/docs/manmaster/man1/openssl-dgst.html)
 - [JPKIReader/JPKIReader.cs at 03e60ba26d7220f824bdb5a8e9cbdfaa735ae774 · gebogebogebo/JPKIReader](https://github.com/gebogebogebo/JPKIReader/blob/03e60ba26d7220f824bdb5a8e9cbdfaa735ae774/Source/JPKIReader/JPKIReader/JPKIReader.cs)
 
 
