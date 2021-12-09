@@ -34,6 +34,10 @@ if [ "$1" = "-h" -o "$1" = "--help" ]; then
     # 引数が -h または --help のとき
 fi
 
+if [ -e from.txt ] && [ ! -e to.txt ]; then
+    # from.txtは存在するが、to.txtが存在しないとき
+fi
+
 if [ "$1" = "run" -a "$2" != "" ] || [ "$1" = "setup" -o "$1" = "init" ]; then
     # 引数が run PARAM または setup または init のとき
 fi
