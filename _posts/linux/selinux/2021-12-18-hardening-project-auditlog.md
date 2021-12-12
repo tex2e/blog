@@ -24,7 +24,7 @@ Hardening Projectに参加した時にSELinuxを有効にした際の、監査�
 
 WordPressで構築された会社TOPページで観測した拒否ログ（攻撃）は以下のものがありました。
 
-12:04:10 に httpd のプロセスが html ディレクトリを書き込みをしようとしたが拒否した（新規ファイルを作成する前にディレクトリの更新時間を書き込むときに記録されるログ。攻撃者が /var/www/html の直下にWebShellを配置しようとしたか？）。
+12:04:10 に httpd のプロセスが html ディレクトリを書き込みをしようとしたが拒否した（新規ファイルを作成する前にディレクトリの更新時間を書き込むのを拒否したときに記録されるログ。攻撃者が /var/www/html の直下にWebShellを配置しようとしたか？）。
 ```log
 [root@srv03 ~]# tail -f /var/log/audit/audit.log | grep denied
 avc:  denied  { write } for  pid=1540 comm="/usr/sbin/httpd" name="html" dev="vda1" ino=3018892 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
