@@ -24,7 +24,7 @@ Hardening Projectに参加した時にSELinuxを有効にした際の、監査�
 
 WordPressで構築された会社TOPページで観測した拒否ログ（攻撃）は以下のものがありました。
 
-12:04:10 に httpd のプロセスが html ディレクトリを書き込みをしようとしたが拒否した（新規ファイルを作成する前にディレクトリの更新時間を書き込むときに記録されるログ。攻撃者が /var/www/html の直下にWebShellを配置しようとしたか？）。
+12:04:10 に httpd のプロセスが html ディレクトリを書き込みをしようとしたが拒否した（新規ファイルを作成する前にディレクトリの更新時間を書き込むのを拒否したときに記録されるログ。攻撃者が /var/www/html の直下にWebShellを配置しようとしたか？）。
 ```log
 [root@srv03 ~]# tail -f /var/log/audit/audit.log | grep denied
 avc:  denied  { write } for  pid=1540 comm="/usr/sbin/httpd" name="html" dev="vda1" ino=3018892 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
@@ -111,12 +111,12 @@ avc:  denied  { write } for  pid=3377 comm="/usr/sbin/httpd" name="rss_d9a966ba3
 avc:  denied  { write } for  pid=3382 comm="/usr/sbin/httpd" name="images" dev="vda1" ino=3019638 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
 
-15:44:04 に httpd が再び images ディレクトリに書き込みをしようとしたが拒否した（攻撃者が画像以外のWebShellのようなファイルを作成しようとしたか？、もしくは正規ユーザによる画像追加だったか）。
+15:44:04 に httpd が再び images ディレクトリに書き込みをしようとしたが拒否した（攻撃者が画像以外のWebShellのようなファイルをアップロードしたか？、もしくは正規ユーザによる画像追加だったか）。
 ```log
 avc:  denied  { write } for  pid=5652 comm="/usr/sbin/httpd" name="images" dev="vda1" ino=3019638 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
 
-15:46:04 に httpd が画像ファイル shop2-1.png を新規作成しようとしたが拒否した。これはチームメンバーによる商品画像のアップロードで正規のアクセスであったために、アップロードの瞬間だけ一時的にSELinuxを無効化して対応した。
+15:46:04 に httpd が画像ファイル shop2-1.png を新規作成しようとしたが拒否した。これはチームメンバーによる商品画像のアップロードで正規のアクセスであったので、アップロードの瞬間だけ一時的にSELinuxを無効化して対応した。
 ```log
 [root@srv05 images]# tail -f /var/log/audit/audit.log | grep denied
 avc:  denied  { add_name } for  pid=5736 comm="/usr/sbin/httpd" name="shop2-1.png.png" scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
@@ -176,7 +176,7 @@ avc:  denied  { read } for  pid=9777 comm="/usr/sbin/httpd" name="logs" dev="vda
 avc:  denied  { write } for  pid=10879 comm="/usr/sbin/httpd" name="images" dev="vda1" ino=3019794 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
 
-16:32:34 に httpd が再び logs ディレクトリ内の読み取りと images ディレクトリの作成を試みたので拒否した。
+16:32:34 に httpd が再び logs ディレクトリ内の読み取りと images ディレクトリへの書き込みを試みたので拒否した。
 ```log
 denied  { read } for  pid=13444 comm="/usr/sbin/httpd" name="logs" dev="vda1" ino=3019637 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_log_t:s0 tclass=dir permissive=0
 denied  { read } for  pid=13444 comm="/usr/sbin/httpd" name="logs" dev="vda1" ino=3019637 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_log_t:s0 tclass=dir permissive=0
@@ -211,7 +211,7 @@ avc:  denied  { write } for  pid=1708 comm="php-fpm" path="/var/www/hd/storage/f
 [root@srv09 Filesystem]# setenforce 1
 ```
 
-17:06:29 に php-fpm が views ディレクトリに書き込みしようとしたのを拒否しました（SELinuxの有効化が遅かったので攻撃者に侵害済みだったのかもしれません）。
+17:06:29 に php-fpm が views ディレクトリに書き込みしようとしたのを拒否しました（SELinuxの有効化が遅かったので攻撃者に侵害済みだったのかもしれませんが）。
 ```log
 avc:  denied  { write } for  pid=824 comm="php-fpm" name="views" dev="vda1" ino=3029121 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 avc:  denied  { write } for  pid=822 comm="php-fpm" name="views" dev="vda1" ino=3029121 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
@@ -223,9 +223,9 @@ avc:  denied  { write } for  pid=822 comm="php-fpm" name="views" dev="vda1" ino=
 
 内部向けのフルリゾルバですが、外部からSSHを許可しており、かつ想定外のユーザが存在していたことにより、攻撃者に侵入されていました。
 
-13:50 頃に srv02 に SSH ログインできないことに気が付く。
+13:50 頃に srv02 に SSH ログインできないことに私が気が付きました。
 
-13:59:27 に (1) sshd がプロセスを起動しようとするがドメイン遷移ルールと不一致で拒否、(2) systemd が systemd-logind ファイルの内容からサービスを起動しようとしたのを拒否、(3) sshd が unconfined_t のプロセスを起動しようとするがドメイン遷移ルールと不一致で拒否、(4) sshd が /usr/bin/bash プロセスを起動しようとするがドメイン遷移ルールと不一致で拒否した。
+13:59:27 に (1) sshd がプロセスを起動しようとするがドメイン遷移ルールと不一致で拒否、(2) systemd が systemd-logind ファイルの内容からサービスを起動しようとしたのを拒否、(3) sshd が unconfined_t のプロセスを起動しようとするがドメイン遷移ルールと不一致で拒否、(4) sshd が /usr/bin/bash プロセスを起動しようとするがドメイン遷移ルールと不一致で拒否した（この結果、SSHログインが拒否される状態となりました。sshd サービスが改竄されていたか？）。
 ```log
 avc:  denied  { dyntransition } for  pid=7198 comm="sshd" scontext=system_u:system_r:kernel_t:s0 tcontext=system_u:system_r:sshd_net_t:s0 tclass=process permissive=0
 pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:kernel_t:s0 msg='avc:  denied  { start } for auid=n/a uid=0 gid=0 cmdline="/usr/lib/systemd/systemd-logind" scontext=system_u:system_r:kernel_t:s0 tcontext=system_u:system_r:kernel_t:s0 tclass=service  exe="/usr/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
@@ -233,3 +233,5 @@ avc:  denied  { dyntransition } for  pid=8128 comm="sshd" scontext=system_u:syst
 avc:  denied  { transition } for  pid=8132 comm="sshd" path="/usr/bin/bash" dev="vda3" ino=100664377 scontext=system_u:system_r:kernel_t:s0 tcontext=unconfined_u:unconfined_r:unconfined_t:s0 tclass=process permissive=0
 ```
 SSHログインできないのは、競技のレギュレーションに違反すると判断し、終了の5分前頃にSELinuxを無効化して対応しました。
+
+以上です。
