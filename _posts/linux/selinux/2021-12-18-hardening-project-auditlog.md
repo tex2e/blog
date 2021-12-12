@@ -73,7 +73,7 @@ osCommerceで構築されたECサイトで観測した拒否ログ（攻撃）�
 avc:  denied  { write } for  pid=1728 comm="/usr/sbin/httpd" name="html" dev="vda1" ino=3020182 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
 
-11:23:23 に httpd が includes ディレクトリを作成しようとしたが拒否した。
+11:23:23 に httpd が includes ディレクトリに書き込みをしようとしたが拒否した（攻撃者が何らかのPHPファイルを書き込もうとしたか？）。
 ```log
 avc:  denied  { write } for  pid=1896 comm="/usr/sbin/httpd" name="includes" dev="vda1" ino=139961 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
@@ -98,7 +98,7 @@ avc:  denied  { write } for  pid=2097 comm="/usr/sbin/httpd" name=".htpasswd_osc
 avc:  denied  { write } for  pid=2097 comm="/usr/sbin/httpd" name=".htpasswd_oscommerce" dev="vda1" ino=3023863 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=file permissive=0
 ```
 
-12:17:49 に httpd が html ディレクトリを作成しようとしたが拒否した。
+12:17:49 に httpd が html ディレクトリに書き込みをしようとしたが拒否した（攻撃者が /var/www/html 直下に WebShell などPHPファイルを作成しようとしたか？）。
 ```log
 avc:  denied  { write } for  pid=2547 comm="/usr/sbin/httpd" name="html" dev="vda1" ino=3020182 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
@@ -111,7 +111,7 @@ avc:  denied  { write } for  pid=3377 comm="/usr/sbin/httpd" name="rss_d9a966ba3
 avc:  denied  { write } for  pid=3382 comm="/usr/sbin/httpd" name="images" dev="vda1" ino=3019638 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
 
-15:44:04 に httpd が再び images ディレクトリを作成しようとしたが拒否した。
+15:44:04 に httpd が再び images ディレクトリに書き込みをしようとしたが拒否した（攻撃者が画像以外のWebShellのようなファイルを作成しようとしたか？、もしくは正規ユーザによる画像追加だったか）。
 ```log
 avc:  denied  { write } for  pid=5652 comm="/usr/sbin/httpd" name="images" dev="vda1" ino=3019638 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
@@ -171,7 +171,7 @@ avc:  denied  { read } for  pid=6832 comm="/usr/sbin/httpd" name="logs" dev="vda
 avc:  denied  { read } for  pid=9777 comm="/usr/sbin/httpd" name="logs" dev="vda1" ino=3019637 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_log_t:s0 tclass=dir permissive=0
 ```
 
-16:25:23 に httpd が images ディレクトリを作成しようとしたのを拒否した。
+16:25:23 に httpd が images ディレクトリに書き込みをしようとしたのを拒否した（画像アップロードでWebShellを配置しようとしたか？または正規ユーザによる画像アップロードか）。
 ```log
 avc:  denied  { write } for  pid=10879 comm="/usr/sbin/httpd" name="images" dev="vda1" ino=3019794 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
@@ -191,7 +191,7 @@ Nginxで構築されたギャラリーページで観測した拒否ログ（攻
 
 （srv09はサーバ堅牢化の優先度が低かったので、14:40からSELinuxを有効化しました）
 
-14:50:46〜16:18:48 に php-fpm が views ディレクトリを作成しようとしたのを拒否しました（実は個別ページへのアクセス時に発生していたものでした）。
+14:50:46〜16:18:48 に php-fpm が views ディレクトリに書き込みをしようとしたのを拒否した（個別ページへのアクセス時に発生していたので、正規のアクセスを拒否していた模様）。
 ```log
 avc:  denied  { write } for  pid=824 comm="php-fpm" name="views" dev="vda1" ino=3029121 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 avc:  denied  { write } for  pid=1708 comm="php-fpm" name="views" dev="vda1" ino=3029121 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
