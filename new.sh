@@ -9,7 +9,7 @@ fi
 directory=$1
 directory_list=(${1//\// })
 directory1=${directory_list[0]}
-cover="cover1"
+cover="cover1.jpg"
 
 # Set category of article.
 case $directory1 in
@@ -26,12 +26,21 @@ case $directory1 in
   powershell )
     category="PowerShell" ;;
   crypto )
-    cover="cover4" ;;
+    category="Crypto"
+    cover="cover4"
+    ;;
+  linux )
+    category="Linux"
+    if [[ "$directory" = "linux/selinux" ]]; then cover="cover6.jpg"; fi
+    ;;
   * )
     # Uppercase first character (e.g. python => Python)
     category="$(tr '[:lower:]' '[:upper:]' <<< ${directory1:0:1})${directory1:1}"
     ;;
 esac
+
+echo "[*] directory: $directory"
+echo "[*] category: $category"
 
 if ! [[ -e "_posts/$directory" ]]; then
   echo "Must create directory: $directory"
@@ -44,7 +53,7 @@ layout:        post
 title:         "This_is_Awesome"
 date:          $(date +%Y-%m-%d)
 category:      $category
-cover:         /assets/$cover.jpg
+cover:         /assets/$cover
 redirect_from:
 comments:      true
 published:     true
