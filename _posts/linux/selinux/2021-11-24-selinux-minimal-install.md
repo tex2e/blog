@@ -3,7 +3,7 @@ layout:        post
 title:         "CentOS 7の最小インストールで使用可能なSELinuxコマンドの一覧"
 date:          2021-11-24
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true
@@ -60,6 +60,8 @@ CentOS 7をMinimalで最小インストールした場合に使用可能なSELin
 | sandbox                   | /bin/sandbox                    | NG |
 | semodule_package          | /bin/semodule_package           | NG |
 | semanage                  | /sbin/semanage                  | NG |
+| **[policycoreutils-devel]** | -                             | -  |
+| sepolicy                  | /bin/sepolicy                   | NG |
 | **[setools-console]**     | -                               | -  |
 | findcon                   | /bin/findcon                    | NG |
 | sechecker                 | /bin/sechecker                  | NG |
