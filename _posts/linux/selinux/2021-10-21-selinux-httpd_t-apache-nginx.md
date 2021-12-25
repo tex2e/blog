@@ -4,7 +4,7 @@ title:         "ApacheとNginxプロセスのSELinuxコンテキスト"
 menutitle:     "ApacheとNginxプロセスのSELinuxコンテキスト (httpd_tタイプ) "
 date:          2021-10-21
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

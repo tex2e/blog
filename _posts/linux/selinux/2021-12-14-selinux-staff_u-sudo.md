@@ -3,7 +3,7 @@ layout:        post
 title:         "SELinuxのstaff_uがsudoできるコマンドを限定する"
 date:          2021-12-14
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -4,7 +4,7 @@ title:         "永続的にSELinuxコンテキストを変更する (semanage f
 menutitle:     "永続的にSELinuxコンテキストを変更する (semanage fcontext)"
 date:          2021-10-23
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

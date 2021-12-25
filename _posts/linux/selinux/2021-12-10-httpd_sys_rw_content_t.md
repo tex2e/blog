@@ -4,7 +4,7 @@ title:         "SELinux上でApache(httpd)がファイル書き込み可能に�
 menutitle:     "SELinux上でApache(httpd)がファイル書き込み可能にする (httpd_sys_rw_content_t)"
 date:          2021-12-10
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

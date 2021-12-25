@@ -4,7 +4,7 @@ title:         "SELinux上でApache(httpd)がファイルを実行可能にす�
 menutitle:     "SELinux上でApache(httpd)がファイルを実行可能にする (httpd_sys_script_exec_t)"
 date:          2021-12-11
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

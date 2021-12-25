@@ -4,7 +4,7 @@ title:         "SELinuxによるアクセス拒否ログを見つける"
 menutitle:     "SELinuxによるアクセス拒否ログを見つける (audit.log, messages)"
 date:          2021-11-03
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

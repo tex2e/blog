@@ -3,7 +3,7 @@ layout:        post
 title:         "httpd に関するSELinuxブール値"
 date:          2021-11-14
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

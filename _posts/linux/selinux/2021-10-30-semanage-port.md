@@ -4,7 +4,7 @@ title:         "SELinuxで許可ポート番号を追加/削除する"
 menutitle:     "SELinuxで許可ポート番号を追加/削除する (semanage port)"
 date:          2021-10-30
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

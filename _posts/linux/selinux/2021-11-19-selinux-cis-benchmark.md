@@ -3,7 +3,7 @@ layout:        post
 title:         "CIS Benchmarkを元にSELinuxの設定をする"
 date:          2021-11-19
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

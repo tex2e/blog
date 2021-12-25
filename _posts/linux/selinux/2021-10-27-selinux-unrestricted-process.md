@@ -4,7 +4,7 @@ title:         "SELinuxによるコマンドに対する制限を完全に無く
 menutitle:     "SELinuxによるコマンドに対する制限を完全に無くす (bin_t, unconfined_service_t)"
 date:          2021-10-27
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

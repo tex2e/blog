@@ -3,7 +3,7 @@ layout:        post
 title:         "ポート番号を変更したBINDをSELinuxで許可する"
 date:          2021-11-08
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

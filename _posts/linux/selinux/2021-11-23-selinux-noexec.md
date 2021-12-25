@@ -3,7 +3,7 @@ layout:        post
 title:         "SELinuxでユーザのファイル実行を制限する"
 date:          2021-11-23
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

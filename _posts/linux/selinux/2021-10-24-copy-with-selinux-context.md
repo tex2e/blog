@@ -4,7 +4,7 @@ title:         "cpでSELinuxコンテキストもコピーする"
 menutitle:     "cpでSELinuxコンテキストもコピーする (cp --preserve=context)"
 date:          2021-10-24
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

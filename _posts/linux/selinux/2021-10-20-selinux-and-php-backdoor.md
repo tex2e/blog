@@ -3,7 +3,7 @@ layout:        post
 title:         "SELinuxによるPHPバックドア(WebShell)の<br>OSコマンド実行拒否と例外ルール作成"
 date:          2021-10-20
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

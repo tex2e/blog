@@ -3,7 +3,7 @@ layout:        post
 title:         "Hardening Projectで記録されたSELinuxによる拒否ログの一覧"
 date:          2021-12-18
 category:      Linux
-cover:         /assets/cover4.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

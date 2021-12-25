@@ -4,7 +4,7 @@ title:         "ptrace を SELinux で無効化する"
 menutitle:     "ptrace を SELinux で無効化する (deny_ptrace)"
 date:          2021-10-26
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

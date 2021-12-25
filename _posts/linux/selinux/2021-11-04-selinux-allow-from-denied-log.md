@@ -4,7 +4,7 @@ title:         "監査ログからSELinuxアクセス拒否を一括で許可す
 menutitle:     "監査ログからSELinuxアクセス拒否を一括で許可する (audit2allow)"
 date:          2021-11-04
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

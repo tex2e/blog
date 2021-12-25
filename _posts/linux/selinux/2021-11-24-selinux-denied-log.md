@@ -3,7 +3,7 @@ layout:        post
 title:         "SELinuxのアクセス拒否監査ログの読み方"
 date:          2021-11-24
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

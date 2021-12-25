@@ -4,7 +4,7 @@ title:         "SELinuxのサイレント拒否を無効化/有効化する"
 menutitle:     "SELinuxのサイレント拒否を無効化/有効化する (semodule -DB)"
 date:          2021-11-02
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

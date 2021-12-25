@@ -3,7 +3,7 @@ layout:        post
 title:         "SELinuxとauditdでハニーポットもどきを作る"
 date:          2021-12-17
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

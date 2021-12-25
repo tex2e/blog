@@ -4,7 +4,7 @@ title:         "SELinuxでApacheで/var/wwwから変更した先のパスも許�
 menutitle:     "SELinuxでApacheで/var/wwwから変更した先のパスも許可する (semanage fcontext -e)"
 date:          2021-11-01
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true

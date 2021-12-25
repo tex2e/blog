@@ -3,7 +3,7 @@ layout:        post
 title:         "SELinuxを有効化する"
 date:          2021-10-19
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true
