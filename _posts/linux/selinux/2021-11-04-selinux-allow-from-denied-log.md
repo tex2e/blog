@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "監査ログからSELinuxアクセス拒否を一括で許可する"
-menutitle:     "監査ログからSELinuxアクセス拒否を一括で許可する (audit2allow)"
+menutitle:     "監査ログからSELinuxアクセス拒否を一括で許可する (audit2allow, semodule -i)"
 date:          2021-11-04
 category:      Linux
 cover:         /assets/cover6.jpg
