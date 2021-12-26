@@ -47,5 +47,5 @@ boolean -m -1 virt_use_nfs
 以上です。
 
 ### 参考文献
-- [9.3. Transferring SELinux settings to another system with semanage Red Hat Enterprise Linux 8 \| Red Hat Customer Portal](https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/8/html/using_selinux/transferring-selinux-settings-to-another-system-with-semanage_deploying-the-same-selinux-configuration-on-multiple-systems)
+- [9.3. Transferring SELinux settings to another system with semanage Red Hat Enterprise Linux 8 \| Red Hat Customer Portal](https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/8/html/using_selinux/transferring-selinux-settings-to-another-system-with-semanage_deploying-the-same-selinux-configuration-on-multiple-systems)
 
