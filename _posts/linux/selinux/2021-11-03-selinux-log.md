@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "SELinuxによるアクセス拒否ログを見つける"
-menutitle:     "SELinuxによるアクセス拒否ログを見つける (audit.log, messages)"
+title:         "SELinuxによるアクセス拒否のログを発見する"
+menutitle:     "SELinuxによるアクセス拒否のログを発見する (audit.log, messages)"
 date:          2021-11-03
 category:      Linux
 cover:         /assets/cover6.jpg
@@ -16,7 +16,7 @@ syntaxhighlight: true
 ---
 
 SELinuxのアクセス拒否のログは /var/log/audit/audit.log や /var/log/messages に出力されます。
-SELinuxに関するログを見つけるには「SELinux is preventing」や「denied」で抽出します。
+SELinuxに関するログを見つける（発見する）には「SELinux is preventing」や「denied」でgrepで抽出します。
 
 #### /var/log/audit/audit.log
 
