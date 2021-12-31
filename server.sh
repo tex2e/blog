@@ -1,14 +1,22 @@
-#!/bin/bash
+#!/bin/bash -eu
 
-if [[ "$1" =~ ^build ]]; then
-  bundle exec jekyll build --future
-  exit
-fi
+# /opt/homebrew/opt/ruby/bin/bundle install
 
-if [[ "$1" =~ ^re ]]; then
-  bundle exec jekyll build --future
-fi
+{
+  BUNDLE=bundle
+  if [ -f /opt/homebrew/opt/ruby/bin/bundle ]; then
+    BUNDLE=/opt/homebrew/opt/ruby/bin/bundle
+  fi
 
-bundle exec jekyll server -I --livereload --future
+  if [[ "${1:-}" =~ ^build ]]; then
+    "$BUNDLE" exec jekyll build --future
+    exit
+  fi
 
-# --limit_posts 1
+  if [[ "${1:-}" =~ ^re ]]; then
+    "$BUNDLE" exec jekyll build --future
+  fi
+
+  "$BUNDLE" exec jekyll server -I --livereload --future
+  # --limit_posts 1
+}
