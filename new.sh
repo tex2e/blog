@@ -10,7 +10,7 @@
   directory=${1:-}
   directory_list=(${1//\// })
   directory1=${directory_list[0]}
-  cover="cover1.jpg"
+  cover="cover14.jpg"
 
   # Set category of article.
   case $directory1 in
