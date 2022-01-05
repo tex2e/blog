@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "Linuxでスケジュールされたジョブを確認する"
+menutitle:     "Linuxでスケジュールされたジョブを確認する (cron, at)"
 date:          2021-11-07
 category:      Linux
 cover:         /assets/cover1.jpg
