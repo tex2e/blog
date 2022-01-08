@@ -85,8 +85,8 @@ WantedBy=multi-user.target
 
 
 より詳細な説明はマニュアルがあるのでそちらを参照してください。
-- ユニットについてなら man system.unit
-- サービスについてなら man system.service
+- ユニットのマニュアルを読みたいときは `man systemd.unit` コマンドを実行する
+- サービスのマニュアルを読みたいときは `man systemd.service` コマンドを実行する
 
 
 ### 自作ユニットファイルの作成
@@ -173,18 +173,19 @@ systemctl daemon-reload
 systemctl start tinyhttpd
 ```
 
-curlで叩いてレスポンスがあれば成功。
+curlで叩いてレスポンスがあれば成功です。
 
 ```command
 curl localhost:8000
 ```
 
-最後にWebサーバの停止。
+最後にWebサーバの停止します。
 
 ```command
 systemctl stop tinyhttpd
 ```
 
+以上です。
 
 ---
 
