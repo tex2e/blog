@@ -5,7 +5,7 @@ menutitle:     "証拠収集とアーカイビングのためのガイドライ�
 date:          2019-02-28
 category:      Security
 author:        tex2e
-cover:         /assets/cover6.jpg
+cover:         /assets/cover1.jpg
 redirect_from: /misc/rfc3227-evidence-collection
 comments:      true
 published:     true
