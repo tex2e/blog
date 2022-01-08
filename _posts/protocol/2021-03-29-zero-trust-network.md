@@ -49,7 +49,7 @@ NIST が2020年8月に公開した「Zero Trust Architecture」(NIST SP 800-207)
 
 クライアント (Client) がリソース (Resource) にアクセスするまでの流れ図です。
 
-```
+```fig
                    ___________________
                   /                   \
                  ( PolicyDecisionPoint )
