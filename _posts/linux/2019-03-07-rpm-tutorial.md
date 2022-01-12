@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "RPMパッケージのインストール"
-menutitle:     "RPMパッケージのインストール"
+title:         "RPMパッケージのダウンロードとインストール"
+menutitle:     "RPMパッケージのダウンロードとインストール (downloadonly, rpm -i / -ql)"
 date:          2019-03-07
 tags:          Linux
 category:      Linux
@@ -19,6 +19,12 @@ rpmパッケージだけをダウンロードするには、CentOS 7 では down
 
 ```bash
 ~]# yum install --downloadonly --downloaddir=./ <package>
+```
+
+すでにインストール済みのパッケージをダウンロードしたい場合は reinstall で実行します。
+
+```bash
+~]# yum reinstall --downloadonly --downloaddir=./ <package>
 ```
 
 ダウンロードしたパッケージをインストールするには、次のコマンドを入力します。
