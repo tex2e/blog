@@ -18,6 +18,10 @@ CentOS に Tomcat をインストールし、Log4j2を使ったWebアプリで�
 実際のPoCでLog4j2経由でRCEを実行することはしていません。
 Javaがtomcat_tドメインの下で動作している場合、デフォルトのポリシーで外部ホストへの接続を防ぐことができませんが、RCE脆弱性に対する緩和が可能です。
 
+tomcat_t がデフォルトで外部ポートへ接続できることは、`sesearch -A -s tomcat_t -c tcp_socket` で確認することができます。
+
+## やられサーバの準備
+
 以下は検証作業手順です。
 
 ### Javaのインストール
@@ -354,6 +358,16 @@ JAVA_OPTS="-Dlog4j.configurationFile=file:///etc/tomcat/log4j2.xml"
 ~]$ sudo systemctl restart tomcat
 ```
 
+<br>
+
+## 攻撃側サーバの準備
+以下は攻撃側サーバでの準備作業です。まずは、PoCを成功させるために、Log4Shellが接続する先の攻撃サーバのポートをFWで開けておきます。
+```bash
+~]$ sudo firewall-cmd --add-port=8888/tcp
+~]$ #sudo firewall-cmd --runtime-to-permanent
+~]$ sudo firewall-cmd --list-all
+```
+
 ### log4j2で記録されるログ
 Javaのプログラムの動作は、/hello にGETリクエストが来たら、クエリパラメータ「name」の内容をログに書き込む処理をします。
 なので、クエリパラメータに「Alice」「${java:version}」「${env:PATH}」をそれぞれURLエンコードして送信してみます。
@@ -408,9 +422,11 @@ Javaのプログラムの動作は、/hello にGETリクエストが来たら、
 [2021-12-30 12:00:00.000] INFO  HelloServlet   - name=com.sun.jndi.ldap.LdapCtx@24a0ff23
 ```
 
+<br>
 
 ### SELinuxによる脆弱性の緩和
 
+続いては、SELinuxによってLog4Shellの攻撃を緩和できるか確認していきます。
 yum 経由で tomcat をインストールした場合は、Tomcat はデフォルトで tomcat_t ドメインで動作します。
 ```bash
 ~]$ ps axwZ | grep tomcat
@@ -490,6 +506,25 @@ public class LoginServlet extends HttpServlet {
 tomcat_t ドメインは default_t タイプのディレクトリに書き込むルールがポリシーに存在しないからです。
 ```
 type=AVC msg=audit(0000000000.101:285): avc:  denied  { write } for  pid=2650 comm="touch" name="backup" dev="dm-0" ino=461895 scontext=system_u:system_r:tomcat_t:s0 tcontext=unconfined_u:object_r:default_t:s0 tclass=dir permissive=1
+```
+
+ついでにファイル実行が拒否されることも確認してみます。/tmp 直下に z という実行可能ファイルを作成して、これをTomcat経由で実行してみます。
+```bash
+~]$ cat <<'EOS' > /tmp/z
+#!/bin/bash
+cat /etc/passwd
+EOS
+chmod +x /tmp/z
+```
+Javaのコードを修正して再コンパイルし、warファイルをwebappsに配置します。
+```java
+        String command = "/tmp/z";
+```
+配置後にアクセスすると、/var/log/audit/audit.log には java コマンドによるファイル z の実行が拒否された記録が残ります。
+tomcat_t ドメインは default_t タイプのファイルを実行できるルールがポリシーに存在しないからです。
+```
+[root@localhost ~]# tail -f /var/log/audit/audit.log | grep 'denied'
+type=AVC msg=audit(0000000000.207:392): avc:  denied  { execute } for  pid=4733 comm="java" name="z" dev="dm-0" ino=17271392 scontext=system_u:system_r:tomcat_t:s0 tcontext=system_u:object_r:tomcat_tmp_t:s0 tclass=file permissive=0
 ```
 
 以上です。
