@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "CentOS 7の最小インストールで使用可能なSELinuxコマンドの一覧"
+menutitle:     "CentOS 7の最小インストールで使用可能なSELinuxコマンドの一覧 (Minimal Install)"
 date:          2021-11-24
 category:      Linux
 cover:         /assets/cover6.jpg
@@ -16,62 +17,62 @@ syntaxhighlight: true
 
 
 CentOS 7をMinimalで最小インストールした場合に使用可能なSELinuxのコマンドを以下の表にまとめました（一部不足があります）。
-最小インストールで使用可能なコマンドは「OK」、使用不可は「NG」です。
+最小インストールで使用可能なコマンドは「Yes」、使用不可は「No」です。
 
-| コマンド / [パッケージ]      | パス                 | 最小インストール<br>で使用可能 |
+| コマンド / [パッケージ]      | パス                 | デフォルトで使用可能 |
 |---------------------------+---------------------------------+---+
-| chcon                     | /bin/chcon                      | OK |
+| chcon                     | /bin/chcon                      | Yes |
 | **[policycoreutils]**     | -                               | -  |
-| secon                     | /bin/secon                      | OK |
-| fixfiles                  | /sbin/fixfiles                  | OK |
-| genhomedircon             | /sbin/genhomedircon             | OK |
-| load_policy               | /sbin/load_policy               | OK |
-| restorecon                | /sbin/restorecon                | OK |
-| semodule                  | /sbin/semodule                  | OK |
-| sestatus                  | /sbin/sestatus                  | OK |
-| setfiles                  | /sbin/setfiles                  | OK |
-| setsebool                 | /sbin/setsebool                 | OK |
+| secon                     | /bin/secon                      | Yes |
+| fixfiles                  | /sbin/fixfiles                  | Yes |
+| genhomedircon             | /sbin/genhomedircon             | Yes |
+| load_policy               | /sbin/load_policy               | Yes |
+| restorecon                | /sbin/restorecon                | Yes |
+| semodule                  | /sbin/semodule                  | Yes |
+| sestatus                  | /sbin/sestatus                  | Yes |
+| setfiles                  | /sbin/setfiles                  | Yes |
+| setsebool                 | /sbin/setsebool                 | Yes |
 | **[libselinux]**          | -                               | -  |
-| sefcontext_compile        | /sbin/sefcontext_compile        | OK |
+| sefcontext_compile        | /sbin/sefcontext_compile        | Yes |
 | **[libselinux-utils]**    | -                               | -  |
-| avcstat                   | /sbin/avcstat                   | OK |
-| getenforce                | /sbin/getenforce                | OK |
-| getsebool                 | /sbin/getsebool                 | OK |
-| matchpathcon              | /sbin/matchpathcon              | OK |
-| selabel_digest            | /sbin/selabel_digest            | OK |
-| selabel_lookup            | /sbin/selabel_lookup            | OK |
-| selabel_lookup_best_match | /sbin/selabel_lookup_best_match | OK |
-| selabel_partial_match     | /sbin/selabel_partial_match     | OK |
-| selinux_restorecon        | /sbin/selinux_restorecon        | OK |
-| selinuxconlist            | /sbin/selinuxconlist            | OK |
-| selinuxdefcon             | /sbin/selinuxdefcon             | OK |
-| selinuxenabled            | /sbin/selinuxenabled            | OK |
-| selinuxexeccon            | /sbin/selinuxexeccon            | OK |
-| setenforce                | /sbin/setenforce                | OK |
+| avcstat                   | /sbin/avcstat                   | Yes |
+| getenforce                | /sbin/getenforce                | Yes |
+| getsebool                 | /sbin/getsebool                 | Yes |
+| matchpathcon              | /sbin/matchpathcon              | Yes |
+| selabel_digest            | /sbin/selabel_digest            | Yes |
+| selabel_lookup            | /sbin/selabel_lookup            | Yes |
+| selabel_lookup_best_match | /sbin/selabel_lookup_best_match | Yes |
+| selabel_partial_match     | /sbin/selabel_partial_match     | Yes |
+| selinux_restorecon        | /sbin/selinux_restorecon        | Yes |
+| selinuxconlist            | /sbin/selinuxconlist            | Yes |
+| selinuxdefcon             | /sbin/selinuxdefcon             | Yes |
+| selinuxenabled            | /sbin/selinuxenabled            | Yes |
+| selinuxexeccon            | /sbin/selinuxexeccon            | Yes |
+| setenforce                | /sbin/setenforce                | Yes |
 | **[checkpolicy]**         | -                               | -  |
-| checkmodule               | /bin/checkmodule                | NG |
-| checkpolicy               | /bin/checkpolicy                | NG |
-| sedismod                  | /bin/sedismod                   | NG |
-| sedispol                  | /bin/sedispol                   | NG |
+| checkmodule               | /bin/checkmodule                | No |
+| checkpolicy               | /bin/checkpolicy                | No |
+| sedismod                  | /bin/sedismod                   | No |
+| sedispol                  | /bin/sedispol                   | No |
 | **[policycoreutils-python]** | -                            | -  |
-| audit2allow               | /bin/audit2allow                | NG |
-| audit2why                 | /bin/audit2why                  | NG |
-| chcat                     | /bin/chcat                      | NG |
-| sandbox                   | /bin/sandbox                    | NG |
-| semodule_package          | /bin/semodule_package           | NG |
-| semanage                  | /sbin/semanage                  | NG |
+| audit2allow               | /bin/audit2allow                | No |
+| audit2why                 | /bin/audit2why                  | No |
+| chcat                     | /bin/chcat                      | No |
+| sandbox                   | /bin/sandbox                    | No |
+| semodule_package          | /bin/semodule_package           | No |
+| semanage                  | /sbin/semanage                  | No |
 | **[policycoreutils-devel]** | -                             | -  |
-| sepolicy                  | /bin/sepolicy                   | NG |
+| sepolicy                  | /bin/sepolicy                   | No |
 | **[setools-console]**     | -                               | -  |
-| findcon                   | /bin/findcon                    | NG |
-| sechecker                 | /bin/sechecker                  | NG |
-| sediff                    | /bin/sediff                     | NG |
-| seinfo                    | /bin/seinfo                     | NG |
-| sesearch                  | /bin/sesearch                   | NG |
+| findcon                   | /bin/findcon                    | No |
+| sechecker                 | /bin/sechecker                  | No |
+| sediff                    | /bin/sediff                     | No |
+| seinfo                    | /bin/seinfo                     | No |
+| sesearch                  | /bin/sesearch                   | No |
 | **[setroubleshoot-server]** | -                             | -  |
-| sealert                   | /bin/sealert                    | NG |
-| sedispatch                | /sbin/sedispatch                | NG |
-| setroubleshootd           | /sbin/setroubleshootd           | NG |
+| sealert                   | /bin/sealert                    | No |
+| sedispatch                | /sbin/sedispatch                | No |
+| setroubleshootd           | /sbin/setroubleshootd           | No |
 
 <br>
 
