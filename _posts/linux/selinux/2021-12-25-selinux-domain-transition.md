@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxのドメイン遷移の一覧を表示する"
+menutitle:     "SELinuxのドメイン遷移の一覧を表示する (sepolicy transition)"
 date:          2021-12-25
 category:      Linux
 cover:         /assets/cover6.jpg

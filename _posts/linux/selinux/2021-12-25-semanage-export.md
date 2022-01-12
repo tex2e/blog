@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxで個別追加した設定を別のサーバにも適用する"
-menutitle:     "SELinuxで個別追加した設定を別のサーバにも適用する (semanage export)"
+menutitle:     "SELinuxで個別追加した設定を別のサーバにも適用する (semanage export/import)"
 date:          2021-12-25
 category:      Linux
 cover:         /assets/cover6.jpg

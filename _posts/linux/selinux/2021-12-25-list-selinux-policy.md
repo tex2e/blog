@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxポリシー(Access Vector)の一覧を表示する"
+menutitle:     "SELinuxポリシー(Access Vector)の一覧を表示する (sesearch)"
 date:          2021-12-25
 category:      Linux
 cover:         /assets/cover6.jpg
