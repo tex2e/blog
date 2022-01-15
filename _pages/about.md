@@ -3,7 +3,7 @@ layout:    about
 permalink: "/about/"
 author:    mako
 keywords:  about
-title:     About Mako
+title:     About Mako (@tex2e)
 menutitle: About
 weight:    90
 excerpt:   This page contains the curriculum vitae (CV) of the author.

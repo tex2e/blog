@@ -3,7 +3,7 @@ mako:
   # used for author lookup in posts and for first two characters in the about page back button
   initial:      tex2e
   # used to display author name
-  name:         mako
+  name:         Mako
   # defines location of cover image in about page
   cover:        /assets/book-reading-library-literature.jpg
   # author picture
@@ -13,7 +13,7 @@ mako:
   # used to display location of the author
   location:     Japan
   # link to the author of a post
-  #website:      "http://jwillmer.de/about"
+  #website:      "https://tex2e.github.io/"
   email:        tex2eq@gmail.com
   twitter:      tex2e
   linkedin:
