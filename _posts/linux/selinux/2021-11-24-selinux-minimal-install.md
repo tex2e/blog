@@ -55,12 +55,12 @@ CentOS 7をMinimalで最小インストールした場合に使用可能なSELin
 | sedismod                  | /bin/sedismod                   | No |
 | sedispol                  | /bin/sedispol                   | No |
 | **[policycoreutils-python]** | -                            | -  |
-| audit2allow               | /bin/audit2allow                | No |
+| audit2allow               | **/bin/audit2allow**            | No |
 | audit2why                 | /bin/audit2why                  | No |
 | chcat                     | /bin/chcat                      | No |
 | sandbox                   | /bin/sandbox                    | No |
 | semodule_package          | /bin/semodule_package           | No |
-| semanage                  | /sbin/semanage                  | No |
+| semanage                  | **/sbin/semanage**              | No |
 | **[policycoreutils-devel]** | -                             | -  |
 | sepolicy                  | /bin/sepolicy                   | No |
 | **[setools-console]**     | -                               | -  |
