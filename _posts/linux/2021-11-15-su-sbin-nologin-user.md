@@ -40,6 +40,4 @@ uid=26(postgres) gid=26(postgres) groups=26(postgres)
 
 #### 参考文献
 - [ログインできないユーザでコマンドを実行する方法＋おまけ - Qiita](https://qiita.com/riekure/items/27e07258a5a3ac4bd3fa)
-- [ユーザーのログインシェル: nologin と false 指定時の違い - 寒月記](https://www.kangetsu121.work/entry/2020/06/30/014759)
-
-
+- [ユーザーのログインシェル: nologin と false 指定時の違い - 寒月記](https://web.archive.org/web/20210125190926/https://www.kangetsu121.work/entry/2020/06/30/014759)
