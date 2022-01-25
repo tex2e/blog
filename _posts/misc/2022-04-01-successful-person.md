@@ -128,4 +128,5 @@ PDCAは中長期的な目的であるのに対して、OODAは短期的な目標
 - [#0171 2つめの人格を持つ　自分を変えたい人のための心理学 （期間限定公開） - YouTube](https://www.youtube.com/watch?v=F76PINX2VUE)
 - [PDCA と OODA の関係 - YouTube](https://www.youtube.com/watch?v=Ev_hMJPHyBk)
 - [PDCA と OODA ループは ｢合わせ技｣ からの相乗効果が正解｜読むとマーケティングがおもしろくなるブログ](https://www.countand1.com/2020/09/pdca-and-ooda-combination.html)
+- [Kosen Advent Calendar By Teachers](https://kosen-teachers.tumblr.com/post/37778909039/%E7%A6%8F%E5%B1%B1%E9%9B%85%E6%B2%BB%E3%81%AB%E3%81%AA%E3%82%8B%E6%96%B9%E6%B3%95)
 -->
