@@ -1,7 +1,7 @@
 <!-- Open Graph data -->
 <meta property="og:title" content="{{ page.title | default: site.title | escape }}" />
 <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
-<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/web-optim.png" />
+<meta property="og:image" content="{{ site.url }}/image/chono-mako-bg.jpg" />
 <meta property="og:site_name" content="{{ site.title | escape }}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/index.html','/' }}" />
