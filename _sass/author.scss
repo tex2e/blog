@@ -7,13 +7,28 @@
 
 .author-image {
     margin-top: 50px;
+    display: flex;
 
     &.has-cover {
         margin-top: -52px;
     }
 
     .img {
+        width: 100px;
+        height: 100px;
+        display: block;
         border: 4px solid white;
+        border-radius: 50%;
+        margin: auto;
+        background-size: cover;
+        background-position: center;
+
+        &.img-left {
+            margin-right: 0;
+        }
+        &.img-right {
+            margin-left: 0;
+        }
     }
 }
 

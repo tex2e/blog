@@ -6,12 +6,12 @@ keywords:  about
 title:     About Mako (@tex2e)
 menutitle: About
 weight:    90
-excerpt:   This page contains the curriculum vitae (CV) of the author.
+excerpt:   "Mako(@tex2e)の自己紹介ページ"
 ---
 
 ## Profile
 
-- Mako (まこ), @tex2e (てふ)
+- 蝶野まこ / @tex2e (てふ)
 - 自己紹介ページ＆ポートフォリオ : [https://tex2e.github.io/](https://tex2e.github.io/)
 - ブログ「晴耕雨読」: [https://tex2e.github.io/blog/](https://tex2e.github.io/blog/)
 
@@ -29,8 +29,8 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
 
 ---
 
-## Misc
+## Note
 
-リンク切れチェックを自動化しており、機械的にリンクへアクセスできなかった場合は以下の対応をしております。
-- アクセス先のURLがリンク切れした(404になった)場合、WayBack Machine に保存されたページに変更します
-- アクセス先のURLが機械的なアクセスに対して403を返す場合、URLのプロトコルを hxxp に置換し、ドメイン名の「.」を「[.]」に置換します
+URLのリンク切れチェックを自動化している都合上、URLを意図的に修正して記事に載せる場合がありますので、ご了承ください。
+- アクセス先のURLがリンク切れして404 Not Foundを返す場合、WayBack Machine に保存されたページに変更します
+- アクセス先のURLが機械的アクセスに対して403 Forbiddenを返す場合、URLのプロトコルを hxxp に置換し、ドメイン名の「.」を「[.]」に置換します

@@ -13,7 +13,16 @@ layout: headless
   <div class="author-cover image-bg" style="background-image: url('{{ author.cover | prepend: site.baseurl }}')"></div>
   {% endif %}
 
-  {% if author.picture %}
+  {% if author.picture2 and author.picture %}
+  <figure class="author-image {% if author.cover %} has-cover {% endif %}">
+    <div class="img img-left image-bg" style="background-image: url({{ author.picture | prepend: site.baseurl }})">
+      <a class="hidden" href="{{ author.picture | prepend: site.baseurl }}" itemprop="image">{{author.name}}'s Picture</a>
+    </div>
+    <div class="img img-right image-bg" style="background-image: url({{ author.picture2 | prepend: site.baseurl }})">
+      <a class="hidden" href="{{ author.picture | prepend: site.baseurl }}" itemprop="image">{{author.name}}'s Picture</a>
+    </div>
+  </figure>
+  {% elsif author.picture %}
   <figure class="author-image {% if author.cover %} has-cover {% endif %}">
     <div class="img image-bg" style="background-image: url({{ author.picture | prepend: site.baseurl }})">
       <a class="hidden" href="{{ author.picture | prepend: site.baseurl }}" itemprop="image">{{author.name}}'s Picture</a>
