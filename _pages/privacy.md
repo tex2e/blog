@@ -15,8 +15,8 @@ weight:     10
 その際に、データ収集のため Cookie が使用され、ご利用のブラウザを通して IP アドレスなどの非個人情報が Google に自動送信されます。
 このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
 当サイトはそれらの情報をサイト利用状況の計測・分析、サイトの質の向上目的に限り使用しています。
-この機能は Cookie を無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定でご確認ください。
-Google によるアクセス情報の収集方法および利用方法については、こちらをご参照ください。
+この機能は Cookie を無効化したり、広告ブロッカーを入れたりすることで収集を拒否できますので、お使いのブラウザの設定でご確認ください。
+Google によるアクセス情報の収集方法および利用方法については、以下をご参照ください。
 
 - [Terms of Service -- Google Analytics –- Google](https://www.google.com/analytics/terms/jp.html)
 - [プライバシーポリシー –- ポリシーと規約 –- Google](https://policies.google.com/privacy?hl=ja&gl=jp)
@@ -27,7 +27,7 @@ Google によるアクセス情報の収集方法および利用方法につい�
 当サイトのコメントシステムでは [Disqus](https://disqus.com/) を採用しています。
 コメントを投稿するにはユーザー登録が必要です。
 登録を行うと Disqus の利用規約、及びプライバシーポリシーに同意したものとみなされます。
-Disqus の利用規約とプライバシーポリシーについては、こちらをご参照ください。
+Disqus の利用規約とプライバシーポリシーについては、以下をご参照ください。
 
 - [Terms of Service -- Disqus](https://help.disqus.com/terms-and-policies/terms-of-service)
 - [Disqus Privacy Policy -- Disqus](https://help.disqus.com/terms-and-policies/disqus-privacy-policy)
