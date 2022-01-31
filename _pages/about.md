@@ -11,7 +11,7 @@ excerpt:   "Mako(@tex2e)の自己紹介ページ"
 
 ## Profile
 
-- 蝶野まこ / @tex2e (てふ)
+- 蝶野まこ (ちょうの まこ) / @tex2e (てふ)
 - 自己紹介ページ＆ポートフォリオ : [https://tex2e.github.io/](https://tex2e.github.io/)
 - ブログ「晴耕雨読」: [https://tex2e.github.io/blog/](https://tex2e.github.io/blog/)
 

@@ -19,7 +19,7 @@ layout: headless
       <a class="hidden" href="{{ author.picture | prepend: site.baseurl }}" itemprop="image">{{author.name}}'s Picture</a>
     </div>
     <div class="img img-right image-bg" style="background-image: url({{ author.picture2 | prepend: site.baseurl }})">
-      <a class="hidden" href="{{ author.picture | prepend: site.baseurl }}" itemprop="image">{{author.name}}'s Picture</a>
+      <a class="hidden" href="{{ author.picture | prepend: site.baseurl }}" itemprop="image2">{{author.name}}'s Picture</a>
     </div>
   </figure>
   {% elsif author.picture %}
