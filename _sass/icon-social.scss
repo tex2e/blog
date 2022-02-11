@@ -1,4 +1,5 @@
-﻿@font-face {
+﻿
+@font-face {
     font-family: 'social';
     src: url('../fonts/social.eot?36242447');
     src: url('../fonts/social.eot?36242447#iefix') format('embedded-opentype'), url('../fonts/social.woff2?36242447') format('woff2'), url('../fonts/social.woff?36242447') format('woff'), url('../fonts/social.ttf?36242447') format('truetype'), url('../fonts/social.svg?36242447#social') format('svg');
@@ -28,7 +29,7 @@
     font-family: "social";
     font-style: normal;
     font-weight: normal;
-    speak: none;
+    // speak: none;
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
