@@ -324,10 +324,10 @@ CISSPを勉強した時の自分用のまとめです。
                              | Labeling
                              | 
                Provide       V          Monitoring
-(DataSubject) -----------> [PII] <- - - - - - - - - DataCustodian
+(DataSubject) -----------> [PII] <- - - - - - - - - (DataCustodian)
                              ^
                              |          Monitoring
-                             | Use <- - - - - - - - DataSteward
+                             | Use <- - - - - - - - (DataSteward)
                              |
                        (DataProcessor) 
 ```
