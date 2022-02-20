@@ -215,15 +215,43 @@ TODO:
 
 https://tex2e.github.io/blog/linux/selinux-chcon
 
+```bash
+~]# chcon -t <TYPE> <PATH>
+```
+
 #### ファイルコンテキストの復元 (restorecon)
 
 TODO:
+
+```bash
+~]# restorecon -v <PATH>
+```
 
 #### ファイルコンテキストの永続的な変更 (semanage fcontext)
 
 TODO:
 
 https://tex2e.github.io/blog/linux/semanage-fcontext
+
+一覧表示
+```bash
+~]# semanage fcontext -l
+```
+
+追加
+```bash
+~]# semanage fcontext -a -t <TYPE> <FILE_SPEC>
+```
+
+修正
+```bash
+~]# semanage fcontext -m -t <TYPE> <FILE_SPEC>
+```
+
+削除
+```bash
+~]# semanage fcontext -d <FILE_SPEC>
+```
 
 #### オブジェクトのロール
 セキュリティコンテキストとは、SELinuxのユーザ、ロール、タイプの3つのセキュリティ属性をまとめたものです。
@@ -238,6 +266,22 @@ TODO:
 
 https://tex2e.github.io/blog/linux/semanage-port
 
+一覧表示
+```bash
+~]# semanage port -l
+```
+
+追加
+```bash
+~]# semanage port -a -t <TYPE> -p <tcp|udp> <PORT>
+~]# semanage port -m -t <TYPE> -p <tcp|udp> <PORT>
+```
+
+削除
+```bash
+~]# semanage port -d -t <TYPE> -p <tcp|udp> <PORT>
+```
+
 ### ブール値 (semanage boolean)
 
 TODO:
@@ -250,6 +294,22 @@ https://tex2e.github.io/blog/linux/selinux-user
 
 https://tex2e.github.io/blog/linux/selinux-user-mapping
 
+一覧表示
+```bash
+~]# semanage login -l
+```
+
+マッピングの追加
+```bash
+~}# semanage login -a -s <SEUSER> <LOGINUSER>
+```
+
+マッピングの削除
+```bash
+~}# semanage login -d <LOGINUSER>
+```
+
+
 ### ポリシーモジュールの管理 (semodule)
 
 TODO:
@@ -258,10 +318,60 @@ audit2allow + semodule
 
 https://tex2e.github.io/blog/linux/selinux-allow-from-denied-log
 
+一覧表示
+```bash
+~]# semodule -l
+~]# semodule -lfull
+```
+
+インストール
+```bash
+~]# semodule -i <MODULE_PKG>
+```
+
+削除
+```bash
+~]# semodule -r <MODULE_PKG>
+```
+
+有効化
+```bash
+~]# semodule -e <MODULE_PKG>
+```
+
+無効化
+```bash
+~]# semodule -d <MODULE_PKG>
+```
+
 
 ### ログと監査
 
-TODO:
+SELinuxのポリシールールに違反するアクションが実行されると、SELinuxはそのアクションを拒否すると同時に、拒否ログを出力します。
+ログの出力先は、システムやauditdサービスの起動状況によって変わります。
+
+1. カーネル起動時のSELinuxのログ出力先は、/var/log/dmesg
+2. auditd サービスが起動していないときのSELinuxのログの出力先は、/var/log/messages
+3. auditd サービスが起動しているときのSELinuxのログの出力先は、/var/log/audit/audit.log
+
+ログに記録される拒否ログは、AVCログと呼ばれるもので、以下のような内容が記載されます。
+```
+type=AVC msg=audit(1243332701.958:282): avc:  denied  { write } for  pid=1647 comm="httpd" name="upload" dev="dm-0" ino=33584792 scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
+```
+
+- **type=** : auditイベントの種類。SELinuxでは以下の2種類があります。
+  - type=AVC : カーネル空間で生成したログ
+  - type=USER_AVC : ユーザ空間で生成したログ
+- **msg=** : auditイベントID。msg=audit(UNIXTIME時刻:シリアル番号) の形式で示されます。複数のauditイベントのシリアル番号が同じ場合は、それらが関連性のある一連のauditイベントであることがわかります。
+- result : アクセスを拒否したときは denied、auditallowルールで許可ログを出力するときは granted です。
+- access_vector : オブジェクトマネージャによって識別したアクション。read, write, exec など
+- pid=, **comm=** : タスクの場合は、実行したプロセスのプロセスIDと、実行したコマンドのパス名
+- dev=, **ino=**, **path=** : アクセス対象のリソースを管理するデバイス番号と、inode番号、パス名
+- **name=** : アクセス対象のファイル名や、ディレクトリ名 (この属性はログに含まれない場合もある)
+- **scontext=** : アクセス元 (サブジェクト) のセキュリティコンテキスト
+- **tcontext=** : アクセス先 (オブジェクト) のセキュリティコンテキスト
+- **tclass=** : アクセス先のオブジェクトのクラス。file, dir, tcp_socket など
+- permissive= : SELinuxがPermissiveで動作したか (検知したが拒否しないモードだったか)
 
 
 ### SELinuxのアーキテクチャ
