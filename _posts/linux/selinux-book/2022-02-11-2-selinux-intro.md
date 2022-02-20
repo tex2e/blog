@@ -301,12 +301,12 @@ https://tex2e.github.io/blog/linux/selinux-user-mapping
 
 マッピングの追加
 ```bash
-~}# semanage login -a -s <SEUSER> <LOGINUSER>
+~]# semanage login -a -s <SEUSER> <LOGINUSER>
 ```
 
 マッピングの削除
 ```bash
-~}# semanage login -d <LOGINUSER>
+~]# semanage login -d <LOGINUSER>
 ```
 
 
