@@ -236,9 +236,9 @@ $ convert -density 300 tex2png-sample.pdf -quality 90 tex2png-sample.png
 
 | オプション | 説明 |
 | :------------- | :------------- |
-| draw=<color>   | 線の色
-| thin, very thin, ultra thin | 線を細くすます。右にいくほどより細くする
-| thick, very thick, ultra thick | 線を太くすます。右にいくほどより太くする
+| draw=\<color>   | 線の色
+| thin, very thin, ultra thin | 線を細くする。順番に右にいくほどより細くする
+| thick, very thick, ultra thick | 線を太くする。順番に右にいくほどより太くする
 | loosely dashed | 破線より少し線の間隔を広くした破線
 | dashed | 破線 `--- ---`
 | densely dashed | 点線より少し線の間隔を広くした破線
