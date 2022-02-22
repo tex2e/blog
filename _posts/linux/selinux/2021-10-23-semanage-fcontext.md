@@ -36,7 +36,7 @@ unconfined_u:object_r:etc_t:s0 /etc/file1
 /etc/file1         all files          system_u:object_r:samba_share_t:s0
 ```
 しかし、ルールを追加しただけでは、ファイルにSELinuxコンテキストは適用されません。
-```
+```bash
 ~]# ls -Z /etc/file1
 unconfined_u:object_r:etc_t:s0 /etc/file1
 ```
