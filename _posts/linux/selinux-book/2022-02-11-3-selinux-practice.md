@@ -16,6 +16,22 @@ feed:    false # 後で公開すること!
 
 **[WIP] この記事は書き途中です。完成までしばらくお待ちください。**
 
+### SELinuxを有効化する
+
+TODO:
+
+https://tex2e.github.io/blog/linux/enable-selinux
+
+### httpdがファイル書き込み可能にする
+
+TODO:
+
+https://tex2e.github.io/blog/linux/httpd_sys_rw_content_t
+
+### httpdがファイル実行可能にする
+
+TODO:
+
 ### SELinuxでWebサーバ経由の侵入攻撃を防ぐ
 
 TODO:
@@ -203,6 +219,63 @@ httpd_t ドメインから user_home_t タイプのファイルにアクセス�
 type=AVC msg=audit(0000000000.311:753): avc:  denied  { read } for  pid=10749 comm="python3" name="test.html" dev="dm-0" ino=17856687 scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file permissive=0
 ```
 以上で、自作サービスのPython3の簡易Webサーバを、httpd_t ドメインとしてアクセス制御することができました。
+
+しかし、Python3.6の本体のファイルである /usr/libexec/platform-python3.6 を bin_t から httpd_exec_t にラベル変更すると、別のシステムのプログラムで問題が発生しました。
+監査ログに記録された拒否ログは、以下のようなものでした。
+幸い、システムが停止するほどの深刻なものではないですが、システムが使用しているプログラムのラベルを安易に変えるのは危険です。
+
+```
+type=AVC msg=audit(0000000000.497:4836): avc:  denied  { execute } for  pid=12914 comm="dbus-daemon-lau" name="platform-python3.6" dev="dm-0" ino=35081046 scontext=system_u:system_r:system_dbusd_t:s0-s0:c0.c1023 tcontext=system_u:object_r:httpd_exec_t:s0 tclass=file permissive=0
+```
+
+そこで、python3.6の本体のファイルをコピーして、元々のPythonを bin_t、簡易Webサーバ用に使うPythonを httpd_exec_t にラベル付けします。
+
+```bash
+~]# cp /usr/libexec/platform-python3.6 /usr/libexec/platform-python3.6_simplehttpserver
+~]# restorecon -v /usr/libexec/platform-python3.6
+~]# chcon -t httpd_exec_t /usr/libexec/platform-python3.6_simplehttpserver
+~]# ls -Z /usr/libexec/platform-python3.6*
+           system_u:object_r:bin_t:s0 /usr/libexec/platform-python3.6
+unconfined_u:object_r:httpd_exec_t:s0 /usr/libexec/platform-python3.6_simplehttpserver
+```
+
+ここで注意点ですが、lnでリンクを貼った場合は、セキュリティコンテキストが2つのファイル間で同じになってしまうため、別のラベルを付けたい場合は必ずコピーする必要があります。
+
+python3.6の本体のファイルをコピーしたら、デーモンが呼び出すプログラムのパスを修正します。
+/etc/systemd/system/simplehttpserver.service を以下のように修正します。
+
+```diff
+ [Unit]
+ Description=Python Simple HTTP Server
+ After=syslog.target network.target auditd.service
+
+ [Service]
+-ExecStart=/usr/bin/python3 -m http.server 8000
++ExecStart=/usr/libexec/platform-python3.6_simplehttpserver -m http.server 8000
+ ExecStop=/bin/kill -HUP $MAINPID
+ WorkingDirectory=/var/www/html
+ SELinuxContext=system_u:system_r:httpd_t:s0
+
+ [Install]
+ WantedBy=multi-user.target
+```
+
+```bash
+systemctl daemon-reload
+systemctl start simplehttpserver
+systemctl status simplehttpserver
+```
+
+```bash
+~]# semanage fcontext -a -t httpd_exec_t '/usr/libexec/platform-python[0-9]+\.[0-9]+_simplehttpserver'
+~]# restorecon -v /usr/libexec/platform-python*
+```
+
+
+### 既存の組み込みポリシーを修正する
+
+TODO:
+
 
 
 ---
