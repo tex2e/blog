@@ -73,6 +73,8 @@ CentOS 7をMinimalで最小インストールした場合に使用可能なSELin
 | sealert                   | /bin/sealert                    | No |
 | sedispatch                | /sbin/sedispatch                | No |
 | setroubleshootd           | /sbin/setroubleshootd           | No |
+| **[policycoreutils-newrole]** | -                           | -  |
+| newrole                   | /usr/bin/newrole                | No |
 
 <br>
 
