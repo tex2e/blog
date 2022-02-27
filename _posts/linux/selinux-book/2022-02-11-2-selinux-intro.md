@@ -51,6 +51,7 @@ SELinuxによってタイプが割り当てられるのは、オブジェクト�
 もし、独自のディレクトリ構成にしたい場合や、SELinuxのポリシーで拒否してしまうソフトウェアの新機能を使いたい場合は、SELinuxのポリシーをコマンド経由で自分で修正することも可能です。
 
 
+
 ### DACとMACの共存
 
 LinuxにはDAC (任意アクセス制御) というシステムがあります。
@@ -64,7 +65,6 @@ DACがアクションを許可すれば、続いてSELinuxはMACに基づいて�
 <img src="{{ site.baseurl }}/media/book/selinux/2-processing-call.png" width=600px />
 <figcaption>DACとMACの両方によるアクセス許可の流れ</figcaption>
 </figure>
-
 
 #### アクセスベクターキャッシュ (AVC)
 
@@ -82,6 +82,7 @@ SELinux がアクセス決定を行うまでの流れは以下の通りです。
 <img src="{{ site.baseurl }}/media/book/selinux/2-core.png" width=700px />
 <figcaption>アクセス決定の流れ</figcaption>
 </figure>
+
 
 
 ### プロセスの制御
@@ -126,19 +127,21 @@ SELinuxがアクション許可を判断するのに必要なのはセキュリ�
 すべてのプロセスとすべてのオブジェクトにラベル付けを行い、プロセスのドメインに対してアクセス制御をする仕組みを**Type Enforcement** (**型強制**) といいます。
 Type Enforcementを使用することで、SELinuxはアプリケーションやサービスができることを制御し、よりセキュアな環境を維持することができます。
 
-#### 制限のないプロセス
+#### 制限のないプロセス (Unconfined Process)
 
 制限のないドメインでプロセスが動作する場合は、そのプロセスはSELinuxからの制限を受けません。
 例えば、カーネルで実行されるプロセスのドメイン kernel_t、制限のないサービスのドメイン unconfined_service_t、制限のないユーザのドメイン unconfined_t などがあります。
 制限のないドメインで動作するプロセスは、MACルールは使用しませんが、DACルールは引き続き使用してアクセス制御を実施します。
 
 
-### ドメイン遷移
+
+### ドメイン遷移 (Domain Transition)
 
 特定のドメインがプログラムを実行した際に別のドメインに遷移することを**ドメイン遷移** (Domain Transition) といいます。
 例えば、init_t ドメインの systemd が /usr/sbin/httpd (http_exec_t) を実行すると、起動したプロセスには httpd_t ドメインが割り当てられます。
 ドメイン遷移をするためには、以下の複数のポリシールールが必要です。
-1. サブジェクトのドメインから別のドメインに遷移するための許可ルール。遷移 (transition) する権限は process クラスに紐づいています
+1. サブジェクトのドメインから別のドメインへの遷移ルール。遷移 (transition) する権限は process クラスに紐づいています
+1. サブジェクトのドメインから別のドメインに遷移するための許可ルール。
 2. サブジェクトのドメインが、プロセス起動のためのファイル実行を許可するルール。実行 (execute) する権限は file クラスに紐づいています
 3. 別のドメインに遷移するときに実行されるファイルを限定するためのルール。限定されたファイルはエントリーポイント (entrypoint) と呼ばれます
 
@@ -149,6 +152,9 @@ Type Enforcementを使用することで、SELinuxはアプリケーションや
 ~]# sesearch -T -s init_t -c process | grep httpd_t
 type_transition init_t httpd_exec_t:process httpd_t;
 
+~]# sesearch -A -s init_t -t httpd_t -c process -p transition
+allow initrc_domain daemon:process transition;
+
 # init_tドメインが実行できるファイルのタイプ：
 ~]# sesearch -A -s init_t -t httpd_exec_t -c file -p execute
 allow initrc_domain direct_init_entry:file { execute getattr map open read };
@@ -158,12 +164,12 @@ allow initrc_domain direct_init_entry:file { execute getattr map open read };
 allow httpd_t httpd_exec_t:file { entrypoint execute execute_no_trans getattr ioctl lock map open read };
 ```
 
-2番目のコマンドの結果について、initrc_domain と direct_init_entry はタイプでなく属性 (Attribute) です。
+2番目や3番目のコマンドの結果について、initrc_domain と daemon と direct_init_entry はタイプでなく属性 (Attribute) です。
 末尾が `_t` であればタイプですが、それ以外の場合は属性です。
 属性 (Attribute) は Type が持つ属性を表したものです。
-ルールで Attribute を使うことで、Type だけ異なる複数のルールを1つにまとめることができます。
-seinfo -a コマンドで確認すると、initrc_domain 属性の中には init_t タイプが存在し、direct_init_entry 属性の中には httpd_exec_t タイプが存在します。
-そのため、ここでは initrc_domain を init_t、タイプが存在し、direct_init_entry を httpd_exec_t に読み替えることにします。
+Type だけ異なる複数のルールを1つにまとめるために属性は使用されます。
+seinfo -a コマンドで確認すると、initrc_domain 属性の中には init_t タイプが存在し、daemon 属性の中には httpd_t タイプが存在し、direct_init_entry 属性の中には httpd_exec_t タイプが存在します。
+そのため、ここでは initrc_domain 属性を init_t、タイプ、daemon 属性を httpd_t タイプ、direct_init_entry 属性を httpd_exec_t に読み替えることにします。
 
 ```bash
 ~]# seinfo -a initrc_domain -x
@@ -171,6 +177,13 @@ Type Attributes: 1
    attribute initrc_domain;
         ...
         init_t
+        ...
+
+~]# seinfo -a daemon -x | head
+Type Attributes: 1
+   attribute daemon;
+        ...
+        httpd_t
         ...
 
 ~]# seinfo -a direct_init_entry -x
@@ -263,7 +276,8 @@ unconfined_t は、SELinuxに制限されないプロセスなので、本来の
 また、本番環境では起動しているプロセスが適切なドメインで動作しているかを `ps -eZ` コマンドで確認することは、アクセス制御をする上で重要なことです。
 
 
-### タイプ遷移
+
+### タイプ遷移 (Type Transition)
 
 ファイルやフォルダを作成したとき、そのタイプは親のディレクトリのタイプを継承します。
 例えば、/var/logの下に foo/bar ディレクトリを作成して、baz ファイルを作成した場合、
@@ -322,8 +336,84 @@ unconfined_u:object_r:var_log_t:s0 /var/log/foo/bar/baz
 
 以上から、httpd_t ドメインのプロセスが var_log_t の下にファイルを作成した場合は、タイプ遷移のルールに従って var_log_t の代わりに httpd_log_t タイプが付与されることが確認できました。
 
+#### 名前遷移 (Name Transition)
 
-### ファイルのラベリング
+名前遷移は、ポリシーバージョン25から対応しているタイプ遷移の一種で、ファイル作成時のみ適用されるルールです。
+タイプ遷移は、ファイルやディレクトリを作成したときに、そのタイプは親のディレクトリのタイプを継承しないで、ポリシールールで指定したタイプが付与される、というものでした。
+名前遷移は、作成するファイル名がポリシールールで指定した名前のときだけタイプ遷移を実施する、というものです。
+以下のポリシールールを使って名前遷移について説明します。
+
+```bash
+~]# sesearch -T -s httpd_t -t tmp_t -c file
+type_transition httpd_t tmp_t:file httpd_tmp_t;
+type_transition httpd_t tmp_t:file krb5_host_rcache_t HTTP_23;
+type_transition httpd_t tmp_t:file krb5_host_rcache_t HTTP_48;
+```
+
+このルールでは、httpd_t ドメインが tmp_t ディレクトリにファイルを作成するとき、通常はタイプ遷移に基づいて tmp_t の代わりに httpd_tmp_t タイプが付けられます。
+しかし、作成するファイルの名前が HTTP_23 や HTTP_48 のときは、代わりに krb5_host_rcache_t タイプがファイルに付けられます。
+検証として、/tmp 下にファイルを作成する PHP スクリプトを書いて、apache から実行できるようにします。
+
+/var/www/html/test-tmp.php
+```php
+<?php
+function create_file($path) {
+  // touch($path);
+  file_put_contents($path, "test text");
+  echo "Update file: " . $path . "\n";
+}
+create_file("/tmp/foo.txt");
+create_file("/tmp/HTTP_01");
+create_file("/tmp/HTTP_23");
+create_file("/tmp/HTTP_48");
+```
+
+次に、作成したPHPにWeb経由でアクセスします。
+すると、/tmp 下に4つのファイルが作成されます。
+作成するファイル名は foo.txt, HTTP_01, HTTP_23, HTTP_48 の4つです。
+
+```bash
+~]# curl localhost/test-tmp.php
+Update file: /tmp/foo.txt
+Update file: /tmp/HTTP_01
+Update file: /tmp/HTTP_23
+Update file: /tmp/HTTP_48
+```
+
+/tmp 下に作成されたファイルのセキュリティコンテキストを確認すると、HTTP_01 と foo.txt はタイプ遷移のルールによって httpd_tmp_t タイプが付与されましたが、HTTP_23 と HTTP_48 は名前遷移のルールによって krb5_host_rcache_t タイプが付与されました。
+つまり、名前遷移ルールはタイプ遷移の条件に作成するファイル名を追加したものといえます。
+
+```bash
+~]# ls -Z /tmp
+       system_u:object_r:httpd_tmp_t:s0 HTTP_01
+system_u:object_r:krb5_host_rcache_t:s0 HTTP_23
+system_u:object_r:krb5_host_rcache_t:s0 HTTP_48
+       system_u:object_r:httpd_tmp_t:s0 foo.txt
+```
+
+補足ですが、検証において PHP は /tmp 直下にファイルを作成しましたが、実際にはデフォルトでサービス起動時の systemd の設定で PrivateTmp が有効 (true) になっているため、systemd で起動されるプロセスがアクセスする /tmp は、実際には以下の長いパスになっています。
+
+```bash
+~]# ls -Z /tmp/systemd-private-e9414bc480bf4867b313925cd079f0f6-php-fpm.service-OQldyR/tmp
+       system_u:object_r:httpd_tmp_t:s0 HTTP_01
+system_u:object_r:krb5_host_rcache_t:s0 HTTP_23
+system_u:object_r:krb5_host_rcache_t:s0 HTTP_48
+       system_u:object_r:httpd_tmp_t:s0 foo.txt
+```
+
+デフォルトでは PrivateTmp の機能は有効になっています。
+この機能により、/tmp にアクセスしては他のプロセスが作成した一時ファイルを見つけることができず、有効化しておけばTOC/TOU攻撃を緩和できるため、セキュリティ的により安全といえます。
+PrivateTmp の設定が true でも false でもタイプ遷移や名前遷移には影響しないのですが、もし気になる場合は以下の設定で PHP サービス専用の一時ディレクトリの機能を無効化することもできます。
+
+```bash
+~]# cat /usr/lib/systemd/system/php-fpm.service
+PrivateTmp=true → false  (trueの場合、/tmpはそのプロセス専用になる。デフォルトはtrue)
+
+~]# systemctl daemon-reload
+~]# systemctl restart php-fpm
+```
+
+### ファイルのラベリング (Labeling)
 
 ファイルのセキュリティコンテキストは、ls コマンドの -Z オプションを使用して取得できます。
 ディレクトリのセキュリティコンテキストも同様に取得できます。
@@ -438,11 +528,16 @@ SELinux Local fcontext Equivalence
 /var/test_www = /var/www
 ```
 
-また、ファイルのマッチに使用した正規表現が適切だったかを確認するための matchpathcon コマンドもあります。
-matchpathcon は、semanage fcontextに設定した正規表現にマッチするかを確認するためのツールです。
+ローカル環境でカスタマイズした変更の一覧を表示する場合、`-lC` (List Customization) オプションを使用します。
 ```bash
-~]# matchpathcon /var/test_www/html/upload
-/var/test_www/html/upload       system_u:object_r:httpd_sys_content_t:s0
+~]# semanage fcontext -lC
+SELinux fcontext                type           Context
+/var/test_www(/.*)?             all files      system_u:object_r:httpd_sys_content_t:s0
+```
+
+ローカル環境でカスタマイズした変更をすべて削除する場合、`-D` (Delete all customization) オプションを使用します。
+```bash
+~]# semanage fcontext -D
 ```
 
 semanage を使わないでファイルコンテキストの永続的な変更をする方法もあります。
@@ -452,34 +547,78 @@ semanage を使わないでファイルコンテキストの永続的な変更�
 ~]# reboot
 ```
 
+その他に、ファイルのマッチに使用した正規表現が適切だったかを確認するための matchpathcon コマンドもあります。
+matchpathcon は、指定したパスがファイルコンテキストに設定した正規表現とマッチするかを確認するためのツールです。
+```bash
+~]# matchpathcon /var/test_www/html/upload
+/var/test_www/html/upload       system_u:object_r:httpd_sys_content_t:s0
+```
+
 
 
 ### ポートのラベリング (semanage port)
 
-TODO:
-
-https://tex2e.github.io/blog/linux/semanage-port
-
-一覧表示
+semanage port は、ポートの番号に割り当てるタイプを管理するためのツールです。
+プロセスのTCPやUDPの送信 (send) や、受信 (recv) および待ち受け (Listen) を管理するために使用します。
+すべてのポートのタイプに関連付けされているポート番号の一覧を表示するには、`-l` (List) オプションでコマンドを実行します。
 ```bash
 ~]# semanage port -l
+SELinux Port Type              Proto    Port Number
+afs3_callback_port_t           tcp      7001
+afs3_callback_port_t           udp      7001
+afs_bos_port_t                 udp      7007
+...
+zookeeper_election_port_t      tcp      3888
+zookeeper_leader_port_t        tcp      2888
+zope_port_t                    tcp      8021
 ```
 
-追加
+指定したポート番号に新しいタイプを割り当てる場合、`-a` (Add) オプションを使用します。
+実行時は、タイプとプロトコルとポート番号を指定します。
+一般的にポートに割り当てるタイプは、末尾が `_port_t` の形式です。
 ```bash
-~]# semanage port -a -t <TYPE> -p <tcp|udp> <PORT>
-~]# semanage port -m -t <TYPE> -p <tcp|udp> <PORT>
+~]# semanage port -a -t http_port_t -p tcp 8088
+~]# semanage port -l | grep 8088
+http_port_t                    tcp      8088, 80, 81, 443, 488, 8008, 8009, 8443, 9000
 ```
 
-削除
+指定したポート番号にタイプを追加する場合、`-m` (Modify) オプションを使用します。
+指定したポート番号がすでに他で使用されている場合に使うオプションです。
 ```bash
-~]# semanage port -d -t <TYPE> -p <tcp|udp> <PORT>
+~]# semanage port -a -t http_port_t -p tcp 8000
+ValueError: Port tcp/8000 already defined
+
+~]# semanage port -l | grep 8000
+soundd_port_t                  tcp      8000, 9433, 16001
+
+~]# semanage port -m -t http_port_t -p tcp 8000
+http_port_t                    tcp      8000, 8088, 80, 81, 443, 488, 8008, 8009, 8443, 9000
+soundd_port_t                  tcp      8000, 9433, 16001
 ```
 
-### Boolean (semanage boolean)
+指定したポート番号のタイプを削除する場合、`-d` (Delete) オプションを使用します。
+```bash
+~]# semanage port -d -t http_port_t -p tcp 8088
+```
+
+ローカル環境でカスタマイズした変更の一覧を表示する場合、`-lC` (List Customization) オプションを使用します。
+```bash
+~]# semanage port -lC
+SELinux Port Type              Proto    Port Number
+http_port_t                    tcp      8000
+```
+
+ローカル環境でカスタマイズした変更をすべて削除する場合、`-D` (Delete all customization) オプションを使用します。
+```bash
+~]# semanage port -D
+```
+
+
+### Boolean
 
 Boolean は SELinux のポリシーを管理するためのフラグで、Onにするだけで関連する複数のルールが有効化されます。
-Boolean の一覧は semanage コマンドを使って表示することができます。
+例えば、httpd_can_network_connect_db という名前の Boolean は、On にするだけで httpd が外部のDBサーバのポートとの接続が許可されます。
+Boolean の一覧は semanage boolean コマンドを使って表示することができます。
 
 ```bash
 ~]# semanage boolean -l
@@ -506,6 +645,19 @@ Boolean の値を設定するには、setsebool コマンドを使用して Bool
 ~]# setsebool -P httpd_can_network_connect on
 ```
 
+ローカル環境でカスタマイズした変更の一覧を表示する場合、`-lC` (List Customization) オプションを使用します。
+```bash
+~]# setsebool -P httpd_can_network_connect on
+~]# semanage boolean -lC
+SELinux boolean                State  Default Description
+httpd_can_network_connect      (on   ,   on)  Allow HTTPD scripts and modules to connect to the network using TCP.
+```
+
+ローカル環境でカスタマイズした変更をすべて削除する場合、`-D` (Delete all customization) オプションを使用します。
+```bash
+~]# semanage boolean -D
+```
+
 #### Booleanの影響範囲を調べる
 
 対象の Boolean を on にする前に、その Boolean によってどんな許可ルールが有効化されるのか確認するには、sesearch コマンドを使います。
@@ -521,8 +673,10 @@ allow httpd_sys_script_t port_type:udp_socket send_msg; [ httpd_can_network_conn
 allow httpd_t port_type:tcp_socket name_connect; [ httpd_can_network_connect ]:True
 ```
 
-
 #### 役立つBooleanの一覧
+
+自作のポリシールールを追加するよりも、Boolean を on にしてポリシールールを修正する方が、安全に許可ルールを追加することができます。
+特に、よく使う Boolean もしくは、知っておいて損はない Boolean について、簡単に紹介します。
 
 * httpd
   - httpd_can_network_connect :
@@ -544,7 +698,7 @@ allow httpd_t port_type:tcp_socket name_connect; [ httpd_can_network_connect ]:T
 * tomcat
   - tomcat_can_network_connect_db :
   TomcatがネットワークのDBに接続するのを許可する。デフォルトは off
-* named (DNS)q
+* named (DNS)
   - named_tcp_bind_http_port :
   DNSがHTTPポートで接続を待ち受けるのを許可する。DNS over HTTPSなどの対応。デフォルトは off
   - named_write_master_zones :
@@ -606,6 +760,19 @@ SELinuxユーザの対応関係を追加するには、`-a` (Add) オプショ�
 ~]# semanage login -d user1
 ```
 
+ローカル環境でカスタマイズした変更の一覧を表示する場合、`-lC` (List Customization) オプションを使用します。
+```bash
+~]# semanage login -lC
+Login Name           SELinux User         MLS/MCS Range        Service
+example.user         staff_u              s0-s0:c0.c1023       *
+user1                sysadm_u             s0-s0:c0.c1023       *
+```
+
+ローカル環境でカスタマイズした変更をすべて削除する場合、`-D` (Delete all customization) オプションを使用します。
+```bash
+~]# semanage login -D
+```
+
 #### ユーザのレベル
 
 SELinuxのユーザ一覧を表示すると「MLS/MCS Range」という列があります。
@@ -633,19 +800,26 @@ unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 
 #### SELinuxのロール
 
-- **user_r** : 制限されたロール。このロールに属するSEユーザは、エンドユーザのアプリケーションしか実行できないです。権限昇格などは使用できないため、管理者の操作をしたい場合は別のアカウントで再度ログインしなおす必要があります
-- **staff_r** : ユーザの切り替えができる制限されたロール。このロールに属するSEユーザは、newroleコマンドによるロールの切り替えができます。対応するLinuxユーザは wheel グループに所属していても管理者権限を使うことはできません (dac_override で拒否されます)。 /etc/sudoers を編集すれば管理者権限も使用できるようになります
-- **sysadm_r** : システム管理者ロール。システム全体を操作できる非常に高い権限を持ちます。このロールに所属するSEユーザは、対応するLinuxユーザを管理者権限のグループ wheel などに追加しておくことで管理者権限を使用することができます
-- **secadm_r** : セキュリティ管理者ロール。このロールに属するSEユーザは、SELinuxのポリシーの変更とコントロールの操作ができます。
-システム管理者とシステムポリシー管理者の職務の分離をするために使用します
-- **system_r** : デーモンやサービスのプロセスに割り当てられるロール。システム管理者ほどではないですが、デーモンやサービスの稼働に必要な高い権限を持ちます
+SELinuxには、複数のロールが存在します。全てのロールの一覧は、seinfo -r コマンドで確認することができます。
+以下はそれぞれのSELinuxロールの説明です。
 
-unconfined_r : 制限のないロール。このロールに属するユーザは、すべてのアクションがSELinuxに制限されません
+- **unconfined_r** : 制限のないロール。このロールに属するユーザは、すべてのアクションがSELinuxに制限されません。
+- **system_r** : デーモンやサービスのプロセスに割り当てられるシステム管理者ロール。デーモンやサービスの稼働に必要な高い権限を持ちます。
+- **sysadm_r** : ユーザに割り当てられるシステム管理者ロール。システム全体を操作できる非常に高い権限を持ちます。このロールに所属するSEユーザは、対応するLinuxユーザを管理者権限のグループ wheel などに追加しておくことで管理者権限を使用することができます
+- secadm_r : セキュリティ管理者ロール。このロールに属するSEユーザは、SELinuxのポリシーの変更とコントロールの操作ができます。
+システム管理者とシステムポリシー管理者の職務の分離をするために使用します。
+- **staff_r** : ユーザの切り替えができる制限されたロール。このロールに属するSEユーザは、newroleコマンドによるロールの切り替えができます。/etc/sudoers で実行できるコマンドを指定するときにセキュリティコンテキストも指定しておけば、管理者権限も使用できるようになります。
+- webadm_r : Web管理者ロール。httpdの設定やログにアクセスできるロールです。
+- auditadm_r : 監査管理者ロール。auditdの設定やログにアクセスできるロールです。
+- dbadm_r : DB管理者ロール。mysqldやpostgresqlの設定やログにアクセスできるロールです。
+- logadm_r : ログ管理者ロール。`*_log_t` でタイプ付けされたログファイルにアクセスできるロールです。
+- **user_r** : 制限された一般ユーザのロール。このロールに属するSEユーザは、エンドユーザのアプリケーションしか実行できないです。権限昇格などは使用できないため、管理者の操作をしたい場合は別のアカウントで再度ログインしなおす必要があります。
+- guest_r : ゲストロール。ネットワーク接続に制限があるロールです。
+- xguest_r : X Windowsゲストロール。X Window向けのguest_rロールです。
+- object_r : オブジェクトに付けるロール。SIDを決めるのに必要なだけで特に意味はないです。
 
-
-#### オブジェクトのロール (コラム)
-
-セキュリティコンテキストとは、SELinuxのユーザ、ロール、タイプの3つのセキュリティ属性をまとめたものです。
+オブジェクトのロール object_r は、ファイルやディレクトリが自動的に持つロールで、自分でラベル付けする必要はありません。
+セキュリティコンテキストは、SELinuxのユーザ、ロール、タイプの3つのセキュリティ属性をまとめたものです。
 SELinuxでは、処理の高速化のために、セキュリティコンテキストにSID (セキュリティID) と呼ばれる一意の整数値を割り当てて識別します。
 サブジェクトは能動的で様々なロールを持つことができますが、オブジェクトは受動的なのであまりロールを必要としません。
 ただし、全てのサブジェクトとオブジェクトには3つのセキュリティ属性を持つセキュリティコンテキストを割り当てないといけないので、ロールが不要なオブジェクトには、ダミーのロール object_r が付与されています。
@@ -655,11 +829,203 @@ SELinuxでは、処理の高速化のために、セキュリティコンテキ�
 system_u:object_r:passwd_file_t:s0 /etc/passwd
 ```
 
-TODO:
+#### SELinuxユーザのデフォルトマッピングを変更する
 
-https://tex2e.github.io/blog/linux/selinux-user
+LinuxユーザがSEユーザと対応付けされていない場合、デフォルトではSELinuxの unconfined_u ユーザが割り当てられます。
+unconfined_u は SELinux の制限を受けないユーザのため、脆弱性を使った権限昇格によるシステム全体の権限が奪われる可能性があります。
+SELinuxユーザのデフォルトマッピングの変更することで、よりセキュアなユーザ管理をすることができます。
+ここでは、LinuxユーザのデフォルトSEユーザを unconfined_u から user_u に変更する方法について説明します。
 
-https://tex2e.github.io/blog/linux/selinux-user-mapping
+SEユーザの user_u は、sudo や su が実行できない (setuidができない) ユーザです。
+通常の一般ユーザは、user_u に割り当てるのが妥当です。
+semanage login コマンドを使って、オプション -m (Modify)、-s (Seuser)、-r (Range) を指定して、`__default__` を user_u にマッピングします。
+
+```bash
+~]# semanage login -m -s "user_u" -r s0 __default__
+~]# semanage login -l
+Login Name           SELinux User         MLS/MCS Range        Service
+__default__          user_u               s0                   *
+root                 unconfined_u         s0-s0:c0.c1023       *
+mako                 unconfined_u         s0-s0:c0.c1023       *
+```
+設定を元に戻すには、以下のコマンドで実行します。
+```bash
+~]# semanage login -m -s "unconfined_u" -r s0-s0:c0.c1023 __default__
+```
+
+#### staff_u ユーザに特定のコマンドの sudo だけを許可する
+
+あるユーザに awk を sudo で実行できる権限を与えて、ログを解析してもらいたいとします。
+その際にSELinuxのドメインで動作させて、権限昇格によって範囲外のファイルを操作できないように制限します。
+
+セットアップ手順として、まずLinuxで新規ユーザ user1 を作成して、そのユーザに staff_u というSELinuxユーザを割り当てます。
+```bash
+~]# useradd user1
+~]# passwd user1
+
+~]# semanage login -a -s staff_u user1
+~]# semanage login -l
+Login Name           SELinux User         MLS/MCS Range        Service
+__default__          unconfined_u         s0-s0:c0.c1023       *
+root                 unconfined_u         s0-s0:c0.c1023       *
+user1                staff_u              s0-s0:c0.c1023       *
+```
+ユーザを作成とSEユーザの割り当てをしたら、次は staff_u というSEユーザが持っているロールに logadm_r を追加して、`*_log_t` タイプのファイルにアクセスできるロールを付与します。
+```bash
+~]# semanage user -l
+                Labeling   MLS/       MLS/
+SELinux User    Prefix     MCS Level  MCS Range                      SELinux Roles
+staff_u         user       s0         s0-s0:c0.c1023                 staff_r sysadm_r unconfined_r
+
+~]# semanage user -m -R 'staff_r sysadm_r logadm_r' staff_u
+
+~]# semanage user -l
+                Labeling   MLS/       MLS/
+SELinux User    Prefix     MCS Level  MCS Range                      SELinux Roles
+staff_u         user       s0         s0-s0:c0.c1023                 staff_r sysadm_r logadm_r
+```
+セットアップ手順の最後に /etc/sudoers を編集します。
+visudo コマンドを実行して、以下の内容を書き込み、user1 が /usr/bin/awk ファイルを logadm_t ドメインで実行するように制限します。
+```bash
+~]# visudo
+```
+
+```conf
+user1 ALL=(ALL) ROLE=logadm_r TYPE=logadm_t /usr/bin/awk
+```
+
+続いて、別のコンソールを開いて、ログを解析するユーザ user1 でログインします。
+このとき、ログイン時のドメインは staff_t です。
+```bash
+~]$ id
+uid=1003(user1) gid=1003(user1) groups=1003(user1) context=staff_u:staff_r:staff_t:s0-s0:c0.c1023
+```
+sudo -l コマンドで自身が実行できる sudo コマンドを確認します。
+```bash
+~]$ sudo -l
+...
+User user1 may run the following commands on localhost:
+    (ALL) ROLE=logadm_r TYPE=logadm_t /usr/bin/awk
+```
+/usr/bin/awk コマンドを sudo で実行できるので、試しに awk で /var/log/audit/audit.log を開いてみます。
+問題なく監査ログの中身を表示できると思います。
+```bash
+~]$ sudo /usr/bin/awk '/^type=AVC/ {print $0}' /var/log/audit/audit.log
+```
+
+次に、sudo と awk を使って管理者権限のシェルを起動します。
+awk には system 関数があり、システムコマンドを呼び出せるので、root 権限で動作する awk がシェルを起動したら、そのシェルも root 権限で動作します。
+awk に限らず他のコマンドでもこのような権限昇格の方法がありますので、詳しく知りたい方は [GTFOBins](https://gtfobins.github.io/) を参照してください。
+awk の場合は、`awk 'BEGIN {system("/bin/sh")}'` をコマンドで実行すると、シェルが起動します。
+これを利用して、管理者権限で awk を実行すると、root 権限のシェルを手に入れることができます。
+以下は sudo と awk で root 権限を取得して、/etc/passwd の編集を試みたところです。
+
+```bash
+~]$ sudo /usr/bin/awk 'BEGIN {system("/bin/sh")}'
+sh-4.4# id
+uid=0(root) gid=0(root) groups=0(root) context=staff_u:logadm_r:logadm_t:s0-s0:c0.c1023
+sh-4.4# echo "test" >> /etc/passwd
+sh: /etc/passwd: Permission denied
+sh-4.4#
+```
+sudo と awk で確かに root 権限 `uid=0(root)` を奪取することができましたが、/etc/passwd への編集は権限不足で失敗しました。
+この書き込み拒否は、SELinuxによる拒否によるものです。
+監査ログを確認すると、以下の拒否ログが記録されていました。
+
+/var/log/audit/audit.log
+```
+type=AVC msg=audit(0000000000.908:7884): avc:  denied  { append } for  pid=70812 comm="sh" name="passwd" dev="dm-0" ino=16786641 scontext=staff_u:logadm_r:logadm_t:s0-s0:c0.c1023 tcontext=system_u:object_r:passwd_file_t:s0 tclass=file permissive=0
+```
+ログの内容は、logadm_t ドメインが passwd_file_t タイプのファイルに書き込み (append) するポリシールールは存在しないのでSELinuxが拒否した、という意味になります。
+logadm_t ドメインが passwd_file_t タイプに対して許可されているアクションを sesearch で検索すると、確かに書き込み (writeやappend) は含まれていないことが確認できます。
+```bash
+~]# sesearch -A -s logadm_t -t passwd_file_t
+...
+allow nsswitch_domain passwd_file_t:file { getattr ioctl lock map open read };
+```
+なお、logadm_t タイプは nsswitch_domain 属性を持つため、上記のサブジェクトは nsswitch_domain を logadm_t と読み替えることができます。
+
+```bash
+]# seinfo -a nsswitch_domain -x | grep logadm_t
+Type Attributes: 1
+   attribute nsswitch_domain;
+        ...
+        logadm_t
+        ...
+```
+logadm_t ドメインは passwd_file_t タイプのファイルに書き込み (writeやappend) することはできないため、SELinuxに拒否されたことが確認できました。
+このように、staff_u のSEユーザを割り当て適切なドメインでのみ sudo を許可することで、ユーザの権限昇格を使った攻撃を緩和できる環境を構築することができます。
+
+#### ロールの切り替え
+
+Linuxがユーザを切り替えるときに su を使用するように、SELinuxのロールを切り替える時は newrole や sudo -r コマンドを使用します。
+newrole コマンドは `dnf install policycoreutils-newrole` でインストールすることができます。
+例えば、ユーザとロールのマッピングが以下の通りで、staff_u ユーザは staff_r, sysadm_r, logadm_r ロールの3つを持っている状態とします。
+
+```bash
+~]# semanage user -l
+                Labeling   MLS/       MLS/
+SELinux User    Prefix     MCS Level  MCS Range                      SELinux Roles
+staff_u         user       s0         s0-s0:c0.c1023                 staff_r sysadm_r logadm_r
+```
+
+このとき、newrole コマンドを使用して、staff_u ユーザを staff_r ロールから sysadm_r ロールに切り替えることができます。
+ただし、Linux の wheel グループ (管理者グループ) に所属していないと、管理者コマンドを実行するときにDACの権限で拒否されてしまいます。
+運用では、usermod -aG でユーザを wheel グループに追加したり、/etc/sudoers で特定のコマンドのみ sudo できるように設定した後に、semanage login -a でユーザに staff_u ロールを持たせる、という流れになります。
+
+```bash
+~]$ id
+uid=1002(user1) gid=1002(user1) groups=1002(user1) context=staff_u:staff_r:staff_t:s0-s0:c0.c1023
+
+~]$ newrole -r sysadm_r
+Password: (ここでパスワードを入力する)
+
+~]$ id
+uid=1002(user1) gid=1002(user1) groups=1002(user1) context=staff_u:sysadm_r:sysadm_t:s0-s0:c0.c1023
+```
+
+ロールの切り替えは、実際には newrole コマンドよりも sudo -r が使われます。
+管理者権限で実行するための sudo コマンドに、`-r` (Role) オプションを追加することで SELinux ロールを指定することができます。
+例えば、user2 ユーザは管理者グループの wheel に所属しており、かつ staff_u ユーザは staff_r と sysadm_r の両方のロールを持つ場合、`sudo -r sysadm_r su` コマンドを実行することで、ユーザを root に切り替えつつ、SELinuxロールを sysadm_r に切り替えることができます。
+
+```bash
+~]$ id
+uid=1003(user2) gid=1003(user2) groups=1003(user2),10(wheel) context=staff_u:staff_r:staff_t:s0-s0:c0.c1023
+
+~]$ sudo -r sysadm_r su
+~]# id
+uid=0(root) gid=0(root) groups=0(root) context=staff_u:sysadm_r:sysadm_t:s0-s0:c0.c1023
+```
+
+上記の結果から、rootに切り替えたときに、セキュリティコンテキストの切り替え前は「staff_u:**staff_r**:**staff_t**」で、切り替え後が「staff_u:**sysadm_r**:**sysadm_t**」になっていることがわかります。
+
+なお、sudo -r でロールを指定しないでユーザを root に切り替えた場合、セキュリティコンテキストは staff_t のままです。
+staff_t のままでは十分な管理者権限を持たないため、root であってもシステム管理用のコマンドを実行することができない場合が多いです。
+```bash
+~]$ id
+uid=1003(user2) gid=1003(user2) groups=1003(user2),10(wheel) context=staff_u:staff_r:staff_t:s0-s0:c0.c1023
+
+~]$ sudo su
+[sudo] password for user2:  (ここでパスワードを入力する)
+bash: /root/.bashrc: Permission denied
+bash-4.4# id
+uid=0(root) gid=0(root) groups=0(root) context=staff_u:staff_r:staff_t:s0-s0:c0.c1023
+```
+
+
+
+### セキュリティコンテキストの確認方法
+
+SELinuxの特徴の1つであるタイプ強制 (TE; Type Enforcement) は、すべてのサブジェクトとオブジェクトにラベル付けをして、そのタイプに基づいた振る舞いを強制させることです。
+ここまで、サブジェクトやオブジェクトへのラベル付けを説明してきましたが、それぞれのセキュリティコンテキストの確認方法をまとめると、以下のコマンドを使って確認することができます。
+
+- サブジェクト
+  - ユーザ : `id -Z`
+  - プロセス : `ps -eZ | grep <プロセス名>`
+  - ソケット : `ss -talpnZ` (管理者権限で実行すること)
+- オブジェクト
+  - ファイル : `ls -Z <ファイルパス>`
+  - ディレクトリ : `ls -dZ <ディレクトリパス>`
 
 
 
@@ -676,11 +1042,11 @@ SELinuxポリシーは、複数のポリシーモジュールから構成され�
 ```bash
 ~]# semodule -lfull
 ```
-自分で作成したポリシーモジュールをSELinuxに読み込むには、semodule -i コマンドを使用します。
+自分で作成したポリシーモジュールパッケージをSELinuxに読み込むには、semodule -i コマンドを使用します。
 ```bash
 ~]# semodule -i myrule.pp
 ```
-ポリシーモジュールを読み込む際は、ルールを適用する優先度を設定できます。
+ポリシーモジュールパッケージを読み込む際は、ルールを適用する優先度を設定できます。
 優先度は -X オプションで指定し、1～999 の値を設定できます。
 同じ名前のポリシーモジュールでも優先度が異なる場合は、別々で登録されます。
 同じ名前のポリシーモジュール名で既存の優先度よりも大きい値を設定した場合は、優先度の大きいモジュールだけが有効になり、優先度の小さいモジュールは無効になります。
@@ -690,15 +1056,28 @@ SELinuxポリシーは、複数のポリシーモジュールから構成され�
 登録したポリシーモジュールを削除したい場合は、`-r` (Remove) オプションで削除します。
 同じ名前で複数の優先度が存在する場合は、-X で優先度も指定します。
 ```bash
-~]# semodule -r myrule.pp -X 500
+~]# semodule -r myrule -X 500
 ```
 登録したポリシーモジュールを削除しないが無効化したい場合は、`-d` (Disable) オプションを使います。
 ```bash
-~]# semodule -d myrule.pp
+~]# semodule -d myrule
 ```
 無効化したポリシーモジュールを有効化したい場合は、`-e` (Enable) オプションを使います。
 ```bash
-~]# semodule -e myrule.pp
+~]# semodule -e myrule
+```
+
+#### semanage module
+
+semanage module コマンドは、semodule コマンドを拡張したツールです。
+基本的には semodule コマンドで十分ですが、以下のような一部の機能は semanage module にしか存在しないものもあります。
+
+ローカル環境でカスタマイズした変更の一覧を表示する場合、`-lC` (List Customization) オプションで確認することができます。
+```bash
+~]# semanage module -lC
+Module Name               Priority  Language
+simplehttpserver          400       pp    Disabled
+myrule                    300       pp
 ```
 
 #### audit2allow
@@ -753,7 +1132,6 @@ semodule -i myrule.pp
 
 audit2allow と semodule で自作ポリシーモジュールを作成することで、自身の環境だけに適用する許可ルールを追加することができます。
 
-
 #### ポリシーモジュールパッケージの内容を確認する
 
 ポリシーモジュールパッケージはバイナリファイルのため、そのままでは中身を確認することができません。
@@ -766,7 +1144,6 @@ audit2allow と semodule で自作ポリシーモジュールを作成するこ�
 (typeattributeset cil_gen_require httpd_t)
 (allow httpd_t http_port_t (tcp_socket (name_connect)))
 ```
-
 
 #### ポリシーモジュールの作成
 
@@ -805,13 +1182,16 @@ TEファイルからポリシーモジュールパッケージに変換 (コン�
 ~]# semodule -lfull | grep my_tomcat_policy
 ```
 
-
 #### ポリシールールのタイプと属性
 
 SELinux のポリシールールには、主に Type (タイプ) と Attribute (属性) の2種類があります。
-Type はセキュリティコンテキストのタイプで、Attribute は Type が持つ属性を表したものです。
-ルールで Attribute を使うことで、Type だけ異なる複数のルールを1つにまとめることができます。
+Type はセキュリティコンテキストのタイプです。
+タイプの名前は、末尾が `_t` で終わるように命名規則で統一されています。
+命名規則は他にも存在します。
+例えば、末尾が `_exec_t` ならプロセスを起動するための実行ファイル (プログラム)、末尾が `_port_t` なら接続先のポートを表します。
 
+Attribute は Type が持つ属性を表したものです。
+ルールで Attribute を使うことで、Type だけ異なる複数のルールを1つにまとめることができます。
 特定の Attribute に所属する Type の一覧を表示するには、seinfo コマンドの `-a` (Attribute) で属性を指定し、`-x` (Explain) で属性に所属するタイプの一覧を表示させます。
 
 ```bash
@@ -820,7 +1200,7 @@ Type Attributes: 1
    attribute initrc_domain;
         cluster_t
         condor_startd_t
-        init_t                  <-- initrc_domain属性の中にinit_tタイプ
+        init_t                  <-- init_tタイプはinitrc_domain属性を持つ
         initrc_t
         kdumpctl_t
         openshift_initrc_t
@@ -834,7 +1214,7 @@ Type Attributes: 1
         abrt_upload_watch_exec_t
         ...
         hsqldb_exec_t
-        httpd_exec_t             <-- direct_init_entry属性の中にhttpd_exec_tタイプ
+        httpd_exec_t             <-- httpd_exec_tタイプはdirect_init_entry属性を持つ
         httpd_rotatelogs_exec_t
         ...
 ```
@@ -859,6 +1239,91 @@ Types: 1
    type httpd_exec_t alias phpfpm_exec_t, entry_type, exec_type, file_type, 
    non_auth_file_type, non_security_file_type, direct_init_entry;
 ```
+
+
+#### ポリシールールの検索
+
+sesearch コマンドは、SELinuxのポリシールール (アクセスベクタルール) を検索するためのツールです。
+まず、ポリシールールは、TE形式で記述すると1つのルールは以下のようなフォーマットになっています。
+```
+rule_name source_type target_type : class perm_set (object_name);
+```
+各項目はそれぞれ以下の意味を持ちます。
+- **rule_name** : ルールの名前。ポリシールールは、オブジェクトに対するサブジェクトのアクションの許可を定義していて、主に次の4種類のルールを使用しています。
+  - allow : アクションを許可して、監査ログに記録しない
+  - auditallow : アクションを許可して、監査ログに記録する (granted でログに記録される)
+  - dontaudit : アクションを拒否するが、監査ログに記録しない
+  - type_transition : ドメイン遷移やタイプ遷移を許可する
+- **source_type** : ドメイン。アクセス元のセキュリティコンテキストのタイプを表します。
+- **target_type** : タイプ。アクセス先のセキュリティコンテキストのタイプを表します。
+- **class** : オブジェクトクラス。ファイルやディレクトリなどのオブジェクトの種類を表します。
+- **perm_set** : アクションの権限。オブジェクトに対してサブジェクトが許可されているアクションの一覧です。
+- (object_name) : オブジェクト名。ルールが type_transition (タイプ遷移) のときのみ使用され、遷移先のタイプを表します。
+
+sesearch コマンドで上記のルールを検索するには、以下のオプションを使用します。
+よく使用するのは `-A` (Allow) と `-T` (Transition) です。
+
+- `-A` : すべての allow ルールを検索します
+- `--auditallow` : すべての auditallow ルールを検索します
+- `--dontaudit` : すべての dontaudit ルールを検索します
+- `-T` : すべての type_transition ルール (ドメイン遷移やタイプ遷移) を検索します
+
+上記の必須の検索オプションに加えて、ドメインやオブジェクトクラスでさらに検索条件を絞り込むために、以下のオプションを使用することもできます。
+
+- `-s` : アクセス元 (Source) のタイプやドメインを指定して検索します
+- `-t` : アクセス先 (Target) のタイプを指定して検索します
+- `-c` : オブジェクトクラス (object Class) を指定して検索します
+- `-p` : アクションの権限 (Permission) を指定して検索します
+
+それぞれのオプションを使用した検索例を以下に示します。
+
+httpd が外部サーバの接続できるTCPポートの一覧を確認するために、httpd_t ドメインがTCP接続を許可するルール一覧を表示する：
+```bash
+~]# sesearch -A -s httpd_t -c tcp_socket
+```
+passwd_file_t タイプのファイル (/etc/passwd) に書き込みを許可するルール一覧を表示する：
+```bash
+~]# sesearch -A -t passwd_file_t -c file -p write
+```
+init_t ドメイン (systemd) からドメイン遷移を許可するルール一覧を表示する：
+```bash
+~]# sesearch -T -s init_t -c process
+```
+httpd_t ドメインが tmp_t タイプのディレクトリにファイルを作成したときのタイプ遷移を許可するルール一覧を表示する：
+```bash
+~]# sesearch -T -s httpd_t -t tmp_t -c file
+```
+httpd_can_network_connect という Boolean の on/off で有効化/無効化されるルールの一覧を表示する：
+```bash
+~]# sesearch -A -b httpd_can_network_connect
+```
+
+ポリシールールの検索では、検索結果でアクセス元タイプ (source_type) やアクセス先タイプ (target_type) に末尾が `_t` ではないものが表示される場合があります。
+タイプの末尾が `_t` ではないとき、それは属性 (Attribute) です。
+それぞれのタイプは複数の属性を持つことができます。
+例えば、http_port_t タイプは、port_type 属性を持ちます。
+ポリシールールの定義では、属性を使うことで、タイプだけが異なるルールをまとめて1つのルールで定義することができるようになります。
+
+ポリシールールの検索においては、検索結果で現れた属性 (Attribute) を持っているタイプを調べるために seinfo を使います。
+seinfo コマンドは、SELinuxオブジェクトの情報を表示するツールです。
+`-a` (Attribute) オプションで属性を指定し、`-x` (Expand) でより詳細な情報を表示します。
+以下は、port_type 属性を持つタイプの中に、http_port_t が含まれていることを確認するコマンドの例です。
+
+```bash
+~]# seinfo -a port_type -x
+Type Attributes: 1
+   attribute port_type;
+        afs3_callback_port_t
+        afs_bos_port_t
+        ...
+        http_cache_port_t
+        http_port_t               <-- http_port_tタイプはport_type属性を持つ
+        i18n_input_port_t
+        ...
+```
+
+このように、ポリシールールの検索でタイプの末尾が `_t` 以外のものが現れたら属性として扱い、seinfo コマンドでその属性を持つタイプを調査することで、ルールが許可しているサブジェクトやオブジェクトのタイプは何かを知ることができます。
+
 
 
 ### ログと監査
@@ -912,6 +1377,77 @@ type=AVC msg=audit(1558865501.958:282): avc:  denied  { write } for  pid=1647 co
 
 - [Appendix A - Object Classes and Permissions \| SELinuxProject/selinux-notebook](https://github.com/SELinuxProject/selinux-notebook/blob/main/src/object_classes_permissions.md)
 
+代表的なオブジェクトクラスとアクション (権限) については、以下にまとめました。
+ここに列挙したものだけでも覚えておくと役に立つと思います。
+
+代表的なドメイン (Domain)：
+- init_t : systemdのプロセス (initを廃止してsystemdを導入したが、ドメイン名はそのまま)
+- sshd_t : SSHサーバのプロセス
+- httpd_t : Webサーバのプロセス
+- named_t : DNSサーバのプロセス
+- postfix_master_t : メールサーバのプロセス
+- mysqld_t : DBサーバのMySQLのプロセス
+- postgresql_t : DBサーバのPostgreSQLのプロセス
+- container_runtime_t : dockerdのプロセス
+- kernel_t : カーネルのプロセス
+- unconfined_t : 制限のないSEユーザのプロセス
+- unconfined_service_t : 制限のないサービスのプロセス
+
+代表的なオブジェクトクラス (Object Class)：
+- dir : ディレクトリ
+- file : ファイル
+- lnk_file : シンボリックリンク
+- tcp_socket : TCPソケット
+- udp_socket : UDPソケット
+
+代表的な権限 (Permission)：
+- add_name : ディレクトリ内にファイルを作成する
+- append : ファイル内容の末尾に追記する (writeとは異なる)
+- getattr : ファイルなどの属性情報を取得する
+- link : ファイルのハードリンクを作成する
+- name_bind : デーモンがポートを使用して待ち受ける
+- name_connect : デーモンが外部ポートと通信する
+- read : ファイル内容を読む
+- remove_name : ファイルを削除する
+- rename : ファイル名を変更する
+- rmdir : ディレクトリを削除する
+- search : ディレクトリ内を検索できる
+- transition : 新しいタイプ・ドメインに遷移する
+- write : ファイルに内容を書き込む
+
+
+
+#### SELinuxによる拒否ログを見つける
+
+SELinuxの拒否ログは /var/log/audit/audit.log や /var/log/messages に出力されます。
+SELinuxに関するログを見つけるには「denied」や「SELinux is preventing」でgrepで抽出します。
+
+/var/log/audit/audit.log には「denied」というメッセージとともに拒否ログが記録されます。
+そのため、grepで検索する際は「denied」という文字列で検索します。
+
+```bash
+~]# grep "denied" /var/log/audit/audit.log
+# または
+~]# tail -f /var/log/audit/audit.log | grep "denied"
+```
+ヒットする拒否ログの例：
+```
+type=AVC msg=audit(0000000000.639:792): avc:  denied  { read } for  pid=4635 comm="cat" name="example.txt" dev="dm-0" ino=33575049 scontext=staff_u:staff_r:staff_t:s0-s0:c0.c1023 tcontext=unconfined_u:object_r:admin_home_t:s0 tclass=file permissive=0
+```
+
+/var/log/messages には「SELinux is preventing」というメッセージとともに拒否ログが記録されます。
+そのため、grepで検索する際は「SELinux is preventing」という文字列で検索します。
+
+```bash
+~]# grep "SELinux is preventing" /var/log/messages
+# または
+~]# tail -f /var/log/messages | grep "SELinux is preventing"
+```
+ヒットする拒否ログの例：
+```
+localhost setroubleshoot[4637]: SELinux is preventing /usr/bin/cat from read access on the file example.txt. For complete SELinux messages run: sealert -l e9c5f189-8574-4467-8c68-6d4c7b79b6bd
+```
+
 
 #### Dontauditルール
 
@@ -936,6 +1472,9 @@ Dontaudit ルールを再度有効化するには、-B オプションだけで�
 ```bash
 ~]# semodule -B
 ```
+
+
+
 
 
 ### SELinuxのアーキテクチャ
