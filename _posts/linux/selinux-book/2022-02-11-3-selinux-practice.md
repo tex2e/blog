@@ -1,7 +1,7 @@
 ---
 layout:        book
 title:         "3. SELinux/SELinuxの実践"
-date:          2022-02-11
+date:          2022-03-01
 category:      Linux
 cover:         /assets/cover14.jpg
 redirect_from:
@@ -10,11 +10,11 @@ published:     true
 latex:         false
 photoswipe:    true
 syntaxhighlight: true
-sitemap: false # 後で公開すること!
-feed:    false # 後で公開すること!
+sitemap:       true
+feed:          true
+description:   "SELinux入門 第3章 SELinuxの実践"
 ---
 
-**[WIP] この記事は書き途中です。完成までしばらくお待ちください。**
 
 ### SELinuxを有効化する
 

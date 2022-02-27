@@ -1,7 +1,7 @@
 ---
 layout:        book
 title:         "1. SELinux/アクセス制御の仕組み"
-date:          2022-02-11
+date:          2022-03-01
 category:      Linux
 cover:         /assets/cover6.jpg
 redirect_from:
@@ -10,11 +10,11 @@ published:     true
 latex:         false
 photoswipe:    true
 syntaxhighlight: true
-sitemap: false # 後で公開すること!
-feed:    false # 後で公開すること!
+sitemap:       true
+feed:          true
+description:   "SELinux入門 第1章 アクセス制御の仕組み"
 ---
 
-**[WIP] この記事は書き途中です。完成までしばらくお待ちください。**
 
 ### はじめに
 
