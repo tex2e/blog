@@ -114,7 +114,7 @@ DACの設定では、対象ディレクトリの所有者を apache や nginx �
 
 ```bash
 ~]# chown apache:apache /var/www/html/upload
-または
+# または
 ~]# chmod o+w /var/www/html/upload
 ```
 
@@ -243,18 +243,24 @@ echo ""
 echo "Hello, CGI world!"
 ```
 
+この時点で、作成したファイルのタイプは「httpd_sys_script_exec_t」です。
+
 ```bash
 ~]# chmod +x /var/www/cgi-bin/hello.cgi
 ~]# ls -Z /var/www/cgi-bin/hello.cgi
 unconfined_u:object_r:httpd_sys_script_exec_t:s0 /var/www/cgi-bin/hello.cgi
 ```
 
+curlでWeb経由でアクセスしてみます。
+
 ```bash
 ~]# curl http://localhost/cgi-bin/hello.cgi
 Hello, CGI world!
 ```
 
-問題なく実行可能
+問題なくCGIが実行されることが確認できます。
+続いて、cgi-bin ディレクトリ以外の場所にCGIファイルを配置できるように Apache の設定ファイルを修正します。
+/var/www/html ディレクトリ全体でCGI実行できるように ExecCGI を追加し、拡張子が .cgi なら cgi-script として実行するための AddHandler を追加します。
 
 /etc/httpd/conf/httpd.conf
 ```xml
@@ -269,6 +275,8 @@ Hello, CGI world!
     ...
 </IfModule>
 ```
+
+設定を修正したら、httpd を再起動します。
 
 ```bash
 ~]# systemctl restart httpd
