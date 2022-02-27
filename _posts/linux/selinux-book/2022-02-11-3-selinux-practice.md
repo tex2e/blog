@@ -114,9 +114,7 @@ DACの設定では、対象ディレクトリの所有者を apache や nginx �
 
 ```bash
 ~]# chown apache:apache /var/www/html/upload
-```
-
-```bash
+または
 ~]# chmod o+w /var/www/html/upload
 ```
 
@@ -148,9 +146,7 @@ drwxr-xrwx. 2 root root 6 Nov 28 12:00 /var/www/html/upload
 ```php
 <?php
 $file_name = 'upload/file.txt';
-if(!file_exists($file_name)){
-  touch($file_name);
-}
+touch($file_name);
 ```
 SELinuxのラベル付けを修正する前にPHPのページにアクセスして、ファイルが作成されるか確認します。
 
@@ -593,7 +589,7 @@ httpd_t ドメインから user_home_t タイプのファイルにアクセス�
 ```
 type=AVC msg=audit(0000000000.311:753): avc:  denied  { read } for  pid=10749 comm="python3" name="test.html" dev="dm-0" ino=17856687 scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file permissive=0
 ```
-以上で、自作サービスのPython3の簡易Webサーバを、httpd_t ドメインとしてアクセス制御することができました。
+以上で、自作サービスのPython3の簡易Webサーバを、httpd_t ドメインとして起動させて、アクセス制御できるようにしました。
 
 しかし、Python3.6の本体のファイルである /usr/libexec/platform-python3.6 を bin_t から httpd_exec_t にラベル変更すると、別のシステムのプログラムで問題が発生しました。
 監査ログに記録された拒否ログは、以下のようなものでした。
@@ -634,22 +630,221 @@ python3.6の本体のファイルをコピーしたら、デーモンが呼び�
  [Install]
  WantedBy=multi-user.target
 ```
-
+サービスファイルを修正して保存したらリロードして、サービスを再起動します。
 ```bash
 systemctl daemon-reload
-systemctl start simplehttpserver
+systemctl restart simplehttpserver
 systemctl status simplehttpserver
 ```
-
+問題なく動作することを確認したら、コピーしたプログラムのファイルコンテキストを設定し、永続的にラベル付けします。
 ```bash
 ~]# semanage fcontext -a -t httpd_exec_t '/usr/libexec/platform-python[0-9]+\.[0-9]+_simplehttpserver'
 ~]# restorecon -v /usr/libexec/platform-python*
 ```
+以上で、Pythonプログラムの本体のラベルを変更せずに、自作サービスのPython3の簡易Webサーバを、httpd_t ドメインとして起動させて、アクセス制御できるようにしました。
 
 
 ### 既存の組み込みポリシーを修正する
 
-TODO:
+SELinuxのポリシーは暗黙の拒否 (Default Deny) のため、allowルールを追加しないとドメインのプロセスは何も実行できません。
+そのため、プロセスが期待通りに動作させるために、ポリシールールにallowルールを追加していく流れになります。
+SELinuxの組み込みのポリシーは、システム管理者が全てのプログラムに対するラベル付けを意識しなくてもある程度ラベル付けをしてくれます。
+しかし、場合によっては組み込みポリシーが必要以上に許可しすぎているときもあります。
+denyルールを定義することはできないので、組み込みポリシーのルールを修正する必要があります。
+そのためには、ポリシーファイルを編集して再ビルドする必要があります。
+ここでは、ポリシーファイルを編集して、組み込みポリシーのモジュールを残したまま、同じ名前のカスタムモジュールを有効化し、組み込みポリシーのルールを修正する方法を紹介します。
+
+まず、SELinuxポリシーのバージョンを確認します。
+
+```bash
+~]$ rpm -qi selinux-policy
+Name        : selinux-policy
+Version     : 3.14.3
+Release     : 80.el8_5.2
+Architecture: noarch
+Install Date: Mon Feb 14 00:08:04 2022
+Group       : Unspecified
+Size        : 24923
+License     : GPLv2+
+Signature   : RSA/SHA256, Tue Dec 21 17:12:31 2021, Key ID 05b555b38483c65d
+Source RPM  : selinux-policy-3.14.3-80.el8_5.2.src.rpm     <-- ここに注目
+Build Date  : Tue Dec 21 15:21:09 2021
+Build Host  : x86-01.mbox.centos.org
+Relocations : (not relocatable)
+Packager    : CentOS Buildsys <bugs@centos.org>
+Vendor      : CentOS
+URL         : https://github.com/fedora-selinux/selinux-policy
+Summary     : SELinux policy configuration
+Description :
+SELinux Base package for SELinux Reference Policy - modular.
+Based off of reference policy: Checked out revision  2.20091117
+```
+
+ソースコードを取得するために、https://rpmfind.net のページで「selinux-policy」を検索し、表示されたページ一覧の中から先ほど確認したバージョンと同じところにアクセスします。
+ここでは、上記で確認したバージョンと同じ「selinux-policy-3.14.3-80.el8.noarch.html」の行で「x86_64」が含まれている行のリンクにアクセスします (rpmではなく、htmlへのリンクをクリックします)。
+<!--
+https://rpmfind.net/linux/RPM/centos/8-stream/baseos/x86_64/Packages/selinux-policy-3.14.3-80.el8.noarch.html
+-->
+続いて、ソースコードのRPMをダウンロードします。
+表示されたページの「Source RPM: selinux-policy-3.14.3-80.el8.src.rpm」からリンクのURLをコピーして、コンソールからwgetでダウンロードします。
+
+```bash
+~]$ wget https://vault.centos.org/8-stream/BaseOS/Source/SPackages/selinux-policy-3.14.3-80.el8.src.rpm
+```
+
+ダウンロードが完了したら、取得したRPMをインストールします。
+インストールと言ってもシステムに既に入っているものと同じバージョンのため、実際にインストール処理が走る訳ではないです。
+インストールすると ~/rpmbuild/SPECS/selinux-policy.spec ファイルが作成されます。
+```bash
+~]# rpm -i selinux-policy-3.14.3-80.el8.src.rpm
+```
+
+次に、rpmbuildコマンドを使って、RPMパッケージからソースコードを抽出します。
+rpmbuild コマンドは、rpm-build パッケージをインストールすることで使用できるようになります。
+```bash
+~]# dnf install rpm-build
+```
+
+rpmbuild コマンドの `-bp` (Build Prep) は、RPMパッケージからソースコードを抽出するためのオプションです。
+-bp で実行時に、必要なパッケージがないと言われた場合は、追加で dnf install でインストールします。
+```bash
+~]# rpmbuild -bp /root/rpmbuild/SPECS/selinux-policy.spec
+error: Failed build dependencies:
+        gcc is needed by selinux-policy-3.14.3-80.el8.noarch
+        m4 is needed by selinux-policy-3.14.3-80.el8.noarch
+        policycoreutils-devel >= 2.9 is needed by selinux-policy-3.14.3-80.el8.noarch
+
+~]# dnf install gcc m4 policycoreutils-devel
+
+~]# rpmbuild -bp /root/rpmbuild/SPECS/selinux-policy.spec
+...
++ exit 0
+```
+
+`-bp` で実行した結果、exit 0 で正常終了すると、RPMから抽出したソースコードは /root/rpmbuild/BUILD/selinux-policy-8f5*f66/ (後半の文字列はランダム) に出力されます。
+ポリシーモジュールを作成するためのソースコードは ./policy/modules/contrib 内に存在します。
+
+ここでは、既存の tomcat のポリシーを修正します。
+tomcat の関連ファイルは ./policy/modules/contrib/ の直下に含まれています。
+
+```bash
+~]# cd /root/rpmbuild/BUILD/selinux-policy-8f5*f66/policy/modules/contrib/
+~]# cp tomcat.te{,.bak}
+```
+
+tomcat.te ファイルには、tomcat が unreserved_port (未定義のポート) への接続を許可する corenet_tcp_connect_unreserved_ports マクロが書かれているので、これをコメントアウトして拒否するようにします。
+ファイルの変更箇所は以下の通りです。
+
+```bash
+~]# diff -u tomcat.te.bak tomcat.te
+```
+
+tomcat.te
+```diff
+ corenet_tcp_connect_http_cache_port(tomcat_domain)
+ corenet_tcp_connect_amqp_port(tomcat_domain)
+ corenet_tcp_connect_ibm_dt_2_port(tomcat_domain)
+-corenet_tcp_connect_unreserved_ports(tomcat_domain)
++#corenet_tcp_connect_unreserved_ports(tomcat_domain)
+ corenet_tcp_bind_jboss_management_port(tomcat_domain)
+ corenet_tcp_connect_smtp_port(tomcat_domain)
+...
+```
+
+ポリシールールのファイルを編集したら、`make policy` で全てのポリシーモジュールパッケージを作成できますが、今回は tomcat.pp のみ作成したいので、`make tomcat.pp` コマンドを実行します。
+
+```bash
+~]# cd /root/rpmbuild/BUILD/selinux-policy-8f5*f66/
+~]# make tomcat.pp
+Compiling refpolicy tomcat.mod module
+m4 -D distro_redhat -D enable_ubac -D mls_num_sens=16 -D mls_num_cats=1024 -D mcs_num_cats=1024 -D hide_broken_symptoms -s support/divert.m4 policy/support/file_patterns.spt policy/support/ipc_patterns.spt policy/support/obj_perm_sets.spt policy/support/misc_patterns.spt policy/support/misc_macros.spt policy/support/mls_mcs_macros.spt policy/support/loadable_module.spt support/undivert.m4 tmp/generated_definitions.conf tmp/all_interfaces.conf policy/modules/contrib/tomcat.te > tmp/tomcat.tmp
+/usr/bin/checkmodule -m tmp/tomcat.tmp -o tmp/tomcat.mod
+Creating refpolicy tomcat.pp policy package
+/usr/bin/semodule_package -o tomcat.pp -m tmp/tomcat.mod -f tmp/tomcat.mod.fc
+```
+
+tomcat.pp を生成したら、既存のポリシーモジュールよりも高い優先度で tomcat.pp を SELinux にインストールします。
+既存のポリシーモジュールは優先度が100で登録されているので、それより高い 400 でインストールします。
+
+```bash
+~]# semodule -i tomcat.pp -X 400
+libsemanage.semanage_direct_install_info: Overriding tomcat module at lower priority 100 with module at priority 400.
+Failed to resolve filecon statement at /var/lib/selinux/targeted/tmp/modules/400/tomcat/cil:545
+semodule:  Failed!
+```
+
+しかし、読み込み時にエラーになりました。
+ポリシーモジュールパッケージの内容を CIL で出力して、対象の行 (545行目) を確認します。
+
+```bash
+~]# cat tomcat.pp | /usr/libexec/selinux/hll/pp | cat -n
+   ...
+   545  (filecon "/usr/lib/systemd/system/tomcat.service" file (system_u object_r tomcat_unit_file_t (systemlow systemlow)))
+   546  (filecon "/usr/sbin/tomcat(6)?" file (system_u object_r tomcat_exec_t (systemlow systemlow)))
+   ...
+```
+
+「systemlow」という未知の機密レベルが存在するため、エラーになってしまいました。
+この問題は、checkmodule 実行時に -M を付けて、生成したポリシーモジュールパッケージが MLS に対応させることで解決します。
+checkmodule 実行時に -M が付くようにビルド時の設定を修正します。
+Makefile の中を読むと、TYPE が mls のとき (`ifeq "$(TYPE)" "mls"`)、checkmodule にオプション -M を追加する (`CHECKMODULE += -M`) 処理があります。
+また、Makefile の冒頭で build.conf を読み込んでいて (`include build.conf`)、build.conf で変数 TYPE の値を設定しています。
+なので、build.conf で TYPE 変数を修正し、`TYPE = mls` に変えて再度コンパイルします。
+
+```bash
+~]# cat build.conf | grep TYPE
+TYPE = mls
+~]# touch ./policy/modules/contrib/tomcat.te
+~]# make tomcat.pp
+Compiling refpolicy tomcat.mod module
+m4 -D enable_mls -D distro_redhat -D enable_ubac -D mls_num_sens=16 -D mls_num_cats=1024 -D mcs_num_cats=1024 -D hide_broken_symptoms -s support/divert.m4 policy/support/file_patterns.spt policy/support/ipc_patterns.spt policy/support/obj_perm_sets.spt policy/support/misc_patterns.spt policy/support/misc_macros.spt policy/support/mls_mcs_macros.spt policy/support/loadable_module.spt support/undivert.m4 tmp/generated_definitions.conf tmp/all_interfaces.conf policy/modules/contrib/tomcat.te > tmp/tomcat.tmp
+/usr/bin/checkmodule -M -m tmp/tomcat.tmp -o tmp/tomcat.mod
+Creating refpolicy tomcat.pp policy package
+/usr/bin/semodule_package -o tomcat.pp -m tmp/tomcat.mod -f tmp/tomcat.mod.fc
+```
+
+念のため、/usr/bin/checkmodule -M でビルドしたときの tomcat.pp の中身を CIL 形式で確認してみます。
+設定ファイルで `TYPE = mls` にして生成すると、「systemlow」が「s0」に変化して、適切な機密レベル名に修正されました。
+
+```bash
+~]# cat tomcat.pp | /usr/libexec/selinux/hll/pp | cat -n
+   ...
+   545  (filecon "/usr/lib/systemd/system/tomcat.service" file (system_u object_r tomcat_unit_file_t ((s0) (s0))))
+   546  (filecon "/usr/sbin/tomcat(6)?" file (system_u object_r tomcat_exec_t ((s0) (s0))))
+   ...
+```
+
+既存のポリシーモジュールよりも高い優先度で tomcat.pp を SELinux にインストールします。
+MLS 対応のポリシーモジュールパッケージだとインストールに成功しました。
+
+```bash
+~]# semodule -i tomcat.pp -X 400
+~]# semodule -lfull | grep tomcat
+400 tomcat            pp
+100 tomcat            pp
+```
+
+これにより、既存の tomcat ポリシーモジュールは無効化され、追加した tomcat ポリシーモジュールが有効化されました。
+sesearch コマンドを使うと、ポリシールールから tomcat_t ドメインが未定義ポート (unreserved_port_t) への接続を許可するルールが削除されたことを確認できます。
+
+修正前：
+```bash
+~]# sesearch -A -s tomcat_t -t unreserved_port_t -c tcp_socket
+allow nsswitch_domain port_type:tcp_socket { recv_msg send_msg }; [ nis_enabled ]:True
+allow nsswitch_domain unreserved_port_t:tcp_socket name_bind; [ nis_enabled ]:True
+allow nsswitch_domain unreserved_port_t:tcp_socket name_connect; [ nis_enabled ]:True
+allow tomcat_domain unreserved_port_t:tcp_socket name_connect;
+```
+
+修正後：
+```bash
+~]# sesearch -A -s tomcat_t -t unreserved_port_t -c tcp_socket
+allow nsswitch_domain port_type:tcp_socket { recv_msg send_msg }; [ nis_enabled ]:True
+allow nsswitch_domain unreserved_port_t:tcp_socket name_bind; [ nis_enabled ]:True
+allow nsswitch_domain unreserved_port_t:tcp_socket name_connect; [ nis_enabled ]:True
+```
+
+修正前は「allow tomcat_domain unreserved_port_t:tcp_socket name_connect;」という許可ルールが存在していましたが、組み込みポリシーの修正によって許可ルールを削除することができました。
 
 
 
