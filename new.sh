@@ -1,5 +1,7 @@
 #!/bin/bash -eu
 
+# /opt/homebrew/opt/ruby/bin/bundle install
+
 {
   if [[ $# -ne 2 ]]; then
     echo "ArguemntError: wrong number of arguments (given $#, expected 2)"
