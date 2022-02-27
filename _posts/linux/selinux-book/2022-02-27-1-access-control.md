@@ -1,7 +1,7 @@
 ---
 layout:        book
 title:         "1. SELinux/アクセス制御の仕組み"
-date:          2022-03-01
+date:          2022-02-27
 category:      Linux
 cover:         /assets/cover6.jpg
 redirect_from:

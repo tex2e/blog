@@ -1,7 +1,7 @@
 ---
 layout:        book
 title:         "2. SELinux/SELinuxの仕組み"
-date:          2022-03-01
+date:          2022-02-27
 category:      Linux
 cover:         /assets/cover14.jpg
 redirect_from:
