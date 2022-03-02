@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxのマニュアル(manページ)をインストールする"
+menutitle:     "SELinuxのマニュアル(manページ)をインストールする"
 date:          2022-01-22
 category:      Linux
 cover:         /assets/cover6.jpg

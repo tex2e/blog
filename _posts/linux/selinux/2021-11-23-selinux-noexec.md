@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "SELinuxでユーザのファイル実行を制限する"
+menutitle:     "SELinuxでユーザのファイル実行を制限する (user_exec_content)"
 date:          2021-11-23
 category:      Linux
 cover:         /assets/cover6.jpg

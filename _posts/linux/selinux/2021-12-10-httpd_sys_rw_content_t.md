@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "SELinux上でApache(httpd)がファイル書き込み可能にする"
-menutitle:     "SELinux上でApache(httpd)がファイル書き込み可能にする (httpd_sys_rw_content_t)"
+title:         "SELinux上でhttpdがファイル書き込み可能にする"
+menutitle:     "SELinux上でhttpdがファイル書き込み可能にする (httpd_sys_rw_content_t)"
 date:          2021-12-10
 category:      Linux
 cover:         /assets/cover6.jpg

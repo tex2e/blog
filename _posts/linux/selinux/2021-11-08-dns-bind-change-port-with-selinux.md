@@ -1,6 +1,7 @@
 ---
 layout:        post
 title:         "ポート番号を変更したBINDをSELinuxで許可する"
+menutitle:     "ポート番号を変更したBINDをSELinuxで許可する (dns_port_t)"
 date:          2021-11-08
 category:      Linux
 cover:         /assets/cover6.jpg

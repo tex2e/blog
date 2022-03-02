@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "SELinuxのstaff_uがsudoできるコマンドを限定する"
+title:         "SELinuxのstaff_uがsudoできるコマンドを限定する (/etc/sudoers)"
 date:          2021-12-14
 category:      Linux
 cover:         /assets/cover6.jpg
