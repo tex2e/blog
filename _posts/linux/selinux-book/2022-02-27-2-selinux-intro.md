@@ -427,12 +427,13 @@ unconfined_u:object_r:user_home_dir_t:s0 /home/example.user/
 ```
 
 ファイルコンテキストが定義されていない場合、新規作成したファイルはルート直下のディレクトリ名に似たタイプ名でラベル付けされます。
+例えば、以下の場所にファイルを作成すると、それぞれ別のラベルが付与されます。
 
-- /bin や /usr/bin の下に作成したファイルは、bin_t のタイプが付けられます。
-- /etc の下に作成したファイルは、etc_t のタイプが付けられます。
-- /var の下に作成したファイルは、var_t のタイプが付けられます。
-- /tmp の下に作成したファイルは、tmp_t のタイプが付けられます。
-- /home/xxx/ などのホームディレクトリの下に作成したファイルは、user_home_t のタイプが付けられます。
+- /bin や /usr/bin の下に作成したファイルは、bin_t タイプになります。
+- /etc の下に作成したファイルは、etc_t タイプになります。
+- /var の下に作成したファイルは、var_t タイプになります。
+- /tmp の下に作成したファイルは、tmp_t タイプになります。
+- /home/xxx/ などのホームディレクトリの下に作成したファイルは、user_home_t タイプになります。
 
 #### ファイルコンテキストの一時的な変更 (chcon)
 
@@ -450,7 +451,8 @@ chconコマンドは、一時的にファイルやディレクトリのセキュ
 ~]# chcon -R -t httpd_sys_content_t /var/www/html
 ```
 
-オブジェクトのセキュリティコンテキストに含まれるSELinuxユーザは、UBACが無効の場合は影響しませんが、UBACが有効の場合はアクセス制御に影響します。
+オブジェクトのセキュリティコンテキストに含まれるSELinuxユーザは、UBACが有効の場合はアクセス制御に影響します。
+ただし、デフォルトではUBACは無効なので、通常はオブジェクトのSEユーザ (所有者) を意識することはありません。
 chcon でオブジェクトのSELinuxユーザを変える場合は、`-u` (seUser) オプションでSELinuxユーザを指定します。
 ```bash
 ~]# ls -dZ /var/www/html/upload
@@ -462,7 +464,7 @@ unconfined_u:object_r:httpd_sys_rw_content_t:s0 /var/www/html/upload
 system_u:object_r:httpd_sys_rw_content_t:s0 /var/www/html/upload
 ```
 
-chcon は一時的にタイプを変更するので、テストでは chcon を使い、問題がなければ次に説明する semanage fcontext で永続的にタイプを変更するという作業の流れになります。
+chcon は一時的にタイプを変更するので、テストや検証では chcon を使って、問題がなければ次に説明する semanage fcontext で永続的にタイプを変更するという作業の流れになります。
 
 #### ファイルコンテキストの復元 (restorecon)
 
