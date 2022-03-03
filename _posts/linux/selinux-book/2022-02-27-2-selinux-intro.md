@@ -1,6 +1,6 @@
 ---
 layout:        book
-title:         "2. SELinux/SELinuxの仕組み"
+title:         "2. SELinux/SELinuxの使い方"
 date:          2022-02-27
 category:      Linux
 cover:         /assets/cover14.jpg
@@ -12,7 +12,7 @@ photoswipe:    true
 syntaxhighlight: true
 sitemap:       true
 feed:          true
-description:   "SELinux入門 第2章 SELinuxの仕組み"
+description:   "SELinux入門 第2章 SELinuxの使い方"
 ---
 
 
