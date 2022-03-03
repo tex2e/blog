@@ -470,6 +470,7 @@ chcon は一時的にタイプを変更するので、テストや検証では c
 
 restorecon はSELinuxコンテキストをデフォルト値に復元するためのコマンドです。
 restorecon コマンドを使うと、chcon で設定した一時的なコンテキストは消えて、コンテキストが元に戻ります。
+`-v` オプションを使用することで、restorecon 実行時にセキュリティコンテキストが元に戻されたファイルやディレクトリの一覧を表示することができます。
 ```bash
 ~]# restorecon -v /var/www/html/upload
 ```
@@ -482,7 +483,7 @@ restorecon コマンドを使うと、chcon で設定した一時的なコンテ
 #### ファイルコンテキストの永続的な変更 (semanage fcontext)
 
 永続的にファイルやディレクトリのセキュリティコンテキストを変更するためのツールです。
-SELinuxでは、ファイルコンテキストの永続的な変更に正規表現を使用してファイルやディレクトリのラベル付けを行います。
+SELinuxでは、ファイルコンテキストの永続的な変更に正規表現を用いてファイルやディレクトリのラベル付けを行います。
 ラベル付けの一覧は、`-l` (List) オプションで確認できます。
 ```bash
 ~]# semanage fcontext -l
@@ -502,18 +503,18 @@ SELinux fcontext      type               Context
 ...
 ```
 
-永続的にファイルやディレクトリのセキュリティコンテキストを変更するルールを追加するには、`-a` (Add) オプションを追加し、-t で設定したいタイプ、最後にマッチさせたいパスの正規表現を指定します。
-ルールを追加しただけでは、ファイルやディレクトリのタイプは変更されないので、restorecon コマンドを使ってルールを適用します。
+永続的にファイルやディレクトリのセキュリティコンテキストを変更するルールを追加するには、`-a` (Add) オプションを追加し、`-t` で設定したいタイプ、最後の引数にマッチさせたいパスの正規表現を指定します。
+ファイルコンテキストのルールを追加しただけではファイルやディレクトリのタイプは変更されないので、restorecon コマンドを使ってルールを適用してタイプを修正します。
 ```bash
 ~]# semanage fcontext -a -t httpd_sys_content_t "/var/test_www(/.*)?"
 ~]# restorecon -Rv /var/test_www
 ```
-修正する場合は、`-m` (Modify) オプションで修正します。
+ファイルコンテキストのルールを修正する場合は、`-m` (Modify) オプションで修正します。
 ```bash
 ~]# semanage fcontext -m -t httpd_sys_rw_content_t "/var/test_www(/.*)?"
 ~]# restorecon -Rv /var/test_www
 ```
-削除する場合は、`-d` (Delete) オプションで削除します。ファイルコンテキストも元に戻すには、続けて restorecon を実行します。
+ファイルコンテキストのルールを削除する場合は、`-d` (Delete) オプションで削除します。ファイルコンテキストも元に戻すには、続けて restorecon を実行します。
 ```bash
 ~]# semanage fcontext -d "/var/test_www(/.*)?"
 ~]# restorecon -Rv /var/test_www
@@ -542,7 +543,6 @@ SELinux fcontext                type           Context
 ~]# semanage fcontext -D
 ```
 
-semanage を使わないでファイルコンテキストの永続的な変更をする方法もあります。
 再起動時にファイルシステム全体を再度ラベル付けする場合は、ルートディレクトリに「.autorelabel」という名前の空ファイルを作成し、再起動 (reboot) することで再ラベル付けが実施されます。
 ```bash
 ~]# touch /.autorelabel
@@ -561,7 +561,7 @@ matchpathcon は、指定したパスがファイルコンテキストに設定�
 ### ポートのラベリング (semanage port)
 
 semanage port は、ポートの番号に割り当てるタイプを管理するためのツールです。
-プロセスのTCPやUDPの送信 (send) や、受信 (recv) および待ち受け (Listen) を管理するために使用します。
+プロセスのTCPやUDPの送信 (send) や受信 (recv) を管理するために使用します。
 すべてのポートのタイプに関連付けされているポート番号の一覧を表示するには、`-l` (List) オプションでコマンドを実行します。
 ```bash
 ~]# semanage port -l
@@ -577,7 +577,7 @@ zope_port_t                    tcp      8021
 
 指定したポート番号に新しいタイプを割り当てる場合、`-a` (Add) オプションを使用します。
 実行時は、タイプとプロトコルとポート番号を指定します。
-一般的にポートに割り当てるタイプは、末尾が `_port_t` の形式です。
+一般的にポートに割り当てるタイプは、末尾が `_port_t` の形式になっています。
 ```bash
 ~]# semanage port -a -t http_port_t -p tcp 8088
 ~]# semanage port -l | grep 8088
@@ -585,7 +585,7 @@ http_port_t                    tcp      8088, 80, 81, 443, 488, 8008, 8009, 8443
 ```
 
 指定したポート番号にタイプを追加する場合、`-m` (Modify) オプションを使用します。
-指定したポート番号がすでに他で使用されている場合に使うオプションです。
+指定した対象のポート番号がすでに他で使用されている場合、`-a` の代わりに `-m` オプションを使用します。
 ```bash
 ~]# semanage port -a -t http_port_t -p tcp 8000
 ValueError: Port tcp/8000 already defined
@@ -620,7 +620,7 @@ http_port_t                    tcp      8000
 
 Boolean は SELinux のポリシーを管理するためのフラグで、Onにするだけで関連する複数のルールが有効化されます。
 例えば、httpd_can_network_connect_db という名前の Boolean は、On にするだけで httpd が外部のDBサーバのポートとの接続が許可されます。
-Boolean の一覧は semanage boolean コマンドを使って表示することができます。
+Boolean の一覧は semanage boolean コマンドの `-l` (List) オプションで表示することができます。
 
 ```bash
 ~]# semanage boolean -l
@@ -637,12 +637,12 @@ authlogin_nsswitch_use_ldap    (off  ,  off)  Allow authlogin to nsswitch use ld
 
 Boolean の値は on か off のどちらかです。
 Boolean の値を設定するには、setsebool コマンドを使用して Boolean 名と on または off を指定します。
-例えば、httpd_can_network_connect という Boolean を一時的に有効化するには次のコマンドを実行します。一時的に設定した場合は、再起動するとデフォルトに戻ります。
+例えば、httpd_can_network_connect という Boolean を一時的に有効化するには次のコマンドを実行します。一時的に設定した場合は、再起動するとデフォルト値に戻ります。
 ```bash
 ~]# setsebool httpd_can_network_connect on
 ```
 永続的に設定したい場合は、`-P` (Permanent) オプションを追加して実行します。
--P オプションを指定した場合は、ポリシーの再ビルドが発生するので、設定の反映が完了するまで若干時間がかかります。
+`-P` オプションを指定した場合は、ポリシーの再ビルドが発生するので、設定の反映が完了するまで若干時間がかかります。
 ```bash
 ~]# setsebool -P httpd_can_network_connect on
 ```
@@ -682,9 +682,9 @@ allow httpd_t port_type:tcp_socket name_connect; [ httpd_can_network_connect ]:T
 
 * httpd
   - httpd_can_network_connect :
-  httpdのスクリプト (PHPなど) がネットワークにTCP接続するのを許可する。デフォルトは off
+  httpdがネットワークにTCP接続するのを許可する。デフォルトは off
   - httpd_can_network_connect_db :
-  httpdのスクリプト (PHPなど) がネットワークのDBのポートに接続するのを許可する。デフォルトは off
+  httpdがネットワークのDBのポートに接続するのを許可する。デフォルトは off
   - httpd_can_connect_ldap :
   httpdがLDAPポートに接続するのを許可する。デフォルトは off
   - httpd_can_sendmail :
@@ -696,7 +696,7 @@ allow httpd_t port_type:tcp_socket name_connect; [ httpd_can_network_connect ]:T
   - httpd_enable_homedirs :
   httpdがユーザのホームディレクトリにアクセスするのを許可する。デフォルトは off
   - httpd_tmp_exec :
-  httpdが /tmp でファイルを実行するのを許可する。デフォルトは off
+  httpdが /tmp の下にあるファイルを実行するのを許可する。デフォルトは off
 * tomcat
   - tomcat_can_network_connect_db :
   TomcatがネットワークのDBに接続するのを許可する。デフォルトは off
@@ -715,7 +715,7 @@ allow httpd_t port_type:tcp_socket name_connect; [ httpd_can_network_connect ]:T
   PostgreSQLが復旧のためにsshとrsyncを使用することを許可する。デフォルトは off
 * sshd
   - ssh_sysadm_login :
-  sysadm_rロールに所属するユーザが、sshログインするのを許可する。デフォルトは off
+  sysadm_rロールに所属するユーザがsshログインするのを許可する。デフォルトは off
 * nfs
   - nfs_export_all_ro :
   VFS経由でエクスポートされる全てのファイルとディレクトリを読み取り専用にする。デフォルトは on
@@ -749,15 +749,15 @@ example.user         staff_u              s0                   *
 - MLS/MCS Range : Linuxユーザに対応付けされたレベル
 - Service : Linuxユーザがログイン時に使用するサービス
 
-SELinuxユーザの対応関係を追加するには、`-a` (Add) オプションでSELinuxとLinuxユーザを指定します。
+LinuxユーザとSELinuxユーザの対応関係を追加するには、`-a` (Add) オプションでSELinuxとLinuxユーザを指定します。
 ```bash
 ~]# semanage login -a -s user_u user1
 ```
-追加されているSELinuxユーザの対応関係を修正するには、`-m` (Modify) オプションで修正後を内容を設定します。
+LinuxユーザとSELinuxユーザの対応関係を修正するには、`-m` (Modify) オプションで修正後を内容を設定します。
 ```bash
 ~]# semanage login -m -s staff_u user1
 ```
-対応関係から削除するには、`-d` (Delete) オプションでLinuxユーザを指定します。
+LinuxユーザとSELinuxユーザの対応関係から削除するには、`-d` (Delete) オプションでLinuxユーザを指定します。
 ```bash
 ~]# semanage login -d user1
 ```
@@ -778,7 +778,7 @@ user1                sysadm_u             s0-s0:c0.c1023       *
 #### ユーザのレベル
 
 SELinuxのユーザ一覧を表示すると「MLS/MCS Range」という列があります。
-これはレベル (Level) と呼ばれるもので、そのユーザの機密レベルとカテゴリセットをを表しており、「s0-s0:c0.c1023」という形式で記述されます。
+これはレベル (Level) と呼ばれるもので、そのユーザの機密レベルとカテゴリーセットを表しており、「s0-s0:c0.c1023」という形式で記述されます。
 
 レベルには、MLS (Multi Layer Security) とMCS (Multi Category Security) の2つの属性が含まれています。
 表示される形式は「MLS範囲:カテゴリーセット」です。
@@ -786,8 +786,8 @@ SELinuxのユーザ一覧を表示すると「MLS/MCS Range」という列があ
 
 MLS範囲は、サブジェクトが所持しているクリアランスレベルの範囲を示します。
 MLS範囲は「低レベル-高レベル」と表され、s0-s0 のときは s0 と同じです。
-カテゴリセットは、サブジェクトがアクセスを許可されているカテゴリの一覧です。
-カテゴリセットは「c0,c1,c2,c3」と表されます。
+カテゴリーセットは、サブジェクトがアクセスを許可されているカテゴリの一覧です。
+カテゴリーセットは「c0,c1,c2,c3」と表されます。
 また、カテゴリが連続している場合は「c0.c3」のように、ドットを使って範囲を示します。
 カテゴリは1024種類まで対応しています。
 例えば、レベルが「s0-s0:c0.c1023」のときは、機密性レベル s0 かつ、c0～c1023 のカテゴリに対してアクセスが許可されます。
