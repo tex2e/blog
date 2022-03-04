@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellで使える型の一覧"
+title:         "PowerShellで使用できる型の一覧"
 date:          2020-11-29
 category:      PowerShell
 cover:         /assets/cover1.jpg
@@ -17,7 +17,7 @@ syntaxhighlight: true
 PowerShellの型アクセラレータ (Type Accelerators) は .NET のクラスや型の別名（エイリアス）として機能します。
 例えば、PowerShellで [int] は [System.Int32] の別名です。
 これにより、PowerShellでの型の扱いが簡単になります。
-PowerShellで使える型（型アクセラレータ）の一覧を表示するには、以下のコマンドを実行します。
+PowerShellで使用できる型（型アクセラレータ）の一覧を表示するには、以下のコマンドを実行します。
 
 ```powershell
 $TypeAcc = [PSObject].Assembly.GetType("System.Management.Automation.TypeAccelerators")
