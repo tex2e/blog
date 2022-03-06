@@ -1,9 +1,6 @@
 {
   "ignorePatterns": [
     {
-      "pattern": "^/blog/"
-    },
-    {
       "pattern": "^\\./"
     },
     {
@@ -19,12 +16,22 @@
       "pattern": "^https://docs.raku.org"
     },
     {
-      "pattern": "^hxxps?://"
+      "pattern": "^hxxps?://[a-zA-Z0-9]+"
     }
   ],
+  "replacementPatterns": [
+    {
+      "pattern": "^/blog/",
+      "replacement": "{{BASEURL}}/blog/"
+    }
+  ],
+  "timeout": "20s",
+  "retryCount": 2,
   "aliveStatusCodes": [
     200,
     206,
-    0
+    403,
+    406,
+    429
   ]
 }

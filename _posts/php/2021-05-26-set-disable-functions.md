@@ -60,4 +60,4 @@ open_basedir = /var/www/html/
 以上です。
 
 ### 参考文献
-- [Linux 25 PHP Security Best Practices For Sys Admins - nixCraft](https://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html)
+- Linux 25 PHP Security Best Practices For Sys Admins - nixCraft (hxxps://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html)
