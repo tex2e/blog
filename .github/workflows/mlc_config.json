@@ -16,13 +16,16 @@
       "pattern": "^https://docs.raku.org"
     },
     {
-      "pattern": "^hxxps?://[a-zA-Z0-9]+"
+      "pattern": "^hxxps?://"
+    },
+    {
+      "pattern": "\\.pdf$"
     }
   ],
   "replacementPatterns": [
     {
       "pattern": "^/blog/",
-      "replacement": "{{BASEURL}}/blog/"
+      "replacement": "https://tex2e.github.io/blog/"
     }
   ],
   "timeout": "20s",

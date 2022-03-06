@@ -112,6 +112,6 @@ $ git push origin 2021.05
 ### 参考文献
 
 - [Git Bash for Windows で構築する GitHub・GnuPG の環境（自分用メモ） - Qiita](https://web.archive.org/web/20201101014836/https://qiita.com/sprout2000/items/e67053e09380c2227500)
-- [GnuPGのコマンド](http://www.nina.jp/server/windows/gpg/commands.html)
+- [GnuPGのコマンド](https://web.archive.org/web/20190511014248/http://www.nina.jp/server/windows/gpg/commands.html)
 - [Git - 作業内容への署名](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9%E3%81%B8%E3%81%AE%E7%BD%B2%E5%90%8D)
 - [git tagの使い方まとめ - Qiita](https://qiita.com/growsic/items/ed67e03fda5ab7ef9d08)

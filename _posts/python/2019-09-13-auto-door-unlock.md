@@ -94,7 +94,7 @@ photoswipe:    true
 - [RaspberryPiでNFCタグを使ってみる - uepon日々の備忘録](https://uepon.hatenadiary.com/entry/2018/06/12/223307)
 - [RaspberryPi Zeroでサーボモータを動かす](https://web.archive.org/web/20180814203032/http://hara.jpn.com/_default/ja/Topics/RaspPi_Motor.html)
 - [［後半］(本当の)0からNFCでカギで操作するソフトを作る。](https://eleken.jp/archives/1886)
-- [2014年【開発】FeliCaオートロック -- falcon's diary](https://blog.falconsrv.net/portfolio/2014%E5%B9%B4)
+- [2014年【開発】FeliCaオートロック -- falcon's diary](https://web.archive.org/web/20210120230802/https://blog.falconsrv.net/portfolio/2014%E5%B9%B4)
 - [Amazon - SG5010 デジタルサーボ - ラジコン・ドローン 通販](https://www.amazon.co.jp/TOWER-PRO-%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%97%E3%83%AD-SG5010-%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%9C/dp/B01LXJ8Y0Z)
 - [Amazon - ソニー SONY 非接触ICカードリーダー/ライター PaSoRi RC-S380 - ソニー(SONY) - 外付メモリカードリーダー 通販](https://www.amazon.co.jp/%E3%82%BD%E3%83%8B%E3%83%BC-SONY-%E9%9D%9E%E6%8E%A5%E8%A7%A6IC%E3%82%AB%E3%83%BC%E3%83%89%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC-PaSoRi-RC-S380/dp/B00948CGAG)
 
