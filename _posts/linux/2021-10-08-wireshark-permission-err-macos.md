@@ -4,7 +4,7 @@ title:         "MacOSのWiresharkが権限エラーでキャプチャできな�
 date:          2021-10-08
 category:      Linux
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /linux/wireshark-permission-error-macos
 comments:      true
 published:     true
 latex:         false

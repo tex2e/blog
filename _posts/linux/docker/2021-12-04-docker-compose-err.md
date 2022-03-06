@@ -4,7 +4,7 @@ title:         "docker-composeインストール後にエラー「error while lo
 date:          2021-12-04
 category:      Linux
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /linux/docker-compose-error
 comments:      true
 published:     true
 latex:         false

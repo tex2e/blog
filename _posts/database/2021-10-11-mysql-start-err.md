@@ -4,7 +4,7 @@ title:         "MySQLが起動できないときの対処 (/var/lib/mysql/ 関�
 date:          2021-10-11
 category:      Database
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /database/mysql-start-error
 comments:      true
 published:     true
 latex:         false
