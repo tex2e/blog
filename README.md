@@ -131,6 +131,18 @@ make path/to/file.tex
 ```
 
 
+### GitHub Action
+
+#### リンク切れチェック
+- [tcort/markdown-link-check](https://github.com/tcort/markdown-link-check)
+- [gaurav-nelson/github-action-markdown-link-check](https://github.com/gaurav-nelson/github-action-markdown-link-check)
+
+リンク切れチェックの対象外にしたい場合は、以下のHTMLコメントでリンクを囲みます。
+```html
+<!-- markdown-link-check-disable -->
+- [sample](https://example.com)
+<!-- markdown-link-check-enable-->
+```
 
 <br>
 
