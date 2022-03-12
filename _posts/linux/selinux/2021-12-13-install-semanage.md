@@ -21,7 +21,7 @@ CentOS 7 でsemanageコマンドをインストールする場合：
 ```bash
 ~]# yum install policycoreutils-python
 ```
-CentOS 8 でsemanageコマンドをインストールする場合：
+CentOS 8 や CentOS Stream 9 でsemanageコマンドをインストールする場合：
 ```bash
 ~]# dnf install policycoreutils-python-utils
 ```
