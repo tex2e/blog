@@ -14,7 +14,7 @@ syntaxhighlight: true
 # feed:    false
 ---
 
-GDPR においてCookieは個人情報です。
+GDPR において、Cookieは個人を識別するために使用できるため、個人情報になります。
 Google AnalyticsなどのファーストパーティCookie (サイト運営者が発行しているCookie) は米国に個人情報を移転しているため、GDPRに違反しているという判決が出ています。
 ここでは、Google Analytics (gtag.js) の動作を特定の地域に限定するための設定について紹介します。
 
