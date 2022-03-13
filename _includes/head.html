@@ -8,18 +8,18 @@
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
 
   <!-- Open Graph data, Twitter data -->
-  {% include ogp.html %}
+{% include ogp.html %}
 
   <!-- CSS: Main -->
   <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 
+  {%- if page.syntaxhighlight != false %}
   <!-- CSS: Syntax Highlight -->
-  {% if page.syntaxhighlight != false %}
   <link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css">
   <style type="text/css">
     .token.operator { background: none; }
   </style>
-  {% endif %}
+  {%- endif %}
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}">
@@ -27,8 +27,8 @@
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  {%- if page.latex %}
   <!-- KaTeX -->
-  {% if page.latex %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
     integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
@@ -47,9 +47,9 @@
     });
   });
   </script>
-  {% endif %}
+  {%- endif %}
 
-  {% if jekyll.environment == "production" %}
+  {%- if jekyll.environment == "production" %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!--   https://developers.google.com/tag-platform/devguides/consent -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75892425-1"></script>
@@ -76,5 +76,5 @@
       });
     }
   </script>
-  {% endif %}
+  {%- endif %}
 </head>

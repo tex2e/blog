@@ -1,8 +1,8 @@
-{% if page.cover %}
-{% assign cover = page.cover %}
-{% elsif site.cover %}
-{% assign cover = site.cover %}
-{% endif %}
+{%- if page.cover %}
+{%- assign cover = page.cover %}
+{%- elsif site.cover %}
+{%- assign cover = site.cover %}
+{%- endif %}
 
 <header
   class="main-header detail-page image-bg {% if cover %} has-cover"
@@ -15,7 +15,6 @@
       <li><a class="page-link" href="{{ site.baseurl }}/" title="Home">Home</a></li>
       <li><a class="page-link" href="{{ site.baseurl }}/privacy/" title="Privacy">Privacy</a></li>
       <li><a class="page-link" href="{{ site.baseurl }}/about/" title="About">About</a></li>
-
     </ul>
   </div>
 </header>

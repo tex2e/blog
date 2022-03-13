@@ -17,14 +17,14 @@ layout: default
       {{content}}
     </section>
 
-    {% if jekyll.environment == "production" %}
-    {% if page.comments %}
+    {%- if jekyll.environment == "production" %}
+    {%- if page.comments %}
     <div class="comments">
       <a href="javascript:;" class="view-comments"><i class="fa fa-comments"></i>View Comments...</a>
       <div id="disqus_thread"></div>
     </div>
-    {% endif %}
-    {% endif %}
+    {%- endif %}
+    {%- endif %}
 
   </article>
 </main>

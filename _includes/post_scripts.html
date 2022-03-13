@@ -1,17 +1,14 @@
 
-<!-- <script src="{{ site.baseurl }}/js/jquery-1.12.0.min.js"></script> -->
-<!-- <script src="{{ site.baseurl }}/js/jquery.fitvids.js"></script> -->
-
+{%- if page.syntaxhighlight != false %}
 <!-- Syntax Highlight -->
-{% if page.syntaxhighlight != false %}
 <script src="{{ site.baseurl }}/js/prism.js"></script>
-{% endif %}
+{%- endif -%}
 
+{%- if page.photoswipe %}
 <!-- Photo Swipe -->
-{% if page.photoswipe %}
 <script src="{{ site.baseurl }}/js/photoswipe.js"></script>
 <script src="{{ site.baseurl }}/js/photoswipe-ui-default.js"></script>
-{% endif %}
+{%- endif %}
 
 <!-- Main -->
 <script src="{{ site.baseurl }}/js/post.js"></script>
@@ -23,18 +20,18 @@
   };
 </script>
 
+{%- if page.syntaxhighlight != false %}
 <!-- Prism -->
-{% if page.syntaxhighlight != false %}
 <script type="text/javascript">
-  // Bashの字句解析でPromptの部分「$」と「~]#」もtokenにする
+  // Bashの字句解析でPromptの部分「$」と「~$」と「~]#」もtokenにする
   Prism.languages.insertBefore('bash', 'comment', {
     'prompt': /^\~\]?[#$] |^\$ /m,
-  })
+  });
   // PowerShellの字句解析でPromptの部分「PS>」もtokenにする
   //（デフォルトだとPSがfunctionと判定されるので、insertBeforeで先に評価する）
   Prism.languages.insertBefore('powershell', 'function', {
     'prompt': /^PS> /m,
-  })
+  });
   Prism.languages.vb = Prism.languages.vbnet; // Markdownで言語が「vb」のとき、Prism.jsの「vbnet」を適用する
   Prism.languages.ps1 = Prism.languages.powershell; // 「ps1」のとき、Prism.sjの「powershell」を適用する
 </script>
@@ -45,4 +42,4 @@
     user-select: none;
   }
 </style>
-{% endif %}
+{%- endif %}
