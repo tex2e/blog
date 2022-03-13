@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{% if page.language %}{{ page.language | downcase }}{% else %}{{ site.language | downcase }}{% endif %}">
 {% include head.html %}
 
 <body class="home-template">
   <div class="site-wrapper">
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
   </div>
 </body>
 

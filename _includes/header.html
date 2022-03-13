@@ -3,7 +3,6 @@
 {%- elsif site.cover %}
 {%- assign cover = site.cover %}
 {%- endif %}
-
 <header
   class="main-header detail-page image-bg {% if cover %} has-cover"
   style="background-image: url({{ cover | prepend: site.baseurl }})" {% else %} no-cover" {% endif %}
