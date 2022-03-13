@@ -12,11 +12,6 @@
     var windowHeight = win.height();
     var timeoutHandler;
 
-    /* -------------------------------------------------------------------------
-      Fix video size.
-     */
-    // $postContent.fitVids();
-
 
     /* -------------------------------------------------------------------------
       Image gallery

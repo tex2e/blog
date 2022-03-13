@@ -1,5 +1,10 @@
 /* Prism Customize CSS */
 
+//--- Block code ---
+pre {
+    border: 1px solid #eeeeee;
+    background: rgba(250,250,250,0.8);
+}
 // 現サイトの記事の横幅に合わせる
 pre code {
     display: block;
@@ -8,6 +13,15 @@ pre code {
     margin: auto;
 }
 
+//--- Inline code ---
+:not(pre) > code {
+    padding: .1em;
+    border-radius: .3em;
+    border: 1px solid #eeeeee;
+    background: rgba(250,250,250,0.8);
+}
+
+//--- Tokens ---
 // 演算子の背景が白くなる問題を防ぐ
 .token.operator {
     background: none;
@@ -16,33 +30,4 @@ pre code {
 // Propmtの部分「$」は選択・コピーできないようにする
 .token.prompt {
     user-select: none;
-}
-
-// Inline code
-:not(pre) > code {
-    color: black;
-    background: none;
-    text-shadow: 0 1px white;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: 1em;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.5;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-
-    padding: .1em;
-    border-radius: .3em;
-    border: 1px solid #eeeeee;
-    background: rgba(250,250,250,0.8);
 }

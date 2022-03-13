@@ -6,8 +6,10 @@ https://prismjs.com/download.html?#themes=prism&languages=markup+css+clike+javas
  * @author Lea Verou
  */
 
-code[class*="language-"],
-pre[class*="language-"] {
+// 注意点 : [class*="language-"] を一括置換で削除済み
+
+code,
+pre {
     color: black;
     background: none;
     text-shadow: 0 1px white;
@@ -30,39 +32,39 @@ pre[class*="language-"] {
     hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+pre::-moz-selection, pre ::-moz-selection,
+code::-moz-selection, code ::-moz-selection {
     text-shadow: none;
     background: #b3d4fc;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
+pre::selection, pre ::selection,
+code::selection, code ::selection {
     text-shadow: none;
     background: #b3d4fc;
 }
 
 @media print {
-    code[class*="language-"],
-    pre[class*="language-"] {
+    code,
+    pre {
         text-shadow: none;
     }
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+pre {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code,
+pre {
     background: #f5f2f0;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre) > code {
     padding: .1em;
     border-radius: .3em;
     white-space: normal;
