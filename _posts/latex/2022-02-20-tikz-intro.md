@@ -9,7 +9,6 @@ comments:      true
 published:     true
 latex:         false
 photoswipe:    true
-syntaxhighlight: true
 # sitemap: false
 # feed:    false
 ---

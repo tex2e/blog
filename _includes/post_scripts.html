@@ -20,7 +20,6 @@
   };
 </script>
 
-{%- if page.syntaxhighlight != false %}
 <!-- Prism -->
 <script type="text/javascript">
   // Bashの字句解析でPromptの部分「$」と「~$」と「~]#」もtokenにする
@@ -35,4 +34,3 @@
   Prism.languages.vb = Prism.languages.vbnet; // Markdownで言語が「vb」のとき、Prism.jsの「vbnet」を適用する
   Prism.languages.ps1 = Prism.languages.powershell; // 「ps1」のとき、Prism.sjの「powershell」を適用する
 </script>
-{%- endif %}

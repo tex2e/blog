@@ -9,9 +9,8 @@ comments:      true
 published:     true
 latex:         false
 photoswipe:    true
-syntaxhighlight: true
-sitemap:       true
-feed:          true
+# sitemap:       true
+# feed:          true
 description:   "SELinux入門 第3章 SELinuxの実践"
 ---
 

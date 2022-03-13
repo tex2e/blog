@@ -6,7 +6,6 @@ layout: headless
 
     <header class="post-header short-diver">
       <h1 class="post-title book-section-title" itemprop="name headline">{{ page.title }}</h1>
-
       <section class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
         on
@@ -17,6 +16,15 @@ layout: headless
     <section class="post-content short-diver book-section-content" itemprop="articleBody">
       {{content}}
     </section>
+
+    {%- if jekyll.environment == "production" %}
+    {%- if page.comments %}
+    <div class="comments">
+      <a href="javascript:;" class="view-comments"><i class="fa fa-comments"></i>View Comments...</a>
+      <div id="disqus_thread"></div>
+    </div>
+    {%- endif %}
+    {%- endif %}
 
     <footer>
       <section class="post-meta">

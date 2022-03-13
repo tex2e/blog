@@ -9,7 +9,6 @@ comments:      true
 published:     true
 latex:         false
 photoswipe:    false
-syntaxhighlight: true
 # sitemap: false
 # feed:    false
 ---
@@ -44,4 +43,6 @@ ActiveXを使えば「全角/半角」キーを押さなくても、フォーム
 ---
 #### 参考文献
 「IEはオワコン、ActiveXを止めろ」と思うたびに読みたい記事：
+<!-- markdown-link-check-disable -->
 - [何故お役所ってオワコンIEが大好きなの？｜楠 正憲（デジタル庁統括官）](https://comemo.nikkei.com/n/n1c9103c81c79)
+<!-- markdown-link-check-enable-->

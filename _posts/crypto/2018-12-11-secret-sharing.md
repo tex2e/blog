@@ -88,7 +88,6 @@ DNSSECのルートサーバの秘密鍵も、このシャミアの秘密分散�
 関数`modinv`は有限体 $\mathbb{F}_p$ で除算をしたいときに使います。厳密に言うと、剰余環の乗法の逆元を求める関数です。
 
 ```python
-
 def randint(maxint):
     import secrets
     return secrets.SystemRandom().randint(0, maxint)
