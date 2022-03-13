@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div id="content" class="content">
+<div id="content" class="content"><!-- begin #content -->
 
 <ul class="category recent-posts">
   <h3 class="category-title">Recent Posts</h3>
@@ -11,8 +11,7 @@ layout: default
   <li>
     <div class="article">
     <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
-    <a href="{{ post.url | prepend: site.baseurl }}"
-        title="{{ post.menutitle | default: post.title | strip_html }}">
+    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.menutitle | default: post.title | strip_html }}">
       <header class="post-header">
         <span class="title" itemprop="name">{{ post.menutitle | default: post.title | strip_html }}</span>
         <time class="date" itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{post.date | date: "%b %e, %Y"}}</time>
@@ -27,19 +26,15 @@ layout: default
 {%- assign sorted_cats = site.categories | sort -%}
 {%- for category in sorted_cats -%}
 {%- assign sorted_posts = category[1] | reversed -%}
-
 <ul class="category {{ category[0] | uri_escape | downcase | slugify }}">
-  <h3 id="{{ category[0] | uri_escape | downcase | slugify }}"
-      class="category-title">
-    {{ category[0] | camelcase }}
-  </h3>
+  <h3 id="{{ category[0] | uri_escape | downcase | slugify }}" class="category-title">{{ category[0] | camelcase }}</h3>
+
   {%- for post in sorted_posts -%}
   {%- unless post.draft -%}
   <li>
     <div class="article">
     <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
-    <a href="{{ post.url | prepend: site.baseurl }}"
-        title="{{ post.menutitle | default: post.title | strip_html }}">
+    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.menutitle | default: post.title | strip_html }}">
       <header class="post-header">
       <span class="title" itemprop="name">{{ post.menutitle | default: post.title | strip_html }}</span>
       <time class="date" itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{post.date | date: "%b %e, %Y"}}</time>
@@ -56,8 +51,7 @@ layout: default
 </div><!-- end #content -->
 
 
-<!-- Navbar sidebar -->
-<nav class="toppage-nav">
+<nav class="toppage-nav"><!-- begin Navbar sidebar -->
   <ul>
     {%- assign sorted_cats = site.categories | sort -%}
     {%- for category in sorted_cats -%}
@@ -69,12 +63,12 @@ layout: default
     </li>
     {%- endfor -%}
   </ul>
-</nav>
+</nav><!-- end Navbar sidebar -->
 
 <script>
   /* --- Navbar sidebar ----------------------------------------------------- */
-  const SHOW_NAV_SCROLLTOP = 200; // ナビゲーションを表示する境界値
-  const SHOW_NAVDOT_MARGIN = 80;  // ドットを大きくする境界値
+  const SHOW_NAV_SCROLLTOP = 100; // ナビゲーションを表示する境界値（トップからの距離）
+  const SHOW_NAVDOT_MARGIN = -80; // ドットを大きくする境界値（要素の境界からの距離）
   function renderNavbarSidebar() {
     const nav = document.querySelector('nav.toppage-nav');
     const scrollTop = document.documentElement.scrollTop;
@@ -89,8 +83,8 @@ layout: default
       const navlabel = li.querySelector('.nav-label');
       const li_category = document.querySelector('.category.' + navlabel.dataset.target);
       const rect = li_category.getBoundingClientRect();
-      const isInView = (0 < rect.bottom - SHOW_NAVDOT_MARGIN && 
-                            rect.top + SHOW_NAVDOT_MARGIN < window.innerHeight);
+      const isInView = (0 < rect.bottom + SHOW_NAVDOT_MARGIN &&
+                            rect.top - SHOW_NAVDOT_MARGIN < window.innerHeight);
       if (isInView) {
         navdot.classList.add('active');
       } else {
@@ -101,5 +95,5 @@ layout: default
   renderNavbarSidebar();
   window.addEventListener('scroll', renderNavbarSidebar);
   const nav = document.querySelector('nav.toppage-nav');
-  nav.style.transition = 'all 0.3s'
+  nav.style.transition = 'all 0.3s';
 </script>
