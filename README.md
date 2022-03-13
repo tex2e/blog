@@ -27,7 +27,6 @@ Mako(tex2e)の技術系ブログです。
 - `published: false` : ページを非公開にする
 - `latex: true` : 数式レンダリングを許可する
 - `photoswipe: true` : 画像の拡大を有効にする
-- `syntaxhighlight: false` : シンタックスハイライトを無効にしてページレンダリングを高速化する（特に数学、英語、雑文の記事での読み込み速度の高速化）
 - `sitemap: false` : sitemap.xmlにリンクを追加しない (検索エンジンから少しだけ見つかりにくくなる)
 - `feed: false` : feed.xmlにリンクを追加しない (RSSで更新情報を知らせない)
 

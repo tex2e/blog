@@ -10,16 +10,8 @@
   <!-- Open Graph data, Twitter data -->
 {% include ogp.html %}
 
-  <!-- CSS: Main -->
+  <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
-
-  {%- if page.syntaxhighlight != false %}
-  <!-- CSS: Syntax Highlight -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css">
-  <style type="text/css">
-    .token.operator { background: none; }
-  </style>
-  {%- endif %}
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}">
