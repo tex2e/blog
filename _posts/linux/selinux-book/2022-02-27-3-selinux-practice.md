@@ -1,6 +1,7 @@
 ---
 layout:        book
-title:         "3. SELinux/SELinuxの実践"
+title:         "3. SELinuxの実践"
+menutitle:     "3. SELinux/SELinuxの実践"
 date:          2022-02-27
 category:      Linux
 cover:         /assets/cover14.jpg
@@ -855,6 +856,9 @@ allow nsswitch_domain unreserved_port_t:tcp_socket name_connect; [ nis_enabled ]
 
 
 
+
 ---
 
-[PRIV](./2-selinux-intro) 
+- [1. SELinux/アクセス制御の仕組み](./1-access-control)
+- [2. SELinuxの特徴と使い方](./2-selinux-intro)
+- [3. SELinuxの実践](./3-selinux-practice) **<<<<<< 現在のページ**

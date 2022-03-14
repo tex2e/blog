@@ -1,6 +1,7 @@
 ---
 layout:        book
 title:         "1. SELinux/アクセス制御の仕組み"
+menutitle:     "1. SELinux/アクセス制御の仕組み"
 date:          2022-02-27
 category:      Linux
 cover:         /assets/cover6.jpg
@@ -157,8 +158,8 @@ test
 ```
 
 2つのユーザの違いは、ログイン時のセキュリティコンテキストにあります。
-user1 は staff_u というSELinuxユーザに対応付けされているため、staff_t ドメインで動作しています。
-一方、user2 は sysadm_u というSELinuxユーザのため、sysadm_t ドメインで動作しています。
+user1 は staff_u というSELinuxユーザに対応付けされているため「staff_t」ドメインで動作しています。
+一方、user2 は sysadm_u というSELinuxユーザのため「sysadm_t」ドメインで動作しています。
 SELinuxを使うことで、su などでユーザを切り替えても、ユーザやプロセスに割り当てられるSELinuxのセキュリティコンテキストは維持されます。
 そのため、適切なドメインでプロセスを動作させれば、MACによるアクセス制御を行うことができ、ソフトウェアの脆弱性などによる権限昇格からシステムを保護することができます。
 
@@ -177,4 +178,6 @@ SELinux システムにもロールが存在します。
 
 ---
 
-[NEXT](./2-selinux-intro)
+- [1. SELinux/アクセス制御の仕組み](./1-access-control) **<<<<<< 現在のページ**
+- [2. SELinuxの特徴と使い方](./2-selinux-intro)
+- [3. SELinuxの実践](./3-selinux-practice)
