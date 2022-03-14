@@ -13,6 +13,7 @@ photoswipe:    true
 # sitemap:       true
 # feed:          true
 description:   "SELinux入門 第2章 SELinuxの使い方"
+section_number: 2
 ---
 
 

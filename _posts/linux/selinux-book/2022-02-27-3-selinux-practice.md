@@ -13,6 +13,7 @@ photoswipe:    true
 # sitemap:       true
 # feed:          true
 description:   "SELinux入門 第3章 SELinuxの実践"
+section_number: 3
 ---
 
 
