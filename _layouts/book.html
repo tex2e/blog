@@ -13,6 +13,13 @@ layout: headless
       </section>
     </header>
 
+    <section id="toc">
+      <details>
+        <summary class="close hover-underline">目次の表示</summary>
+        {% include toc.html html=content ordered=true %}
+      </details>
+    </section>
+
     <section class="post-content short-diver book-section-content" itemprop="articleBody">
       {{content}}
     </section>
