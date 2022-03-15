@@ -10,10 +10,14 @@ comments:      true
 published:     true
 latex:         false
 photoswipe:    true
-# sitemap:       true
-# feed:          true
+# sitemap: true
+# feed: true
 description:   "SELinux入門 第1章 アクセス制御の仕組み"
 section_number: 1
+sections:
+  - [./1-access-control, SELinux/アクセス制御の仕組み]
+  - [./2-selinux-intro, SELinuxの特徴と使い方]
+  - [./3-selinux-practice, SELinuxの実践]
 ---
 
 
@@ -173,12 +177,3 @@ RBACの仕組みは、Linux を含む一般的な OS で使用されています
 SELinux システムにもロールが存在します。
 例えば、SELinuxユーザである sysadm_u と staff_u はどちらも sysadm_r に所属しています。
 よって、どちらも sysadm_t ドメインに遷移することができます (staff_u は条件付きです)。
-
-
-
-
----
-
-- [1. SELinux/アクセス制御の仕組み](./1-access-control) **<<<<<< 現在のページ**
-- [2. SELinuxの特徴と使い方](./2-selinux-intro)
-- [3. SELinuxの実践](./3-selinux-practice)

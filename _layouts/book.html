@@ -13,6 +13,23 @@ layout: headless
       </section>
     </header>
 
+    {%- if page.sections %}
+    <section class="sections">
+      <ol>
+        {%- assign currentSection = page.section_number | minus: 1 %}
+        {%- assign sectionsLen = page.sections | size | minus: 1 %}
+        {%- for i in (0..sectionsLen) %}
+        <li>
+          <a href="{{ page.sections[i][0] }}">{{ page.sections[i][1] }}</a>
+          {%- if i == currentSection %}
+          <b>««« 現在のページ</b>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ol>
+    </section>
+    {%- endif %}
+
     <section id="toc">
       <details>
         <summary class="close hover-underline">目次の表示</summary>

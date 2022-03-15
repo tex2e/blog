@@ -342,6 +342,7 @@ img {
 .single-book span.katex-html {
     font-size: 95%;
 }
+
 // TOC (目次)
 .single-book #toc ol {
     margin-left: auto;
@@ -354,23 +355,39 @@ img {
 .single-book #toc summary:hover {
     text-decoration: underline;
 }
-.single-book #toc ol.counter-set-1 { counter-set: section 1; }
-.single-book #toc ol.counter-set-2 { counter-set: section 2; }
-.single-book #toc ol.counter-set-3 { counter-set: section 3; }
-.single-book #toc ol.counter-set-4 { counter-set: section 4; }
-.single-book #toc ol.counter-set-5 { counter-set: section 5; }
-.single-book #toc ol.counter-set-6 { counter-set: section 6; }
-.single-book #toc ol.counter-set-7 { counter-set: section 7; }
-.single-book #toc ol.counter-set-8 { counter-set: section 8; }
-.single-book #toc ol.counter-set-9 { counter-set: section 9; }
-.single-book #toc ol.counter-set-10 { counter-set: section 10; }
-.single-book #toc ol.counter-set-11 { counter-set: section 11; }
-.single-book #toc ol.counter-set-12 { counter-set: section 12; }
+.single-book #toc ol.counter-set-1 { counter-set: subsection 1; }
+.single-book #toc ol.counter-set-2 { counter-set: subsection 2; }
+.single-book #toc ol.counter-set-3 { counter-set: subsection 3; }
+.single-book #toc ol.counter-set-4 { counter-set: subsection 4; }
+.single-book #toc ol.counter-set-5 { counter-set: subsection 5; }
+.single-book #toc ol.counter-set-6 { counter-set: subsection 6; }
+.single-book #toc ol.counter-set-7 { counter-set: subsection 7; }
+.single-book #toc ol.counter-set-8 { counter-set: subsection 8; }
+.single-book #toc ol.counter-set-9 { counter-set: subsection 9; }
+.single-book #toc ol.counter-set-10 { counter-set: subsection 10; }
+.single-book #toc ol.counter-set-11 { counter-set: subsection 11; }
+.single-book #toc ol.counter-set-12 { counter-set: subsection 12; }
 .single-book #toc ol {
-    counter-reset: section;
+    counter-reset: subsection;
     list-style-type: none;
 }
 .single-book #toc ol li:before {
-    content: counters(section, ".") ". ";
+    content: counters(subsection, ".") ". ";
+    counter-increment: subsection;
+}
+
+// シリーズ一覧
+.single-book .sections ol {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 550px;
+}
+.single-book .sections ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+.single-book .sections ol li:before {
     counter-increment: section;
+    content: "第 " counter(section) " 章: ";
 }

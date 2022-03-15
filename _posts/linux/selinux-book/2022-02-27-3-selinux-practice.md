@@ -10,10 +10,14 @@ comments:      true
 published:     true
 latex:         false
 photoswipe:    true
-# sitemap:       true
-# feed:          true
+# sitemap: true
+# feed: true
 description:   "SELinux入門 第3章 SELinuxの実践"
 section_number: 3
+sections:
+  - [./1-access-control, SELinux/アクセス制御の仕組み]
+  - [./2-selinux-intro, SELinuxの特徴と使い方]
+  - [./3-selinux-practice, SELinuxの実践]
 ---
 
 
@@ -854,12 +858,3 @@ allow nsswitch_domain unreserved_port_t:tcp_socket name_connect; [ nis_enabled ]
 ```
 
 修正前は「allow tomcat_domain unreserved_port_t:tcp_socket name_connect;」という許可ルールが存在していましたが、組み込みポリシーの修正によって許可ルールを削除することができました。
-
-
-
-
----
-
-- [1. SELinux/アクセス制御の仕組み](./1-access-control)
-- [2. SELinuxの特徴と使い方](./2-selinux-intro)
-- [3. SELinuxの実践](./3-selinux-practice) **<<<<<< 現在のページ**
