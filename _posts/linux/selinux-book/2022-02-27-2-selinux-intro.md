@@ -788,7 +788,7 @@ SELinuxのユーザ一覧を表示すると「MLS/MCS Range」という列があ
 情報セキュリティにおいては、資産の分類結果に基づいてサブジェクトに付与したものがMLS範囲、資産のカテゴリ化結果に基づいてサブジェクトに付与したものがカテゴリーセットです。
 
 MLS範囲は、サブジェクトが所持しているクリアランスレベルの範囲を示します。
-MLS範囲は「低レベル-高レベル」で表示され、s0-s0 のときは s0 と同じです。
+MLS範囲は「低レベル-高レベル」で表示され、s0-s0 のときは s0 と同じ意味です。
 カテゴリーセットは、サブジェクトがアクセスを許可されているカテゴリの一覧です。
 カテゴリーセットは「c0,c1,c2,c3」と表示されます。
 また、カテゴリが連続している場合はドットで範囲を表します。例えば「c0.c3」は「c0,c1,c2,c3」と同じ意味になります。
@@ -863,10 +863,11 @@ mako                 unconfined_u         s0-s0:c0.c1023       *
 
 #### staff_u ユーザに特定のコマンドの sudo だけを許可する
 
-あるユーザに awk を sudo で実行できる権限を与えて、ログを解析してもらいたいとします。
-その際にSELinuxのドメインで動作させて、権限昇格によって範囲外のファイルを操作できないように制限します。
+例えば、Webサーバがある環境で、あるユーザに awk を sudo で実行できる権限を与えてログを解析してもらいたいとします。
+そのコマンドを管理者権限で実行する際に、SELinuxのドメイン下で動作させて、範囲外のファイルを操作できないように制限する方法について説明します。
 
-セットアップ手順として、まずLinuxで新規ユーザ user1 を作成して、そのユーザに staff_u というSELinuxユーザを割り当てます。
+管理者権限コマンドの実行制限をする方法は、まずLinuxのユーザに対して staff_u というSELinuxユーザを割り当てます。
+ここでは、Linuxユーザの user1 にSELinuxユーザの staff_u を割り当てます。
 ```bash
 ~]# useradd user1
 ~]# passwd user1
@@ -878,7 +879,7 @@ __default__          unconfined_u         s0-s0:c0.c1023       *
 root                 unconfined_u         s0-s0:c0.c1023       *
 user1                staff_u              s0-s0:c0.c1023       *
 ```
-ユーザを作成とSELinuxユーザの割り当てをしたら、次は staff_u というSELinuxユーザが持っているロールに logadm_r を追加して、`*_log_t` タイプのファイルにアクセスできるロールを付与します。
+LinuxユーザにSELinuxユーザの割り当てをしたら、次は staff_u というSELinuxユーザが持っているロールに logadm_r を追加して、`*_log_t` タイプのファイルにアクセスできるロールを付与します。
 ```bash
 ~]# semanage user -l
                 Labeling   MLS/       MLS/
@@ -892,7 +893,7 @@ staff_u         user       s0         s0-s0:c0.c1023                 staff_r sys
 SELinux User    Prefix     MCS Level  MCS Range                      SELinux Roles
 staff_u         user       s0         s0-s0:c0.c1023                 staff_r sysadm_r logadm_r
 ```
-セットアップ手順の最後に /etc/sudoers を編集します。
+最後に /etc/sudoers を編集します。
 visudo コマンドを実行して設定を修正し、user1 が /usr/bin/awk ファイルを logadm_t ドメインで実行するように制限します。
 ```bash
 ~]# visudo
@@ -903,13 +904,13 @@ visudo コマンドを実行して設定を修正し、user1 が /usr/bin/awk �
 user1 ALL=(ALL) ROLE=logadm_r TYPE=logadm_t /usr/bin/awk
 ```
 
-続いて、別のコンソールを開いて、ログを解析するユーザ user1 でログインします。
-このとき、ログイン時のドメインは staff_t です。
+次に設定が正しく行われたかを確認します。別のコンソールを開いて、ログを解析するユーザ user1 でログインします。
+このとき、ログイン時のドメインは staff_t であることを確認します。
 ```bash
 ~]$ id
 uid=1003(user1) gid=1003(user1) groups=1003(user1) context=staff_u:staff_r:staff_t:s0-s0:c0.c1023
 ```
-`sudo -l` コマンドで自身が実行できる sudo コマンドを確認します。
+user1 で `sudo -l` コマンドを実行し、user1 が実行できる sudo コマンドを確認します。
 ```bash
 ~]$ sudo -l
 ...
@@ -917,16 +918,17 @@ User user1 may run the following commands on localhost:
     (ALL) ROLE=logadm_r TYPE=logadm_t /usr/bin/awk
 ```
 /usr/bin/awk コマンドを sudo で実行できるので、試しに awk で /var/log/audit/audit.log を開いてみます。
-問題なく監査ログの中身を表示できると思います。
+コマンドを実行すると、問題なく監査ログの中身を表示できると思います。
 ```bash
 ~]$ sudo /usr/bin/awk '/^type=AVC/ {print $0}' /var/log/audit/audit.log
 ```
 
-次に、sudo と awk を使って管理者権限のシェルを起動します。
-awk には system 関数があり、システムコマンドを呼び出せるので、root 権限で動作する awk がシェルを起動したら、そのシェルも root 権限で動作します。
-awk に限らず他のコマンドでもこのような権限昇格の方法がありますので、詳しく知りたい方は [GTFOBins](https://gtfobins.github.io/) を参照してください。
-awk の場合は、`awk 'BEGIN {system("/bin/sh")}'` をコマンドで実行すると、シェルが起動します。
-これを利用して、管理者権限で awk を実行すると、root 権限のシェルを手に入れることができます。
+次に、sudo と awk を使って管理者権限のシェルを奪取します。
+awk には、システムコマンドを呼び出すための system 関数が存在します。
+この system 関数を利用してシェルを起動させることができます。
+awk を root 権限で実行した場合、その子プロセスであるシェルも root 権限で動作します。
+他のコマンドでもこのような権限昇格の方法がありますので、詳しく知りたい方は [GTFOBins](https://gtfobins.github.io/) を参照してください。
+awk の場合は、`awk 'BEGIN {system("/bin/sh")}'` をコマンドで実行するとシェルが起動ので、これ利用して管理者権限で awk を実行すると root 権限のシェルを手に入れることができます。
 以下は sudo と awk で root 権限を取得して、/etc/passwd の編集を試みたところです。
 
 ```bash
@@ -937,9 +939,9 @@ sh-4.4# echo "test" >> /etc/passwd
 sh: /etc/passwd: Permission denied
 sh-4.4#
 ```
-sudo と awk で確かに root 権限 `uid=0(root)` を奪取することができましたが、/etc/passwd への編集は権限不足で失敗しました。
-この書き込み拒否は、SELinuxによる拒否によるものです。
-監査ログを確認すると、以下の拒否ログが記録されていました。
+sudo と awk を使って root 権限 `uid=0(root)` を奪取することができました。
+しかし、SELinuxによって、/etc/passwd への書き込みが失敗しました。
+監査ログを確認すると、以下の拒否ログが記録されていると思います。
 
 /var/log/audit/audit.log
 ```
