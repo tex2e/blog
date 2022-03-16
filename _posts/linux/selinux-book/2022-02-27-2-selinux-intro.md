@@ -985,8 +985,8 @@ staff_u         user       s0         s0-s0:c0.c1023                 staff_r sys
 ```
 
 このとき、newrole コマンドを使用して、staff_u ユーザを staff_r ロールから sysadm_r ロールに切り替えることができます。
-ただし、Linux の wheel グループ (管理者グループ) に所属していないと、管理者コマンドを実行するときにDACの権限で拒否されてしまいます。
-運用では、`usermod -aG` でユーザを wheel グループに追加したり、/etc/sudoers で特定のコマンドのみ sudo できるように設定した後に、`semanage login -a` でユーザに staff_u ロールを持たせる、という流れになります。
+ただし、SELinuxのロールを sysadm_r などの管理者ロールに変えても、Linuxの管理者グループである wheel や sudo グループに所属していないと、管理者コマンドを実行するときにDACの権限で拒否されてしまいます。
+実際の運用では、`usermod -aG` でユーザを wheel グループに追加したり、/etc/sudoers で特定のコマンドのみ sudo できるように設定した後に、`semanage login -a` でユーザに staff_u ロールを持たせる、という流れになります。
 
 ```bash
 ~]$ id
@@ -1012,7 +1012,7 @@ uid=1003(user2) gid=1003(user2) groups=1003(user2),10(wheel) context=staff_u:sta
 uid=0(root) gid=0(root) groups=0(root) context=staff_u:sysadm_r:sysadm_t:s0-s0:c0.c1023
 ```
 
-上記の結果から、rootに切り替えたときに、セキュリティコンテキストの切り替え前は「staff_u:**staff_r**:**staff_t**」で、切り替え後が「staff_u:**sysadm_r**:**sysadm_t**」になっていることがわかります。
+sudo -r でロールとユーザを切り替えると、セキュリティコンテキストは切り替え前が「staff_u:**staff_r**:**staff_t**」で、切り替え後が「staff_u:**sysadm_r**:**sysadm_t**」になります。
 
 なお、sudo -r でロールを指定しないでユーザを root に切り替えた場合、セキュリティコンテキストは staff_t のままです。
 staff_t のままでは十分な管理者権限を持たないため、root であってもシステム管理用のコマンドを実行することができない場合が多いです。
@@ -1053,7 +1053,7 @@ SELinuxポリシーは、複数のポリシーモジュールから構成され�
 ```bash
 ~]# semodule -l
 ```
-ポリシーモジュールの優先度や現在の状態 (有効/無効) などのより詳細な情報を表示するには、オプションを -lfull にして実行します。
+ポリシーモジュールの優先度や現在の状態 (有効/無効) などのより詳細な情報を表示するには、オプションを `-lfull` にして実行します。
 ```bash
 ~]# semodule -lfull
 ```
@@ -1085,8 +1085,7 @@ SELinuxポリシーは、複数のポリシーモジュールから構成され�
 #### semanage module
 
 semanage module コマンドは、semodule コマンドを拡張したツールです。
-基本的には semodule コマンドで十分ですが、以下のような一部の機能は semanage module にしか存在しないものもあります。
-
+基本的には semodule コマンドで十分ですが、`-lC` などの一部の機能は semanage module にしか存在しないです。
 ローカル環境でカスタマイズした変更の一覧を表示する場合、`-lC` (List Customization) オプションで確認することができます。
 ```bash
 ~]# semanage module -lC
@@ -1101,7 +1100,7 @@ SELinuxが特定のアクションを拒否した場合、拒否ログは監査�
 audit2allow コマンドは、SELinuxが特定のアクションを拒否しないように、拒否ログの内容から許可ルールを含むポリシーモジュールパッケージ (.pp) を作成します。
 作成したポリシーモジュールパッケージを semodule で読み込み、ポリシーモジュールを作成することによって、特定のアクションは SELinux によって拒否されなくなります。
 
-例えば、監査ログに次の拒否ログが記録されていた場合に、audit2allow を使って自作ポリシーモジュールを作成する例を紹介します。
+例えば、監査ログに次の拒否ログが記録されていた場合に、このアクションを許可するために audit2allow を使って自作ポリシーモジュールを作成する例を紹介します。
 ```
 type=AVC msg=audit(0000000000.612:355): avc:  denied  { name_connect } for  pid=3297 comm="curl" dest=80 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:http_port_t:s0 tclass=tcp_socket permissive=0
 ```
@@ -1117,8 +1116,8 @@ type=AVC msg=audit(0000000000.612:355): avc:  denied  { name_connect } for  pid=
 allow httpd_t http_port_t:tcp_socket name_connect;
 ```
 
-出力結果を見ると、httpd_t ドメインが http_port_t ポートに接続できるルールが出力されました。
-その許可ルールの上に、注意書きがあり、内容を読むと「この許可ルール (AVC) は次の Boolean を on にしても有効化されます：httpd_can_network_connect, ...」と書かれています。
+結果を見ると、httpd_t ドメインが http_port_t ポートに接続できるルールが出力されました。
+その許可ルールの上の「!!!」から始まる注意書きを読むと「この許可ルール (AVC) は次の Boolean を on にしても有効化されます：httpd_can_network_connect, ...」と書かれています。
 一般的に、httpd_t ドメインがネットワークに接続したい場合は、`setsebool -P httpd_can_network_connect on` を実行して、httpd_can_network_connect という Boolean を on にするだけで接続できるようになります。
 ただし、ここでは自作ポリシーモジュールの作成についての説明をするため、Boolean を使わない方法で進めていきます。
 
@@ -1134,24 +1133,24 @@ To make this policy package active, execute:
 semodule -i myrule.pp
 ```
 
-余談ですが、audit2allow -M でポリシーモジュールパッケージを作成する際に、`-D` (Dontaudit) を追加すると Allow ルールの代わりに Dontaudit ルールでポリシーモジュールパッケージを作成します。
+また、audit2allow -M でポリシーモジュールパッケージを作成する際に、`-D` (Dontaudit) を追加すると Allow ルールの代わりに Dontaudit ルールでポリシーモジュールパッケージを作成します。
 主に、監査ログを埋めつくすけど重要ではない拒否ログを、拒否したまま監査ログに残さないようにするために使用します。
 ```bash
 ~]# echo '<拒否ログ>' | audit2allow -M -D myrule
 ```
 
-最後に、保存されたポリシーモジュールパッケージを、semodule でSELinuxポリシーに読み込んでポリシーモジュールを作成し、ルールを適用します。
+最後に、保存されたポリシーモジュールパッケージを semodule で読み込んでポリシーモジュールを作成し、ルールを適用します。
 ```bash
 ~]# semodule -i myrule.pp
 ```
 
-audit2allow と semodule で自作ポリシーモジュールを作成することで、自身の環境だけに適用する許可ルールを追加することができます。
+audit2allow と semodule で自作ポリシーモジュールを作成することで、自分の環境だけに適用する許可ルールを追加することができます。
 
 #### ポリシーモジュールパッケージの内容を確認する
 
 ポリシーモジュールパッケージはバイナリファイルのため、そのままでは中身を確認することができません。
 そこで /usr/libexec/selinux/hll/pp コマンドを使用して CIL 形式で表示することで中身を確認することができます。
-/usr/libexec/selinux/hll/pp コマンドの使い方は、cat で表示した .pp ファイルの内容をパイプで渡してあげるだけです。
+/usr/libexec/selinux/hll/pp コマンドの使い方は、.pp ファイルの内容を cat で表示して pp コマンドにパイプで渡すと、内容が CIL 形式で表示されます。
 ```bash
 ~]# cat myrule.pp | /usr/libexec/selinux/hll/pp
 
@@ -1163,7 +1162,7 @@ audit2allow と semodule で自作ポリシーモジュールを作成するこ�
 #### ポリシーモジュールの作成
 
 ポリシーモジュールは自分で作成することができます。
-例えば、tomcat_t ドメインのプロセスが、外部とネットワーク通信をしたときに、Auditallowルール (許可するがログは残す) を適用するというポリシーモジュールを作成してみます。
+例えば、tomcat_t ドメインのプロセスが、外部とネットワーク通信をしたときに、Auditallowルール (許可してログも残す) を適用するというポリシーモジュールを作成してみます。
 まず、my_tomcat_policy.te を作成して内容を以下のように記述します。
 
 my_tomcat_policy.te
@@ -1192,7 +1191,8 @@ TEファイルからポリシーモジュールパッケージに変換 (コン�
 ~]# semodule -i my_tomcat_policy.pp
 ```
 
-自作ポリシーモジュールが登録されているかを確認するには、semodule -lfull でモジュール一覧を表示することで有効かを確認できます。
+自作ポリシーモジュールが登録されているかを確認するには、`semodule -lfull` コマンドでモジュール一覧を表示します。
+表示することでモジュールが有効かを確認できます。
 ```bash
 ~]# semodule -lfull | grep my_tomcat_policy
 ```
@@ -1202,7 +1202,6 @@ TEファイルからポリシーモジュールパッケージに変換 (コン�
 SELinux のポリシールールには、主に Type (タイプ) と Attribute (属性) の2種類があります。
 Type はセキュリティコンテキストのタイプです。
 タイプの名前は、末尾が `_t` で終わるように命名規則で統一されています。
-命名規則は他にも存在します。
 例えば、末尾が `_exec_t` ならプロセスを起動するための実行ファイル (プログラム)、末尾が `_port_t` なら接続先のポートを表します。
 
 Attribute は Type が持つ属性を表したものです。
@@ -1292,34 +1291,34 @@ sesearch コマンドで上記のルールを検索するには、以下のオ�
 
 それぞれのオプションを使用した検索例を以下に示します。
 
-httpd が外部サーバの接続できるTCPポートの一覧を確認するために、httpd_t ドメインがTCP接続を許可するルール一覧を表示する：
+httpd が外部サーバの接続できるTCPポートの一覧を確認するために、httpd_t ドメインがTCP接続を許可するルール一覧を表示するときのコマンドは以下となります。
 ```bash
 ~]# sesearch -A -s httpd_t -c tcp_socket
 ```
-passwd_file_t タイプのファイル (/etc/passwd) に書き込みを許可するルール一覧を表示する：
+passwd_file_t タイプのファイル (/etc/passwd) に書き込みを許可するルール一覧を表示するときのコマンドは以下となります。
 ```bash
 ~]# sesearch -A -t passwd_file_t -c file -p write
 ```
-init_t ドメイン (systemd) からドメイン遷移を許可するルール一覧を表示する：
+init_t ドメイン (systemd) からドメイン遷移を許可するルール一覧を表示するときのコマンドは以下となります。
 ```bash
 ~]# sesearch -T -s init_t -c process
 ```
-httpd_t ドメインが tmp_t タイプのディレクトリにファイルを作成したときのタイプ遷移を許可するルール一覧を表示する：
+httpd_t ドメインが tmp_t タイプのディレクトリにファイルを作成したときのタイプ遷移を許可するルール一覧を表示するときのコマンドは以下となります。
 ```bash
 ~]# sesearch -T -s httpd_t -t tmp_t -c file
 ```
-httpd_can_network_connect という Boolean の on/off で有効化/無効化されるルールの一覧を表示する：
+httpd_can_network_connect という Boolean の on/off で有効化/無効化されるルールの一覧を表示するときのコマンドは以下となります。
 ```bash
 ~]# sesearch -A -b httpd_can_network_connect
 ```
 
 ポリシールールの検索では、検索結果でアクセス元タイプ (source_type) やアクセス先タイプ (target_type) に末尾が `_t` ではないものが表示される場合があります。
-タイプの末尾が `_t` ではないとき、それは属性 (Attribute) です。
-それぞれのタイプは複数の属性を持つことができます。
-例えば、http_port_t タイプは、port_type 属性を持ちます。
-ポリシールールの定義では、属性を使うことで、タイプだけが異なるルールをまとめて1つのルールで定義することができるようになります。
+ポリシールールにおいて、タイプの末尾が `_t` ではないとき、それは属性 (Attribute) です。
+タイプは複数の属性を持つことができます。
+例えば、http_port_t タイプは port_type 属性を持っています。
+ポリシールールの定義では、属性を使うことでタイプだけが異なるルールをまとめて1つのルールで定義できるようになります。
 
-ポリシールールの検索においては、検索結果で現れた属性 (Attribute) を持っているタイプを調べるために seinfo を使います。
+ポリシールールの検索においては、検索結果で現れた属性 (Attribute) を持っているタイプを調べるために seinfo コマンドを使います。
 seinfo コマンドは、SELinuxオブジェクトの情報を表示するツールです。
 `-a` (Attribute) オプションで属性を指定し、`-x` (Expand) でより詳細な情報を表示します。
 以下は、port_type 属性を持つタイプの中に、http_port_t が含まれていることを確認するコマンドの例です。
@@ -1392,8 +1391,8 @@ type=AVC msg=audit(1558865501.958:282): avc:  denied  { write } for  pid=1647 co
 
 - [Appendix A - Object Classes and Permissions \| SELinuxProject/selinux-notebook](https://github.com/SELinuxProject/selinux-notebook/blob/main/src/object_classes_permissions.md)
 
-代表的なオブジェクトクラスとアクション (権限) については、以下にまとめました。
-ここに列挙したものだけでも覚えておくと役に立つと思います。
+代表的なオブジェクトクラスとアクション (権限) について、以下にまとめました。
+ここに列挙したものだけでも覚えておくと、ログを見る際にも役に立つと思います。
 
 代表的なドメイン (Domain)：
 - init_t : systemdのプロセス (initを廃止してsystemdを導入したが、ドメイン名はそのまま)
