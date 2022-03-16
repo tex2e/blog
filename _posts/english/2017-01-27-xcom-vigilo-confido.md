@@ -2,10 +2,10 @@
 layout:        post
 title:         "XCOM のモットー「Vigilo Confido」の意味"
 date:          2017-01-27
-category:      Misc
+category:      English
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/xcom-vigilo-confido
 comments:      false
 published:     true
 ---

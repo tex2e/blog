@@ -2,7 +2,7 @@
 layout:        post
 title:         "XCOM Research Report"
 date:          2017-01-28
-category:      Misc
+category:      English
 author:        tex2e
 cover:         /assets/cover1.jpg
 redirect_from:
