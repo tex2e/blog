@@ -141,7 +141,7 @@ uid=1005(user4) gid=1005(user4) groups=1005(user4),27(sudo) context=sysadm_u:sys
 [+] dropping suid shell..
 [+] restoring suid binary..
 [+] popping root shell.. (dont forget to clean up /tmp/sh ;))
-# id
+~# id
 uid=0(root) gid=0(root) groups=0(root),27(sudo),1005(user4) context=sysadm_u:sysadm_r:sysadm_t:s0-s0:c0.c1023
 ```
 
@@ -185,7 +185,7 @@ allow sysadm_su_t su_exec_t:file { entrypoint execute getattr ioctl lock map ope
 allow sysadm_su_t xauth_exec_t:file { execute getattr ioctl map open read };
 ```
 
-つまり、SELinux の環境下で PoC を成功させたいなら、sysadm_u の場合、PoC が出力する SUID が設定された「sh」というファイルを自分のホームディレクトリに保存し、ファイルのタイプを su_exec_t などにラベル付けしてから実行する、という手順になります。
+つまり、SELinux の環境下で PoC を成功させたいなら、sysadm_su_t の場合、PoC が出力する SUID が設定された「sh」というファイルを自分のホームディレクトリに保存し、ファイルのタイプを su_exec_t などにラベル付けしてから実行する、という手順になります。
 しかし、この手順を組み込むためには攻撃ツールを改修する必要があり、スクリプトキディなどの他人の開発した攻撃ツールを入手して使用するだけの攻撃者は PoC を改修できるほどの技術力がないため、ある程度の自動化された攻撃は防ぐことが可能です。
 
 ### まとめ
@@ -249,7 +249,7 @@ Permissive
 [+] dropping suid shell..
 [+] restoring suid binary..
 [+] popping root shell.. (dont forget to clean up /tmp/sh ;))
-# id
+~# id
 uid=0(root) gid=0(root) groups=0(root),1003(user2) context=user_u:user_r:user_t:s0
 ```
 PoCを実行した時の監査ログは以下のようになりました。これを見れば PoC が何をしているのかの概要がわかるかと思います。
