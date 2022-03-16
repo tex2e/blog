@@ -3,7 +3,7 @@ layout:        post
 title:         "Dirty Pipeの脆弱性をSELinuxで緩和する"
 date:          2022-03-15
 category:      Linux
-cover:         /assets/cover14.jpg
+cover:         /assets/cover6.jpg
 redirect_from:
 comments:      true
 published:     true
