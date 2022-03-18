@@ -25,7 +25,7 @@ ISC2 準会員は年に 15 CPE を獲得する必要があります。
 </figure>
 
 まずは、[CPE Handbook](https://www.isc2.org/cpe-handbook) に一通り目を通しておきましょう。
-次に記事を書き始めて日付と、書き終えた日付を入力して「Continue」を選択します。
+次に記事を書き始めた日付と、書き終えた日付を入力して「Continue」を選択します。
 
 <figure>
 <img src="{{ site.baseurl }}/media/post/cissp/cissp-cpe-blog2.png" width=650px />
