@@ -33,7 +33,7 @@ SELinuxが有効化されるためには、以下の条件を満たすこと必�
 #### ブートローダーの設定ファイル
 
 まず、ブートローダーの設定でSELinuxが有効になるかを確認するために、/boot/grub2/grubenv の内容を確認します。
-以下のコマンドを実行して、出力が表示された場合、ブートローダーの設定でSELinuxが無効化されていることがわかります。
+以下のコマンドを実行して出力が表示された場合、ブートローダーの設定でSELinuxが無効化されていることがわかります。
 
 ```bash
 ~]# grep -E 'kernelopts=(\S+\s+)*(selinux=0|enforcing=0)+\b' /boot/grub2/grubenv
@@ -51,7 +51,7 @@ SELinuxが有効化されるためには、以下の条件を満たすこと必�
 
 ブートローダーで無効化されていなくても、SELinuxの設定ファイルで無効化されている場合は、SELinuxは有効化しません。
 Disabledモード（無効化モード）から、Enforcingモード (強制モード) にするには /etc/selinux/config ファイルを修正し、`SELINUX=enforcing` に変更してから再起動する必要があります。
-もし、対象のLinux環境で何が動作しているか詳しくなくて、Enforcingモードにすると主要なサービスが止まってしまう可能性がある場合は、`SELINUX=permissive` を指定して問題がないことを確認してから Enforcing モードにするという方法もあります。
+もし、Enforcingモードにすると主要なサービスが止まってしまう可能性がある場合は、`SELINUX=permissive` を指定して問題がないことを確認してから Enforcing モードにするという方法もあります。
 ここでは、disabled を enforcing に変更して再起動するという方法を行います。
 
 /etc/selinux/config
@@ -77,23 +77,23 @@ SELINUXTYPE=targeted
 ```
 
 DisableからPermissiveまたはEnforcingモードにする際は、再ラベル付け (Relabeling) が発生するので、再起動が完了するまでに非常に時間がかかります。
-
-再起動時のSELinuxを有効化中のログ：
-
+再起動時のSELinuxを有効化中のログは、以下のようになります。
 ```
 selinux-autorelabel[796]: *** Warning -- SELinux targeted policy relabel is required.
 selinux-autorelabel[796]: *** Relabeling could take a very long time, depending on file system size and speed of hard drivers
 ```
 
 再起動が完了したら、getenforce コマンドを実行して、現在のSELinuxの動作モードを確認します。
-Disabled 以外が出力されたら、SELinuxが有効化されていることが確認できます。
+Disabled が出力されたら、SELinuxは無効化の状態のままです。
+Enforcing や Permissive が出力されたら、SELinuxが有効化されています。
 
 ```bash
 ~]# getenforce
 Enforcing
 ```
 
-なお、setenforce コマンドは Permissive モードと Enforcing モードの切り替えコマンドなので、Disabledモードのときは使用できませんが、SELinuxが有効化されると setenforce コマンドが使用できるようになります。
+なお、setenforce コマンドは Permissive モードと Enforcing モードの切り替えコマンドなので、Disabledモードのときは使用できません。
+SELinuxが有効化されると setenforce コマンドでモードの切り替えができるようになります。
 
 ```bash
 ~]# setenforce 0
@@ -108,7 +108,7 @@ Enforcing
 
 ### httpdにファイル書き込みを許可する
 
-結論だけ言うと、対象ディレクトリのタイプを「httpd_sys_rw_content_t」に変更することで、httpd_t ドメインは対象ディレクトリにファイル書き込み可能になります。
+Webサーバなどを動かすためのhttpdがファイルを書き込みできるようにするには、書き込み先のディレクトリのタイプを「httpd_sys_rw_content_t」に変更することで、httpd_t ドメインは対象ディレクトリにファイル書き込み可能になります。
 
 一般的に、Apache や Nginx などのプロセスは httpd_t ドメインで動作します。
 そして、httpd から呼び出されてサーバー上で実行する PHP なども httpd_t ドメインで動作します。
@@ -137,7 +137,7 @@ chcon -t httpd_sys_rw_content_t /var/www/html/upload
 ```
 
 以下では、PHP が /var/www/html/upload ディレクトリに書き込みできるようにするまでの手順を説明します。
-まず、uploadディレクトリの権限を誰でも書き込み可能にします。
+まず、uploadディレクトリの権限を所有者以外のユーザでも書き込み可能にします。
 
 ```bash
 ~]# chmod o+w /var/www/html/upload
@@ -145,7 +145,8 @@ chcon -t httpd_sys_rw_content_t /var/www/html/upload
 drwxr-xrwx. 2 root root 6 Nov 28 12:00 /var/www/html/upload
 ```
 
-次に、ディレクトリuploadにファイルを作成するPHPを配置します。本来はファイルアップロード画面のPHPを作成すべきですが、ファイル書き込みの検証だけなので、PHPのtouch関数を使っています。
+次に、ディレクトリuploadにファイルを作成するPHPを用意します。
+本来はファイルアップロード画面のPHPを作成すべきですが、ファイル書き込みの検証だけなので、今回はPHPのtouch関数だけを使用して検証します。
 
 /var/www/html/upload.php
 ```php
@@ -185,7 +186,7 @@ httpdコマンド (comm="httpd") がuploadディレクトリ (name="upload", tcl
 file.txt
 ```
 
-最後に、restoreconでセキュリティコンテキストが元に戻らないように、semanage fcontext で永続的に設定しておきます。
+最後に、restoreconでファイルコンテキストが元に戻らないように、semanage fcontext で永続的に設定しておきます。
 
 ```bash
 ~]# semanage fcontext -a -t httpd_sys_rw_content_t /var/www/html/upload
@@ -193,7 +194,7 @@ file.txt
 /var/www/html/upload     all files     system_u:object_r:httpd_sys_rw_content_t:s0
 ```
 
-restoreconコマンドでセキュリティコンテキストをデフォルトに戻しても、uploadディレクトリのタイプ「httpd_sys_rw_content_t」が維持されることを確認します。
+restoreconコマンドでファイルコンテキストをデフォルトに戻しても、uploadディレクトリのタイプ「httpd_sys_rw_content_t」が維持されることを確認します。
 
 ```bash
 ~]# restorecon -v /var/www/html/upload
@@ -208,7 +209,7 @@ httpd_t ドメインが httpd_sys_rw_content_t タイプの /var/www/html/upload
 
 ### httpdにCGIプログラム実行を許可する
 
-結論だけ言うと、対象ファイルのタイプを「httpd_sys_script_exec_t」に変更することで、httpd_t ドメインは対象ファイルを実行することが可能になります。
+WebサーバでCGIプログラムを動かすために、httpd がファイルを実行できるようにするには、実行するファイルのタイプを「httpd_sys_script_exec_t」に変更することで、httpd_t ドメインは対象ファイルを実行することが可能になります。
 
 例えば、Apache が CGI を動作させるためには、LinuxのDACの設定と、SELinuxのMACの設定の両方が必要です。
 DACの設定では、対象のCGIファイルに実行権限を付与するように設定します。
@@ -217,7 +218,7 @@ DACの設定では、対象のCGIファイルに実行権限を付与するよ�
 ~]# chmod +x hello.cgi
 ```
 
-一方、MACの設定では、対象のCGIファイルのタイプを httpd が実行可能な「httpd_sys_script_exec_t」に付け替えることで、httpdからの実行を許可します。
+一方、MACの設定では、対象のCGIファイルのタイプを httpd が実行可能な「httpd_sys_script_exec_t」に変更することで、httpdからの実行を許可します。
 
 ```bash
 ~]# chcon -R -t httpd_sys_script_exec_t /var/www/cgi-bin
@@ -240,7 +241,8 @@ DACの設定では、対象のCGIファイルに実行権限を付与するよ�
 </Directory>
 ```
 
-/var/www/cgi-bin/hello.cgi
+検証用に以下のサンプルのCGIを /var/www/cgi-bin/hello.cgi に用意します。
+
 ```bash
 #!/bin/bash
 echo "Content-Type: text/plain"
@@ -248,7 +250,7 @@ echo ""
 echo "Hello, CGI world!"
 ```
 
-この時点で、作成したファイルのタイプは「httpd_sys_script_exec_t」です。
+この時点では、作成したファイルのタイプは「httpd_sys_script_exec_t」です。
 
 ```bash
 ~]# chmod +x /var/www/cgi-bin/hello.cgi
@@ -256,15 +258,15 @@ echo "Hello, CGI world!"
 unconfined_u:object_r:httpd_sys_script_exec_t:s0 /var/www/cgi-bin/hello.cgi
 ```
 
-curlでWeb経由でアクセスしてみます。
+用意したCGIに対して、curlを使ってWeb経由でアクセスしてみます。
 
 ```bash
 ~]# curl http://localhost/cgi-bin/hello.cgi
 Hello, CGI world!
 ```
 
-問題なくCGIが実行されることが確認できます。
-続いて、cgi-bin ディレクトリ以外の場所にCGIファイルを配置できるように Apache の設定ファイルを修正します。
+SELinuxのデフォルトでは、cgi-bin ディレクトリのファイルコンテキストが「httpd_sys_script_exec_t」であるため、その下に置いたファイルも同じ「httpd_sys_script_exec_t」になり、問題なくCGIが実行されます。
+続いて、cgi-bin ディレクトリ以外の場所に置いてもCGIファイルを実行できるように Apache の設定ファイルを修正します。
 /var/www/html ディレクトリ全体でCGI実行できるように ExecCGI を追加し、拡張子が .cgi なら cgi-script として実行するための AddHandler を追加します。
 
 /etc/httpd/conf/httpd.conf
@@ -288,7 +290,7 @@ Hello, CGI world!
 ```
 
 先ほど cgi-bin に作成した hello.cgi を cgi-bin 以外のディレクトリにコピーします。
-ファイルコピーしたとき、DACの権限は 755 のままでコピーされますが、セキュリティコンテキストはコピーされません。
+ファイルコピーしたとき、DACの権限は 755 のままでコピーされますが、セキュリティコンテキストはコピーされず、httpd読み取り専用を表す「httpd_sys_content_t」タイプが付けられます。
 ```bash
 ~]# cp /var/www/cgi-bin/hello.cgi /var/www/html/hello.cgi
 ~]# ls -lZ /var/www/html/hello.cgi
