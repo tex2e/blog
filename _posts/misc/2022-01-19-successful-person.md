@@ -145,4 +145,5 @@ PDCAは中長期的な目的であるのに対して、OODAは短期的な目標
 - [PDCA と OODA ループは ｢合わせ技｣ からの相乗効果が正解｜読むとマーケティングがおもしろくなるブログ](https://www.countand1.com/2020/09/pdca-and-ooda-combination.html)
 - [Kosen Advent Calendar By Teachers](https://kosen-teachers.tumblr.com/post/37778909039/%E7%A6%8F%E5%B1%B1%E9%9B%85%E6%B2%BB%E3%81%AB%E3%81%AA%E3%82%8B%E6%96%B9%E6%B3%95)
 - [回避性パーソナリティ障害／人生停滞、めんどくさい、傷つくのが怖い、ひきこもり問題 - YouTube](https://www.youtube.com/watch?v=P1gfrviGtTo&ab_channel=%E5%BF%83%E7%90%86%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BB%E3%83%A9%E3%83%BC%E3%80%90%E5%85%AC%E8%AA%8D%E5%BF%83%E7%90%86%E5%B8%AB%E3%80%91%E6%A9%8B%E6%9C%AC%E7%BF%94%E5%A4%AA%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%AA%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%81)
+- [呪いを解除し、失敗を楽しむ｜shinshinohara｜note](https://note.com/shinshinohara/n/ne5e09b2ae5ba)
 -->
