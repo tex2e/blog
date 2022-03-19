@@ -30,7 +30,13 @@ pre code {
     background: none;
 }
 
-// Propmtの部分「$」は選択・コピーできないようにする
+// Propmtの部分「$」は色を薄くして選択・コピーできないようにする
 .token.prompt {
+    color: #999;
     user-select: none;
+}
+
+// 変数の文字色をデフォルトより少し黒くして見やすくする
+.token.variable {
+    color: #c27d02;
 }
