@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellで使用できる型の一覧"
+title:         "PowerShellの型アクセラレータの一覧"
 date:          2020-11-29
 category:      PowerShell
 cover:         /assets/cover1.jpg
