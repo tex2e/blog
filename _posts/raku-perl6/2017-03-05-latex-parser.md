@@ -1,12 +1,13 @@
 ---
 layout:        post
-title:         "Perl6 (Raku) で LaTeX 文章の構文解析をする"
-menutitle:     "Perl6 (Raku) で LaTeX 文章の構文解析をする"
+title:         "Raku (Perl6) で LaTeX 文章の構文解析をする"
 date:          2017-03-05
-category:      Raku
+category:      Perl
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from: /perl6/latex-parser
+redirect_from:
+    - /perl6/latex-parser
+    - /raku/latex-parser
 comments:      false
 published:     true
 ---

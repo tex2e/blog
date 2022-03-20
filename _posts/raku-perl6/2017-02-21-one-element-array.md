@@ -1,12 +1,13 @@
 ---
 layout:        post
-title:         "Perl6 (Raku) で要素が一つの配列の作り方"
-menutitle:     "Perl6 (Raku) で要素が一つの配列の作り方"
+title:         "Raku (Perl6) で要素が一つの配列の作り方"
 date:          2017-02-21
-category:      Raku
+category:      Perl
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from: /perl6/one-element-array
+redirect_from:
+    - /perl6/one-element-array
+    - /raku/one-element-array
 comments:      false
 published:     true
 ---
