@@ -12,10 +12,11 @@ comments:      false
 published:     true
 ---
 
+Perl6 (Raku) では新しい機能として Grammar が導入されたので、ちょっと遊んでみました。
+
+
 Grammar による構文解析
 ----------------------
-
-Perl6 (Raku) では新しい機能として Grammar が導入されたので、ちょっと遊んでみました。
 
 例えば、LaTeX は
 
@@ -31,16 +32,16 @@ Perl6 (Raku) では新しい機能として Grammar が導入されたので、�
 \end{foo}
 ```
 
-のようなブロック命令[^block]があり、それ以外は文章となる。
+のようなブロック命令[^block]があり、それ以外は文章となります。
 また例外的に、
 
 ```latex
 {\Large Emergency request}
 ```
 
-のときには `{ }` は表示されず、プログラムでいうところのスコープなるものが作られるので、注意が必要である。
+のときには `{ }` は表示されず、プログラムでいうところのスコープなるものが作られるので、注意が必要です。
 
-これらを踏まえて、LaTeX の構造を拡張 BNF で示すと次のようになる[^bnf]。
+これらを踏まえて、LaTeX の構造を拡張 BNF で示すと次のようになります[^bnf]。
 
 ```
 TOP           ::= <exp>*
@@ -57,11 +58,10 @@ TOP           ::= <exp>*
 Grammar
 ----------------
 
-詳しい話は公式のドキュメント [Grammar Tutorial](https://docs.perl6.org/language/grammar_tutorial)
-に書いてあるが、改めて説明すると grammar の宣言はクラスの宣言に似ており、parse というメソッドが自動的に定義される。
-この parse は与えられた文字列に対して、TOP という特別なトークンから解析を開始する。
-TOP トークン以外は、regex, token, rule のいずれかを使って、トークンを定義する。
-この3つの定義方法の違いは次に示す。
+詳しい話は公式のドキュメント [Grammar Tutorial](https://docs.perl6.org/language/grammar_tutorial) に書いてありますが、改めて説明すると grammar の宣言はクラスの宣言に似ており、parse というメソッドが自動的に定義されます。
+この parse は与えられた文字列に対して、TOP という特別なトークンから解析を開始します。
+TOP トークン以外は、regex, token, rule のいずれかを使って、トークンを定義します。
+この3つの定義方法の違いは以下の通りです。
 
   * regex は普通の正規表現（どのオプションも指定されていない）
   * token はオプション「Ratchet」が指定された正規表現
@@ -71,11 +71,9 @@ TOP トークン以外は、regex, token, rule のいずれかを使って、ト
     * `rule name { ... }` は `regex name { :r :s ... }` と等しい
     * オプション「Sigspace」は、空白も正規表現でマッチするようにすることができる
 
-Perl6 の正規表現は Perl5 の正規表現と全く違うので、
-もし Perl6 の正規表現がわからないという方は [Regexes](https://docs.perl6.org/language/regexes)
-を一読してもらいたい。
+Perl6 の正規表現は Perl5 の正規表現と全く違うので、もし Perl6 の正規表現がわからないという方は [Regexes](https://docs.perl6.org/language/regexes) をご一読ください。
 
-先ほどの拡張 BNF を Perl6 の Grammar で表すと次のようになる。
+先ほどの拡張 BNF を Perl6 の Grammar で表すと次のようになります。
 
 ```perl6
 use v6;
@@ -132,7 +130,7 @@ my $result = Grammar.parse($contents);
 say $result;
 ```
 
-さて、上のコードを実行すると改行が多くて読みにくいが、階層構造が正しく解析されているのが確認できる。
+上のコードを実行すると改行が多くて読みにくいが、階層構造が正しく解析されているのが確認できます。
 
 ```
 exp => ｢\documentclass{jsarticle}
@@ -147,22 +145,21 @@ exp => ｢\documentclass{jsarticle}
       0 => ｢jsarticle｣
 ```
 
-上は出力の一部だが、コマンド「\documentclass{jsarticle}」の名前は「documentclass」で
-引数は「{jsarticle}」であることがわかる。
+上は出力の一部ですが、コマンド「\documentclass{jsarticle}」の名前は「documentclass」で、引数は「{jsarticle}」であることがわかります。
 
 
 解析結果の JSON 化
 -------------------
 
-このままでの結果を使うのも良いが、JSON にして必要な情報だけにする方法についても説明する。
+このままの結果を使うのも良いですが、JSON にして必要な情報だけにする方法についても説明します。
 
 まず、流れとしては、
 
     LaTeX文字列 ==> Grammarで解析 ==> Actionで必要な情報だけ抜き取る ==> to-jsonでJSON化
 
-という感じで進めていきたい。
+という感じで進めていきます。
 
-とりあえず次のような Action を作成した。
+とりあえず次のような Action を作成しました。
 
 ```perl6
 class Latex::Action {
@@ -193,8 +190,7 @@ class Latex::Action {
 }
 ```
 
-マッチオブジェクトには ast という木構造を作るためのメソッド(?)があるので、
-これを呼ぶとその下に続く構造を作る（make）することができる。
+マッチオブジェクトには ast という木構造を作るためのメソッド(?)があるので、これを呼ぶとその下に続く構造を作る（make）することができる。
 
   * TOP の下には、複数の exp をもつため、それぞれの exp に対して ast を呼んでいる
   * exp の下には、中かっこ、ブロック命令、命令、文章のいずれかがあるため、それに対して ast を呼んでいる
@@ -202,10 +198,8 @@ class Latex::Action {
   * command は、命令名（name）と引数（curlybrace）の値をもつハッシュを返している
   * block は、命令名（name）とブロックの中身（複数の exp）の値をもつハッシュを返している
 
-この Action を Grammar でパースするときの引数に渡してあげ、made メソッドを呼び出すと
-Action によって作成されたオブジェクトを得るとこができる。
-また、そのままでは読みにくいので、JSON::Fast の to-json を使って、整形した出力を得るには、
-次のようにすれば良い。
+この Action を Grammar でパースするときの引数に渡してあげ、made メソッドを呼び出すと Action によって作成されたオブジェクトを得るとこができます。
+また、そのままでは読みにくいので、JSON::Fast の to-json を使って、整形した出力を得るには、次のようにすれば良いです。
 
 ```perl6
 use JSON::Fast;
@@ -215,7 +209,7 @@ my $json = Grammar.parse($contents, :$actions).made;
 say to-json($json, :pretty);
 ```
 
-このプログラムを実行すると次のJSONを得るとこができる。
+このプログラムを実行すると次のJSONを得るとこができます。
 
 ```
 [
@@ -266,10 +260,10 @@ say to-json($json, :pretty);
 まとめ
 -----------------
 
-ここまで示したコードは LaTeX の構文解析を行うための簡単な例である。
-この拡張版として [yalp](https://github.com/tex2e/yalp) という Perl6 で書いた
-LaTeX の構文解析ツールを作ったが、これは普通の LaTeX には正しく動作するが、
-命令の引数が3つ4つになると正しく動作しないので、注意してもらいたい。
+ここまで示したコードは LaTeX の構文解析を行うための簡単な例です。
+この拡張版として [yalp](https://github.com/tex2e/yalp) という Perl6 で書いた LaTeX の構文解析ツールを作りましたが、これは普通の LaTeX には正しく動作しますが、命令の引数が3つ4つになると正しく動作しないので、使用時は注意して使ってください。
+
+以上です。
 
 -----
 

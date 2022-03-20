@@ -12,7 +12,7 @@ comments:      true
 published:     true
 ---
 
-関数型言語の三種の神器である Map, Filter, Reduce を Perl6 (Raku) で行う方法。
+関数型言語の三種の神器である Map, Filter, Reduce を Perl6 (Raku) で行う方法について説明します。
 
 Map: map
 ----------------
@@ -137,3 +137,5 @@ say [+] @array;  # => 10
 sub plus($a, $b) { $a + $b };
 say [[&plus]] @array;  # => 10
 ```
+
+以上です。
