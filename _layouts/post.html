@@ -17,6 +17,23 @@ layout: default
       {{content}}
     </section>
 
+    {%- if page.similarPosts %}
+    <br>
+    <section class="post-content post-similar">
+      <h5>類似記事</h5>
+      <ul>
+        {%- for similarPost in page.similarPosts %}
+        <li>
+          <a href="{{ similarPost[0] }}">{{ similarPost[1] }}</a>
+          {%- if similarPost[2] %}
+            <b>{{ similarPost[2] }}</b>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+
     {%- if jekyll.environment == "production" %}
     {%- if page.comments %}
     <div class="comments">
