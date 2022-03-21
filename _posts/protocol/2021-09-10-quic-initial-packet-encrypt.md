@@ -11,6 +11,12 @@ latex:         false
 photoswipe:    false
 # sitemap: false
 # feed:    false
+similarPosts:
+- [./quic-initial-packet-decrypt, QUIC の Initial Packet を復号する]
+- [./quic-tls-clienthello, QUIC の TLS ClientHello を解析する, ««« 前回]
+- [./quic-initial-packet-encrypt, QUIC の Initial Packet を暗号化する, ««« 今回]
+- [./quic-client-initial-tls-ext, QUIC の Client Initial Packet で必須のTLS拡張, ««« 次回]
+- [./quic-handshake-packet-decrypt, QUIC の Handshake Packet を復号する]
 ---
 
 QUICパケットでTLSメッセージを運ぶ Initial Packet を**暗号化**するまでの処理をPythonで実装しつつ説明していきたいと思います。
@@ -583,19 +589,15 @@ encrypted packet:
 
 ### おわりに
 
-1つ前の記事で、次は暗号化パケットを投げる検証をしたい、と言っておきながら、暗号化パケット作る作業をしていなかったので、今回は暗号化をしました。次回は本当にQUICパケットでTLSハンドシェイクを投げる検証をしたいと思います。
+暗号化パケットを投げて反応を見るためには、まず暗号化パケット作る必要があったので、今回は暗号化をしました。
+次回はQUICパケットでTLSハンドシェイクを投げる検証をしたいと思います。
 
 自分で実装してみることで、わからなかった部分が明確になってよかったです。
 特に、Client Initial Packet を暗号化をするときに、暗号化後のパケットのヘッダの情報（ペイロード長など）が必要なので、「鶏が先か、卵が先か」問題が存在するのでは？と思っていましたが誤解でした。
 暗号化前の情報から全て計算によって暗号化後のヘッダ情報を求めることができるので、鶏卵問題はありませんでした。
 自己解決できてよかったです。
 
-- 前々回：[QUIC の Initial Packet を復号する](./quic-initial-packet-decrypt)
-- 前回：[QUIC の TLS ClientHello を解析する](./quic-tls-clienthello)
-
 ### 参考文献
 
 - [RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport](https://www.rfc-editor.org/rfc/rfc9000)
 - [RFC 9001: Using TLS to Secure QUIC](https://www.rfc-editor.org/rfc/rfc9001)
-
-

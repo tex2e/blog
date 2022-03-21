@@ -11,6 +11,12 @@ latex:         false
 photoswipe:    true
 # sitemap: false
 # feed:    false
+similarPosts:
+- [./quic-initial-packet-decrypt, QUIC の Initial Packet を復号する, ««« 今回]
+- [./quic-tls-clienthello, QUIC の TLS ClientHello を解析する, ««« 次回]
+- [./quic-initial-packet-encrypt, QUIC の Initial Packet を暗号化する]
+- [./quic-client-initial-tls-ext, QUIC の Client Initial Packet で必須のTLS拡張]
+- [./quic-handshake-packet-decrypt, QUIC の Handshake Packet を復号する]
 ---
 
 QUIC の Initial Packet のヘッダ保護解除とペイロード復号を Python で実装して復号してみます。
@@ -645,9 +651,6 @@ Cloudflareが公開しているHTTP/3のRust実装である[cloudflare/quiche](h
 実験に使用したプログラムは Gist の [decrypt-quic-initial-packet.py](https://gist.github.com/tex2e/a5fd72c8a0c56f43d77bbfa446a820f1) と [metastruct.py, metatype.py, utils.py](https://gist.github.com/tex2e/a55cfe8f006799ff745dc888a0149183) に置いておきますので、参考にしてください。一部 TLS 1.3 の実装で使ったものが残っていて、今回の実験では使わなかった関数やクラスもありますので、適宜無視して読み進めてください。
 
 TLS 1.3 実装経験者としては、自作の [tex2e/mako-tls13](https://github.com/tex2e/mako-tls13) から TLS 1.3 関連の実装を全部持ってくれば、CRYPTO Frame内のTLS Messageも簡単に解析できるのではないかと思っているのですが、その辺の検証は次回にしたいと思います。
-
-- 次回：[QUIC の TLS ClientHello を解析する](./quic-tls-clienthello)
-- 次々回：[QUIC の Initial Packet を暗号化する](./quic-initial-packet-encrypt)
 
 
 ### 参考文献

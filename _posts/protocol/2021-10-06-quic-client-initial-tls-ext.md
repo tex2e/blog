@@ -11,6 +11,12 @@ latex:         false
 photoswipe:    false
 # sitemap: false
 # feed:    false
+similarPosts:
+- [./quic-initial-packet-decrypt, QUIC の Initial Packet を復号する]
+- [./quic-tls-clienthello, QUIC の TLS ClientHello を解析する]
+- [./quic-initial-packet-encrypt, QUIC の Initial Packet を暗号化する, ««« 前回]
+- [./quic-client-initial-tls-ext, QUIC の Client Initial Packet で必須のTLS拡張, ««« 今回]
+- [./quic-handshake-packet-decrypt, QUIC の Handshake Packet を復号する, ««« 次回]
 ---
 
 QUIC のハンドシェイクで、クライアントが Initial Packet を送信するときに含める必要のあるTLS拡張について説明し、サーバから Handshake Packet が返ってくるようになるまでの実装手順について説明します。

@@ -11,6 +11,12 @@ latex:         true
 photoswipe:    true
 # sitemap: false
 # feed:    false
+similarPosts:
+- [./quic-initial-packet-decrypt, QUIC の Initial Packet を復号する]
+- [./quic-tls-clienthello, QUIC の TLS ClientHello を解析する]
+- [./quic-initial-packet-encrypt, QUIC の Initial Packet を暗号化する]
+- [./quic-client-initial-tls-ext, QUIC の Client Initial Packet で必須のTLS拡張, ««« 前回]
+- [./quic-handshake-packet-decrypt, QUIC の Handshake Packet を復号する, ««« 今回]
 ---
 
 QUIC の Initial Packet で交換したDiffie-Hellmanの公開鍵から共有鍵を導出し Handshake Packet を復号する処理を Python で実装してみます。

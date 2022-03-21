@@ -11,6 +11,12 @@ latex:         false
 photoswipe:    false
 # sitemap: false
 # feed:    false
+similarPosts:
+- [./quic-initial-packet-decrypt, QUIC の Initial Packet を復号する, ««« 前回]
+- [./quic-tls-clienthello, QUIC の TLS ClientHello を解析する, ««« 今回]
+- [./quic-initial-packet-encrypt, QUIC の Initial Packet を暗号化する, ««« 次回]
+- [./quic-client-initial-tls-ext, QUIC の Client Initial Packet で必須のTLS拡張]
+- [./quic-handshake-packet-decrypt, QUIC の Handshake Packet を復号する]
 ---
 
 QUICパケットのペイロードにはTLSメッセージを運ぶため CRYPTO フレームがあり、ここにTLSハンドシェイクで使うClientHelloやServerHelloなどが格納されます。
@@ -501,9 +507,6 @@ Handshakeの種類は server_hello (0x02) となっていて、key_share 拡張�
 ### おわりに
 
 過去に実装した TLS 1.3 のプログラムのデータ構造を定義しているコードをほとんど変更することなくCRYPTOフレーム内の解析ができました。
-
-次回は他のQUIC (HTTP/3) を実装しているプログラムに実際にQUICパケットを投げてみてTLSの(EC)DHEで鍵共有した後の通信について検証したいと思います。
-
 
 ### 参考文献
 
