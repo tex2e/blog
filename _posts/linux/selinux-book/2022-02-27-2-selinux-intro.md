@@ -1,7 +1,7 @@
 ---
 layout:        book
 title:         "2. SELinuxの特徴と使い方"
-menutitle:     "2. SELinux/SELinuxの使い方"
+menutitle:     "2. SELinux/SELinuxの特徴と使い方"
 date:          2022-02-27
 category:      Linux
 cover:         /assets/cover14.jpg
