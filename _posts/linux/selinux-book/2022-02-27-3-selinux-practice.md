@@ -227,7 +227,7 @@ DACの設定では、対象のCGIファイルに実行権限を付与するよ�
 以下では、Apache が CGI を実行できるようにするまでの手順を説明します。
 まず、Apacheの設定ファイル /etc/httpd/conf/httpd.conf を修正して CGI を有効化します。
 以下のようにApacheの設定を確認して、実行ファイルを配置する場所を確認します。
-ここでは /var/www/cgi-bin が配置先です。
+ここでは /var/www/cgi-bin が配置先になります。
 
 ```xml
 <IfModule alias_module>
@@ -241,7 +241,7 @@ DACの設定では、対象のCGIファイルに実行権限を付与するよ�
 </Directory>
 ```
 
-検証用に以下のサンプルのCGIを /var/www/cgi-bin/hello.cgi に用意します。
+検証用に以下のCGIを /var/www/cgi-bin/hello.cgi に用意します。
 
 ```bash
 #!/bin/bash
@@ -319,14 +319,14 @@ DACの権限は 755 で実行可能なので、SELinuxのMACで拒否された�
 ```
 
 SELinuxが拒否しても監査ログに記録されないのは、Dontauditルールが使われているためです。
-sesearch コマンドを使ったポリシールールの検索で、`--dontaudit` を指定して、httpd_t ドメインの実行に関するDontauditルールを調べます。
+sesearch コマンドを使ったポリシールールの検索で、`--dontaudit` を指定して、httpd_t ドメインの実行に関する Dontaudit ルールを調べてみます。
 
 ```bash
 ~]# sesearch --dontaudit -s httpd_t -p execute
 dontaudit httpd_t exec_type:file { execute execute_no_trans };
 ```
 
-結果から、httpd_t ドメインが exec_type 属性のファイルを実行する場合、拒否しても監査ログに残さないことが確認できます。
+検索結果から、httpd_t ドメインが exec_type 属性のファイルを実行する場合、拒否しても監査ログに残さないことが確認できます。
 また、exec_type 属性について調べると、末尾が `_exec_t` のタイプは exec_type 属性を持つことが、以下の seinfo の結果から確認できます。
 つまり、httpd_t ドメインが httpd_*_exec_t タイプのファイルを実行する場合、拒否ログは記録されないことがわかります。
 
@@ -349,7 +349,8 @@ Type Attributes: 1
         ...
 ```
 
-SELinuxの拒否ログを監査ログに記録するには、semodule で -D (Disable dontaudit) を追加して -B (Build) でポリシーをビルドします。
+semodule で `-D` (Disable dontaudit) を追加して `-B` (Build) でポリシーをビルドします。
+まとめて `-DB` と書くことができます。
 
 ```bash
 ~]# semodule -DB
@@ -385,7 +386,7 @@ type=AVC msg=audit(0000000000.916:7372): avc:  denied  { execute } for  pid=4859
 allow httpd_t httpd_sys_content_t:file execute;
 ```
 
-一方で、httpd_t ドメインがファイル実行を許可されているルールは、以下のように sesearch コマンドに、-s (Source) で呼び出し元のドメインで httpd_t、-c (object Class) でオブジェクトクラス file、-p (Permission) でファイルの実行権限 execute を指定して検索すると、実行したいファイルに付けるべき適切なタイプを知ることができます。
+一方で、httpd_t ドメインがファイル実行を許可されているルールは、以下のように sesearch コマンドに、`-s` (Source) で呼び出し元のドメインで httpd_t、`-c` (object Class) でオブジェクトクラス file、`-p` (Permission) でファイルの実行権限 execute を指定して検索すると、実行したいファイルに付けるべき適切なタイプを知ることができます。
 ```bash
 ~]# sesearch -A -s httpd_t -c file -p execute
 ...
@@ -399,7 +400,7 @@ allow httpd_t httpd_sys_script_exec_t:file { execute execute_no_trans getattr io
 - 選択肢B : 別の許可ルールを有効にするために、httpd_unified という Boolean を on にする
 - 選択肢C : 別の許可ルールを新規追加するため、「allow httpd_t httpd_sys_content_t:file execute」のルールを含む自作ポリシーモジュールを作成する
 
-今回は対象の1ファイルを httpd_t ドメインが実行できるようにするだけなので、選択肢Aのラベルの修正を行います。
+今回は対象の1つのファイルを httpd_t ドメインが実行できるようにするだけなので、選択肢Aのラベルの修正を行います。
 chcon で一時的にラベルを httpd_sys_script_exec_t タイプに付け替えて、CGIが実行できることを確認します。
 
 ```bash
@@ -426,7 +427,7 @@ Hello, CGI world!
 
 ### Pythonの簡易Webサーバを httpd_t ドメインで動作させる
 
-python3 の http.server モジュールを使用した簡易Webサーバを httpd_t ドメインで起動させます。
+python3 の http.server モジュールを使用した簡易Webサーバを httpd_t ドメインで起動させる方法について説明します。
 手動で起動すると、unconfined_t ドメインで動作してしまうので、systemd経由でWebサーバが起動するようにします。
 まず、以下の systemd のユニットファイルを作成します。
 重要なポイントは、プロセス起動時のドメインを SELinuxContext で指定する部分です。
