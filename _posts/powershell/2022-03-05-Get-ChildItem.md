@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでfindコマンド (Get-ChildItem) を使う"
+title:         "PowerShellでfind (Get-ChildItem) を使う"
 date:          2022-03-05
 category:      PowerShell
 cover:         /assets/cover14.jpg
