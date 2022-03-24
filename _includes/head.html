@@ -7,6 +7,16 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
 
+  {%- if page.noindex or page.draft %}
+  <!-- noindex -->
+  <meta name="robots" content="noindex">
+  {%- endif %}
+
+  {%- if page.redirect_to_top %}
+  <!-- Redirect when 404 -->
+  <meta http-equiv="refresh" content="5;URL='{{ site.baseurl }}/'" />
+  {%- endif %}
+
   <!-- Open Graph data, Twitter data -->
 {% include ogp.html %}
 
