@@ -108,6 +108,20 @@ cd media/post/tikz
 make path/to/file.tex
 ```
 
+#### カテゴリー別にカバーを変更する
+カテゴリー別にカバー画像を変更したい場合は、grep と sed を組み合わせて一括置換します。
+
+Linux :
+```bash
+grep -rl 'cover:         /assets/cover1.jpg' _posts/python | xargs sed -i "" 's|/assets/cover1.jpg|/assets/cover14.jpg|g'
+```
+MacOS :
+```bash
+grep -rl 'cover:         /assets/cover1.jpg' _posts/python | xargs sed -i "" 's|/assets/cover1.jpg|/assets/cover14.jpg|g'
+```
+
+また、新規記事作成時に使用する ./new.sh の中の変数 cover を引数の directory によって変える処理も追加します。
+
 ### GitHub Action
 
 #### リンク切れチェック
