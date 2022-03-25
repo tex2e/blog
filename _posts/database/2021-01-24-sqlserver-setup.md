@@ -98,3 +98,5 @@ SQL Serverと一緒にインストールされる SQL ServerBrowser の設定も
 - [SQL Server > エラー:18456 でログインできない場合 - Qiita](https://qiita.com/sugasaki/items/a95c2495085e32851707)
 - [SQL Serverに外部から接続する備忘録 \| 沙羅.com](https://sara.jiin.com/other/sql.html)
 - [SQL Server Express にリモート接続 - クリエイティブWeb](https://creativeweb.jp/fc/remote/)
+- その他：
+  - [チュートリアル : データベース エンジンの概要 - SQL Server \| Microsoft Docs](https://docs.microsoft.com/ja-jp/sql/relational-databases/tutorial-getting-started-with-the-database-engine?view=sql-server-ver15)

@@ -458,6 +458,10 @@ key is 0x9ac8fe314c6e41d442452b98d6f6ea8803182311a9b6aadedee89bb30029fa1084bc64a
 
 次回：[SageMathでRing-LWEによる鍵共有]({{ site.baseurl }}/crypto/ring-lwe-key-exchange)
 
+#### 参考文献
+- [格子問題等の困難性に関する調査 (pdf) - 暗号技術調査 (暗号解析評価) ワーキンググループ](https://www.cryptrec.go.jp/exreport/cryptrec-ex-2404-2014.pdf)
+- [耐量子計算機暗号の研究動向調査報告書 (pdf) - CRYPTREC 暗号技術調査 WG (暗号解析評価)](https://www.cryptrec.go.jp/report/cryptrec-tr-2001-2018.pdf)
+
 ---
 
 [^PQC]: 耐量子暗号は「耐量子計算機暗号」や「ポスト量子暗号」とも呼ばれる .

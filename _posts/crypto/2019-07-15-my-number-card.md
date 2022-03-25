@@ -157,6 +157,10 @@ J-LISによると、次のような利用方法を想定しているようです
 以上です。
 
 
+#### 参考文献
+- [J-LIS 利用者クライアントソフトに係る技術仕様について](https://www.j-lis.go.jp/jpki/procedure/procedure1_2_3.html)
+- [雑誌FUJITSU 2017-7月号 マイナンバー - 富士通](https://www.fujitsu.com/jp/about/resources/publications/magazine/backnumber/vol68-4.html)
+
 -----
 
 [^fujitsu]: [マイナンバーカードの技術仕様と利活用方法 --- FUJITSU 2017](https://www.fujitsu.com/jp/documents/about/resources/publications/magazine/backnumber/vol68-4/paper10.pdf)

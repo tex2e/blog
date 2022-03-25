@@ -333,3 +333,6 @@ all:
 
 - [GNU make： Functions](https://www.gnu.org/software/make/manual/html_node/Functions.html)
 - [Makefile の特殊変数・自動変数の一覧](https://tex2e.github.io/blog/makefile/automatic-variables)
+- その他：
+  - [GNU make](https://www.gnu.org/software/make/manual/make.html)
+  - [GNU make 日本語訳(Coop編) - 目次](https://www.ecoop.net/coop/translated/GNUMake3.77/make_toc.jp.html)
