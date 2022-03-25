@@ -4,7 +4,7 @@ title:         "PowerShellの型エイリアスの一覧"
 date:          2020-11-29
 category:      PowerShell
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /powershell/type-accelerators
 comments:      true
 published:     true
 latex:         false
