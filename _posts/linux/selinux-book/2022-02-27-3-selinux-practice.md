@@ -133,7 +133,7 @@ httpd の場合、主によく使われるタイプとして以下の3つのタ�
 今回のアップロードディレクトリの場合は、対象ディレクトリのタイプを読み書き可能の「httpd_sys_rw_content_t」に付け替えることで、httpdからの書き込みを許可します。
 
 ```bash
-chcon -t httpd_sys_rw_content_t /var/www/html/upload
+~]# chcon -t httpd_sys_rw_content_t /var/www/html/upload
 ```
 
 以下では、PHP が /var/www/html/upload ディレクトリに書き込みできるようにするまでの手順を説明します。
@@ -331,7 +331,7 @@ dontaudit httpd_t exec_type:file { execute execute_no_trans };
 つまり、httpd_t ドメインが httpd_*_exec_t タイプのファイルを実行する場合、拒否ログは記録されないことがわかります。
 
 ```bash
-]# seinfo -a exec_type -x
+~]# seinfo -a exec_type -x
 Type Attributes: 1
    attribute exec_type;
         ...
@@ -459,9 +459,9 @@ unconfined_u:object_r:systemd_unit_file_t:s0 /etc/systemd/system/simplehttpserve
 新規作成したサービスを起動してみます。daemon-reload した後に、start します。
 正しく起動したか確認するために、status も実行します。
 ```bash
-systemctl daemon-reload
-systemctl start simplehttpserver
-systemctl status simplehttpserver
+~]# systemctl daemon-reload
+~]# systemctl start simplehttpserver
+~]# systemctl status simplehttpserver
 ```
 この時点では、正常に起動できませんでした。原因は SELinux によるものです。
 /var/log/messages を確認すると、pythonのプロセスが 203 で異常終了しています。
