@@ -463,7 +463,7 @@ systemctl daemon-reload
 systemctl start simplehttpserver
 systemctl status simplehttpserver
 ```
-この時点では、正常に起動できませんでした。
+この時点では、正常に起動できませんでした。原因は SELinux によるものです。
 /var/log/messages を確認すると、pythonのプロセスが 203 で異常終了しています。
 ```
 Feb 11 12:00:00 localhost.localdomain systemd[1]: Started Python Simple HTTP Server.
@@ -471,12 +471,12 @@ Feb 11 12:00:00 localhost.localdomain systemd[1]: simplehttpserver.service: Main
 Feb 11 12:00:00 localhost.localdomain systemd[1]: simplehttpserver.service: Failed with result 'exit-code'.
 ```
 次に、監査ログの /var/log/audit/audit.log を確認すると、SELinuxによってPython関係のアクションが拒否されていました。
-拒否ログの内容から、bin_t のファイルで (bin_t をエントリーポイントとして) httpd_t ドメインのプロセスを起動させる許可ルールがないために拒否されたことが確認できます。
+拒否ログの内容から、bin_t のファイルで (bin_t をエントリーポイントとして) httpd_t ドメインのプロセスを起動させる許可ルールがないため、拒否されたことが確認できます。
 ```
 type=AVC msg=audit(0000000000.719:695): avc:  denied  { entrypoint } for  pid=10457 comm="(python3)" path="/usr/libexec/platform-python3.6" dev="dm-0" ino=35081046 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:bin_t:s0 tclass=file permissive=0
 ```
 
-この環境だと、/usr/bin/python3 の実態は /usr/libexec/platform-python3.6 ですが、このプログラムはデフォルトで bin_t タイプでラベル付けされているため、bin_t ファイルを使って httpd_t ドメインのプロセスを起動するドメイン遷移のルールに一致せず、アクションが拒否されました。
+上記の環境では、/usr/bin/python3 の実態は /usr/libexec/platform-python3.6 ですが、このプログラムはデフォルトで bin_t タイプでラベル付けされているため、bin_t ファイルを使って httpd_t ドメインのプロセスを起動するドメイン遷移のルールに一致せず、アクションが拒否されました。
 通常は、httpd_t ドメインのプロセスを起動するファイルには、httpd_exec_t タイプのラベル付けが必要です。
 そのため、`chcon -t httpd_exec_t /usr/libexec/platform-python3.6` を実行して python3 プログラムのラベルを変えてもいいのですが、python3 を使用している他のプログラムに影響が出るかもしれないので、ここではファイルコンテキストの代わりにポリシールールを変更します。
 
@@ -601,7 +601,7 @@ unconfined_u:object_r:user_home_t:s0 /var/www/html/test.html
 </html>
 ```
 httpd_t ドメインから user_home_t タイプのファイルにアクセスしようとすると、404になりました。
-監査ログの /var/log/audit/audit.log を確認すると、httpd_t プロセスの user_home_t への読み取りを拒否したログが記録されていました。
+監査ログの /var/log/audit/audit.log を確認すると、httpd_t プロセスから user_home_t への読み取りを拒否したログが記録されていました。
 ```
 type=AVC msg=audit(0000000000.311:753): avc:  denied  { read } for  pid=10749 comm="python3" name="test.html" dev="dm-0" ino=17856687 scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file permissive=0
 ```
@@ -722,7 +722,7 @@ rpmbuild コマンドは、rpm-build パッケージをインストールする�
 ```
 
 rpmbuild コマンドの `-bp` (Build Prep) は、RPMパッケージからソースコードを抽出するためのオプションです。
--bp で実行時に、必要なパッケージがないと言われた場合は、追加で dnf install でインストールします。
+`-bp` で実行時に、必要なパッケージがないと言われた場合は、追加で dnf install でインストールします。
 ```bash
 ~]# rpmbuild -bp /root/rpmbuild/SPECS/selinux-policy.spec
 error: Failed build dependencies:
@@ -749,13 +749,8 @@ tomcat の関連ファイルは ./policy/modules/contrib/ の直下に含まれ�
 ```
 
 tomcat.te ファイルには、tomcat が unreserved_port (未定義のポート) への接続を許可する corenet_tcp_connect_unreserved_ports マクロが書かれているので、これをコメントアウトして拒否するようにします。
-ファイルの変更箇所は以下の通りです。
+tomcat.te ファイルの変更箇所は以下の通りです。
 
-```bash
-~]# diff -u tomcat.te.bak tomcat.te
-```
-
-tomcat.te
 ```diff
  corenet_tcp_connect_http_cache_port(tomcat_domain)
  corenet_tcp_connect_amqp_port(tomcat_domain)
@@ -789,7 +784,7 @@ Failed to resolve filecon statement at /var/lib/selinux/targeted/tmp/modules/400
 semodule:  Failed!
 ```
 
-しかし、読み込み時にエラーになりました。
+しかし、上記のコマンドを実行すると、読み込み時にエラーになりました。
 ポリシーモジュールパッケージの内容を CIL で出力して、対象の行 (545行目) を確認します。
 
 ```bash
@@ -801,9 +796,9 @@ semodule:  Failed!
 ```
 
 「systemlow」という未知の機密レベルが存在するため、エラーになってしまいました。
-この問題は、checkmodule 実行時に -M を付けて、生成したポリシーモジュールパッケージが MLS に対応させることで解決します。
-checkmodule 実行時に -M が付くようにビルド時の設定を修正します。
-Makefile の中を読むと、TYPE が mls のとき (`ifeq "$(TYPE)" "mls"`)、checkmodule にオプション -M を追加する (`CHECKMODULE += -M`) 処理があります。
+この問題は、checkmodule 実行時に `-M` を付けて、生成したポリシーモジュールパッケージが MLS に対応させることで解決します。
+checkmodule 実行時に `-M` が付くようにビルド時の設定を修正します。
+Makefile の中を読むと、TYPE が mls のとき (`ifeq "$(TYPE)" "mls"`)、checkmodule にオプション `-M` を追加する (`CHECKMODULE += -M`) 処理があります。
 また、Makefile の冒頭で build.conf を読み込んでいて (`include build.conf`)、build.conf で変数 TYPE の値を設定しています。
 なので、build.conf で TYPE 変数を修正し、`TYPE = mls` に変えて再度コンパイルします。
 
@@ -819,7 +814,7 @@ Creating refpolicy tomcat.pp policy package
 /usr/bin/semodule_package -o tomcat.pp -m tmp/tomcat.mod -f tmp/tomcat.mod.fc
 ```
 
-念のため、/usr/bin/checkmodule -M でビルドしたときの tomcat.pp の中身を CIL 形式で確認してみます。
+念のため、/usr/bin/checkmodule `-M` でビルドしたときの tomcat.pp の中身を CIL 形式で確認してみます。
 設定ファイルで `TYPE = mls` にして生成すると、「systemlow」が「s0」に変化して、適切な機密レベル名に修正されました。
 
 ```bash
