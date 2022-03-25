@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellの型アクセラレータの一覧"
+title:         "PowerShellの型エイリアスの一覧"
 date:          2020-11-29
 category:      PowerShell
 cover:         /assets/cover1.jpg
@@ -13,10 +13,10 @@ photoswipe:    false
 # feed:    false
 ---
 
-PowerShellの型アクセラレータ (Type Accelerators) は .NET のクラスや型の別名（エイリアス）として機能します。
+PowerShellの型エイリアスや型アクセラレータ (Type Accelerators) は .NET のクラスや型の別名（エイリアス）として機能します。
 例えば、PowerShellで [int] は [System.Int32] の別名です。
 これにより、PowerShellでの型の扱いが簡単になります。
-PowerShellで使用できる型（型アクセラレータ）の一覧を表示するには、以下のコマンドを実行します。
+PowerShellで使用できる型（型エイリアス）の一覧を表示するには、以下のコマンドを実行します。
 
 ```powershell
 $TypeAcc = [PSObject].Assembly.GetType("System.Management.Automation.TypeAccelerators")
@@ -25,6 +25,7 @@ $TypeAcc::Get.GetEnumerator()
 
 以下はPowerShell 5.1での型一覧の出力結果です。int, string, regexとかは馴染み深いと思います。
 あとは datetime, PSCustomObject, ipaddress とかは使う場面があると思います。
+また、PowerShellにおいて「System.*」という型名は、「System.」を省略して書くことができます。
 
 ```output
 Key                          Value
@@ -125,21 +126,32 @@ psaliasproperty              System.Management.Automation.PSAliasProperty
 psvariableproperty           System.Management.Automation.PSVariableProperty
 ```
 
-### 型アクセラレータの追加
+### 型エイリアスの追加
 
-型アクセラレータの取得は Get ですが、追加するための Add メソッドもあります。
-例えば、.NETの型である System.IO.Path を別名「path」で型アクセラレータに追加するためには、以下のコマンドを実行します。
+型エイリアスの取得は Get ですが、追加するための Add メソッドもあります。
+例えば、.NETの型である System.IO.Path を別名「path」で型エイリアスに追加するためには、以下のコマンドを実行します。
 
 ```powershell
 $TypeAcc = [PSObject].Assembly.GetType("System.Management.Automation.TypeAccelerators")
 $TypeAcc::Add('path', [System.IO.Path])
 ```
 
-型アクセラレータを追加することで、[System.IO.Path] の代わりに、[path] と書くことができます。
-以下は追加した型アクセラレータを使用した例です。
+型エイリアスを追加することで、[System.IO.Path] の代わりに、[path] と書くことができます。
+以下は追加した型エイリアスを使用した例です。
 
 ```powershell
 [path]::GetExtension('c:\test.txt')
+```
+
+### オブジェクトの型の特定
+オブジェクトの型は、Get-Member コマンドレットを使用することで型を確認することができます。
+```powershell
+PS> $a = 3.14
+PS> $a | Get-Member
+
+   TypeName: System.Double
+
+(以下省略)
 ```
 
 以上です。
