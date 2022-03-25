@@ -5,7 +5,7 @@ menutitle:     "センシティブな情報（sensitive information）とは"
 date:          2019-04-18
 category:      Security
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/sensitive-info
 comments:      true
 published:     true

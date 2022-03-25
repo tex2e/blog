@@ -3,7 +3,7 @@ layout:        post
 title:         "vimのシンタックスハイライトを暗い背景色に合わせる"
 date:          2021-11-09
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

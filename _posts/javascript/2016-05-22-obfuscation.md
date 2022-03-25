@@ -4,7 +4,7 @@ title:         "難読化JavaScriptの作り方"
 date:          2016-05-22
 category:      JavaScript
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /javascript/obfuscattion
 comments:      false
 published:     true

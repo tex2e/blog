@@ -3,7 +3,7 @@ layout:        post
 title:         "findコマンドの -or オプションで複数条件検索"
 date:          2017-06-12
 category:      Shell
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

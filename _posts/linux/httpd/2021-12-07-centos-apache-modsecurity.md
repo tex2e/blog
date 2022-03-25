@@ -3,7 +3,7 @@ layout:        post
 title:         "CentOSのApacheでModSecurityを動かす"
 date:          2021-12-07
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

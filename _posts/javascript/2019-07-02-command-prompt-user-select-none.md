@@ -5,7 +5,7 @@ menutitle:     "Webページでコマンド例の「$」の部分をコピペさ
 date:          2019-07-02
 category:      JavaScript
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: 
   - /blog/command-prompt-user-select-none
   - /misc/command-prompt-user-select-none

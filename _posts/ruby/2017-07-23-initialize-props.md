@@ -4,7 +4,7 @@ title:         "[Ruby] インスタンス変数の初期化をメタプロする
 date:          2017-07-23
 category:      Ruby
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

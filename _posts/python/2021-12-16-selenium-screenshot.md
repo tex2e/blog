@@ -3,7 +3,7 @@ layout:        post
 title:         "Seleniumでスクリーンショットを撮りPDFにまとめる"
 date:          2021-12-16
 category:      Python
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

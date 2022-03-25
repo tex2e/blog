@@ -4,7 +4,7 @@ title:         "Python で別ファイルの import"
 date:          2016-10-09
 category:      Python
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

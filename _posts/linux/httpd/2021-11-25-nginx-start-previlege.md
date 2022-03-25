@@ -3,7 +3,7 @@ layout:        post
 title:         "Nginxの起動時のユーザ権限を確認する"
 date:          2021-11-25
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

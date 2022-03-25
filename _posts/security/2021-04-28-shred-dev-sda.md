@@ -3,7 +3,7 @@ layout:        post
 title:         "shredコマンドでHDD完全消去"
 date:          2021-04-28
 category:      Security
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

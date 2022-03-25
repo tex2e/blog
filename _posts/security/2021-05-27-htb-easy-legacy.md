@@ -3,7 +3,7 @@ layout:        post
 title:         "HTB easy (Win): nmap vuln > msf"
 date:          2021-05-27
 category:      Security
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /pentest/htb-easy-legacy
 comments:      true
 published:     true

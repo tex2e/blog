@@ -3,7 +3,7 @@ layout:        post
 title:         "Apache/Nginxのサーバ証明書を更新する"
 date:          2021-12-15
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -4,7 +4,7 @@ title:         "構造体を継承してコンストラクタをなくす(Python
 date:          2018-06-24
 category:      Python
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

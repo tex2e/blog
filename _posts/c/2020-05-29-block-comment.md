@@ -3,7 +3,7 @@ layout:        post
 title:         "C言語風の範囲コメントで排他的に片方のコードのみを有効にする"
 date:          2020-05-29
 category:      C
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/block-comment
 comments:      true
 published:     true

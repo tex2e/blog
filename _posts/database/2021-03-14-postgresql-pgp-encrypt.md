@@ -3,7 +3,7 @@ layout:        post
 title:         "PostgreSQLで共通鍵によるデータ暗号化・復号"
 date:          2021-03-14
 category:      Database
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

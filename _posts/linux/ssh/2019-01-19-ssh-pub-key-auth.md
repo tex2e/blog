@@ -4,7 +4,7 @@ title:         "SSHで公開鍵認証 (~/.ssh/configの設定)"
 date:          2019-01-19
 category:      Linux
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /shell/ssh-pub-key-auth
 comments:      true
 published:     true

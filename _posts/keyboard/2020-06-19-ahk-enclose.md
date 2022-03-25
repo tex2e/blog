@@ -3,7 +3,7 @@ layout:        post
 title:         "AutoHotKeyで選択文字をダブルクオーテーションや丸括弧で囲む"
 date:          2020-06-19
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/ahk-enclose
 comments:      true
 published:     true

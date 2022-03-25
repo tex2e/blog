@@ -4,7 +4,7 @@ title:         "構造体を継承してコンストラクタをなくす(Ruby)"
 date:          2018-06-23
 category:      Ruby
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

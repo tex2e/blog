@@ -4,7 +4,7 @@ title:         "TeXから外部コマンドを実行する方法"
 date:          2016-12-18
 category:      LaTeX
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /tex/input-external-commands
 comments:      false
 published:     true

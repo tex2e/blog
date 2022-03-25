@@ -3,7 +3,7 @@ layout:        post
 title:         "ハミング符号 (誤り訂正符号)"
 date:          2020-11-15
 category:      Math
-cover:         /assets/cover4.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

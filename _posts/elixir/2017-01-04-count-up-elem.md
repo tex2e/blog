@@ -4,7 +4,7 @@ title:         "Elixirで配列の要素数をカウントする"
 date:          2017-01-04
 category:      Elixir
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

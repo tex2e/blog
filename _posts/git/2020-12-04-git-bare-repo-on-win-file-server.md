@@ -3,7 +3,7 @@ layout:        post
 title:         "Windows共有フォルダにGitベアレポジトリを作る"
 date:          2020-12-04
 category:      Git
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -3,7 +3,7 @@ layout:        post
 title:         "SQL Serverへ別PCから接続できるようにする"
 date:          2021-01-24
 category:      Database
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

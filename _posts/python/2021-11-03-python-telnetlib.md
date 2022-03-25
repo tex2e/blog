@@ -3,7 +3,7 @@ layout:        post
 title:         "Pythonのtelnetlibを使う"
 date:          2021-11-03
 category:      Python
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

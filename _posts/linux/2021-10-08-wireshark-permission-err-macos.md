@@ -3,7 +3,7 @@ layout:        post
 title:         "MacOSのWiresharkが権限エラーでキャプチャできないとき"
 date:          2021-10-08
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /linux/wireshark-permission-error-macos
 comments:      true
 published:     true

@@ -4,7 +4,7 @@ title:         "texlive2018(basic)のインストール on Ubuntu"
 date:          2018-06-16
 category:      LaTeX
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /tex/texlive2018-on-ubuntu
 comments:      true
 published:     true

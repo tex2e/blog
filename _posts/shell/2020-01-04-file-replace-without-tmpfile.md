@@ -3,7 +3,7 @@ layout:        post
 title:         "入出力リダイレクタでファイルを上書き更新する"
 date:          2020-01-04
 category:      Shell
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

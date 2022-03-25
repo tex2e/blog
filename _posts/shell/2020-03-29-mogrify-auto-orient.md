@@ -3,7 +3,7 @@ layout:        post
 title:         "ImageMagicでExifのOrientationから画像を適切に回転する"
 date:          2020-03-29
 category:      Shell
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/mogrify-auto-orient
 comments:      true
 published:     true

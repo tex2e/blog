@@ -3,7 +3,7 @@ layout:        post
 title:         "文字コードの判定と変換"
 date:          2020-01-12
 category:      Python
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

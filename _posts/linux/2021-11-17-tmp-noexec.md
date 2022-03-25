@@ -3,7 +3,7 @@ layout:        post
 title:         "systemctl で /tmp 内のファイルを実行不可にする"
 date:          2021-11-17
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

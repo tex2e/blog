@@ -4,7 +4,7 @@ title:         "ブログ始めました"
 date:          2016-04-02
 category:      Blog
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

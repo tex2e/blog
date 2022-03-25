@@ -3,7 +3,7 @@ layout:        post
 title:         "php.iniで危険な関数を無効化する"
 date:          2021-05-26
 category:      PHP
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

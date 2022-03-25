@@ -4,7 +4,7 @@ title:         "研究室の自動開錠システムを作った話"
 date:          2019-09-13
 category:      Python
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

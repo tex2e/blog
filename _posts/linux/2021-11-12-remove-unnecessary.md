@@ -3,7 +3,7 @@ layout:        post
 title:         "不要なWebコンテンツファイルを削除する"
 date:          2021-11-12
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

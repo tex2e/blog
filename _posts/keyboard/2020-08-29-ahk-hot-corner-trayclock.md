@@ -3,7 +3,7 @@ layout:        post
 title:         "AutoHotkeyで通知領域のカレンダーを表示する"
 date:          2020-08-29
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

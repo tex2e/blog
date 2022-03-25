@@ -4,7 +4,7 @@ title:         "Raku (Perl6) で LaTeX 文章の構文解析をする"
 date:          2017-03-05
 category:      Perl
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
     - /perl6/latex-parser
     - /raku/latex-parser

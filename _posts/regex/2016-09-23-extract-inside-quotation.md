@@ -4,7 +4,7 @@ title:         "正規表現でダブルクオート内の文字列を抽出す�
 date:          2016-09-23
 category:      Regex
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

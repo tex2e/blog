@@ -4,7 +4,7 @@ title:         "群・環・体の性質"
 date:          2019-05-10
 category:      Math
 author:        tex2e
-cover:         /assets/cover4.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /crypto/group-ring-field
 comments:      true
 published:     true

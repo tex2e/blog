@@ -3,7 +3,7 @@ layout:        post
 title:         "Parallels 仮想環境のSSHサーバ設定"
 date:          2021-07-19
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

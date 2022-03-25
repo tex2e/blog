@@ -3,7 +3,7 @@ layout:        post
 title:         "Pythonのtelnetlibでメール送信テスト"
 date:          2021-11-04
 category:      Python
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

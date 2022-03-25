@@ -4,7 +4,7 @@ title:         "イデアル論入門の英語用語集"
 date:          2018-05-19
 category:      Math
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/ideal-theory
 comments:      true
 published:     true

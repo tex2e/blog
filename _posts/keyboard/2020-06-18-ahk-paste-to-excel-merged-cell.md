@@ -3,7 +3,7 @@ layout:        post
 title:         "AutoHotKeyで結合セルに1行ずつペースト"
 date:          2020-06-18
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/ahk-paste-to-excel-merged-cell
 comments:      true
 published:     true

@@ -3,7 +3,7 @@ layout:        post
 title:         "Makefile の関数一覧"
 date:          2019-12-16
 category:      Makefile
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

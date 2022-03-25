@@ -6,7 +6,7 @@ date:          2019-03-08
 tags:          Linux
 category:      Linux
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /shell/systemd-restart-config
 comments:      true
 published:     true

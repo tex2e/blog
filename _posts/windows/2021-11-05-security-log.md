@@ -3,7 +3,7 @@ layout:        post
 title:         "Windowsのセキュリティログで注目すべきイベントID"
 date:          2021-11-05
 category:      Windows
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -3,7 +3,7 @@ layout:        post
 title:         "systemctlで disabled かつ start しているサービスを調べる"
 date:          2021-12-05
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -3,7 +3,7 @@ layout:        post
 title:         "UUID (GUID) とは"
 date:          2021-04-03
 category:      Protocol
-cover:         /assets/cover1.jpg
+cover:         /assets/cover5.jpg
 redirect_from: /misc/uuid-and-guid
 comments:      true
 published:     true

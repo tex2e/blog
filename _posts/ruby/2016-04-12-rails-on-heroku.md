@@ -4,7 +4,7 @@ title:         "RailsをHerokuにpushするときにsqlite3でエラーが起こ
 date:          2016-04-12
 category:      Ruby
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /rails/rails-on-heroku
 comments:      false
 published:     true

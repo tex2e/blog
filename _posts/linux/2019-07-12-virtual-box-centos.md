@@ -4,7 +4,7 @@ title:         "技術検証用にCentOS7を仮想環境にインストールす
 date:          2019-07-12
 category:      Linux
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

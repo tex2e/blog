@@ -4,7 +4,7 @@ title:         "draft-ietf-quic-transport の概要"
 date:          2019-11-13
 category:      Protocol
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover5.jpg
 redirect_from:
 comments:      true
 published:     true

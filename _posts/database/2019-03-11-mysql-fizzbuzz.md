@@ -4,7 +4,7 @@ title:         "MySQL で FizzBuzz"
 date:          2019-03-11
 category:      Database
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

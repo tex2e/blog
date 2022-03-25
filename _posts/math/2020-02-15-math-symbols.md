@@ -3,7 +3,7 @@ layout:        post
 title:         "ギリシャ文字・ドイツ文字・花文字・筆記体のLaTeX数式の書き方"
 date:          2020-02-15
 category:      Math
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

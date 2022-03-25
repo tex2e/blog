@@ -4,7 +4,7 @@ title:         "findコマンドで特定のディレクトリを -not -path で
 date:          2016-05-04
 category:      Shell
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

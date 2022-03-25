@@ -3,7 +3,7 @@ layout:        post
 title:         "AutoHotkeyでMacのホットコーナーを実装する"
 date:          2020-07-18
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

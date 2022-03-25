@@ -3,7 +3,7 @@ layout:        post
 title:         "Linuxで消せない・編集できないファイルの作り方 (chattr)"
 date:          2021-12-12
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

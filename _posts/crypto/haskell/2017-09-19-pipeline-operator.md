@@ -4,7 +4,7 @@ title:         "Hakellでパイプライン演算子"
 date:          2017-09-19
 category:      Haskell
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

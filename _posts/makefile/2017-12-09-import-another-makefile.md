@@ -4,7 +4,7 @@ title:         "Makefileから別のMakefileをimportする・実行する"
 date:          2017-12-09
 category:      Makefile
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

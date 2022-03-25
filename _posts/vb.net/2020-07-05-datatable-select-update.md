@@ -3,7 +3,7 @@ layout:        post
 title:         "DataTableから条件に合う行だけを更新する"
 date:          2020-07-05
 category:      VB.NET
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

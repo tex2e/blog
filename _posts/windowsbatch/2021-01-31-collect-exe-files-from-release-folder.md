@@ -3,7 +3,7 @@ layout:        post
 title:         "任意の階層にある全てのReleaseフォルダからexeを集めるコマンド"
 date:          2021-01-31
 category:      WindowsBatch
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

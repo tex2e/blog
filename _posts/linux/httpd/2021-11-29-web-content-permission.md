@@ -3,7 +3,7 @@ layout:        post
 title:         "Webコンテンツの所有者・書き込み権限を確認する"
 date:          2021-11-29
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

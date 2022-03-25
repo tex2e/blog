@@ -4,7 +4,7 @@ title:         "Gitの履歴内のコミットしたユーザ名を全て変更�
 date:          2019-06-22
 category:      Git
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

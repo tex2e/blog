@@ -3,7 +3,7 @@ layout:        post
 title:         "ベクトル空間 定義と定理一覧"
 date:          2019-01-06
 category:      Math
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -4,7 +4,7 @@ title:         "/tmp ディレクトリのパーミッション"
 date:          2019-06-23
 category:      Linux
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -4,7 +4,7 @@ title:         "LaTeX で EPS 画像挿入時に Cannot determine size of graphi
 menutitle:     "LaTeX で EPS 画像挿入時に BoundingBox のエラー"
 date:          2019-12-24
 category:      LaTeX
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

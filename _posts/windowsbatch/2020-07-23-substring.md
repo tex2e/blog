@@ -3,7 +3,7 @@ layout:        post
 title:         "バッチファイルで固定長・可変長の文字列切り取り"
 date:          2020-07-23
 category:      WindowsBatch
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

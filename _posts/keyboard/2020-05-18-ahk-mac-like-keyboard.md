@@ -3,7 +3,7 @@ layout:        post
 title:         "AutoHotKeyでMacOS風のキーボード"
 date:          2020-05-18
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/ahk-mac-like-keyboard
 comments:      true
 published:     true

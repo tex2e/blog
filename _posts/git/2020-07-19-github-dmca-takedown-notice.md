@@ -3,7 +3,7 @@ layout:        post
 title:         "GitHubからDMCA takedownが来たときの対応手順"
 date:          2020-07-19
 category:      Git
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/github-dmca-takedown-notice
 comments:      true
 published:     true

@@ -4,7 +4,7 @@ title:         "Object Oriented Programming"
 date:          2016-12-03
 category:      Java
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

@@ -4,7 +4,7 @@ title:         "github-pages が Ruby2.4 で使えない問題"
 date:          2017-01-10
 category:      Ruby
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

@@ -4,7 +4,7 @@ title:         "Map Filter Reduce in Raku (Perl6)"
 date:          2017-03-06
 category:      Perl
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
     - /perl6/map-filter-reduce
     - /raku/map-filter-reduce

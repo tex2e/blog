@@ -3,7 +3,7 @@ layout:        post
 title:         "[Windows] PythonでICカードのIDmを確認する"
 date:          2021-01-25
 category:      Python
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

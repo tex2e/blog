@@ -3,7 +3,7 @@ layout:        post
 title:         "Jekyllを実行した時に bundler: failed to load command: jekyll, `require': cannot load such file -- webrick (LoadError) が出るときの対処法"
 date:          2021-12-31
 category:      Ruby
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

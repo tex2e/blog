@@ -4,7 +4,7 @@ title:         "クロスプラットフォームで make"
 date:          2016-12-05
 category:      Makefile
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

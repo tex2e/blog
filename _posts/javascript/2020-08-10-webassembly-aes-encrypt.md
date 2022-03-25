@@ -4,7 +4,7 @@ title:         "WebAssemblyでAES暗号"
 menutitle:     "WebAssemblyでAES暗号 (+CryptoJSと実行速度比較)"
 date:          2020-08-10
 category:      JavaScript
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

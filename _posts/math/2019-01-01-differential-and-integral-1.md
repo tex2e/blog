@@ -3,7 +3,7 @@ layout:        post
 title:         "微分積分I 公式一覧"
 date:          2019-01-01
 category:      Math
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

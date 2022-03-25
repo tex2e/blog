@@ -4,7 +4,7 @@ title:         "配列を返すメソッドをブロックも受け付けるよ�
 date:          2016-12-08
 category:      Ruby
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

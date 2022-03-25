@@ -3,7 +3,7 @@ layout:        post
 title:         "JekyllでMathJaxからKaTeXに移行した"
 date:          2020-03-25
 category:      LaTeX
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/mathjax-to-katex
 comments:      true
 published:     true

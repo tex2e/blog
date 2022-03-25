@@ -3,7 +3,7 @@ layout:        post
 title:         "systemctlで有効・無効なサービス一覧を表示する"
 date:          2021-11-16
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

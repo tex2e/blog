@@ -4,7 +4,7 @@ title:         "systemd のユニットファイルの作り方"
 date:          2019-03-05
 category:      Linux
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /shell/create-my-systemd-service
 comments:      true
 published:     true

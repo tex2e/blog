@@ -3,7 +3,7 @@ layout:        post
 title:         "P問題とNP問題の違い"
 date:          2021-09-20
 category:      Math
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

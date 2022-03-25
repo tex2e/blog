@@ -3,7 +3,7 @@ layout:        post
 title:         "C言語 メモリ処理系関数一覧"
 date:          2020-08-11
 category:      C
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

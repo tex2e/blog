@@ -3,7 +3,7 @@ layout:        book
 title:         "CompTIA Security+ セキュリティ用語集"
 date:          2021-04-26
 category:      Security
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

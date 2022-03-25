@@ -3,7 +3,7 @@ layout:        post
 title:         "サブフォルダも含めた全てのファイルの更新時間を出力"
 date:          2021-03-27
 category:      WindowsBatch
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

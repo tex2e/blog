@@ -3,7 +3,7 @@ layout:        post
 title:         "DockerやLXDを使った権限昇格手法"
 date:          2021-05-23
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /security/privilege-escalation-with-docker
 comments:      true
 published:     true

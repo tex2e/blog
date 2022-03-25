@@ -4,7 +4,7 @@ title:         "16 Boring Words & What to Use Instead"
 date:          2018-09-30
 category:      English
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/16-boring-words
 comments:      true
 published:     true

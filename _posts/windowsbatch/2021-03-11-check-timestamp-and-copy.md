@@ -3,7 +3,7 @@ layout:        post
 title:         "batchで更新時間が違うときだけコピーする"
 date:          2021-03-12
 category:      WindowsBatch
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

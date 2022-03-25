@@ -3,7 +3,7 @@ layout:        post
 title:         "SUID/SGIDファイルをfindコマンドで見つける"
 date:          2021-11-13
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

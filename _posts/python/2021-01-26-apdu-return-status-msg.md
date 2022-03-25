@@ -3,7 +3,7 @@ layout:        post
 title:         "APDUコマンドの返り値をメッセージで表示する"
 date:          2021-01-26
 category:      Protocol
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

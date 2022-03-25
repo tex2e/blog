@@ -4,7 +4,7 @@ title:         "XCOM Research Report"
 date:          2017-01-28
 category:      English
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     false # set to be true

@@ -4,7 +4,7 @@ title:         "Gitの使い方（コマンド）"
 date:          2016-09-23
 category:      Git
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

@@ -3,7 +3,7 @@ layout:        post
 title:         "firewalldでリッチルールを作成・追加する"
 date:          2021-11-22
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

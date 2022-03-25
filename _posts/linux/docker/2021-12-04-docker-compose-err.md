@@ -3,7 +3,7 @@ layout:        post
 title:         "docker-composeインストール後にエラー「error while loading shared libraries: libz.so.1」が出るときの対処法"
 date:          2021-12-04
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /linux/docker-compose-error
 comments:      true
 published:     true

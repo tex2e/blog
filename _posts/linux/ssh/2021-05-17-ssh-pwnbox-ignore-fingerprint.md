@@ -3,7 +3,7 @@ layout:        post
 title:         "PwnBoxへのSSH接続時にフィンガープリントの警告をなくす"
 date:          2021-05-17
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /security/ssh-pwnbox-ignore-fingerprint
 comments:      true
 published:     true

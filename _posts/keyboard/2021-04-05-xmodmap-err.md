@@ -4,7 +4,7 @@ title:         "Xmodmap実行時にunable to open display<br>がでたときの�
 titlemenu:     "Xmodmap実行時にunable to open displayがでたときの解決方法"
 date:          2021-04-04
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /keyboard/xmodmap-error
 comments:      true
 published:     true

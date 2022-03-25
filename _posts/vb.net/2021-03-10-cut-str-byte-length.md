@@ -3,7 +3,7 @@ layout:        post
 title:         "VB.NET で文字列を指定のバイト数で切り取る"
 date:          2021-03-10
 category:      VB.NET
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

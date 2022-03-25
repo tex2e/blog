@@ -3,7 +3,7 @@ layout:        post
 title:         "AutoHotKeyで今日の日付を入力する"
 date:          2020-05-17
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/ahk-type-today-date
 comments:      true
 published:     true

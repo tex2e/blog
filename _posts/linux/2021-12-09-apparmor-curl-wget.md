@@ -3,7 +3,7 @@ layout:        post
 title:         "curlとwgetコマンドをAppArmorで制限する"
 date:          2021-12-09
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

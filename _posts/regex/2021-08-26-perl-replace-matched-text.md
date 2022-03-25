@@ -3,7 +3,7 @@ layout:        post
 title:         "Perlでマッチした文字列を式や関数を使って変換する"
 date:          2021-08-26
 category:      Regex
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

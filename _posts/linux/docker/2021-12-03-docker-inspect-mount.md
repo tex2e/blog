@@ -3,7 +3,7 @@ layout:        post
 title:         "起動しているDockerコンテナのマウントを調査する"
 date:          2021-12-03
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

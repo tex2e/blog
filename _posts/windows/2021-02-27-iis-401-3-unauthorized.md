@@ -3,7 +3,7 @@ layout:        post
 title:         "IISのサイトでHTTPエラー401.3 Unauthorized"
 date:          2021-02-27
 category:      Windows
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

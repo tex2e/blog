@@ -4,7 +4,7 @@ title:         "Linuxで重要なファイルの権限を確認する"
 menutitle:     "Linuxで重要なファイルの権限を確認する (shadow, ssh_key)"
 date:          2021-11-28
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

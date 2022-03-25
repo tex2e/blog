@@ -3,7 +3,7 @@ layout:        post
 title:         "Kali Linuxでキーボード配列を日本語にする"
 date:          2021-04-04
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

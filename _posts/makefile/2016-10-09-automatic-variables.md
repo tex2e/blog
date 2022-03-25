@@ -4,7 +4,7 @@ title:         "Makefile の特殊変数・自動変数の一覧"
 date:          2016-10-09
 category:      Makefile
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

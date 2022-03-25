@@ -4,7 +4,7 @@ title:         "sleep関数"
 date:          2016-06-16
 category:      JavaScript
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

@@ -4,7 +4,7 @@ title:         "MySQLで1〜Nの数列を扱う"
 date:          2019-03-10
 category:      Database
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

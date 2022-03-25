@@ -4,7 +4,7 @@ title:         "Apache で画像やJSやフォントなどのログを除外す�
 date:          2019-03-06
 category:      Linux
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /shell/apache-customlog-exclude-img
 comments:      true
 published:     true

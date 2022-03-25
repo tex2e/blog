@@ -3,7 +3,7 @@ layout:        post
 title:         "ログインシェルを /sbin/nologin にしたユーザにログインする"
 date:          2021-11-15
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -3,7 +3,7 @@ layout:        post
 title:         "Windowsポート番号一覧"
 date:          2021-07-09
 category:      Windows
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

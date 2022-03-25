@@ -3,7 +3,7 @@ layout:        post
 title:         "配列(CSV)をDataRowに変換する [VB.NET]"
 date:          2020-06-20
 category:      VB.NET
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

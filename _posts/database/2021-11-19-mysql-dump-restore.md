@@ -3,7 +3,7 @@ layout:        post
 title:         "MySQLでDBのダンプとリストア"
 date:          2021-11-19
 category:      Database
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

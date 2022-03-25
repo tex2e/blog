@@ -3,7 +3,7 @@ layout:        post
 title:         "Javaでコレクション・Streamの操作"
 date:          2020-07-25
 category:      Java
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

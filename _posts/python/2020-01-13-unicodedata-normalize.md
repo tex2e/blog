@@ -3,7 +3,7 @@ layout:        post
 title:         "Unicodeの正規化とテキストのクレンジング"
 date:          2020-01-13
 category:      Python
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

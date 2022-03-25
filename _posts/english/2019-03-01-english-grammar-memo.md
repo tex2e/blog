@@ -5,7 +5,7 @@ menutitle:     "英語の文法のメモ（自分用）"
 date:          2019-03-01
 category:      English
 author:        tex2e
-cover:         /assets/cover2.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/english-grammar-memo
 comments:      true
 published:     true

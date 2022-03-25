@@ -4,7 +4,7 @@ title:         "wgetでWebサイトを巡回してリンク切れを確認する
 date:          2019-05-25
 category:      Shell
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

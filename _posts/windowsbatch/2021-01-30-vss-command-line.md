@@ -3,7 +3,7 @@ layout:        post
 title:         "コマンドラインでVSSからファイル取得"
 date:          2021-01-30
 category:      WindowsBatch
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

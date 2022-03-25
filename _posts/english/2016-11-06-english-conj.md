@@ -4,7 +4,7 @@ title:         "英語の文と文のつなぎの言葉"
 date:          2016-11-06
 category:      English
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /misc/english-conj
 comments:      false
 published:     true

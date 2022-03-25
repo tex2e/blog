@@ -4,7 +4,7 @@ title:         "踏み台サーバ経由の多段SSH"
 date:          2019-01-20
 category:      Linux
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /shell/ssh-proxy-command
 comments:      true
 published:     true

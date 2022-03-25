@@ -4,7 +4,7 @@ title:         "SQLite で VARCHAR 型の文字数を制限する方法"
 date:          2016-12-10
 category:      Database
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /db/sqlite-varchar-length
 comments:      false
 published:     true

@@ -4,7 +4,7 @@ title:         "Bashでパイプからの入力があるかどうかを確認す
 date:          2017-08-21
 category:      Shell
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

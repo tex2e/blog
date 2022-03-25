@@ -4,7 +4,7 @@ title:         "Gitの履歴からファイルを完全に削除する"
 date:          2019-06-10
 category:      Git
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

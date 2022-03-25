@@ -3,7 +3,7 @@ layout:        post
 title:         "AutoHotkeyで3キー同時押し"
 date:          2020-07-11
 category:      Keyboard
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

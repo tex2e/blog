@@ -3,7 +3,7 @@ layout:        post
 title:         "tkinterでフォルダ指定画面を作成する"
 date:          2021-08-28
 category:      Python
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -3,7 +3,7 @@ layout:        post
 title:         "Kali 2021.1 で起動時に自動ログイン"
 date:          2021-04-22
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

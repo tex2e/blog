@@ -4,7 +4,7 @@ title:         "Bashで一時ファイルを作る方法"
 date:          2016-12-30
 category:      Shell
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

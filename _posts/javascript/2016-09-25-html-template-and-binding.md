@@ -4,7 +4,7 @@ title:         "テンプレートエンジンを使わないで、コードの�
 date:          2016-09-25
 category:      JavaScript
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
 published:     true

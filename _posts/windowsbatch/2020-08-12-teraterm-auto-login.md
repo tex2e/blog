@@ -3,7 +3,7 @@ layout:        post
 title:         "TeraTermマクロでリモートログイン自動化"
 date:          2020-08-12
 category:      WindowsBatch
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -5,7 +5,7 @@ menutitle:     "/tmp/systemd-private-* の意味について (PrivateTmp)"
 date:          2019-03-04
 category:      Linux
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /shell/tmp-systemd-private
 comments:      true
 published:     true

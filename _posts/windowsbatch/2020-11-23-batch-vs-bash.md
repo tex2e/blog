@@ -3,7 +3,7 @@ layout:        post
 title:         "cmd.exeとbashのコマンド比較表"
 date:          2020-11-23
 category:      WindowsBatch
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

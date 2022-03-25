@@ -3,7 +3,7 @@ layout:        post
 title:         "PrintNightmare攻撃を回避するための対策"
 date:          2021-11-13
 category:      Windows
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

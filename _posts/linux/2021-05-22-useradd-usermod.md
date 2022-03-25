@@ -3,7 +3,7 @@ layout:        post
 title:         "useradd, usermod によるグループへの追加"
 date:          2021-05-22
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

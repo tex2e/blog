@@ -4,7 +4,7 @@ title:         "ラプラス変換 公式一覧"
 menutitle:     "応用数学 ラプラス変換 公式一覧"
 date:          2019-01-04
 category:      Math
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

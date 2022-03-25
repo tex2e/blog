@@ -4,7 +4,7 @@ title:         "各入力ファイルのディレクトリが別々で、出力�
 date:          2019-11-07
 category:      Makefile
 author:        tex2e
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

@@ -3,7 +3,7 @@ layout:        post
 title:         "wgetでサイト全体をダウンロードする"
 date:          2020-08-28
 category:      Shell
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

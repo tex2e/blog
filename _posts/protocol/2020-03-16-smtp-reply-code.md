@@ -3,7 +3,7 @@ layout:        post
 title:         "SMTPの応答コードの一覧"
 date:          2020-03-16
 category:      Protocol
-cover:         /assets/cover1.jpg
+cover:         /assets/cover5.jpg
 redirect_from: /linux/smtp-reply-code
 comments:      true
 published:     true

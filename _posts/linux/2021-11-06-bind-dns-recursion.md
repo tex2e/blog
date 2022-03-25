@@ -3,7 +3,7 @@ layout:        post
 title:         "BINDで再帰問い合わせを無効化する"
 date:          2021-11-06
 category:      Linux
-cover:         /assets/cover1.jpg
+cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
 published:     true

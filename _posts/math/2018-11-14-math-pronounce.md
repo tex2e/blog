@@ -4,7 +4,7 @@ title:         "数式・記号の英語の読み方とLaTeXの書き方"
 date:          2018-11-14
 category:      Math
 author:        tex2e
-cover:         /assets/cover4.jpg
+cover:         /assets/cover14.jpg
 redirect_from: /crypto/math-pronounce
 comments:      true
 published:     true

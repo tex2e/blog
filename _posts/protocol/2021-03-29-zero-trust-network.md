@@ -3,7 +3,7 @@ layout:        post
 title:         "ゼロトラストネットワークとは"
 date:          2021-03-29
 category:      Protocol
-cover:         /assets/cover1.jpg
+cover:         /assets/cover5.jpg
 redirect_from:
 comments:      true
 published:     true
