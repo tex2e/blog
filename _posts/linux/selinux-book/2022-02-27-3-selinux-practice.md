@@ -478,34 +478,53 @@ type=AVC msg=audit(0000000000.719:695): avc:  denied  { entrypoint } for  pid=10
 
 上記の環境では、/usr/bin/python3 の実態は /usr/libexec/platform-python3.6 ですが、このプログラムはデフォルトで bin_t タイプでラベル付けされているため、bin_t ファイルを使って httpd_t ドメインのプロセスを起動するドメイン遷移のルールに一致せず、アクションが拒否されました。
 通常は、httpd_t ドメインのプロセスを起動するファイルには、httpd_exec_t タイプのラベル付けが必要です。
-そのため、`chcon -t httpd_exec_t /usr/libexec/platform-python3.6` を実行して python3 プログラムのラベルを変えてもいいのですが、python3 を使用している他のプログラムに影響が出るかもしれないので、ここではファイルコンテキストの代わりにポリシールールを変更します。
+そのため、`chcon -t httpd_exec_t /usr/libexec/platform-python3.6` を実行して python3 プログラムのラベルを変えてもいいのですが、python3 を使用している他のプログラムに影響が出るかもしれないので、python3のプログラムをコピーして、別のラベルを付けます。
 
-まず、監査ログの /var/log/audit/audit.log に出力された拒否ログの行をそのまま audit2allow に渡して実行します。
-audit2allow は入力を解析して、どのようなポリシールールを追加すれば拒否されなくなるかを教えてくれます。
-実行すると以下のように出力され、httpd_tドメインがbin_tタイプのファイルをドメイン遷移のエントリーポイント (開始位置) として使用することを許可すればいいことがわかります。
+python3.6の本体のファイルをコピーして、元々のPythonを bin_t、簡易Webサーバ用に使うPythonを httpd_exec_t にラベル付けします。
+
 ```bash
-~]# echo '<上記の拒否ログ>' | audit2allow
-
-#============= httpd_t ==============
-allow httpd_t bin_t:file entrypoint;
+~]# cp /usr/libexec/platform-python3.6 /usr/libexec/platform-python3.6_simplehttpserver
+~]# restorecon -v /usr/libexec/platform-python3.6
+~]# chcon -t httpd_exec_t /usr/libexec/platform-python3.6_simplehttpserver
+~]# ls -Z /usr/libexec/platform-python3.6*
+           system_u:object_r:bin_t:s0 /usr/libexec/platform-python3.6
+unconfined_u:object_r:httpd_exec_t:s0 /usr/libexec/platform-python3.6_simplehttpserver
 ```
 
-追加するポリシールールを確認したら、ポリシーパッケージを作成します。
-作り方は、audit2allow のオプションに -M でモジュール名を指定して実行すると、.pp という拡張子のポリシーパッケージが作成されます。
-それを SELinux のモジュールに追加するには semodule -i でモジュールをインストールします。
-```bash
-~]# echo '<上記の拒否ログ>' | audit2allow -M simplehttpserver
+ここで注意点ですが、lnでリンクを貼った場合は、セキュリティコンテキストが2つのファイル間で同じになってしまうため、別のラベルを付けたい場合は必ずコピーする必要があります。
 
-~]# semodule -i simplehttpserver.pp
+python3.6の本体のファイルをコピーしたら、デーモンが呼び出すプログラムのパスを修正します。
+/etc/systemd/system/simplehttpserver.service を以下のように修正します。
+
+```diff
+ [Unit]
+ Description=Python Simple HTTP Server
+ After=syslog.target network.target auditd.service
+
+ [Service]
+-ExecStart=/usr/bin/python3 -m http.server 8000
++ExecStart=/usr/libexec/platform-python3.6_simplehttpserver -m http.server 8000
+ ExecStop=/bin/kill -HUP $MAINPID
+ WorkingDirectory=/var/www/html
+ SELinuxContext=system_u:system_r:httpd_t:s0
+
+ [Install]
+ WantedBy=multi-user.target
 ```
-
-bin_t ファイルで、httpd_t ドメインのプロセスが起動できるようになったので、再度自作サービスを起動します。
+サービスファイルを修正して保存したらリロードして、サービスを再起動します。
 ```bash
-~]# systemctl start simplehttpserver
+~]# systemctl daemon-reload
+~]# systemctl restart simplehttpserver
 ~]# systemctl status simplehttpserver
 ```
-この時点でもまだ起動できませんでしたが、エラーの内容は変化しました。
-/var/log/messages のログを確認すると、Pythonのプロセスがポートのバインドに失敗していることが確認できます。
+問題なく動作することを確認したら、コピーしたプログラムのファイルコンテキストを設定し、永続的にラベル付けします。
+```bash
+~]# semanage fcontext -a -t httpd_exec_t '/usr/libexec/platform-python[0-9]+\.[0-9]+_simplehttpserver'
+~]# restorecon -v /usr/libexec/platform-python*
+```
+
+SELinux で指定したポートでLISTENすることを許可していない場合は、デーモンの起動が失敗します。
+/var/log/messages のログを確認すると、Pythonのプロセスがポートのバインドに失敗している場合があります。
 ```
 Feb 11 12:01:00 localhost systemd[1]: Started Python Simple HTTP Server.
 ...
@@ -516,12 +535,12 @@ Feb 11 12:01:00 localhost systemd[1]: simplehttpserver.service: Main process exi
 Feb 11 12:01:00 localhost systemd[1]: simplehttpserver.service: Failed with result 'exit-code'.
 ```
 
-再び監査ログの /var/log/audit/audit.log を確認すると、SELinuxによってポートのバインドが拒否されていました。
-許可するためには、httpd_t が soundd_port_t (8000番ポート) に name_bind (ポートのバインド) をするポリシールールを追加すれば良さそうです。
+監査ログの /var/log/audit/audit.log を確認すると、SELinuxによってポートのバインドが拒否されてる場合があります。
+許可するためには、httpd_t が soundd_port_t (8000番ポート) に name_bind (ポートのバインド) をするポリシールールを追加します。
 ```
 type=AVC msg=audit(0000000000.702:709): avc:  denied  { name_bind } for  pid=10666 comm="python3" src=8000 scontext=system_u:system_r:httpd_t:s0 tcontext=system_u:object_r:soundd_port_t:s0 tclass=tcp_socket permissive=0
 ```
-audit2allow + semodule でポリシールールを追加する方法もありますが、ポートのルールは専用のコマンドである `semanage port` を使えばポートのアクセス制御を管理することができます。
+ポートのルールは専用のコマンドである `semanage port` を使えばポートのアクセス制御を管理することができます。
 まず、拒否ログの soundd_port_t が何番ポートを表すのかを、-l (リスト) オプションで確認します。以下の結果から、soundd_port_t は 8000/tcp であることが確認できます。
 ```bash
 ~]# semanage port -l | grep soundd_port_t
@@ -605,59 +624,8 @@ httpd_t ドメインから user_home_t タイプのファイルにアクセス�
 ```
 type=AVC msg=audit(0000000000.311:753): avc:  denied  { read } for  pid=10749 comm="python3" name="test.html" dev="dm-0" ino=17856687 scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file permissive=0
 ```
-以上で、自作サービスのPython3の簡易Webサーバを、httpd_t ドメインとして起動させて、アクセス制御できるようにしました。
 
-しかし、Python3.6の本体のファイルである /usr/libexec/platform-python3.6 を bin_t から httpd_exec_t にラベル変更すると、別のシステムのプログラムで問題が発生しました。
-監査ログに記録された拒否ログは、以下のようなものでした。
-幸い、システムが停止するほどの深刻なものではないですが、システムが使用しているプログラムのラベルを安易に変えるのは危険です。
-
-```
-type=AVC msg=audit(0000000000.497:4836): avc:  denied  { execute } for  pid=12914 comm="dbus-daemon-lau" name="platform-python3.6" dev="dm-0" ino=35081046 scontext=system_u:system_r:system_dbusd_t:s0-s0:c0.c1023 tcontext=system_u:object_r:httpd_exec_t:s0 tclass=file permissive=0
-```
-
-そこで、python3.6の本体のファイルをコピーして、元々のPythonを bin_t、簡易Webサーバ用に使うPythonを httpd_exec_t にラベル付けします。
-
-```bash
-~]# cp /usr/libexec/platform-python3.6 /usr/libexec/platform-python3.6_simplehttpserver
-~]# restorecon -v /usr/libexec/platform-python3.6
-~]# chcon -t httpd_exec_t /usr/libexec/platform-python3.6_simplehttpserver
-~]# ls -Z /usr/libexec/platform-python3.6*
-           system_u:object_r:bin_t:s0 /usr/libexec/platform-python3.6
-unconfined_u:object_r:httpd_exec_t:s0 /usr/libexec/platform-python3.6_simplehttpserver
-```
-
-ここで注意点ですが、lnでリンクを貼った場合は、セキュリティコンテキストが2つのファイル間で同じになってしまうため、別のラベルを付けたい場合は必ずコピーする必要があります。
-
-python3.6の本体のファイルをコピーしたら、デーモンが呼び出すプログラムのパスを修正します。
-/etc/systemd/system/simplehttpserver.service を以下のように修正します。
-
-```diff
- [Unit]
- Description=Python Simple HTTP Server
- After=syslog.target network.target auditd.service
-
- [Service]
--ExecStart=/usr/bin/python3 -m http.server 8000
-+ExecStart=/usr/libexec/platform-python3.6_simplehttpserver -m http.server 8000
- ExecStop=/bin/kill -HUP $MAINPID
- WorkingDirectory=/var/www/html
- SELinuxContext=system_u:system_r:httpd_t:s0
-
- [Install]
- WantedBy=multi-user.target
-```
-サービスファイルを修正して保存したらリロードして、サービスを再起動します。
-```bash
-systemctl daemon-reload
-systemctl restart simplehttpserver
-systemctl status simplehttpserver
-```
-問題なく動作することを確認したら、コピーしたプログラムのファイルコンテキストを設定し、永続的にラベル付けします。
-```bash
-~]# semanage fcontext -a -t httpd_exec_t '/usr/libexec/platform-python[0-9]+\.[0-9]+_simplehttpserver'
-~]# restorecon -v /usr/libexec/platform-python*
-```
-以上で、Pythonプログラムの本体のラベルを変更せずに、自作サービスのPython3の簡易Webサーバを、httpd_t ドメインとして起動させて、アクセス制御できるようにしました。
+以上で、Pythonプログラムの本体のラベルを変更せずに、自作サービスのPython3の簡易Webサーバを、httpd_t ドメインとして起動させて、アクセス制御できるようになりました。
 
 
 ### 既存の組み込みポリシーを修正する
