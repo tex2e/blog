@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellの出力を色付けする"
+title:         "PowerShellの出力を色付けする (Write-Host)"
 date:          2022-04-15
 category:      PowerShell
 cover:         /assets/cover14.jpg
