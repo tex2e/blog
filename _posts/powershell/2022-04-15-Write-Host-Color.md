@@ -1,6 +1,7 @@
 ---
 layout:        post
-title:         "PowerShellの出力を色付けする (Write-Host)"
+title:         "PowerShellの出力を色付けする"
+menutitle:     "PowerShellの出力を色付けする (Write-Host)"
 date:          2022-04-15
 category:      PowerShell
 cover:         /assets/cover14.jpg
@@ -54,30 +55,30 @@ foreach ($color in $colors) {
 色の出力を使って、エラーや成功・失敗のメッセージの色を変えることで、コンソールを読みやすくすることができます。
 以下は、メッセージ色付け用の関数の例です。
 ```ps1
-function Error($msg) {
+function Write-Error($msg) {
     Write-Host "[" -NoNewline
     Write-Host "!" -NoNewline -ForegroundColor Red
     Write-Host "] " -NoNewline
     Write-Host $msg
 }
 
-function Success($msg) {
+function Write-Success($msg) {
     Write-Host "[" -NoNewline
     Write-Host "+" -NoNewline -ForegroundColor Green
     Write-Host "] " -NoNewline
     Write-Host $msg
 }
 
-function Failed($msg) {
+function Write-Failed($msg) {
     Write-Host "[" -NoNewline
     Write-Host "-" -NoNewline -ForegroundColor Red
     Write-Host "] " -NoNewline
     Write-Host $msg
 }
 
-Error "Test text"
-Success "Test text"
-Failed "Test text"
+Write-Error "Test text"
+Write-Success "Test text"
+Write-Failed "Test text"
 ```
 実行すると以下のようになります。
 <figure>
