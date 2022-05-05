@@ -10,11 +10,11 @@ comments:      true
 published:     true
 ---
 
-2つのリモートサーバ hostA、hostB があって、
-ローカル環境から hostA 経由で hostB にアクセスする多段SSHをする時の ~/.ssh/config の設定。
-これで「ローカル => hostA => hostB」の接続ができるようになる。
+2つのリモートサーバ hostA、hostB があって、ローカル環境から hostA 経由で hostB にアクセスする多段SSHをする時の ~/.ssh/config の設定について説明します。
 
-```command
+~/.ssh/config の設定ファイルに以下を追加することで、「ローカル => hostA => hostB」の接続ができるようになります。
+
+```bash
 $ vi ~/.ssh/config
 
 Host hostA
@@ -27,12 +27,10 @@ Host hostB
   ProxyCommand ssh -W %h:%p hostA
 ```
 
-Micro Hardening などで踏み台サーバ経由でプレイヤーサーバにログインして、
-ログファイルなどを手元の環境に保存したいときなどに使える
-（Micro Hardening では 45 分の 1 セットごとにプレイヤーサーバがリセットされるので）。
+「ローカル => hostA => hostB」の多段SSH接続ができるかの確認は以下のコマンドを実行します。
 
-「ローカル => hostA => hostB」の多段SSH接続の確認方法：
-
-```command
+```bash
 $ ssh hostB
 ```
+
+以上です。
