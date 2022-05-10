@@ -228,3 +228,4 @@ tallying result: 1241
 - [ozsaygin/elgamal-evoting： ElGamal E-Voting Scheme Implementation](https://github.com/ozsaygin/elgamal-evoting)
 - [data61/python-paillier： A library for Partially Homomorphic Encryption in Python](https://github.com/data61/python-paillier)
 - [Cryptography - Electronic Voting](https://crypto.stanford.edu/pbc/notes/crypto/voting.html)
+- [オンライン投票はなぜ『難しい』のか](https://zenn.dev/dmikurube/articles/online-voting-is-hard-ja)
