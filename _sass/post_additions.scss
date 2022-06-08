@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* this file is intended to customize some css properties without changing the forked css files */
 /* this allows us to simple replace the forked scss files on changes in the forked repo */
 
@@ -23,8 +25,8 @@ figure p {
 }
 
 .post-content .tip {
-	border-left: 4px solid $orangered;
-	&:before {
-		background-color: $orangered;
-	}
+    border-left: 4px solid $orangered;
+    &:before {
+        background-color: $orangered;
+    }
 }
