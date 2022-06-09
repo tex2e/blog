@@ -56,9 +56,9 @@ End Module
 ```
 
 注意点の1つ目は設定する順番で、.Proxy の設定をしてから .GetRequestStream() を呼び出す必要があります。
-GetRequestStream() 後にWebProxyオブジェクトを設定すると、「System.InvalidOperationException: 要求が送信された後にこの操作を実行することはできません。」とエラーが表示されます[^1]。
+GetRequestStream() 後にWebProxyオブジェクトを設定すると、「System.InvalidOperationException: 要求が送信された後にこの操作を実行することはできません。」とエラーが表示されます [^1]。
 
-2つ目は、プロキシとHTTPサーバを同じlocalhostの別ポートで起動していて、プロキシと接続先のURLのドメインがどちらも「localhost」のとき、ローカルプロキシバイパスが発生してしまいます。
+2つ目は、プロキシとHTTPサーバを同じlocalhostの別ポートで起動していて、プロキシと接続先のURLのドメインがどちらも「localhost」のとき、ローカルプロキシバイパス [^1] が発生してしまいます。
 つまり、プロキシを経由しないで直接HTTPサーバに通信してしまいます。
 検証などで必ずプロキシを経由させたいときは、C:\Windows\System32\drivers\etc\hosts に `127.0.0.1 www.example.local` などとドメイン名を設定し、接続先のHTTPサーバのドメインを www.example.local に変えることで、ローカルの環境でローカルプロキシバイパスを回避することができます。
 
@@ -66,4 +66,4 @@ GetRequestStream() 後にWebProxyオブジェクトを設定すると、「Syste
 
 ---
 
-[^1]: https://docs.microsoft.com/ja-jp/dotnet/api/system.net.httpwebrequest.proxy?view=netframework-3.5
+[^1]: [https://docs.microsoft.com/ja-jp/dotnet/api/system.net.httpwebrequest.proxy?view=netframework-3.5](https://docs.microsoft.com/ja-jp/dotnet/api/system.net.httpwebrequest.proxy?view=netframework-3.5)
