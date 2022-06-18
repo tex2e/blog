@@ -18,6 +18,12 @@ pre code {
     margin: auto;
 }
 
+//--- Figures ---
+// ASCII Art
+.language-fig {
+    font-size: 95%;
+}
+
 //--- Inline code ---
 :not(pre) > code {
     padding: .1em;
