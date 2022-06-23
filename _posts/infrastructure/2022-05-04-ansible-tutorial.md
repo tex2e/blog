@@ -283,5 +283,6 @@ ansible_facts という変数には、接続先のホストの情報が格納さ
 #### 参考文献
 - [Playbook の使用 — Ansible Documentation](https://docs.ansible.com/ansible/2.9_ja/user_guide/playbooks.html)
 - [User Guide — Ansible Documentation](https://docs.ansible.com/ansible/latest/user_guide/index.html)
+- [Working with Ansible Playbooks – Tips & Tricks with Examples](https://spacelift.io/blog/ansible-playbooks)
 
 ---
