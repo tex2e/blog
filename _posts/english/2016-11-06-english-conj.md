@@ -324,6 +324,7 @@ Note: 主に話し言葉で使われる語には（話）という印をつけ�
 | 意外にも | surprisingly
 | 理想的には | ideally
 | 真面目な話をすると | seriously（話）
+| このようにして | In this way
 
 
 <br>
