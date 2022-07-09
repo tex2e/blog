@@ -48,7 +48,7 @@ PS> ./ColorTool.exe -b カラーテーマ名.itermcolors
 ./ColorTool.exe -b OneHalfDark.itermcolors
 ./ColorTool.exe -b OneHalfLight.itermcolors
 ./ColorTool.exe -b solarized_dark.itermcolors
-./ColorTool.exe -b solarized_light.itermcolors
+./ColorTool.exe -b solarized_light.itermcolors     <--- おすすめ
 ```
 
 新規PowerShellコンソールを起動してみて文字色などが変化することを確認したら、カラーテーマ適用完了です。
