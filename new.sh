@@ -28,6 +28,8 @@
       category="WindowsBatch" ;;
     powershell )
       category="PowerShell" ;;
+    infra )
+      category="Infrastructure" ;;
     crypto )
       category="Crypto"
       cover="cover4"
