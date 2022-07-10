@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "Ansibleのpingモジュールを使う"
-date:          2022-07-10
+date:          2022-07-01
 category:      Infrastructure
 cover:         /assets/cover14.jpg
 redirect_from:
