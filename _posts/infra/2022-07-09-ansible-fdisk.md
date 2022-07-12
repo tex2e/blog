@@ -95,7 +95,12 @@ Device     Boot Start      End  Sectors Size Id Type
 /dev/xvdb1       2048 16777215 16775168   8G 8e Linux LVM
 ```
 
+Shellを使わずに行う別の方法として linux-system-roles.storage ロールを使用する方法がありますが、Ansibleの送信元サーバと送信先サーバの両方に必要なパッケージをインストールする必要があります。
+詳細は [Chapter 2. Managing local storage using RHEL System Roles Red Hat Enterprise Linux 8 \| Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/managing-local-storage-using-rhel-system-roles_managing-file-systems)
+をご確認ください。
+
 以上です。
+
 
 ### 参考文献
 - [How to run fdisk in non-interactive batch mode](https://www.xmodulo.com/how-to-run-fdisk-in-non-interactive-batch-mode.html)
