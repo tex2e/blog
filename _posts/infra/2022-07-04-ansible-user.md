@@ -40,15 +40,11 @@ AnsibleでLinuxユーザを作成するには、ansible.builtin.user モジュ�
 
 ```bash
 $ ansible-playbook -i inventory.ini sample-playbook.yml
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Add user 'example-user'] *************************************************
 changed: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
 ```

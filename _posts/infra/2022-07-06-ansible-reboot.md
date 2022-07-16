@@ -41,18 +41,13 @@ ansible.builtin.reboot では reboot_timeout オプションでサーバが再�
 
 ```bash
 $ ansible-playbook -i inventory.ini sample-playbook.yml
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Reboot] ******************************************************************
 changed: [aws-rhel]
-
 TASK [Ping Connection] *********************************************************
 ok: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
 ```

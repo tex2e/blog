@@ -51,21 +51,15 @@ Ansibleでfileやdirの権限を設定したり、リンクを作成したりす
 
 ```bash
 $ ansible-playbook -i inventory.ini sample-playbook.yml
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Create directory] ********************************************************
 changed: [aws-rhel]
-
 TASK [Create empty file] *******************************************************
 changed: [aws-rhel]
-
 TASK [Create link] *************************************************************
 changed: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0 
 ```

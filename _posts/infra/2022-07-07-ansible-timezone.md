@@ -33,15 +33,11 @@ Ansibleのtimezoneモジュールの name に地域を指定します。
 
 ```bash
 $ ansible-playbook -i inventory.ini sample-playbook.yml
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Set timezone to Asia/Tokyo] **********************************************
 changed: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 ```

@@ -42,18 +42,13 @@ when はタスクを実行するかしないかを判断するために使いま
 実行結果（1回目）：
 ```bash
 $ ansible-playbook -i inventory.ini sample-playbook.yml
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Check timezone] **********************************************************
 ok: [aws-rhel]
-
 TASK [Set timezone to Asia/Tokyo] **********************************************
 changed: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
 ```
@@ -61,18 +56,13 @@ aws-rhel                   : ok=3    changed=1    unreachable=0    failed=0    s
 実行結果（2回目）：
 ```bash
 $ ansible-playbook -i inventory.ini sample-playbook.yml
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Check timezone] **********************************************************
 ok: [aws-rhel]
-
 TASK [Set timezone to Asia/Tokyo] **********************************************
 skipping: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0 
 ```
