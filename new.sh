@@ -32,7 +32,7 @@
       category="Infrastructure" ;;
     crypto )
       category="Crypto"
-      cover="cover4"
+      cover="cover4.jpg"
       ;;
     linux )
       category="Linux"
