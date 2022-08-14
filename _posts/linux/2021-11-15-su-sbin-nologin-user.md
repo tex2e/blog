@@ -1,5 +1,6 @@
 ---
 layout:        post
+menutitle:     "ログインシェルを /sbin/nologin にしたユーザにログインする (su --shell=/bin/bash)"
 title:         "ログインシェルを /sbin/nologin にしたユーザにログインする"
 date:          2021-11-15
 category:      Linux
