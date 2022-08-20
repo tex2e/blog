@@ -30,6 +30,8 @@
       category="PowerShell" ;;
     infra )
       category="Infrastructure" ;;
+    rfc )
+      category="RFC" ;;
     crypto )
       category="Crypto"
       cover="cover4.jpg"
