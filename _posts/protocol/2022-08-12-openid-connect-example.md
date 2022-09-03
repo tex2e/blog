@@ -8,7 +8,7 @@ redirect_from:
 comments:      true
 published:     true
 latex:         false
-photoswipe:    false
+photoswipe:    true
 # sitemap: false
 # feed:    false
 ---
