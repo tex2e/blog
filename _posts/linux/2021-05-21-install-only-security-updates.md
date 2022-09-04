@@ -29,11 +29,12 @@ myname@host:~$
 apt upgradeだと全てのアップデートを適用してしまいますが、
 本番環境などでは実行できなくなるリスクを最小限にするためにセキュリティアップデートのみを入れたいときがあります。
 そこで、セキュリティアップデートだけを入れる場合は unattended-upgrade コマンドを使います。
-何がインストールされるか、正しくインストールされるか確認するために --dry-run オプションを加えて実行すると良いでしょう。
+-v オプションは出力を冗長にします。
+何がインストールされるかを確認するために --dry-run オプションを加えて実行するのも良いでしょう。
 
 ```bash
-sudo unattended-upgrade --dry-run
-sudo unattended-upgrade
+$ sudo unattended-upgrade -v --dry-run
+$ sudo unattended-upgrade -v
 ```
 
 実行例：
