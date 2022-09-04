@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Linuxサーバからプロキシ経由でインターネットに接続する"
+title:         "Linuxサーバからプロキシ経由でyum/aptインストールをする"
 date:          2022-09-03
 category:      Linux
 cover:         /assets/cover14.jpg
@@ -27,6 +27,7 @@ photoswipe:    false
 ```
 構成図は上の通りです。ローカルPCからリモートのLinuxにはSSH接続ができる状態です。
 
+以下は RHEL 8 での実行結果ですが、CentOS でも Ubuntu でも同じようにできます。
 
 #### (0) リモートでインターネット接続できない状態からスタート
 デフォルトではインターネットに接続できないです。
@@ -78,9 +79,25 @@ curlでインターネット接続を確認します。
 ```bash
 ~]# curl example.com
 ```
-問題なければupdateを実施します。
+
+##### (4-1) RHEL, CentOSの場合
+yum/dnf updateを実施します。
 ```bash
 ~]# dnf update
 ```
+
+##### (4-2) Ubuntuの場合
+設定ファイル /etc/apt/apt.conf を以下の内容で新規作成してから、apt updateを実施します。
+```bash
+~]# cat <<'EOS' >> /etc/apt/apt.conf
+Acquire::http::Proxy "http://127.0.0.1:8888";
+Acquire::https::Proxy "http://127.0.0.1:8888";
+EOS
+
+~]# apt update
+```
+
+
+パッケージの update ができれば install も同様に実行できます。
 
 以上です。
