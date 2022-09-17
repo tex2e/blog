@@ -1,7 +1,7 @@
 ---
 layout:        book
-title:         "1. SELinux/アクセス制御の仕組み"
-menutitle:     "1. SELinux/アクセス制御の仕組み"
+title:         "1. セキュリティとアクセス制御"
+menutitle:     "1. SELinux/セキュリティとアクセス制御"
 date:          2022-02-27
 category:      Linux
 cover:         /assets/cover6.jpg
@@ -12,12 +12,12 @@ latex:         false
 photoswipe:    true
 # sitemap: true
 # feed: true
-description:   "SELinux入門 第1章 アクセス制御の仕組み"
+description:   "SELinux入門 第1章 セキュリティとアクセス制御"
 section_number: 1
 sections:
-  - [./1-access-control, SELinux/アクセス制御の仕組み]
-  - [./2-selinux-intro, SELinuxの特徴と使い方]
-  - [./3-selinux-practice, SELinuxの実践]
+  - [./1-access-control, セキュリティとアクセス制御]
+  - [./2-selinux-intro, SELinux入門]
+  - [./3-selinux-practice, SELinux実践]
 ---
 
 
