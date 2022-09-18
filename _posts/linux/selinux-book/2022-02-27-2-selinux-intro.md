@@ -93,84 +93,72 @@ SELinux がアクセス決定を行うまでの流れは以下の通りです。
 SELinuxはサブジェクトとオブジェクトの両方のセキュリティコンテキストに基づいてアクセス許可を判断します。
 これらのセキュリティコンテキストは、SELinuxのポリシールールで定義されています。
 
-**ドメイン**は、プロセスのセキュリティコンテキストのことで、SELinuxがプロセスを識別するために使用するものです。
-SELinuxにはLinuxプロセスにおける所有権の概念はありません。
-SELinuxのMACがアクセス許可を決定する際は、セキュリティコンテキストだけを使用します。
-なお、SELinuxにおいて、セキュリティコンテキストとラベルは同じ意味で使用されます。
-
-ドメインと同様に全てのユーザも、SELinuxによってラベル付けされています。
-例として、現在ログインしているユーザのセキュリティコンテキストを表示します。
+**ドメイン**は、プロセスのセキュリティコンテキストのことです。
+SELinuxのMACがアクセス許可を判断する際は、セキュリティコンテキストだけを使用します。
+ドメインと同様に全てのユーザも、SELinuxによってセキュリティコンテキストが付けられています。
+例として、現在のユーザとApacheプロセスのセキュリティコンテキストを確認すると以下のようになります。
 
 ```bash
 ~]$ id -Z
 unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
-```
 
-現在ログインしているユーザの情報を出力する id コマンドに `-Z` オプションを追加すると、ログインユーザのセキュリティコンテキストが表示されます。
-セキュリティコンテキストは、「:」で区切られている4個のフィールドから構成されています。
-なお、「:」は4個あるように見えますが、最後の部分は「s0-s0:c0.c1023」で1個のフィールドです。
-
-SELinuxのセキュリティコンテキストには、少なくとも3個、場合によっては4個のフィールドが含まれています。
-例として、Apache Webサーバーのセキュリティコンテキストを表示します。
-
-```bash
 ~]$ ps -eZ | grep httpd
 system_u:system_r:httpd_t:s0       1637 ?        00:00:00 httpd
 ```
 
-セキュリティコンテキストの各フィールドは、それぞれ次の意味を持ちます。
-- 1番目はSELinuxユーザ (SEUser) を表します。Apacheには、system_uユーザが割り当てられています。なお、SELinuxのユーザ管理は、Linuxが /etc/passwd で管理するユーザのリストを使用していません。代わりに、SELinuxユーザとLinuxユーザを結びつけるための独自のデータベースとマッピングを使用します。
-- 2番目はSELinuxロール (Role) を表します。Apacheは、system_rロールという役割が割り当てられています。
-- 3番目はSELinuxタイプ (Type) を表します。プロセスに付与したタイプはドメインと呼びます。Apacheは、httpd_tドメインが割り当てられています。なお、タイプをサブジェクトに付与してもオブジェクトに付与しても機能は同じですが、サブジェクトに付与するときは「ドメイン」、オブジェクトに付与するときは「タイプ」と呼びます。
-- 4番目は機密度レベルを表します。MLSを有効化している場合のみ使用します
+セキュリティコンテキストは区切り文字 `:` で各項目に分かれており、それぞれ以下の意味を持ちます。
 
-SELinuxがアクション許可を判断するのに必要なのはセキュリティコンテキストだけです。
-ポリシールールのほとんどは、SELinuxユーザとSELinuxロールを使用しないで、SELinuxタイプ (またはドメイン) のみを使用して構成されているため、最も重要なフィールドは3番目のSELinuxタイプだけです。
+ 1. 項目の1番目はSELinuxユーザ (SEUser) を表します。Apacheには、system_uユーザが割り当てられています。なお、SELinuxのユーザ管理は、Linuxが /etc/passwd で管理するユーザのリストを使用していません。代わりに、SELinuxユーザとLinuxユーザを結びつけるための独自のデータベースとマッピングを使用します。
+ 2. 項目の2番目はSELinuxロール (Role) を表します。Apacheは、system_rロールという役割が割り当てられています。
+ 3. 項目の3番目はSELinuxタイプ (Type) を表します。プロセスに付与したタイプはドメインと呼びます。Apacheは、httpd_tドメインが割り当てられています。なお、タイプをサブジェクトに付与してもオブジェクトに付与しても機能は同じですが、サブジェクトに付与するときは「ドメイン」、オブジェクトに付与するときは「タイプ」と呼びます。
+ 4. 項目の4番目は機密度レベルを表します。MLSを有効化している場合のみ使用します。例えば「s0-s0:c0.c1023」が設定されます。
 
+SELinuxはサブジェクトとオブジェクトのセキュリティコンテキストを用いて、アクション許可を判断します。
+ポリシールールのほとんどは、SELinuxユーザとSELinuxロールを使用しておらず、SELinuxタイプ (またはドメイン) のみで作成されているため、最も重要なフィールドは3番目のSELinuxタイプだけです。
 すべてのプロセスとすべてのオブジェクトにラベル付けを行い、プロセスに対してアクセス制御をする仕組みを**Type Enforcement** (**型強制**) といいます。
-Type Enforcementを使用することで、SELinuxはアプリケーションやサービスができることを制御し、よりセキュアな環境を維持することができます。
+Type Enforcementを使用することで、SELinuxはアプリケーションやサービスの機能を制御し、よりセキュアな環境を維持することができます。
 
 #### 制限のないプロセス (Unconfined Process)
 
-制限のないドメインでプロセスが動作する場合は、そのプロセスはSELinuxからの制限を受けません。
-例えば、カーネルで実行されるプロセスのドメイン kernel_t、制限のないサービスのドメイン unconfined_service_t、制限のないユーザのドメイン unconfined_t などがあります。
-制限のないドメインで動作するプロセスのアクセス制御には、SELinuxのMACを使用せず、LinuxのDACのみを使用します。
+制限のないドメインは、SELinuxのMACの制限を受けません。LinuxのDACのアクセス制御の制限だけを受けます。
+制限のないプロセスは例えば、カーネルで実行されるプロセスのドメイン kernel_t、制限のないサービスのドメイン unconfined_service_t、制限のないユーザのドメイン unconfined_t などがあります。
 
 
 ### ドメイン遷移 (Domain Transition)
 
 特定のドメインがプログラムを実行した際に別のドメインに遷移することを**ドメイン遷移** (Domain Transition) といいます。
-例えば、init_t ドメインの systemd が /usr/sbin/httpd (http_exec_t) を実行すると、起動したプロセスには httpd_t ドメインが割り当てられます。
+例えば、systemd (init_t ドメイン) が /usr/sbin/httpd (httpd_exec_t) を実行すると、起動したプロセスには httpd_t ドメインが割り当てられます。
 ドメイン遷移をするためには、以下の複数のポリシールールが必要です。
-1. サブジェクトのドメインから別のドメインへの遷移ルール。なお、遷移 (transition) の権限は process クラスに紐づいています
-2. サブジェクトのドメインから別のドメインへの遷移を許可するルール。
-3. サブジェクトのドメインが、プロセスを起動するファイルの実行を許可するルール。なお、実行 (execute) の権限は file クラスに紐づいています
-4. 別のドメインに遷移するときにプロセスを起動するファイルを限定するルール。この実行ファイルは、エントリーポイント (entrypoint) と呼ばれます
+
+ 1. サブジェクトのドメインから別のドメインへの遷移ルール。
+ 2. サブジェクトのドメインから別のドメインへの遷移を許可するルール。
+ 3. サブジェクトのドメインが、プロセスを起動するファイルの実行を許可するルール。
+ 4. 別のドメインに遷移するときにプロセスを起動するファイルを限定するルール (allow entrypoint)。
 
 ドメイン遷移に必要なポリシールールは、以下のコマンドで確認することができます。
+なお、遷移 (transition) の権限は process クラス、実行 (execute) の権限は file クラスに紐づいています。
 
 ```bash
-# init_tからhttpd_tドメインに遷移するルール：
+# init_tからhttpd_tドメインに遷移するルール
 ~]# sesearch -T -s init_t -c process | grep httpd_t
 type_transition init_t httpd_exec_t:process httpd_t;
-
 ~]# sesearch -A -s init_t -t httpd_t -c process -p transition
 allow initrc_domain daemon:process transition;
 
-# init_tドメインが実行できるファイルのタイプ：
+# init_tドメインが実行できるファイルのタイプ
 ~]# sesearch -A -s init_t -t httpd_exec_t -c file -p execute
 allow initrc_domain direct_init_entry:file { execute getattr map open read };
 
-# httpd_tドメインとして起動できるエントリーポイント：
+# httpd_tドメインとして起動できるエントリーポイント
 ~]# sesearch -A -s httpd_t -t httpd_exec_t -c file -p entrypoint
 allow httpd_t httpd_exec_t:file { entrypoint execute execute_no_trans getattr ioctl lock map open read };
 ```
 
-2番目と3番目のコマンドの結果について、initrc_domain と daemon と direct_init_entry はタイプでなく属性 (Attribute) です。
+コマンドの結果に含まれている initrc_domain と daemon と direct_init_entry はタイプでなく属性です。
 末尾が `_t` であればタイプですが、それ以外の場合は属性です。
-属性 (Attribute) はタイプが持つ属性を表したものです。
-属性は、タイプだけ異なる複数のルールを1つにまとめるために使用します。
-seinfo -a コマンドで確認すると、initrc_domain 属性の中には init_t タイプが存在し、daemon 属性の中には httpd_t タイプが存在し、direct_init_entry 属性の中には httpd_exec_t タイプが存在します。
+属性 (Attribute) は、タイプが持つ属性を表したもので、複数のルールを1つにまとめるために使用します。
+
+`seinfo -a` コマンドで確認すると、initrc_domain 属性の中には init_t タイプが存在し、daemon 属性の中には httpd_t タイプが存在し、direct_init_entry 属性の中には httpd_exec_t タイプが存在します。
 そのため、ここでは initrc_domain 属性を init_t、タイプ、daemon 属性を httpd_t タイプ、direct_init_entry 属性を httpd_exec_t に読み替えることにします。
 
 ```bash
@@ -181,7 +169,7 @@ Type Attributes: 1
         init_t
         ...
 
-~]# seinfo -a daemon -x | head
+~]# seinfo -a daemon -x
 Type Attributes: 1
    attribute daemon;
         ...
@@ -199,13 +187,11 @@ Type Attributes: 1
 属性をタイプに読み替えた上で、init_t から httpd_t へのドメイン遷移は次の図のようになります。
 
 ```
-        ..... system_r ......
-       :                     :
-       :     transition      :
-    init_t -------------> httpd_t
-       |                     |
-       |                     | entrypoint
-       |     execute         |
+               (3) transition
+    init_t ---------------------> httpd_t
+       |                     ^
+       |                     | (2) entrypoint
+       |   (1) execute       |
        +----------------> httpd_exec_t
 ```
 
@@ -272,27 +258,29 @@ system_u:system_r:init_t:s0           1 ?        00:00:05 systemd
 system_u:object_r:httpd_exec_t:s0 /usr/sbin/httpd
 ```
 
-systemctl経由で起動したApacheは httpd_t ドメインが割り当てられますが、手動で起動した場合は unconfined_t が割り当てられます。
+systemctl経由で起動したApacheは httpd_t ドメインが割り当てられますが、`/usr/sbin/httpd -DFORGROUND` コマンドで手動で起動した場合は unconfined_t が割り当てられます。
 unconfined_t は、SELinuxに制限されないプロセスなので、本来の保護機能を十分に活用できません。
-特別な理由がない限り、yumやdnfでインストールしたときのパッケージのファイル構成を維持し、systemctl経由でサービスを起動するようにしましょう。
-ファイル構成を変更したい場合は、変更後のパスにあるファイルやディレクトリのラベル付けが適切に行われているかを確認する必要があります。
-また、本番環境では起動しているプロセスが適切なドメインで動作しているかを `ps -eZ` コマンドで確認することは、アクセス制御をする上で重要なことです。
+特別な理由がない限り、systemctl経由でサービスを起動するようにしましょう。
+また、本番環境では起動しているプロセスが適切なドメインで動作しているかを `ps -eZ` コマンドで確認するようにしましょう。
 
 
 
 ### タイプ遷移 (Type Transition)
 
-一般的にファイルやフォルダを作成したときは、親のディレクトリのタイプを継承します。
-例えば、/var/logの下に foo/bar ディレクトリを作成して、baz ファイルを作成した場合、
+一般に、ファイルやフォルダを作成したときは、親のディレクトリのタイプを継承します。
+例えば、一般的にログが保存される /var/log ディレクトリの下に foo/bar ディレクトリを作成して、baz ファイルを作成した場合、
 作成した foo, bar, baz のセキュリティコンテキストは、親のディレクトリと同じ var_log_t タイプになります。
 ```bash
+# 親ディレクトリのセキュリティコンテキスト
 ~]# ls -dZ /var/log
 system_u:object_r:var_log_t:s0 /var/log
 
+# 子ディレクトリのセキュリティコンテキスト
 ~]# mkdir -p /var/log/foo/bar
 ~]# ls -dZ /var/log/foo/bar
 unconfined_u:object_r:var_log_t:s0 /var/log/foo/bar
 
+# 子ファイルのセキュリティコンテキスト
 ~]# touch /var/log/foo/bar/baz
 ~]# ls -Z /var/log/foo/bar/baz
 unconfined_u:object_r:var_log_t:s0 /var/log/foo/bar/baz
@@ -325,7 +313,7 @@ echo "Update file: " . $myfile . "\n";
 ```
 
 Web経由で test.php にアクセスすると、/var/log/の下にファイル「baz_from_httpd」が作成されます。
-作成されたファイルを `ls -Z` で確認すると、ファイルはタイプ遷移のルールに従って httpd_log_t にラベル付けされていました。
+作成されたファイルを `ls -Z` で確認すると、ファイルはタイプ遷移のルールに従って httpd_log_t にラベル付けされています。
 
 ```bash
 ~]# curl localhost/test.php
@@ -341,8 +329,7 @@ unconfined_u:object_r:var_log_t:s0 /var/log/foo/bar/baz
 #### 名前遷移 (Name Transition)
 
 名前遷移は、ポリシーバージョン25から対応しているタイプ遷移の一種で、ファイル作成時のみ適用されるルールです。
-タイプ遷移は、ファイルやディレクトリを作成したときに、そのタイプは親のディレクトリのタイプを継承しないで、ポリシールールで指定したタイプが付与される、というものでした。
-名前遷移は、作成するファイル名がポリシールールで指定した名前のときだけタイプ遷移を実施する、というものです。
+名前遷移は、作成するファイル名がポリシールールで指定した名前と一致するときだけタイプ遷移を実施する、というものです。
 以下のポリシールールを使って名前遷移について説明します。
 
 ```bash
@@ -419,7 +406,7 @@ PrivateTmp=true → false  (trueの場合、/tmpはそのプロセス専用に�
 ### ファイルのラベリング (Labeling)
 
 ファイルのセキュリティコンテキストは、ls コマンドの `-Z` オプションで表示できます。
-ディレクトリのセキュリティコンテキストも同様に取得できます。ディレクトリの場合は `-dZ` オプションで表示できます。
+ディレクトリの場合は `-dZ` オプションで表示できます。
 
 ```bash
 ~]$ ls -Z /var/www/html/index.html
@@ -429,20 +416,19 @@ unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/index.html
 unconfined_u:object_r:user_home_dir_t:s0 /home/example.user/
 ```
 
-ファイルコンテキストが定義されていない場合、新規作成したファイルはルート直下のディレクトリ名に似たタイプ名でラベル付けされます。
-例えば、以下の場所にファイルを作成すると、それぞれ別のラベルが付与されます。
+以下はファイル作成時にラベル付けされるセキュリティコンテキストの例です。
 
-- /bin や /usr/bin の下に作成したファイルは、bin_t タイプになります。
-- /etc の下に作成したファイルは、etc_t タイプになります。
-- /var の下に作成したファイルは、var_t タイプになります。
-- /tmp の下に作成したファイルは、tmp_t タイプになります。
-- /home/xxx/ などのホームディレクトリの下に作成したファイルは、user_home_t タイプになります。
+ * /bin や /usr/bin の下に作成したファイルは、bin_t タイプになります。
+ * /etc の下に作成したファイルは、etc_t タイプになります。
+ * /var の下に作成したファイルは、var_t タイプになります。
+ * /tmp の下に作成したファイルは、tmp_t タイプになります。
+ * /home/xxx/ などのホームディレクトリの下に作成したファイルは、user_home_t タイプになります。
 
 #### ファイルコンテキストの一時的な変更 (chcon)
 
 chconコマンドは、一時的にファイルやディレクトリのセキュリティコンテキストを変更するためのツールです。
-一時的というのは、本来あるべきセキュリティコンテキストとは違う状態になっていることを意味し、restorecon コマンドの実行や /.autorelabel ファイルの作成と再起動などでに元に戻る状態のことです。
-なお、再起動しただけでは chcon で一時的に変えたセキュリティコンテキストは元に戻りません。
+一時的というのは、本来あるべきセキュリティコンテキストとは違う状態になっていることを意味し、restorecon コマンドの実行や /.autorelabel ファイルの作成＆再起動などでに元に戻る状態のことです。
+再起動しただけでは chcon で一時的に変えたセキュリティコンテキストは元に戻りません。
 
 1つのファイルやディレクトリのタイプを変更するときは、`-t` (Type) でタイプを指定した後に、対象のパスを指定します。
 ```bash
@@ -460,38 +446,21 @@ chcon でオブジェクトのSELinuxユーザを変える場合は、`-u` (seUs
 ```bash
 ~]# ls -dZ /var/www/html/upload
 unconfined_u:object_r:httpd_sys_rw_content_t:s0 /var/www/html/upload
-
 ~]# chcon -u system_u /var/www/html/upload
-
 ~]# ls -dZ /var/www/html/upload
 system_u:object_r:httpd_sys_rw_content_t:s0 /var/www/html/upload
 ```
 
-chcon は一時的にタイプを変更するので、テストや検証では chcon を使って、問題がなければ次に説明する semanage fcontext で永続的にタイプを変更するという作業の流れになります。
-
-#### ファイルコンテキストの復元 (restorecon)
-
-restorecon はSELinuxコンテキストをデフォルト値に復元するためのコマンドです。
-restorecon コマンドを使うと、chcon で設定した一時的なコンテキストは消えて、コンテキストが元に戻ります。
-`-v` オプションを使用することで、restorecon 実行時にセキュリティコンテキストが元に戻されたファイルやディレクトリの一覧を表示することができます。
-```bash
-~]# restorecon -v /var/www/html/upload
-```
-
-ディレクトリ下の全てのファイルに対しては、`-R` (Recursive) オプションで再帰的に復元させることができます。
-```bash
-~]# restorecon -R -v /var/www/html
-```
+テストや検証では chcon を使って一時的にタイプを変更し、問題がなければ次で説明する semanage fcontext で永続的にタイプを変更するようにしましょう。
 
 #### ファイルコンテキストの永続的な変更 (semanage fcontext)
 
-永続的にファイルやディレクトリのセキュリティコンテキストを変更するためのツールです。
+semanage fcontextは、永続的にファイルやディレクトリのセキュリティコンテキストを変更するためのツールです。
 SELinuxでは、ファイルコンテキストの永続的な変更に正規表現を用いてファイルやディレクトリのラベル付けを行います。
 ラベル付けの一覧は、`-l` (List) オプションで確認できます。
 ```bash
 ~]# semanage fcontext -l
 SELinux fcontext      type               Context
-
 /                     directory          system_u:object_r:root_t:s0
 /.*                   all files          system_u:object_r:default_t:s0
 /[^/]+                regular file       system_u:object_r:etc_runtime_t:s0
@@ -530,7 +499,6 @@ SELinux fcontext      type               Context
 ~]# semanage fcontext -l
 ...
 SELinux Local fcontext Equivalence
-
 /var/test_www = /var/www
 ```
 
@@ -559,6 +527,19 @@ matchpathcon は、指定したパスがファイルコンテキストに設定�
 /var/test_www/html/upload       system_u:object_r:httpd_sys_content_t:s0
 ```
 
+#### ファイルコンテキストの復元 (restorecon)
+
+restorecon はSELinuxコンテキストをデフォルト値に復元するためのコマンドです。
+restorecon コマンドを使うと、chcon で設定した一時的なコンテキストは消えて、コンテキストが元に戻ります。
+`-v` オプションを使用することで、restorecon 実行時にセキュリティコンテキストが元に戻されたファイルやディレクトリの一覧を表示することができます。
+```bash
+~]# restorecon -v /var/www/html/upload
+```
+
+ディレクトリ下の全てのファイルに対しては、`-R` (Recursive) オプションで再帰的に復元させることができます。
+```bash
+~]# restorecon -R -v /var/www/html
+```
 
 
 ### ポートのラベリング (semanage port)
@@ -997,7 +978,7 @@ Password: (ここでパスワードを入力する)
 uid=1002(user1) gid=1002(user1) groups=1002(user1) context=staff_u:sysadm_r:sysadm_t:s0-s0:c0.c1023
 ```
 
-ロールの切り替えは、実際には newrole コマンドよりも sudo が使われます。
+ロールの切り替えは、newrole コマンド以外に sudo でもできます。
 管理者権限で実行するための sudo コマンドに、`-r` (Role) オプションを追加することで SELinux ロールを指定することができます。
 例えば、user2 ユーザは管理者グループの wheel に所属しており、かつ staff_u ユーザは staff_r と sysadm_r の両方のロールを持つ場合、`sudo -r sysadm_r su` コマンドを実行することで、ユーザを root に切り替えつつ、SELinuxロールを sysadm_r に切り替えることができます。
 
@@ -1031,6 +1012,7 @@ uid=0(root) gid=0(root) groups=0(root) context=staff_u:staff_r:staff_t:s0-s0:c0.
 
 SELinuxの特徴の1つであるタイプ強制 (TE; Type Enforcement) は、すべてのサブジェクトとオブジェクトにラベル付けをして、そのタイプに基づいた振る舞いを強制させることです。
 ここまで、サブジェクトやオブジェクトへのラベル付けを説明してきましたが、それぞれのセキュリティコンテキストの確認方法をまとめると、以下のコマンドを使って確認することができます。
+基本的にはコマンドに `-Z` オプションをつけるとセキュリティコンテキストも表示されるようになります。
 
 - サブジェクト
   - ユーザ : `id -Z`
@@ -1044,16 +1026,14 @@ SELinuxの特徴の1つであるタイプ強制 (TE; Type Enforcement) は、す
 
 ### ポリシーモジュールの管理 (semodule)
 
-SELinuxポリシーは、複数のポリシーモジュールから構成されています。
+SELinuxポリシーは、複数のポリシーモジュールで構成されています。
 ポリシーモジュール (Policy Module) は、複数のポリシールールをまとめたもので、モジュール毎に有効化/無効化をすることができます。
 また、ポリシーモジュールは自作することもできます。
 現在読み込まれているポリシーモジュールの一覧を表示するには、semodule コマンドを `-l` (List) オプションで実行します。
-```bash
-~]# semodule -l
-```
 ポリシーモジュールの優先度や現在の状態 (有効/無効) などのより詳細な情報を表示するには、オプションを `-lfull` にして実行します。
 ```bash
-~]# semodule -lfull
+~]# semodule -l      # 一覧表示
+~]# semodule -lfull  # 一覧詳細表示
 ```
 自分で作成したポリシーモジュールパッケージをSELinuxに読み込むには、`-i` オプションを使用します。
 ```bash
@@ -1072,12 +1052,10 @@ SELinuxポリシーは、複数のポリシーモジュールから構成され�
 ~]# semodule -r myrule -X 500
 ```
 登録したポリシーモジュールを削除しないが無効化したい場合は、`-d` (Disable) オプションを使います。
+また、無効化したポリシーモジュールを有効化したい場合は、`-e` オプションを使います。
 ```bash
-~]# semodule -d myrule
-```
-無効化したポリシーモジュールを有効化したい場合は、`-e` (Enable) オプションを使います。
-```bash
-~]# semodule -e myrule
+~]# semodule -d myrule  # 無効化
+~]# semodule -e myrule  # 有効化
 ```
 
 #### semanage module
@@ -1092,7 +1070,7 @@ simplehttpserver          400       pp    Disabled
 myrule                    300       pp
 ```
 
-#### audit2allow
+#### 拒否ログに応じて許可ルールを作成する (audit2allow)
 
 SELinuxが特定のアクションを拒否した場合、拒否ログは監査ログ /var/log/audit/audit.log に記録されます。
 audit2allow コマンドは、SELinuxが特定のアクションを拒否しないように、拒否ログの内容から許可ルールを含むポリシーモジュールパッケージ (.pp) を作成します。
@@ -1121,7 +1099,7 @@ allow httpd_t http_port_t:tcp_socket name_connect;
 
 audit2allow で出力された許可ルールが問題ないことを確認したら、続いて `-M` (Module) オプションで作成するポリシーモジュール名を指定します。
 ポリシーモジュール名は、自作であることがわかるように、モジュール名の先頭に my や custom などの文字列の追加が推奨されます。
-次のコマンドを実行すると、ポリシーモジュールパッケージ myrule.pp と、TE形式のルール muryle.te がファイルに保存されます。
+次のコマンドを実行すると、ポリシーモジュールパッケージ myrule.pp と、TE形式のルール myrule.te がファイルに保存されます。
 
 ```bash
 ~]# echo '<拒否ログ>' | audit2allow -M myrule
@@ -1148,7 +1126,7 @@ audit2allow と semodule で自作ポリシーモジュールを作成するこ�
 
 ポリシーモジュールパッケージはバイナリファイルのため、そのままでは中身を確認することができません。
 そこで /usr/libexec/selinux/hll/pp コマンドを使用して CIL 形式で表示することで中身を確認することができます。
-/usr/libexec/selinux/hll/pp コマンドの使い方は、.pp ファイルの内容を cat で表示して pp コマンドにパイプで渡すと、内容が CIL 形式で表示されます。
+pp コマンドの使い方は、.pp ファイルの内容を cat で表示して pp コマンドにパイプで渡すと、内容が CIL 形式で表示されます。
 ```bash
 ~]# cat myrule.pp | /usr/libexec/selinux/hll/pp
 
@@ -1160,8 +1138,14 @@ audit2allow と semodule で自作ポリシーモジュールを作成するこ�
 #### ポリシーモジュールの作成
 
 ポリシーモジュールは自分で作成することができます。
+ポリシーモジュールの作成から適用において、必要なファイルは以下の通りです。
+
+ 1. TE形式のポリシールール (.te)
+ 2. バイナリポリシーモジュール (.mod)
+ 3. ポリシーモジュールパッケージ (.pp)
+
 例えば、tomcat_t ドメインのプロセスが、外部とネットワーク通信をしたときに、Auditallowルール (許可してログも残す) を適用するというポリシーモジュールを作成してみます。
-まず、my_tomcat_policy.te を作成して内容を以下のように記述します。
+まず、tomcat_t ドメインにTCP/UDP通信をするための権限 tcp_socket, udp_socketを与えるために、my_tomcat_policy.te を作成して内容を以下のように書きます。
 
 my_tomcat_policy.te
 ```conf
@@ -1175,13 +1159,9 @@ require {
 auditallow tomcat_t self:{ tcp_socket udp_socket rawip_socket } *;
 ```
 
-作成したTEファイルは checkmodule コマンドと、semodule_package コマンドを使用して、ポリシーモジュールパッケージに変換します。
+作成したTEファイルは checkmodule コマンドと、semodule_package コマンドを使用して、ポリシーモジュールパッケージ (.pp) に変換します。
 
-```
-TE形式のポリシールール (.te) => バイナリポリシーモジュール (.mod) => ポリシーモジュールパッケージ (.pp)
-```
-
-TEファイルからポリシーモジュールパッケージに変換 (コンパイル) するには、以下のコマンドを順番に入力します。
+まず、TEファイルからポリシーモジュールパッケージに変換 (コンパイル) するには、以下のコマンドを順番に入力します。
 
 ```bash
 ~]# checkmodule -M -m -o my_tomcat_policy.mod my_tomcat_policy.te
@@ -1200,11 +1180,11 @@ TEファイルからポリシーモジュールパッケージに変換 (コン�
 SELinux のポリシールールには、主に Type (タイプ) と Attribute (属性) の2種類があります。
 Type はセキュリティコンテキストのタイプです。
 タイプの名前は、末尾が `_t` で終わるように命名規則で統一されています。
-例えば、末尾が `_exec_t` ならプロセスを起動するための実行ファイル (プログラム)、末尾が `_port_t` なら接続先のポートを表します。
+例えば、末尾が `_exec_t` ならプロセスを起動するための実行ファイル (プログラム)、末尾が `_port_t` なら接続先のポートに関するタイプです。
 
 Attribute は Type が持つ属性を表したものです。
 ルールで Attribute を使うことで、Type だけ異なる複数のルールを1つにまとめることができます。
-特定の Attribute に所属する Type の一覧を表示するには、seinfo コマンドの `-a` (Attribute) で属性を指定し、`-x` (Explain) で属性に所属するタイプの一覧を表示させます。
+seinfo コマンドの `-a` (Attribute) で属性を指定し、`-x` (Explain) で属性に所属するタイプの一覧を表示できます。
 
 ```bash
 ~]# seinfo -a initrc_domain -x
@@ -1232,7 +1212,7 @@ Type Attributes: 1
 ```
 
 逆に、特定の Type が所属する Attribute の一覧を表示することもできます。
-表示するには、`-t` (Type) でタイプを指定し、`-x` (Explain) でタイプが所属する属性の一覧を表示させます。
+`-t` (Type) でタイプを指定し、`-x` (Explain) でタイプが所属する属性の一覧を表示できます。
 
 ```bash
 ~]# seinfo -t init_t -x
@@ -1256,7 +1236,7 @@ Types: 1
 #### ポリシールールの検索
 
 sesearch コマンドは、SELinuxのポリシールール (アクセスベクタルール) を検索するためのツールです。
-まず、ポリシールールは、TE形式で記述すると1つのルールは以下のようなフォーマットになっています。
+ポリシールールはTE形式で記述することができ、1つのルールは以下のような形式で記述されます。
 ```
 rule_name source_type target_type : class perm_set (object_name);
 ```
