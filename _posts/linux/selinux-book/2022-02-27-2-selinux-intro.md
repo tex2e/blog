@@ -1267,8 +1267,8 @@ sesearch コマンドで上記のルールを検索するには、以下のオ�
 - `-c` : オブジェクトクラス (object Class) を指定して検索します
 - `-p` : アクションの権限 (Permission) を指定して検索します
 
+##### ポリシールールの検索例
 それぞれのオプションを使用した検索例を以下に示します。
-
 httpd が外部サーバの接続できるTCPポートの一覧を確認するために、httpd_t ドメインがTCP接続を許可するルール一覧を表示するときのコマンドは以下となります。
 ```bash
 ~]# sesearch -A -s httpd_t -c tcp_socket
@@ -1285,7 +1285,7 @@ httpd_t ドメインが tmp_t タイプのディレクトリにファイルを�
 ```bash
 ~]# sesearch -T -s httpd_t -t tmp_t -c file
 ```
-httpd_can_network_connect という Boolean の on/off で有効化/無効化されるルールの一覧を表示するときのコマンドは以下となります。
+Boolean の httpd_can_network_connect の on/off で有効化/無効化されるルールの一覧を表示するときのコマンドは以下となります。
 ```bash
 ~]# sesearch -A -b httpd_can_network_connect
 ```
@@ -1349,7 +1349,7 @@ SELinuxのポリシールールに違反するアクションが実行される�
 - permissive= : SELinuxがPermissiveで動作したか (検知したが拒否しないモードであったか)
 
 それでは実際の拒否ログを使いながら、ログの属性値を参考に、拒否ログを読み解くための手順について紹介します。
-まず、監査ログに記録された拒否ログは以下のような内容だとします。
+まず、監査ログには以下の拒否ログが出力されていたとします。
 ```
 type=AVC msg=audit(1558865501.958:282): avc:  denied  { write } for  pid=1647 comm="httpd" name="upload" dev="dm-0" ino=33584792 scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:httpd_sys_content_t:s0 tclass=dir permissive=0
 ```
@@ -1412,32 +1412,20 @@ type=AVC msg=audit(1558865501.958:282): avc:  denied  { write } for  pid=1647 co
 #### SELinuxによる拒否ログを見つける
 
 SELinuxの拒否ログは /var/log/audit/audit.log や /var/log/messages に出力されます。
-SELinuxに関するログを見つけるには「denied」や「SELinux is preventing」でgrepで抽出します。
-
-/var/log/audit/audit.log には「denied」というメッセージとともに拒否ログが記録されます。
-そのため、grepで検索する際は「denied」という文字列で検索します。
+拒否した場合、監査ログ /var/log/audit/audit.log には「denied」が記録されます。
+また、ログ /var/log/messages には「SELinux is preventing」が記録されます。
+そのため「denied」や「SELinux is preventing」の文字列で検索すれば拒否ログを見つけることができます。
 
 ```bash
 ~]# grep "denied" /var/log/audit/audit.log
 # または
 ~]# tail -f /var/log/audit/audit.log | grep "denied"
 ```
-ヒットする拒否ログの例：
-```
-type=AVC msg=audit(0000000000.639:792): avc:  denied  { read } for  pid=4635 comm="cat" name="example.txt" dev="dm-0" ino=33575049 scontext=staff_u:staff_r:staff_t:s0-s0:c0.c1023 tcontext=unconfined_u:object_r:admin_home_t:s0 tclass=file permissive=0
-```
-
-/var/log/messages には「SELinux is preventing」というメッセージとともに拒否ログが記録されます。
-そのため、grepで検索する際は「SELinux is preventing」という文字列で検索します。
 
 ```bash
 ~]# grep "SELinux is preventing" /var/log/messages
 # または
 ~]# tail -f /var/log/messages | grep "SELinux is preventing"
-```
-ヒットする拒否ログの例：
-```
-localhost setroubleshoot[4637]: SELinux is preventing /usr/bin/cat from read access on the file example.txt. For complete SELinux messages run: sealert -l e9c5f189-8574-4467-8c68-6d4c7b79b6bd
 ```
 
 
@@ -1452,7 +1440,7 @@ SELinuxのログ出力では、許可するがログも記録する Auditallow �
 ```
 
 Dontaudit ルールが有効になっていると、SELinuxが拒否してもログに出力されないため、デバッグ時の原因調査が困難になります。
-一般的には、影響の少ない拒否ログがログを埋め尽くさないように (ノイズが増えないように) Dontaudit ルールを有効にすべきですが、デバッグ時は無効化したいです。
+一般的には、影響の少ない拒否ログがログを埋め尽くさないように (ノイズが増えないように) Dontaudit ルールを有効にすべきですが、デバッグ時は無効化した方が良いです。
 Dontaudit ルールを無効にして拒否ログを出力させるには、semodule コマンドに `-D` (Disable dontaudit) と `-B` (Build) オプションの両方を入れて実行します。
 
 ```bash
