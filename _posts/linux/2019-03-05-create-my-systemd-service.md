@@ -10,7 +10,7 @@ comments:      true
 published:     true
 ---
 
-主に CentOS 7 での systemd のユニットファイルの作り方についてです。
+CentOS での systemd のユニットファイルの作り方についてです。
 自作サービスが定義できるので、`systemctl start myservice` のような使い方ができるようになります。
 
 /usr/lib/systemd/system/ はパッケージが提供するサービスのファイルを配置する場所で、
@@ -91,8 +91,8 @@ WantedBy=multi-user.target
 
 ### 自作ユニットファイルの作成
 
-1. まず実行ファイルを用意します（bash でも python でも何で書かれてあっても良い）
-2. ユニットファイルを /etc/systemd/system/name.service に作成します。nameはサービス名に置き換えます。
+1. まず実行ファイルを用意します（bash スクリプトや python コードでも何でも良いです）
+2. ユニットファイルを /etc/systemd/system/name.service に作成します (CentOS)。nameはサービス名に置き換えます。
 3. ユニットファイルに設定を書き込みます。
    ネットワーク関連のサービスなら network.target のユニットが起動した後に実行するので、
    以下のユニット設定例のようになります。
@@ -123,7 +123,7 @@ WantedBy=multi-user.target
 
 ### サンプルアプリケーション
 
-ここでは簡単なWebサーバをsystemctlで動かしたいと思います。
+ここではCentOSで簡単なWebサーバをsystemctlで動かしたいと思います。
 
 まず、ユニットファイル /etc/systemd/system/tinyhttpd.service は次のように定義します。
 
