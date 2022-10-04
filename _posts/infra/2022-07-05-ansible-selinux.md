@@ -41,20 +41,15 @@ disabled をしただけだと permissive モードになるため、コマン�
 
 ```bash
 $ ansible-playbook -i inventory.ini sample-playbook.yml
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Disable SELinux] *********************************************************
 [WARNING]: SELinux state temporarily changed from 'enforcing' to 'permissive'. State change will take effect
 next reboot.
 changed: [aws-rhel]
-
 TASK [Reboot] ******************************************************************
 changed: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0 
 ```

@@ -1,7 +1,7 @@
 ---
 layout:        book
-title:         "3. SELinuxの実践"
-menutitle:     "3. SELinux/SELinuxの実践"
+title:         "3. SELinux実践"
+menutitle:     "3. SELinux/SELinux実践"
 date:          2022-02-27
 category:      Linux
 cover:         /assets/cover14.jpg
@@ -12,12 +12,12 @@ latex:         false
 photoswipe:    true
 # sitemap: true
 # feed: true
-description:   "SELinux入門 第3章 SELinuxの実践"
+description:   "SELinux入門 第3章 SELinux実践"
 section_number: 3
 sections:
-  - [./1-access-control, SELinux/アクセス制御の仕組み]
-  - [./2-selinux-intro, SELinuxの特徴と使い方]
-  - [./3-selinux-practice, SELinuxの実践]
+  - [./1-access-control, セキュリティとアクセス制御]
+  - [./2-selinux-intro, SELinux入門]
+  - [./3-selinux-practice, SELinux実践]
 ---
 
 
@@ -33,7 +33,7 @@ SELinuxが有効化されるためには、以下の条件を満たすこと必�
 #### ブートローダーの設定ファイル
 
 まず、ブートローダーの設定でSELinuxが有効になるかを確認するために、/boot/grub2/grubenv の内容を確認します。
-以下のコマンドを実行して出力が表示された場合、ブートローダーの設定でSELinuxが無効化されていることがわかります。
+以下のコマンドを実行して出力が表示された場合、ブートローダーの設定でSELinuxが無効化されています。
 
 ```bash
 ~]# grep -E 'kernelopts=(\S+\s+)*(selinux=0|enforcing=0)+\b' /boot/grub2/grubenv

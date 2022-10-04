@@ -47,18 +47,13 @@ copy モジュールでは、以下の2種類のコピー方法があります�
 $ cat upload/hosts
 127.0.0.1  www.example.local
 $ ansible-playbook -i inventory.ini sample-playbook.yml     
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Copy file from remote] ***************************************************
 changed: [aws-rhel]
-
 TASK [Copy file from local] ****************************************************
 changed: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
 ```

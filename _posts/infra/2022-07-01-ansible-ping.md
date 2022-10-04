@@ -31,15 +31,11 @@ Ansible Playbookでpingする場合は以下のように書きます。
 
 ```bash
 $ ansible-playbook -i inventory.ini sample-playbook.yml 
-
 PLAY [servers] *****************************************************************
-
 TASK [Gathering Facts] *********************************************************
 ok: [aws-rhel]
-
 TASK [Ping Connection] *********************************************************
 ok: [aws-rhel]
-
 PLAY RECAP *********************************************************************
 aws-rhel                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
 ```
