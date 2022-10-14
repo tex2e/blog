@@ -15,12 +15,10 @@ photoswipe:    false
 
 AWS CLIで起動中のEC2インスタンスID一覧を表示し、EC2を起動・停止する方法について説明します。
 
-### AWS CLIで起動中のEC2インスタンスID一覧を表示
+### AWS CLIで起動中のEC2インスタンスID一覧を表示 (describe-instances)
 
 AWS CLIで起動中のEC2インスタンス一覧を表示するには、awsコマンドの ec2 describe-instances サブコマンドを実行します。
 オプション --filter で状態名（instance-state-name）が起動中（running）のEC2だけを出力します。
-
-実行コマンド (describe-instances)：
 
 ```bash
 $ aws ec2 describe-instances --filter "Name=instance-state-name,Values=running"
@@ -40,23 +38,19 @@ $ aws ec2 describe-instances --filter "Name=instance-state-name,Values=running"
                     ...
 ```
 
-### AWS CLIでEC2を起動
+### AWS CLIでEC2を起動 (start-instances)
 
 AWS CLIでEC2インスタンスを起動するには、awsコマンドの ec2 start-instances サブコマンドを実行します。
 --instance-ids でEC2インスタンスIDを指定します。
-
-実行コマンド (start-instances)：
 
 ```bash
 $ aws ec2 start-instances --instance-ids i-00123456789abcdef
 ```
 
-### AWS CLIでEC2を停止
+### AWS CLIでEC2を停止 (stop-instances)
 
 AWS CLIでEC2インスタンスを停止するには、awsコマンドの ec2 stop-instances サブコマンドを実行します。
 --instance-ids でEC2インスタンスIDを指定します。
-
-実行コマンド (stop-instances)：
 
 ```bash
 $ aws ec2 stop-instances --instance-ids i-00123456789abcdef
