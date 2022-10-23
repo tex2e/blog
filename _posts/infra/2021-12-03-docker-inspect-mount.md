@@ -1,10 +1,10 @@
 ---
 layout:        post
-title:         "起動しているDockerコンテナのマウントを調査する"
+title:         "Dockerコンテナにマウントしているパスの一覧を表示する"
 date:          2021-12-03
-category:      Linux
+category:      Infrastructure
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /linux/docker-inspect-mount
 comments:      true
 published:     true
 latex:         false
