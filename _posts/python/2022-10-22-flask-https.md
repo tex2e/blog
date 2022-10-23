@@ -14,7 +14,7 @@ photoswipe:    false
 ---
 
 証明書と秘密鍵を使ってFlaskでHTTPSサーバを起動させる方法について説明します。
-まず、証明書の作成は [サーバ名がIPアドレスの場合の証明書作成 \| 晴耕雨読](http://localhost:4000/blog/protocol/certificate-with-ip-addr) などを参考に作成してください。
+まず、証明書の作成は [サーバ名がIPアドレスの場合の証明書作成](../protocol/certificate-with-ip-addr) などを参考に作成してください。
 以下ではWebサーバにIPアドレスでアクセスすることを前提に説明します。
 
 まず、テスト用FlaskサーバをPythonで書き、main.pyに保存します。
