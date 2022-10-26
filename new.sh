@@ -32,6 +32,8 @@
       category="Infrastructure" ;;
     rfc )
       category="RFC" ;;
+    selinux )
+      category="SELinux" ;;
     crypto )
       category="Crypto"
       cover="cover4.jpg"

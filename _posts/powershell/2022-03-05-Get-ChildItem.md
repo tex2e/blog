@@ -27,6 +27,14 @@ Get-ChildItem -Recurse -Filter "*.txt"
 Get-ChildItem -Recurse -Directory
 ```
 
+#### find . -exec (結果に対する処理)
+見つけたファイルに対して処理を行う `find . -exec echo {} \;` に相当するPowerShellは、Get-ChildItem と ForEach-Object を組み合わせて使用します。
+ForEach-Object は入力に対する繰り返し処理をしてくれます。
+以下は、見つけたファイルのフルパスを表示するためのコマンド例です。
+```powershell
+Get-ChildItem -Recurse -Filter "*.csv" | foreach { Write-Output $_.FullName }
+```
+
 #### find . -print (表示方法)
 見つけたファイルをパスだけを表示する `find . -print` に相当するPowerShellは、Get-ChildItem と `-Name` オプションを使用します。
 ```powershell
@@ -44,14 +52,6 @@ Get-ChildItem -Recurse -Depth 3
 Where-Object は入力に対するフィルター処理をしてくれます。
 ```powershell
 Get-ChildItem -Recurse | where { $_.LastWriteTime -gt (Get-Date).AddMinutes(-5) }
-```
-
-#### find . -exec (結果に対する処理)
-見つけたファイルに対して処理を行う `find . -exec echo {} \;` に相当するPowerShellは、Get-ChildItem と ForEach-Object を組み合わせて使用します。
-ForEach-Object は入力に対する繰り返し処理をしてくれます。
-以下は、見つけたファイルのフルパスを表示するためのコマンド例です。
-```powershell
-Get-ChildItem -Recurse | foreach { Write-Output $_.FullName }
 ```
 
 #### find . \| grep -E (結果のフィルタリング)
