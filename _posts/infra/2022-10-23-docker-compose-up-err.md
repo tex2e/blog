@@ -4,7 +4,7 @@ title:         "Docker-compose up時のエラー「Couldn't connect to Docker da
 date:          2022-10-23
 category:      Infrastructure
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /infrastructure/docker-compose-up-error
 comments:      true
 published:     true
 latex:         false

@@ -4,7 +4,7 @@ title:         "Docker-compose exec時のエラー「the input device is not a T
 date:          2022-10-24
 category:      Infrastructure
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /infrastructure/docker-compose-exec-error
 comments:      true
 published:     true
 latex:         false
