@@ -31,7 +31,9 @@ $ openssl x509 -text -in server.crt -noout
 - サブジェクト："/C=国名/ST=都道府県名/L=市町村名/O=組織名/CN=コモンネーム(ドメイン名)"
 - サブジェクト代替名：subjectAltName = DNS:ドメイン名, IP:サーバのIPアドレス
 
+<!-- markdown-link-check-disable -->
 Webサーバ側に秘密鍵、クライアント側に証明書をインストールした状態でWebページ (例: https://192.168.11.2/) にアクセスすると証明書の検証に失敗せずに、HTTPS通信ができます。
+<!-- markdown-link-check-enable-->
 
 IPアドレスに直接アクセスする場合や、ドメイン名(FQDN)でアクセスする場合について、SANがない証明書を利用したHTTPSサーバをChromeでアクセスすると ERR_CERT_AUTHORITY_INVALID のエラーが表示され、証明書の検証に失敗します。
 [RFC 2818 - HTTP Over TLS](https://datatracker.ietf.org/doc/html/rfc2818) に証明書の検証におけるドメイン名の比較にコモンネーム (Common Name; CN) ではなく、サブジェクト代替名 (Subject ALternative Name; SAN) を使うべき と書かれており、Chromeはこれに準拠した実装になったためです。

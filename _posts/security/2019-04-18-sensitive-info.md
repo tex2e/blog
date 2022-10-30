@@ -31,7 +31,7 @@ JIS Q 15001:2006 個人情報保護マネジメントシステム - 要求事項
 
 [^1]: [センシティブな情報をハードコードしない -- JPCERT/CC](https://www.jpcert.or.jp/java-rules/msc03-j.html)
 [^2]: [JIS Q 15001:2006 個人情報保護マネジメントシステム -- 要求事項](https://kikakurui.com/q/Q15001-2006-01.html)
-[^docker-hub-user-notification]: Docker が不正アクセスを受けたときの記事 [Unauthorized access to Docker Hub database](https://success.docker.com/article/docker-hub-user-notification) では "sensitive data may have been exposed. Data includes usernames and hashed passwords" と書かれており、パスワードはハッシュ化されていてもセンシティブな情報であるという認識
+[^docker-hub-user-notification]: Docker が不正アクセスを受けたときの記事 [Docker - Unauthorized access to Docker Hub database](https://success.docker.com/article/docker-hub-user-notification) では "sensitive data may have been exposed. Data includes usernames and hashed passwords" と書かれており、パスワードはハッシュ化されていてもセンシティブな情報であるという認識
 
 ---
 

@@ -235,8 +235,15 @@ int main()
 }
 ```
 
+以上です。
 
+<!--
 #### 参考
+-->
 
+<!-- markdown-link-check-disable -->
+<!--
 - [C dynamic memory allocation](https://fresh2refresh.com/c-programming/c-dynamic-memory-allocation/)
 - [C Buffer manipulation functions](https://fresh2refresh.com/c-programming/c-buffer-manipulation-function/)
+-->
+<!-- markdown-link-check-enable-->

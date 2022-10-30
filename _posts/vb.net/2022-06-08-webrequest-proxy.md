@@ -17,6 +17,7 @@ VB.NETでProxyを経由してPOSTリクエストを送信する方法につい�
 検証環境は .NET Framework 3.5 です。
 以下は、ローカルで起動しているプロキシサーバを経由して、HTTPサーバにjsonデータを送信する例です。
 
+<!-- markdown-link-check-disable -->
 ```vb
 Module Module1
 
@@ -54,6 +55,7 @@ Module Module1
 
 End Module
 ```
+<!-- markdown-link-check-enable-->
 
 注意点の1つ目は設定する順番で、.Proxy の設定をしてから .GetRequestStream() を呼び出す必要があります。
 GetRequestStream() 後にWebProxyオブジェクトを設定すると、「System.InvalidOperationException: 要求が送信された後にこの操作を実行することはできません。」とエラーが表示されます [^1]。
@@ -66,4 +68,6 @@ GetRequestStream() 後にWebProxyオブジェクトを設定すると、「Syste
 
 ---
 
+<!-- markdown-link-check-disable -->
 [^1]: [https://docs.microsoft.com/ja-jp/dotnet/api/system.net.httpwebrequest.proxy?view=netframework-3.5](https://docs.microsoft.com/ja-jp/dotnet/api/system.net.httpwebrequest.proxy?view=netframework-3.5)
+<!-- markdown-link-check-enable-->

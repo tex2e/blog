@@ -60,8 +60,10 @@ User   RelyingParty    IDProvider   UserInfo
 
 #### 事前準備
 
+<!-- markdown-link-check-disable -->
 - Google Cloud Consoleにて新規プロジェクトを作成し、公開ステータスを「本番」、認証情報のOAuth 2.0クライアントIDを作成し、承認済みのリダイレクトURIを設定します（今回は http://127.0.0.1:8000/callback）。
 - `**********` には与えられたIDやシークレットや通信内容に応じて設定します。
+<!-- markdown-link-check-enable-->
 
 ### PythonとFlaskによる実装
 
