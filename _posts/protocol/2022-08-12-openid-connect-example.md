@@ -143,7 +143,17 @@ https://www.googleapis.com/oauth2/v4/token
   "iat": 1660020881,
   "exp": 1660024481
 }
+IDトークンの署名データ
 ```
+
+IDトークン (id_token) のJWTには以下の情報が含まれています。
+- sub : エンドユーザを識別するためのID (subject)
+- iat : 発行日時 (issued at)
+- exp : 有効期限 (expiration time)
+- nonce : 認証リクエストに含まれるnonceと同じ値が含まれる。乱数を入れることでリプレイ攻撃を防ぐことができる
+- aud : リライングパーティのクライアントID (audience)
+- iss : IDトークンの発行者 (issuer)
+- IDトークンの署名データ（リライングパーティがIDトークンの署名を検証することで、IDトークン入れ替え攻撃を防ぐことができる）
 
 #### (5) UserInfoエンドポイントへのアクセス
 取得したアクセストークンを利用して、ユーザ情報を取得します。
