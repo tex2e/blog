@@ -158,6 +158,8 @@ https://openidconnect.googleapis.com/v1/userinfo
   "sub": "104650147220769694403",
   "name": "tex2e",
   "given_name": "tex2e",
+  "email": "tex2eq@gmail.com",
+  "email_verified": true,
   "picture": "https://lh3.googleusercontent.com/a-/AFdZucpyZ9viFBC0DmLcdDYiXj78GpmnTwSRLKKjrb2_\u003ds96-c",
   "locale": "ja"
 }
@@ -169,6 +171,10 @@ pictureのURLは一定時間経過すると400エラーになる点に注意が�
 <img src="{{ site.baseurl }}/media/post/protocol/openid-connect-flow3.png" />
 <figcaption>Googleログイン画面</figcaption>
 </figure>
+
+OpenID Connectの検証に使用したWebページの実装をGitHubに上げましたので、必要に応じて参照ください。
+
+[tex2e/openid-connect-example: Google OAuth Example (For Study Purpose Only)](https://github.com/tex2e/openid-connect-example)
 
 以上です。
 
