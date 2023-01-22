@@ -124,9 +124,9 @@ Alcohol use and burden for 195 countries and territories, 1990–2016: a systema
 
 ### アルコールに安全な飲酒量は存在しない
 
-[Canada’s Guidance on Alcohol and Health \| Canadian Centre on Substance Use and Addiction](https://ccsa.ca/canadas-guidance-alcohol-and-health)
+[Canada’s Guidance on Alcohol and Health \| Canadian Centre on Substance Use and Addiction](https://ccsa.ca/canadas-guidance-alcohol-and-health) (2023)
 
-カナダのアルコール・薬物乱用対策センター(CCSA)は、多くのカナダ人の飲酒量が既に危険水域にあるとし、アルコールに安全な量というものはなく、週に3杯以上の摂取は危険であると呼びかけました。
+カナダのアルコール・薬物乱用対策センター(CCSA)は、多くのカナダ人の飲酒量が既に危険水域にあるとし、アルコールに安全な量というものはなく、週に3杯以上の摂取はがんを発病するリスクがあり、危険であると呼びかけました。
 
 > There is a continuum of risk associated with weekly alcohol use where the risk of harm is:
 + 0 drinks per week — Not drinking has benefits, such as better health, and better sleep.
