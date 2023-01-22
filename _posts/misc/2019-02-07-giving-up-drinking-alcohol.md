@@ -16,6 +16,7 @@ published:     true
 飲酒を推奨する論文は酒造メーカーから多額の研究資金が流れているので信用してはいけない（地球温暖化はないと主張する論文の背後には、石油会社がいるのと同じ構図）。
 
 <br>
+
 ### お酒を飲むと海馬が縮む
 
 [Moderate alcohol consumption as risk factor for adverse brain outcomes and cognitive decline: longitudinal cohort study](https://www.bmj.com/content/357/bmj.j2353) (2017)
@@ -39,6 +40,7 @@ published:     true
 
 
 <br>
+
 ### Jカーブには禁酒者バイアスが含まれている
 
 [Is moderate drinking not so good for you after all?](https://www.cbsnews.com/news/is-moderate-drinking-not-so-good-for-health-after-all/) (2016)
@@ -57,6 +59,7 @@ CBS Newsが書いた記事で、適量飲酒が体に良いとしている87の�
 
 
 <br>
+
 ### Jカーブ効果は嘘
 
 [Do “Moderate” Drinkers Have Reduced Mortality Risk? A Systematic Review and Meta-Analysis of Alcohol Consumption and All-Cause Mortality： Journal of Studies on Alcohol and Drugs： Vol 77, No 2](https://www.jsad.com/doi/abs/10.15288/jsad.2016.77.185) (2016)
@@ -74,6 +77,7 @@ CBS Newsが書いた記事で、適量飲酒が体に良いとしている87の�
 
 
 <br>
+
 ### 適量飲酒であっても脳卒中のリスクは高まる
 
 Conventional and genetic evidence on alcohol and vascular disease aetiology： a prospective study of 500 000 men and women in China - The Lancet (2019)
@@ -89,6 +93,7 @@ Conventional and genetic evidence on alcohol and vascular disease aetiology： a
 
 
 <br>
+
 ### お酒を飲むとガンや病気のリスクが上がる
 
 Alcohol use and burden for 195 countries and territories, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016 (2018)
@@ -102,6 +107,7 @@ Alcohol use and burden for 195 countries and territories, 1990–2016: a systema
 
 
 <br>
+
 ### アルコールは幹細胞DNAに不可逆なダメージをもたらす
 
 [Alcohol and endogenous aldehydes damage chromosomes and mutate stem cells](https://www.nature.com/articles/nature25154) (2018)
@@ -111,3 +117,27 @@ Alcohol use and burden for 195 countries and territories, 1990–2016: a systema
 > Our study highlights that not being able to process alcohol effectively can lead to an even higher risk of alcohol-related DNA damage and therefore certain cancers.
 
 - アルコールの処理が効率よくできないと、DNAの損傷リスクが高まり、癌につながる。
+
+
+
+<br>
+
+### アルコールに安全な飲酒量は存在しない
+
+[Canada’s Guidance on Alcohol and Health \| Canadian Centre on Substance Use and Addiction](https://ccsa.ca/canadas-guidance-alcohol-and-health)
+
+カナダのアルコール・薬物乱用対策センター(CCSA)は、多くのカナダ人の飲酒量が既に危険水域にあるとし、アルコールに安全な量というものはなく、週に3杯以上の摂取は危険であると呼びかけました。
+
+> There is a continuum of risk associated with weekly alcohol use where the risk of harm is:
++ 0 drinks per week — Not drinking has benefits, such as better health, and better sleep.
++ 2 standard drinks or less per week — You are likely to avoid alcohol-related consequences for yourself or others at this level.
++ 3–6 standard drinks per week — Your risk of developing several types of cancer, including breast and colon cancer, increases at this level.
++ 7 standard drinks or more per week — Your risk of heart disease or stroke increases significantly at this level.
+Each additional standard drink radically increases the risk of alcohol-related consequences.
+>
+> Consuming more than 2 standard drinks per occasion is associated with an increased risk of harms to self and others, including injuries and violence.
+When pregnant or trying to get pregnant, there is no known safe amount of alcohol use.
+When breastfeeding, not drinking alcohol is safest.
+No matter where you are on the continuum, for your health, less alcohol is better.
+
+[安全なアルコール量というのは存在しないので商品に「がん」の警告ラベルを貼る時が来たと専門家が主張 - GIGAZINE](https://gigazine.net/news/20230119-alcohol-guidance-cancer-risk-labels/)
