@@ -1,6 +1,7 @@
 #!/bin/bash -eu
 
 # /opt/homebrew/opt/ruby/bin/bundle install
+# /opt/homebrew/opt/ruby/bin/bundle update
 
 {
   BUNDLE=bundle
