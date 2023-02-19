@@ -431,3 +431,10 @@ $$
 | 指数関数 $e^{\alpha t}$ | $e^{\alpha t}$ を含む | $x = A\,t\,e^{\alpha t}$
 | 三角関数 $\cos \alpha t$ または $\sin \alpha t$ | $R(t)$ を含まない | $x = A\cos\alpha t + B\sin\alpha t$
 | 三角関数 $\cos \alpha t$ または $\sin \alpha t$ | $R(t)$ を含まない | $x = t(A\cos\alpha t + B\sin\alpha t)$
+
+
+### 参考文献
+
+- [新微分積分2 - 大日本図書](https://amzn.to/3XJUwds)
+
+<a href="https://www.amazon.co.jp/%E6%96%B0%E5%BE%AE%E5%88%86%E7%A9%8D%E5%88%862-%E9%AB%98%E9%81%A0-%E7%AF%80%E5%A4%AB/dp/4477026854?pd_rd_w=7vwav&content-id=amzn1.sym.918446e7-72f4-48c7-a672-af3b6ace2b19&pf_rd_p=918446e7-72f4-48c7-a672-af3b6ace2b19&pf_rd_r=HHQ9GQC3E28V5VQ8G36T&pd_rd_wg=5aruB&pd_rd_r=3a8cb3f3-57ef-42ea-a882-24c9de7df7e4&pd_rd_i=4477026854&psc=1&linkCode=li3&tag=tex2e-22&linkId=79773befe7aca9676a40d9b49f8b515b&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4477026854&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=tex2e-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=tex2e-22&language=ja_JP&l=li3&o=9&a=4477026854" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
