@@ -24,4 +24,4 @@ syntaxhighlight: false
 -----
 
 [^1]: William Stallings "CRYPTOGRAPHY AND NETWORK SECURITY PRINCIPLES AND PRACTICE, SEVENTH EDITION, GLOBAL EDITION" p. 147
-[^2]: 「アーベル群」は「可換群」と同等です。
+[^2]: 「アーベル群」は 「可換群」と同等です。
