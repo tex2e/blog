@@ -45,14 +45,15 @@ Please make sure you have the correct access rights
 
 ### 解決方法
 
-焦って、自分のローカルの鍵ペアを再作成しても、中間者攻撃への
+焦って、自分のローカルの鍵ペアを再作成しても、中間者攻撃への対策にはなりません。
+まずは、GitHubのSSH鍵のフィンガープリントを確認する必要があります。
 
 GitHubのSSH鍵のフィンガープリントは、GitHubの公式の以下のページに書かれています。
 
 [GitHub's SSH key fingerprints - GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)
 
 2023年3月時点では、GitHubが対応している署名アルゴリズムは RSA、ECDSA、Ed25519 の3種類があります。
-そのため、以下の内容を `~/.ssh/known_hosts` に貼り付けます。
+そのため、以下の内容を ~/.ssh/known_hosts に貼り付けます。
 さらに、過去に接続した際のgithub.comのフィンガープリントの行は削除しておきます。
 
 ```txt
@@ -61,6 +62,7 @@ github.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAA
 github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr/C56SJMy/BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9/hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS/YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4/WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1/wsjk=
 ```
 
+~/.ssh/known_hosts に記載することで、ローカルのフィンガープリントの情報と、接続先サーバの公開鍵のフィンガープリントが一致するようになります。
 この状態で、git pull や git fetch してみて問題なければ解決です。
 
 以上です。
