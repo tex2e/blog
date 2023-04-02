@@ -20,6 +20,7 @@ import time
 import urllib.parse
 from selenium import webdriver  # pip install selenium
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.by import By
 
 class Translator:
 
@@ -44,7 +45,7 @@ class Translator:
         time.sleep(wait_time)
 
         # 翻訳結果を抽出する
-        ja = browser.find_element_by_css_selector("span[jsname='W297wb']")
+        ja = browser.find_element_by(By.CSS_SELECTOR, "span[jsname='W297wb']")
         return ja.text
 
     def quit(self):
