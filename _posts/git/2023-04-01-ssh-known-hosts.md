@@ -45,7 +45,17 @@ Please make sure you have the correct access rights
 
 ### 解決方法
 
-焦って、自分のローカルの鍵ペアを再作成しても、中間者攻撃への対策にはなりません。
+#### 1. 対象ドメインのフィンガープリント情報の削除
+
+まずは、~/.ssh/known_hosts からSSH接続時の github.com の公開鍵のフィンガープリントの情報を削除します。
+ssh-keygen コマンドの -R オプションで、対象のドメインに関する情報を削除することができます。
+```
+ssh-keygen -f ~/.ssh/known_hosts -R "github.com"
+```
+
+#### 2. GitHubのフィンガープリントをknown_hostsに記載する
+
+次に、焦って、自分のローカルの鍵ペアを再作成しても、中間者攻撃への対策にはなりません。
 まずは、GitHubのSSH鍵のフィンガープリントを確認する必要があります。
 
 GitHubのSSH鍵のフィンガープリントは、GitHubの公式の以下のページに書かれています。
@@ -54,7 +64,6 @@ GitHubのSSH鍵のフィンガープリントは、GitHubの公式の以下の�
 
 2023年3月時点では、GitHubが対応している署名アルゴリズムは RSA、ECDSA、Ed25519 の3種類があります。
 そのため、以下の内容を ~/.ssh/known_hosts に貼り付けます。
-さらに、過去に接続した際のgithub.comのフィンガープリントの行は削除しておきます。
 
 ```txt
 github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
