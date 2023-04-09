@@ -20,6 +20,9 @@
     },
     {
       "pattern": "\\.pdf$"
+    },
+    {
+      "pattern": "^https://amzn.to"
     }
   ],
   "replacementPatterns": [
