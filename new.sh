@@ -2,6 +2,10 @@
 
 # /opt/homebrew/opt/ruby/bin/bundle install
 
+touch_index_html() {
+  sleep 60 && touch index.html
+}
+
 {
   if [[ $# -ne 2 ]]; then
     echo "ArguemntError: wrong number of arguments (given $#, expected 2)"
@@ -75,9 +79,12 @@ photoswipe:    false
 preface
 EOS
 
-  BUNDLE=bundle
-  if [ -f /opt/homebrew/opt/ruby/bin/bundle ]; then
-    BUNDLE=/opt/homebrew/opt/ruby/bin/bundle
-  fi
-  "$BUNDLE" exec jekyll build --future
+  # BUNDLE=bundle
+  # if [ -f /opt/homebrew/opt/ruby/bin/bundle ]; then
+  #   BUNDLE=/opt/homebrew/opt/ruby/bin/bundle
+  # fi
+  # "$BUNDLE" exec jekyll build --future
+
+  touch index.html
+  touch_index_html &
 }
