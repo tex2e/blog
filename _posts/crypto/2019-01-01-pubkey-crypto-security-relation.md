@@ -35,7 +35,7 @@ photoswipe:    true
 - **識別不可能性** (Indistinguishability; **IND**)：暗号文 $m_0, m_1$ が平文 $c_0, c_1$ のどちらを暗号化したものか識別できない[^indistinguishability]
 - **頑強性** (Non-Malleability; **NM**)：暗号文が与えられたとき、ある関係性を持った別の暗号文の生成ができない[^Malleability]
 
-[^IPUSIRON]: IPUSIRON『暗号技術のすべて』翔泳社 2018, pp.230-241
+[^IPUSIRON]: IPUSIRON『[暗号技術のすべて](https://amzn.to/3GujB6r)』翔泳社 2018, pp.230-241
 [^attack_models]: [Attack model (Wikipedia)](https://en.wikipedia.org/wiki/Attack_model)
 [^Malleability]: [Malleability -- cryptography (Wikipedia)](https://en.wikipedia.org/wiki/Malleability_%28cryptography%29)
 [^qiita]: [Pythonで暗号：IND-CCA2とRSA-OAEP](https://qiita.com/tibigame/items/8c49fee0fff620f69888)
