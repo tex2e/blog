@@ -120,6 +120,10 @@ CISSPとして認定されるには4〜5年の実務経験が必要なのです�
 
 ### 参考文献
 
-- [CISSP に挑戦した話(再投稿) – morihi-soc](https://www.morihi-soc.net/?p=83)
-- [エンジニア経験ゼロの文系ギャルが「CISSP®認定試験」を受ける - ラック・セキュリティごった煮ブログ](https://devblog.lac.co.jp/entry/20220117)
-- [(ISC)² Japan - Computer Based Testing(CBT)試験](https://japan.isc2.org/examination_application.html)
+- 本
+  - [新版 CISSP CBK公式ガイドブック](https://amzn.to/3nH0Dmw)
+  - [CISSP公式問題集](https://amzn.to/3U9pP1q)
+- サイト
+  - [CISSP に挑戦した話(再投稿) – morihi-soc](https://www.morihi-soc.net/?p=83)
+  - [エンジニア経験ゼロの文系ギャルが「CISSP®認定試験」を受ける - ラック・セキュリティごった煮ブログ](https://devblog.lac.co.jp/entry/20220117)
+  - [(ISC)² Japan - Computer Based Testing(CBT)試験](https://japan.isc2.org/examination_application.html)
