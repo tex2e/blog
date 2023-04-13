@@ -26,7 +26,7 @@ Ansible でファイルに設定の行を追加する場合は、ansible.builtin
 - hosts: servers
   tasks:
   - name: add IP to /etc/hosts
-    become: yes
+    become: true
     ansible.builtin.lineinfile:
       path: /etc/hosts
       regexp: '^172.17.0.1'

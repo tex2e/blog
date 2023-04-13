@@ -30,14 +30,14 @@ echo -e "n\np\n1\n\n\nw\n" | fdisk /dev/xvdb
   # すでに設定済みの場合は実行しない。
 
   - name: Check partition
-    become: yes
+    become: true
     ansible.builtin.shell:
       fdisk -l | grep xvdb
     register: fdisk_l_grep_xvdb
     changed_when: False
 
   - name: Set partition
-    become: yes
+    become: true
     ansible.builtin.shell:
       echo -e "n\np\n1\n\n\nt\n8e\nw\n" | fdisk /dev/xvdb
     when: not 'Linux LVM' in fdisk_l_grep_xvdb

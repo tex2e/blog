@@ -30,7 +30,7 @@ copy モジュールでは、以下の2種類のコピー方法があります�
   tasks:
   - name: Copy file from remote    <--(A)
     ansible.builtin.copy:
-      remote_src: yes
+      remote_src: true
       src: /etc/hosts
       dest: /home/ec2-user/tmp/
 
@@ -38,7 +38,7 @@ copy モジュールでは、以下の2種類のコピー方法があります�
     ansible.builtin.copy:
       src: ./upload/hosts
       dest: /home/ec2-user/tmp/
-      backup: yes
+      backup: true
 ```
 
 実行結果：
