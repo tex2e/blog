@@ -13,14 +13,15 @@ Mako(tex2e)の技術系ブログです。
 - Math Engine: [**KaTeX**](https://katex.org/)
 
 #### 新規記事の作成
-./new.sh を使って新規記事の作成をします。
-カテゴリ名は /_posts 以下のディレクトリ名にします (例 : python)。
-カテゴリ名の最初を大文字にしたものが、記事に埋め込まれます。
+./new.sh で新規記事を作成します。
+カテゴリ名は /_posts 以下のディレクトリ名にします。
+以下はPythonカテゴリに「print-helloworld.md」というMarkdownファイルを作成する例です。
 ```
-./new.sh <category> <postname>
+./new.sh python print-hellowolrd
 ```
 
-ページの設定用変数：
+新規作成するとページ上部のメタデータ設定用の変数が自動生成されます。
+各変数は次の意味を持ちます。
 - `cover: /assets/cover1.jpg` : ヘッダー画像
 - `redirect_from: /PATH` : 変更元のPATHからこのページにリダイレクトする
 - `comments: true` : Disqusによるコメント投稿を有効にする
@@ -31,57 +32,60 @@ Mako(tex2e)の技術系ブログです。
 - `feed: false` : feed.xmlにリンクを追加しない (RSSで更新情報を知らせない)
 
 #### 固定ページの作成
-/_pages 以下にmdファイルを作成します。
-ページ設定で `permalink: /PATH` と書くことで、そのPATHの場所にページを配置することができます。
+/_pages 以下にMarkdownファイルを作成します。
+各固定ページのメタデータの設定で `permalink: /PATH` と書くことで、指定したパスにページを配置できます。
 
 #### サーバの起動
 ./server.sh を使ってサーバの起動をします。
-Rubyを新しくインストールした際は `bundle install` する必要があります。
+Rubyを新しくインストールした際は `bundle install` の実行が必要です。
 ```
 ./server.sh
 ```
 
-開発用のオプションとして、次を有効にしています：
+上記コマンドの内部でjekyllコマンドを呼ぶ際に、以下の開発用のオプションを有効にしています：
 - `--incremental` (`-I`) : 差分だけをビルドするので、ビルド時間が高速化されます
 - `--livereload` : ページが編集されたら自動的にブラウザも更新します (ライブリロード)
 - `--future` : 公開の日付が未来になっている記事も公開します
 
-また、インクリメンタルビルドが有効になっている関係で、時々サイト生成時にリンクが正しくない場合が発生します。その時に、強制的に再ビルドさせたい場合は、サブコマンドで `build` または `re` を指定して実行します。
-
-```
-./server.sh build
-```
-
+<br>
 
 ### 環境構築手順
-Ubuntu, WSL を使用する場合：
+WSL (Ubuntu) を使用する場合：
+1. Windows Subsystem for Linuxを有効化し、Ubuntuをインストール
+2. Ubuntuで以下コマンドを実行
 ```
 sudo apt install build-essential git ruby ruby-dev zlib1g-dev
 gem install bundler
 git clone git@github.com:tex2e/blog.git
 cd blog
 bundle install
+bundle update   # バージョンアップ作業時
 ```
 
-脆弱性対応のためにバージョンアップするときは、次のコマンドで対応します。
+Windows を使用する場合：
+1. RubyInstallerでインストール
+2. 再起動（環境変数PATHにruby, gem, bundleなどのパスを追加）
+3. PowerShellで以下コマンドを実行
 ```
-bundle update
+git clone git@github.com:tex2e/blog.git
+cd blog
+bundle install
 ```
 
-#### alias
-blogの環境でエディタとブラウザの起動から、サーバを立ち上げる処理までをする `blog` コマンドを定義しておくと、すぐに記事が書けて便利です。
+#### Alias
+エディタ起動、ブラウザ起動、Webサーバを立ち上げる処理をまとめた `blog` コマンドを定義しておくと、すぐに記事が書けて便利です。
 ```
 alias blog="cd ~/path/to/blog; open http://localhost:4000/blog/; ./server.sh &"
 ```
 
-#### latexによる画像作成
+#### LaTeXによる画像作成
 事前に latex + standalone の環境を構築します（参照：[texlive2020(basic)のインストール on WSL](https://tex2e.github.io/blog/latex/texlive2020-in-wsl)）。
 その上で、ImageMagickをインストールします。
 ```
 sudo apt-get install imagemagick
 ```
 
-ImageMagickは脆弱性への対策としてデフォルトではPDFが入力できませんが、入力PDFは自分で作成したもののみを使用するため、ImageMagickのポリシーを変更します。
+ImageMagickは脆弱性への対策としてデフォルトではPDFが入力できませんが、入力PDFは自分で作成したものだけを使用するとし、ImageMagickのポリシーを変更します。
 /etc/ImageMagick-6/policy.xml のポリシーを変更して、PDFをpngに変換できるようにします。
 ```
 <policymap>
@@ -122,6 +126,8 @@ grep -rl 'cover:         /assets/cover1.jpg' _posts/python | xargs sed -i "" 's|
 
 また、新規記事作成時に使用する ./new.sh の中の変数 cover を引数の directory によって変える処理も追加します。
 
+<br>
+
 ### GitHub Action
 
 #### リンク切れチェック
@@ -135,6 +141,8 @@ grep -rl 'cover:         /assets/cover1.jpg' _posts/python | xargs sed -i "" 's|
 - [sample](https://example.com)
 <!-- markdown-link-check-enable-->
 ```
+
+<br>
 
 ### jekyllDecent
 
