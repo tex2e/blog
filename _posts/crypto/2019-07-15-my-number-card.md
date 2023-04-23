@@ -199,7 +199,7 @@ J-LISによると、次のような利用方法を想定しているようです
 - [J-LIS 利用者クライアントソフトに係る技術仕様について](https://www.j-lis.go.jp/jpki/procedure/procedure1_2_3.html)
 - [雑誌FUJITSU 2017-7月号 マイナンバー - 富士通](https://www.fujitsu.com/jp/about/resources/publications/magazine/backnumber/vol68-4.html)
 - [マイナンバーカードの疑問に答えます \| 衆議院議員 河野太郎公式サイト](https://www.taro.org/2022/10/%e3%83%9e%e3%82%a4%e3%83%8a%e3%83%b3%e3%83%90%e3%83%bc%e3%82%ab%e3%83%bc%e3%83%89%e3%81%ae%e7%96%91%e5%95%8f%e3%81%ab%e7%ad%94%e3%81%88%e3%81%be%e3%81%99.php)
-
+- [地方公共団体（社会保障分野）におけるマイナンバー（社会保障・税番号）制度への対応について](https://www.mhlw.go.jp/file/06-Seisakujouhou-12600000-Seisakutoukatsukan/file1.pdf)
 
 
 -----
