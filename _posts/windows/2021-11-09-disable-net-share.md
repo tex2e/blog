@@ -73,4 +73,4 @@ Default Domain Policyを編集する場合は次の手順です。
 
 
 #### 参考文献
-- [\[Windows\] 隠し共有と管理共有 - りゃうけのブログ。](http://www.hirno.net/~wind/blog/2016/02/windows-1.html)
+- [\[Windows\] 隠し共有と管理共有 - りゃうけのブログ。](https://web.archive.org/web/20211125212218/http://www.hirno.net/~wind/blog/2016/02/windows-1.html)

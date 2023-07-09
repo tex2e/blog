@@ -96,6 +96,4 @@ PowerShellの字句解析でPromptの部分「PS>」もtokenにするための�
 
 -----
 
-### 参考
-
-[^1]: [Webページで &quot;＄ command args&quot; みたいなコマンド例をユーザーにコピペさせる際に、&quot;＄&quot; の部分 user-select: none しておくとUXがいい感じになるのか 📝  -- ᴊᴜɴʏᴀ oɢᴜ®ᴀ @junya](https://twitter.com/junya/status/1145926838734204928)
+[^1]: Webページで &quot;＄ command args&quot; みたいなコマンド例をユーザーにコピペさせる際に、&quot;＄&quot; の部分 user-select: none しておくとUXがいい感じになるのか 📝  -- ᴊᴜɴʏᴀ oɢᴜ®ᴀ @junya

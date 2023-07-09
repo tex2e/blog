@@ -24,7 +24,7 @@ DNSSEC のルートサーバの秘密鍵は誰が管理しているかご存知�
 一般的に、情報を $n$ 個に分割し、そのうちの $k$ 個が集まると復元できる秘密分散法を $(k,n)$ 閾値法と呼びます。
 
 [^1]: [DNSSEC Root Key Split Among Seven People](https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html)
-[^2]: [DNSSEC KEY SIGNING PROCESS](http://www.cdns.net/dnssec.html#signing)
+[^2]: [DNSSEC KEY SIGNING PROCESS](https://web.archive.org/web/20230314193123/http://www.cdns.net/dnssec.html)
 
 秘密分散法で一番有名なものはシャミアの秘密分散法（Shamir's Secret Sharing）です[^sss]。
 DNSSECのルートサーバの秘密鍵も、このシャミアの秘密分散法を使って秘密分散しています。

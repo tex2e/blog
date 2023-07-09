@@ -98,4 +98,4 @@ $ sudo ufw allow 3306
 ### 参考文献
 
 - [Ubuntu 20.04にMySQLをインストールする方法 \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-ja)
-- [ufwコマンドの使い方 - Qiita](https://qiita.com/hana_shin/items/a630871dce209cff04f3#5-%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%AE%E8%BF%BD%E5%8A%A0%E5%89%8A%E9%99%A4%E6%96%B9%E6%B3%95)
+- [ufwコマンドの使い方 - Qiita](https://web.archive.org/web/20221104090220/https://qiita.com/hana_shin/items/a630871dce209cff04f3)
