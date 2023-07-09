@@ -242,7 +242,7 @@ print(bytes.fromhex(hex(secret)[2:]).decode('ascii'))
 [^4]: 「情報分散管理技術（電子的割符技術を利用した情報管理）に関する意見書」（財団法人日本情報処理開発協会（現一般財団法人日本情報経済社会推進協会：JIPDEC）電子商取引推進センター：2010年2月）
 [^5]: [情報セキュリティ―ツール「電子割符」株式会社イフェクト ](https://www.effect-inc.jp/product/tally.php)
 [^6]: 電子割符ゲートウェイ Tally-WariZen -- Soliton
-[^7]: [電子記録管理に関する調査検討報告書 2014 - 3章 電子記録利活用の情報セキュリティ推進の検討](http://www.cdns.net/dnssec.html#signing)
+[^7]: [電子記録管理に関する調査検討報告書 2014 - 3章 電子記録利活用の情報セキュリティ推進の検討](https://www.jipdec.or.jp/archives/publications/J0005038)
 
 
 🎄🎄🎄
