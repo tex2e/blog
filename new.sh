@@ -79,12 +79,6 @@ photoswipe:    false
 preface
 EOS
 
-  # BUNDLE=bundle
-  # if [ -f /opt/homebrew/opt/ruby/bin/bundle ]; then
-  #   BUNDLE=/opt/homebrew/opt/ruby/bin/bundle
-  # fi
-  # "$BUNDLE" exec jekyll build --future
-
   touch index.html
   touch_index_html &
 }
