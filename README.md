@@ -21,7 +21,7 @@ Mako(tex2e)の技術系ブログです。
 ```
 
 新規作成するとページ上部のメタデータ設定用の変数が自動生成されます。
-各変数は次の意味を持ちます。
+各変数の意味と書き方は以下の通りです。
 - `cover: /assets/cover1.jpg` : ヘッダー画像
 - `redirect_from: /PATH` : 変更元のPATHからこのページにリダイレクトする
 - `comments: true` : Disqusによるコメント投稿を有効にする
@@ -124,7 +124,7 @@ MacOS :
 grep -rl 'cover:         /assets/cover1.jpg' _posts/python | xargs sed -i "" 's|/assets/cover1.jpg|/assets/cover14.jpg|g'
 ```
 
-また、新規記事作成時に使用する ./new.sh の中の変数 cover を引数の directory によって変える処理も追加します。
+また、新規記事作成時に使用する ./new.sh 内の変数 cover を引数の directory によって変える処理の追加も必要です。
 
 <br>
 
