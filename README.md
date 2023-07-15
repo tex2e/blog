@@ -13,7 +13,7 @@ Mako(tex2e)の技術系ブログです。
 - Math Engine: [**KaTeX**](https://katex.org/)
 
 #### 新規記事の作成
-./new.sh で新規記事を作成します。
+`./new.sh` で新規記事を作成します。
 カテゴリ名は /_posts 以下のディレクトリ名にします。
 以下はPythonカテゴリに「print-helloworld.md」というMarkdownファイルを作成する例です。
 ```
@@ -36,7 +36,7 @@ Mako(tex2e)の技術系ブログです。
 各固定ページのメタデータの設定で `permalink: /PATH` と書くことで、指定したパスにページを配置できます。
 
 #### サーバの起動
-./server.sh を使ってサーバの起動をします。
+`./server.sh` でサーバを起動します。
 Rubyを新しくインストールした際は `bundle install` の実行が必要です。
 ```
 ./server.sh
@@ -124,7 +124,7 @@ MacOS :
 grep -rl 'cover:         /assets/cover1.jpg' _posts/python | xargs sed -i "" 's|/assets/cover1.jpg|/assets/cover14.jpg|g'
 ```
 
-また、新規記事作成時に使用する ./new.sh 内の変数 cover を引数の directory によって変える処理の追加も必要です。
+また、新規記事作成時に使用する new.sh 内の変数 cover を引数の directory によって変える処理の追加も必要です。
 
 <br>
 
