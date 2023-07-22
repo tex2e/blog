@@ -46,3 +46,7 @@ AWSで設定して権限を付与することで、IAMユーザで請求コン�
     - Step 1 〜 2 が請求コンソールへのアクセス権限付与手順になります
 - [Using identity-based policies (IAM policies) for AWS Billing - AWS Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)
     - 付与する許可ポリシーの一覧とその説明です。
+
+<!--
+[プロが教えるAWSアカウント作成後に行うべき設定 ～コスト管理編～ \| TOKAIコミュニケーションズ AWSソリューション](https://www.cloudsolution.tokai-com.co.jp/white-paper/2021/0701-244.html)
+-->
