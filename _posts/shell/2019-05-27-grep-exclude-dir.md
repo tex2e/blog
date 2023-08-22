@@ -3,7 +3,6 @@ layout:        post
 title:         "grepコマンドで特定のディレクトリを検索対象から除外する"
 date:          2019-05-27
 category:      Shell
-author:        tex2e
 cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true

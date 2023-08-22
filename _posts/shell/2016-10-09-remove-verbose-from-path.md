@@ -3,7 +3,6 @@ layout:        post
 title:         "冗長なパス foo/bar/../lib を foo/lib に変換する"
 date:          2016-10-09
 category:      Shell
-author:        tex2e
 cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true

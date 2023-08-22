@@ -3,7 +3,6 @@ layout:        post
 title:         "エラーメッセージ表示用の関数"
 date:          2016-04-14
 category:      Shell
-author:        tex2e
 cover:         /assets/cover14.jpg
 redirect_from: /shell/warn-and-error-func
 comments:      true
