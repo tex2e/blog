@@ -21,7 +21,7 @@ Windowsでopensslコマンドが使えないときにCSRファイルを作成す
 ### Certreqコマンド
 
 certreqでCSRファイルを作成するときは、-Newオプションで、第1引数にINFファイル、第2引数に出力ファイル名を指定します。
-実行するときは「管理者権限」で実行します。
+実行するときは「**管理者権限**」で実行します。
 
 ```
 CertReq.exe -New CertReq.inf MyCertReq.csr
