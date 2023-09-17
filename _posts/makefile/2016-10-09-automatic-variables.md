@@ -180,6 +180,7 @@ output/foo: input/baz input/baz input/baz
 
 ### 参考文献
 
+- [Robert Mecklenburg (著), 矢吹 道郎 (監訳), 菊池 彰 (翻訳)『GNU Make 第3版』2005/12](https://amzn.to/3LnhELt)
 - [GNU make： Automatic Variables](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html)
 - [GNU make： Implicit Variables](https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html)
 - [Makefile の関数一覧](https://tex2e.github.io/blog/makefile/functions)

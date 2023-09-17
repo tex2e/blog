@@ -207,5 +207,7 @@ Mar  8 10:11:12 localhost python: listen: host=, port=8000
 
 ### 参考文献
 
+- [サーバ構築研究会『CentOS8で作るネットワークサーバ構築ガイド』2020/8](https://amzn.to/3rkScj9) (p.837)
+
 [^restart]: [Restart= -- systemd.service](https://www.freedesktop.org/software/systemd/man/systemd.service.html#Restart=)
 [^limit]: [StartLimitIntervalSec=interval, StartLimitBurst=burst -- systemd.unit](https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitIntervalSec=interval)

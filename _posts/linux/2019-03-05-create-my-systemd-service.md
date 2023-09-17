@@ -187,6 +187,10 @@ systemctl stop tinyhttpd
 
 以上です。
 
+### 参考文献
+
+- [サーバ構築研究会『CentOS8で作るネットワークサーバ構築ガイド』2020/8](https://amzn.to/3rkScj9) (p.837)
+
 ---
 
 [^note1]: ユニットの起動順（After と Before）と依存関係（Wants と Requires）はそれぞれ独立した機能であるが、ほとんどの場合は After と Before で事足りる。

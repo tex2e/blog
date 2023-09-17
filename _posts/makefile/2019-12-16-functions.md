@@ -331,6 +331,7 @@ all:
 
 ### 参考文献
 
+- [Robert Mecklenburg (著), 矢吹 道郎 (監訳), 菊池 彰 (翻訳)『GNU Make 第3版』2005/12](https://amzn.to/3LnhELt)
 - [GNU make： Functions](https://www.gnu.org/software/make/manual/html_node/Functions.html)
 - [Makefile の特殊変数・自動変数の一覧](https://tex2e.github.io/blog/makefile/automatic-variables)
 - その他：

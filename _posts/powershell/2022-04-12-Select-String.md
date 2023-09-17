@@ -52,3 +52,4 @@ ls | where Name -match "REGEX"
 
 #### 参考文献
 - [Select-String (Microsoft.PowerShell.Utility) - PowerShell \| Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/Microsoft.PowerShell.Utility/Select-String?view=powershell-7.2)
+- [『Windows PowerShellクックブック』 2008/10](https://amzn.to/3PkOtKf) (p.145)
