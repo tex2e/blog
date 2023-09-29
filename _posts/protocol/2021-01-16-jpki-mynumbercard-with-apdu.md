@@ -471,8 +471,16 @@ SHA256で求めたハッシュ値に対して、PKCS #1 v1.5 パディングを�
 以上です。
 
 
-2021/8/12追記：seccamp2021 LT大会で「マイナンバーカードで署名する」という題で発表した資料をSpeaker Deckで公開しました。
+- 2021/8/12追記
+  - seccamp2021 LT大会で「マイナンバーカードで署名する」という題で発表した資料をSpeaker Deckで公開しました。
 [https://speakerdeck.com/tex2e/mainanbakadodeshu-ming-suru](https://speakerdeck.com/tex2e/mainanbakadodeshu-ming-suru)
+- 2023/9追記
+  - セキュリティ・ミニキャンプin新潟 で使用した資料を公開しました。
+    - [tex2e/secminicamp2023-mynumber -- GitHub](https://github.com/tex2e/secminicamp2023-mynumber)
+  - @nyaarch64 さんによる不具合修正（2023年付近に発行したマイナンバーカードの券面入力補助による基本4情報読み取り）
+    - [https://github.com/ny-a/secminicamp2023-mynumber/blob/feature/fix-for-my-card/mynumber.py#L306C9-L306C25](https://github.com/ny-a/secminicamp2023-mynumber/blob/feature/fix-for-my-card/mynumber.py#L306C9-L306C25)
+    - 最後のsendAPDUで追加で3bytes読んで、ヘッダーの前に頭の0xff 0x20を捨てる必要あり
+
 
 ### 参考文献
 
