@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "telnetコマンドの代わりにPythonのtelnetlibを使う"
+title:         "telnetの代わりにPythonのtelnetlibを使う"
 date:          2021-11-03
 category:      Python
 cover:         /assets/cover14.jpg
