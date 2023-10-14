@@ -13,7 +13,7 @@ photoswipe:    false
 # feed:    false
 ---
 
-Linuxの環境にtelnetコマンドは入っていないけどPythonは入っている環境の場合は、Pythonの標準ライブラリtelnetlibを使うことで、telnetでメール送信のテストをすることができます。
+LinuxにtelnetはないけどPython (3.12以下) はある環境の場合は、Pythonの標準ライブラリ「telnetlib」を使うことで、telnetでメール送信のテストをすることができます。
 
 ```bash
 ~]$ python3
