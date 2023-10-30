@@ -2298,10 +2298,11 @@ feed:    false
 ### 参考資料
 
 - [AWS Certified Developer - Associate 認定](https://aws.amazon.com/jp/certification/certified-developer-associate/)
+  - 公式情報で試験範囲やサンプルの問題などの情報があります。必ず目を通すようにしましょう
 - [AWS Skill Builder](https://explore.skillbuilder.aws/learn/signin)
-
-
-
+  - AWSが提供しているデジタルコンテンツです。無料（20問）と有料（65問）の問題集があります
+- [『徹底攻略AWS認定デベロッパー - アソシエイト教科書 (徹底攻略シリーズ)』株式会社NTTデータ 川畑 光平](https://amzn.to/45TPbVh)
+  - AWS Developerで扱われる各サービスについて詳細な説明が書かれていてとても良いです。AWSマネジメントコンソールで少し触ったことがある人ならより理解が早まると思います。
 
 
 ---
