@@ -2,15 +2,15 @@
 layout:        post
 title:         "Coding Style Guide"
 date:          2016-09-23
-category:      Misc
+category:      Program
 author:        tex2e
 cover:         /assets/cover1.jpg
-redirect_from:
+redirect_from: /misc/coding-style
 comments:      false
 published:     true
 ---
 
-だいたいどの言語でも言えるコーディングスタイルのまとめ
+どの言語でも言えるコーディングスタイルのまとめ
 
 Naming Conventions
 ------------------
