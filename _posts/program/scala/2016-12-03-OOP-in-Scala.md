@@ -2,10 +2,10 @@
 layout:        post
 title:         "OOP in Scala"
 date:          2016-12-03
-category:      Scala
+category:      Program
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /scala/OOP-in-Scala
 comments:      false
 published:     true
 ---

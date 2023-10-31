@@ -2,9 +2,9 @@
 layout:        post
 title:         "マイナンバー制度と住民基本台帳"
 date:          2023-07-09
-category:      Misc
+category:      Protocol
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/mynumber-juki
 comments:      true
 published:     true
 latex:         false

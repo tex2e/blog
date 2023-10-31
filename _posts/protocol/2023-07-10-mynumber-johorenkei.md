@@ -2,9 +2,9 @@
 layout:        post
 title:         "マイナンバー制度と情報連携（団体内統合宛名）"
 date:          2023-07-10
-category:      Misc
+category:      Protocol
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/mynumber-johorenkei
 comments:      true
 published:     true
 latex:         false

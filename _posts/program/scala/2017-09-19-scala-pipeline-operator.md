@@ -2,10 +2,10 @@
 layout:        post
 title:         "Scalaでパイプライン演算子"
 date:          2017-09-19
-category:      Scala
+category:      Program
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /scala/pipeline-operator
 comments:      true
 published:     true
 ---

@@ -2,10 +2,10 @@
 layout:        post
 title:         "OOP in Elixir"
 date:          2016-12-03
-category:      Elixir
+category:      Program
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /elixir/OOP-in-Elixir
 comments:      false
 published:     true
 ---

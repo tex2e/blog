@@ -2,9 +2,9 @@
 layout:        post
 title:         "RFC1925 ネットワークにおける12の真実"
 date:          2022-08-02
-category:      RFC
+category:      Protocol
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /rfc/rfc1925-twelve-networking-truths
 comments:      true
 published:     true
 latex:         false

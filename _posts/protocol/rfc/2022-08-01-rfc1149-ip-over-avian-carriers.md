@@ -2,9 +2,9 @@
 layout:        post
 title:         "RFC1149 伝書鳩によるIPパケットの送信規格"
 date:          2022-08-01
-category:      RFC
+category:      Protocol
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /rfc/rfc1149-ip-over-avian-carriers
 comments:      true
 published:     true
 latex:         false

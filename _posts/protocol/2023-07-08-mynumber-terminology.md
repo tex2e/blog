@@ -2,9 +2,9 @@
 layout:        post
 title:         "マイナンバー制度の用語集"
 date:          2023-07-08
-category:      Misc
+category:      Protocol
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/mynumber-terminology
 comments:      true
 published:     true
 latex:         false

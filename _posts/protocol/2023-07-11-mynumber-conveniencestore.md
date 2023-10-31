@@ -2,9 +2,9 @@
 layout:        post
 title:         "マイナンバー制度とコンビニ交付"
 date:          2023-07-11
-category:      Misc
+category:      Protocol
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/mynumber-conveniencestore
 comments:      true
 published:     true
 latex:         false

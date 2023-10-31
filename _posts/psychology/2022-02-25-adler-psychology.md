@@ -2,9 +2,9 @@
 layout:        post
 title:         "アドラー心理学"
 date:          2022-02-25
-category:      Misc
+category:      Psychology
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/adler-psychology
 comments:      true
 published:     true
 latex:         false

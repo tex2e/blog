@@ -1,11 +1,11 @@
 ---
 layout:        post
-title:         "Elixir で FizzBuzz"
+title:         "ElixirでFizzBuzzを作成する"
 date:          2017-01-04
-category:      Elixir
+category:      Program
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /elixir/fizzbuzz
 comments:      false
 published:     true
 ---

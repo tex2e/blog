@@ -2,10 +2,10 @@
 layout:        post
 title:         "Elixirで配列の要素数をカウントする"
 date:          2017-01-04
-category:      Elixir
+category:      Program
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /elixir/count-up-elem
 comments:      false
 published:     true
 ---

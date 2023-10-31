@@ -3,9 +3,9 @@ layout:        post
 title:         "マイナンバー制度と申請管理（ぴったりサービス）"
 menutitle:     "マイナンバー制度と申請管理（ぴったりサービス 電子申請）"
 date:          2023-07-12
-category:      Misc
+category:      Protocol
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/mynumber-shinseikanri
 comments:      true
 published:     true
 latex:         false

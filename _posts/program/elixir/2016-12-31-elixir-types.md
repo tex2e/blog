@@ -1,11 +1,11 @@
 ---
 layout:        post
 title:         "Elixir Typespecs"
-date:          2016-12-1
-category:      Elixir
+date:          2016-12-01
+category:      Program
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /elixir/types
 comments:      false
 published:     true
 ---

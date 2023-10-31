@@ -2,9 +2,9 @@
 layout:        post
 title:         "「理解する」とは何か？"
 date:          2023-08-01
-category:      Misc
+category:      Psychology
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/understanding
 comments:      true
 published:     false
 latex:         false

@@ -2,10 +2,10 @@
 layout:        post
 title:         "Hakellでパイプライン演算子"
 date:          2017-09-19
-category:      Haskell
+category:      Program
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /haskell/pipeline-operator
 comments:      true
 published:     true
 ---

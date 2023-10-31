@@ -2,9 +2,9 @@
 layout:        post
 title:         "非認知能力における好奇心"
 date:          2023-08-07
-category:      Misc
+category:      Psychology
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/curiosity
 comments:      true
 published:     true
 latex:         false

@@ -2,9 +2,9 @@
 layout:        post
 title:         "マイナンバー制度と健康保険証"
 date:          2023-07-13
-category:      Misc
+category:      Protocol
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/mynumber-insurancecard
 comments:      true
 published:     true
 latex:         false

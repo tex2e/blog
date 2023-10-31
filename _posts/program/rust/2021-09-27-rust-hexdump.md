@@ -1,10 +1,10 @@
 ---
 layout:        post
-title:         "Rust で16進数ダンプ (Hexdump)"
+title:         "Rustで16進数ダンプ (Hexdump)"
 date:          2021-09-27
-category:      Rust
+category:      Program
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /rust/hexdump
 comments:      true
 published:     true
 latex:         false
