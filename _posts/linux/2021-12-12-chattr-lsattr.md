@@ -22,7 +22,7 @@ chattr +ia test.txt  # 属性を追加
 chattr -ia test.txt  # 属性を削除
 ```
 以下は不変の属性を追加すると編集も削除もできないことを確認する例です。
-```console
+```bash
 ~]# id
 uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 ~]# touch /tmp/test.txt
