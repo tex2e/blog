@@ -60,4 +60,4 @@ world
 以上です。
 
 ### 参考文献
-- Lee Holmes (著), 菅野 良二 (訳)『Windows PowerShellクックブック』O'REILLY, 2018/6
+- Lee Holmes (著), 菅野 良二 (訳)『[Windows PowerShellクックブック](https://amzn.to/3QwwEsn)』O'REILLY, 2018/6

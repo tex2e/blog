@@ -54,4 +54,4 @@ It's nice to meet you!
 
 ### 参考文献
 - [文字列 - Windows PowerShell \| ++C++; // 未確認飛行 C](https://ufcpp.net/study/powershell/string.html#format)
-- Lee Holmes (著), 菅野 良二 (訳)『Windows PowerShellクックブック』O'REILLY, 2018/6
+- Lee Holmes (著), 菅野 良二 (訳)『[Windows PowerShellクックブック](https://amzn.to/3QwwEsn)』O'REILLY, 2018/6
