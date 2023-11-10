@@ -13,6 +13,8 @@ sitemap: false
 feed:    false
 ---
 
+AWS Certified Developer Associate 認定試験を勉強した時の自分用のまとめです。 あくまで備忘録程度で、内容の正確性は保証しませんのでご了承ください。
+
 ## 第1章 AWSサービス全体の概要
 
 ### AWS Well-Architected
