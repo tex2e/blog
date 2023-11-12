@@ -39,4 +39,4 @@ gci -Path C:\Users -Directory | where { $_ -match "REGEX" } | foreach {
 
 大体、1ユーザにつき100MB程度のキャッシュファイルが作られるので、10ユーザで1GBくらい容量を空けることができます。
 
-以上
+以上です。
