@@ -12,11 +12,11 @@ Mako(tex2e)の技術系ブログです。
 - Syntax Highlighter: [**Prism**](http://prismjs.com/)
 - Math Engine: [**KaTeX**](https://katex.org/)
 
-#### 新規記事の作成
+### 新規記事の作成
 `./new.sh` で新規記事を作成します。
 カテゴリ名は /_posts 以下のディレクトリ名にします。
 以下はPythonカテゴリに「print-helloworld.md」というMarkdownファイルを作成する例です。
-```
+```bash
 ./new.sh python print-hellowolrd
 ```
 
@@ -31,14 +31,14 @@ Mako(tex2e)の技術系ブログです。
 - `sitemap: false` : sitemap.xmlにリンクを追加しない (検索エンジンから少しだけ見つかりにくくなる)
 - `feed: false` : feed.xmlにリンクを追加しない (RSSで更新情報を知らせない)
 
-#### 固定ページの作成
+### 固定ページの作成
 /_pages 以下にMarkdownファイルを作成します。
 各固定ページのメタデータの設定で `permalink: /PATH` と書くことで、指定したパスにページを配置できます。
 
-#### サーバの起動
+### サーバの起動
 `./server.sh` でサーバを起動します。
 Rubyを新しくインストールした際は `bundle install` の実行が必要です。
-```
+```bash
 ./server.sh
 ```
 
@@ -47,47 +47,47 @@ Rubyを新しくインストールした際は `bundle install` の実行が必�
 - `--livereload` : ページが編集されたら自動的にブラウザも更新します (ライブリロード)
 - `--future` : 公開の日付が未来になっている記事も公開します
 
+
 <br>
 
-### 環境構築手順
-WSL (Ubuntu) を使用する場合：
-1. Windows Subsystem for Linuxを有効化し、Ubuntuをインストール
-2. Ubuntuで以下コマンドを実行
-```
-sudo apt install build-essential git ruby ruby-dev zlib1g-dev
-gem install bundler
-git clone git@github.com:tex2e/blog.git
-cd blog
-bundle install
-bundle update   # バージョンアップ作業時
-```
+## 環境構築手順
+- WSL (Ubuntu) のとき：
+  1. Windows Subsystem for Linuxを有効化し、Ubuntuをインストール
+  2. Ubuntuで以下コマンドを実行（※aptで必要なソフトがインストールされていないとbundle installで失敗します）
+  ```bash
+  sudo apt install build-essential git ruby ruby-dev zlib1g-dev
+  gem install bundler
+  git clone git@github.com:tex2e/blog.git
+  cd blog
+  bundle install  # 初回環境構築時
+  bundle update   # バージョンアップ時
+  ```
+- Windows のとき：
+  1. RubyInstallerでインストール
+  2. 再起動（環境変数PATHにruby, gem, bundleなどのパスを追加）
+  3. PowerShellで以下コマンドを実行
+  ```bash
+  git clone git@github.com:tex2e/blog.git
+  cd blog
+  bundle install
+  ```
 
-Windows を使用する場合：
-1. RubyInstallerでインストール
-2. 再起動（環境変数PATHにruby, gem, bundleなどのパスを追加）
-3. PowerShellで以下コマンドを実行
-```
-git clone git@github.com:tex2e/blog.git
-cd blog
-bundle install
-```
-
-#### Alias
+### Bash Alias
 エディタ起動、ブラウザ起動、Webサーバを立ち上げる処理をまとめた `blog` コマンドを定義しておくと、すぐに記事が書けて便利です。
-```
+```bash
 alias blog="cd ~/path/to/blog; open http://localhost:4000/blog/; ./server.sh &"
 ```
 
-#### LaTeXによる画像作成
+### LaTeXによる画像作成
 事前に latex + standalone の環境を構築します（参照：[texlive2020(basic)のインストール on WSL](https://tex2e.github.io/blog/latex/texlive2020-in-wsl)）。
 その上で、ImageMagickをインストールします。
-```
+```bash
 sudo apt-get install imagemagick
 ```
 
 ImageMagickは脆弱性への対策としてデフォルトではPDFが入力できませんが、入力PDFは自分で作成したものだけを使用するとし、ImageMagickのポリシーを変更します。
 /etc/ImageMagick-6/policy.xml のポリシーを変更して、PDFをpngに変換できるようにします。
-```
+```xml
 <policymap>
   ...
   <!-- disable ghostscript format types -->
@@ -102,17 +102,17 @@ ImageMagickは脆弱性への対策としてデフォルトではPDFが入力で
 
 platex, standalone, ImageMagick の3つを用意することで tex から画像を生成できるようになります。
 このレポジトリのトップディレクトリで以下のコマンドを叩くと、更新日時が新しい tex から png を作成できます。
-```
+```bash
 make png
 ```
 
 特定のtexに対応する画像のみを生成したいときは以下のコマンドを叩きます。
-```
+```bash
 cd media/post/tikz
 make path/to/file.tex
 ```
 
-#### カテゴリー別にカバーを変更する
+### カテゴリー別にカバー画像の変更
 カテゴリー別にカバー画像を変更したい場合は、grep と sed を組み合わせて一括置換します。
 
 Linux :
@@ -126,11 +126,12 @@ grep -rl 'cover:         /assets/cover1.jpg' _posts/python | xargs sed -i "" 's|
 
 また、新規記事作成時に使用する new.sh 内の変数 cover を引数の directory によって変える処理の追加も必要です。
 
+
 <br>
 
-### GitHub Action
+## GitHub Action
 
-#### リンク切れチェック
+### リンク切れチェック
 リンク切れチェックに使用しているもの：
 - [tcort/markdown-link-check](https://github.com/tcort/markdown-link-check)
 - [gaurav-nelson/github-action-markdown-link-check](https://github.com/gaurav-nelson/github-action-markdown-link-check)
@@ -144,7 +145,7 @@ grep -rl 'cover:         /assets/cover1.jpg' _posts/python | xargs sed -i "" 's|
 
 <br>
 
-### jekyllDecent
+## その他
 
 [jekyllDecent](https://github.com/jwillmer/jekyllDecent) はこのブログで使用しているテーマです。
 
