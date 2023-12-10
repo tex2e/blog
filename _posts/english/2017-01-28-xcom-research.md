@@ -454,3 +454,13 @@ Fusion Lance
 This weapon is among the most powerful we've recovered from the aliens, and we've already evidence of its devastating effect against our own aircraft. Unfortunately, it was clearly designed for a much larger craft with a greater payload capacity than anything we have currently available. In order to adapt the mechanism for use on our own ships, we've had to redesign the integrated power and cooling systems to a much smaller form factor.
 
 If we do manage to successfully deploy this weapon, I have no doubt we'll finally level the playing field with the aliens in terms of air superiority.
+
+
+評議会による評価
+-----------------------------
+
+- A: We are extremely impress with the progress of the XCOM project thus far, Commander. Your recent results were beyond our expectations… and that is not a statement this Council makes lightly.
+- B: Excellent work, Commander. This Council is pleased to see our continued support of this project has been… worthwhile. We hope that your current success only mark the beginning of an enduring effort to eliminate the extraterrestrial threat.
+- C: You’ve done an admirable job in combating the alien threat over the course of the past month, Commander. However, we still believe there is room for improvement in your efforts.
+- D: While certain aspects of your performance were deemed acceptable, we expect more from you, Commander. We remain confident in your ability to improve the… effectiveness… of future XCOM operations… but this sentiment could change if your efforts continue to prove… inadequate.
+- F: It is unfortunate that your recent efforts have failed to adequately address the extraterrestrial threat, Commander. While we acknowledge the fact that is an ambitious project, unless there is a vast improvement in your leadership, there may be no reason for us to continue our support.
