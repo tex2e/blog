@@ -1,0 +1,289 @@
+---
+layout:        post
+title:         "Latin Greek（英単語でギリシャとラテンに起源を持つ単語）"
+date:          2016-01-01
+category:      English
+cover:         /assets/cover14.jpg
+redirect_from:
+comments:      true
+published:     true
+latex:         false
+photoswipe:    false
+# sitemap: false
+# feed:    false
+---
+
+英単語でギリシャとラテンに起源を持つ単語の一覧
+
+- BENE: well: p1
+- AM: to love: p3
+- BELL: war: p5
+- PAC: agree, peace: p6
+- CRIM: fault or crime, accusation: p9
+- PROB: prove or proof, honesty or integrity: p10
+- GRAV: heavy, weighty, serious: p13
+- LEV: light, to raise or lighten: p14
+- MANIA: madness: p23
+- PSYCH: breath, life, soul: p25
+- CEPT: take, seize: p27
+- FIN: end, boundary: p29
+- JECT: throw, hurl: p31
+- TRACT: drag, draw: p33
+- DUC/DUCT: to lead: p35
+- SEQU: to follow: p36
+- AMBI: on both sides, around: p45
+- EPI: on over, attached to: p46
+- HYP/HYPO: below, under: p49
+- THERM/THERMO: warm: p51
+- POLY: many: p54
+- PRIM: first: p56
+- HOM/HOMO: same, similar: p58
+- DIS: apart, opposite, not, deprive of, exclude or expel from: p60
+- VOR: to eat: p69
+- CARN: flesh, meat: p70
+- CRED: to believe, to entrust: p73
+- FID: faith, trust: p74
+- CURR/CURS: to run: p77
+- FLECT: to bend: p81
+- POST: after, behind: p82
+- MAL: bad: p91
+- CATA: down: p92
+- PROT/PROTO: first in time, first formed: p95
+- ANTE: before, in front of: p96
+- ORTHO: straight, right, true: p99
+- RECT: straight, right: p101
+- EU: well, good, true: p103
+- DYS: bad, difficult: p104
+- EQU: equal: p113
+- QUIS: to seek or obtain: p114
+- PLE/PLEN: to fill: p117
+- METR/METER: measure: p118
+- AUD: hearing: p121
+- SON: sound: p122
+- ERR: to wander, to stray: p124
+- CED: to proceed, to yield: p126
+- VIS: see: p134
+- SPECT: to look at: p135
+- VOC: voice, speak: p138
+- PHON: sound, voice, speech: p139
+- CUR: care for: p142
+- PERI: around: p143
+- SENS: feeling, sense: p146
+- SOPH: wise, wisdom: p148
+- PORT: to carry: p157
+- PEND: to hang, to weigh: p159
+- PAN: all, completely, while, general: p162
+- EXTRA: outside, beyond: p163
+- PHOT: light: p166
+- LUC: light, to shine or glitter: p168
+- MOR/MORT: to die, death: p170
+- TROPH: nourishment: p172
+- HER: to stick: p181
+- FUG: to flee or escape: p182
+- COSM: order: p185
+- SCI: to know, to understand: p186
+- JUNCT: to join: p189
+- PART: part: p190
+- MIS: to send: p193
+- PEL: to move or drive: p194
+- PUT: to think, consider, believe: p202
+- LOG: word, speech, reason: p203
+- TERR: earth: p206
+- MAR: sea: p208
+- PATH: feeling, suffering: p210
+- PEN/PUN: penalty, to punish: p212
+- MATR/MATER: mother: p214
+- AQU: water: p215
+- CANT: sing: p224
+- LINGU: tongue, language: p225
+- SPIR: breath, breathe: p228
+- VER: truth: p229
+- TURB: to throw into confusion or upset, crowd, confusion: p232
+- VOLU/VOLV: to roll, wind, turn around, or twist around: p233
+- FAC: to make or do: p235
+- LUM: light: p237
+- UMBER: shadow: p245
+- VEST: to clothe, to dress, clothing, garment: p246
+- THE/THEO: god: p249
+- ICON: image: p251
+- URB: city: p254
+- CULT: care: p255
+- DEM/DEMO: people: p259
+- POPUL: people: p261
+- CORD: heart: p269
+- CULP: guilt: p270
+- DICT: to speak: p272
+- GNI/GNO: to know: p274
+- GRAPH: to write: p277
+- ART: skill: p278
+- FORT: strong: p281
+- CIS: to cut, cut down, slay: p283
+- CRYPT: hidden: p291
+- AB/ABS: from, away, off: p293
+- PED: child: p295
+- TROP: turn, change: p296
+- NEO: new: p299
+- NOV: new: p301
+- POS: to put, to place: p304
+- TEN: hold, hold on to: p305
+- MONO: along, single: p308
+- UNI: one: p309
+- TERM/TERMIN: to limit, bound, set limits to, limit or boundary: p314
+- GEO: earth: p315
+- SPHER: ball: p318
+- VERT: to turn, to turn around: p320
+- MORPH: shape: p323
+- FORM: shape, form: p324
+- DOC/DOCT: to teach: p327
+- TUT/TUI: to look after, guide, guard, teach: p329
+- DI/DUP: two: p331
+- BI/BIN: two, double: p333
+- TOP: place: p338
+- CENTR/CENTER: sharp point, center point of circle: p339
+- DOM: house, master: p342
+- OMNI: all, in all ways, in all places, without limits: p344
+- HOL/HOLO: whole: p346
+- RETRO: back, backward, behind: p348
+- TEMPOR: time: p351
+- CHRON: time: p352
+- TRI: three: p355
+- ANIM: breath, soul: p361
+- FIG: to shape or mold, a form or shape: p362
+- ANN/ENN: year: p365
+- EV: age, lifetime: p366
+- CORP: body: p369
+- TANG/TACT: to touch, sense of touch: p370
+- CODI/CODE: trunk of a tree, document written on wooden tablets: p373
+- SIGN: mark or sign: p374
+- QUADR/QUART: four, fourth: p376
+- TETR: four: p378
+- CAPIT: head: p382
+- ANTHROP: human being: p384
+- KINE: movement: p387
+- DYNAM: power: p389
+- GRAD: step, degree, to step, walk: p392
+- REG: rule: p393
+- CRIT: to judge, to decide: p396
+- JUR: to swear, take an oath: p397
+- PENT: five: p400
+- QUINT: five: p401
+- BIO: life: p407
+- GEN: birth: p409
+- FUNCT: to perform, carry out: p411
+- MUT: to change: p413
+- FRACT: to break or shatter: p416
+- TELE: distance, at a distance: p417
+- PHIL: love: p420
+- NEG: to say no: p422
+- DEC: ten: p424
+- CENT: one hundred: p426
+- NOM: name: p431
+- PATER/PATR: father: p433
+- LEGA: to appoint, to send as a deputy: p436
+- GREG: herd, flock: p437
+- FLU: to flow: p440
+- PREHEND/PREHENS: to seize: p441
+- TEMPER: to moderate or keep within limits, to mix: p443
+- PURG: to clean or cleanse: p445
+- MILL: a thousand, a thousandth: p448
+- HEMI/SEMI: half: p449
+- SUB: under: p455
+- HYPER: above or beyond: p457
+- PRE: before, in front of: p460
+- PARA: beside, closely related to: p461
+- META: behind, beyond: p464
+- PER: through, throughout, thoroughly: p466
+- ANT/ANTI: against: p469
+- CONTRA: against, contrary to: p470
+- ACER/ACR: sharp, sour: p479
+- STRICT: to draw tight, to bind, to tie: p480
+- STRU/STRUCT: to put together, to build, to arrange: p483
+- PROP/PROPRI: own: p485
+- TORT: to twist, to wind, to wrench: p488
+- VIV: to live, be alive: p489
+- SERV: to be subject to: p492
+- CLUS: to close: p493
+- TEXT: to weave: p502
+- PLAC: to please or be agreeable to, to soothe or calm: p504
+- AUT/AUTO: same, self: p506
+- GRAT: pleasing, welcome, agreeable, grace, agreeableness: p508
+- CLAM/CLAIM: to shout or cry out: p510
+- CRAC/CRAT: power: p512
+- PUNC: point: p514
+- POT: able: p516
+- MAND: entrust, order: p525
+- UND: wave, to rise in waves, to surge or flood: p526
+- SANCT: holy: p529
+- LOQU: to talk: p531
+- VIR: man: p533
+- VAL: strength, to be worthy, healthy, strong, to have power or influence: p534
+- CRE/CRET: to come into being, to grow: p537
+- FUS: to pour out, to melt: p538
+- VERB: word: p548
+- SIMIL/SIMUL: like, resembling, similar, to make like: p549
+- SCEND: to climb: p552
+- ONYM: name, word: p554
+- SCRIB/SCRIP: to write: p557
+- FALL: to deceive: p558
+- SOLU: to loosen, free, release: p561
+- HYDR: water: p562
+- MUR: wall: p572
+- POLIS/POLIT: city: p573
+- NUMER: number, to count: p576
+- KILO: thousand: p578
+- MICRO: small: p581
+- MULTI: many: p582
+- PAR: equal: p585
+- PHOB: fear: p587
+- HEM/HEMO: blood: p589
+- ITIS: disease, inflammation: p591
+- NANO: dwarf: p596
+- SUPER: over, higher, more than: p598
+- DE: down, away: p601
+- NUL/NULL: none: p602
+- ARM: weapons, tools: p605
+- SURG: to rise, spring up: p607
+- STRAT: spread, bed: p609
+- LATER: side: p611
+- TOM: cut, dissection: p614
+- IATR: healer, physician: p615
+- MEDI: middle: p620
+- OID: appearance, form: p622
+- SCOP: to look at: p624
+- TRANS: through, across, beyond: p626
+- PRO: for, favoring: p629
+- PRO: before, in front of: p631
+- RE: again, for, favoring: p634
+- RE: back, backward: p635
+- DERM: skin: p638
+- ENDO: within: p639
+- NECRO: dead body: p644
+- PALEO: ancient: p646
+- CIRCU/CIRCUM: circle: p649
+- MINI/MINU: small, least: p650
+- INTER: between: p653
+- SUR: over, above: p655
+- CO: with, together: p658
+- SYN: together, at the same time: p660
+- TOXI: poison: p669
+- TEN/TENU: thin: p671
+- TECHNI/TECHNO: art, craft, skill: p674
+- LONG: long: p675
+- IDIO: one’s own, private: p678
+- AER/AERO: air: p680
+- CAD: to fall: p683
+- TRIB: to give, to pay: p684
+
+
+
+### 接頭辞
+- IN-: in, into, on, upon: NA
+- IN-/IM-: not: NA
+- EX-: out of, from, utterly, thoroughly, not, without: NA
+- OB-/OC(C)-/OF(F)-/O(M)-/OP(P)-/OS(T)-: toward, on, over, against, reversely: NA
+- AD-/AC(C)-/AF(F)-/AG(G)-/AC(K)-/AL(L)-/AP(P)-/AS(Q)-/AT(S)-: toward, near
+- BIBLIO-: book: NA
+
+### 接尾辞
+- -MENT: action, result, means, instrument: NA
+- -FY: cause to became, make
