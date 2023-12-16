@@ -81,7 +81,7 @@ function rm_tmpfile {
   rm -f "$tmpfile"
   echo 'Bye!'
 }
-echo rm_tmpfile EXIT
+trap rm_tmpfile EXIT
 ```
 
 以上です。
