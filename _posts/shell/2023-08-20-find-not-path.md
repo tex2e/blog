@@ -36,4 +36,16 @@ find /path/to/dir/ -type f -not \( -path '/path/to/dir/backup/*' -o -path '/path
 find /path/to/dir/ -type f -regextype egrep -not -regex '^/path/to/dir/(backup|error)/.*'
 ```
 
+### find -prune -o -print
+findでは「-prune -o -print」を指定すると、指定したディレクトリを除外することができます。
+-prune はマッチした対象がディレクトリのときに True (真) を返して、そのディレクトリ内を探索しないためのオプションです。
+そのため、使用するときは常に -o (OR演算子) を使って、短絡評価（左辺が真のときは右辺を評価しない仕組み）で右辺の処理を実行するかどうかを制御します。
+右辺には、-print (標準出力へ出力する) や -ls (詳細形式で表示する) などを指定してあげます。
+一般的には「-prune -o -print」の形で使われることが多いです。
+```bash
+find /path/to/dir -type f \( -path '/path/to/dir/backup/' -prune -o -print \)
+```
+
+※ 上記の理由から -prune は、特定のファイルのみを除外することはできません。
+
 以上です。
