@@ -44,6 +44,8 @@ findでは「-prune -o -print」を指定すると、指定したディレクト
 一般的には「-prune -o -print」の形で使われることが多いです。
 ```bash
 find /path/to/dir -path '/path/to/dir/backup/' -prune -o -type f -print
+
+find /path/to/dir -name 'backup' -prune -o -type f -print
 ```
 
 ※ 上記の理由から -prune は、特定のファイルのみを除外することはできません。
