@@ -43,7 +43,7 @@ findでは「-prune -o -print」を指定すると、指定したディレクト
 右辺には、-print (標準出力へ出力する) や -ls (詳細形式で表示する) などを指定してあげます。
 一般的には「-prune -o -print」の形で使われることが多いです。
 ```bash
-find /path/to/dir -type f \( -path '/path/to/dir/backup/' -prune -o -print \)
+find /path/to/dir -path '/path/to/dir/backup/' -prune -o -type f -print
 ```
 
 ※ 上記の理由から -prune は、特定のファイルのみを除外することはできません。
