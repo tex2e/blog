@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "全てのレポジトリに同じ.gitattributesを適用する方法"
+title:         "ローカルの全てのレポジトリに同じ.gitattributesを適用する方法"
 date:          2023-12-09
 category:      Git
 cover:         /assets/cover14.jpg
