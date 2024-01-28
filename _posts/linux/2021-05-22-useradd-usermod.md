@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "useradd, usermod によるグループへの追加"
+title:         "useradd, usermod によるLinuxグループへの追加"
 date:          2021-05-22
 category:      Linux
 cover:         /assets/cover14.jpg
@@ -13,8 +13,8 @@ photoswipe:    false
 # feed:    false
 ---
 
-### ユーザの追加
-
+### useradd -G (新規ユーザ作成時にグループ追加)
+useradd コマンドを使うことで、ユーザを追加することができます。
 ```bash
 sudo useradd user1
 ```
@@ -27,7 +27,7 @@ sudo useradd user1 -G docker
 
 `cat /etc/passwd` で正しくユーザ追加できたか確認できます。
 
-### グループに追加
+### usermod -aG (既存ユーザをグループに追加)
 
 ユーザが所属するサブグループに追加します。
 `-a` を付け忘れると追加ではなく上書きになってしまうので注意。
@@ -40,7 +40,7 @@ sudo usermod -aG docker user1
 `cat /etc/group` で正しくユーザをグループに追加できたか確認できます。
 
 
-### 確認
+### グループ所属確認
 
 ユーザの追加と所属が正しくできたかは `id` コマンドで確認できます。
 
