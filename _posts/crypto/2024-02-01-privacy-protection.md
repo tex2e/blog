@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "プライバシー保護技術"
+title:         "プライバシー保護技術 (PETs)"
 date:          2024-02-01
 category:      Crypto
 cover:         /assets/cover4.jpg
