@@ -13,7 +13,7 @@ photoswipe:    false
 # feed:    false
 ---
 
-ここでは、Kubernetesの各コンポーネントの関係について説明します。
+この記事では、Kubernetesの各コンポーネントの関係について説明します。
 
 ### クラスターのアーキテクチャ
 
