@@ -66,7 +66,7 @@ similarPosts:
 
 #### 事前準備
 1. J-LISは、住民票コードリストを作成する。
-1. 行政システムは、未使用の住民票コードをJ-LISから複数個取得してDBに保持する。少なくなってきたら都度J-LISに要求して住民票コードを貯めておく。
+1. 住基システムは、未使用の住民票コードをJ-LISから複数個取得してDBに保持する。少なくなってきたら都度J-LISに要求して住民票コードを貯めておく。
 
 <figure>
 <img src="{{ site.baseurl }}/media/post/mynumber/mynumber-juki-1.png" />
