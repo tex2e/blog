@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[C#] ファイルストリームをUTF8で読み書きする"
+title:         "[C#] ファイルストリームをUTF8で高速読み書きする"
 date:          2024-06-13
 category:      C#
 cover:         /assets/cover14.jpg
