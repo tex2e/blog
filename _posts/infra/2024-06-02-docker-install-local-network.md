@@ -2,9 +2,9 @@
 layout:        post
 title:         "インターネット通信できない環境でDockerをインストールする"
 date:          2024-06-02
-category:      Linux
+category:      Infrastructure
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /linux/docker-install-local-network
 comments:      true
 published:     true
 latex:         false

@@ -2,9 +2,9 @@
 layout:        post
 title:         "MacOS (M1) にKubernetesの動作環境をminikubeで作成する"
 date:          2024-05-19
-category:      Linux
+category:      Infrastructure
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /linux/kubernetes-install-macos
 comments:      true
 published:     true
 latex:         false

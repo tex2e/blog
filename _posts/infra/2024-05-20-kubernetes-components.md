@@ -2,9 +2,9 @@
 layout:        post
 title:         "Kubernetesのコンポーネント"
 date:          2024-05-20
-category:      Linux
+category:      Infrastructure
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /linux/kubernetes-components
 comments:      true
 published:     true
 latex:         false
