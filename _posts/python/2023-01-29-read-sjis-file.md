@@ -22,12 +22,10 @@ open関数の encoding 引数に指定してファイルを開きます。
 組み込み関数のopen()を使ってエンコードを指定するには、以下のようにencoding引数を使います。
 
 ```python
-ENCODING = 'cp932'
-
-with open('in.txt', 'r', encoding=ENCODING, newline='\n') as f:
+with open('in.txt', 'r', encoding='cp932', newline='\n') as f:
     text = f.read()
 
-with open('out.txt', 'w', encoding=ENCODING, newline='\n') as f:
+with open('out.txt', 'w', encoding='cp932', newline='\n') as f:
     f.write(text)
 ```
 
