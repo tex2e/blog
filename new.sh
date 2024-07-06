@@ -44,7 +44,13 @@ touch_index_html() {
       ;;
     linux )
       category="Linux"
-      if [[ "$directory" = "linux/selinux" ]]; then cover="cover6.jpg"; fi
+      if [[ "$directory" = "linux/selinux" ]]; then
+        cover="cover6.jpg"
+      fi
+      ;;
+    csharp )
+      directory='c#'
+      category="C#"
       ;;
     * )
       # Uppercase first character (e.g. python => Python)
