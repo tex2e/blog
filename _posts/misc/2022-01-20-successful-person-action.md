@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "成功するために必要なこと（行動編）"
+title:         "成功するために必要なこと（2. 行動編）"
 date:          2022-01-20
 category:      Misc
 cover:         /assets/cover14.jpg
@@ -11,15 +11,15 @@ latex:         false
 photoswipe:    false
 syntaxhighlight: false
 similarPosts:
-- [../misc/successful-person, 成功するために必要なこと（思考編）]
-- [../misc/successful-person-action, 成功するために必要なこと（行動編）]
+- [../misc/successful-person, 成功するために必要なこと（1. 思考編）]
+- [../misc/successful-person-action, 成功するために必要なこと（2. 行動編）]
 ---
 
 「失敗なくして成功なし」や「失敗は成功のもと」と言われるように、失敗をする勇気と失敗を受け止めて次に活かすことは、成功するために必要なことです。
 ここでは、どのようにして失敗を乗り越えていくか、その行動についてお話しします。
 
 
-## 2. 行動指針
+## 行動指針
 
 記録と共有、観察と改善などの、成功するためにすべき行動について
 
