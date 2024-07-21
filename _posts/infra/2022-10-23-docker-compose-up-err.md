@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Docker-compose up時のエラー「Couldn't connect to Docker daemon at http+docker://localhost - is it running?」の対処法"
+title:         "[Docker] compose up時のエラー「Couldn't connect to Docker daemon at http+docker://localhost - is it running?」の対処法"
 date:          2022-10-23
 category:      Infrastructure
 cover:         /assets/cover14.jpg

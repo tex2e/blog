@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleで接続先にpythonが存在しないとき"
+title:         "[Ansible] 接続先にpythonが存在しないときの対処法"
 date:          2022-08-19
 category:      Infrastructure
 cover:         /assets/cover14.jpg

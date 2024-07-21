@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "AWS CLIでバケットを作成する方法"
+title:         "[AWS] CLIでバケットを作成する方法"
 date:          2023-11-04
 category:      Infrastructure
 cover:         /assets/cover14.jpg

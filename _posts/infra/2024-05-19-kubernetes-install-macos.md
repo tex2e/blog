@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "MacOS (M1) にKubernetesの動作環境をminikubeで作成する"
+title:         "[Kubernetes] MacOS (M1) に検証環境をminikubeで作成する"
 date:          2024-05-19
 category:      Infrastructure
 cover:         /assets/cover14.jpg

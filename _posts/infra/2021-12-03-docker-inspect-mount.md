@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Dockerコンテナにマウントしているパスの一覧を表示する"
+title:         "[Docker] コンテナにマウントしているパスの一覧を表示する"
 date:          2021-12-03
 category:      Infrastructure
 cover:         /assets/cover14.jpg

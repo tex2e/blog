@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansible入門"
+title:         "[Ansible] SSH公開鍵認証からプレイブック実行までの流れ"
 date:          2022-05-04
 category:      Infrastructure
 cover:         /assets/cover14.jpg

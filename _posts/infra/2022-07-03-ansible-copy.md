@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのcopyモジュールでファイルコピーする"
+title:         "[Ansible] copyモジュールでファイルコピーする"
 date:          2022-07-03
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Kubernetesのコンポーネント"
+title:         "[Kubernetes] コンポーネントとクラスターのアーキテクチャ図"
 date:          2024-05-20
 category:      Infrastructure
 cover:         /assets/cover14.jpg

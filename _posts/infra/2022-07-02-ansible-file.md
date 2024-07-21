@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのfileモジュールでfileやdirの権限を設定する"
+title:         "[Ansible] fileモジュールでfileやdirの権限を設定する"
 date:          2022-07-02
 category:      Infrastructure
 cover:         /assets/cover14.jpg

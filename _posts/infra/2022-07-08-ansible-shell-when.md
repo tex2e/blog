@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのshellモジュールの結果で条件分岐させる"
+title:         "[Ansible] shellモジュールの結果で条件分岐させる"
 date:          2022-07-08
 category:      Infrastructure
 cover:         /assets/cover14.jpg

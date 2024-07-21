@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Docker-composeインストール後のエラー「error while loading shared libraries: libz.so.1」の対処法"
+title:         "[Docker] composeインストール後のエラー「error while loading shared libraries: libz.so.1」の対処法"
 date:          2021-12-04
 category:      Infrastructure
 cover:         /assets/cover14.jpg

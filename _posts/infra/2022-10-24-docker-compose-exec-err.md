@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Docker-compose exec時のエラー「the input device is not a TTY」の対処法"
+title:         "[Docker] compose exec時のエラー「the input device is not a TTY」の対処法"
 date:          2022-10-24
 category:      Infrastructure
 cover:         /assets/cover14.jpg

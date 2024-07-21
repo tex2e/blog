@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのpingモジュールを使う"
+title:         "[Ansible] pingモジュールを使う"
 date:          2022-07-01
 category:      Infrastructure
 cover:         /assets/cover14.jpg

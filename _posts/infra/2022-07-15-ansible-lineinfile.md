@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのlineinfileモジュールでファイルに行を追加する"
+title:         "[Ansible] lineinfileモジュールでファイルに行を追加する"
 date:          2022-07-15
 category:      Infrastructure
 cover:         /assets/cover14.jpg

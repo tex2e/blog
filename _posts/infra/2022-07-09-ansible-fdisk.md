@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleでfdiskを使ってパーティションを設定する"
+title:         "[Ansible] fdiskを使ってパーティションを設定する"
 date:          2022-07-09
 category:      Infrastructure
 cover:         /assets/cover14.jpg

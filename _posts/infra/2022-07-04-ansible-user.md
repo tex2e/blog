@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのuserモジュールでユーザ作成する"
+title:         "[Ansible] userモジュールでユーザ作成する"
 date:          2022-07-04
 category:      Infrastructure
 cover:         /assets/cover14.jpg

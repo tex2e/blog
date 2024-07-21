@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのreplaceモジュールでファイルの内容を編集する"
+title:         "[Ansible] replaceモジュールでファイルの内容を編集する"
 date:          2022-07-16
 category:      Infrastructure
 cover:         /assets/cover14.jpg

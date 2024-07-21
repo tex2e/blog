@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのselinuxモジュールで無効化・有効化する"
+title:         "[Ansible] selinuxモジュールで無効化・有効化する"
 date:          2022-07-05
 category:      Infrastructure
 cover:         /assets/cover14.jpg

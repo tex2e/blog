@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのrebootモジュールで再起動する"
+title:         "[Ansible] rebootモジュールでサーバを再起動する"
 date:          2022-07-06
 category:      Infrastructure
 cover:         /assets/cover14.jpg

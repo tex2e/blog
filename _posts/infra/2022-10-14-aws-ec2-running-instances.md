@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "AWS CLIで起動中のEC2インスタンスID一覧を表示＆EC2を起動・停止する"
+title:         "[AWS] CLIで起動中のEC2インスタンスID一覧を表示＆EC2を起動・停止する"
 date:          2022-10-14
 category:      Infrastructure
 cover:         /assets/cover14.jpg

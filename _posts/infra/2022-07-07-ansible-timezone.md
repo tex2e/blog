@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Ansibleのtimezoneモジュールでタイムゾーンを設定する"
+title:         "[Ansible] timezoneモジュールでタイムゾーンを設定する"
 date:          2022-07-07
 category:      Infrastructure
 cover:         /assets/cover14.jpg
