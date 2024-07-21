@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "C#でデコレータパターンを実装する"
+title:         "[C#] デコレータパターンを実装する"
 date:          2024-07-07
 category:      C#
 cover:         /assets/cover14.jpg
