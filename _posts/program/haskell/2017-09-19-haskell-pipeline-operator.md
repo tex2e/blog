@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Hakellでパイプライン演算子"
+title:         "[Hakell] パイプライン演算子の作り方"
 date:          2017-09-19
 category:      Program
 author:        tex2e

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Python で Enumerable#each_with_index"
+title:         "[Python] RubyのEnumerable#each_with_indexを自作する"
 date:          2016-12-15
 category:      Python
 author:        tex2e

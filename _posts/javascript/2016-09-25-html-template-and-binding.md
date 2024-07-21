@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "テンプレートエンジンを使わないで、コードの埋め込みを行う"
+title:         "[JavaScript] テンプレートエンジンを使わないで、コードの埋め込みを行う"
 date:          2016-09-25
 category:      JavaScript
 author:        tex2e

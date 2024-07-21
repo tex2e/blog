@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "OOP in JavaScript"
+title:         "[JavaScript] オブジェクト指向プログラミング"
 date:          2016-12-03
 category:      JavaScript
 author:        tex2e

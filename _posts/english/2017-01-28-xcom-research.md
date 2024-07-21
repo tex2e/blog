@@ -7,7 +7,7 @@ author:        tex2e
 cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
-published:     false # set to be true
+published:     false
 ---
 
 

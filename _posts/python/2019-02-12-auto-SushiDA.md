@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "タイピングゲーム「寿司打」の自動化"
+title:         "[Python] タイピングゲーム「寿司打」の自動化"
 date:          2019-02-12
 category:      Python
 author:        tex2e

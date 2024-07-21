@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "配列を返すメソッドをブロックも受け付けるように拡張する"
+title:         "[Ruby] 配列を返すメソッドをブロックも受け付けるように拡張する"
 date:          2016-12-08
 category:      Ruby
 author:        tex2e

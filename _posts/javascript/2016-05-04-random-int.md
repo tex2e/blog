@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "JavaScriptで整数の乱数を得る"
+title:         "[JavaScript] 整数の乱数を取得する方法"
 date:          2016-05-04
 category:      JavaScript
 author:        tex2e

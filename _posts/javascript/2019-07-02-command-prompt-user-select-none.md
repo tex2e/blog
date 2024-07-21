@@ -1,7 +1,6 @@
 ---
 layout:        post
-title:         "コマンド例の「$」の部分をコピペさせない"
-menutitle:     "Webページでコマンド例の「$」の部分をコピペさせない"
+title:         "[JavaScript] Webページでコマンド例の「$」の部分をコピペさせない"
 date:          2019-07-02
 category:      JavaScript
 author:        tex2e

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShell で多階層のフォルダを一発で作成する (mkdir -p)"
+title:         "[PowerShell] 多階層のフォルダを一発で作成する (mkdir -p)"
 date:          2024-01-28
 category:      PowerShell
 cover:         /assets/cover14.jpg

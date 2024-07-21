@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Javaでコレクション・Streamの操作"
+title:         "[Java] コレクション・Streamを操作するメソッド一覧"
 date:          2020-07-25
 category:      Java
 cover:         /assets/cover14.jpg
@@ -87,6 +87,7 @@ System.out.println(list.subList(1, 3)); // => [def, ghi]
 ```
 
 <br>
+
 ### マップ (Map)
 
 #### マップの要素の設定 (put)
@@ -153,6 +154,7 @@ System.out.println(map.values()); // => [りんご, なし, みかん]
 
 
 <br>
+
 ### Stream
 
 #### コレクションからStreamを生成 (stream)

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "JavaScriptでGETパラメータの取得"
+title:         "[JavaScript] HTTPで渡されたGETパラメータを取得する方法"
 date:          2016-09-23
 category:      JavaScript
 author:        tex2e
@@ -10,11 +10,8 @@ comments:      false
 published:     true
 ---
 
-JavaScriptでGETパラメータを取得する関数を定義します
+JavaScriptでGETパラメータを取得する関数の作り方について説明します。
 
-
-問題
-----------
 
 次のことをする関数を作ります。
 
@@ -22,8 +19,8 @@ JavaScriptでGETパラメータを取得する関数を定義します
 - 取得した値がURLエンコードされていれば、デコードする
 
 
-解決方法
-----------
+### 解決方法
+
 
 某JSライブラリの中を調べていたら簡潔な実装を見つけたので、以下に書きます。
 
@@ -36,11 +33,11 @@ var getParameterByName = function(name) {
 
 この関数の動作確認は、例えばURLに `title` パラメータを含ませて、
 
-http://適当なホスト名?title=Vim%20%26%20Emacs%20%E6%B4%BB%E7%94%A8%E8%A1%93
+`http://適当なホスト名?title=Vim%20%26%20Emacs%20%E6%B4%BB%E7%94%A8%E8%A1%93`
 
 としてから、
 
-```
+```js
 var title = getParameterByName("title");
 ```
 

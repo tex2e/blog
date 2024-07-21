@@ -1,7 +1,6 @@
 ---
 layout:        post
-menutitle:     "PowerShellの正規表現で名前付きグループ (Named Group) を使う"
-title:         "PowerShell 正規表現で名前付きグループを使う"
+title:         "[PowerShell] 正規表現で名前付きグループ (Named Group) を使う"
 date:          2024-01-26
 category:      PowerShell
 cover:         /assets/cover14.jpg

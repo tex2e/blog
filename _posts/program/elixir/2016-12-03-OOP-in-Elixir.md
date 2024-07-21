@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "OOP in Elixir"
+title:         "[Elixir] オブジェクト指向プログラミング"
 date:          2016-12-03
 category:      Program
 author:        tex2e

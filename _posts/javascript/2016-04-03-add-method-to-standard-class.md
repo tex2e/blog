@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "JSでRubyの .times .upto .downto メソッドを作る"
+title:         "[JavaScript] Rubyの .times .upto .downto メソッドを作る"
 date:          2016-04-03
 category:      JavaScript
 author:        tex2e
@@ -10,7 +10,7 @@ comments:      false
 published:     true
 ---
 
-JavaScriptでRubyのIntegerクラスのメソッド `times`, `upto`, `downto` を作る方法。
+JavaScriptでRubyのIntegerクラスのメソッド `times`, `upto`, `downto` を作る方法について説明します。
 
 
 Integer#times
@@ -165,3 +165,5 @@ Number.prototype.downto = function (limit, block) {
   console.log(i);
 });
 ```
+
+以上です。

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "ElixirでFizzBuzzを作成する"
+title:         "[Elixir] FizzBuzzを作成する"
 date:          2017-01-04
 category:      Program
 author:        tex2e

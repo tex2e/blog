@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Log4j2の脆弱性がSELinuxで防げるかを検証する"
+title:         "[Java] Log4j2の脆弱性がSELinuxで防げるかを検証する"
 date:          2022-01-07
 category:      Java
 cover:         /assets/cover14.jpg

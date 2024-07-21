@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "OOP in Python"
+title:         "[Python] オブジェクト指向プログラミング"
 date:          2016-12-03
 category:      Python
 author:        tex2e

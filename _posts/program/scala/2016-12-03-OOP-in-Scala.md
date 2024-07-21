@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "OOP in Scala"
+title:         "[Scala] オブジェクト指向プログラミング"
 date:          2016-12-03
 category:      Program
 author:        tex2e

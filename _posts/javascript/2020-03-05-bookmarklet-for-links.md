@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Markdown/HTML用のリンクを作るbookmarklet"
+title:         "[ブラウザ] Markdown/HTML用のリンクを生成するブックマークレット"
 date:          2020-04-25
 category:      JavaScript
 cover:         /assets/cover14.jpg
@@ -13,7 +13,7 @@ published:     true
 # draft:   true
 ---
 
-ブックマークレットの追加方法は Chrome > 上部のブックマークを右クリック > ページを追加 > URLにjavascriptを書いて保存、の手順です。
+ブックマークレット（bookmarklet）の追加方法は Chrome > 上部のブックマークを右クリック > ページを追加 > URLにjavascriptを書いて保存、の手順です。
 使用方法は、作成したブックマークレットをクリックすると、そのページのリンクを生成して、クリップボードにコピーされます。
 
 ### タイトルとURLからMarkdown用のリンク生成

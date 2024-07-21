@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Rustで16進数ダンプ (Hexdump)"
+title:         "[Rust] 16進数ダンプ (Hexdump) 関数の作り方"
 date:          2021-09-27
 category:      Program
 cover:         /assets/cover14.jpg

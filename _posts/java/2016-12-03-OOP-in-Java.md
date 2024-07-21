@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "OOP in Java"
+title:         "[Java] オブジェクト指向プログラミング"
 date:          2016-12-03
 category:      Java
 author:        tex2e

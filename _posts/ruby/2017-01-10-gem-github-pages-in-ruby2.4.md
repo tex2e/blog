@@ -7,7 +7,7 @@ author:        tex2e
 cover:         /assets/cover14.jpg
 redirect_from:
 comments:      false
-published:     true
+published:     false
 ---
 
 （この問題は gem 提供側の対応によって、すでに解決している問題です。）

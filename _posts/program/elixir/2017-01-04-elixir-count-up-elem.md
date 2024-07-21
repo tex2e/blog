@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Elixirで配列の要素数をカウントする"
+title:         "[Elixir] 配列の要素数をカウントする"
 date:          2017-01-04
 category:      Program
 author:        tex2e

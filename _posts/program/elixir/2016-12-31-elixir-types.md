@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Elixir Typespecs"
+title:         "[Elixir] Typespecs（型の一覧）"
 date:          2016-12-01
 category:      Program
 author:        tex2e

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "sleep関数"
+title:         "[JavaScript] sleep関数の作り方"
 date:          2016-06-16
 category:      JavaScript
 author:        tex2e

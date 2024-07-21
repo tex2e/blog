@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Rake Guide"
+title:         "[Ruby] Rake入門"
 date:          2016-09-24
 category:      Ruby
 author:        tex2e
@@ -10,6 +10,7 @@ comments:      false
 published:     true
 ---
 
+MakeのRuby版である「Rake」の使い方について説明します。
 
 ## Install Rake
 

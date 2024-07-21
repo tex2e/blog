@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Vue.js 入門"
+title:         "[Vue] Vue.jsを初めて使う人のための入門"
 date:          2021-03-13
 category:      JavaScript
 cover:         /assets/cover14.jpg

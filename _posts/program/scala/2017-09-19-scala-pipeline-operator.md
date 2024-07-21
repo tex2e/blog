@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Scalaでパイプライン演算子"
+title:         "[Scala] パイプライン演算子の作り方"
 date:          2017-09-19
 category:      Program
 author:        tex2e

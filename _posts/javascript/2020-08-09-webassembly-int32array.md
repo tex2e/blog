@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "WebAssemblyで32bit整数配列をC言語で処理する"
+title:         "[JavaScript] WebAssemblyで32bit整数配列をC言語で処理する"
 date:          2020-08-09
 category:      JavaScript
 cover:         /assets/cover14.jpg

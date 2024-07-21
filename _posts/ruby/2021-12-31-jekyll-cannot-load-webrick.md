@@ -6,7 +6,7 @@ category:      Ruby
 cover:         /assets/cover14.jpg
 redirect_from:
 comments:      true
-published:     true
+published:     false
 latex:         false
 photoswipe:    false
 # sitemap: false

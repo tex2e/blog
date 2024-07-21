@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "アクセス元の国によってGoogle Analyticsを制限する"
+title:         "[JavaScript] アクセス元の国によってGoogle Analyticsを制限する"
 date:          2022-03-06
 category:      JavaScript
 cover:         /assets/cover14.jpg

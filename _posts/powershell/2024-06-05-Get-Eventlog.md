@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "WindowsイベントログをPowerShellで収集する"
+title:         "[PowerShell] Windowsイベントログを収集する"
 date:          2024-06-05
 category:      PowerShell
 cover:         /assets/cover14.jpg

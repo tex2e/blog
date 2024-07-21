@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "難読化JavaScriptの作り方"
+title:         "[JavaScript] 難読化プログラムの作り方"
 date:          2016-05-22
 category:      JavaScript
 author:        tex2e

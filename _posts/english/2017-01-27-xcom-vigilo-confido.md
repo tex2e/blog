@@ -7,7 +7,7 @@ author:        tex2e
 cover:         /assets/cover14.jpg
 redirect_from: /misc/xcom-vigilo-confido
 comments:      false
-published:     true
+published:     false
 ---
 
 XCOM の標語である Vigilo Confido は元々ラテン語ですが、英語にすると「Vigilo」は vigil (警戒)、「Confido」は confidence (信頼) なので、直訳すると「**警戒と信頼**」になります。

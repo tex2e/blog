@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "npm install without sudo"
+title:         "[Node] npmをsudo権限なしでインストールする"
 date:          2017-04-26
 category:      JavaScript
 author:        tex2e
@@ -10,31 +10,38 @@ comments:      false
 published:     true
 ---
 
-# Install npm packages globally without sudo on macOS and Linux
+npmパッケージをmacOSとLinuxでsudoなしでグローバルにインストールする方法について説明します。
 
-`npm` installs packages locally within your projects by default. You can also install packages globally (e.g. `npm install -g <package>`) (useful for command-line apps). However the downside of this is that you need to be root (or use `sudo`) to be able to install globally.
+`npm`はデフォルトでプロジェクト内にパッケージをローカルにインストールします。
+パッケージをグローバルにインストールすることもできます（例：`npm install -g <package>`）。
+グローバルにインストールすると、コマンドラインで使用するときに便利になります。
+ただし、これにはroot権限（または`sudo`の使用）が必要になるという欠点があります。
 
-Here is a way to install packages globally for a given user.
+ここでは、特定のユーザーに対してパッケージをグローバルにインストールする方法を紹介します。
 
-###### 1. Create a directory for global packages
+##### 1. グローバルパッケージ用のディレクトリを作成
 
 ```sh
 mkdir "$HOME/.npm-packages"
 ```
 
-###### 2. Indicate to `npm` where to store globally installed packages. In your `~/.npmrc` file add:
+##### 2. グローバルにインストールされたパッケージを保存する場所を`npm`に指定する
+
+`~/.npmrc`ファイルに以下を追加します。
 
 ```sh
 prefix=$HOME/.npm-packages
 ```
 
-###### 3. Ensure `npm` will find installed binaries and man pages. Add the following to your `.bashrc`/`.zshrc`:
+##### 3. インストールされたバイナリとmanページを`npm`が見つけられるようにする。
+
+以下を`.bashrc`または`.zshrc`に追加します。
 
 ```sh
 PATH="$PATH:$HOME/.npm-packages/bin"
 ```
 
----
+`npm`のドキュメント
+["Fixing `npm` permissions"](https://docs.npmjs.com/getting-started/fixing-npm-permissions)も参照してください。
 
-See also: `npm`'s documentation on
-["Fixing `npm` permissions"](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
+以上です。

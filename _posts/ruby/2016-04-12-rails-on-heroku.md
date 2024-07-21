@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "RailsをHerokuにpushするときにsqlite3でエラーが起こる"
+title:         "[Rails] Herokuにpushするときにsqlite3でエラーが起こる"
 date:          2016-04-12
 category:      Ruby
 author:        tex2e
