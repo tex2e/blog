@@ -37,40 +37,37 @@ C# のメタプログラミング (Reflection) で、クラスに定義されて
 ```csharp
 using System.Reflection;
 
-namespace ExampleGetMethod
+public class MyClass
 {
-    public class MyClass
+    public string MyMethod1(string arg1, string arg2)
     {
-        public string MyMethod1(string arg1, string arg2)
-        {
-            return $"[MyMethod1] arg1={arg1}, arg2={arg2}";
-        }
-
-        public string MyMethod2(string arg1, string arg2)
-        {
-            return $"[MyMethod2] arg1={arg1}, arg2={arg2}";
-        }
+        return $"[MyMethod1] arg1={arg1}, arg2={arg2}";
     }
 
-    public class ExampleGetMethod
+    public string MyMethod2(string arg1, string arg2)
     {
-        public static void Main()
-        {
-            var myobj = new MyClass();
+        return $"[MyMethod2] arg1={arg1}, arg2={arg2}";
+    }
+}
 
-            Type t = myobj.GetType();
+public class ExampleGetMethod
+{
+    public static void Main()
+    {
+        var myobj = new MyClass();
 
-            MethodInfo[] methodInfos = t.GetMethods(
-                BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
-            Console.WriteLine($"公開メソッドの数：{methodInfos.Length}");
+        Type t = myobj.GetType();
 
-            foreach (MethodInfo methodInfo in methodInfos) {
-                // myobj.MyMethodX("123", "456") を動的メソッド呼び出しで実現する
-                var res = methodInfo.Invoke(myobj, new object[] { "123", "456" });
-                Console.WriteLine($"result: {res}");
-            }
+        MethodInfo[] methodInfos = t.GetMethods(
+            BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+        Console.WriteLine($"公開メソッドの数：{methodInfos.Length}");
 
+        foreach (MethodInfo methodInfo in methodInfos) {
+            // myobj.MyMethodX("123", "456") を動的メソッド呼び出しで実現する
+            var res = methodInfo.Invoke(myobj, new object[] { "123", "456" });
+            Console.WriteLine($"result: {res}");
         }
+
     }
 }
 ```

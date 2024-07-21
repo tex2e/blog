@@ -31,38 +31,35 @@ C# のメタプログラミング (Reflection) で、インスタンスのプロ
 ```csharp
 using System.Reflection;
 
-namespace ExampleGetPropertie
+// 検証用クラス
+public class MyPropertyClass
 {
-    // 検証用クラス
-    public class MyPropertyClass
+    public int Property1 { get; set; }
+    public string? Property2 { get; set; }
+}
+
+public class ExampleGetProperties
+{
+    public static void Main()
     {
-        public int Property1 { get; set; }
-        public string? Property2 { get; set; }
-    }
+        var myprop = new MyPropertyClass() {
+            Property1 = 123,
+            Property2 = "hello"
+        };
 
-    public class ExampleGetProperties
-    {
-        public static void Main()
-        {
-            var myprop = new MyPropertyClass() {
-                Property1 = 123,
-                Property2 = "hello"
-            };
+        Type t = myprop.GetType();
 
-            Type t = myprop.GetType();
+        PropertyInfo? propInfo1 = t.GetProperty("Property1");  // プロパティ情報の取得
+        Console.WriteLine($"プロパティ名: {propInfo1?.Name}");
+        Console.WriteLine($"プロパティ型: {propInfo1?.PropertyType}");
+        Console.WriteLine($"プロパティ値: {propInfo1?.GetValue(myprop)}");  // プロパティ値の取得
+        Console.WriteLine();
 
-            PropertyInfo? propInfo1 = t.GetProperty("Property1");  // プロパティ情報の取得
-            Console.WriteLine($"プロパティ名: {propInfo1?.Name}");
-            Console.WriteLine($"プロパティ型: {propInfo1?.PropertyType}");
-            Console.WriteLine($"プロパティ値: {propInfo1?.GetValue(myprop)}");  // プロパティ値の取得
-            Console.WriteLine();
-
-            PropertyInfo? propInfo2 = t.GetProperty("Property2");  // プロパティ情報の取得
-            Console.WriteLine($"プロパティ名: {propInfo2?.Name}");
-            Console.WriteLine($"プロパティ型: {propInfo2?.PropertyType}");
-            Console.WriteLine($"プロパティ値: {propInfo2?.GetValue(myprop)}");  // プロパティ値の取得
-            Console.WriteLine();
-        }
+        PropertyInfo? propInfo2 = t.GetProperty("Property2");  // プロパティ情報の取得
+        Console.WriteLine($"プロパティ名: {propInfo2?.Name}");
+        Console.WriteLine($"プロパティ型: {propInfo2?.PropertyType}");
+        Console.WriteLine($"プロパティ値: {propInfo2?.GetValue(myprop)}");  // プロパティ値の取得
+        Console.WriteLine();
     }
 }
 ```

@@ -20,33 +20,27 @@ C# でデザインパターンの1つであるデコレータパターン (Decor
 以下は、挨拶を印字するための関数 MyFunction の呼び出し時に、開始と終了のログをstdoutに出力する処理を付け加えるための高階関数 MyDecorator を定義して使用する例です。
 
 ```csharp
-namespace DecoratorExample
+public static void Main()
 {
-    public static class DecoratorExample
+    string res = MyDecorator("MyFunction()", () => MyFunction("YOUR NAME"));
+    Console.WriteLine(res);
+}
+
+static string MyFunction(string message)
+{
+    return $"Hello, {message}!";
+}
+
+public static T MyDecorator<T>(string methodName, Func<T> func)
+{
+    Console.WriteLine($"[*] Start {methodName}");
+    try
     {
-        public static void Main()
-        {
-            string res = MyDecorator("MyFunction()", () => MyFunction("YOUR NAME"));
-            Console.WriteLine(res);
-        }
-
-        static string MyFunction(string message)
-        {
-            return $"Hello, {message}!";
-        }
-
-        public static T MyDecorator<T>(string methodName, Func<T> func)
-        {
-            Console.WriteLine($"[*] Start {methodName}");
-            try
-            {
-                return func();
-            }
-            finally
-            {
-                Console.WriteLine($"[*] Finished {methodName}");
-            }
-        }
+        return func();
+    }
+    finally
+    {
+        Console.WriteLine($"[*] Finished {methodName}");
     }
 }
 ```

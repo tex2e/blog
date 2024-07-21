@@ -36,45 +36,42 @@ C# のメタプログラミング (Reflection) で、クラスに定義されて
 ```csharp
 using System.Reflection;
 
-namespace ExampleGetMethodsByAttribute
+[AttributeUsage(AttributeTargets.Method)]
+public class MyAttribute : Attribute
+{}
+
+public class MyClass
 {
-    [AttributeUsage(AttributeTargets.Method)]
-    public class MyAttribute : Attribute
-    {}
+    [MyAttribute]
+    public string MyMethod1() { return "1"; }
 
-    public class MyClass
+    [MyAttribute]
+    public string MyMethod2() { return "2"; }
+
+    public string MyMethod3() { return "3"; }
+
+    public string MyMethod4() { return "4"; }
+
+    [MyAttribute]
+    public string MyMethod5() { return "5"; }
+}
+
+public class ExampleGetMethodsByAttribute
+{
+    public static void Main()
     {
-        [MyAttribute]
-        public string MyMethod1() { return "1"; }
+        var myobj = new MyClass();
 
-        [MyAttribute]
-        public string MyMethod2() { return "2"; }
+        Type t = myobj.GetType();
 
-        public string MyMethod3() { return "3"; }
+        MethodInfo[] methodInfos = t.GetMethods(
+            BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
 
-        public string MyMethod4() { return "4"; }
-
-        [MyAttribute]
-        public string MyMethod5() { return "5"; }
-    }
-
-    public class ExampleGetMethodsByAttribute
-    {
-        public static void Main()
-        {
-            var myobj = new MyClass();
-
-            Type t = myobj.GetType();
-
-            MethodInfo[] methodInfos = t.GetMethods(
-                BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
-
-            foreach (MethodInfo methodInfo in methodInfos) {
-                if (methodInfo.IsDefined(typeof(MyAttribute), true)) {
-                    // 調査対象のメソッドにカスタム属性が付与されているときのみ、メソッドを実行する
-                    var res = methodInfo.Invoke(myobj, new object[] {});
-                    Console.WriteLine($"result: {res}");
-                }
+        foreach (MethodInfo methodInfo in methodInfos) {
+            if (methodInfo.IsDefined(typeof(MyAttribute), true)) {
+                // 調査対象のメソッドにカスタム属性が付与されているときのみ、メソッドを実行する
+                var res = methodInfo.Invoke(myobj, new object[] {});
+                Console.WriteLine($"result: {res}");
             }
         }
     }
