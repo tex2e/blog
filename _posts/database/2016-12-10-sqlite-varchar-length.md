@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "SQLite で VARCHAR 型の文字数を制限する方法"
+title:         "[SQLite] VARCHAR型の文字数を制限する方法"
 date:          2016-12-10
 category:      Database
 author:        tex2e
@@ -10,9 +10,8 @@ comments:      false
 published:     true
 ---
 
-初めに言っておく必要があるが、残念なことに、SQLite のテーブルのスキーマでは文字列の最大の長さを指定することはできない。
-SQLiteの公式サイトにある「よくある質問」の中の、文字列型 TEXT が取り得る最大の長さについての
-質問と回答の原文とその意訳を以下に示す。
+初めに言っておく必要がありますが、残念なことに、SQLite のテーブルのスキーマでは文字列の最大の長さを指定することはできません。
+SQLiteの公式サイトにある「よくある質問」の中の、文字列型 TEXT が取り得る最大の長さについての質問と回答の原文とその意訳は以下の通りです。
 
 > (Q) What is the maximum size of a VARCHAR in SQLite?
 >
@@ -36,7 +35,7 @@ SQLiteの公式サイトにある「よくある質問」の中の、文字列�
 
 SQLite のテーブルのスキーマでは文字列の最大の長さを指定することはできない。
 
-
+<br>
 
 ### 参考文献
 

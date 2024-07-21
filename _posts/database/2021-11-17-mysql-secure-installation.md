@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "mysql_secure_installationでMySQLから不要なユーザを削除する"
+title:         "[MySQL] mysql_secure_installationで不要なユーザを削除する"
 date:          2021-11-17
 category:      Database
 cover:         /assets/cover14.jpg

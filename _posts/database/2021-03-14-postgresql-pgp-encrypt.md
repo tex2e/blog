@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PostgreSQLで共通鍵によるデータ暗号化・復号"
+title:         "[PostgreSQL] 共通鍵によるデータ暗号化・復号"
 date:          2021-03-14
 category:      Database
 cover:         /assets/cover14.jpg

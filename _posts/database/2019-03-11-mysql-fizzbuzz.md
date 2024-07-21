@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "MySQL で FizzBuzz"
+title:         "[MySQL] SQLでFizzBuzzを出力する"
 date:          2019-03-11
 category:      Database
 author:        tex2e
@@ -173,3 +173,5 @@ from (
 +----------+
 100 rows in set (0.00 sec)
 ```
+
+以上です。

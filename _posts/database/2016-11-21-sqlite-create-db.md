@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "SQLiteでデーターベースを作る方法"
+title:         "[SQLite] データベースを作る方法"
 date:          2016-11-21
 category:      Database
 author:        tex2e
@@ -10,7 +10,7 @@ comments:      false
 published:     true
 ---
 
-SQLiteでデーターベースを作る方法について説明します。
+SQLiteでデータベースを作る方法について説明します。
 
 まず、作りたいテーブルについてのスキーマを定義したファイルを作成します。
 

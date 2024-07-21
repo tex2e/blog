@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[MSSQL] SQLServerでSELECTした行に連番を振る (ROW_NUMBER)"
+title:         "[MSSQL] SQL ServerでSELECTした行に連番を振る (ROW_NUMBER)"
 date:          2024-06-03
 category:      Database
 cover:         /assets/cover14.jpg

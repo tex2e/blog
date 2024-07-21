@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "MySQLが起動できないときの対処 (/var/lib/mysql/ 関連)"
+title:         "[MySQL] mysqldが起動できないときの対処 (/var/lib/mysql/ 関連)"
 date:          2021-10-11
 category:      Database
 cover:         /assets/cover14.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "MySQLへ外部からの接続するための手順"
+title:         "[MySQL] DBへ外部からの接続するための手順"
 date:          2021-08-07
 category:      Database
 cover:         /assets/cover14.jpg

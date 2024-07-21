@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "MySQL (MariaDB) でユーザ作成と権限付与をする"
+title:         "[MySQL] MariaDBでユーザ作成と権限付与をする"
 date:          2021-11-18
 category:      Database
 cover:         /assets/cover14.jpg

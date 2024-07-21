@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "MySQLでDBのダンプとリストア"
+title:         "[MySQL] DBのダンプの作成とリストアの方法"
 date:          2021-11-19
 category:      Database
 cover:         /assets/cover14.jpg

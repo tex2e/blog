@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "MySQLで1〜Nの数列を扱う"
+title:         "[MySQL] 1〜Nの数列をSQLで扱う"
 date:          2019-03-10
 category:      Database
 author:        tex2e
