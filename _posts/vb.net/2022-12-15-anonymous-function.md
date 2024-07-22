@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "VB.NETで無名関数を使う"
+title:         "[VB.NET] 無名関数の使い方"
 date:          2022-12-15
 category:      VB.NET
 cover:         /assets/cover14.jpg

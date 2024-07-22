@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "配列(CSV)をDataRowに変換する [VB.NET]"
+title:         "[VB.NET] 配列(CSV)をDataRowに変換する"
 date:          2020-06-20
 category:      VB.NET
 cover:         /assets/cover14.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "行編集によるDataRowStateの変化"
+title:         "[VB.NET] 行編集によるDataRowStateの変化"
 date:          2020-07-06
 category:      VB.NET
 cover:         /assets/cover14.jpg

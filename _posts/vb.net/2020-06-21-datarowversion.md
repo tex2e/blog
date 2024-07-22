@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "DataRow変更前後の値をDataRowVersionで取得する"
+title:         "[VB.NET] DataRow変更前後の値をDataRowVersionで取得する"
 date:          2020-06-21
 category:      VB.NET
 cover:         /assets/cover14.jpg

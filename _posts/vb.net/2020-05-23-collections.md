@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "VB.NET でコレクション"
+title:         "[VB.NET] コレクション (Collections) の使い方"
 date:          2020-05-22
 category:      VB.NET
 cover:         /assets/cover14.jpg
@@ -18,7 +18,7 @@ VB.NET でコレクション関連の関数・メソッドの一覧
 
 #### リストのソート (Sort)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"ccc", "dd", "aaaa", "b"})
 
 '辞書順
@@ -32,7 +32,7 @@ Console.WriteLine(String.Join(" ", list1)) ' => b dd ccc aaaa
 
 #### リストの検索 (Find)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"a", "bb", "ccc", "dd", "e"})
 
 Dim find As String = list1.Find(Function(s) s.Length = 2)
@@ -45,7 +45,7 @@ Console.WriteLine("FindAll: {0}", String.Join(" ", findAll)) ' => bb dd
 #### ディクショナリにキー・値が含まれるか (ContainsKey, ContainsValue)
 
 {% raw %}
-```vb.net
+```vb
 Dim list1 As New Dictionary(Of String, Integer) From {{"apple", 100}, {"banana", 200}}
 
 Console.WriteLine(list1.ContainsKey("apple")) ' => True
@@ -55,7 +55,7 @@ Console.WriteLine(list1.ContainsValue(200))   ' => True
 
 #### リストの末尾にリストを追加 (AddRange)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"a", "b", "c", "d"})
 Dim list2 As New List(Of String)({"e", "f", "g"})
 
@@ -66,7 +66,7 @@ Console.WriteLine(String.Join(" ", list1)) ' => a b c d e f g
 
 #### コレクションの平均・合計 (Average, Sum)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"aaa", "bb", "cccc", "d"})
 
 Console.WriteLine("{0}", list1.Average(Function(s) s.Length)) ' => 2.5
@@ -75,7 +75,7 @@ Console.WriteLine("{0}", list1.Sum(Function(s) s.Length))     ' => 10
 
 #### Enumeratorによる反復 (list.GetEnumerator)
 
-```vb.net
+```vb
 Dim list1 As New List(Of Integer)({1, 2, 3})
 
 Dim enumerator As List(Of Integer).Enumerator = list1.GetEnumerator()
@@ -86,7 +86,7 @@ End While
 
 #### 要素が条件を満たすか (All, Any)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"Hello", "world", "!"})
 
 Console.WriteLine(list1.All(Function(s) s.Length >= 3)) ' => False
@@ -98,7 +98,7 @@ Console.WriteLine(list1.Any(Function(s) s.Length = 1)) ' => True
 #### ディクショナリから値取得 (TryGetValue)
 
 {% raw %}
-```vb.net
+```vb
 Dim list1 As New Dictionary(Of String, Integer) From {{"apple", 100}, {"banana", 200}}
 Dim value As Integer
 Dim result As Boolean
@@ -115,7 +115,7 @@ If result Then Console.WriteLine(value)
 
 #### 和差積集合 (Union, Except, Intersect)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"a", "b", "c", "d"})
 Dim list2 As New List(Of String)({"b", "c", "f"})
 
@@ -130,7 +130,7 @@ Console.WriteLine("Intersect: " + String.Join(" ", intersect)) ' => b c
 
 #### コレクションを配列にコピー (CopyTo)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"Hello", "world", "!"})
 Dim list2() As String = {"a", "b", "c", "d", "e", "f", "g"}
 
@@ -140,7 +140,7 @@ Console.WriteLine(String.Join(" ", list2)) ' => a b Hello world ! f g
 
 #### コレクションの連結 (Concat)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"Hello", "world", "!"})
 Dim list2 As New List(Of String)({"a", "b", "c"})
 
@@ -153,7 +153,7 @@ Next
 
 #### Listの作成と要素追加 (Add)
 
-```vb.net
+```vb
 Dim list1 As New List(Of Integer)
 list1.Add(1)
 list1.Add(2)
@@ -167,7 +167,7 @@ Next
 #### ディクショナリの生成 (Dictionary)
 
 {% raw %}
-```vb.net
+```vb
 Dim list1 As New Dictionary(Of String, Integer) From {{"apple", 100}, {"banana", 200}}
 list1.Add("cherry", 300)
 
@@ -182,7 +182,7 @@ Next
 
 #### 要素ごとに処理 (ForEach)
 
-```vb.net
+```vb
 Dim total As Integer = 0
 Dim list1 As New List(Of Integer)({1, 2, 3, 4})
 
@@ -192,7 +192,7 @@ Console.WriteLine(total) ' => 10
 
 #### コレクションのフィルタ (Where)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"aaa", "bb", "cccc", "d"})
 Dim list2 As IEnumerable(Of String) = list1.Where(Function(s) s.Length >= 3)
 
@@ -201,7 +201,7 @@ Console.WriteLine(String.Join(" ", list2)) ' => aaa cccc
 
 #### コレクションの最小・最大 (Min, Max)
 
-```vb.net
+```vb
 Dim list1 As New List(Of String)({"aaa", "bb", "cccc", "d"})
 
 Console.WriteLine("Min: {0}", list1.Min(Function(s) s.Length)) ' => Min: 1

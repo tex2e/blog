@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "ASP.NETでコンパイルとDLL読み込みを高速化する"
+title:         "[ASP.NET] コンパイルとDLL読み込みを高速化する"
 date:          2020-08-09
 category:      VB.NET
 cover:         /assets/cover14.jpg
