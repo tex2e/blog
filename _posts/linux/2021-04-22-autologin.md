@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Kali 2021.1 で起動時に自動ログイン"
+title:         "[Kali Linux] 起動時に自動ログインできるように設定する"
 date:          2021-04-22
 category:      Linux
 cover:         /assets/cover14.jpg

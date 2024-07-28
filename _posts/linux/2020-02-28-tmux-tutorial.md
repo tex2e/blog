@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "tmuxの使い方"
+title:         "tmuxの使い方の概要"
 date:          2020-02-28
 category:      Linux
 cover:         /assets/cover14.jpg
