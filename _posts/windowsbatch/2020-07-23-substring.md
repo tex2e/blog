@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "バッチファイルで固定長・可変長の文字列切り取り"
+title:         "[Windows] バッチファイルで固定長・可変長の文字列切り取り"
 date:          2020-07-23
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

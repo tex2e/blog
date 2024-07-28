@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "バッチファイルの引数の文字列置換・パス展開"
+title:         "[Windows] バッチファイルの引数の文字列置換・パス展開"
 date:          2021-03-12
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

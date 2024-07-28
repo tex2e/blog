@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "VSSコマンドのオプション一覧"
+title:         "[Windows] VSSコマンドのオプション一覧"
 date:          2021-01-29
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

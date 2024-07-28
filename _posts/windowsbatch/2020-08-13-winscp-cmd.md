@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "コマンドからWinSCPでファイルダウンロード"
+title:         "[Windows] WinSCPでファイルダウンロードを自動化する"
 date:          2020-08-13
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windowsのコマンドプロンプトのhelpの閲覧方法"
+title:         "[Windows] コマンドプロンプトのhelpの閲覧方法"
 date:          2024-06-06
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

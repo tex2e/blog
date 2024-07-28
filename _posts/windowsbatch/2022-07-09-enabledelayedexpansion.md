@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "batchのfor文で変数を遅延展開する"
+title:         "[Windows] バッチのfor文で変数を遅延展開する"
 date:          2022-07-09
 category:      WindowsBatch
 cover:         /assets/cover14.jpg
@@ -14,7 +14,6 @@ photoswipe:    false
 ---
 
 Windowsのバッチファイルにおいて、for文で変数を遅延展開する方法について説明します。
-
 
 for文内で `%変数名%` を使うと、for文を評価する際に変数展開されるため、繰返し処理しても値は固定になります。
 しかし、EnableDelayedExpansion を有効化した上で、「%」を「!」に置き換えて `!変数名!` を使うと、for文の繰返し処理ごとに変数を展開するため、常に変数の最新の値を取得することができます。

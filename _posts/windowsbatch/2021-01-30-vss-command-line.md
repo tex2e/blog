@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "コマンドラインでVSSからファイル取得"
+title:         "[Windows] VSSからファイル取得を自動化する"
 date:          2021-01-30
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

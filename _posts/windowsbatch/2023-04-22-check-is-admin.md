@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[Batch] 実行時に管理者権限で動作しているか調べる"
+title:         "[Windows] バッチ実行時に管理者権限で動作しているか調べる"
 date:          2023-04-22
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

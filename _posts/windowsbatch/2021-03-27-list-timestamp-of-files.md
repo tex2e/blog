@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "サブフォルダも含めた全てのファイルの更新時間を出力"
+title:         "[Windows] サブフォルダも含めた全てのファイルの更新時間を出力"
 date:          2021-03-27
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

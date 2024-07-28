@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "batchで更新時間が違うときだけコピーする"
+title:         "[Windows] 更新時間が異なるときにファイルコピーする"
 date:          2021-03-12
 category:      WindowsBatch
 cover:         /assets/cover14.jpg
