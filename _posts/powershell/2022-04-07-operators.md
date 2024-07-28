@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellの演算子の一覧"
+title:         "[PowerShell] 演算子の使い方の一覧"
 date:          2022-04-07
 category:      PowerShell
 cover:         /assets/cover14.jpg

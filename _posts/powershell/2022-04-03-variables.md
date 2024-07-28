@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellの変数の様々な使い方"
+title:         "PowerShellにおける変数の定義・読み書き"
 date:          2022-04-03
 category:      PowerShell
 cover:         /assets/cover14.jpg

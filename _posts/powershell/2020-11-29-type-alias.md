@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellの型エイリアスの一覧"
+title:         "[PowerShell] 型エイリアスの一覧"
 date:          2020-11-29
 category:      PowerShell
 cover:         /assets/cover1.jpg

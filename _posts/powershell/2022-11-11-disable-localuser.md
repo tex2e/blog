@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでローカルユーザを無効化する"
+title:         "[PowerShell] ローカルユーザを無効化する"
 date:          2022-11-11
 category:      PowerShell
 cover:         /assets/cover14.jpg

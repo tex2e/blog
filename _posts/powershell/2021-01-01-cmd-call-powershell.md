@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "バッチファイルからPowerShellを呼び出す"
+title:         "[PowerShell] バッチファイルからPowerShellを呼び出す"
 date:          2021-01-01
 category:      PowerShell
 cover:         /assets/cover1.jpg

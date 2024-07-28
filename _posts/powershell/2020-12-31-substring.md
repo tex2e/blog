@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellで部分文字列を抽出する"
+title:         "[PowerShell] 部分文字列を抽出する"
 date:          2020-12-31
 category:      PowerShell
 cover:         /assets/cover1.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windows PowerShellコンソールの配色を設定する"
+title:         "[PowerShell] PowerShellコンソールの配色を設定する"
 date:          2022-07-09
 category:      PowerShell
 cover:         /assets/cover14.jpg

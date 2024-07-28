@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellの式の評価の構文"
+title:         "[PowerShell] 文字列展開・リストの評価"
 date:          2022-04-01
 category:      PowerShell
 cover:         /assets/cover14.jpg

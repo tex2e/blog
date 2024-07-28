@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellのConvertFrom-CSVでタブ区切り(TSV)をforeachで回す"
+title:         "[PowerShell] ConvertFrom-CSVでタブ区切り (TSV) をforeachで1行ずつ処理する"
 date:          2022-03-03
 category:      PowerShell
 cover:         /assets/cover14.jpg

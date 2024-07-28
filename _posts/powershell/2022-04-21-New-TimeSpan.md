@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellで文字列を日付に変換し、時間差を求める"
+title:         "[PowerShell] 文字列を日付に変換して時間差を求める (New-TimeSpan)"
 date:          2022-04-21
 category:      PowerShell
 cover:         /assets/cover14.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellで複数ファイルを一つにまとめる"
+title:         "[PowerShell] 複数ファイルを一つにまとめる (Get-Content)"
 date:          2022-04-20
 category:      PowerShell
 cover:         /assets/cover14.jpg

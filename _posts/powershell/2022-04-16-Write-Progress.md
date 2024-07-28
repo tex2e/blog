@@ -1,7 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでプログレスバーを表示する"
-menutitle:     "PowerShellでプログレスバーを表示する (Write-Progress)"
+title:         "[PowerShell] 進捗を表すプログレスバーを表示する (Write-Progress)"
 date:          2022-04-16
 category:      PowerShell
 cover:         /assets/cover14.jpg

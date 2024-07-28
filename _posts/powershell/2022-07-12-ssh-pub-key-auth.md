@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellコンソールでSSH公開鍵認証をする"
+title:         "[PowerShell] コンソールでSSH公開鍵認証をする"
 date:          2022-07-12
 category:      PowerShell
 cover:         /assets/cover14.jpg

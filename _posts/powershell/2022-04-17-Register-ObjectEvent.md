@@ -1,7 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでファイルの更新を監視する"
-menutitle:     "PowerShellでファイルの更新を監視する (Get-Content -Wait, FileSystemWatcher)"
+title:         "[PowerShell] ファイルの更新を監視する (Get-Content -Wait, FileSystemWatcher)"
 date:          2022-04-17
 category:      PowerShell
 cover:         /assets/cover14.jpg

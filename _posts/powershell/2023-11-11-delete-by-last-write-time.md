@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでN日経過したファイルを削除する"
+title:         "[PowerShell] N日経過したファイルを削除する"
 date:          2023-11-11
 category:      PowerShell
 cover:         /assets/cover14.jpg

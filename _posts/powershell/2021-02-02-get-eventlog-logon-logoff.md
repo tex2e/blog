@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでログイン・ログアウトのイベントログを取得"
+title:         "[PowerShell] ログイン・ログアウトのイベントログを取得する"
 date:          2021-02-02
 category:      PowerShell
 cover:         /assets/cover1.jpg

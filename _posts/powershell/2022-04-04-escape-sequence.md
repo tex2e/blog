@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellのエスケープシーケンス"
+title:         "[PowerShell] エスケープシーケンスで特殊文字を表現する"
 date:          2022-04-04
 category:      PowerShell
 cover:         /assets/cover14.jpg

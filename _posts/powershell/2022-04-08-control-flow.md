@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellの制御フロー (if, switch, for, foreach)"
+title:         "[PowerShell] 制御フロー (if, switch, for, foreach) の使い方"
 date:          2022-04-08
 category:      PowerShell
 cover:         /assets/cover14.jpg

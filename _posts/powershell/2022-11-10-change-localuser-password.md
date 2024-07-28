@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでローカルユーザをパスワード変更する"
+title:         "[PowerShell] ローカルユーザのパスワードを変更する"
 date:          2022-11-10
 category:      PowerShell
 cover:         /assets/cover14.jpg

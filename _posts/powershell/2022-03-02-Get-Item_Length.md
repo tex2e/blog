@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellのGet-Itemでファイルサイズを取得する"
+title:         "[PowerShell] Get-Itemでファイルサイズを取得する"
 date:          2022-03-02
 category:      PowerShell
 cover:         /assets/cover14.jpg

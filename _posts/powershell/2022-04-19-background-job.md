@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellで処理をバックグラウンドで実行する"
+title:         "[PowerShell] 処理をバックグラウンドで実行する (Start-Job)"
 date:          2022-04-19
 category:      PowerShell
 cover:         /assets/cover14.jpg

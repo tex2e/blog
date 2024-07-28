@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでMap, Filter, Reduceをする"
+title:         "[PowerShell] Map, Filter, Reduceの使い方"
 date:          2022-04-11
 category:      PowerShell
 cover:         /assets/cover14.jpg

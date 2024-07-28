@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "BashのコマンドをPowerShellで実現する"
+title:         "BashのコマンドとPowerShellコマンドの対応表"
 date:          2022-04-18
 category:      PowerShell
 cover:         /assets/cover14.jpg

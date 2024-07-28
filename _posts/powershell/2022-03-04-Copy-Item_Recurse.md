@@ -1,7 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでフォルダをコピーする"
-menutitle:     "PowerShellでフォルダをコピーする (Copy-Item -Recurse)"
+title:         "[PowerShell] フォルダをコピーする (Copy-Item -Recurse)"
 date:          2022-03-04
 category:      PowerShell
 cover:         /assets/cover14.jpg

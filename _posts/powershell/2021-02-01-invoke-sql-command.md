@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellからSQLコマンドを発行する"
+title:         "[PowerShell] SQLコマンドを実行する"
 date:          2021-01-31
 category:      PowerShell
 cover:         /assets/cover1.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellでAES暗号を利用する"
+title:         "[PowerShell] AES暗号で文字列を暗号化する"
 date:          2022-04-23
 category:      PowerShell
 cover:         /assets/cover14.jpg

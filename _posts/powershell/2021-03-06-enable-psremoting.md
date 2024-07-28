@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellをリモート実行する"
+title:         "[PowerShell] リモートでコマンドを実行する"
 date:          2021-03-06
 category:      PowerShell
 cover:         /assets/cover1.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PowerShellの自動変数"
+title:         "[PowerShell] 自動変数の使い方"
 date:          2022-04-09
 category:      PowerShell
 cover:         /assets/cover14.jpg
