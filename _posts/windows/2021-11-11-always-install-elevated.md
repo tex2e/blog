@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "AlwaysInstallElevatedのレジストリ値を確認する"
+title:         "[Windows] AlwaysInstallElevatedのレジストリ値を確認する"
 date:          2021-11-11
 category:      Windows
 cover:         /assets/cover14.jpg

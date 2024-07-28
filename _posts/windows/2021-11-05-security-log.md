@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windowsのセキュリティログで注目すべきイベントID"
+title:         "[Windows] セキュリティログで注目すべきイベントID"
 date:          2021-11-05
 category:      Windows
 cover:         /assets/cover14.jpg

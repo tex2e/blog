@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windowsポート番号一覧"
+title:         "[Windows] Windowsサービスが使用するポート番号の一覧"
 date:          2021-07-09
 category:      Windows
 cover:         /assets/cover14.jpg

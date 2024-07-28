@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windowsでユーザ端末間のファイル共有を禁止する"
+title:         "[Windows] ユーザ端末間のファイル共有を禁止する"
 date:          2021-11-09
 category:      Windows
 cover:         /assets/cover14.jpg

@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windows監査ログのログオンタイプ一覧"
+title:         "[Windows] 監査ログのログオンタイプ一覧"
 date:          2021-11-06
 category:      Windows
 cover:         /assets/cover14.jpg

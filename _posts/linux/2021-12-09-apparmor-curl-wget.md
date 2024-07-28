@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "curlとwgetコマンドをAppArmorで制限する"
+title:         "AppArmorでcurlとwgetコマンドの動作を制限する"
 date:          2021-12-09
 category:      Linux
 cover:         /assets/cover14.jpg

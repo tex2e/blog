@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windowsレジストリのハイブの省略形"
+title:         "[Windows] レジストリのハイブの省略形の一覧"
 date:          2021-11-08
 category:      Windows
 cover:         /assets/cover14.jpg
@@ -13,7 +13,7 @@ photoswipe:    false
 # feed:    false
 ---
 
-ハイブ (Hive) とはWindowsのレジストリのパスの先頭にある、情報を識別するためのセクションです。
+Windowsにおける**ハイブ** (Hive) とはWindowsのレジストリのパスの先頭にある、情報を識別するためのセクションです。
 レジストリのハイブ (Hive) の省略形はそれぞれ以下のようになっています。
 
 * HKEY_LOCAL_MACHINE → **HKLM**

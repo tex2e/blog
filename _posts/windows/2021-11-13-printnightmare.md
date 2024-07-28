@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "PrintNightmare攻撃を回避するための対策"
+title:         "[Windows] PrintNightmare攻撃を回避するための対策"
 date:          2021-11-13
 category:      Windows
 cover:         /assets/cover14.jpg

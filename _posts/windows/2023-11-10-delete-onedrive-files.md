@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "OneDriveを削除してディスク容量を確保する"
+title:         "[Windows] OneDriveを削除してディスク容量を確保する"
 date:          2023-11-10
 category:      Windows
 cover:         /assets/cover14.jpg

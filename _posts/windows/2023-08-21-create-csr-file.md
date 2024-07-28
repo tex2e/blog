@@ -1,7 +1,6 @@
 ---
 layout:        post
-title:         "WindowsのCertreqでCSRファイルを作成する方法"
-menutitle:     "WindowsのCertreqコマンドでCSRファイルを作成する方法"
+title:         "[Windows] CertreqコマンドでCSRファイルを作成する"
 date:          2023-08-21
 category:      Windows
 cover:         /assets/cover14.jpg

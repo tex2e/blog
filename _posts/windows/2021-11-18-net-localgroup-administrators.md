@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "ローカルのAdministratorsグループに所属するアカウントの確認"
+title:         "[Windows] ローカルのAdministratorsグループに所属するアカウントの確認"
 date:          2021-11-18
 category:      Windows
 cover:         /assets/cover14.jpg

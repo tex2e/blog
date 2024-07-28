@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windowsのセキュリティログ：イベントID 4672 新しいログオンに特権が割り当てられました。について"
+title:         "[Windows] セキュリティログ：イベントID 4672 新しいログオンに特権が割り当てられました。とは"
 date:          2021-11-07
 category:      Windows
 cover:         /assets/cover14.jpg

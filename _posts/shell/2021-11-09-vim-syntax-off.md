@@ -1,10 +1,10 @@
 ---
 layout:        post
-title:         "vimのシンタックスハイライトを暗い背景色に合わせる"
+title:         "[Vim] シンタックスハイライトを暗い背景色に合わせる"
 date:          2021-11-09
-category:      Linux
+category:      Shell
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /linux/vim-syntax-off
 comments:      true
 published:     true
 latex:         false

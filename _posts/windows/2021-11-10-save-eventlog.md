@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Windowsのイベントログを保存する"
+title:         "[Windows] イベントログを保存する"
 date:          2021-11-10
 category:      Windows
 cover:         /assets/cover14.jpg

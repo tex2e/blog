@@ -2,9 +2,9 @@
 layout:        post
 title:         "同期元と同期先の両方にrsyncコマンドがないとエラーになる"
 date:          2023-11-14
-category:      Linux
+category:      Shell
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /linux/rsync-on-remote-server
 comments:      true
 published:     true
 latex:         false

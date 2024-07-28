@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Vimで一括置換をする方法"
+title:         "[Vim] 一括置換をする方法"
 date:          2023-11-17
 category:      Shell
 cover:         /assets/cover14.jpg
