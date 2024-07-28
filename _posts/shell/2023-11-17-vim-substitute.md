@@ -1,10 +1,10 @@
 ---
 layout:        post
-title:         "Vimで一括置換"
+title:         "Vimで一括置換をする方法"
 date:          2023-11-17
-category:      Linux
+category:      Shell
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /linux/vim-substitute
 comments:      true
 published:     true
 latex:         false
