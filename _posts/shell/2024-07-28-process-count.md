@@ -44,7 +44,7 @@ Linuxシステム上のスレッド数の上限は `ulimit -a` コマンドで�
 ```cmd
 $ ulimit -a
 ...(省略)...
-max user processes                  (-u) 63498
+max user processes       (-u) 63498
 ```
 
 スレッド数の上限を増やすには、以下の limits.conf ファイルの設定を修正するか、limits.d ディレクトリの中に設定ファイルを配置する方法があります。
