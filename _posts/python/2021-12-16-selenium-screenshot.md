@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Seleniumでスクリーンショットを撮りPDFにまとめる"
+title:         "[Python] Seleniumでスクリーンショットを撮りPDFにまとめる"
 date:          2021-12-16
 category:      Python
 cover:         /assets/cover14.jpg

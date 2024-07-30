@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "SeleniumでGoogle翻訳を自動化する"
+title:         "[Python] SeleniumでGoogle翻訳を自動化する"
 date:          2019-12-17
 category:      Python
 cover:         /assets/cover14.jpg

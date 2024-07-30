@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Webやメールサーバのプロセスのドメイン"
+title:         "[SELinux] Webやメールサーバのプロセスのドメイン"
 date:          2021-11-18
 category:      SELinux
 cover:         /assets/cover6.jpg
