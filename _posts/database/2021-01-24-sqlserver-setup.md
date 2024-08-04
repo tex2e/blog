@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[MSSQL] SQL Serverへ別PCから接続できるようにする"
+title:         "[SQLServer] SQL Serverへ別PCから接続できるようにする"
 date:          2021-01-24
 category:      Database
 cover:         /assets/cover14.jpg
