@@ -21,16 +21,14 @@ similarPosts:
 そこで、以下のSQLを使用して全てのセッションを特定し、特定したセッションを終了 (kill) させる必要があります。
 
 ```sql
-select 
-    [dm_exec_sessions].[session_id]
-from
-    [sys].[dm_exec_sessions]
-    inner join [sys].[dm_exec_connections]
-        on [dm_exec_sessions].[session_id] = [dm_exec_connections].[session_id]
-    inner join [sys].[databases]
-        on [dm_exec_sessions].[database_id] = [databases].[database_id]
-where
-    [databases].[name] = 'データベース名'  -- ここに接続を切りたいデータベース名を記述する
+SELECT [dm_exec_sessions].[session_id]
+FROM   [sys].[dm_exec_sessions]
+       INNER JOIN [sys].[dm_exec_connections]
+               ON [dm_exec_sessions].[session_id] =
+                  [dm_exec_connections].[session_id]
+       INNER JOIN [sys].[databases]
+               ON [dm_exec_sessions].[database_id] = [databases].[database_id]
+WHERE  [databases].[name] = 'データベース名' -- ここに接続を切りたいデータベース名を記述する
 
 
 kill セッションID;  -- 上記のSQLで特定したセッションを終了する
