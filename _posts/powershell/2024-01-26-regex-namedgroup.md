@@ -14,7 +14,7 @@ photoswipe:    false
 ---
 
 PowerShellの正規表現で名前付きグループを使うときは、-match 演算子では使えません。
-代わりに、regexクラスのMatches(str, regex) メソッドを呼び出す必要があります。
+代わりに、regexクラスの Matches(str, regex) メソッドを呼び出す必要があります。
 
 名前付きグループとは `(?<グループ名>正規表現)` でマッチした部分を取得するときに、「グループ名」で取り出すことができる仕組みです。
 名前付きグループを使うことで、プログラムが読みやすくなるメリットがあります。
@@ -28,5 +28,15 @@ if ($result -ne $null) {
     $matchedName = $result[0].Groups['Name'].Value
 }
 ```
+
+（補足）名前付きグループを使わないで、普通の括弧で抽出する場合は、以下のように書くことができます。
+
+```ps1
+if ($line -match '^([0-9]+)\t([a-zA-Z0-9_]+)') {
+    $matchedId = $matches[1]
+    $matchedName = $matches[2]
+}
+```
+
 
 以上です。
