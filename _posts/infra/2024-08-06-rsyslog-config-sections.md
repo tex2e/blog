@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "rsyslog.conf の構成と書き方"
+title:         "[rsyslog] rsyslog.conf の構成と書き方"
 date:          2024-08-06
 category:      Infrastructure
 cover:         /assets/cover14.jpg
@@ -77,16 +77,16 @@ $template tpl3,"%TIMESTAMP:::date-rfc3339% %HOSTNAME% %syslogtag%%msg:::sp-if-no
 以下はルールの書き方の一例です。
 
 ```conf
-# セレクタで一致するSyslogデータを指定ファイルに書き込む
+# セレクタで一致するSyslogデータを、指定ファイルに書き込む
 auth,authpriv.*     /var/log/auth.log
 
-# 正規表現で一致するSyslogデータを指定ファイルに書き込む
-:msg, regex, "fatal .* error"     /var/log/myerror.log
+# 正規表現で一致するSyslogデータを、TCPで転送する
+:msg, regex, "fatal .* error"     @@リモートホスト名
 
 # SyslogデータのMSGが特定の文字列のとき、指定したコマンドを実行する
 :msg, startswith, "command-poweroff"     ^poweroff
 
-# if文で条件に一致するSyslogデータを指定ファイルに書き込む
+# if文で条件に一致するSyslogデータを、指定ファイルに書き込む
 if $syslogfacility-text == 'daemon' and $programname contains 'docker-' then {
   /var/log/logfile
 }
