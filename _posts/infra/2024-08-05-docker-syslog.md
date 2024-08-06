@@ -21,7 +21,7 @@ Docker composeでコンテナのログをsyslogに転送するための設定に
 設定ファイルは /etc/rsyslog.d/docker.conf に作成します。
 
 ```bash
-$ vi /etc/rsyslog.d/docker.conf
+$ sudo vi /etc/rsyslog.d/docker.conf
 ```
 
 syslog のテンプレート (\$template) は、出力先や出力メッセージの形式をカスタマイズできる機能です。
@@ -31,7 +31,7 @@ syslog のテンプレート (\$template) は、出力先や出力メッセー�
 /etc/rsyslog.d/docker.conf
 
 ```conf
-$template DockerLogs, "/var/log/docker/docker-%$year%%$month%%$day%-%syslogtag%.log"
+$template DockerLogs, "/var/log/docker/docker-%programname%.log"
 if $syslogfacility-text == 'daemon' and $programname contains 'docker-' then {
   -?DockerLogs
 }
@@ -105,7 +105,7 @@ $ docker compose up -d
 起動すると syslog を経由してログファイルにログが書き込まれることが確認できます。
 
 ```bash
-$ tail -f /var/log/docker/docker-20240805-docker-syslog-test-sample-1\[1022\]\:.log
+$ tail -f /var/log/docker/docker-docker-syslog-test-sample-1.log
 Aug  5 13:08:02 dockerserver docker-syslog-test-sample-1[1022]: Hello from Docker Container!
 Aug  5 13:08:04 dockerserver docker-syslog-test-sample-1[1022]: Hello from Docker Container!
 Aug  5 13:11:14 dockerserver docker-syslog-test-sample-1[1022]: message repeated 95 times: [ Hello from Docker Container!]
