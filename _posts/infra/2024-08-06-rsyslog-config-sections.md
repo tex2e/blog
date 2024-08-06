@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "rsyslog.conf の構成"
+title:         "rsyslog.conf の構成と書き方"
 date:          2024-08-06
 category:      Infrastructure
 cover:         /assets/cover14.jpg
