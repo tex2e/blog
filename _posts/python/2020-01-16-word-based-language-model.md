@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "単語単位の言語モデルの作り方"
+title:         "[Python] 単語単位の言語モデルの作り方"
 date:          2020-01-16
 category:      Python
 cover:         /assets/cover14.jpg

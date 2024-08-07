@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "telnetの代わりにPythonのtelnetlibでメールを送信する"
+title:         "[Python] Pythonのtelnetlibでメールを送信する"
 date:          2021-11-04
 category:      Python
 cover:         /assets/cover14.jpg

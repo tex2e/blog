@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "openpyxlを使ってExcelファイルを読み込む"
+title:         "[Python] openpyxlを使ってExcelファイルを読み込む"
 date:          2024-06-04
 category:      Python
 cover:         /assets/cover14.jpg

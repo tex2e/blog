@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "tkinterでフォルダ指定画面を作成する"
+title:         "[Python] tkinterでフォルダ指定画面を作成する"
 date:          2021-08-28
 category:      Python
 cover:         /assets/cover14.jpg

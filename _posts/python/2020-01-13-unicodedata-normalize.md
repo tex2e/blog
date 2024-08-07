@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Unicodeの正規化とテキストのクレンジング"
+title:         "[Python] Unicodeの正規化とテキストのクレンジング"
 date:          2020-01-13
 category:      Python
 cover:         /assets/cover14.jpg

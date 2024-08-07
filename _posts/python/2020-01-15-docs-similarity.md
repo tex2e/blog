@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "文書のコサイン類似度を求める"
+title:         "[Python] 文書のコサイン類似度を求める"
 date:          2020-01-15
 category:      Python
 cover:         /assets/cover14.jpg

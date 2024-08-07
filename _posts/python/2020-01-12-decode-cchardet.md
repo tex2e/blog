@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "文字コードの判定と変換"
+title:         "[Python] 文字コードの判定と変換"
 date:          2020-01-12
 category:      Python
 cover:         /assets/cover14.jpg
