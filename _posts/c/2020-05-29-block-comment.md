@@ -15,29 +15,30 @@ latex:         false
 プログラム内の2つのどちらかを実行したいコーディングを記載しているときに、一方だけを有効にする範囲コメントに書き方について説明します。
 
 C言語やJavaなどでは `//*` と `/*/` と `//*/` で囲むことで、後者のコードだけが実行され、先頭コメントを `/*` に変えることで、前者のコードだけが実行されます。
+これを使うことでデバッグ時に動きを変えたいときなんかに便利です。
 
 {% comment %}
 ```c
 //*
-value = 111;
+int value = 111;
 /*/
-value = 222;
+int value = 222;
 //*/
 ```
 {% endcomment %}
 
-<pre class="language-sql"><code class=""><span class="token comment">//*</span>
-value <span class="token operator">=</span> <span class="token number">111</span><span class="token punctuation">;</span>
+<pre class="language-c"><code class=""><span class="token comment">//*</span>
+int value <span class="token operator">=</span> <span class="token number">111</span><span class="token punctuation">;</span>
 <span class="token comment">/*/
-value = 222;
+int value = 222;
 //*/</span>
 </code></pre>
 
 ```c
 /*
-value = 111;
+int value = 111;
 /*/
-value = 222;
+int value = 222;
 //*/
 ```
 
