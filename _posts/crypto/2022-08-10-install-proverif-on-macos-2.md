@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[Monterey] ProVerifをMacOSにインストールする"
+title:         "[ProVerif] MacOS (Monterey) にProVerifをインストールする"
 date:          2022-08-10
 category:      Crypto
 cover:         /assets/cover4.jpg

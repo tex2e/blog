@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "ProVerif入門"
+title:         "[ProVerif] プロトコル形式的安全検証ツール入門"
 date:          2022-08-10
 category:      Crypto
 cover:         /assets/cover4.jpg
@@ -18,7 +18,7 @@ ProVerifの使い方について[ProVerifのユーザマニュアル](https://bb
 ### インストール
 
 インストール方法については別記事で説明しています：<br>
-[\[Monterey\] ProVerifをMacOSにインストールする \| 晴耕雨読](./install-proverif-on-macos-2)
+[\[ProVerif\] MacOS (Monterey) にProVerifをインストールする \| 晴耕雨読](./install-proverif-on-macos-2)
 
 ### 実行方法
 

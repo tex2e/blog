@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "ProVerifによるWPA3プロトコルの検証"
+title:         "[ProVerif] WPA3プロトコルの安全性を検証する"
 date:          2019-09-17
 category:      Crypto
 author:        tex2e
@@ -24,7 +24,7 @@ ProVerif[^ProVerif]は Dolev-Yao モデル[^Dolev-Yao]に基づく暗号プロ�
 暗号プロトコルを形式モデルで記述し、そのプロトコルの認証、秘匿性、前方秘匿性、中間者攻撃やオフライン攻撃への耐性などの安全性要件を検証することができます。
 ProVerifではハッシュ関数や秘密/公開鍵暗号、電子署名/検証などの暗号技術は全て理想化したモデルで表現されるので、個々の暗号技術は安全であるという仮定の下で安全性検証を行います。
 ProVerifにはチュートリアルのPDF[^ProVerif-Tutorial]があるので、これを参考にしながら形式モデルを記述していきます。
-MacOSでOPAM経由でProVerifをインストールする方法は同サイトの「[ProVerifをMacOSにインストールする]({{ site.baseurl }}/crypto/install-proverif-on-macos)」に書きましたので参考にしてください。
+MacOSでOPAM経由でProVerifをインストールする方法は同サイトの「[\[ProVerif\] MacOSにProVerifをインストールする](./install-proverif-on-macos)」に書きましたので参考にしてください。
 
 ### ProVerifの重要なキーワード
 

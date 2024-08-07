@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "ProVerifをMacOSにインストールする"
+title:         "[ProVerif] MacOSにProVerifをインストールする"
 date:          2019-09-02
 category:      Crypto
 author:        tex2e
