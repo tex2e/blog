@@ -1,7 +1,7 @@
 ---
 layout:        post
-title:         "C言語で map と reduce を行う方法"
-menutitle:     "C言語で map と reduce"
+title:         "[C言語] map と reduce を実装する"
+menutitle:     "[C言語] map と reduce を実装する"
 date:          2016-12-03
 category:      C
 author:        tex2e

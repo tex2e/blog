@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "C言語 メモリ処理系関数一覧"
+title:         "[C言語] メモリ処理系の関数一覧"
 date:          2020-08-11
 category:      C
 cover:         /assets/cover14.jpg
