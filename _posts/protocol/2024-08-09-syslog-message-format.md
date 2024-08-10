@@ -13,9 +13,7 @@ photoswipe:    false
 # feed:    false
 ---
 
-ここでは、Syslogデータの構造について説明していきます。
-
-Syslogデータの構造については、RFC 3164 と RFC 5424 に定義されています。
+RFC 3164 と RFC 5424 で定義されている Syslogデータの構造について説明していきます。
 
 
 ### ABNF（Syslogデータの構文）
