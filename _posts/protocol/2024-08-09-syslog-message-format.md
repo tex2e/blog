@@ -26,7 +26,7 @@ RFC 5424 の 6. Syslog Message Format に記載されているABNFの一部を�
 SYSLOG-MSG      = HEADER SP STRUCTURED-DATA [SP MSG]
 
 HEADER          = PRI VERSION SP TIMESTAMP SP HOSTNAME
-                SP APP-NAME SP PROCID SP MSGID
+                  SP APP-NAME SP PROCID SP MSGID
 PRI             = "<" PRIVAL ">"
 PRIVAL          = 1*3DIGIT ; range 0 .. 191
 VERSION         = NONZERO-DIGIT 0*2DIGIT
