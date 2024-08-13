@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Logrotateの設定ファイル"
+title:         "logrotateの設定ファイル"
 date:          2024-08-12
 category:      Infrastructure
 cover:         /assets/cover14.jpg
@@ -73,13 +73,16 @@ include /etc/logrotate.d
 
 - `missingok` : ローテーションするログファイルがなくてもエラーを出さない
 - `notifempty` : ログファイルが空の場合はローテーションしない
-- `compress` : ローテーションしたファイルをgzipで圧縮する
-- `delaycompress` : 圧縮処理を次回ローテーション時まで遅らせる（compressとともに指定が必要）
-    - 1サイクル遅らせて完全に書き込みがない状態のログファイルを圧縮することで、圧縮によるログの欠損を回避する
-- `sharedscripts` : ログファイルを複数指定したときも、postrotate〜endscript（またはprerotate〜endscript）で指定した処理を実行する
-- `postrotate〜endscript` : ローテーション後に指定のシェルスクリプトを実行する
-    - ローテーションした古いファイルにログを書き続けないように、サービスを再起動する処理を行うときなどに利用することを想定
-- `prerotate〜endscript` : ローテーション前に指定のシェルスクリプトを実行する
+- 圧縮：
+    - `compress` : ローテーションしたファイルをgzipで圧縮する
+    - `delaycompress` : 圧縮処理を次回ローテーション時まで遅らせる（compressとともに指定が必要）
+        - 1サイクル遅らせて完全に書き込みがない状態のログファイルを圧縮することで、圧縮によるログの欠損を回避する
+- 任意スクリプト実行：
+    - `sharedscripts` : ログファイルを複数指定したときも、postrotate〜endscript（またはprerotate〜endscript）で指定した処理を実行する
+    - `postrotate〜endscript` : ローテーション後に指定のシェルスクリプトを実行する
+        - ローテーションした古いファイルにログを書き続けないように、サービスを再起動する処理を行うときなどに利用する
+        - 補足：通常のログローテーションは、ファイル名の変更をしてから新規ファイル作成の順番で処理が行われて inode が変わらないため
+    - `prerotate〜endscript` : ローテーション前に指定のシェルスクリプトを実行する
 
 
 上記はlogrotateでよく使われる設定ですが、より詳しい説明は `man logrotate` で確認することができます。
