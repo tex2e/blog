@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "[Blazor] 一方向と双方向データバインディング"
-date:          2024-09-16
+date:          2024-09-28
 category:      Dotnet
 cover:         /assets/cover14.jpg
 redirect_from:
