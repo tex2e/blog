@@ -57,3 +57,8 @@ ASP.NET Core Blazorにおけるテキストボックス (Textbox) を使った�
 ```
 
 以上です。
+
+
+### 参考資料
+
+- [tex2e/BlazorSample: Blazorの検証環境](https://github.com/tex2e/BlazorSample)
