@@ -1,7 +1,7 @@
 ---
 layout:        post
 title:         "[Blazor] ドロップダウンリストで双方向データバインディングする"
-date:          2024-10-05
+date:          2024-10-01
 category:      Dotnet
 cover:         /assets/cover14.jpg
 redirect_from:
