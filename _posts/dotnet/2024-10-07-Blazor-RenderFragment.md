@@ -28,9 +28,8 @@ Components/Pages/Sample.razor：
 @using BlazorSample.Components.Shared
 
 <MyPanel Title="部品1">
-    1つ目の文章
-    <hr />
-    2つ目の文章
+    文章テスト<br />
+    Hello, world!
 </MyPanel>
 
 <MyPanel Title="部品2">
