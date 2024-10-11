@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[Blazor] カスケーディングパラメータ"
+title:         "[Blazor] カスケーディングパラメータ (CascadingValue)"
 date:          2024-10-08
 category:      Dotnet
 cover:         /assets/cover14.jpg
