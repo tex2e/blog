@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[Blazor] セッションの読み書きをする方法"
+title:         "[Blazor] セッションの読み書きをする"
 date:          2024-10-12
 category:      Dotnet
 cover:         /assets/cover14.jpg
