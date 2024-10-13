@@ -1,13 +1,14 @@
 ---
 layout:        post
-title:         "Map Filter Reduce in Raku (Perl6)"
+title:         "[Perl6] Map Filter Reduce in Raku"
 date:          2017-03-06
-category:      Perl
+category:      Program
 author:        tex2e
 cover:         /assets/cover14.jpg
 redirect_from:
     - /perl6/map-filter-reduce
     - /raku/map-filter-reduce
+    - /perl/map-filter-reduce
 comments:      true
 published:     true
 ---
