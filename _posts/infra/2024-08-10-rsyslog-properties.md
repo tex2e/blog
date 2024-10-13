@@ -2,9 +2,10 @@
 layout:        post
 title:         "[rsyslog] ifやテンプレートで使えるプロパティの一覧"
 date:          2024-08-10
-category:      Protocol
+category:      Infrastructure
 cover:         /assets/cover14.jpg
 redirect_from:
+    - /protocol/rsyslog-properties
 comments:      true
 published:     true
 latex:         false
