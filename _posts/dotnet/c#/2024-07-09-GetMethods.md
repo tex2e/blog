@@ -2,9 +2,9 @@
 layout:        post
 title:         "[C#] Reflectionでメソッド一覧を動的に取得する"
 date:          2024-07-09
-category:      C#
+category:      Dotnet
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/GetMethods
 comments:      true
 published:     true
 latex:         false

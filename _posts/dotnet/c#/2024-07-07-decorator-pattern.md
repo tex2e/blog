@@ -2,9 +2,9 @@
 layout:        post
 title:         "[C#] デコレータパターンを実装する"
 date:          2024-07-07
-category:      C#
+category:      Dotnet
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/decorator-pattern
 comments:      true
 published:     true
 latex:         false

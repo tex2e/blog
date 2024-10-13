@@ -2,9 +2,9 @@
 layout:        post
 title:         "[C#] 任意のコマンドを並列で実行する汎用コマンドを自作する"
 date:          2024-06-15
-category:      C#
+category:      Dotnet
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/create-parallel-foreach
 comments:      true
 published:     true
 latex:         false

@@ -2,9 +2,9 @@
 layout:        post
 title:         "[C#] 例外を再スローするときの注意点"
 date:          2024-07-29
-category:      C#
+category:      Dotnet
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/best-practices-for-exceptions
 comments:      true
 published:     true
 latex:         false

@@ -2,9 +2,9 @@
 layout:        post
 title:         "[C#] Reflectionで属性付きメソッドの一覧を動的に取得する"
 date:          2024-07-10
-category:      C#
+category:      Dotnet
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/GetMethodsByAttribute
 comments:      true
 published:     true
 latex:         false

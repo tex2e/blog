@@ -2,10 +2,10 @@
 layout:        post
 title:         "[C#] オブジェクト指向プログラミング"
 date:          2016-12-03
-category:      C#
+category:      Dotnet
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/OOP-in-Csharp
 comments:      false
 published:     true
 ---

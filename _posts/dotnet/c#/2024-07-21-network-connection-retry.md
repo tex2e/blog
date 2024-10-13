@@ -2,9 +2,9 @@
 layout:        post
 title:         "[C#] ネットワーク通信失敗時に自動でリトライする仕組みを実装する"
 date:          2024-07-21
-category:      C#
+category:      Dotnet
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/network-connection-retry
 comments:      true
 published:     true
 latex:         false

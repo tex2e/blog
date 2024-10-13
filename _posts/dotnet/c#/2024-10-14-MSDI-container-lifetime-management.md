@@ -2,9 +2,9 @@
 layout:        post
 title:         "[C#] 依存注入のためのMS.DIコンテナの生存管理 (Transient/Singleton/Scoped)"
 date:          2024-10-14
-category:      C#
+category:      Dotnet
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/MSDI-container-lifetime-management
 comments:      true
 published:     true
 latex:         false

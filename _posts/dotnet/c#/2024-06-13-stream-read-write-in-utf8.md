@@ -2,9 +2,9 @@
 layout:        post
 title:         "[C#] ファイルストリームをUTF8で高速読み書きする"
 date:          2024-06-13
-category:      C#
+category:      Dotnet
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /c%23/stream-read-write-in-utf8
 comments:      true
 published:     true
 latex:         false
