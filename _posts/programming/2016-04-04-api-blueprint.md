@@ -2,10 +2,12 @@
 layout:        post
 title:         "API Blueprint の書き方"
 date:          2016-04-04
-category:      Program
+category:      Programming
 author:        tex2e
-cover:         /assets/cover1.jpg
-redirect_from: /misc/api-blueprint
+cover:         /assets/cover14.jpg
+redirect_from:
+    - /misc/api-blueprint
+    - /program/api-blueprint
 comments:      false
 published:     true
 ---

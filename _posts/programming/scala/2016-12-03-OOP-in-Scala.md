@@ -2,10 +2,12 @@
 layout:        post
 title:         "[Scala] オブジェクト指向プログラミング"
 date:          2016-12-03
-category:      Program
+category:      Programming
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from: /scala/OOP-in-Scala
+redirect_from:
+    - /scala/OOP-in-Scala
+    - /program/OOP-in-Scala
 comments:      false
 published:     true
 ---

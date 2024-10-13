@@ -2,10 +2,12 @@
 layout:        post
 title:         "[Elixir] オブジェクト指向プログラミング"
 date:          2016-12-03
-category:      Program
+category:      Programming
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from: /elixir/OOP-in-Elixir
+redirect_from:
+    - /elixir/OOP-in-Elixir
+    - /program/OOP-in-Elixir
 comments:      false
 published:     true
 ---

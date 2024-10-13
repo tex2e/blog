@@ -2,10 +2,12 @@
 layout:        post
 title:         "[Elixir] Typespecs（型の一覧）"
 date:          2016-12-01
-category:      Program
+category:      Programming
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from: /elixir/types
+redirect_from:
+    - /elixir/types
+    - /program/elixir-types
 comments:      false
 published:     true
 ---

@@ -2,10 +2,12 @@
 layout:        post
 title:         "[Scala] パイプライン演算子の作り方"
 date:          2017-09-19
-category:      Program
+category:      Programming
 author:        tex2e
 cover:         /assets/cover14.jpg
-redirect_from: /scala/pipeline-operator
+redirect_from:
+    - /scala/pipeline-operator
+    - /program/scala-pipeline-operator
 comments:      true
 published:     true
 ---

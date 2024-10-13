@@ -2,9 +2,11 @@
 layout:        post
 title:         "[Rust] 16進数ダンプ (Hexdump) 関数の作り方"
 date:          2021-09-27
-category:      Program
+category:      Programming
 cover:         /assets/cover14.jpg
-redirect_from: /rust/hexdump
+redirect_from:
+    - /rust/hexdump
+    - /program/rust-hexdump
 comments:      true
 published:     true
 latex:         false

@@ -2,9 +2,10 @@
 layout:        post
 title:         "[PHP] php.iniで危険な関数を無効化する"
 date:          2021-05-26
-category:      Program
+category:      Programming
 cover:         /assets/cover14.jpg
-redirect_from: /php/set-disable-functions
+redirect_from:
+    - /php/set-disable-functions
 comments:      true
 published:     true
 latex:         false

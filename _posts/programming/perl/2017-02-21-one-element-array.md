@@ -2,7 +2,7 @@
 layout:        post
 title:         "[Perl6] Raku で要素が一つの配列の作り方"
 date:          2017-02-21
-category:      Program
+category:      Programming
 author:        tex2e
 cover:         /assets/cover14.jpg
 redirect_from:

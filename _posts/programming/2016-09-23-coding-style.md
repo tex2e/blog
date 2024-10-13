@@ -2,10 +2,12 @@
 layout:        post
 title:         "Coding Style Guide"
 date:          2016-09-23
-category:      Program
+category:      Programming
 author:        tex2e
-cover:         /assets/cover1.jpg
-redirect_from: /misc/coding-style
+cover:         /assets/cover14.jpg
+redirect_from:
+    - /misc/coding-style
+    - /program/coding-style
 comments:      false
 published:     true
 ---
