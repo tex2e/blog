@@ -1,10 +1,11 @@
 ---
 layout:        post
-title:         "正規表現の先読み・後読みの書き方"
+title:         "[Regex] 正規表現の先読み・後読みの書き方"
 date:          2024-01-26
-category:      Regex
+category:      Programming
 cover:         /assets/cover14.jpg
 redirect_from:
+    - /regex/lookahead-lookbehind
 comments:      true
 published:     true
 latex:         false
