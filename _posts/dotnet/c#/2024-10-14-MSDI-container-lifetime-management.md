@@ -36,7 +36,7 @@ MS.DIコンテナにサービスを登録するときは、.Add〜 メソッド�
 
 以下はインスタンス化したときに GUID が採番されるクラスを、それぞれのスコープで登録・インスタンス化したときに、どのように GUID が変化していくかを確認するためのプログラムです。
 
-ServiceLifetimeReporter.cs：
+ServiceLifetimeReporter.cs（注入された依存の内容を出力するクラス）：
 
 ```csharp
 namespace TestConsole;
@@ -65,28 +65,28 @@ internal sealed class ServiceLifetimeReporter(
 }
 ```
 
-IExampleScopedService.cs：
+IExampleScopedService.cs（スコープ付きサービスのインタフェース）：
 
 ```csharp
 namespace TestConsole;
 public interface IExampleScopedService : IReportServiceLifetime {}
 ```
 
-IExampleSingletonService.cs：
+IExampleSingletonService.cs（シングルトンなサービスのインタフェース）：
 
 ```csharp
 namespace TestConsole;
 public interface IExampleSingletonService : IReportServiceLifetime {}
 ```
 
-IExampleTransientService.cs：
+IExampleTransientService.cs（短命なサービスのインタフェース）：
 
 ```csharp
 namespace TestConsole;
 public interface IExampleTransientService : IReportServiceLifetime {}
 ```
 
-ExampleScopedService.cs：
+ExampleScopedService.cs（スコープ付きサービスの実装）：
 
 ```csharp
 namespace TestConsole;
@@ -96,7 +96,7 @@ internal sealed class ExampleScopedService : IExampleScopedService
 }
 ```
 
-ExampleSingletonService.cs：
+ExampleSingletonService.cs（シングルトンなサービスの実装）：
 
 ```csharp
 namespace TestConsole;
@@ -106,7 +106,7 @@ internal sealed class ExampleSingletonService : IExampleSingletonService
 }
 ```
 
-ExampleTransientService.cs：
+ExampleTransientService.cs（短命なサービスの実装）：
 
 ```csharp
 namespace TestConsole;
@@ -116,7 +116,7 @@ internal sealed class ExampleTransientService : IExampleTransientService
 }
 ```
 
-IReportServiceLifetime.cs：
+IReportServiceLifetime.cs（サービス共通のインターフェイス）：
 
 ```csharp
 namespace TestConsole;
@@ -126,7 +126,7 @@ public interface IReportServiceLifetime
 }
 ```
 
-Program.cs（プログラム本体）：
+Program.cs（プログラムのエントリーポイント）：
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
