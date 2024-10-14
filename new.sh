@@ -49,8 +49,8 @@ touch_index_html() {
       fi
       ;;
     csharp )
-      directory='c#'
-      category="C#"
+      directory='dotnet/c#'
+      category="Dotnet"
       ;;
     * )
       # Uppercase first character (e.g. python => Python)
