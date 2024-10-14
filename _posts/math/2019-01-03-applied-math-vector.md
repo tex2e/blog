@@ -303,5 +303,3 @@ $$
 ### 参考文献
 
 - [新 応用数学 - 大日本図書](https://amzn.to/3XM6xPE)
-
-<a href="https://www.amazon.co.jp/%E6%96%B0-%E5%BF%9C%E7%94%A8%E6%95%B0%E5%AD%A6-%E4%BD%90%E8%97%A4-%E5%BF%97%E4%BF%9D/dp/4477027168?pd_rd_w=kvBcz&content-id=amzn1.sym.820591ed-a555-4556-9bf6-5ebd5493c69e&pf_rd_p=820591ed-a555-4556-9bf6-5ebd5493c69e&pf_rd_r=06JMHKRQC59VEJN4PQDZ&pd_rd_wg=mVCWE&pd_rd_r=5ca47ec0-b57e-4ed3-9612-9f4f4700fca0&pd_rd_i=4477027168&psc=1&linkCode=li3&tag=tex2e-22&linkId=2b036548c4125a362ef798c79891a08b&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4477027168&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=tex2e-22&language=ja_JP" ></a><!--<img src="https://ir-jp.amazon-adsystem.com/e/ir?t=tex2e-22&language=ja_JP&l=li3&o=9&a=4477027168" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />-->
