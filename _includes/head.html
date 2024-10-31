@@ -51,6 +51,23 @@
   </script>
   {%- endif %}
 
+  {%- if page.mermaid %}
+  <script src="https://unpkg.com/mermaid@10.9.3/dist/mermaid.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',
+        flowchart: {
+          useMaxWidth: false,
+          htmlLabels: true
+        }
+      })
+      window.mermaid.init(undefined, document.querySelectorAll('code.language-mermaid'));
+    });
+  </script>
+  {%- endif %}
+
   {%- if jekyll.environment == "production" %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!--   https://developers.google.com/tag-platform/devguides/consent -->
