@@ -213,7 +213,7 @@ GEM
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
-    json (2.7.4)
+    json (2.7.5)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -270,7 +270,7 @@ GEM
     webrick (1.8.2)
 
 PLATFORMS
-  ruby
+  arm64-darwin-23
   x64-mingw-ucrt
   x64-mingw32
 
