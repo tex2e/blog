@@ -1,6 +1,6 @@
 ---
 layout:        book
-title:         "[AWS] AWS認定Developer Associate 勉強ノート"
+title:         "[AWS] AWS Certified Developer - Associate 勉強ノート"
 date:          2023-10-27
 category:      Infrastructure
 cover:         /assets/cover14.jpg
