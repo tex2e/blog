@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[C#] 構文解析器Spracheで繰り返し読み取る"
+title:         "[C#] 構文解析器Spracheで繰り返し読み取る (Many, AtLeastOnce, Until, Repeat, Once)"
 date:          2024-11-11
 category:      Dotnet
 cover:         /assets/cover14.jpg

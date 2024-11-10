@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[C#] 構文解析器Spracheで解析結果を別の型に変換する"
+title:         "[C#] 構文解析器Spracheで解析結果を別の型に変換する (Select, Return, Regex)"
 date:          2024-11-13
 category:      Dotnet
 cover:         /assets/cover14.jpg
