@@ -18,7 +18,7 @@
     "$BUNDLE" exec jekyll build --future
   fi
 
-  "$BUNDLE" exec jekyll server -I --livereload --future
+  "$BUNDLE" exec jekyll server --incremental --livereload --future
   # --limit_posts 1
   # --port 4001
 }
