@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "Rocky Linux における hostnamectl によるサーバ名変更"
+title:         "Rocky Linux で hostnamectl コマンドでサーバ名を変更する"
 date:          2024-01-30
 category:      Linux
 cover:         /assets/cover14.jpg
@@ -13,7 +13,7 @@ photoswipe:    false
 # feed:    false
 ---
 
-Rocky Linuxにおいてhostnamectlコマンドでサーバのホスト名を変更する方法について説明します。
+Rocky Linuxでhostnamectlコマンドでサーバのホスト名を変更する方法について説明します。
 
 ### hostnamectl
 
