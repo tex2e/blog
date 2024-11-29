@@ -17,7 +17,7 @@ PodmanとDockerの機能比較の一覧です。
 
 ### Podman/Dockerの両方で有効な機能
 
-- OCIとDockerイメージのサポート [Podman/Docker 両方]
+- OCIとDockerイメージのサポート
     - コンテナレジストリ (quay.ioやdocker.io) からコンテナイメージをプルして実行する。
 - OCIコンテナエンジンの起動
     - runc, crun, Kata, gVisorやOCIコンテナエンジンを利用してコンテナを起動する。
