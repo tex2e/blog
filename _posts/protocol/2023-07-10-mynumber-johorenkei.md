@@ -36,8 +36,6 @@ similarPosts:
 住基システム等との外部IFには主に以下の機能があります。
 - 符号管理機能（FGU）
 
-参考資料：[地方公共団体情報システム共通機能標準仕様書【第 2.0 版】](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/c58162cb-92e5-4a43-9ad5-095b7c45100c/5bb5048e/20230411_local_governments_03.pdf)
-
 ### 団体内統合宛名番号（団番）
 
 地方公共団体で保有している団体内統合宛名システムの中で、個人や法人を識別するために付番されている番号のことです。
@@ -113,3 +111,15 @@ similarPosts:
 
 なお、情報照会と提供情報は「処理通番」と呼ばれるIDによって紐付けられています。
 
+
+### 参考資料
+
+- マイナンバー制度・情報連携：
+    - [マイナンバー制度とは（デジタル庁）](https://www.digital.go.jp/policies/mynumber/explanation)
+    - [1-1マイナンバー付番の仕組み（法務省）](https://www.moj.go.jp/content/001154671.pdf)
+    - [住民基本台帳ネットワークシステムについて（総務省）令和3年9月2日 総務省自治行政局](https://www.soumu.go.jp/main_content/000767707.pdf)
+    - [マイナンバー制度における情報連携について（総務省）平成28年5月 総務省個人番号企画室](https://www.soumu.go.jp/main_content/000429540.pdf)
+    - [マイナンバー制度による情報連携（総務省）令和2年5月 内閣官房番号制度推進室, 総務省大臣官房個人番号企画室](https://www.soumu.go.jp/main_content/000691748.pdf)
+- 標準化関係：
+    - [共通機能の標準仕様｜デジタル庁](https://www.digital.go.jp/policies/local_governments/common-feature-specification)
+    - [地方公共団体情報システム共通機能標準仕様書【第 2.4 版】](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/4d056a04-6eba-4109-9850-a786d3e71971/a9040b59/20240930_policies_local_governments_common_04.pdf)
