@@ -2,9 +2,9 @@
 layout:        post
 title:         "Webサーバー構成の設計パターン"
 date:          2024-04-01
-category:      Misc
+category:      Infrastructure
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/web-server-network-diagram
 comments:      true
 published:     true
 latex:         false

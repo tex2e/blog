@@ -2,16 +2,16 @@
 layout:        post
 title:         "ネットワーク構築入門講座の参加メモ"
 date:          2019-02-24
-category:      Misc
+category:      Infrastructure
 author:        tex2e
-cover:         /assets/cover1.jpg
-redirect_from:
+cover:         /assets/cover14.jpg
+redirect_from: /misc/nnct-1day-network-construction-beginners-course
 comments:      true
 published:     true
 ---
 
-ネットワーク構築入門講座の内容についての雑メモ。
-学校内部でホワイトハッカー育成事業として情報科4・5年くらいを対象にした講座。
+ネットワーク構築入門講座の内容についての雑メモです。
+学校内部でホワイトハッカー育成事業として情報科4・5年くらいを対象にした講座で扱っていた内容のメモです。
 
 - CISCO Catalystのコマンド集などが書かれたプリントが配布された
 - L2スイッチとL3スイッチが、各グループと講師の先生のところにある（計4つのルータがある状況）
