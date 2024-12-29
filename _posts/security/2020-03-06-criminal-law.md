@@ -2,9 +2,9 @@
 layout:        post
 title:         "コンピュータ関連犯罪を裁く法律"
 date:          2020-03-06
-category:      Misc
-cover:         /assets/cover1.jpg
-redirect_from:
+category:      Security
+cover:         /assets/cover14.jpg
+redirect_from: /misc/criminal-law
 comments:      true
 published:     true
 # sitemap: false

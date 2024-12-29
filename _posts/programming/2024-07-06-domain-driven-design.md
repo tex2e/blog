@@ -2,9 +2,9 @@
 layout:        post
 title:         "ドメイン駆動設計 (Domain-Driven Design)"
 date:          2024-07-06
-category:      Misc
+category:      Programming
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/domain-driven-design
 comments:      true
 published:     true
 latex:         false

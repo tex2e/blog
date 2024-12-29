@@ -2,9 +2,9 @@
 layout:        post
 title:         "自分がデバッグするときの考え方"
 date:          2024-05-06
-category:      Misc
+category:      Programming
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/theory-of-debugging
 comments:      true
 published:     true
 latex:         false

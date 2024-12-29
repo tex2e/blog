@@ -2,9 +2,9 @@
 layout:        post
 title:         "プログラム設計における原理・原則とパターン"
 date:          2024-06-22
-category:      Misc
+category:      Programming
 cover:         /assets/cover14.jpg
-redirect_from:
+redirect_from: /misc/design-principles-practices-patterns
 comments:      true
 published:     true
 latex:         false
