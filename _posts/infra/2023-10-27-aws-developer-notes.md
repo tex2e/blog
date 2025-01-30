@@ -514,7 +514,7 @@ AWS Certified Developer Associate 認定試験を勉強した時の自分用の�
     - EC2のとき :
       - CodeDeployDefault.OneAtTime（一度に1つのインスタンスにのみデプロイ）
       - CodeDeployDefault.HalfAtTime（一度に全体の半分のインスタンスにデプロイ）
-      - CodeDeployDefault.AllAtOne（一度に全てのインスタンスにデプロイ）
+      - CodeDeployDefault.AllAtOnce（一度に全てのインスタンスにデプロイ）
     - ECSのとき :
       - CodeDeployDefault.ECSLinear10PercentEvery1Minutes（1分ごとにトラフィックの10%を新ECSコンテナへ移行する）
       - CodeDeployDefault.ECSCanary10Percent15Minutes（最初のトラフィックの10%を、15分後に残りの90%を新ECSコンテナへ移行する）
