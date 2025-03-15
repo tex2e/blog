@@ -370,6 +370,7 @@ AWS Certified Developer Associate 認定試験を勉強した時の自分用の�
   - インスタンスの停止、終了、またはハードウェア障害によって永続化する必要があり、頻繁に変更されるデータを扱う
   - SSDバックアップボリューム
   - HDDバックアップボリューム
+  - EC2にアタッチする外付けハードディスクのような扱い
 - Amazon S3
   - データを頻繁に変更しない場合、Amazon S3は費用対効果が高い
 - Amazon Elastic File System (Amazon EFS) と Amazon FSx
@@ -377,6 +378,7 @@ AWS Certified Developer Associate 認定試験を勉強した時の自分用の�
     - Amazon Elastic File System (Amazon EFS) : フルマネージド型NFSファイルシステム
     - Windowsファイルサーバー専用のAmazon FSx : SMBプロトコルをサポートするWindowsサーバー上に構築されたフルマネージド型ファイルサーバー
     - Lustre専用Amazon FSx : S3と統合する完全マネージド型のLustreファイルシステム
+  - EC2からマウントするNAS（ネットワーク上の共有ディスク）のような扱い
 
 ### ソリューションの最適化
 
@@ -1716,6 +1718,7 @@ AWS Certified Developer Associate 認定試験を勉強した時の自分用の�
         customer_record = db.query("SELECT * FROM Customers WHERE id = {0}", customer_id)
         cache.set(customer_id, customer_record)
       ```
+    - 書き込みスルー（ライトスルー） : 書き込み時に全てのデータをキャッシュする
 - **ElastiCache for Memcached**
   - Memcachedをベースとしたインメモリ型キーバリューストア
   - シンプルなキーバリュー型のデータをキャッシュして、低レイテンシで参照できる
