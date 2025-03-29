@@ -1,7 +1,7 @@
 ---
 layout:        book
 title:         "[AWS] AWS Certified Solutions Architect - Professional 勉強ノート"
-date:          2025-03-30
+date:          2025-03-29
 category:      Infrastructure
 cover:         /assets/cover14.jpg
 redirect_from:
