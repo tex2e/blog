@@ -1630,12 +1630,6 @@ CodePipelineなどで実行することでテストの自動化ができます�
 
 
 
+## その他
 
-
-
-
-
-
-
-
-
+- AWS資格勉強サイト [https://cloud-license.com/exam/](https://cloud-license.com/exam/)
