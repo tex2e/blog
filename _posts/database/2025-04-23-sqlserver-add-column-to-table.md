@@ -27,22 +27,29 @@ SQLの処理の流れとしては、以下の通りです。
 -- 1. テーブルを別名にする
 exec sp_rename 'TARGETTABLE', 'TARGETTABLE_BACKUP';
 exec sp_rename 'pk_TARGETTABLE', 'pk_TARGETTABLE_BACKUP';
+
 go
 
 -- 2. 新テーブルを作成する
 create table TARGETTABLE (
-    列名1  varchar(20)  not null,
-    列名2  varchar(40)  not null,
+    列名1  varchar(10)  not null,
+    列名2  varchar(20)  not null,
     :
-    新規追加列  varchar(30)  not null
+    新規追加列  varchar(30)  not null,
+    :
+    列名N  varchar(40)  not null
 )
+
+go
 
 -- 3. 旧テーブルから新テーブルに移行する（新規追加列は初期値をセットする）
 insert into TARGETTABLE
 select
-  列名1,列名2,...,''
+  列名1,列名2,...,'',...,列名N
 from
   TARGETTABLE_BACKUP
+
+go
 
 -- 4. 旧テーブルを削除する
 drop table TARGETTABLE_BACKUP
