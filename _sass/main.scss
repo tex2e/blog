@@ -332,6 +332,9 @@ img {
     max-width: 900px;
     margin: auto;
 }
+.single-book li pre code {
+    margin: 0;
+}
 .single-book :not(pre) > code {
     font-size: 90%;
 }
