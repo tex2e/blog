@@ -115,3 +115,7 @@ class StartThreadPoolExample
 
 
 以上です。
+
+### 参考資料
+
+- [C# Multithreading - Code with Shadman](https://codewithshadman.com/c-multithreading/)
