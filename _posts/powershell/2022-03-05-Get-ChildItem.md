@@ -15,19 +15,19 @@ photoswipe:    false
 
 PowerShell の Get-ChildItem (gci) コマンドレットと -Recurse オプションを使うことで、Linuxのfindコマンドに相当する処理を行うことができます。
 
-#### find . -name (ファイル名検索)
+#### find . -name （ファイル名検索）
 拡張子が txt のファイルの一覧を再帰的に探す `find . -name '*.txt'` に相当するPowerShellは、Get-ChildItem と `-Filter` オプションを使用します。
 ```powershell
 Get-ChildItem -Recurse -Filter "*.txt"
 ```
 
-#### find . -type d (ディレクトリ指定)
+#### find . -type d （ディレクトリ指定）
 ディレクトリのみを再帰的に探す `find . -type d` に相当するPowerShellは、Get-ChildItem と `-Directory` オプションを使用します。
 ```powershell
 Get-ChildItem -Recurse -Directory
 ```
 
-#### find . -exec (結果に対する処理)
+#### find . -exec （結果に対する処理）
 見つけたファイルに対して処理を行う `find . -exec echo {} \;` に相当するPowerShellは、Get-ChildItem と ForEach-Object を組み合わせて使用します。
 ForEach-Object は入力に対する繰り返し処理をしてくれます。
 以下は、見つけたファイルのフルパスを表示するためのコマンド例です。
@@ -35,26 +35,26 @@ ForEach-Object は入力に対する繰り返し処理をしてくれます。
 Get-ChildItem -Recurse -Filter "*.csv" | foreach { Write-Output $_.FullName }
 ```
 
-#### find . -print (表示方法)
+#### find . -print （表示方法）
 見つけたファイルをパスだけを表示する `find . -print` に相当するPowerShellは、Get-ChildItem と `-Name` オプションを使用します。
 ```powershell
 Get-ChildItem -Recurse -Name
 ```
 
-#### find . -maxdepth (最大深さ)
+#### find . -maxdepth （最大深さ）
 再帰する最大の深さのレベルを指定する `find . -maxdepth 3` に相当するPowerShellは、Get-ChildItem と `-Depth` オプションを使用します。
 ```powershell
 Get-ChildItem -Recurse -Depth 3
 ```
 
-#### find . -mmin -5 (修正時間)
+#### find . -mmin -5 （修正時間）
 5分以内に修正されたファイルを見つける `find . -mmin -5` に相当するPowerShellは、Get-ChildItem と Where-Object を組み合わせて使用します。
 Where-Object は入力に対するフィルター処理をしてくれます。
 ```powershell
 Get-ChildItem -Recurse | where { $_.LastWriteTime -gt (Get-Date).AddMinutes(-5) }
 ```
 
-#### find . \| grep -E (結果のフィルタリング)
+#### find . \| grep -E （結果のフィルタリング）
 見つけたファイルを正規表現でフィルタリングする `find . | grep -E` に相当するPowerShellは、where の中で正規表現マッチをすることで実現します。
 以下は、拡張子が .txt か .png のファイル かつ パス中に dest フォルダを含まない場合、そのファイルのフルパスを表示する例です。
 
@@ -69,7 +69,7 @@ Get-ChildItem -Recurse |
     }
 ```
 
-#### find . -type d -maxdepth 2 \| grep (パス名で検索)
+#### find . -type d -maxdepth 2 \| grep （パス名で検索）
 以下は、パスの一部に検索対象の文字列が含まれているフォルダを、最大深さを「2」と指定した上で、全て列挙するPowerShellコマンド例です。
 作業フォルダをフォルダ名で検索したいときなどに利用します。
 
