@@ -13,7 +13,7 @@ photoswipe:    false
 # feed:    false
 ---
 
-PowerShell の Get-ChildItem コマンドレットと -Recurse オプションを使うことで、Linuxのfindコマンドに相当する処理を行うことができます。
+PowerShell の Get-ChildItem (gci) コマンドレットと -Recurse オプションを使うことで、Linuxのfindコマンドに相当する処理を行うことができます。
 
 #### find . -name (ファイル名検索)
 拡張子が txt のファイルの一覧を再帰的に探す `find . -name '*.txt'` に相当するPowerShellは、Get-ChildItem と `-Filter` オプションを使用します。
@@ -67,6 +67,16 @@ Get-ChildItem -Recurse |
     foreach {
         Write-Output $_.FullName
     }
+```
+
+#### find . -type d -maxdepth 2 \| grep (パス名で検索)
+以下は、パスの一部に検索対象の文字列が含まれているフォルダを、最大深さを「2」と指定した上で、全て列挙するPowerShellコマンド例です。
+作業フォルダをフォルダ名で検索したいときなどに利用します。
+
+```powershell
+Get-ChildItem -Recurse -Directory -Depth 2 |
+Select-Object -ExpandProperty FullName |
+Select-String "フォルダ名"
 ```
 
 以上です。
