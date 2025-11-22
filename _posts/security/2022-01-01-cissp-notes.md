@@ -163,7 +163,9 @@ CISSPを勉強した時の自分用のまとめです。
   - 13歳未満の子供から個人情報を収集するには、事前にWebサイトで保護者の同意を得ることを要求する
 - GLBA (Gramm-Leach-Bliley Act) : グラム・リーチ・ブライリー法
   - 金融機関の顧客の機密データを保護する法律 (民法)
-- FISMA (Federal Information Security Modernization Act) : 連邦情報セキュリティマネジメント法
+- FISMA : 米国連邦政府の情報セキュリティに関する規則
+  - Federal Information Security Management Act : 連邦情報セキュリティマネジメント法（2002制定）
+  - Federal Information Security Modernization Act : 連邦情報セキュリティ近代化法（2014年制定）
 - HSA (Homeland Security Act) : 国土安全保障法
 - CFAA (Computer Fraud and Abuse Act) : コンピュータ不正行為防止法
   - 悪意を持って任意の1年間に連邦政府コンピュータシステムに$5000を超える損害を与えると、連邦政府に対する犯罪となる
