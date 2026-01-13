@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "[Python] LarkでMSDOSコマンドの構文解析"
+title:         "[Python] LarkでMS-DOSコマンドの構文解析"
 date:          2025-11-22
 category:      Python
 cover:         /assets/cover14.jpg
