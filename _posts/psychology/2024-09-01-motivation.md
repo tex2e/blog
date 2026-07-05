@@ -81,6 +81,7 @@ photoswipe:    false
 [^Intrinsic_and_Extrinsic_Motivations]: Richard M. Ryan, Edward L. Deci, [Intrinsic and Extrinsic Motivations: Classic Definitions and New Directions](https://www.sciencedirect.com/science/article/pii/S0361476X99910202), Contemporary Educational Psychology, Volume 25, Issue 1, 2000, Pages 54-67, ISSN 0361-476X, https://doi.org/10.1006/ceps.1999.1020. (https://www.sciencedirect.com/science/article/pii/S0361476X99910202)
 
 **有機的統合理論** (Organismic Integration Theory) では、内発的動機づけを低下させることにもなる外発的動機づけであっても、その行動に対する個人の価値の認め方によっては、自己決定性（自律性）が高くなり、内発的動機づけに近い効果を及ぼすことが示されています。
+つまり、「最初は言われたからやっていただけだったが、しばらく続けているうちにその価値や面白さに気づき、自ら進んで楽しく取り組めるようになった」というような、外からの動機づけが自分自身の内面へと統合されていくプロセスを心理学的に説明するものです。
 
 ただし、外発的動機づけにより義務感を意識することで、興味や楽しさが低下することをわかっています。
 そのため、昔好きだったものが好きではなくなったり、好きなことを仕事にすると嫌いになるという事例は、外発的動機づけによる内発的動機づけの低下によるものと考えられています。
