@@ -1,12 +1,12 @@
 #!/bin/bash -eu
 
-# /opt/homebrew/opt/ruby/bin/bundle install
-# /opt/homebrew/opt/ruby/bin/bundle update
+# /opt/homebrew/opt/ruby@3.3/bin/bundle install
+# /opt/homebrew/opt/ruby@3.3/bin/bundle update
 
 {
   BUNDLE=bundle
-  if [ -f /opt/homebrew/opt/ruby/bin/bundle ]; then
-    BUNDLE=/opt/homebrew/opt/ruby/bin/bundle
+  if [ -f /opt/homebrew/opt/ruby@3.3/bin/bundle ]; then
+    BUNDLE=/opt/homebrew/opt/ruby@3.3/bin/bundle
   fi
 
   # ビルドのみ
