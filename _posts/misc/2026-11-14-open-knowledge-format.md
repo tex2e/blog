@@ -22,6 +22,9 @@ sources:
   - id:        ref-4
     resource:  https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
     title:     "LLM Wiki (Andrej Karpathy)"
+  - id:        ref-5
+    resource:  https://tech.layerx.co.jp/entry/enterprise-llm-wiki-ops
+    title:     "LLM Wikiの組織運用に向けて ── 陳腐化を防ぐ更新の仕組み（LayerX エンジニアブログ）"
 date:          2026-11-14
 category:      Misc
 cover:         /assets/cover14.jpg
@@ -101,8 +104,10 @@ AIエージェントはまずルートの`index.md`だけを読み、目当て�
 
 ### OKF v0.2の信頼性・鮮度シグナル
 
-個人のブログでも組織のWikiでも、AIが記事を自動生成・自動修正する時代になると「この記述をそのまま信じてよいのか」「数年前の古い手順のまま放置されていないか」という問題が避けられません。
-OKF v0.2では、こうした状態をメタデータで管理するために次のようなフィールドや仕組みを定義しています。
+個人のブログでも組織のWikiでも、AIが記事を自動生成・自動修正する時代になると、「その記述をどこまで信頼してよいか」や「書いた内容を陳腐化させずにどう保ち続けるか」が課題になります。
+たとえば[LayerXのLLM Wiki組織運用の事例](https://tech.layerx.co.jp/entry/enterprise-llm-wiki-ops)でも、Notion・Zendesk・GitHubに分散した情報をLLM Wikiへ統合する運用において、書くこと以上に陳腐化を防ぐ難しさや、内部修正のたびに無闇にLLMを動かさず更新対象を見極める仕組みの重要性が述べられています。
+
+OKF v0.2では、こうした信頼性と鮮度の状態をメタデータで管理し、確認すべき記事を効率よく見極めるために次のようなフィールドや仕組みを定義しています。
 
 | フィールド / 仕組み | 役割 | 運用のポイント |
 | --- | --- | --- |
@@ -256,4 +261,5 @@ OKFの仕様が必須項目を`type`だけにとどめ、`index.md`や信頼シ�
 - [Open Knowledge Format Specification (SPEC.md)](https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/main/SPEC.md)
 - [Googleが標準化しようとしているMarkdownの書き方「OKF」って何？（クロイッチチャンネル / YouTube）](https://www.youtube.com/watch?v=Vl6LoetSqEI)
 - [LLM Wiki — Andrej Karpathy (GitHub Gist)](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+- [LLM Wikiの組織運用に向けて ── 陳腐化を防ぐ更新の仕組み（LayerX エンジニアブログ）](https://tech.layerx.co.jp/entry/enterprise-llm-wiki-ops)
 - [Claude Code・Codex・Antigravityでリポジトリのスキルを共有する](../misc/share-agent-skills)
