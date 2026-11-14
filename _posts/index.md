@@ -2,7 +2,7 @@
 
 Root: [Bundle Index](../index.md) | Changelog: [log.md](../log.md)
 
-Total posts: **664** across **43** directories.
+Total posts: **665** across **43** directories.
 
 ## Categories
 
@@ -23,7 +23,7 @@ Total posts: **664** across **43** directories.
 | linux | 58 | [./linux/index.md](./linux/index.md) |
 | makefile | 5 | [./makefile/index.md](./makefile/index.md) |
 | math | 13 | [./math/index.md](./math/index.md) |
-| misc | 32 | [./misc/index.md](./misc/index.md) |
+| misc | 33 | [./misc/index.md](./misc/index.md) |
 | powershell | 46 | [./powershell/index.md](./powershell/index.md) |
 | programming | 21 | [./programming/index.md](./programming/index.md) |
 | protocol | 35 | [./protocol/index.md](./protocol/index.md) |

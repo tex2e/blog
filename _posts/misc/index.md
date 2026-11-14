@@ -2,8 +2,9 @@
 
 Parent: [All Categories](../index.md)
 
-## Articles (32)
+## Articles (33)
 
+- [Open Knowledge Format (OKF) の解説とブログへの導入](./2026-11-14-open-knowledge-format.md) (`Concept | stable | stale_after: 2027-11-14`) — Google CloudのOpen Knowledge Format (OKF v0.2)の仕組みと、600本以上の記事を持つ個人ブログをAIで自律保守できる知識ベースへ整備した経緯・設計を解説します。
 - [Claude Code・Codex・Antigravityでリポジトリのスキルを共有する](./2026-10-23-share-agent-skills.md) (`How-To | stable | stale_after: 2027-10-23`) — Claude Code、Codex、Antigravityで.agents/skillsとシンボリックリンクによりスキルを共有する手順を示します。
 - [AIと生きる：思考を止めるな、加速させよ](./2026-03-08-ai-accelerates-thinking.md) (`Essay | stable`) — 生成AIへの過度な依存による認知的負債を避け、批判的思考や望ましい困難を通じて思考を加速させるAIとの向き合い方を論じます。
 - [AIに「異能たちの会議」をさせる](./2026-01-25-ai-conference.md) (`How-To | stable | stale_after: 2027-01-25`) — GeminiのGem機能を使い、哲学や歴史、科学など多彩な専門家ペルソナに与えられたテーマを議論させるプロンプト作成例を紹介します。

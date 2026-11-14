@@ -31,7 +31,7 @@ AI エージェントは全記事を一度に読み込まず、以下の階層�
 ## カテゴリ別インデックス
 
 <!-- OKF:INDEX:START -->
-Total articles: **664** across **29** top-level categories ([full category map](./_posts/index.md)).
+Total articles: **665** across **29** top-level categories ([full category map](./_posts/index.md)).
 
 | Category | Articles | Index |
 |---|---:|---|
@@ -50,7 +50,7 @@ Total articles: **664** across **29** top-level categories ([full category map](
 | linux | 58 | [_posts/linux/index.md](./_posts/linux/index.md) |
 | makefile | 5 | [_posts/makefile/index.md](./_posts/makefile/index.md) |
 | math | 13 | [_posts/math/index.md](./_posts/math/index.md) |
-| misc | 32 | [_posts/misc/index.md](./_posts/misc/index.md) |
+| misc | 33 | [_posts/misc/index.md](./_posts/misc/index.md) |
 | powershell | 46 | [_posts/powershell/index.md](./_posts/powershell/index.md) |
 | programming | 21 | [_posts/programming/index.md](./_posts/programming/index.md) |
 | protocol | 35 | [_posts/protocol/index.md](./_posts/protocol/index.md) |
