@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] 文字列展開・リストの評価"
+type:          Concept
+description:   "PowerShellにおける式評価の制御方法である丸括弧による優先順位指定、式のサブパースによる文字列展開、リスト評価を解説します。"
+tags:          [powershell, expressions, syntax]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-01T13:29:33Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3QwwEsn
+    title:     "Windows PowerShellクックブック"
 date:          2022-04-01
 category:      PowerShell
 cover:         /assets/cover14.jpg

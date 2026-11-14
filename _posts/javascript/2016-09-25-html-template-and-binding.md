@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[JavaScript] テンプレートエンジンを使わないで、コードの埋め込みを行う"
+type:          How-To
+description:   "テンプレートエンジンを使わずにJavaScriptのテンプレートリテラルやreplace・bind・evalで変数埋め込みを行う方法。"
+tags:          [javascript, template, html]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-09-25
 category:      JavaScript
 author:        tex2e

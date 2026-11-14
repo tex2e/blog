@@ -1,6 +1,21 @@
 ---
 layout:        book
 title:         "[Azure] Microsoft Azure Administrator (AZ-104) 勉強ノート"
+type:          Book Chapter
+description:   "Microsoft Azure Administrator (AZ-104)試験の出題範囲やARM、ID管理、ネットワークなどの要点をまとめた勉強ノート。"
+tags:          [infra, azure, certification, cloud]
+status:        stable
+stale_after:   2027-06-20T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-07-28T12:25:11Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/templates/
+    title:     "https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/templates/"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/en-us/kusto/query/kql-quick-reference?view=microsoft-fabric
+    title:     "KQL quick reference - Kusto \\| Microsoft Learn"
 date:          2025-07-28
 category:      Infrastructure
 cover:         /assets/cover14.jpg

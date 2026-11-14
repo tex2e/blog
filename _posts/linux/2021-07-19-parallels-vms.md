@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Parallels 仮想環境のSSHサーバ設定"
+type:          How-To
+description:   "macOSのParallels上でKali LinuxとFedoraにOpenSSHサーバとsudo権限付きユーザをセットアップする手順をまとめます。"
+tags:          [linux, parallels, ssh, kali-linux, fedora]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-07-19T14:03:43Z
 date:          2021-07-19
 category:      Linux
 cover:         /assets/cover14.jpg

@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Ansible] 接続先にpythonが存在しないときの対処法"
+type:          Troubleshooting
+description:   "Ansible実行先のホストにPythonが存在せずエラーになる場合に、ansible.builtin.rawモジュールで直接シェルコマンドを実行する対処法。"
+tags:          [infra, ansible, python, troubleshooting]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-08-19T14:19:39Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/latest/collections/ansible/builtin/raw_module.html
+    title:     "ansible.builtin.raw module – Executes a low-down and dirty command — Ansible Documentation"
+  - id:        ref-2
+    resource:  https://somakdas.medium.com/simple-ansible-paybook-without-python-installed-in-target-machines-1df423004da5
+    title:     "Simple Ansible paybook without Python installed in target machines \\| by Somak Das \\| Medium"
 date:          2022-08-19
 category:      Infrastructure
 cover:         /assets/cover14.jpg

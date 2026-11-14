@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxのサイレント拒否を無効化/有効化する"
 menutitle:     "SELinuxのサイレント拒否を無効化/有効化する (semodule -DB)"
+type:          How-To
+description:   "トラブルシューティング時にすべての拒否ログを記録するため、semodule -DBでdontauditのサイレント拒否を無効化および再有効化する方法を解説します。"
+tags:          [selinux, linux, semodule, dontaudit]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-27T10:51:03Z
 date:          2021-11-02
 category:      SELinux
 cover:         /assets/cover6.jpg

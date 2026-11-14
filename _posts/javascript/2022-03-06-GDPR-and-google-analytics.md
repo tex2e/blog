@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[JavaScript] アクセス元の国によってGoogle Analyticsを制限する"
+type:          How-To
+description:   "GDPR対応としてGoogle Analyticsのgtag.jsのconsentコマンドを使いEU域内アクセス時のCookie利用を制限する設定方法。"
+tags:          [javascript, google-analytics, gdpr, web]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-06T02:26:03Z
+sources:
+  - id:        ref-1
+    resource:  https://developers.google.com/tag-platform/devguides/consent
+    title:     "同意設定を管理する（ウェブ） \\| タグ \\| Google Developers"
+  - id:        ref-2
+    resource:  "https://developers.google.com/tag-platform/gtagjs/reference#consent"
+    title:     "グローバル サイトタグ API リファレンス \\| グローバル サイトタグ（gtag.js） \\| Google Developers"
+  - id:        ref-3
+    resource:  https://stackoverflow.com/questions/67999514/blocking-google-analytics-cookies-by-country
+    title:     "javascript - Blocking Google Analytics cookies by country - Stack Overflow"
 date:          2022-03-06
 category:      JavaScript
 cover:         /assets/cover14.jpg

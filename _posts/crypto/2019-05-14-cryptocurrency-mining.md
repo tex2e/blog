@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "なぜマイニングをするとお金が支払われるのか"
+type:          Concept
+description:   "ブロックチェーンの構造とProof-of-Workマイニングの仕組み、および報酬が改ざん抑止と安全性をもたらす理由を解説。"
+tags:          [crypto, blockchain, proof-of-work, mining]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-05-14T05:12:50Z
+sources:
+  - id:        ref-1
+    resource:  https://www.amazon.co.jp/%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3-%E7%9B%B8%E4%BA%92%E4%B8%8D%E4%BF%A1%E3%81%8C%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E6%96%B0%E3%81%97%E3%81%84%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3-%E3%83%96%E3%83%AB%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9-%E5%B2%A1%E5%B6%8B-%E8%A3%95%E5%8F%B2/dp/4065144353
+    title:     "ブロックチェーン　相互不信が実現する新しいセキュリティ"
+  - id:        ref-2
+    resource:  http://chainflyer.bitflyer.jp/
+    title:     "chainFlyer \\| Blockchain Explorer"
 date:          2019-05-14
 category:      Crypto
 author:        tex2e

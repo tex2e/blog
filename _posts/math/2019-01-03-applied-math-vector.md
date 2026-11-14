@@ -2,6 +2,17 @@
 layout:        post
 title:         "ベクトル解析 公式一覧"
 menutitle:     "応用数学 ベクトル解析 公式一覧"
+type:          Reference
+description:   "空間ベクトルの内積・外積、曲線や曲面、勾配・発散・回転・ラプラシアン、線積分・面積分、発散定理とストークスの定理の公式をまとめています。"
+tags:          [math, vector-calculus, formulas]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-17T06:39:52Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3XM6xPE
+    title:     "新 応用数学 - 大日本図書"
 date:          2019-01-03
 category:      Math
 cover:         /assets/cover14.jpg

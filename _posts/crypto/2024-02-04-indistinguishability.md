@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "暗号における識別不可能性"
+type:          Concept
+description:   "暗号における識別不可能性の概念を説明し、情報論的識別不可能性と確率的多項式時間による計算量的識別不可能性を定式化。"
+tags:          [crypto, indistinguishability, security-proof, cryptography-theory]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-02-04T08:56:05Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/42rIrO9
+    title:     "佐久間 淳『データ解析におけるプライバシー保護 (機械学習プロフェッショナルシリーズ)』講談社 (2016/8/25)"
 date:          2024-02-04
 category:      Crypto
 cover:         /assets/cover4.jpg

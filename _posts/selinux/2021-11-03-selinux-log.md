@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxによるアクセス拒否のログを発見する"
 menutitle:     "SELinuxによるアクセス拒否のログを発見する (audit.log, messages)"
+type:          Troubleshooting
+description:   "SELinuxによるアクセス拒否ログを/var/log/audit/audit.logや/var/log/messagesからgrepやtail -fで抽出し発見する方法を解説します。"
+tags:          [selinux, linux, audit-log, troubleshooting]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-27T13:13:39Z
 date:          2021-11-03
 category:      SELinux
 cover:         /assets/cover6.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Ansible] replaceモジュールでファイルの内容を編集する"
+type:          How-To
+description:   "Ansibleのansible.builtin.replaceモジュールと正規表現の後方参照を使い、設定ファイル内の文字列を一括置換する方法。"
+tags:          [infra, ansible, linux, regex]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-16T03:41:15Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/latest/collections/ansible/builtin/replace_module.html
+    title:     "ansible.builtin.replace module – Replace all instances of a particular string in a file using a back-referenced regular expression — Ansible"
 date:          2022-07-16
 category:      Infrastructure
 cover:         /assets/cover14.jpg

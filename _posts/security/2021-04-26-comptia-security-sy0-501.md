@@ -1,6 +1,18 @@
 ---
 layout:        book
 title:         "CompTIA Security+ セキュリティ用語集"
+type:          Book Chapter
+description:   "CompTIA Security+（SY0-501）の出題範囲に基づき、マルウェアや攻撃手法、ペネトレーションテスト、ツール等のセキュリティ用語を整理。"
+tags:          [security, comptia, security-plus, glossary]
+status:        stable
+stale_after:   2025-06-26T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-05-16T03:07:13Z
+sources:
+  - id:        ref-1
+    resource:  https://www.soumu.go.jp/main_content/000519240.pdf
+    title:     "公衆無線LANへの攻撃手法 -- 総務省 公衆無線LANセキュリティ分科会"
 date:          2021-04-26
 category:      Security
 cover:         /assets/cover14.jpg

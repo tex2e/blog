@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "ブログ記事を書いてCPEを申請する"
+type:          How-To
+description:   "ISC2準会員向けに、専門ブログ記事の執筆を「専門的な活動による貢献」として10 CPEクレジット申請するWeb手順を解説します。"
+tags:          [security, isc2, cissp, cpe]
+status:        stable
+stale_after:   2023-03-18T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-18T12:59:15Z
+sources:
+  - id:        ref-1
+    resource:  https://japan.isc2.org/member_cpecredit.html
+    title:     "(ISC)² Japan の CPEクレジット"
+  - id:        ref-2
+    resource:  https://www.isc2.org/cpe-handbook
+    title:     "CPE Handbook"
+  - id:        ref-3
+    resource:  https://qiita.com/toshikawa/items/9cefe7e685d058f19b19
+    title:     "Qiitaの記事を書いてCPEを申請する - Qiita"
 date:          2022-03-18
 category:      Security
 cover:         /assets/cover14.jpg

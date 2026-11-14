@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "Nginxでリバースプロキシ"
+type:          How-To
+description:   "Nginxでupstreamとproxy_passによる同一サーバ内リバースプロキシを設定し、SELinux有効時のhttpd_can_network_relay許可も解説します。"
+tags:          [linux, nginx, reverse-proxy, selinux]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-07T23:30:19Z
+sources:
+  - id:        ref-1
+    resource:  https://www.nedia.ne.jp/blog/tech/2016/08/04/7938
+    title:     "Nginxのロードバランシング機能を使ってみよう！ - 株式会社ネディア \\│ ネットワークの明日を創る。"
+  - id:        ref-2
+    resource:  https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-managing_confined_services-the_apache_http_server-booleans
+    title:     "14.3. Booleans Red Hat Enterprise Linux 7 \\| Red Hat Customer Portal"
 date:          2021-11-11
 category:      Linux
 cover:         /assets/cover14.jpg

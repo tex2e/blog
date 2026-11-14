@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] Pythonのtelnetlibでtelnetコマンドを実現する"
+type:          How-To
+description:   "telnetコマンドがないLinux環境でPython 3.12以下の標準ライブラリtelnetlibを使い対話的にtelnet通信を行う方法。"
+tags:          [python, telnet, telnetlib, network]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-04T12:52:00Z
 date:          2021-11-03
 category:      Python
 cover:         /assets/cover14.jpg

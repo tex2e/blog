@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "cmd.exeとbashのコマンド比較表"
+type:          Reference
+description:   "Windowsのcmd.exeコマンドとLinux/macOSのbashコマンドをファイル操作・プロセス管理・ネットワーク等の処理別に対比したリファレンス表。"
+tags:          [windows-batch, cmd, bash, shell]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-11-23T10:21:28Z
 date:          2020-11-23
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

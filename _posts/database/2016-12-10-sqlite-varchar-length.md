@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[SQLite] VARCHAR型の文字数を制限する方法"
+type:          Concept
+description:   "SQLiteのスキーマではVARCHAR(N)を指定してもTEXT型として扱われ、文字列の最大長が強制・制限されない仕様を公式FAQをもとに解説します。"
+tags:          [database, sqlite, varchar, schema]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-10T02:12:44Z
+sources:
+  - id:        ref-1
+    resource:  "https://www.sqlite.org/faq.html#q9"
+    title:     "SQLite Frequently Asked Questions"
 date:          2016-12-10
 category:      Database
 author:        tex2e

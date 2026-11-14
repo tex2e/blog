@@ -2,6 +2,17 @@
 layout:        post
 title:         "レポート提出前に確認する事"
 menutitle:     "レポート提出前に確認する事（自分用）"
+type:          Reference
+description:   "レポートや卒業論文の提出前に確認すべき図・表・数式・アルゴリズム・文章・形式のチェックリストです。"
+tags:          [misc, academic-writing, report, checklist]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2018-07-08T10:39:18Z
+sources:
+  - id:        ref-1
+    resource:  https://inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf
+    title:     "Small Guide to Making Nice Tables (pdf)"
 date:          2018-07-08
 category:      Misc
 author:        tex2e

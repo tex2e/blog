@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[JavaScript] Uint8ArrayとBase64形式の相互変換"
+type:          How-To
+description:   "JavaScriptのbtoaとatobを利用してUint8ArrayのバイナリデータとBase64形式の文字列を相互変換する関数の実装方法。"
+tags:          [javascript, base64, uint8array]
+status:        stable
+stale_after:   2028-08-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-08-10T07:58:53Z
 date:          2025-08-10
 category:      JavaScript
 cover:         /assets/cover14.jpg

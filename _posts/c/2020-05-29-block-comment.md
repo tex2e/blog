@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "/* */ の範囲コメントで排他的に片方のコードのみを有効にする"
+type:          How-To
+description:   "C言語やJava、SQLで範囲コメントを組み合わせ、先頭1文字の変更だけで2つのコード片を排他的に切り替える手法。"
+tags:          [c, java, sql, comments, debugging]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-05-29T11:27:50Z
 date:          2020-05-29
 category:      C
 cover:         /assets/cover14.jpg

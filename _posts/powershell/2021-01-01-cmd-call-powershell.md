@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] バッチファイルからPowerShellを呼び出す"
+type:          How-To
+description:   "バッチファイルから位置引数や名前付き引数を渡してPowerShellスクリプトを呼び出す方法と実行ポリシー設定を説明します。"
+tags:          [powershell, batch, windows]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-02T04:04:36Z
 date:          2021-01-01
 category:      PowerShell
 cover:         /assets/cover1.jpg

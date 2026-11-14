@@ -1,6 +1,32 @@
 ---
 layout:        book
 title:         "[暗号技術入門] 鍵共有・鍵交換"
+type:          Book Chapter
+description:   "鍵合意・鍵輸送の基本概念から、色の混合の例え、離散対数問題に基づくDiffie-Hellman鍵交換(DHKE)やECDHの仕組みを解説します。"
+tags:          [crypto, key-exchange, diffie-hellman, ecdh, dlp]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-03-14T12:21:27Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Key_exchange
+    title:     "**鍵交換**"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+    title:     "**Diffie–Hellman鍵交換**"
+  - id:        ref-3
+    resource:  https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman
+    title:     "**楕円曲線Diffie–Hellman**"
+  - id:        ref-4
+    resource:  https://en.wikipedia.org/wiki/Optimal_asymmetric_encryption_padding
+    title:     "**RSA-OAEP**"
+  - id:        ref-5
+    resource:  https://en.wikipedia.org/wiki/Pre-shared_key
+    title:     "**PSK**"
+  - id:        ref-6
+    resource:  https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol
+    title:     "**SRP**"
 date:          2024-03-06
 category:      Crypto
 cover:         /assets/cover4.jpg

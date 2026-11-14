@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "Syslogデータの構造 (RFC 5424)"
+type:          Reference
+description:   "RFC 3164およびRFC 5424で定義されたSyslogデータのABNF構文、ファシリティとシビアリティからPRI値を計算する規則、構造化データとMSG形式をまとめています。"
+tags:          [protocol, syslog, rfc5424, logging]
+status:        stable
+stale_after:   2027-08-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-07T13:52:39Z
+sources:
+  - id:        ref-1
+    resource:  https://datatracker.ietf.org/doc/html/rfc5424
+    title:     "RFC 5424 - The Syslog Protocol"
 date:          2024-08-09
 category:      Protocol
 cover:         /assets/cover14.jpg

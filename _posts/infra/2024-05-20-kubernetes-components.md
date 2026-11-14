@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Kubernetes] コンポーネントとクラスターのアーキテクチャ図"
+type:          Concept
+description:   "KubernetesクラスタにおけるControl PlaneとData Planeのアーキテクチャ構成とkube-apiserverやkubeletなど各コンポーネントの役割を解説。"
+tags:          [infra, kubernetes, architecture]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-05-19T22:22:54Z
+sources:
+  - id:        ref-1
+    resource:  https://kubernetes.io/ja/docs/concepts/architecture/
+    title:     "クラスターのアーキテクチャ \\| Kubernetes"
 date:          2024-05-20
 category:      Infrastructure
 cover:         /assets/cover14.jpg

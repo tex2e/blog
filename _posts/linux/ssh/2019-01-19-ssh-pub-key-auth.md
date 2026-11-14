@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "SSHで公開鍵認証 (~/.ssh/configの設定とssh-copy-idコマンドによる配布)"
+type:          How-To
+description:   "ed25519鍵生成から~/.ssh/config設定、ssh-copy-idや手動での公開鍵配布、sshdのパスワード認証無効化までSSH公開鍵認証の手順を解説します。"
+tags:          [linux, ssh, public-key-auth, centos]
+status:        stable
+stale_after:   2027-11-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-01-19T12:45:55Z
 date:          2024-11-28
 category:      Linux
 author:        tex2e

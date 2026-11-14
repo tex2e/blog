@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] defaultdictの使い方"
+type:          How-To
+description:   "Python標準ライブラリcollectionsのdefaultdict(int)やdefaultdict(list)を使い、初期値付き辞書を簡潔に扱う方法。"
+tags:          [python, defaultdict, collections, dict]
+status:        stable
+stale_after:   2026-01-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-01-29T06:22:54Z
 date:          2023-01-29
 category:      Python
 cover:         /assets/cover14.jpg

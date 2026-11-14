@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Scala] オブジェクト指向プログラミング"
+type:          Reference
+description:   "Scalaにおけるクラス定義、コンストラクタ、アクセス制御、継承、トレイト、演算子定義、拡張メソッドなどのOOP構文をまとめています。"
+tags:          [programming, scala, oop]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-12-03
 category:      Programming
 author:        tex2e

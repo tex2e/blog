@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[SQLServer] テーブルをロックしているセッションを特定するSQL"
+type:          Troubleshooting
+description:   "SQL Serverでデッドロック等によりテーブルロックを解放しないセッションをsys.dm_tran_locksとsys.partitionsで特定し、KILLで終了するSQLを解説します。"
+tags:          [database, sqlserver, tsql, deadlock, troubleshooting]
+status:        stable
+stale_after:   2027-08-04T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-04T04:20:45Z
 date:          2024-08-04
 category:      Database
 cover:         /assets/cover14.jpg

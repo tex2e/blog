@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Linux] sqlcmdとbcpコマンドをインストールする"
+type:          How-To
+description:   "Ubuntu環境にMicrosoftリポジトリを追加してmsodbcsql18とmssql-tools18を導入し、sqlcmdとbcpコマンドへパスを通す手順を解説します。"
+tags:          [linux, ubuntu, sql-server, sqlcmd]
+status:        stable
+stale_after:   2028-08-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-08-23T23:37:59Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-setup-tools?view=sql-server-ver17&tabs=ubuntu-install%2Codbc-ubuntu-2204
+    title:     "Install the sqlcmd and bcp SQL Server Command-Line Tools on Linux - SQL Server \\| Microsoft Learn"
 date:          2025-08-24
 category:      Linux
 cover:         /assets/cover14.jpg

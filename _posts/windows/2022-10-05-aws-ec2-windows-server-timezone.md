@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "AWS EC2のWindows Serverでタイムゾーンを東京/日本時刻にする"
+type:          How-To
+description:   "AWS EC2上のWindows ServerでUTC時刻を日本時間に変更するため、tzutilとreg addでTokyo Standard Timeを永続化する方法。"
+tags:          [windows, aws-ec2, windows-server, timezone]
+status:        stable
+stale_after:   2023-10-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-05T14:23:25Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/WindowsGuide/windows-set-time.html
+    title:     "https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/WindowsGuide/windows-set-time.html"
 date:          2022-10-05
 category:      Windows
 cover:         /assets/cover14.jpg

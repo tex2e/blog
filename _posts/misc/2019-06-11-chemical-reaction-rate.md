@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "化学反応速度 (1次反応・2次反応)"
+type:          Concept
+description:   "化学反応速度式における1次反応と2次反応について、微分方程式から積分形速度則と半減期を導出する方法を解説します。"
+tags:          [misc, chemistry, differential-equations]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-06-11T01:09:46Z
 date:          2019-06-11
 category:      Misc
 author:        tex2e

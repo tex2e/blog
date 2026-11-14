@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Windows共有フォルダにGitベアレポジトリを作る"
+type:          How-To
+description:   "新規サーバを立てずにWindowsのファイル共有フォルダ上にGitベアリポジトリを作成し、社内LANで共有運用する設定手順。"
+tags:          [git, windows, samba, bare-repository]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-12-09T12:00:42Z
 date:          2020-12-04
 category:      Git
 cover:         /assets/cover14.jpg

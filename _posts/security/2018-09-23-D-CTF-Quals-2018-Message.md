@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "D-CTF Quals 2018 Message Writeup"
+type:          How-To
+description:   "D-CTF Quals 2018のMisc問題「Message」について、頻度分析とキーボード上の軌跡マッピングでフラグを解読したWriteup。"
+tags:          [security, ctf, writeup, misc]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2018-09-23T09:57:41Z
 date:          2018-09-23
 category:      Security
 author:        tex2e

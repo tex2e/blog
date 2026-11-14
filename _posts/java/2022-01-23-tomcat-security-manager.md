@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "Tomcatでwarのexec実行やネットワーク接続を禁止する"
+type:          How-To
+description:   "Tomcatのセキュリティマネージャを有効化してwarアプリのコマンド実行やネットワーク接続権限を制限する設定方法。"
+tags:          [java, tomcat, security-manager, security]
+status:        stable
+stale_after:   2023-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-01-24T13:24:55Z
+sources:
+  - id:        ref-1
+    resource:  https://tomcat.apache.org/tomcat-9.0-doc/security-manager-howto.html
+    title:     "Apache Tomcat 9 -- Security Manager How-To"
 date:          2022-01-23
 category:      Java
 cover:         /assets/cover14.jpg

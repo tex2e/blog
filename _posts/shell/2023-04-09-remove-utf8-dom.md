@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "sedでDOM付きUTF-8からDOMを削除する"
+type:          How-To
+description:   "sedコマンドで先頭のバイト列xEFxBBxBFを置換し、複数テキストファイルからUTF-8のBOM（記事内表記DOM）を一括削除する方法。"
+tags:          [shell, bash, sed, utf8]
+status:        stable
+stale_after:   2026-04-09T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-04-09T10:12:37Z
 date:          2023-04-09
 category:      Shell
 cover:         /assets/cover14.jpg

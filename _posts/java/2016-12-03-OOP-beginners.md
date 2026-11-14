@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "オブジェクト指向プログラミング入門"
+type:          Concept
+description:   "Javaの具体例を用いてオブジェクトやクラス、継承、インターフェースなどオブジェクト指向の基本概念を解説した入門資料。"
+tags:          [java, oop, programming, tutorial]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-12-03
 category:      Java
 author:        tex2e

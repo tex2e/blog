@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "systemctlで disabled かつ start しているサービスを調べる"
+type:          How-To
+description:   "systemctl list-unit-filesとsystemctl statusを組み合わせ、自動起動が無効のまま稼働中のサービスを特定する方法を説明します。"
+tags:          [linux, systemd, systemctl, operations]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:44:48Z
 date:          2021-12-05
 category:      Linux
 cover:         /assets/cover14.jpg

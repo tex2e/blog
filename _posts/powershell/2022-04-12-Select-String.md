@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "PowerShellでgrep (Select-String) を使う"
+type:          Reference
+description:   "Linuxのgrepにおける再帰検索や否定マッチ、大文字小文字区別、エンコーディング指定をPowerShellのSelect-Stringで行う対応集です。"
+tags:          [powershell, select-string, grep]
+status:        stable
+stale_after:   2027-01-26T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-13T12:38:35Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/Microsoft.PowerShell.Utility/Select-String?view=powershell-7.2
+    title:     "Select-String (Microsoft.PowerShell.Utility) - PowerShell \\| Microsoft Docs"
+  - id:        ref-2
+    resource:  https://amzn.to/3PkOtKf
+    title:     "『Windows PowerShellクックブック』 2008/10"
 date:          2022-04-12
 category:      PowerShell
 cover:         /assets/cover14.jpg

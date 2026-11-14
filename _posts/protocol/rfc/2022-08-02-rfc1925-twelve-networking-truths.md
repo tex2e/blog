@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "RFC1925 ネットワークにおける12の真実"
+type:          Essay
+description:   "1996年のエイプリルフールRFCとして公開された、ネットワークやシステム設計における普遍的な教訓をまとめたRFC 1925「12の真実」を紹介します。"
+tags:          [protocol, rfc, rfc1925, networking]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2022-08-20T11:29:56Z
+sources:
+  - id:        ref-1
+    resource:  https://datatracker.ietf.org/doc/html/rfc1925
+    title:     "RFC 1925 - The Twelve Networking Truths"
 date:          2022-08-02
 category:      Protocol
 cover:         /assets/cover14.jpg

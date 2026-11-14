@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "アセンブリ言語を読むための基礎知識"
+type:          Reference
+description:   "x86系アセンブリ言語を読むための主要レジスタやEFLAGS、基本命令、関数呼び出し規約、静的解析向けWindows APIを整理したリファレンスです。"
+tags:          [security, assembly, x86, reverse-engineering, windows-api]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-05T11:52:32Z
+sources:
+  - id:        ref-1
+    resource:  https://software.intel.com/en-us/articles/intel-sdm
+    title:     "https://software.intel.com/en-us/articles/intel-sdm"
 date:          2022-02-26
 category:      Security
 cover:         /assets/cover14.jpg

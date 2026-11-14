@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[VB.NET] 無名関数の使い方"
+type:          How-To
+description:   "VB.NETでFunc(Of ...)やAction(Of ...)を用いてFunction・Subの無名関数を定義・呼び出しし、高階関数へ渡す使い方を解説。"
+tags:          [vb-net, dotnet, lambda, functions]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-12-15T11:40:36Z
 date:          2022-12-15
 category:      VB.NET
 cover:         /assets/cover14.jpg

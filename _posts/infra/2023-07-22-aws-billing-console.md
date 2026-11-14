@@ -2,6 +2,24 @@
 layout:        post
 title:         "IAMユーザで請求コンソールが表示されないとき"
 menutitle:     "[AWS] IAMユーザで請求コンソールが表示されないとき"
+type:          Troubleshooting
+description:   "AWSのIAMユーザで請求コンソールが表示されない問題に対し、ルートアカウントでのアクセス有効化と請求関連ポリシー付与手順を解説。"
+tags:          [infra, aws, iam, billing, troubleshooting]
+status:        stable
+stale_after:   2024-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-07-22T01:04:59Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html?icmpid=docs_iam_console
+    title:     "IAM tutorial: Grant access to the billing console - AWS Identity and Access Management"
+  - id:        ref-2
+    resource:  https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+    title:     "Using identity-based policies (IAM policies) for AWS Billing - AWS Billing"
+  - id:        ref-3
+    resource:  https://www.cloudsolution.tokai-com.co.jp/white-paper/2021/0701-244.html
+    title:     "プロが教えるAWSアカウント作成後に行うべき設定 ～コスト管理編～ \\| TOKAIコミュニケーションズ AWSソリューション"
 date:          2023-07-22
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[C#] 例外を再スローするときの注意点"
+type:          Concept
+description:   "C#のcatch句でthrow exと書くと元のスタックトレースが失われて原因調査が困難になる理由と、引数なしのthrowで再スローすべき理由を解説します。"
+tags:          [dotnet, csharp, exception-handling, debugging]
+status:        stable
+stale_after:   2027-07-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-07-29T14:35:07Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/standard/exceptions/best-practices-for-exceptions
+    title:     "例外のベスト プラクティス - .NET \\| Microsoft Learn"
 date:          2024-07-29
 category:      Dotnet
 cover:         /assets/cover14.jpg

@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "DockerやLXDを利用した権限昇格"
+type:          How-To
+description:   "dockerやlxdグループ権限を持つ非rootユーザが特権コンテナでホストのルートをマウントしroot権限を奪取する手法と対策。"
+tags:          [infra, docker, lxd, security, privilege-escalation]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-05-23T14:16:50Z
+sources:
+  - id:        ref-1
+    resource:  https://gtfobins.github.io/gtfobins/docker/
+    title:     "docker \\| GTFOBins"
+  - id:        ref-2
+    resource:  https://0xdf.gitlab.io/2020/11/07/htb-tabby.html
+    title:     "HTB: Tabby \\| 0xdf hacks stuff"
+  - id:        ref-3
+    resource:  https://blog.m0noc.com/2018/10/lxc-container-privilege-escalation-in.html?m=1
+    title:     "M0NOC.com: LXC Container Privilege Escalation in More Restrictive Environments"
 date:          2021-05-23
 category:      Infrastructure
 cover:         /assets/cover14.jpg

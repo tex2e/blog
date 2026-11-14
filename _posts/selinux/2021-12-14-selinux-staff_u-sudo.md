@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "SELinuxのstaff_uがsudoできるコマンドを限定する (/etc/sudoers)"
+type:          How-To
+description:   "SELinuxのstaff_uユーザに対し、/etc/sudoersでROLEとTYPEを指定してsudo実行可能なコマンドを限定する設定手順とロール追加方法を解説します。"
+tags:          [selinux, linux, sudo, staff-u]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-10T09:19:20Z
 date:          2021-12-14
 category:      SELinux
 cover:         /assets/cover6.jpg

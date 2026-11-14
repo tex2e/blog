@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "ヒル暗号をPythonで実装する"
+type:          Concept
+description:   "線形代数の行列演算に基づく古典暗号「ヒル暗号」の定義、暗号化・復号の例、Python実装および安全性の課題を解説。"
+tags:          [crypto, hill-cipher, classical-cipher, linear-algebra, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-18T09:42:34Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Hill_cipher
+    title:     "Hill cipher - Wikipedia"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/Rijndael_MixColumns
+    title:     "Rijndael MixColumns - Wikipedia"
 date:          2019-12-18
 category:      Crypto
 cover:         /assets/cover4.jpg

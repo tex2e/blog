@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "LWE格子暗号による暗号化・復号"
+type:          Concept
+description:   "Regev・Peikert方式に基づくLWE格子暗号の1ビットおよび複数ビット暗号化・復号アルゴリズムとNumPy実装を解説。"
+tags:          [crypto, lattice, lwe, post-quantum, numpy]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-03-27T11:04:48Z
+sources:
+  - id:        ref-1
+    resource:  http://inaz2.hatenablog.com/entry/2017/05/27/003343
+    title:     "LWE格子暗号による暗号化をやってみる - ももいろテクノロジー"
+  - id:        ref-2
+    resource:  https://www.imes.boj.or.jp/research/papers/japanese/15-J-09.pdf
+    title:     "量子コンピュータの解読に耐えうる暗号アルゴリズム「格子暗号」の最新動向 -- 日本銀行金融研究所"
 date:          2020-03-27
 category:      Crypto
 cover:         /assets/cover4.jpg

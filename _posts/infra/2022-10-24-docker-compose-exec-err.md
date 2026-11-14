@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Docker] compose exec時のエラー「the input device is not a TTY」の対処法"
+type:          Troubleshooting
+description:   "Jenkinsやcronなど非対話環境でdocker-compose execを実行した際のTTYエラーに対し、-Tオプションで擬似端末を無効化する対処法。"
+tags:          [infra, docker, docker-compose, jenkins, troubleshooting]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-23T09:53:35Z
+sources:
+  - id:        ref-1
+    resource:  https://hodalog.com/how-to-resolve-the-error-that-the-input-device-is-not-a-tty/
+    title:     "dockerコマンドをcronで実行させたら「TTYが無いよ」と怒られた件 \\| Hodalog"
 date:          2022-10-24
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "群・環・体の性質"
+type:          Concept
+description:   "群・アーベル群・環・体の性質と違いについて、加法逆元・乗法の分配法則・乗法逆元などの条件を図解とともに簡潔にまとめます。"
+tags:          [math, algebra, group-theory]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-05-10T12:59:19Z
 date:          2019-05-10
 category:      Math
 author:        tex2e

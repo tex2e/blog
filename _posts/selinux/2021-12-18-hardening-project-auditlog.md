@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "Hardening Projectで記録されたSELinuxによる拒否ログの一覧"
+type:          Essay
+description:   "Hardening Project競技中にSELinuxを有効化して観測したaudit.logの拒否ログをサーバ別に整理し、攻撃内容や対処を振り返ります。"
+tags:          [selinux, hardening-project, audit-log, incident-analysis]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2021-12-12T09:08:38Z
+sources:
+  - id:        ref-1
+    resource:  https://gist.github.com/tex2e/c093a4a42e59f5521a573745eb7e2851
+    title:     "Hardening Projectの競技中にSELinuxが書き込みを拒否したファイルとディレクトリの一覧"
 date:          2021-12-18
 category:      SELinux
 cover:         /assets/cover6.jpg

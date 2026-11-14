@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] 処理をバックグラウンドで実行する (Start-Job)"
+type:          How-To
+description:   "PowerShellのStart-JobやGet-Job、Receive-Job、Remove-Jobを使って処理をバックグラウンドで非同期実行・管理する方法を解説します。"
+tags:          [powershell, jobs, start-job, background]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-23T08:40:10Z
 date:          2022-04-19
 category:      PowerShell
 cover:         /assets/cover14.jpg

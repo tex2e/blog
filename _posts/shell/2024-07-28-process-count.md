@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Linux] スレッド数をカウントするコマンド"
+type:          How-To
+description:   "Linuxでps -elfTとwc -lを組み合わせて全スレッド数を計測・監視するコマンドと、ulimitやlimits.confでの上限確認法を解説。"
+tags:          [shell, linux, ps, process]
+status:        stable
+stale_after:   2027-07-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-07-28T08:30:57Z
 date:          2024-07-28
 category:      Shell
 cover:         /assets/cover14.jpg

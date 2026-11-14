@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "Rocky Linux で hostnamectl コマンドでサーバ名を変更する"
+type:          How-To
+description:   "Rocky Linuxでhostnamectl set-hostnameとsystemd-hostnamed再起動によりホスト名を変更し、/etc/hostsを更新する手順を解説します。"
+tags:          [linux, rocky-linux, hostname, systemd]
+status:        stable
+stale_after:   2027-11-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-02-03T12:52:28Z
+sources:
+  - id:        ref-1
+    resource:  https://wiki.crowncloud.net/?How_to_Change_Hostname_in_Rocky_Linux_9
+    title:     "CrownCloud Wiki - How To Change Hostname In Rocky Linux 9"
 date:          2024-01-30
 category:      Linux
 cover:         /assets/cover14.jpg

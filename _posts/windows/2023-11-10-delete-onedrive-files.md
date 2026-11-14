@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] OneDriveを削除してディスク容量を確保する"
+type:          How-To
+description:   "Windows 10でOneDriveをアンインストールし、全ユーザのAppData配下に残るキャッシュフォルダをPowerShellで一括削除する方法を解説。"
+tags:          [windows, onedrive, powershell, disk-cleanup]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-11-10T14:35:08Z
 date:          2023-11-10
 category:      Windows
 cover:         /assets/cover14.jpg

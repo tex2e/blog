@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "微分積分II 公式一覧"
+type:          Reference
+description:   "テイラー展開とオイラーの公式、偏微分や陰関数・条件付き極値、2重積分、1階・2階線形微分方程式まで微分積分IIの公式をまとめています。"
+tags:          [math, calculus, differential-equations, formulas]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-17T06:39:52Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3XJUwds
+    title:     "新微分積分2 - 大日本図書"
 date:          2019-01-02
 category:      Math
 cover:         /assets/cover14.jpg

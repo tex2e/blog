@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] UIコンポーネントのタグ内に任意のHTMLを描画させる"
+type:          How-To
+description:   "ASP.NET Core Blazorの自作UIコンポーネントでRenderFragment型のParameterを定義し、単一または複数の任意HTMLブロックを呼び出し元から埋め込む方法を解説します。"
+tags:          [dotnet, csharp, blazor, components, razor]
+status:        stable
+stale_after:   2027-10-11T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-08T03:30:17Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-10-07
 category:      Dotnet
 cover:         /assets/cover14.jpg

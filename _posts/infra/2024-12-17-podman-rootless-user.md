@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[systemd] SSH接続を止めるとPodmanのルートレスコンテナが停止してしまうときの対処法"
+type:          Troubleshooting
+description:   "SSH切断時にPodmanのルートレスコンテナが停止する問題をloginctlのlinger有効化設定で解決する方法。"
+tags:          [infra, podman, systemd, loginctl]
+status:        stable
+stale_after:   2027-12-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-12-17T13:42:29Z
 date:          2024-12-17
 category:      Infrastructure
 cover:         /assets/cover14.jpg

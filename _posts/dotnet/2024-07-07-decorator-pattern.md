@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] デコレータパターンを実装する"
+type:          How-To
+description:   "C#で高階関数を用いて既存の関数をラップし、元の処理を変更せずに前後のログ出力などの振る舞いを追加するデコレータパターンの実装例を解説します。"
+tags:          [dotnet, csharp, design-pattern, decorator]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-07-07T07:14:32Z
 date:          2024-07-07
 category:      Dotnet
 cover:         /assets/cover14.jpg

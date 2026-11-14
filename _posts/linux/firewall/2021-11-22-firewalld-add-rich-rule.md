@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "firewalldでリッチルールを作成・追加する"
+type:          How-To
+description:   "firewall-cmdのリッチルール機能を用い、指定した送信元IPv4サブネットから80/tcpへの通信のみを許可・削除する手順を説明します。"
+tags:          [linux, firewall, firewalld, rich-rule]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-13T12:14:14Z
 date:          2021-11-22
 category:      Linux
 cover:         /assets/cover14.jpg

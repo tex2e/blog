@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "研究室の自動開錠システムを作った話"
+type:          Essay
+description:   "FeliCaリーダーとRaspberry Pi、サーボモータ、systemdを用いて研究室の自動開錠システムを後輩と製作した開発記録。"
+tags:          [python, raspberry-pi, nfc, felica]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-09-13T03:04:50Z
+sources:
+  - id:        ref-1
+    resource:  https://www.facebook.com/falcon.8823/videos/646548402082287/
+    title:     "Suicaで解錠 -- Facebook"
+  - id:        ref-2
+    resource:  https://github.com/fjt-lab/auto-door-unlock
+    title:     "fjt-lab/auto-door-unlock -- GitHub"
+  - id:        ref-3
+    resource:  https://kokensha.xyz/raspberry-pi/raspberrypi-sony-pasori-rc-s380-read-nfc-felica/
+    title:     "RaspberryPiで！SONYのPaSoRi（RC-S380）で（NFC）Felica情報を読み取る！ - KOKENSHAの技術ブログ"
+  - id:        ref-4
+    resource:  https://qiita.com/undo0530/items/89540a03252e2d8f291b
+    title:     "Raspberry PiにNFCリーダを接続してSuicaを読み取る - Qiita"
+  - id:        ref-5
+    resource:  https://uepon.hatenadiary.com/entry/2018/06/12/223307
+    title:     "RaspberryPiでNFCタグを使ってみる - uepon日々の備忘録"
+  - id:        ref-6
+    resource:  https://web.archive.org/web/20180814203032/http://hara.jpn.com/_default/ja/Topics/RaspPi_Motor.html
+    title:     "RaspberryPi Zeroでサーボモータを動かす"
 date:          2019-09-13
 category:      Python
 author:        tex2e

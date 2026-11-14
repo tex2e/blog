@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[PowerShell] AES暗号で文字列を暗号化する"
+type:          How-To
+description:   "PowerShellのAesCryptoServiceProviderを用い、CBCモードおよびECBモードで文字列をAES暗号化・復号する実装例を紹介します。"
+tags:          [powershell, aes, encryption, cryptography]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-24T10:30:45Z
+sources:
+  - id:        ref-1
+    resource:  http://www.vwnet.jp/windows/PowerShell/AES.htm
+    title:     "AES 256 の PowerShell 実装"
+  - id:        ref-2
+    resource:  https://garafu.blogspot.com/2015/12/aescryptgraphy.html
+    title:     "C# で AES暗号 (共通鍵暗号) を 利用 する 方法 - galife"
+  - id:        ref-3
+    resource:  https://docs.microsoft.com/ja-jp/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=net-6.0
+    title:     "AesCryptoServiceProvider クラス (System.Security.Cryptography) \\| Microsoft Docs"
+  - id:        ref-4
+    resource:  https://hake.hatenablog.com/entry/20170213/p1
+    title:     "PowerShell - SHA256ハッシュ値文字列の取得 - hakeの日記"
 date:          2022-04-23
 category:      PowerShell
 cover:         /assets/cover14.jpg

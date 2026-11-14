@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "Nginxの起動時のユーザ権限を確認する"
+type:          How-To
+description:   "nginx.confのuserディレクティブを確認し、Nginxがroot権限ではなくnginxユーザで起動しているか検証・修正する方法を説明します。"
+tags:          [linux, nginx, hardening, security]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-14T01:46:26Z
+sources:
+  - id:        ref-1
+    resource:  "https://downloads.cisecurity.org/#/"
+    title:     "CIS Downloads > Nginx"
 date:          2021-11-25
 category:      Linux
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] マルチスレッド処理：Parallel.For/ForEachで並列処理"
+type:          How-To
+description:   "C#のParallel.ForおよびParallel.ForEachを使って配列やリストの反復処理を複数CPUコアで並列実行し、大量データ処理を高速化する方法を解説します。"
+tags:          [dotnet, csharp, parallel, multithreading]
+status:        stable
+stale_after:   2028-05-25T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-25T13:24:46Z
 date:          2025-05-24
 category:      Dotnet
 cover:         /assets/cover14.jpg

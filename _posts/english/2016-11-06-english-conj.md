@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "英語の文と文のつなぎの言葉"
+type:          Reference
+description:   "英文ライティングで使える対比・追加・理由・結果などの接続詞や接続副詞・熟語を論理関係別にまとめた一覧表。"
+tags:          [english, grammar, writing, conjunctions]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2016-12-11T09:55:31Z
+sources:
+  - id:        ref-1
+    resource:  https://ejje.weblio.jp/sentence/
+    title:     "Weblio英語例文検索"
 date:          2016-11-06
 category:      English
 author:        tex2e

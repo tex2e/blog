@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "findで特定パスを除外してファイル名を検索する方法"
+type:          How-To
+description:   "findコマンドで特定ディレクトリを検索対象から除外するgrep -v、-not -path、-regex、-pruneの4通りの方法を解説。"
+tags:          [shell, bash, find, grep]
+status:        stable
+stale_after:   2027-01-03T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-08-22T12:29:02Z
 date:          2023-08-20
 category:      Shell
 cover:         /assets/cover14.jpg

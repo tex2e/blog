@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "nroffマクロを使ったRFCの作成"
+type:          How-To
+description:   "RFC 2223に基づき、nroffのmsマクロと改ページ調整用のPerlスクリプトfix.plを使ってRFC形式の文書を作成する方法を解説します。"
+tags:          [protocol, rfc, nroff, rfc2223]
+status:        stable
+stale_after:   2024-03-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-20T10:11:35Z
+sources:
+  - id:        ref-1
+    resource:  https://tools.ietf.org/html/rfc2223
+    title:     "Instructions to RFC Authors -- RFC 2223"
+  - id:        ref-2
+    resource:  https://tools.ietf.org/rfc/rfc1149.txt
+    title:     "A Standard for the Transmission of IP Datagrams on Avian Carriers（鳥類キャリアによるIPデータグラムの伝送規格） -- RFC 1449"
 date:          2019-03-20
 category:      Protocol
 author:        tex2e

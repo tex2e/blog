@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "高速冪剰余計算とモンゴメリ冪乗法"
+type:          Concept
+description:   "バイナリ法とサイドチャネル攻撃耐性を持つモンゴメリ冪乗法の仕組み、およびPythonのpow関数使用時の注意点を解説。"
+tags:          [crypto, modular-exponentiation, side-channel, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2018-12-31T00:10:09Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Modular_exponentiation
+    title:     "Modular exponentiation (Wikipedia)"
+  - id:        ref-2
+    resource:  "https://en.wikipedia.org/wiki/Exponentiation_by_squaring#Basic_method"
+    title:     "Basic method -- Exponentiation by squaring (Wikipedia)"
+  - id:        ref-3
+    resource:  "https://en.wikipedia.org/wiki/Exponentiation_by_squaring#Montgomery's_ladder_technique"
+    title:     "Montgomery's ladder technique -- Exponentiation by squaring (Wikipedia)"
+  - id:        ref-4
+    resource:  https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%A1%E3%83%AA%E4%B9%97%E7%AE%97
+    title:     "モンゴメリ乗算 (Wikipedia)"
+  - id:        ref-5
+    resource:  https://cr.yp.to/bib/2003/joye-ladder.pdf
+    title:     "The Montgomery Powering Ladder"
+  - id:        ref-6
+    resource:  "https://github.com/Legrandin/pycryptodome/blob/d13e46b02d/src/montgomery.c#L412-L510"
+    title:     "monty_pow -- Legrandin/pycryptodome (GitHub)"
 date:          2018-12-31
 category:      Crypto
 author:        tex2e

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[MySQL] DBのダンプの作成とリストアの方法"
+type:          How-To
+description:   "mysqldumpとmysqlコマンドを用いて、MySQLの全データベース・指定データベース・指定テーブルをそれぞれバックアップ(ダンプ)しリストアする方法を紹介します。"
+tags:          [database, mysql, mysqldump, backup, restore]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:42:34Z
 date:          2021-11-19
 category:      Database
 cover:         /assets/cover14.jpg

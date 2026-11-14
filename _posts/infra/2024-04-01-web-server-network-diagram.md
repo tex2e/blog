@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Webサーバー構成の設計パターン"
+type:          Concept
+description:   "Web・AP・DBサーバの役割と、小規模向け1台構成からマルチテナント対応の2層構造、負荷分散可能な3層構造の設計パターンを解説。"
+tags:          [infra, architecture, web-server, network]
+status:        stable
+stale_after:   2027-12-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-31T11:13:55Z
 date:          2024-04-01
 category:      Infrastructure
 cover:         /assets/cover14.jpg

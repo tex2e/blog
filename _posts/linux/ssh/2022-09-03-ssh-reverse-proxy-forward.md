@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Linuxサーバからプロキシ経由でyum/aptインストールをする"
+type:          How-To
+description:   "SSHの-Rリモートフォワードを使い、インターネット非接続のLinuxサーバからローカルPCのプロキシ経由でyum/aptを実行する手順を解説します。"
+tags:          [linux, ssh, port-forwarding, proxy]
+status:        stable
+stale_after:   2025-09-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-09-03T13:14:13Z
 date:          2022-09-03
 category:      Linux
 cover:         /assets/cover14.jpg

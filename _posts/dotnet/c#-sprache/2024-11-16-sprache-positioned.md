@@ -1,6 +1,30 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで解析した字句の出現位置を保存する (Positioned)"
+type:          How-To
+description:   "C#のSpracheでIPositionAwareインターフェースの実装とPositioned()を用いて解析した字句の出現位置や長さを保持する方法。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-11T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-11T13:51:57Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2020-05-23-sprache9-positioned/
+    title:     "Sprache Part 9: Positioned - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/IPositionAware.cs#L8"
+    title:     "Sprache/src/Sprache/IPositionAware.cs -- IPositionAware"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Position.cs#L9"
+    title:     "Sprache/src/Sprache/Position.cs -- Position"
+  - id:        ref-5
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.Positioned.cs#L13"
+    title:     "Sprache/src/Sprache/Parse.Positioned.cs -- Positioned"
 date:          2024-11-16
 category:      Dotnet
 cover:         /assets/cover14.jpg

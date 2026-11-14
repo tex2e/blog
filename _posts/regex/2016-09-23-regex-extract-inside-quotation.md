@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Regex] 正規表現でダブルクオート内の文字列を抽出する"
+type:          How-To
+description:   "正規表現でダブルクオート内の文字列を抽出する方法を、控えめな量指定子や否定文字集合、エスケープ考慮パターンに分けて解説。"
+tags:          [regex, programming, string-matching]
+status:        stable
+stale_after:   2026-02-19T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3IxSBV4
+    title:     "詳説 正規表現 第3版 - O'Reilly Japan"
 date:          2016-09-23
 category:      Programming
 author:        tex2e

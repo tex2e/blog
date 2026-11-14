@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[MySQL] mysqldが起動できないときの対処 (/var/lib/mysql/ 関連)"
+type:          Troubleshooting
+description:   "systemctlでMySQLが起動せず/var/lib/mysql/が使用不可のエラーが出た際に、データディレクトリ削除とmysqld --initializeで復旧する対処法をまとめます。"
+tags:          [database, mysql, troubleshooting, systemd, linux]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-24T07:21:57Z
 date:          2021-10-11
 category:      Database
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Ansible] pingモジュールを使う"
+type:          How-To
+description:   "Ansible組み込みのansible.builtin.pingモジュールをPlaybookおよびアドホックコマンドから呼び出して接続確認する方法。"
+tags:          [infra, ansible, ping]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-10T13:10:12Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ping_module.html
+    title:     "ansible.builtin.ping module – Try to connect to host, verify a usable python and return pong on success — Ansible Documentation"
 date:          2022-07-01
 category:      Infrastructure
 cover:         /assets/cover14.jpg

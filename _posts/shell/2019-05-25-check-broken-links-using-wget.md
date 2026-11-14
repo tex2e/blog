@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "wgetでWebサイトを巡回してリンク切れを確認する"
+type:          How-To
+description:   "wgetの--spiderと再帰オプションを用いてWebサイトを巡回し、リンク切れページをwget.logに出力して検出する方法を解説します。"
+tags:          [shell, wget, link-checker, cli]
+status:        stable
+stale_after:   2026-08-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-05-25T13:03:19Z
+sources:
+  - id:        ref-1
+    resource:  "https://www.gnu.org/software/wget/manual/wget.html#Wgetrc-Commands"
+    title:     "GNU Wget 1.20 Manual -- 6.3 Wgetrc Commands"
 date:          2019-05-25
 category:      Shell
 cover:         /assets/cover14.jpg

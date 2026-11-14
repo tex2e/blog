@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Java] オブジェクト指向プログラミング"
+type:          Reference
+description:   "Javaでのクラス定義やアクセス修飾子、継承、抽象クラス、インターフェース、ジェネリックスの構文まとめ。"
+tags:          [java, oop, syntax, generics]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-12-03
 category:      Java
 author:        tex2e

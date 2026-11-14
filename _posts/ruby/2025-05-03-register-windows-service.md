@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Windows] Railsをサービス化する方法（Redmineの例）"
+type:          How-To
+description:   "Windows Server上でwin32-service gemとsc createコマンドを使い、RedmineなどのRailsアプリをWindowsサービス化する方法。"
+tags:          [ruby, rails, redmine, windows]
+status:        stable
+stale_after:   2026-05-03T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-03T02:21:09Z
+sources:
+  - id:        ref-1
+    resource:  https://www.redmine.org/projects/redmine/wiki/HowTo_run_Redmine_as_a_Windows_service_(win32-service_+_taskill_approach
+    title:     "HowTo run Redmine as a Windows service (win32-service + taskill approach) - Redmine"
 date:          2025-05-03
 category:      Ruby
 cover:         /assets/cover14.jpg

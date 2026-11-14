@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[C#] Reflectionでプロパティ一覧を動的に取得する"
+type:          How-To
+description:   "C#のReflection機能を使い、typeofやGetTypeで取得したTypeオブジェクトからType.GetPropertiesメソッドでクラスのプロパティ一覧を動的取得する方法を解説します。"
+tags:          [dotnet, csharp, reflection]
+status:        stable
+stale_after:   2027-07-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-07-07T10:05:30Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.type.getproperty?view=net-8.0
+    title:     "Type.GetProperty メソッド (System)"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.reflection.bindingflags?view=net-8.0
+    title:     "BindingFlags 列挙型 (System.Reflection)"
+  - id:        ref-3
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.reflection.propertyinfo?view=net-8.0
+    title:     "PropertyInfo クラス (System.Reflection)"
+  - id:        ref-4
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.reflection.methodinfo?view=net-8.0
+    title:     "MethodInfo クラス (System.Reflection)"
 date:          2024-07-08
 category:      Dotnet
 cover:         /assets/cover14.jpg

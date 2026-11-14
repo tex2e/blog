@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Linux] 共有ライブラリの読み込みエラーをLD_LIBRARY_PATHで解決させる"
+type:          Troubleshooting
+description:   "ソースビルドしたOpenSSL実行時の共有ライブラリ読み込みエラーの原因をlddで調査し、LD_LIBRARY_PATHで解決する方法を解説します。"
+tags:          [linux, openssl, shared-library, troubleshooting]
+status:        stable
+stale_after:   2028-09-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-09-23T06:56:19Z
 date:          2025-09-23
 category:      Linux
 cover:         /assets/cover14.jpg

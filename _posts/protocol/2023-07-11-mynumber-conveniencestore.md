@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "マイナンバー制度とコンビニ交付"
+type:          Concept
+description:   "マイナンバーカードを用いたコンビニ交付サービスについて、取得可能な証明書の種類、キオスク端末からJ-LIS・自治体サーバまでのシステム構成と発行制限を解説します。"
+tags:          [protocol, mynumber, kiosk, government]
+status:        stable
+stale_after:   2026-10-31T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-07-08T02:02:52Z
 date:          2023-07-11
 category:      Protocol
 cover:         /assets/cover14.jpg

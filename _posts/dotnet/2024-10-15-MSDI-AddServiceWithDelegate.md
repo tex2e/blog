@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] MS.DIコンテナでデリゲートを用いたサービス登録"
+type:          How-To
+description:   "Microsoft.Extensions.DependencyInjectionのサービス登録時にデリゲートを指定し、設定クラスのインスタンス値を動的に構成して注入する方法を解説します。"
+tags:          [dotnet, csharp, dependency-injection, msdi, delegate]
+status:        stable
+stale_after:   2027-10-14T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-14T01:38:05Z
 date:          2024-10-15
 category:      Dotnet
 cover:         /assets/cover14.jpg

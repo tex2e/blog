@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "WindowsでCapsLockをF13に変更する"
+type:          How-To
+description:   "WindowsレジストリのScancode Mapを書き換えるregファイルを作成してCapsLockキーをF13キーに変更・復元する手順。"
+tags:          [keyboard, windows, registry, keymap]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-11T11:06:06Z
+sources:
+  - id:        ref-1
+    resource:  https://gist.github.com/zkxs/2d570350489596145d956eeb55fe0562
+    title:     "Windows registry patch to use CAPSLOCK as F13"
+  - id:        ref-2
+    resource:  http://www.grismar.net/ventrilocapsfix/
+    title:     "Push To Talk Fix - Remapping keys to F13"
 date:          2020-07-11
 category:      Keyboard
 cover:         /assets/cover14.jpg

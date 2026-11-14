@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[C言語] メモリ処理系の関数一覧"
+type:          Reference
+description:   "C言語の動的メモリ確保関数malloc・calloc・reallocとメモリ操作関数memset・memcpy・memcmpなどの一覧。"
+tags:          [c, memory-management, standard-library]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-08-13T08:26:17Z
+sources:
+  - id:        ref-1
+    resource:  https://fresh2refresh.com/c-programming/c-dynamic-memory-allocation/
+    title:     "C dynamic memory allocation"
+  - id:        ref-2
+    resource:  https://fresh2refresh.com/c-programming/c-buffer-manipulation-function/
+    title:     "C Buffer manipulation functions"
 date:          2020-08-11
 category:      C
 cover:         /assets/cover14.jpg

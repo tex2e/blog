@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "フォームで全角数字を入力させる必要はあるのか"
+type:          Essay
+description:   "行政システム等でフォームに全角数字を強いる理由をデータ突合やレガシーIE環境の観点から分析し、UX重視の設計を提案します。"
+tags:          [misc, ux, web-forms, legacy-systems]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2022-03-12T13:20:15Z
+sources:
+  - id:        ref-1
+    resource:  https://comemo.nikkei.com/n/n1c9103c81c79
+    title:     "何故お役所ってオワコンIEが大好きなの？｜楠 正憲（デジタル庁統括官）"
 date:          2022-03-11
 category:      Misc
 cover:         /assets/cover14.jpg

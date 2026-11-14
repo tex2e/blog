@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "draft-ietf-quic-invariants の概要"
+type:          Concept
+description:   "QUICのバージョンに依存しない特性を定めるdraft-ietf-quic-invariants（RFC 8999）について、ヘッダ形式や接続ID、バージョン交渉の要点をまとめています。"
+tags:          [protocol, quic, rfc8999, networking]
+status:        stable
+stale_after:   2024-08-16T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-11-08T08:41:57Z
+sources:
+  - id:        ref-1
+    resource:  https://www.rfc-editor.org/rfc/rfc8999.html
+    title:     "Version-Independent Properties of QUIC"
+  - id:        ref-2
+    resource:  https://tools.ietf.org/html/draft-ietf-quic-transport
+    title:     "QUIC-TRANSPORT"
 date:          2019-11-08
 category:      Protocol
 author:        tex2e

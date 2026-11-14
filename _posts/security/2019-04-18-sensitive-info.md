@@ -2,6 +2,26 @@
 layout:        post
 title:         "センシティブな情報とは"
 menutitle:     "センシティブな情報（sensitive information）とは"
+type:          Essay
+description:   "プログラマが指すパスワード類とプライバシー保護上の機微情報における「センシティブな情報」の意味の相違と注意点を解説。"
+tags:          [security, privacy, sensitive-information, compliance]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-04-18T10:46:45Z
+sources:
+  - id:        ref-1
+    resource:  https://www.jpcert.or.jp/java-rules/msc03-j.html
+    title:     "センシティブな情報をハードコードしない -- JPCERT/CC"
+  - id:        ref-2
+    resource:  https://kikakurui.com/q/Q15001-2006-01.html
+    title:     "JIS Q 15001:2006 個人情報保護マネジメントシステム -- 要求事項"
+  - id:        ref-3
+    resource:  https://web.archive.org/web/20190429031710/https://success.docker.com/article/docker-hub-user-notification
+    title:     "Docker - Unauthorized access to Docker Hub database"
+  - id:        ref-4
+    resource:  https://www.ppc.go.jp/files/pdf/sankou_01.pdf
+    title:     "金融分野ガイドラインにおける機微（センシティブ）情報の対象範囲"
 date:          2019-04-18
 category:      Security
 author:        tex2e

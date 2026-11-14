@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Regex] 正規表現の先読み・後読みの書き方"
+type:          Reference
+description:   "文字列を消費せず前後の条件を判定する正規表現の先読み・否定先読み・後読み・否定後読みの構文と具体例を一覧で解説。"
+tags:          [regex, lookaround, programming]
+status:        stable
+stale_after:   2027-01-27T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-01-27T07:48:06Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3IxSBV4
+    title:     "詳説 正規表現 第3版 - O'Reilly Japan"
 date:          2024-01-26
 category:      Programming
 cover:         /assets/cover14.jpg

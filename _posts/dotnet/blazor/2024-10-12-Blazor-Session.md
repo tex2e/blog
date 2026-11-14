@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] セッションの読み書きをする"
+type:          How-To
+description:   "ASP.NET Core BlazorでProtectedSessionStorageを注入し、ブラウザ終了まで画面間でデータを共有するセッションの保存と読み込みを行う方法を解説します。"
+tags:          [dotnet, csharp, blazor, session]
+status:        stable
+stale_after:   2027-10-12T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-11T23:24:25Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-10-12
 category:      Dotnet
 cover:         /assets/cover14.jpg

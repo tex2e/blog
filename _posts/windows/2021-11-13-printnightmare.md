@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Windows] PrintNightmare攻撃を回避するための対策"
+type:          How-To
+description:   "PrintNightmare脆弱性（CVE-2021-34527）への回避策として、PowerShellでPrint Spoolerサービスを停止・無効化する手順を解説。"
+tags:          [windows, cve, powershell, security]
+status:        stable
+stale_after:   2025-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-14T01:47:23Z
+sources:
+  - id:        ref-1
+    resource:  https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527
+    title:     "CVE-2021-34527 - セキュリティ更新プログラム ガイド - Microsoft - Windows 印刷スプーラーのリモートでコードが実行される脆弱性"
+  - id:        ref-2
+    resource:  https://blogs.manageengine.jp/printnightmare/
+    title:     "PrintNightmareへの効率的な対処方法 - ManageEngine ブログ ManageEngine ブログ"
 date:          2021-11-13
 category:      Windows
 cover:         /assets/cover14.jpg

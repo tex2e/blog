@@ -2,6 +2,26 @@
 layout:        post
 title:         "有限体上の楕円曲線上のスカラー倍算"
 menutitle:     "有限体上の楕円曲線上のスカラー倍算とsecp256k1の計算"
+type:          Concept
+description:   "有限体上の楕円曲線における点の加算・2倍算・スカラー倍算をPythonで実装し、secp256k1のテストベクタを検証。"
+tags:          [crypto, elliptic-curve, secp256k1, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-02-23T13:52:15Z
+sources:
+  - id:        ref-1
+    resource:  http://www.christelbach.com/ECCalculator.aspx
+    title:     "Elliptic Curve Calculator"
+  - id:        ref-2
+    resource:  https://en.bitcoin.it/wiki/Secp256k1
+    title:     "Secp256k1 - Bitcoin Wiki"
+  - id:        ref-3
+    resource:  http://www.secg.org/sec2-v2.pdf
+    title:     "SEC 2: Recommended Elliptic Curve Domain Parameters (pdf)"
+  - id:        ref-4
+    resource:  https://chuckbatson.wordpress.com/2014/11/26/secp256k1-test-vectors/
+    title:     "secp256k1 Test Vectors - Chuck Batson"
 date:          2019-02-23
 category:      Crypto
 author:        tex2e

@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "SMTPの応答コードの一覧"
+type:          Reference
+description:   "RFC 5321で定義されているSMTPの3桁の応答コード一覧と、2桁目の数字が示す応答カテゴリ（構文・情報・接続・メールシステム）の意味をまとめています。"
+tags:          [protocol, smtp, rfc5321, email]
+status:        stable
+stale_after:   2023-03-16T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-03-16T07:25:18Z
+sources:
+  - id:        ref-1
+    resource:  https://tools.ietf.org/html/rfc821
+    title:     "RFC 821"
+  - id:        ref-2
+    resource:  https://tools.ietf.org/html/rfc2821
+    title:     "RFC 2821"
+  - id:        ref-3
+    resource:  https://tools.ietf.org/html/rfc5321
+    title:     "RFC 5321"
+  - id:        ref-4
+    resource:  "https://tools.ietf.org/html/rfc5321#section-4.2.3"
+    title:     "RFC 5321 -- 4.2.3. 応答コード"
 date:          2020-03-16
 category:      Protocol
 cover:         /assets/cover5.jpg

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "XCOM Research Report"
+type:          Reference
+description:   "Collection of English research logs, autopsy reports, and Council evaluation quotes from XCOM."
+tags:          [english, reading, xcom, vocabulary]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2017-01-28T13:56:45Z
 date:          2017-01-28
 category:      English
 author:        tex2e

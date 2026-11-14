@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[Perl6] Raku で LaTeX 文章の構文解析をする"
+type:          How-To
+description:   "Perl6（Raku）のGrammar機能を用いて、LaTeX文書を拡張BNFで定義し構文解析するパーサーの実装例を解説します。"
+tags:          [programming, raku, perl6, grammar, latex]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-03-05T09:23:55Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.perl6.org/language/grammar_tutorial
+    title:     "Grammar Tutorial"
+  - id:        ref-2
+    resource:  https://docs.perl6.org/language/regexes
+    title:     "Regexes"
+  - id:        ref-3
+    resource:  https://github.com/tex2e/yalp
+    title:     "yalp"
 date:          2017-03-05
 category:      Programming
 author:        tex2e

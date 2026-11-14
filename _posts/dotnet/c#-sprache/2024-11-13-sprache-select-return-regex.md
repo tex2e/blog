@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで解析結果を別の型に変換する (Select, Return, Regex)"
+type:          Reference
+description:   "C#のSpracheでSelectやReturn、Regex、RegexMatchを使い解析結果を別の値や型へ変換するメソッドの仕様と使用例を整理。"
+tags:          [dotnet, csharp, sprache, parser, regex]
+status:        stable
+stale_after:   2027-11-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-10T03:28:14Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2020-04-06-sprache5-select-and-return/
+    title:     "Sprache Part 5: Select, Return, and Regex - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L357"
+    title:     "Sprache/src/Sprache/Parse.cs -- Select"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L551"
+    title:     "Sprache/src/Sprache/Parse.cs -- Return\\<T\\>(T)"
+  - id:        ref-5
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L564"
+    title:     "Sprache/src/Sprache/Parse.cs -- Return\\<T, U\\>(this Parser\\<T\\>, U)"
+  - id:        ref-6
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.Regex.cs#L14"
+    title:     "Sprache/src/Sprache/Parse.Regex.cs -- Regex(string)"
 date:          2024-11-13
 category:      Dotnet
 cover:         /assets/cover14.jpg

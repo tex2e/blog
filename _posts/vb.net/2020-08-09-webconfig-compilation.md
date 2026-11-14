@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[ASP.NET] コンパイルとDLL読み込みを高速化する"
+type:          How-To
+description:   "ASP.NETのweb.configでoptimizeCompilationsやbatchを設定し、開発時の再コンパイルとDLL読み込みを高速化する方法を解説。"
+tags:          [vb-net, asp-net, web-config, iis]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-08-09T02:10:09Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/s10awwz0%28v=vs.100%29?redirectedfrom=MSDN
+    title:     "compilation Element (ASP.NET Settings Schema) \\| Microsoft Docs"
 date:          2020-08-09
 category:      VB.NET
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "AutoHotKeyで結合セルに1行ずつペースト"
+type:          How-To
+description:   "Excelの複数行にわたる結合セルに対して複数行テキストを1行ずつ順次に貼り付けるAutoHotkeyスクリプトの実装方法。"
+tags:          [keyboard, autohotkey, excel, windows]
+status:        stable
+stale_after:   2023-06-18T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-06-18T13:00:00Z
 date:          2020-06-18
 category:      Keyboard
 cover:         /assets/cover14.jpg

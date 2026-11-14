@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "ハミング符号 (誤り訂正符号)"
+type:          Concept
+description:   "1ビット誤りの検出・訂正を行う線形誤り訂正符号であるハミング符号について、生成行列・パリティ検査行列・シンドローム計算とSageMath例を解説します。"
+tags:          [math, coding-theory, hamming-code, linear-algebra]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-11-15T13:43:23Z
+sources:
+  - id:        ref-1
+    resource:  https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%9F%E3%83%B3%E3%82%B0%E7%AC%A6%E5%8F%B7
+    title:     "ハミング符号 - Wikipedia"
 date:          2020-11-15
 category:      Math
 cover:         /assets/cover14.jpg

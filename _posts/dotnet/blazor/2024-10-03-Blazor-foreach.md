@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] Razorページ内でforeach文を使う"
+type:          How-To
+description:   "ASP.NET Core BlazorのRazorページ内で@foreach構文を使用し、モデルクラスの一覧を繰り返し描画しつつ各要素のプロパティやイベントをバインドする方法を解説します。"
+tags:          [dotnet, csharp, blazor, razor]
+status:        stable
+stale_after:   2027-10-08T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-08T01:17:25Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-10-03
 category:      Dotnet
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Ruby] 配列を返すメソッドをブロックも受け付けるように拡張する"
+type:          How-To
+description:   "Rubyで配列を返すメソッドをblock_given?やyield、Object#tap、&block引数でブロック対応へ拡張する方法を解説。"
+tags:          [ruby, block, proc, enumerator]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-08T00:09:47Z
 date:          2016-12-08
 category:      Ruby
 author:        tex2e

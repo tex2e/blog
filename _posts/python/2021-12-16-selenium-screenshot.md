@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] Seleniumでスクリーンショットを撮りPDFにまとめる"
+type:          How-To
+description:   "PythonとSelenium（Firefox）でWebページの連続スクリーンショットを撮影し、ImageMagickのconvertで切り抜き・PDF化する手順。"
+tags:          [python, selenium, imagemagick, pdf]
+status:        stable
+stale_after:   2025-07-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-10T14:02:24Z
 date:          2021-12-16
 category:      Python
 cover:         /assets/cover14.jpg

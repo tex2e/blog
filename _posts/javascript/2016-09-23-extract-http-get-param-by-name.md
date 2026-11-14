@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[JavaScript] HTTPで渡されたGETパラメータを取得する方法"
+type:          How-To
+description:   "JavaScriptで正規表現とdecodeURIComponentを用いてURLのHTTP GETクエリパラメータを名前指定で取得する関数の実装法。"
+tags:          [javascript, http, url, regex]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-09-23
 category:      JavaScript
 author:        tex2e

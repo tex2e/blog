@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "Linuxで消せない・編集できないファイルの作り方 (chattr)"
+type:          How-To
+description:   "extファイルシステムでchattrコマンドによりファイルやディレクトリへ不変属性を付与・解除し、lsattrで確認する方法を説明します。"
+tags:          [linux, chattr, filesystem, hardening]
+status:        stable
+stale_after:   2026-11-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-03T11:01:51Z
+sources:
+  - id:        ref-1
+    resource:  https://qiita.com/riekure/items/6def7f813ebe03dd5850
+    title:     "特定のファイルをrmコマンドなどで削除できないようにする方法(chattr、lsattrコマンド) - Qiita"
+  - id:        ref-2
+    resource:  https://kazmax.zpp.jp/cmd/c/chattr.1.html
+    title:     "chattr - コマンド (プログラム) の説明 - Linux コマンド集 一覧表"
 date:          2021-12-12
 category:      Linux
 cover:         /assets/cover14.jpg

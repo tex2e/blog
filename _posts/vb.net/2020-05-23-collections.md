@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[VB.NET] コレクション (Collections) の使い方"
+type:          Reference
+description:   "VB.NETのListやDictionaryを中心にソート、検索、集合演算、LINQ集計などコレクション関連メソッドの使い方を一覧で紹介。"
+tags:          [vb-net, dotnet, collections, linq]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-05-25T11:35:02Z
 date:          2020-05-22
 category:      VB.NET
 cover:         /assets/cover14.jpg

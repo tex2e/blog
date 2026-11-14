@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[C#] Workerを使ってサービスを実装する"
+type:          How-To
+description:   "C#のWorkerテンプレートからバックグラウンドサービスプロジェクトを作成し、BackgroundServiceを実装して定期処理を実行する手順を解説します。"
+tags:          [dotnet, csharp, worker-service, background-service]
+status:        stable
+stale_after:   2027-10-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-22T14:49:29Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/core/extensions/windows-service
+    title:     "BackgroundService を使って Windows サービスを作成する - .NET \\| Microsoft Learn"
+  - id:        ref-2
+    resource:  "https://developers.redhat.com/articles/2023/01/17/how-deploy-net-apps-systemd-services-using-containers#"
+    title:     "How to deploy .NET apps as systemd services using containers \\| Red Hat Developer"
 date:          2024-10-18
 category:      Dotnet
 cover:         /assets/cover14.jpg

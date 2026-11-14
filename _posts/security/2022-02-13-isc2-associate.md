@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "CISSP合格後のISC2アソシエイト (準会員) の登録手順"
+type:          How-To
+description:   "CISSP試験合格後に実務経験が不足している場合に行う、ISC2アソシエイト（準会員）のオンライン承認申請と年会費支払いの手順を解説します。"
+tags:          [security, cissp, isc2, certification]
+status:        stable
+stale_after:   2023-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-02-16T12:25:27Z
+sources:
+  - id:        ref-1
+    resource:  https://www.isc2.org/Endorsement
+    title:     "https://www.isc2.org/Endorsement"
 date:          2022-02-13
 category:      Security
 cover:         /assets/cover14.jpg

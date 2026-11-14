@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "差別やハラスメントをなくすために"
+type:          Essay
+description:   "機械学習における統計的差別やコンテスト審査員の言動を取り上げ、客観的な視点に基づく指導でハラスメントを防ぐ方策を考察します。"
+tags:          [misc, ethics, harassment, opinion]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2021-10-10T13:15:52Z
+sources:
+  - id:        ref-1
+    resource:  https://confit.atlas.jp/guide/event/jeaf2021/static/harassment
+    title:     "日本経済学会2021年度秋季大会/ハラスメント対策"
+  - id:        ref-2
+    resource:  https://www.security-camp.or.jp/about/harassment.html
+    title:     "セキュリティ・キャンプ協議会 - ハラスメント防止宣言"
 date:          2021-01-01
 category:      Misc
 cover:         /assets/cover14.jpg

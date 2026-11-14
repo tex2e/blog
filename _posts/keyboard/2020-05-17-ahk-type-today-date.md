@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "AutoHotKeyで今日の日付を入力する"
+type:          How-To
+description:   "AutoHotkeyのホットストリング機能を使い特定のキーワード入力で今日の日付を自動展開して入力する設定方法。"
+tags:          [keyboard, autohotkey, hotstring, windows]
+status:        stable
+stale_after:   2023-05-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-05-17T08:54:24Z
+sources:
+  - id:        ref-1
+    resource:  http://ahkwiki.net/Hotstrings
+    title:     "ホットストリング - AutoHotkey Wiki"
+  - id:        ref-2
+    resource:  http://ahkwiki.net/FormatTime
+    title:     "FormatTime - AutoHotkey Wiki"
+  - id:        ref-3
+    resource:  http://sprint-life.hatenablog.com/entry/2015/03/22/214744
+    title:     "AutoHotkeyで今日の日付を入力する - Sprint Life"
 date:          2020-05-17
 category:      Keyboard
 cover:         /assets/cover14.jpg

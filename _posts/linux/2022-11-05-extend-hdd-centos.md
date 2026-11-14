@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "CentOS8でハードディスクを拡張する手順"
+type:          How-To
+description:   "CentOS 8で仮想ディスク拡張後にfdisk・pvcreate・vgextend・lvextend・xfs_growfsを用いてLVM領域を拡張する手順を解説します。"
+tags:          [linux, centos, lvm, xfs, storage]
+status:        stable
+stale_after:   2025-11-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-11-05T08:18:39Z
+sources:
+  - id:        ref-1
+    resource:  https://genchan.net/it/server/13181/
+    title:     "【CentOS8】ボリューム拡張手順（/dev/mapper/cl-root）ESXi7.0環境 \\| インフラエンジニアの技術LOG"
 date:          2022-11-05
 category:      Linux
 cover:         /assets/cover14.jpg

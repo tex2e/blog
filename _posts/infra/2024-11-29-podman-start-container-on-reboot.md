@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Podman] サーバ再起動時にコンテナを自動起動させる方法"
+type:          How-To
+description:   "systemdのpodman-restartサービスを有効化してサーバ再起動時にPodmanコンテナを自動起動させる設定方法。"
+tags:          [infra, podman, systemd, linux]
+status:        stable
+stale_after:   2027-11-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-30T02:57:56Z
 date:          2024-11-29
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "QUIC の Client Initial Packet で必須のTLS拡張"
+type:          How-To
+description:   "QUICのClient Initial Packetに必須となるTLS 1.3およびQUIC固有の拡張パラメータを解説し、Handshake Packet受信までの実装手順を示します。"
+tags:          [protocol, quic, tls13, python]
+status:        stable
+stale_after:   2025-03-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-06T14:53:28Z
+sources:
+  - id:        ref-1
+    resource:  "https://www.rfc-editor.org/rfc/rfc9000.html#section-7"
+    title:     "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport"
+  - id:        ref-2
+    resource:  "https://datatracker.ietf.org/doc/html/rfc8446#appendix-B.3.1.4"
+    title:     "RFC 8446 - B.3.1.4. Supported Groups Extension"
+  - id:        ref-3
+    resource:  https://qiita.com/kitauji/items/3bf03533895251c93af2
+    title:     "HTTP/2: ちょっと詳細: プロトコルネゴシエーション編 - Qiita"
+  - id:        ref-4
+    resource:  https://www.iij.ad.jp/dev/report/iir/052/03.html
+    title:     "3. フォーカス・リサーチ（2）HaskellによるQUICの実装 \\| Internet Infrastructure Review（IIR）Vol.52 \\| IIJの技術 \\| インターネットイニシアティブ(IIJ)"
 date:          2021-10-06
 category:      Protocol
 cover:         /assets/cover5.jpg

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "新人時代の自分にアドバイスしてあげたいこと"
+type:          Essay
+description:   "社会人4年目の経験から、辞めたくなる時期の乗り越え方や周囲への質問の仕方など新人時代の自分に贈りたい助言をまとめます。"
+tags:          [misc, career, advice, work]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2023-04-02T00:27:05Z
 date:          2023-04-01
 category:      Misc
 cover:         /assets/cover14.jpg

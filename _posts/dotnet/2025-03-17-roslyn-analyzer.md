@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[C#] Roslyn Analyzerの作成方法・静的解析方法"
+type:          How-To
+description:   "Visual Studioに拡張機能開発ワークロードを導入し、Roslyn Analyzerプロジェクトを作成してプロジェクトへ組み込み静的解析を実行する手順を解説します。"
+tags:          [dotnet, csharp, roslyn, static-analysis, visual-studio]
+status:        stable
+stale_after:   2028-03-20T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-03-20T03:12:55Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/visualstudio/extensibility/getting-started-with-roslyn-analyzers?view=vs-2022
+    title:     "Roslyn アナライザーを始める方法 - Visual Studio (Windows) \\| Microsoft Learn"
 date:          2025-03-17
 category:      Dotnet
 cover:         /assets/cover14.jpg

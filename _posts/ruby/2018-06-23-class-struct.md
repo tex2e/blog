@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Ruby] 構造体を継承してコンストラクタをなくす"
+type:          How-To
+description:   "RubyでStruct.newが返すクラスを継承してコンストラクタ定義を省略する書き方と、属性アクセス時の注意点を解説。"
+tags:          [ruby, struct, class, oop]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2018-06-24T08:14:29Z
 date:          2018-06-23
 category:      Ruby
 author:        tex2e

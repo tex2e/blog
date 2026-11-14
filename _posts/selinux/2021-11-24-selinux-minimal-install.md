@@ -2,6 +2,14 @@
 layout:        post
 title:         "CentOS 7の最小インストールで使用可能なSELinuxコマンドの一覧"
 menutitle:     "CentOS 7の最小インストールで使用可能なSELinuxコマンドの一覧 (Minimal Install)"
+type:          Reference
+description:   "CentOS 7のMinimal環境で標準利用できるSELinuxコマンドとパッケージの対応表、およびオフライン環境へのrpm追加手順をまとめています。"
+tags:          [selinux, centos, commands, rpm]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-25T13:05:24Z
 date:          2021-11-24
 category:      SELinux
 cover:         /assets/cover6.jpg

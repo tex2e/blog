@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "平方剰余問題とオイラーの規準"
+type:          Concept
+description:   "数論における平方剰余問題の定義と、奇素数を法とする場合にオイラーの規準で平方剰余を判定するPython実装を解説。"
+tags:          [crypto, number-theory, quadratic-residue, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-02-20T13:35:24Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Quadratic_residue
+    title:     "Quadratic residue -- Wikipedia"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/Euler%27s_criterion
+    title:     "Euler's criterion -- Wikipedia"
 date:          2019-02-21
 category:      Crypto
 author:        tex2e

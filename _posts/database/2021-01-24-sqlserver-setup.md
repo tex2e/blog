@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[SQLServer] SQL Serverへ別PCから接続できるようにする"
+type:          How-To
+description:   "SQL ServerとSSMSの認証・TCP/IP設定、SQL Server Browserの起動、Windowsファイアウォール許可を行い別PCからリモート接続する手順をまとめます。"
+tags:          [database, sqlserver, ssms, windows, firewall]
+status:        stable
+stale_after:   2027-08-04T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-24T00:49:08Z
+sources:
+  - id:        ref-1
+    resource:  https://www.microsoft.com/ja-jp/sql-server/sql-server-downloads
+    title:     "SQL Server のダウンロード \\| Microsoft"
+  - id:        ref-2
+    resource:  https://docs.microsoft.com/ja-jp/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
+    title:     "SQL Server Management Studio (SSMS) のダウンロード - SQL Server Management Studio (SSMS) \\| Microsoft Docs"
+  - id:        ref-3
+    resource:  https://qiita.com/sugasaki/items/a95c2495085e32851707
+    title:     "SQL Server > エラー:18456 でログインできない場合 - Qiita"
+  - id:        ref-4
+    resource:  https://sara.jiin.com/other/sql.html
+    title:     "SQL Serverに外部から接続する備忘録 \\| 沙羅.com"
+  - id:        ref-5
+    resource:  https://creativeweb.jp/fc/remote/
+    title:     "SQL Server Express にリモート接続 - クリエイティブWeb"
+  - id:        ref-6
+    resource:  https://docs.microsoft.com/ja-jp/sql/relational-databases/tutorial-getting-started-with-the-database-engine?view=sql-server-ver15
+    title:     "チュートリアル : データベース エンジンの概要 - SQL Server \\| Microsoft Docs"
 date:          2021-01-24
 category:      Database
 cover:         /assets/cover14.jpg

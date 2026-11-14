@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Ruby] Rake入門"
+type:          How-To
+description:   "RubyのビルドツールRakeの導入と実行手順、Rakefileでのタスク定義や前提条件タスクの記述方法を解説する入門ガイド。"
+tags:          [ruby, rake, build-tool]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-09-24
 category:      Ruby
 author:        tex2e

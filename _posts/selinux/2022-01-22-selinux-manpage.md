@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxのマニュアル(manページ)をインストールする"
 menutitle:     "SELinuxのマニュアル(manページ)をインストールする"
+type:          How-To
+description:   "selinux-policy-docパッケージをインストールし、httpd_selinuxやpostgresql_selinuxなど対象別のSELinux用manページを閲覧する方法を解説します。"
+tags:          [selinux, linux, manpage, documentation]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-01-23T13:32:23Z
 date:          2022-01-22
 category:      SELinux
 cover:         /assets/cover6.jpg

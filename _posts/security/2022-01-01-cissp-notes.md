@@ -1,6 +1,21 @@
 ---
 layout:        book
 title:         "CISSP 勉強ノート"
+type:          Book Chapter
+description:   "CISSP資格試験の8ドメインに関する基礎概念、職業倫理、セキュリティガバナンスや関連法規をまとめた学習ノートです。"
+tags:          [security, cissp, governance, compliance]
+status:        stable
+stale_after:   2028-11-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-02-06T00:38:50Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3nH0Dmw
+    title:     "新版 CISSP CBK公式ガイドブック"
+  - id:        ref-2
+    resource:  https://amzn.to/3U9pP1q
+    title:     "CISSP公式問題集"
 date:          2022-01-01
 category:      Security
 cover:         /assets/cover14.jpg

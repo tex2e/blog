@@ -1,6 +1,24 @@
 ---
 layout:        book
 title:         "[AWS] AWS Certified Developer - Associate 勉強ノート"
+type:          Book Chapter
+description:   "AWS Certified Developer Associate試験対策としてWell-ArchitectedやEC2などAWS主要サービスの要点をまとめた学習ノート。"
+tags:          [infra, aws, certification, study-notes]
+status:        stable
+stale_after:   2026-03-15T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-10-29T08:15:32Z
+sources:
+  - id:        ref-1
+    resource:  https://aws.amazon.com/jp/certification/certified-developer-associate/
+    title:     "AWS Certified Developer - Associate 認定"
+  - id:        ref-2
+    resource:  https://explore.skillbuilder.aws/learn/signin
+    title:     "AWS Skill Builder"
+  - id:        ref-3
+    resource:  https://amzn.to/45TPbVh
+    title:     "『徹底攻略AWS認定デベロッパー - アソシエイト教科書 (徹底攻略シリーズ)』株式会社NTTデータ 川畑 光平"
 date:          2023-10-27
 category:      Infrastructure
 cover:         /assets/cover14.jpg

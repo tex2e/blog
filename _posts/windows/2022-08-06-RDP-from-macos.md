@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "MacからWindowsへRDP接続するとキーボードがJISではなくUS配列になるとき"
+type:          Troubleshooting
+description:   "MacからWindowsへRDP接続時にキーボードがUS配列になる不具合について、レジストリのLayout Fileをkbd106.dllへ変更する対処法を解説。"
+tags:          [windows, rdp, macos, registry, troubleshooting]
+status:        stable
+stale_after:   2025-08-06T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-08-06T08:49:00Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/archive/blogs/askcorejp/rs4-rdp-keyboardlayout
+    title:     "Windows 10 RS4 へのリモート デスクトップ接続時に、UWP アプリへの入力時のみキーボード配列が異なる事象について \\| Microsoft Docs"
+  - id:        ref-2
+    resource:  https://bitto.jp/posts/%E6%8A%80%E8%A1%93/%E3%83%8A%E3%83%AC%E3%83%83%E3%82%B8/rdp-keyboard/
+    title:     "RDPでキーボードがJISではなくUSになってしまう問題 \\| 猫好きが猫以外のことも書く"
 date:          2022-08-06
 category:      Windows
 cover:         /assets/cover14.jpg

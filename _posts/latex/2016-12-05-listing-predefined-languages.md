@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "LaTeX の Listing 対応言語一覧"
+type:          Reference
+description:   "LaTeXのlistingsパッケージのlstsetで指定可能なプログラミング言語名と対応バージョンを一覧表にまとめたリファレンス。"
+tags:          [latex, listings, reference]
+status:        stable
+stale_after:   2022-12-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf
+    title:     "Listings User's Guide"
 date:          2016-12-05
 category:      LaTeX
 author:        tex2e

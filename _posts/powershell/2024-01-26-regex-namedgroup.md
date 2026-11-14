@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] 正規表現で名前付きグループ (Named Group) を使う"
+type:          How-To
+description:   "PowerShellの正規表現で名前付きグループを使うため、-match演算子ではなくregexクラスのMatchesメソッドで値を抽出する方法を解説します。"
+tags:          [powershell, regex, named-group]
+status:        stable
+stale_after:   2027-08-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-01-26T13:24:11Z
 date:          2024-01-26
 category:      PowerShell
 cover:         /assets/cover14.jpg

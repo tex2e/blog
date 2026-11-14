@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] カスケーディングパラメータ (CascadingValue)"
+type:          How-To
+description:   "ASP.NET Core BlazorのCascadingValueタグとCascadingParameter属性を使い、階層をまたいだ子孫UIコンポーネントへ値や名前付きパラメータを渡す方法を解説します。"
+tags:          [dotnet, csharp, blazor, components]
+status:        stable
+stale_after:   2027-10-11T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-09T14:39:19Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-10-08
 category:      Dotnet
 cover:         /assets/cover14.jpg

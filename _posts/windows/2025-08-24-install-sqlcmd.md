@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Windows] sqlcmdコマンドをインストールする"
+type:          How-To
+description:   "古いTLS非対応の旧sqlcmdを置き換えるため、Windowsへ最新のgo-sqlcmd（ver18）をインストールしSQL Server接続を確認する手順を解説。"
+tags:          [windows, sqlcmd, sql-server, database]
+status:        stable
+stale_after:   2028-08-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-08-23T23:37:20Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/microsoft/go-sqlcmd/releases
+    title:     "https://github.com/microsoft/go-sqlcmd/releases"
 date:          2025-08-24
 category:      Windows
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "Ubuntu 20.04でSELinuxを有効化する"
+type:          How-To
+description:   "Ubuntu 20.04環境で標準のAppArmorを無効化・削除し、selinux-basicsなどを導入してselinux-activateでSELinuxを有効化する手順を解説します。"
+tags:          [selinux, ubuntu, apparmor, linux]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-12T14:26:24Z
+sources:
+  - id:        ref-1
+    resource:  https://www.linode.com/docs/guides/how-to-install-selinux-on-debian-10/
+    title:     "How to Install SELinux on Debian 10 \\| Linode"
 date:          2022-03-12
 category:      SELinux
 cover:         /assets/cover6.jpg

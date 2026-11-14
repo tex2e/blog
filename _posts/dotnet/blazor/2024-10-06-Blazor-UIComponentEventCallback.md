@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] 自作UIコンポーネントにおけるイベントハンドラの設定方法"
+type:          How-To
+description:   "ASP.NET Core Blazorの自作UIコンポーネントにParameter属性付きEventCallbackを定義し、子コンポーネント内処理の後に親へイベントを通知する方法を解説します。"
+tags:          [dotnet, csharp, blazor, components, event-handling]
+status:        stable
+stale_after:   2027-10-08T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-08T03:29:56Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-10-06
 category:      Dotnet
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Nginxでパスやファイルへのアクセス制限をする"
+type:          How-To
+description:   "Nginxのlocationディレクティブで正規表現とdeny allやallowを組み合わせ、特定のパスやファイルへのアクセスを制限する方法を解説します。"
+tags:          [linux, nginx, access-control, security]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:44:26Z
 date:          2021-12-02
 category:      Linux
 cover:         /assets/cover14.jpg

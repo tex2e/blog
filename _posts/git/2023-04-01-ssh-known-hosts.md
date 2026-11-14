@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "GitHubからpullすると公開鍵認証のフィンガープリントで失敗するときの対処法"
+type:          Troubleshooting
+description:   "GitHubのSSHホスト鍵更新によりpullやpushでフィンガープリント不一致エラーが出た際のknown_hosts修正手順を解説。"
+tags:          [git, github, ssh, troubleshooting]
+status:        stable
+stale_after:   2026-04-02T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-04-01T02:25:12Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
+    title:     "GitHub's SSH key fingerprints - GitHub Docs"
+  - id:        ref-2
+    resource:  https://qiita.com/ktateish/items/c986891e429469c7105c
+    title:     "GitHubからfetch/pullできなくなった場合の対処（2023/03/24秘密鍵公開） - Qiita"
 date:          2023-03-30
 category:      Git
 cover:         /assets/cover14.jpg

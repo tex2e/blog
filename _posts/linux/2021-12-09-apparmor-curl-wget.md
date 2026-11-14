@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "AppArmorでcurlとwgetコマンドの動作を制限する"
+type:          How-To
+description:   "Ubuntu等でAppArmorのaa-genprofを用いて空に近いプロファイルを作成し、curlとwgetの実行を制限する手順を解説します。"
+tags:          [linux, apparmor, hardening, security]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-03T10:58:56Z
+sources:
+  - id:        ref-1
+    resource:  https://gitlab.com/apparmor/apparmor/-/wikis/home
+    title:     "Home · Wiki · AppArmor / apparmor · GitLab"
+  - id:        ref-2
+    resource:  https://gitlab.com/apparmor/apparmor/-/wikis/Profiles
+    title:     "Profiles · Wiki · AppArmor / apparmor · GitLab"
+  - id:        ref-3
+    resource:  https://gitlab.com/apparmor/apparmor/-/wikis/Documentation
+    title:     "Documentation · Wiki · AppArmor / apparmor · GitLab"
 date:          2021-12-09
 category:      Linux
 cover:         /assets/cover14.jpg

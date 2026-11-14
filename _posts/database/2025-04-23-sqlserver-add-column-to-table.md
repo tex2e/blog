@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[SQLServer] テーブルに列を追加する方法"
+type:          How-To
+description:   "SQL Serverで既存テーブルをsp_renameで退避し、列を追加した新テーブルを作成してデータをINSERT後に旧テーブルを削除する一連のSQLテンプレートを紹介します。"
+tags:          [database, sqlserver, tsql, schema, sql]
+status:        stable
+stale_after:   2028-05-03T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-04-23T13:53:14Z
 date:          2025-04-23
 category:      Database
 cover:         /assets/cover14.jpg

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "AIが情報を要約する現代において私たちが記事を書く意味とは"
+type:          Essay
+description:   "AIが知識を即座に要約する現代において、実体験や感情、洞察に基づく人間らしい記事を技術ブログに書き続ける意義を考察します。"
+tags:          [misc, ai, blogging, writing]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2025-11-03T13:29:27Z
 date:          2025-11-03
 category:      Misc
 cover:         /assets/cover14.jpg

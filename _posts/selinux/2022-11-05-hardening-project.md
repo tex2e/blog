@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "競技でのSELinux導入手順（チーム向け説明資料）"
+type:          How-To
+description:   "セキュリティ競技向けに、再起動時はPermissiveで起動し拒否ログ収集と例外ルール適用を経てEnforcingへ切り替えるSELinux導入手順とコマンド集です。"
+tags:          [selinux, hardening-project, linux, cheat-sheet]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2022-11-13T07:55:41Z
+sources:
+  - id:        ref-1
+    resource:  https://speakerdeck.com/tex2e/selinux
+    title:     "SELinuxで堅牢化する"
+  - id:        ref-2
+    resource:  https://tex2e.github.io/unixtime2datetime/
+    title:     "Unixtime2Datetime"
 date:          2022-11-05
 category:      SELinux
 cover:         /assets/cover14.jpg

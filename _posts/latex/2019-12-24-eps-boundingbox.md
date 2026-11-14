@@ -2,6 +2,14 @@
 layout:        post
 title:         "LaTeX で EPS 画像挿入時に Cannot determine size of graphic エラー"
 menutitle:     "LaTeX で EPS 画像挿入時に BoundingBox のエラー"
+type:          Troubleshooting
+description:   "LaTeXでEPS画像を読み込む際に発生するCannot determine size of graphicエラーをbbオプションの直接指定で解消する方法。"
+tags:          [latex, eps, graphics, troubleshooting]
+status:        stable
+stale_after:   2022-12-24T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-12-24T02:14:39Z
 date:          2019-12-24
 category:      LaTeX
 cover:         /assets/cover14.jpg

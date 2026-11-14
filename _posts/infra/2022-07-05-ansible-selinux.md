@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Ansible] selinuxモジュールで無効化・有効化する"
+type:          How-To
+description:   "Ansibleのansible.posix.selinuxモジュールを用いてSELinuxの有効化・無効化を設定し、再起動までの挙動を制御する方法。"
+tags:          [infra, ansible, selinux, linux]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-10T13:12:04Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/latest/collections/ansible/posix/selinux_module.html
+    title:     "ansible.posix.selinux module – Change policy and state of SELinux — Ansible Documentation"
+  - id:        ref-2
+    resource:  https://docs.ansible.com/ansible/latest/collections/ansible/builtin/reboot_module.html
+    title:     "ansible.builtin.reboot module – Reboot a machine — Ansible Documentation"
 date:          2022-07-05
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Ansible] SSH公開鍵認証からプレイブック実行までの流れ"
+type:          How-To
+description:   "ed25519鍵の生成やSSH公開鍵認証の設定から、Ansibleの疎通確認、コマンド実行、サービスやファイアウォール管理までの基本手順。"
+tags:          [infra, ansible, ssh, automation]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-06-17T12:12:00Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/2.9_ja/user_guide/playbooks.html
+    title:     "Playbook の使用 — Ansible Documentation"
+  - id:        ref-2
+    resource:  https://docs.ansible.com/ansible/latest/user_guide/index.html
+    title:     "User Guide — Ansible Documentation"
 date:          2022-05-04
 category:      Infrastructure
 cover:         /assets/cover14.jpg

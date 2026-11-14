@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[C#] ファイルストリームをUTF8で高速読み書きする"
+type:          How-To
+description:   "C#(.NET 8)のFileStreamとRFC 3629のUTF-8先頭ビット判定を用いて、巨大ファイルや改行なしテキストを省メモリかつ高速に1文字ずつバイナリ読み書きする方法を解説します。"
+tags:          [dotnet, csharp, utf-8, filestream, encoding]
+status:        stable
+stale_after:   2027-06-16T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-15T08:08:42Z
+sources:
+  - id:        ref-1
+    resource:  https://datatracker.ietf.org/doc/html/rfc3629
+    title:     "RFC 3629 - UTF-8, a transformation format of ISO 10646"
+  - id:        ref-2
+    resource:  https://unicode.scarfboy.com/
+    title:     "unicode.scarfboy.com (テスト用に1〜4バイトの様々なUTF8文字を調べるときに便利なサイト)"
 date:          2024-06-13
 category:      Dotnet
 cover:         /assets/cover14.jpg

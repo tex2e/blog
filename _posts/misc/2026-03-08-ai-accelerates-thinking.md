@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "AIと生きる：思考を止めるな、加速させよ"
+type:          Essay
+description:   "生成AIへの過度な依存による認知的負債を避け、批判的思考や望ましい困難を通じて思考を加速させるAIとの向き合い方を論じます。"
+tags:          [misc, ai, critical-thinking, psychology]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2026-03-08T07:24:15Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/4d8P9js
+    title:     "AIと生きる 対話から始まる成長の物語"
+  - id:        ref-2
+    resource:  https://amzn.to/47lgvPD
+    title:     "使える脳の鍛え方 成功する学習の科学"
 date:          2026-03-08
 category:      Misc
 cover:         /assets/cover14.jpg

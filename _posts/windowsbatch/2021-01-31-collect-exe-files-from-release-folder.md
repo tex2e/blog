@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Windows] 任意の階層にある全てのReleaseフォルダからexeを集めるコマンド"
+type:          How-To
+description:   "Windowsバッチのfor /r /dループとxcopyを組み合わせ、任意階層下にある全てのReleaseフォルダからexeファイルを一括収集する方法を解説。"
+tags:          [windows-batch, cmd, for-loop, xcopy]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-31T14:10:01Z
+sources:
+  - id:        ref-1
+    resource:  https://ja.stackoverflow.com/questions/60797/%e6%8c%87%e5%ae%9a%e3%83%87%e3%82%a3%e3%83%ac%e3%82%af%e3%83%88%e3%83%aa-%e5%86%85%e3%81%ae-%e4%bb%bb%e6%84%8f%e3%81%ae%e9%9a%8e%e5%b1%a4-%e3%81%ab%e3%81%82%e3%82%8b-%e6%8c%87%e5%ae%9a%e3%83%87%e3%82%a3%e3%83%ac%e3%82%af%e3%83%88%e3%83%aa%e5%90%8d-%e5%86%85%e3%81%ab%e3%81%82%e3%82%8b%e5%85%a8%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%82%92%e6%8a%bd%e5%87%ba%e3%81%97%e3%81%9f%e3%81%84
+    title:     "windows - 「指定ディレクトリ」内の「任意の階層」にある「指定ディレクトリ名」内にある全ファイルを抽出したい - スタック・オーバーフロー"
 date:          2021-01-31
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "SELinuxを有効化する"
+type:          How-To
+description:   "ブートローダーのgrub設定確認から/etc/selinux/configの編集、setenforceによるSELinuxの有効化手順を解説します。"
+tags:          [selinux, linux, grub, security]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-28T14:45:11Z
 date:          2021-10-19
 category:      SELinux
 cover:         /assets/cover6.jpg

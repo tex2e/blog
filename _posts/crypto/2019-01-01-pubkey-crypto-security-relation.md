@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "公開鍵暗号の安全性レベル"
+type:          Concept
+description:   "公開鍵暗号の攻撃モデル（COA・KPA・CPA・CCA）と解読モデル（OW・IND・NM）の組み合わせによる安全性レベルの関係を解説。"
+tags:          [crypto, public-key, security-proof, ind-cca]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2018-12-31T09:32:27Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3GujB6r
+    title:     "暗号技術のすべて"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/Attack_model
+    title:     "Attack model (Wikipedia)"
+  - id:        ref-3
+    resource:  https://en.wikipedia.org/wiki/Malleability_%28cryptography%29
+    title:     "Malleability -- cryptography (Wikipedia)"
+  - id:        ref-4
+    resource:  https://qiita.com/tibigame/items/8c49fee0fff620f69888
+    title:     "Pythonで暗号：IND-CCA2とRSA-OAEP"
+  - id:        ref-5
+    resource:  https://en.wikipedia.org/wiki/Ciphertext_indistinguishability
+    title:     "Ciphertext indistinguishability (Wikipedia)"
+  - id:        ref-6
+    resource:  https://www.di.ens.fr/david.pointcheval/enseignement/mpri2/cm2.pdf
+    title:     "II – Encryption -- Provable Security in the Computational Model"
 date:          2019-01-01
 category:      Crypto
 author:        tex2e

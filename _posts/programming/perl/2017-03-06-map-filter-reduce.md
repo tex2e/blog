@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Perl6] Map Filter Reduce in Raku"
+type:          How-To
+description:   "Perl6（Raku）におけるmap・grep（filter相当）・reduceの基本的な使い方とメソッドチェーン・関数的な記述法を解説します。"
+tags:          [programming, raku, perl6, functional]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-03-06T00:13:15Z
+sources:
+  - id:        ref-1
+    resource:  "https://docs.perl6.org/language/operators#Reduction_Operators"
+    title:     "Reduction Operators"
 date:          2017-03-06
 category:      Programming
 author:        tex2e

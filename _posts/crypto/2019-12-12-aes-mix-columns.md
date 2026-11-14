@@ -2,6 +2,32 @@
 layout:        post
 title:         "AES (Rijndael) の MixColumns を理解する"
 menutitle:     "AES (Rijndael) の MixColumns を理解する (Adv.Cal. 2019)"
+type:          Concept
+description:   "AES暗号のMixColumnsおよびInvMixColumnsにおけるGF(2^8)多項式環演算とMDS行列のC・SageMath実装を解説。"
+tags:          [crypto, aes, finite-field, mixcolumns]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-11T00:36:22Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/MDS_matrix
+    title:     "MDS matrix - Wikipedia"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/Rijndael_MixColumns
+    title:     "Rijndael MixColumns -- Wikipedia"
+  - id:        ref-3
+    resource:  https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
+    title:     "FIPS 197, Advanced Encryption Standard (AES)"
+  - id:        ref-4
+    resource:  https://adventar.org/calendars/4047
+    title:     "セキュリティキャンプ 修了生進捗 Advent Calendar 2019"
+  - id:        ref-5
+    resource:  https://www.cryptrec.go.jp/cryptrec_03_spec_cypherlist_files/PDF/04_02jspec.pdf
+    title:     "株式会社 東芝『暗号技術仕様書:Hierocrypt—L1』, May 2002"
+  - id:        ref-6
+    resource:  https://www.hirasa.mgmt.waseda.ac.jp/lab/ct.pdf
+    title:     "平澤 茂一『符号理論』, 平成20年4月9日"
 date:          2019-12-11
 category:      Crypto
 author:        tex2e

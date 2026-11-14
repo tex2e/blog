@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[VB.NET] Proxy経由でPOSTリクエストを送信する"
+type:          How-To
+description:   "VB.NETのHttpWebRequestとWebProxyでプロキシ経由のPOST送信を行う実装例と、設定順序やlocalhostバイパス回避の注意点を解説。"
+tags:          [vb-net, dotnet, http, proxy]
+status:        stable
+stale_after:   2025-10-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-06-08T14:14:13Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/dotnet/api/system.net.httpwebrequest.proxy?view=netframework-3.5
+    title:     "https://docs.microsoft.com/ja-jp/dotnet/api/system.net.httpwebrequest.proxy?view=netframework-3.5"
 date:          2022-06-08
 category:      VB.NET
 cover:         /assets/cover14.jpg

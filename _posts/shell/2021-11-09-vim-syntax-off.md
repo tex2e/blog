@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Vim] シンタックスハイライトを暗い背景色に合わせる"
+type:          How-To
+description:   "PowerShellのssh越しに使うVimで背景色と同化する配色を、syntax offやbackground=dark設定で見やすく改善する方法。"
+tags:          [shell, vim, ssh, powershell]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-07T00:53:13Z
 date:          2021-11-09
 category:      Shell
 cover:         /assets/cover14.jpg

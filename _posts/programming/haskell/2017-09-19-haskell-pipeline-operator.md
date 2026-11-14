@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Hakell] パイプライン演算子の作り方"
+type:          How-To
+description:   "Haskellで中置演算子の定義と結合優先度の設定を使い、F#やElixirと同様のパイプライン演算子を自作する方法を解説します。"
+tags:          [programming, haskell, operator, functional]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-09-20T10:08:30Z
 date:          2017-09-19
 category:      Programming
 author:        tex2e

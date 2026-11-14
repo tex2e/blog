@@ -2,6 +2,14 @@
 layout:        book
 title:         "3. SELinux実践"
 menutitle:     "3. SELinux/SELinux実践"
+type:          Book Chapter
+description:   "SELinux入門 第3章 SELinux実践"
+tags:          [selinux, linux, configuration, enforcing]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-02-19T04:09:36Z
 date:          2022-02-27
 category:      SELinux
 cover:         /assets/cover14.jpg
@@ -12,7 +20,6 @@ latex:         false
 photoswipe:    true
 # sitemap: true
 # feed: true
-description:   "SELinux入門 第3章 SELinux実践"
 section_number: 3
 sections:
   - [./1-access-control, セキュリティとアクセス制御]

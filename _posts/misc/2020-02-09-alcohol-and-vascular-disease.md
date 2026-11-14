@@ -2,6 +2,17 @@
 layout:        post
 menutitle:     "アルコールと血管疾患についての研究 (2019)"
 title:         "アルコールと血管疾患についての研究"
+type:          Concept
+description:   "50万人規模の前向き調査と遺伝疫学により、アルコール摂取が高血圧と脳卒中リスクを高めることを示した2019年Lancet論文の要約です。"
+tags:          [misc, health, alcohol, research-summary]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-09T02:21:37Z
+sources:
+  - id:        ref-1
+    resource:  http://nakasekochiropractic.com/alcoholflawd/
+    title:     "「適量のアルコールは体にいい」は本当か？"
 date:          2020-02-09
 category:      Misc
 cover:         /assets/cover6.jpg

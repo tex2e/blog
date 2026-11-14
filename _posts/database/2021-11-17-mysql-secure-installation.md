@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[MySQL] mysql_secure_installationで不要なユーザを削除する"
+type:          How-To
+description:   "MySQLのユーザー一覧で匿名ユーザーやリモートroot権限を確認し、mysql_secure_installationコマンドで不要なアカウントを削除する手順を説明します。"
+tags:          [database, mysql, security, user-management]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:42:34Z
 date:          2021-11-17
 category:      Database
 cover:         /assets/cover14.jpg

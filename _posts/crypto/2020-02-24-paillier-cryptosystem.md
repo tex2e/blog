@@ -1,6 +1,23 @@
 ---
 layout:        post
 title:         "Paillier暗号と準同型性"
+type:          Concept
+description:   "加法準同型性を持つ公開鍵暗号Paillier暗号の鍵生成・暗号化・復号アルゴリズムと、暗号文同士の演算のPython実装を解説。"
+tags:          [crypto, paillier, homomorphic-encryption, public-key, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-22T09:13:08Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Paillier_cryptosystem
+    title:     "Paillier cryptosystem - Wikipedia"
+  - id:        ref-2
+    resource:  https://qiita.com/tnakagawa/items/b1e55e66ae017b0c9d78
+    title:     "Paillier暗号(Paillier cryptosystem) - Qiita"
+  - id:        ref-3
+    resource:  http://elliptic-shiho.hatenablog.com/entry/2015/12/14/213328
+    title:     "公開鍵暗号 - Paillier暗号 - ₍₍ (ง ˘ω˘ )ว ⁾⁾ < 暗号楽しいです"
 date:          2020-02-24
 category:      Crypto
 cover:         /assets/cover4.jpg

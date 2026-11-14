@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[PowerShell] 文字列を日付に変換して時間差を求める (New-TimeSpan)"
+type:          How-To
+description:   "PowerShellでParseExactを用いて文字列をDateTime型へ変換し、New-TimeSpanで2つの日時の時間差を計算する方法を解説します。"
+tags:          [powershell, datetime, new-timespan]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-23T10:42:43Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/dotnet/standard/base-types/custom-date-and-time-format-strings?redirectedfrom=MSDN
+    title:     "カスタム日時形式文字列"
+  - id:        ref-2
+    resource:  https://azwoo.hatenablog.com/entry/2014/09/11/093359
+    title:     "Powershellの時間計算すごい - \"Diary\" インターネットさんへの恩返し"
 date:          2022-04-21
 category:      PowerShell
 cover:         /assets/cover14.jpg

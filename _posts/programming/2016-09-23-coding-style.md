@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "Coding Style Guide"
+type:          Reference
+description:   "変数・定数・関数・クラスなどの命名規則や関数のネスト回避、制御構文の空白ルールなど、言語を問わず適用できるコーディングスタイルをまとめたガイドです。"
+tags:          [programming, coding-style, naming-convention]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/bbatsov/ruby-style-guide
+    title:     "Ruby - ruby-style-guide"
+  - id:        ref-2
+    resource:  https://www.python.org/dev/peps/pep-0008/
+    title:     "Python - PEP8"
+  - id:        ref-3
+    resource:  https://github.com/google/styleguide
+    title:     "Google Style Guides"
+  - id:        ref-4
+    resource:  https://github.com/cou929/Japanese-Translation-of-Google-JavaScript-Style-Guide/blob/master/index.rst
+    title:     "JavaScript - ja_JP"
+  - id:        ref-5
+    resource:  http://www.oracle.com/technetwork/java/codeconventions-150003.pdf
+    title:     "Java - Oracle"
+  - id:        ref-6
+    resource:  http://se.inf.ethz.ch/old/teaching/ss2007/251-0290-00/project/CSharpCodingStandards.pdf
+    title:     "C# - Coding Standards for .NET"
 date:          2016-09-23
 category:      Programming
 author:        tex2e

@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[Docker] インターネット通信できない環境でDockerをインストールする"
+type:          How-To
+description:   "インターネット接続のないRocky Linux環境向けにオンライン環境でDockerのRPMパッケージとイメージを取得しオフライン導入する手順。"
+tags:          [infra, docker, rocky-linux, offline]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-02T01:40:54Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.docker.jp/engine/installation/linux/docker-ce/centos.html
+    title:     "Docker CE の入手（CentOS 向け） — Docker-docs-ja 20.10 ドキュメント"
+  - id:        ref-2
+    resource:  https://hub.docker.com/_/redmine/
+    title:     "redmine - Official Image \\| Docker Hub"
+  - id:        ref-3
+    resource:  https://stackoverflow.com/questions/47855990/docker-compose-save-load-images-to-another-host
+    title:     "docker-compose save/load images to another host - Stack Overflow"
 date:          2024-06-02
 category:      Infrastructure
 cover:         /assets/cover14.jpg

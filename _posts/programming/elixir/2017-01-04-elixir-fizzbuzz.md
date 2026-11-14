@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Elixir] FizzBuzzを作成する"
+type:          How-To
+description:   "Elixirのfor内包表記とEnum.mapをそれぞれ使い、パイプ演算子と組み合わせてFizzBuzzを実装する方法を紹介します。"
+tags:          [programming, elixir, fizzbuzz]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-01-04T09:56:47Z
 date:          2017-01-04
 category:      Programming
 author:        tex2e

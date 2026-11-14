@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "メールやビジネス文書で使える用語集"
+type:          Reference
+description:   "メールやビジネス文書で使える日本語の敬語や定型表現について、意味やマナー上の注意点、具体的な例文をまとめた用語集です。"
+tags:          [misc, japanese, business-email, glossary]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-03-16T07:25:34Z
+sources:
+  - id:        ref-1
+    resource:  https://biz.trans-suite.jp/
+    title:     "TRANS.Biz"
+  - id:        ref-2
+    resource:  https://biz.trans-suite.jp/1443
+    title:     "文例"
 date:          2020-03-16
 category:      Misc
 cover:         /assets/cover1.jpg

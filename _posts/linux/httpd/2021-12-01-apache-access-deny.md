@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Apacheでパスやファイルへのアクセス制限をする"
+type:          How-To
+description:   "ApacheのDirectory・LocationMatch・FilesMatchディレクティブを使って特定ディレクトリやURLパス・ファイルへのアクセスを制限する方法を解説します。"
+tags:          [linux, apache, httpd, access-control]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:44:26Z
 date:          2021-12-01
 category:      Linux
 cover:         /assets/cover14.jpg

@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Python] openpyxlを使ってExcelファイルを読み込む"
+type:          How-To
+description:   "PythonのopenpyxlライブラリでExcelファイルを読み込み、シートや行列番号・coordinate_to_tupleでセル値を取得する方法。"
+tags:          [python, openpyxl, excel]
+status:        stable
+stale_after:   2025-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-05T13:44:37Z
+sources:
+  - id:        ref-1
+    resource:  "https://openpyxl.readthedocs.io/en/stable/tutorial.html#loading-from-a-file"
+    title:     "Tutorial — openpyxl 3.1.3 documentation"
+  - id:        ref-2
+    resource:  "https://openpyxl.readthedocs.io/en/stable/api/openpyxl.utils.cell.html#openpyxl.utils.cell.coordinate_to_tuple"
+    title:     "openpyxl.utils.cell module — openpyxl 3.1.3 documentation"
 date:          2024-06-04
 category:      Python
 cover:         /assets/cover14.jpg

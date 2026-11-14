@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "systemctl で /tmp 内のファイルを実行不可にする"
+type:          How-To
+description:   "systemdのtmp.mountユニット設定にnoexecオプションを追加し、/tmpディレクトリ配下でのファイル実行を禁止する手順を解説します。"
+tags:          [linux, systemd, noexec, hardening]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-12T23:48:07Z
+sources:
+  - id:        ref-1
+    resource:  "https://downloads.cisecurity.org/#/"
+    title:     "CIS Downloads > CentOS"
 date:          2021-11-17
 category:      Linux
 cover:         /assets/cover14.jpg

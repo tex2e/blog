@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "CMS管理者ログインページへのアクセスを接続元IPで制限する"
+type:          How-To
+description:   "ApacheのLocationMatchディレクティブを使い、URLにadminを含むCMS管理画面へのアクセスを許可IPのみに制限する設定と検証手順を解説します。"
+tags:          [linux, apache, httpd, access-control]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-28T07:46:37Z
+sources:
+  - id:        ref-1
+    resource:  "https://httpd.apache.org/docs/2.4/ja/mod/core.html#locationmatch"
+    title:     "\\<LocationMatch> ディレクティブ - Apache HTTP サーバ バージョン 2.4"
 date:          2021-12-08
 category:      Linux
 cover:         /assets/cover14.jpg

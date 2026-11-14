@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[Windows] CertreqコマンドでCSRファイルを作成する"
+type:          How-To
+description:   "Windows標準のcertreq -NewコマンドとINFファイルを用い、SANs等を含むSSL/TLS証明書用のCSRファイルを作成する手順を解説。"
+tags:          [windows, certreq, ssl-tls, pki]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-08-22T12:57:17Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/certreq_1
+    title:     "certreq \\| Microsoft Learn"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/windows/win32/api/certenroll/ne-certenroll-x500nameflags
+    title:     "X500NameFlags (certenroll.h) - Win32 apps \\| Microsoft Learn"
+  - id:        ref-3
+    resource:  https://yabuisya.blogspot.com/2020/12/certreqcsr.html
+    title:     "CertreqでCSRを作る方法-やぶろぐ"
 date:          2023-08-21
 category:      Windows
 cover:         /assets/cover14.jpg

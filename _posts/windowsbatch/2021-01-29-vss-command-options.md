@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Windows] VSSコマンドのオプション一覧"
+type:          Reference
+description:   "Visual SourceSafe（VSS）のssコマンドで利用する-#・-C・-D・-E・-G・-I・-K・-L・-O・-V・-W等のオプション仕様一覧。"
+tags:          [windows-batch, vss, cmd, cli]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-31T14:09:30Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/en-us/previous-versions/hsxzf2az%28v=vs.80%29
+    title:     "Command Options \\| Microsoft Docs"
 date:          2021-01-29
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

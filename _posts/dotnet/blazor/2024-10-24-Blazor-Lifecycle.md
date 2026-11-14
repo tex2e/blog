@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] ライフサイクルで実行されるメソッド一覧"
+type:          Reference
+description:   "ASP.NET Core Blazorコンポーネントのライフサイクルで呼び出されるOnInitialized、OnParametersSet、OnAfterRenderの同期・非同期メソッド一覧と実行例をまとめます。"
+tags:          [dotnet, csharp, blazor, lifecycle, components]
+status:        stable
+stale_after:   2027-10-26T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-26T03:51:15Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-8.0
+    title:     "ASP.NET Core Razor component lifecycle \\| Microsoft Learn"
 date:          2024-10-24
 category:      Dotnet
 cover:         /assets/cover14.jpg

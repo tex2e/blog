@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Gitの履歴からファイルを完全に削除する"
+type:          How-To
+description:   "git filter-branchの--index-filterとgit rmを使い、指定したファイルを過去の全コミット履歴から完全に削除する方法。"
+tags:          [git, filter-branch, history]
+status:        stable
+stale_after:   2022-06-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-06-10T10:13:06Z
 date:          2019-06-10
 category:      Git
 author:        tex2e

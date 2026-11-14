@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] 型エイリアスの一覧"
+type:          Reference
+description:   "PowerShellの型アクセラレータ一覧と、Get・Addメソッドで型エイリアスを取得・追加および型特定する方法をまとめます。"
+tags:          [powershell, type-aliases, dotnet, windows]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-11-29T12:25:53Z
 date:          2020-11-29
 category:      PowerShell
 cover:         /assets/cover1.jpg

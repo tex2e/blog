@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Visual Studioのマルチカーソル機能のカスタマイズ"
+type:          Troubleshooting
+description:   "Visual Studio 2022以降でCtrl+Dを押すとマルチカーソルではなく行の複製が実行される競合問題の原因と、キーボードショートカット設定の変更手順を解説します。"
+tags:          [dotnet, visual-studio, keyboard-shortcut, troubleshooting]
+status:        stable
+stale_after:   2029-06-24T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2026-06-24T00:52:24Z
 date:          2026-06-24
 category:      Dotnet
 cover:         /assets/cover14.jpg

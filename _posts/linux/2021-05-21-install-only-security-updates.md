@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "apt upgradeでセキュリティアップデートのみ適用する"
+type:          How-To
+description:   "Ubuntuでapt upgradeの代わりにunattended-upgradeを使い、ドライランで確認しつつセキュリティ更新のみを適用する方法を説明します。"
+tags:          [linux, ubuntu, apt, security-update]
+status:        stable
+stale_after:   2025-09-04T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-05-23T13:37:31Z
+sources:
+  - id:        ref-1
+    resource:  https://askubuntu.com/questions/194/how-can-i-install-just-security-updates-from-the-command-line
+    title:     "package management - How can I install just security updates from the command line? - Ask Ubuntu"
 date:          2021-05-21
 category:      Linux
 cover:         /assets/cover14.jpg

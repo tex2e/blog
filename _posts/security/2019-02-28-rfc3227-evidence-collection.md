@@ -2,6 +2,24 @@
 layout:        post
 title:         "証拠収集のためのガイドライン"
 menutitle:     "証拠収集とアーカイビングのためのガイドライン"
+type:          Reference
+description:   "デジタルフォレンジックにおけるRFC 3227の証拠収集原則、揮発性の順番、法的要件、保全手順、使用ツールの要点を整理。"
+tags:          [security, forensics, rfc3227, incident-response]
+status:        stable
+stale_after:   2025-01-08T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-01T03:24:35Z
+sources:
+  - id:        ref-1
+    resource:  https://tools.ietf.org/html/rfc3227
+    title:     "https://tools.ietf.org/html/rfc3227"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/Dead_man%27s_switch
+    title:     "Deadman switch"
+  - id:        ref-3
+    resource:  https://www.nic.ad.jp/ja/tech/ipa/RFC3227JA.html
+    title:     "証拠収集とアーカイビングのためのガイドライン"
 date:          2019-02-28
 category:      Security
 author:        tex2e

@@ -1,6 +1,32 @@
 ---
 layout:        book
 title:         "[暗号技術入門] 暗号学的に安全な擬似乱数生成器 (CSPRNG)"
+type:          Book Chapter
+description:   "暗号技術における乱数とエントロピーの役割を解説し、疑似乱数生成器(PRNG)と暗号学的に安全なCSPRNGの仕組みと利用指針を紹介します。"
+tags:          [crypto, csprng, prng, entropy, random]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-03-14T07:11:29Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Diehard_tests
+    title:     "Diehard検定法"
+  - id:        ref-2
+    resource:  https://www.cs.cmu.edu/\~kqy/resources/thesis.pdf
+    title:     "**HMAC_DRBG**"
+  - id:        ref-3
+    resource:  https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-90a.pdf
+    title:     "NIST 800-90A"
+  - id:        ref-4
+    resource:  https://www.bitaddress.org
+    title:     "**bitaddress.org**"
+  - id:        ref-5
+    resource:  https://en.wikipedia.org/wiki/Next-bit_test
+    title:     "**Next-bit検定法**"
+  - id:        ref-6
+    resource:  https://www.owasp.org/index.php/PRNG_state_compromise_extension_attack
+    title:     "**状態侵害拡張攻撃**"
 date:          2024-03-05
 category:      Crypto
 cover:         /assets/cover4.jpg

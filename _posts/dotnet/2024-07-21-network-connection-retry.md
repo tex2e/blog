@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] ネットワーク通信失敗時に自動でリトライする仕組みを実装する"
+type:          How-To
+description:   "C#でHttpRequestException発生時に一定回数リトライし、失敗回数に応じて待機時間を段階的に延ばしてサーバー負荷を抑える再接続処理の実装例を解説します。"
+tags:          [dotnet, csharp, http, retry, exception-handling]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-07-21T09:11:49Z
 date:          2024-07-21
 category:      Dotnet
 cover:         /assets/cover14.jpg

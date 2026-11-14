@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] Unicodeの正規化とテキストのクレンジング"
+type:          How-To
+description:   "Pythonのunicodedata.normalize（NFKC）によるUnicode正規化と、str.maketransで特定全角記号を戻す手法。"
+tags:          [python, unicode, unicodedata, text-cleaning]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-01-13T13:48:46Z
 date:          2020-01-13
 category:      Python
 cover:         /assets/cover14.jpg

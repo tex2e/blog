@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "Makefile の関数一覧"
+type:          Reference
+description:   "Makefileの組み込み関数について、文字列操作・ファイル名操作・foreach/call/eval/shellなど各種関数の引数と使用例をまとめた一覧です。"
+tags:          [makefile, gnu-make, functions]
+status:        stable
+stale_after:   2026-09-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-12-15T10:50:28Z
+sources:
+  - id:        ref-1
+    resource:  https://www.gnu.org/software/make/manual/html_node/Functions.html
+    title:     "ドキュメント"
+  - id:        ref-2
+    resource:  https://amzn.to/3LnhELt
+    title:     "Robert Mecklenburg (著), 矢吹 道郎 (監訳), 菊池 彰 (翻訳)『GNU Make 第3版』2005/12"
+  - id:        ref-3
+    resource:  https://www.gnu.org/software/make/manual/make.html
+    title:     "GNU make"
+  - id:        ref-4
+    resource:  https://www.ecoop.net/coop/translated/GNUMake3.77/make_toc.jp.html
+    title:     "GNU make 日本語訳(Coop編) - 目次"
 date:          2019-12-16
 category:      Makefile
 cover:         /assets/cover14.jpg

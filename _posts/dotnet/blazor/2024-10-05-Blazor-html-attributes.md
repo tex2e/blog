@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] HTML属性の一括設定する（属性スプラッティング）"
+type:          How-To
+description:   "ASP.NET Core BlazorのRazorコンポーネントで@attributes属性とDictionary型変数を用い、HTMLタグの属性を一括で動的に適用する属性スプラッティングを解説します。"
+tags:          [dotnet, csharp, blazor, razor, html]
+status:        stable
+stale_after:   2027-10-08T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-08T03:29:34Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-10-05
 category:      Dotnet
 cover:         /assets/cover14.jpg

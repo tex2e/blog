@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Windows] 監査ログのログオンタイプ一覧"
+type:          Reference
+description:   "WindowsセキュリティログのイベントID 4624に記録されるログオンタイプ2〜11の意味と、対話型・ネットワーク・RDP等の判別基準を一覧で紹介。"
+tags:          [windows, security-log, event-log, authentication]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-06T14:34:36Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/windows/security/threat-protection/auditing/basic-audit-logon-events
+    title:     "ログオン イベントの監査 (Windows 10) - Windows security \\| Microsoft Docs"
 date:          2021-11-06
 category:      Windows
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Scala] パイプライン演算子の作り方"
+type:          How-To
+description:   "Scalaのimplicit宣言による型拡張を使い、F#やElixirのようなパイプライン演算子を自作して関数適用を連鎖させる方法を解説します。"
+tags:          [programming, scala, operator, implicit]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-09-20T10:08:51Z
 date:          2017-09-19
 category:      Programming
 author:        tex2e

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "シェルスクリプト実行で「無効なオプション」でエラー終了する時の対処法"
+type:          Troubleshooting
+description:   "Windowsで作成したシェルスクリプト実行時にCRLF改行が原因で無効なオプションエラーが出る事象とLF変換による対処法を解説。"
+tags:          [shell, bash, crlf, troubleshooting]
+status:        stable
+stale_after:   2026-11-11T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-11-11T01:53:02Z
 date:          2023-11-12
 category:      Shell
 cover:         /assets/cover14.jpg

@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[JavaScript] 難読化プログラムの作り方"
+type:          Concept
+description:   "CTF問題の解析をもとにマルチバイト変数名やカンマ演算子、Functionコンストラクタを用いたJavaScript難読化の仕組みを解説。"
+tags:          [javascript, obfuscation, ctf, security]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  http://ksnctf.sweetduet.info/
+    title:     "ksnctf"
+  - id:        ref-2
+    resource:  http://utf-8.jp/public/jjencode.html
+    title:     "jjencode"
+  - id:        ref-3
+    resource:  http://utf-8.jp/public/aaencode.html
+    title:     "aaencode"
 date:          2016-05-22
 category:      JavaScript
 author:        tex2e

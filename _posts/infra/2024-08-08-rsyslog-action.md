@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[rsyslog] アクションにおけるログ出力・保存の指定方法"
+type:          Reference
+description:   "rsyslogのアクション部でファイル出力や非同期書き込み、動的ファイル名、UDP/TCP転送、破棄、コマンド実行を指定する記法一覧。"
+tags:          [infra, rsyslog, linux, logging]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-07T03:08:52Z
+sources:
+  - id:        ref-1
+    resource:  https://www.rsyslog.com/doc/configuration/actions.html
+    title:     "Actions — Rsyslog documentation"
 date:          2024-08-08
 category:      Infrastructure
 cover:         /assets/cover14.jpg

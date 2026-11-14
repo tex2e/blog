@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[C#] Reflectionで属性付きメソッドの一覧を動的に取得する"
+type:          How-To
+description:   "C#のReflection機能でType.GetMethodsとMethodInfo.IsDefinedを組み合わせ、特定のカスタム属性が付与されたメソッド一覧を動的に抽出する方法を解説します。"
+tags:          [dotnet, csharp, reflection, attributes]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-07-07T10:12:09Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.type.getmethod?view=net-8.0
+    title:     "Type.GetMethod メソッド (System)"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.reflection.bindingflags?view=net-8.0
+    title:     "BindingFlags 列挙型 (System.Reflection)"
+  - id:        ref-3
+    resource:  "https://learn.microsoft.com/ja-jp/dotnet/api/system.reflection.memberinfo.isdefined?view=net-8.0#system-reflection-memberinfo-isdefined%28system-type-system-boolean%29"
+    title:     "MemberInfo.IsDefined(Type, Boolean) メソッド (System.Reflection)"
 date:          2024-07-10
 category:      Dotnet
 cover:         /assets/cover14.jpg

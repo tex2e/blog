@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] UTF8またはShiftJISでエンコードされたファイルの読み込み"
+type:          How-To
+description:   "UTF-8とShift-JISが混在するファイルをPythonで開く際に、UnicodeDecodeErrorの捕捉で文字コードを判別し読み込む方法。"
+tags:          [python, utf-8, cp932, encoding]
+status:        stable
+stale_after:   2027-06-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-22T04:02:21Z
 date:          2024-06-21
 category:      Python
 cover:         /assets/cover14.jpg

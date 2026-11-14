@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "grepコマンドで特定のディレクトリを検索対象から除外する"
+type:          How-To
+description:   "grep -rで.gitなどの特定ディレクトリや*.min.jsのようなファイルを検索対象から除外するための--exclude-dirと--excludeの使い方を解説します。"
+tags:          [shell, grep, linux, cli]
+status:        stable
+stale_after:   2026-08-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-05-27T08:49:09Z
 date:          2019-05-27
 category:      Shell
 cover:         /assets/cover14.jpg

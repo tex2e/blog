@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] FlaskでHTTPSサーバを立てる方法"
+type:          How-To
+description:   "Flaskのapp.runにssl_contextとして証明書と秘密鍵を指定し、HTTPSサーバを起動してcurlで疎通確認する方法。"
+tags:          [python, flask, https, tls]
+status:        stable
+stale_after:   2023-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-22T05:53:16Z
 date:          2022-10-22
 category:      Python
 cover:         /assets/cover14.jpg

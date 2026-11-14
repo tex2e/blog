@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] argparseで引数名とプロパティ名を別名にする方法"
+type:          How-To
+description:   "Pythonのargparse.add_argumentでdest引数を指定し、コマンドライン引数名とNamespace上のプロパティ名を別名にする方法。"
+tags:          [python, argparse, cli]
+status:        stable
+stale_after:   2028-09-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-09-23T07:04:58Z
 date:          2025-09-22
 category:      Python
 cover:         /assets/cover14.jpg

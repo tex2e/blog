@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[rsyslog] 条件に一致するログメッセージを抽出する"
+type:          Reference
+description:   "rsyslogにおけるファシリティ・シビアリティの組み合わせ記号やホスト・プログラム名指定、プロパティベースフィルタの抽出書式を整理。"
+tags:          [infra, rsyslog, linux, logging]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-07T03:08:04Z
+sources:
+  - id:        ref-1
+    resource:  https://www.rsyslog.com/doc/configuration/filters.html
+    title:     "Filter Conditions — Rsyslog documentation"
 date:          2024-08-07
 category:      Infrastructure
 cover:         /assets/cover14.jpg

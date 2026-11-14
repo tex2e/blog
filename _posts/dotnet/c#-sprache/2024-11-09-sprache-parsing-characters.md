@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで1文字を読み取る"
+type:          Reference
+description:   "C#の構文解析ライブラリSpracheでCharやChars、CharExceptなど1文字を読み取るメソッド群の仕様と使用例をまとめたリファレンス。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-10T02:56:20Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2020-03-11-sprache1-chars/
+    title:     "Sprache Part 1: Parsing Characters - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L66C40-L66C41"
+    title:     "Sprache/src/Sprache/Parse.cs -- Char(char)"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L27"
+    title:     "Sprache/src/Sprache/Parse.cs -- Char(Predicate\\<char\\>, string)"
+  - id:        ref-5
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L87"
+    title:     "Sprache/src/Sprache/Parse.cs -- Chars(string)"
+  - id:        ref-6
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L98"
+    title:     "Sprache/src/Sprache/Parse.cs -- CharExcept(char)"
 date:          2024-11-09
 category:      Dotnet
 cover:         /assets/cover14.jpg

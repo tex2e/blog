@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Python] Irodori-TTSの音声生成速度とGPU"
+type:          How-To
+description:   "日本語音声合成モデルIrodori-TTSの導入手順とCPU・MPS・RTX 3060の合成速度比較、参照音声による声の統一方法を解説。"
+tags:          [python, tts, irodori-tts, gpu]
+status:        stable
+stale_after:   2027-09-27T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2026-09-27T04:20:26Z
+sources:
+  - id:        ref-1
+    resource:  https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
+    title:     "モデルカード"
+  - id:        ref-2
+    resource:  https://github.com/Aratako/Irodori-TTS/tree/89f9d8fbd4d51ea019867ee1197725ede1df13c5
+    title:     "Irodori-TTSの公式リポジトリ（検証に使ったコミット）"
 date:          2026-09-27
 category:      Python
 cover:         /assets/cover14.jpg

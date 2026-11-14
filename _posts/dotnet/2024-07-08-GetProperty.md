@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[C#] Reflectionでプロパティ値を動的に取得する"
+type:          How-To
+description:   "C#のReflection機能を使い、Type.GetPropertyとPropertyInfo.GetValueを用いてインスタンスのプロパティ値を名前指定で動的に取得する方法を解説します。"
+tags:          [dotnet, csharp, reflection]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-07-07T10:05:44Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.type.getproperty?view=net-8.0
+    title:     "Type.GetProperty メソッド (System)"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.reflection.propertyinfo?view=net-8.0
+    title:     "PropertyInfo クラス (System.Reflection)"
+  - id:        ref-3
+    resource:  "https://learn.microsoft.com/ja-jp/dotnet/api/system.reflection.propertyinfo.getvalue?view=net-8.0#system-reflection-propertyinfo-getvalue%28system-object-system-object%28%29%29"
+    title:     "PropertyInfo.GetValue メソッド (System.Reflection)"
 date:          2024-07-08
 category:      Dotnet
 cover:         /assets/cover14.jpg

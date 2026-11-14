@@ -1,0 +1,75 @@
+name: OKF Validation and Freshness Check
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - '_posts/**'
+      - 'index.md'
+      - 'log.md'
+      - 'scripts/okf.rb'
+      - '.github/workflows/okf-freshness-check.yml'
+  pull_request:
+    paths:
+      - '_posts/**'
+      - 'index.md'
+      - 'log.md'
+      - 'scripts/okf.rb'
+  schedule:
+    # Weekly check every Monday at 00:00 UTC (09:00 JST)
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+      - name: Validate OKF v0.2 metadata and index.md sync
+        run: ruby scripts/okf.rb validate
+
+  freshness-report:
+    needs: validate
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+      - name: Generate OKF staleness report
+        id: stale
+        run: |
+          ruby scripts/okf.rb stale --limit 30 > stale_report.md
+          EXPIRED_COUNT=$(ruby scripts/okf.rb stale --json | ruby -rjson -e 'puts JSON.parse(STDIN.read)["expired_count"]')
+          echo "expired_count=${EXPIRED_COUNT}" >> "$GITHUB_OUTPUT"
+      - name: Create or update freshness tracking issue
+        if: steps.stale.outputs.expired_count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="[OKF] 定期鮮度チェック：更新・確認が必要な記事一覧"
+          cat <<'HEADER' > issue_body.md
+          `scripts/okf.rb stale` により、`stale_after` 期限を過ぎた公開記事が検出されました。
+          AI エージェントの `okf-maintain-blog` スキル（`/okf-maintain-blog`）を使用して記事内容を調査・最新化し、`verified` と `stale_after` を更新してください。
+
+          ---
+
+          HEADER
+          cat stale_report.md >> issue_body.md
+
+          EXISTING_ISSUE=$(gh issue list --state open --search "\"$TITLE\" in:title" --json number,title --jq ".[0].number // empty")
+          if [ -n "$EXISTING_ISSUE" ]; then
+            gh issue edit "$EXISTING_ISSUE" --body-file issue_body.md
+          else
+            gh issue create --title "$TITLE" --body-file issue_body.md
+          fi

@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[Windows] PythonでICカードのIDmを確認する"
+type:          How-To
+description:   "Windows環境でSony PaSoRi RC-S380とpyscardを使い、APDUのGET DATAコマンドでICカードのIDmを取得する方法。"
+tags:          [python, windows, ic-card, pyscard]
+status:        stable
+stale_after:   2023-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-24T13:31:19Z
+sources:
+  - id:        ref-1
+    resource:  https://www.sony.co.jp/Products/felica/consumer/download/felicaportsoftware.html
+    title:     "Sony Japan \\| FeliCa \\| 個人のお客様 \\| ダウンロード \\| NFCポートソフトウェア"
+  - id:        ref-2
+    resource:  "https://pyscard.sourceforge.io/user-guide.html#quick-start"
+    title:     "pyscard user’s guide — pyscard 1.9.5 documentation"
+  - id:        ref-3
+    resource:  https://cardwerk.com/smart-card-standard-iso7816-4-section-6-basic-interindustry-commands/
+    title:     "ISO7816 part 4 section 6 with Basic Interindustry Commands (APDU level)"
 date:          2021-01-25
 category:      Python
 cover:         /assets/cover14.jpg

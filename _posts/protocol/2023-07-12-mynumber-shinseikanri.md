@@ -2,6 +2,21 @@
 layout:        post
 title:         "マイナンバー制度と申請管理（ぴったりサービス）"
 menutitle:     "マイナンバー制度と申請管理（ぴったりサービス 電子申請）"
+type:          Concept
+description:   "マイナポータルのぴったりサービスを用いたオンライン申請管理の仕組み、電子証明書シリアル番号による名寄せ手順、対象となる標準様式を解説します。"
+tags:          [protocol, mynumber, mynaportal, government]
+status:        stable
+stale_after:   2026-10-31T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-07-08T02:02:52Z
+sources:
+  - id:        ref-1
+    resource:  https://www.soumu.go.jp/main_content/000858094.pdf
+    title:     "自治体の行政手続のオンライン化に係る申請管理システム等の構築に関する標準仕様書【第 2.0 版】"
+  - id:        ref-2
+    resource:  https://www.soumu.go.jp/main_content/000744196.pdf
+    title:     "マイナポータル（ぴったりサービス）の取組について -- 内閣府大臣官房番号制度担当室"
 date:          2023-07-12
 category:      Protocol
 cover:         /assets/cover14.jpg

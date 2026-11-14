@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "ラグランジュの定理と群の位数"
+type:          Concept
+description:   "有限群におけるラグランジュの定理を説明し、楕円曲線上の点が生成する巡回部分群の位数の性質を具体例で解説。"
+tags:          [crypto, group-theory, elliptic-curve, lagranges-theorem]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-08-10T13:07:07Z
 date:          2019-08-11
 category:      Crypto
 author:        tex2e

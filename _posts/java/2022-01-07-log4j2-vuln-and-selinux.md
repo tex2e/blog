@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[Java] Log4j2の脆弱性がSELinuxで防げるかを検証する"
+type:          How-To
+description:   "CentOS上のTomcatでLog4j2脆弱性の検証環境を構築しSELinuxのtomcat_tドメインによる緩和効果を調査した手順。"
+tags:          [java, log4j2, tomcat, selinux, security]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-01-08T08:44:31Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/dbgee/log4j2_rce
+    title:     "dbgee/log4j2_rce: log4j2 rce、poc"
+  - id:        ref-2
+    resource:  https://github.com/leonjza/log4jpwn
+    title:     "leonjza/log4jpwn: log4j rce test environment and poc"
+  - id:        ref-3
+    resource:  https://github.com/cisagov/log4j-scanner/blob/master/log4-scanner/log4j-scan.py
+    title:     "log4j-scanner/log4j-scan.py at master · cisagov/log4j-scanner"
+  - id:        ref-4
+    resource:  https://logging.apache.org/log4j/2.x/manual/configuration.html
+    title:     "Log4j – Configuring Log4j 2"
+  - id:        ref-5
+    resource:  https://www.codejava.net/java-se/file-io/execute-operating-system-commands-using-runtime-exec-methods
+    title:     "How to Execute Operating System Commands in Java"
+  - id:        ref-6
+    resource:  https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7
+    title:     "How To Install Apache Tomcat 8 on CentOS 7 \\| DigitalOcean"
 date:          2022-01-07
 category:      Java
 cover:         /assets/cover14.jpg

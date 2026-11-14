@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Ansible] shellモジュールの結果で条件分岐させる"
+type:          How-To
+description:   "Ansibleでshellモジュールの出力をregisterで保存し、changed_whenの抑制とwhenによるタスクの条件分岐を実装する方法。"
+tags:          [infra, ansible, playbook]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-10T13:14:32Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/latest/collections/ansible/builtin/shell_module.html
+    title:     "ansible.builtin.shell module – Execute shell commands on targets — Ansible Documentation"
+  - id:        ref-2
+    resource:  https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-configuring_the_date_and_time
+    title:     "第3章 日付と時刻の設定 Red Hat Enterprise Linux 7 \\| Red Hat Customer Portal"
 date:          2022-07-08
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[C#] Reflectionでメソッド一覧を動的に取得する"
+type:          How-To
+description:   "C#のReflection機能を使い、クラスやインスタンスから取得したTypeオブジェクトに対してType.GetMethodsを呼び出し、メソッド一覧を動的に取得する方法を解説します。"
+tags:          [dotnet, csharp, reflection]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-07-07T10:05:59Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.type.getmethod?view=net-8.0
+    title:     "Type.GetMethod メソッド (System)"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.reflection.bindingflags?view=net-8.0
+    title:     "BindingFlags 列挙型 (System.Reflection)"
 date:          2024-07-09
 category:      Dotnet
 cover:         /assets/cover14.jpg

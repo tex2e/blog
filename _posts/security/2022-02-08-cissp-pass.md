@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "CISSP 認定試験に合格した話"
+type:          Essay
+description:   "CISSP認定試験に合格した体験談として、公式CBKトレーニングの活用や勉強法、テストセンターでの受験の流れを紹介します。"
+tags:          [security, cissp, certification, study-log]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2022-02-11T03:01:55Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3U9pP1q
+    title:     "CISSP公式問題集(電子版)"
+  - id:        ref-2
+    resource:  https://www.pearsonvue.co.jp/Test-takers/security.aspx
+    title:     "受験当日のテストセンターでの流れ"
+  - id:        ref-3
+    resource:  https://amzn.to/3nH0Dmw
+    title:     "新版 CISSP CBK公式ガイドブック"
+  - id:        ref-4
+    resource:  https://www.morihi-soc.net/?p=83
+    title:     "CISSP に挑戦した話(再投稿) – morihi-soc"
+  - id:        ref-5
+    resource:  https://devblog.lac.co.jp/entry/20220117
+    title:     "エンジニア経験ゼロの文系ギャルが「CISSP®認定試験」を受ける - ラック・セキュリティごった煮ブログ"
+  - id:        ref-6
+    resource:  https://japan.isc2.org/examination_application.html
+    title:     "(ISC)² Japan - Computer Based Testing(CBT)試験"
 date:          2022-02-08
 category:      Security
 cover:         /assets/cover14.jpg

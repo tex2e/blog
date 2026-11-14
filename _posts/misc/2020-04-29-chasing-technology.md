@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "お金を追いかけず、技術を追いかける"
+type:          Essay
+description:   "高専時代の恩師の言葉やプログラミングへの没頭経験を通して、お金ではなく技術を追いかけ続ける姿勢の大切さを綴ります。"
+tags:          [misc, career, engineering, reflection]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-04-29T07:51:48Z
 date:          2020-04-29
 category:      Misc
 cover:         /assets/cover1.jpg

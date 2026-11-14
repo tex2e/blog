@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "PodmanとDockerの比較"
+type:          Reference
+description:   "OCI互換性やCLI、デーモンレス設計、ルートレス実行、systemd統合、Swarm対応などの観点でPodmanとDockerの機能を比較した一覧。"
+tags:          [infra, podman, docker, containers]
+status:        stable
+stale_after:   2027-11-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-29T10:45:58Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3CAPFqb
+    title:     "『Podmanイン・アクション』秀和システム, 2023/9"
 date:          2024-11-24
 category:      Infrastructure
 cover:         /assets/cover14.jpg

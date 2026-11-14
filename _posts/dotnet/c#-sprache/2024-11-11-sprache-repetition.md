@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで繰り返し読み取る (Many, AtLeastOnce, Until, Repeat, Once)"
+type:          Reference
+description:   "C#のSpracheでManyやXMany、AtLeastOnce、Until、Repeatなど繰り返しパターンを解析するメソッド群の動作と使用例を整理。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-10T03:16:56Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2020-03-23-sprache3-repetition/
+    title:     "Sprache Part 3: Repetition (Many, AtLeastOnce, Until, Repeat, Once) - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L256"
+    title:     "Sprache/src/Sprache/Parse.cs -- Many"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L296"
+    title:     "Sprache/src/Sprache/Parse.cs -- XMany"
+  - id:        ref-5
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L309"
+    title:     "Sprache/src/Sprache/Parse.cs -- AtLeastOnce"
+  - id:        ref-6
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L323"
+    title:     "Sprache/src/Sprache/Parse.cs -- XAtLeastOnce"
 date:          2024-11-11
 category:      Dotnet
 cover:         /assets/cover14.jpg

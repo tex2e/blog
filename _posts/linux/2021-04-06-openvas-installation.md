@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "OpenVASをKali Linuxにインストール"
+type:          How-To
+description:   "Kali LinuxにOpenVAS(GVM)をインストールして初期セットアップ、ユーザ作成、脆弱性スキャンの実行までを行う手順を解説。"
+tags:          [linux, openvas, kali-linux, security]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-04-07T12:55:01Z
+sources:
+  - id:        ref-1
+    resource:  https://kifarunix.com/how-to-add-and-scan-a-target-for-vulnerabilities-on-openvas/
+    title:     "How to Add and Scan a Target for Vulnerabilities on OpenVAS Scanner - kifarunix.com"
 date:          2021-04-06
 category:      Linux
 cover:         /assets/cover14.jpg

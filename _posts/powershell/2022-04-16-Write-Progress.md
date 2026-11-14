@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] 進捗を表すプログレスバーを表示する (Write-Progress)"
+type:          How-To
+description:   "PowerShellのWrite-Progressコマンドレットと-PercentCompleteオプションを使ってコンソール上に進捗バーを表示する方法を紹介します。"
+tags:          [powershell, write-progress, console]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-15T10:49:11Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-progress?view=powershell-7.2
+    title:     "Write-Progress (Microsoft.PowerShell.Utility) - PowerShell \\| Microsoft Docs"
 date:          2022-04-16
 category:      PowerShell
 cover:         /assets/cover14.jpg

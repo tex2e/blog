@@ -1,6 +1,32 @@
 ---
 layout:        book
 title:         "[暗号技術入門] 共通鍵暗号"
+type:          Book Chapter
+description:   "ブロック暗号とストリーム暗号の違いを軸に、AESやChaCha20などの主要アルゴリズム、暗号利用モード、MACを組み合わせた認証付き暗号を解説します。"
+tags:          [crypto, symmetric-key, aes, chacha20, mac]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-06-15T08:08:26Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
+    title:     "**AES**"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/Authenticated_encryption
+    title:     "**認証付き暗号化**"
+  - id:        ref-3
+    resource:  https://en.wikipedia.org/wiki/Advanced_Encryption_Standard_process
+    title:     "NISTによって主催されたAESコンペティション"
+  - id:        ref-4
+    resource:  https://en.wikipedia.org/wiki/Salsa20
+    title:     "Salsa20"
+  - id:        ref-5
+    resource:  https://en.wikipedia.org/wiki/Daniel_J._Bernstein
+    title:     "Daniel Bernstein"
+  - id:        ref-6
+    resource:  https://en.wikipedia.org/wiki/ESTREAM
+    title:     "eSTREAMコンテスト"
 date:          2024-03-07
 category:      Crypto
 cover:         /assets/cover4.jpg

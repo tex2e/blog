@@ -2,6 +2,20 @@
 layout:        post
 title:         "平方剰余とルジャンドル記号とヤコビ記号"
 menutitle:     "平方剰余の判定とルジャンドル記号とヤコビ記号"
+type:          Concept
+description:   "平方剰余の判定に用いるオイラーの規準・ルジャンドル記号・ヤコビ記号の定義と、平方剰余の相互法則に基づくPython実装を解説。"
+tags:          [crypto, number-theory, legendre-symbol, jacobi-symbol, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-08-09T13:15:00Z
+sources:
+  - id:        ref-1
+    resource:  "https://docs.sympy.org/latest/modules/ntheory.html#sympy.ntheory.residue_ntheory.legendre_symbol"
+    title:     "Number Theory &#8212; SymPy 1.4 documentation : legendre_symbol(a, p)"
+  - id:        ref-2
+    resource:  http://zoo.cs.yale.edu/classes/cs467/2010s/handouts/ho07.pdf
+    title:     "M. J. Fischer: The Legendre and Jacobi Symbols. 2010"
 date:          2019-08-09
 category:      Crypto
 author:        tex2e

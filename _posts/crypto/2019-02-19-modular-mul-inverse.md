@@ -2,6 +2,13 @@
 layout:        post
 title:         "Pythonでモジュラ逆数を求める (modinv)"
 menutitle:     "Pythonでモジュラ逆数を求める (modinv)"
+type:          Concept
+description:   "拡張ユークリッドの互除法とベズーの等式を用いてモジュラ逆数を求める原理とPython実装を解説。"
+tags:          [crypto, modular-arithmetic, euclidean-algorithm, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-02-19T12:02:11Z
 date:          2019-02-19
 category:      Crypto
 author:        tex2e

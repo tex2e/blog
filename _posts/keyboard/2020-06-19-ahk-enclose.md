@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "AutoHotKeyで選択文字をダブルクオーテーションや丸括弧で囲む"
+type:          How-To
+description:   "クリップボード退避を利用して選択中のテキストをダブルクオーテーションや丸括弧で囲むAutoHotkeyマクロの実装方法。"
+tags:          [keyboard, autohotkey, windows]
+status:        stable
+stale_after:   2023-06-18T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-06-18T13:00:25Z
+sources:
+  - id:        ref-1
+    resource:  https://stackoverflow.com/questions/9909713/autohotkey-to-put-the-selected-text-in-smart-quotes
+    title:     "Autohotkey to put the selected text in smart quotes - Stack Overflow"
+  - id:        ref-2
+    resource:  https://gist.github.com/davebrny/088c48d6678617876b34f53571e92ee6
+    title:     "📇 (autohotkey) - wrap selected text in *symbols*"
 date:          2020-06-19
 category:      Keyboard
 cover:         /assets/cover14.jpg

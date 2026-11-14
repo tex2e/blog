@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] レジストリのハイブの省略形の一覧"
+type:          Reference
+description:   "Windowsレジストリのハイブ（Hive）の概念と、HKLM・HKCU・HKU・HKCC・HKCRの5つの省略形との対応一覧を紹介。"
+tags:          [windows, registry]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-07T00:50:38Z
 date:          2021-11-08
 category:      Windows
 cover:         /assets/cover14.jpg

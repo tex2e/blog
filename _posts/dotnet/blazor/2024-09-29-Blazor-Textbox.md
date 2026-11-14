@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] テキストボックスで双方向データバインディングする"
+type:          How-To
+description:   "ASP.NET Core Blazorのinputテキストボックスに@bindや@bind:event属性を設定し、入力値の取得とメンバー変数の画面反映を双方向バインディングする方法を解説します。"
+tags:          [dotnet, csharp, blazor, data-binding, forms]
+status:        stable
+stale_after:   2027-10-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-09-29T10:42:00Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-09-29
 category:      Dotnet
 cover:         /assets/cover14.jpg

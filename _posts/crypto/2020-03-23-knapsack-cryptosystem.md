@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "ナップザック暗号"
+type:          Concept
+description:   "部分和問題と超増加数列を用いたナップザック暗号（Merkle-Hellman暗号）の構成と、解読された安全性上の理由を解説。"
+tags:          [crypto, knapsack-cryptosystem, public-key, complexity-theory]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-03-23T08:04:08Z
+sources:
+  - id:        ref-1
+    resource:  http://dopal.cs.uec.ac.jp/okamotoy/PDF/2013/complexity10confusions.pdf
+    title:     "計算複雑性にまつわる 10 の誤解"
 date:          2020-03-23
 category:      Crypto
 cover:         /assets/cover4.jpg

@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[PowerShell] リモートでコマンドを実行する"
+type:          How-To
+description:   "Enable-PSRemotingやWinRM、TrustedHostsを設定しPowerShellでリモートコマンドを実行する手順を説明します。"
+tags:          [powershell, psremoting, winrm, windows]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-03-06T12:01:06Z
+sources:
+  - id:        ref-1
+    resource:  https://qiita.com/awsmgs/items/8ceea2bf2d47486805f1
+    title:     "PowerShellを使ってリモートでコマンドを実行する方法 - Qiita"
+  - id:        ref-2
+    resource:  https://nasunoblog.blogspot.com/2015/06/powershell-enable-psremoting-error-occer-public-network.html
+    title:     "PowerShell Enable-PSRemotingを実行するとSet-WSManQuickConfig でエラーになる場合の対処法 - 元「なんでもエンジニ屋」のダメ日記"
+  - id:        ref-3
+    resource:  https://nasunoblog.blogspot.com/2014/12/powershell-how-to-change-network-category-public-to-private.html
+    title:     "PowerShell ネットワークのカテゴリを変更する～PublicからPrivateへ - 元「なんでもエンジニ屋」のダメ日記"
+  - id:        ref-4
+    resource:  https://mstn.hateblo.jp/entry/2016/09/13/193124
+    title:     "PowerShellでリモートからコマンドを実行する - Masato's IT Library"
+  - id:        ref-5
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/Microsoft.PowerShell.Core/Enable-PSRemoting?view=powershell-5.1
+    title:     "Enable-PSRemoting (Microsoft.PowerShell.Core) - PowerShell \\| Microsoft Docs"
+  - id:        ref-6
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-5.1
+    title:     "Invoke-Command (Microsoft.PowerShell.Core) - PowerShell \\| Microsoft Docs"
 date:          2021-03-06
 category:      PowerShell
 cover:         /assets/cover1.jpg

@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "RFC1149 伝書鳩によるIPパケットの送信規格"
+type:          Concept
+description:   "1990年のエイプリルフールRFCとして公開された、伝書鳩を用いてIPデータグラムを伝送するジョーク規格RFC 1149の概要とフレーム形式を紹介します。"
+tags:          [protocol, rfc, rfc1149, humor]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2022-08-20T11:27:54Z
+sources:
+  - id:        ref-1
+    resource:  https://datatracker.ietf.org/doc/html/rfc1149
+    title:     "RFC 1149 - Standard for the transmission of IP datagrams on avian carriers"
 date:          2022-08-01
 category:      Protocol
 cover:         /assets/cover14.jpg

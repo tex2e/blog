@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Bashのif文でANDやOR条件、&&や||演算子を使う"
+type:          Reference
+description:   "Bashのif文で&&や||演算子、非推奨の-a/-o引数、中括弧による条件のグループ化を記述する方法を解説。"
+tags:          [shell, bash, syntax]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-07-05T11:42:03Z
 date:          2021-07-03
 category:      Shell
 cover:         /assets/cover14.jpg

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "アルファベット出現率"
+type:          Reference
+description:   "暗号解読の頻度解析やカシスキーテストで用いられる英語アルファベット1〜3文字の出現率一覧表をまとめたリファレンス。"
+tags:          [crypto, cryptanalysis, frequency-analysis, classical-cipher]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-04T10:03:05Z
 date:          2019-12-01
 category:      Crypto
 author:        tex2e

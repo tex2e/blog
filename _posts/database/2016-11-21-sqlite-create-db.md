@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[SQLite] データベースを作る方法"
+type:          How-To
+description:   "SQLファイルにテーブルのスキーマを定義し、sqlite3コマンドへ流し込んでSQLiteデータベースとテーブルを新規作成する基本手順を説明します。"
+tags:          [database, sqlite, sql, schema]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  https://sqlite.org/fullsql.html
+    title:     "SQLite3 公式APIドキュメント"
+  - id:        ref-2
+    resource:  https://sqlite.org/datatype3.html
+    title:     "SQlite3 データ型の一覧"
 date:          2016-11-21
 category:      Database
 author:        tex2e

@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "JekyllでMathJaxからKaTeXに移行した"
+type:          How-To
+description:   "JekyllやGitHub Pagesで数式描画をMathJaxからKaTeXへ移行するための導入手順とkramdown設定・記法の注意点を解説。"
+tags:          [latex, katex, mathjax, jekyll, github-pages]
+status:        stable
+stale_after:   2022-03-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-03-25T11:52:35Z
+sources:
+  - id:        ref-1
+    resource:  https://katex.org/docs/support_table.html
+    title:     "Support Table · KaTeX"
+  - id:        ref-2
+    resource:  https://help.github.com/ja/enterprise/2.15/user/articles/about-github-pages-and-jekyll
+    title:     "GitHub PagesとJekyllについて"
+  - id:        ref-3
+    resource:  "https://github.com/github/pages-gem/blob/master/lib/github-pages/configuration.rb#L50-L55"
+    title:     "pages-gem/configuration.rb at master -- 上書きされるオプション"
+  - id:        ref-4
+    resource:  https://shopify.github.io/liquid/
+    title:     "Liquid"
 date:          2020-03-25
 category:      LaTeX
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "texlive2019へのアップグレード on Ubuntu"
+type:          How-To
+description:   "Ubuntu上のTeX Live環境をディレクトリ複製とPATH変更、update-tlmgr-latestスクリプトを用いて2018から2019へ移行する手順。"
+tags:          [latex, texlive, ubuntu, linux]
+status:        stable
+stale_after:   2022-10-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-10-04T04:54:43Z
+sources:
+  - id:        ref-1
+    resource:  https://tug.org/texlive/upgrade.html
+    title:     "https://tug.org/texlive/upgrade.html"
 date:          2019-10-04
 category:      LaTeX
 author:        tex2e

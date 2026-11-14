@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "Kali Linuxでキーボード配列を日本語にする"
+type:          Troubleshooting
+description:   "Kali LinuxでGUI設定を日本語にしても記号が英字配列のままになる事象をlocalectlや関連パッケージ設定で解決する方法。"
+tags:          [keyboard, kali-linux, linux, keymap]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-04-07T12:33:58Z
+sources:
+  - id:        ref-1
+    resource:  https://teratail.com/questions/273602
+    title:     "Linux - Linux kali CUIでのキーボード配列について｜teratail"
 date:          2021-04-04
 category:      Keyboard
 cover:         /assets/cover14.jpg

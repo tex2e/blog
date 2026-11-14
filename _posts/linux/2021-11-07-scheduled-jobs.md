@@ -2,6 +2,14 @@
 layout:        post
 title:         "Linuxでスケジュールされたジョブを確認する"
 menutitle:     "Linuxでスケジュールされたジョブを確認する (cron, at)"
+type:          How-To
+description:   "Linuxで意図しない定期実行を調査するため、cron関連ディレクトリや各ユーザのcrontab、atジョブの中身を確認・削除する方法を解説します。"
+tags:          [linux, cron, at, security]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-31T13:20:51Z
 date:          2021-11-07
 category:      Linux
 cover:         /assets/cover14.jpg

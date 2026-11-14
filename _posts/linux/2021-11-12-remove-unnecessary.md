@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "不要なWebコンテンツファイルを削除する"
+type:          How-To
+description:   "Web公開ディレクトリ配下からreadmeや設定・ダンプ等の不要ファイルをfindで検出し、削除や権限制限を行う方法を説明します。"
+tags:          [linux, find, web-security, hardening]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-10T14:03:58Z
 date:          2021-11-12
 category:      Linux
 cover:         /assets/cover14.jpg

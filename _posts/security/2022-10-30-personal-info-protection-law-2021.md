@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "個人情報保護法における匿名加工情報と仮名加工情報"
+type:          Concept
+description:   "個人情報保護法における匿名加工情報と仮名加工情報の定義、加工基準や加工手法、第三者提供などの規律の違いを解説します。"
+tags:          [security, privacy, appi, data-anonymization]
+status:        stable
+stale_after:   2027-02-04T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-30T14:16:12Z
+sources:
+  - id:        ref-1
+    resource:  https://elaws.e-gov.go.jp/document?lawid=415AC0000000057
+    title:     "個人情報の保護に関する法律 \\| e-Gov法令検索"
+  - id:        ref-2
+    resource:  https://www.ppc.go.jp/personalinfo/legal/guidelines_anonymous/
+    title:     "個人情報の保護に関する法律についてのガイドライン（仮名加工情報・匿名加工情報編） ｜個人情報保護委員会"
 date:          2022-10-30
 category:      Security
 cover:         /assets/cover14.jpg

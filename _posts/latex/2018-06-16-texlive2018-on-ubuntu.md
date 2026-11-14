@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "texlive2018(basic)のインストール on Ubuntu"
+type:          How-To
+description:   "Ubuntu環境にinstall-tlを用いてTeX Live 2018のbasicスキームをインストールしパスや環境設定を行う手順。"
+tags:          [latex, texlive, ubuntu, linux]
+status:        stable
+stale_after:   2023-07-19T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2018-06-16T12:35:09Z
+sources:
+  - id:        ref-1
+    resource:  http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/
+    title:     "http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/"
 date:          2018-06-16
 category:      LaTeX
 author:        tex2e

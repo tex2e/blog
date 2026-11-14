@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "ベクトル空間 定義と定理一覧"
+type:          Reference
+description:   "抽象的ベクトル空間と部分空間、線形写像の核と像、1次独立・従属、行列式との関係、基底と次元に関する定義と定理を体系的にまとめています。"
+tags:          [math, linear-algebra, vector-space]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-03-24T14:22:08Z
+sources:
+  - id:        ref-1
+    resource:  https://www.nippyo.co.jp/shop/book/5396.html
+    title:     "線形代数学 (新装版)"
+  - id:        ref-2
+    resource:  https://amzn.to/3Z02T5Y
+    title:     "線形代数学 - 日本評論社"
 date:          2019-01-06
 category:      Math
 cover:         /assets/cover14.jpg

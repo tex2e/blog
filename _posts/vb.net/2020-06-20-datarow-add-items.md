@@ -1,6 +1,30 @@
 ---
 layout:        post
 title:         "[VB.NET] 配列(CSV)をDataRowに変換する"
+type:          How-To
+description:   "VB.NETでDataRowへ1要素ずつ設定する方法や、ItemArrayプロパティを用いて配列やCSV行をDataRowへ一括変換する手順を解説。"
+tags:          [vb-net, dotnet, datarow, csv]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-06-20T11:56:55Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netcore-3.1
+    title:     "DataTable Class (System.Data) \\| Microsoft Docs"
+  - id:        ref-2
+    resource:  https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=netcore-3.1
+    title:     "DataColumn Class (System.Data) \\| Microsoft Docs"
+  - id:        ref-3
+    resource:  https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumncollection?view=netcore-3.1
+    title:     "DataColumnCollection Class (System.Data) \\| Microsoft Docs"
+  - id:        ref-4
+    resource:  https://docs.microsoft.com/en-us/dotnet/api/system.data.datarow?view=netcore-3.1
+    title:     "DataRow Class (System.Data) \\| Microsoft Docs"
+  - id:        ref-5
+    resource:  https://tools.ietf.org/html/rfc4180
+    title:     "RFC 4180 - Common Format and MIME Type for Comma-Separated Values (CSV) Files"
 date:          2020-06-20
 category:      VB.NET
 cover:         /assets/cover14.jpg

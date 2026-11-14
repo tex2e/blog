@@ -1,6 +1,32 @@
 ---
 layout:        book
 title:         "[暗号技術入門] メッセージ認証コード (MAC) と鍵導出関数"
+type:          Book Chapter
+description:   "MACやHMACによる改ざん検知とAEADでの役割、およびPBKDF2・Scrypt・Argon2など鍵導出関数（KDF）を解説。"
+tags:          [crypto, mac, hmac, kdf, aead]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-03-14T04:30:27Z
+sources:
+  - id:        ref-1
+    resource:  "https://en.wikipedia.org/wiki/HMAC#Design_principles"
+    title:     "HMAC#設計原則"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/PBKDF2
+    title:     "PBKDF2"
+  - id:        ref-3
+    resource:  https://en.wikipedia.org/wiki/Bcrypt
+    title:     "Bcrypt"
+  - id:        ref-4
+    resource:  https://en.wikipedia.org/wiki/Scrypt
+    title:     "Scrypt"
+  - id:        ref-5
+    resource:  https://en.wikipedia.org/wiki/Argon2
+    title:     "Argon2"
+  - id:        ref-6
+    resource:  https://en.wikipedia.org/wiki/Key_stretching
+    title:     "**鍵ストレッチング**"
 date:          2024-03-03
 category:      Crypto
 cover:         /assets/cover4.jpg

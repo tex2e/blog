@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Elixir] 配列の要素数をカウントする"
+type:          How-To
+description:   "ElixirのEnum.reduceとMap.updateを組み合わせ、配列（リスト）内の各要素の出現回数をMapとして集計する方法を解説します。"
+tags:          [programming, elixir, enum, map]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-01-04T10:27:50Z
 date:          2017-01-04
 category:      Programming
 author:        tex2e

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "AutoHotkeyで通知領域のカレンダーを表示する"
+type:          How-To
+description:   "Windows 10でマウスを画面右下に移動した際に通知領域の時計(TrayClockWClass1)をクリックしてカレンダーを開くAHK設定。"
+tags:          [keyboard, autohotkey, windows]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-08-29T07:29:27Z
 date:          2020-08-29
 category:      Keyboard
 cover:         /assets/cover14.jpg

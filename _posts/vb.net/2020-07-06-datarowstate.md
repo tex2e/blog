@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[VB.NET] 行編集によるDataRowStateの変化"
+type:          Reference
+description:   "VB.NETのDataRowState列挙体の5つの状態一覧と、行の追加・確定・編集・取消・削除に伴う状態遷移の動作を解説。"
+tags:          [vb-net, dotnet, datatable, datarow]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-07T12:41:36Z
 date:          2020-07-06
 category:      VB.NET
 cover:         /assets/cover14.jpg

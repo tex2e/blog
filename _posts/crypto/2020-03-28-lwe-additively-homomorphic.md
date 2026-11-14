@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "LWE格子暗号による加法準同型性"
+type:          Concept
+description:   "平文空間Z_8におけるLWE格子暗号の暗号化と暗号文同士の加算による加法準同型性の仕組みとPython実装を解説。"
+tags:          [crypto, lattice, lwe, homomorphic-encryption, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-03-28T11:40:23Z
+sources:
+  - id:        ref-1
+    resource:  https://cseweb.ucsd.edu/classes/fa17/cse206A-a/LecFHE.pdf
+    title:     "Fully Homomorphic Encryption -- CSE 206A: Lattice Algorithms and Applications, Fall 2017"
 date:          2020-03-28
 category:      Crypto
 cover:         /assets/cover4.jpg

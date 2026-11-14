@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "剰余の逆元 (modinv) の手計算"
+type:          How-To
+description:   "連立一次合同式の係数の差が1になるよう式変形して、剰余の乗法逆元（modinv）を手計算で求める手順を解説。"
+tags:          [crypto, modular-arithmetic, number-theory]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-04T10:03:32Z
 date:          2019-12-04
 category:      Crypto
 author:        tex2e

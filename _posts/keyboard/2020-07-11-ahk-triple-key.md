@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "AutoHotkeyで3キー同時押し"
+type:          How-To
+description:   "AutoHotkeyでF13などのカスタム修飾キーを含む3キー同時押しのショートカットをGetKeyState関数で判定し実装する方法。"
+tags:          [keyboard, autohotkey, windows]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-11T11:05:54Z
+sources:
+  - id:        ref-1
+    resource:  https://www.autohotkey.com/docs/commands/GetKeyState.htm
+    title:     "GetKeyState - Syntax & Usage \\| AutoHotkey"
 date:          2020-07-11
 category:      Keyboard
 cover:         /assets/cover14.jpg

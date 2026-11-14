@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "Jekyllを実行した時に bundler: failed to load command: jekyll, `require': cannot load such file -- webrick (LoadError) が出るときの対処法"
+type:          Troubleshooting
+description:   "Ruby 3.0環境でJekyllサーバ起動時にwebrickのLoadErrorが出る原因と、bundle add webrickで解消する対処法。"
+tags:          [ruby, jekyll, webrick, bundler]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2021-12-31T06:45:31Z
+sources:
+  - id:        ref-1
+    resource:  https://programmerah.com/when-jekyll-runs-it-will-prompt-an-error-cannot-load-such-file-webrick-loaderror-41724/
+    title:     "When Jekyll runs, it will prompt an error. Cannot load such file — webrick (LoadError) \\| ProgrammerAH"
 date:          2021-12-31
 category:      Ruby
 cover:         /assets/cover14.jpg

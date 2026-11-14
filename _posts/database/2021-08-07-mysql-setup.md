@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[MySQL] DBへ外部からの接続するための手順"
+type:          How-To
+description:   "UbuntuにMySQLをインストールし、mysql_secure_installationや接続ユーザー作成、mysqld.cnfのbind-address設定、ufwで外部接続を許可する手順を解説します。"
+tags:          [database, mysql, ubuntu, ufw, setup]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-08-07T03:15:31Z
+sources:
+  - id:        ref-1
+    resource:  https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-ja
+    title:     "Ubuntu 20.04にMySQLをインストールする方法 \\| DigitalOcean"
+  - id:        ref-2
+    resource:  https://web.archive.org/web/20221104090220/https://qiita.com/hana_shin/items/a630871dce209cff04f3
+    title:     "ufwコマンドの使い方 - Qiita"
 date:          2021-08-07
 category:      Database
 cover:         /assets/cover14.jpg

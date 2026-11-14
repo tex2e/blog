@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxで許可ポート番号を追加/削除する"
 menutitle:     "SELinuxで許可ポート番号を追加/削除する (semanage port)"
+type:          How-To
+description:   "semanage portコマンドを使ってhttp_port_tなどのSELinuxタイプに許可ポート番号を追加・変更・削除する手順を解説します。"
+tags:          [selinux, linux, semanage, ports]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-26T14:52:54Z
 date:          2021-10-30
 category:      SELinux
 cover:         /assets/cover6.jpg

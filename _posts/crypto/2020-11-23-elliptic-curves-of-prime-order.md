@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "素数位数となる楕円曲線のパラメータ生成"
+type:          How-To
+description:   "Pohlig-Hellman法への対策として素数位数となる有限体上の楕円曲線パラメータをSageMathで生成する方法と実例集。"
+tags:          [crypto, elliptic-curve, sagemath, prime-order]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-11-23T09:04:11Z
 date:          2020-11-23
 category:      Crypto
 cover:         /assets/cover4.jpg

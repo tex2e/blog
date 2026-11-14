@@ -2,8 +2,25 @@
 layout:        post
 title:         "systemdでプロセス自動再起動"
 menutitle:     "systemdのRestartでプロセス自動再起動"
+type:          How-To
+description:   "systemdのUnitファイルにあるRestart設定値の意味とプロセス異常終了時に自動再起動させるための構成と動作確認手順を解説。"
+tags:          [linux, systemd, centos]
+status:        stable
+stale_after:   2026-09-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-08T04:06:13Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3rkScj9
+    title:     "サーバ構築研究会『CentOS8で作るネットワークサーバ構築ガイド』2020/8"
+  - id:        ref-2
+    resource:  "https://www.freedesktop.org/software/systemd/man/systemd.service.html#Restart="
+    title:     "Restart= -- systemd.service"
+  - id:        ref-3
+    resource:  "https://www.freedesktop.org/software/systemd/man/systemd.unit.html#StartLimitIntervalSec=interval"
+    title:     "StartLimitIntervalSec=interval, StartLimitBurst=burst -- systemd.unit"
 date:          2019-03-08
-tags:          Linux
 category:      Linux
 author:        tex2e
 cover:         /assets/cover14.jpg

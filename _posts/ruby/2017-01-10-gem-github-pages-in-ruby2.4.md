@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "github-pages が Ruby2.4 で使えない問題"
+type:          Troubleshooting
+description:   "Ruby 2.4環境でgithub-pagesのbundle install時にjson gemのビルドが失敗する依存関係の原因と対処法（解決済み）。"
+tags:          [ruby, jekyll, github-pages, bundler]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2017-01-10T10:24:27Z
 date:          2017-01-10
 category:      Ruby
 author:        tex2e

@@ -2,6 +2,32 @@
 layout:        post
 title:         "秘密分散技術とホワイトハッカ飴の解説"
 menutitle:     "秘密分散技術とホワイトハッカ飴の解説 (Adv.Cal. 2018)"
+type:          Concept
+description:   "シャミアの秘密分散法の理論とPython実装、およびセキュリティキャンプ配布ホワイトハッカ飴の復元手順を解説。"
+tags:          [crypto, secret-sharing, lagrange-interpolation, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2018-12-11T09:49:41Z
+sources:
+  - id:        ref-1
+    resource:  https://adventar.org/calendars/3191
+    title:     "セキュリティキャンプ 修了生進捗 Advent Calendar 2018"
+  - id:        ref-2
+    resource:  https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html
+    title:     "DNSSEC Root Key Split Among Seven People"
+  - id:        ref-3
+    resource:  https://web.archive.org/web/20230314193123/http://www.cdns.net/dnssec.html
+    title:     "DNSSEC KEY SIGNING PROCESS"
+  - id:        ref-4
+    resource:  https://ja.wikipedia.org/wiki/%E6%9A%97%E5%8F%B7%E5%88%A9%E7%94%A8%E3%83%A2%E3%83%BC%E3%83%89
+    title:     "暗号利用モード - Wikipedia"
+  - id:        ref-5
+    resource:  https://itunes.apple.com/us/app/barcode-scanners/id504201315?mt=8
+    title:     "Barcode Scanners"
+  - id:        ref-6
+    resource:  "https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing#Problem"
+    title:     "Shamir's Secret Sharing - Problem ... 整数上のシャミア秘密分散法での問題点"
 date:          2018-12-11
 category:      Crypto
 author:        tex2e

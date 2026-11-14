@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "/tmp ディレクトリのパーミッション"
+type:          How-To
+description:   "全ユーザが書込可能な/tmpディレクトリで誤削除を防ぐスティッキービットの仕組みとchmodによる設定・解除・確認方法を解説。"
+tags:          [linux, permissions, sticky-bit, chmod]
+status:        stable
+stale_after:   2022-06-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-06-23T09:27:03Z
 date:          2019-06-23
 category:      Linux
 author:        tex2e

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "楕円曲線上の加算・2倍算のグラフを作成する"
+type:          How-To
+description:   "SageMathのnotebook上で楕円曲線上の点の加算と2倍算を対話的にグラフ描画するワークシートの作成手順を解説。"
+tags:          [crypto, elliptic-curve, sagemath, visualization]
+status:        stable
+stale_after:   2024-09-03T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-02-14T02:38:35Z
 date:          2020-02-14
 category:      Crypto
 cover:         /assets/cover4.jpg

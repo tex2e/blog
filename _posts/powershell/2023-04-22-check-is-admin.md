@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] 実行時に管理者権限で動作しているか調べる"
+type:          How-To
+description:   "PowerShellで.NETのWindowsPrincipalクラスを利用し、実行中のスクリプトが管理者権限を持っているか判定する方法を紹介します。"
+tags:          [powershell, windows, privilege, dotnet]
+status:        stable
+stale_after:   2026-04-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-04-22T10:38:07Z
 date:          2023-04-22
 category:      PowerShell
 cover:         /assets/cover14.jpg

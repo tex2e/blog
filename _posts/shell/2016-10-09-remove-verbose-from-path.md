@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "冗長なパス foo/bar/../lib を foo/lib に変換する"
+type:          How-To
+description:   "シェルスクリプトで結合されたパスの「.」や「..」を取り除いて正規化するBash関数remove_verboseの実装方法と動作例を解説します。"
+tags:          [shell, bash, path-normalization, awk]
+status:        stable
+stale_after:   2026-08-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  http://lake-michigan.hatenablog.com/entry/20110419/1303207600
+    title:     "シェルスクリプトで配列へのpush/pop"
 date:          2016-10-09
 category:      Shell
 cover:         /assets/cover14.jpg

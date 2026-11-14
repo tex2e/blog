@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Bashで一時ファイルを作る方法"
+type:          How-To
+description:   "Bashスクリプトでmktempコマンドにより安全に一時ファイルを作成し、trapを使って正常・異常終了時に確実に自動削除するベストプラクティスを解説します。"
+tags:          [shell, bash, mktemp, trap]
+status:        stable
+stale_after:   2026-12-14T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-30T13:09:04Z
 date:          2016-12-30
 category:      Shell
 cover:         /assets/cover14.jpg

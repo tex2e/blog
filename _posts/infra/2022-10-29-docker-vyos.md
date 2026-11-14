@@ -1,6 +1,30 @@
 ---
 layout:        post
 title:         "[Docker] VyOSの検証環境を構築する"
+type:          How-To
+description:   "DockerとOpen vSwitchを使って2セグメント間にVyOSコンテナを配置したネットワーク検証環境を構築し、疎通確認する手順。"
+tags:          [infra, docker, vyos, openvswitch, network]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-29T14:18:07Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.docker.com/engine/install/ubuntu/
+    title:     "Docker公式のインストール手順"
+  - id:        ref-2
+    resource:  https://togattti.hateblo.jp/entry/2019/06/30/104931
+    title:     "Dockerコンテナでネットワーク検証環境を構築する - togatttiのエンジニアメモ"
+  - id:        ref-3
+    resource:  https://qiita.com/mnagaku/items/f4d8ce881bcfcc14c4c1
+    title:     "dockerに向いてないことを無理矢理やった話（ネットワークがらみ） - Qiita"
+  - id:        ref-4
+    resource:  https://ameblo.jp/principia-ca/entry-12103919307.html
+    title:     "ネットワーク初心者の新卒がDockerでネットワークの勉強をしてみた \\| サイバーエージェント 公式エンジニアブログ"
+  - id:        ref-5
+    resource:  https://github.com/ravens/docker-vyos
+    title:     "ravens/docker-vyos: VyOS inside a container."
 date:          2022-10-29
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] マルチスレッド処理：async/awaitで並列処理"
+type:          How-To
+description:   "C#のasync/awaitを使い非同期メソッドや同期メソッドからTaskを待機・結果取得する方法と、コンパイラによるGetAwaiter継続変換の仕組みを解説します。"
+tags:          [dotnet, csharp, async-await, task]
+status:        stable
+stale_after:   2028-05-25T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-25T13:24:22Z
 date:          2025-05-22
 category:      Dotnet
 cover:         /assets/cover14.jpg

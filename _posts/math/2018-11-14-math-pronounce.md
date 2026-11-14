@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "数式・記号の英語の読み方とLaTeXの書き方"
+type:          Reference
+description:   "論理記号・集合・行列・微分積分・確率など多様な数式記号について、英語での読み方と対応するLaTeXコマンドを一覧表でまとめています。"
+tags:          [math, latex, english, notation]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2018-11-14T12:57:54Z
+sources:
+  - id:        ref-1
+    resource:  http://detexify.kirelabs.org/classify.html
+    title:     "http://detexify.kirelabs.org/classify.html"
 date:          2018-11-14
 category:      Math
 author:        tex2e

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Kali Linux] 起動時に自動ログインできるように設定する"
+type:          How-To
+description:   "Kali Linuxでlightdmやgdm3の設定ファイルを修正し、起動時にパスワード入力なしで自動ログインさせる手順を解説します。"
+tags:          [linux, kali-linux, lightdm, gdm3, autologin]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-04-26T09:56:34Z
 date:          2021-04-22
 category:      Linux
 cover:         /assets/cover14.jpg

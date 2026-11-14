@@ -2,6 +2,32 @@
 layout:        post
 menutitle:     "適量飲酒による認知機能低下の長期的な集団研究 (2017)"
 title:         "適量飲酒による認知機能低下の長期的な集団研究"
+type:          Concept
+description:   "適量飲酒でも海馬萎縮や言語機能低下と関連することを30年間の追跡調査で示した2017年BMJコホート研究の要約です。"
+tags:          [misc, health, alcohol, research-summary]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-08T12:34:43Z
+sources:
+  - id:        ref-1
+    resource:  https://www.bmj.com/content/357/bmj.j2353
+    title:     "Moderate alcohol consumption as risk factor for adverse brain outcomes and cognitive decline: longitudinal cohort study"
+  - id:        ref-2
+    resource:  https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%9B%E3%83%BC%E3%83%88%E7%A0%94%E7%A9%B6
+    title:     "コホート研究"
+  - id:        ref-3
+    resource:  https://ja.wikipedia.org/wiki/%E6%B5%B7%E9%A6%AC_%28%E8%84%B3%29
+    title:     "海馬"
+  - id:        ref-4
+    resource:  https://ja.wikipedia.org/wiki/%E7%81%B0%E7%99%BD%E8%B3%AA
+    title:     "灰白質"
+  - id:        ref-5
+    resource:  https://ja.wikipedia.org/wiki/%E7%99%BD%E8%B3%AA
+    title:     "白質"
+  - id:        ref-6
+    resource:  https://ja.wikipedia.org/wiki/%E8%84%B3%E6%A2%81
+    title:     "脳梁(のうりょう)"
 date:          2020-02-08
 category:      Misc
 cover:         /assets/cover6.jpg

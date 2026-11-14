@@ -1,6 +1,21 @@
 ---
 layout:        book
 title:         "[AWS] AWS Certified Solutions Architect - Professional 勉強ノート"
+type:          Book Chapter
+description:   "AWS Certified Solutions Architect - Professional (SAP-C02)試験に向けた設計戦略やAWSサービスの勉強ノート。"
+tags:          [infra, aws, certification, architecture]
+status:        stable
+stale_after:   2026-04-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-03-15T00:23:32Z
+sources:
+  - id:        ref-1
+    resource:  https://d1.awsstatic.com/ja_JP/training-and-certification/docs-sa-pro/AWS-Certified-Solutions-Architect-Professional_Exam-Guide.pdf
+    title:     "AWS SAP-C02 試験ガイド"
+  - id:        ref-2
+    resource:  https://cloud-license.com/exam/
+    title:     "https://cloud-license.com/exam/"
 date:          2025-03-14
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] フォルダをコピーする (Copy-Item -Recurse)"
+type:          How-To
+description:   "PowerShellのCopy-Item -Recurseでフォルダをコピーする際のTest-Pathによる存在確認と例外処理を説明します。"
+tags:          [powershell, copy-item, file-system]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-05T23:44:39Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-item
+    title:     "Copy-Item (Microsoft.PowerShell.Management) - PowerShell \\| Microsoft Docs"
 date:          2022-03-04
 category:      PowerShell
 cover:         /assets/cover14.jpg

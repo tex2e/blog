@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Node] npmをsudo権限なしでインストールする"
+type:          How-To
+description:   "macOSやLinux環境でsudo権限を使わずにnpmパッケージをグローバルインストールするためのディレクトリ設定とPATH設定手順。"
+tags:          [javascript, npm, nodejs, linux]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-04-26T03:07:49Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.npmjs.com/getting-started/fixing-npm-permissions
+    title:     "\"Fixing `npm` permissions\""
 date:          2017-04-26
 category:      JavaScript
 author:        tex2e

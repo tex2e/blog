@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "GitサーバとGitWebをCentOS 7で構築する"
+type:          How-To
+description:   "CentOS 7上にベアリポジトリを用いたGitサーバとGitWebを構築し、post-updateフックでWebサイトを自動更新する手順。"
+tags:          [git, centos, gitweb, linux, server]
+status:        stable
+stale_after:   2022-03-06T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-12-30T07:12:19Z
 date:          2017-12-31
 category:      Git
 author:        tex2e

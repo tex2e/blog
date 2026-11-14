@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[PowerShell] ファイルの更新を監視する (Get-Content -Wait, FileSystemWatcher)"
+type:          How-To
+description:   "PowerShellのGet-Content -WaitやFileSystemWatcher、Register-ObjectEventを用いてファイルの変更等を監視する方法を解説します。"
+tags:          [powershell, filesystemwatcher, events, file-system]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-17T09:51:12Z
+sources:
+  - id:        ref-1
+    resource:  https://orebibou.com/ja/home/201702/20170226_001/
+    title:     "PowerShellでファイルの作成や編集、削除の検知・モニタリングを行う \\| 俺的備忘録 〜なんかいろいろ〜"
+  - id:        ref-2
+    resource:  https://docs.microsoft.com/ja-jp/dotnet/api/system.io.filesystemwatcher?view=net-6.0
+    title:     "FileSystemWatcher クラス (System.IO) \\| Microsoft Docs"
+  - id:        ref-3
+    resource:  https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/register-engineevent?view=powershell-7.2
+    title:     "Register-EngineEvent (Microsoft.PowerShell.Utility) - PowerShell \\| Microsoft Docs"
 date:          2022-04-17
 category:      PowerShell
 cover:         /assets/cover14.jpg

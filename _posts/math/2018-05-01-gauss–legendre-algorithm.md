@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "πに関するガウス=ルジャンドルのアルゴリズム"
+type:          Concept
+description:   "円周率を高精度かつ高速に反復計算するガウス=ルジャンドルのアルゴリズムについて、初期値設定と漸化式およびπの近似式を解説します。"
+tags:          [math, algorithms, pi]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2023-12-10T02:39:08Z
 date:          2018-05-01
 category:      Math
 cover:         /assets/cover14.jpg

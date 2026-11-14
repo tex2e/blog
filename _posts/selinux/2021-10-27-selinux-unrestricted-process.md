@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxによるコマンドに対する制限を完全に無くす"
 menutitle:     "SELinuxによるコマンドに対する制限を完全に無くす (bin_t, unconfined_service_t)"
+type:          How-To
+description:   "実行ファイルにchcon -t bin_tを設定することで、httpdなどのプロセスをunconfined_service_tとしてSELinux制限なしで動作させる方法を解説します。"
+tags:          [selinux, linux, chcon, unconfined]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-25T11:17:39Z
 date:          2021-10-27
 category:      SELinux
 cover:         /assets/cover6.jpg

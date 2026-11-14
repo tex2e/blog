@@ -66,10 +66,22 @@ touch_index_html() {
     exit
   fi
 
-  cat <<EOS > "_posts/$directory/$(date +%Y-%m-%d)-${2%.md}.md"
+  now_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+  target_file="_posts/$directory/$(date +%Y-%m-%d)-${2%.md}.md"
+  default_tag=$(tr '[:upper:]' '[:lower:]' <<< "${directory1//./}")
+
+  cat <<EOS > "$target_file"
 ---
 layout:        post
+type:          How-To
 title:         "This_is_Awesome"
+description:   "記事の概要を1文で記述する"
+tags:          [$default_tag, todo]
+status:        draft
+# stale_after: $(date -u -v+1y +%Y-%m-%dT00:00:00Z 2>/dev/null || date -u +%Y-%m-%dT00:00:00Z)
+generated:
+  by:          human:tex2e
+  at:          $now_utc
 date:          $(date +%Y-%m-%d)
 category:      $category
 cover:         /assets/$cover
@@ -84,6 +96,10 @@ photoswipe:    false
 
 preface
 EOS
+
+  if command -v ruby >/dev/null 2>&1 && [[ -f scripts/okf.rb ]]; then
+    ruby scripts/okf.rb sync-index >/dev/null || true
+  fi
 
   touch index.html
   touch_index_html &

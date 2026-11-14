@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[JavaScript] Rubyの .times .upto .downto メソッドを作る"
+type:          How-To
+description:   "JavaScriptのNumber.prototypeを拡張してRubyのtimes・upto・downto相当の繰り返しメソッドを実装する方法。"
+tags:          [javascript, ruby, prototype, number]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-04-03
 category:      JavaScript
 author:        tex2e

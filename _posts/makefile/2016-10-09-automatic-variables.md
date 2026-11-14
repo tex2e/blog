@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "Makefile の特殊変数・自動変数の一覧"
+type:          Reference
+description:   "Makefileの自動変数（ターゲットや依存ファイルを表す特殊記号）およびMakeの暗黙ルールで使われる変数と追加引数の意味をまとめた一覧です。"
+tags:          [makefile, gnu-make, variables]
+status:        stable
+stale_after:   2026-09-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3LnhELt
+    title:     "Robert Mecklenburg (著), 矢吹 道郎 (監訳), 菊池 彰 (翻訳)『GNU Make 第3版』2005/12"
+  - id:        ref-2
+    resource:  https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html
+    title:     "GNU make： Automatic Variables"
+  - id:        ref-3
+    resource:  https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html
+    title:     "GNU make： Implicit Variables"
 date:          2016-10-09
 category:      Makefile
 author:        tex2e

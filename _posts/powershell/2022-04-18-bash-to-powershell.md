@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "BashのコマンドとPowerShellコマンドの対応表"
+type:          Reference
+description:   "cp・mv・rm・cat・ls・pwd・cd・dirname・test・sleepなど主要なBashコマンドに対応するPowerShellコマンドレットの対応表です。"
+tags:          [powershell, bash, cheat-sheet]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2022-04-23T08:34:31Z
 date:          2022-04-18
 category:      PowerShell
 cover:         /assets/cover14.jpg

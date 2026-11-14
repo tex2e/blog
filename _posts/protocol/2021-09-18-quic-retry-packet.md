@@ -2,6 +2,27 @@
 layout:        post
 title:         "QUICのRetryパケット"
 menutitle:     "QUIC の Retryパケット"
+type:          Concept
+description:   "QUICにおいてサーバが接続先コネクションIDの検証や変更を要求する際に送信するRetryパケットの役割、ハンドシェイクの流れ、パケット内容を解説します。"
+tags:          [protocol, quic, rfc9000, handshake]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-09-19T01:58:31Z
+sources:
+  - id:        ref-1
+    resource:  "https://www.rfc-editor.org/rfc/rfc9000.html#section-7.3"
+    title:     "RFC 9000 - 7.3. Authenticating Connection IDs"
+  - id:        ref-2
+    resource:  "https://www.rfc-editor.org/rfc/rfc9000#fig-retry"
+    title:     "RFC 9000 - Figure 9: Example Handshake with Retry"
+  - id:        ref-3
+    resource:  https://www.lambdanote.com/collections/frontpage/products/nmonthly-vol-2-no-1-2020
+    title:     "n月刊ラムダノート Vol.2, No.1(2020) – 技術書出版と販売のラムダノート: #1 パケットの設計から見るQUIC（西田佳史）"
+  - id:        ref-4
+    resource:  https://www.rfc-editor.org/rfc/rfc9000
+    title:     "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport"
 date:          2021-09-18
 category:      Protocol
 cover:         /assets/cover5.jpg

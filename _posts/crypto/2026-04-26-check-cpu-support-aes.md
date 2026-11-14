@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "CPUID命令を利用してCPUがAES-NIに対応しているか確認する方法"
+type:          How-To
+description:   "C言語の__get_cpuid関数でCPUID命令を実行してCPUのAES-NI対応を動的に判定する方法と、Linuxの/proc/cpuinfoでの確認手順を解説します。"
+tags:          [crypto, aes-ni, cpuid, c, x86]
+status:        stable
+stale_after:   2029-04-26T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2026-04-26T09:49:15Z
 date:          2026-04-26
 category:      Crypto
 cover:         /assets/cover4.jpg

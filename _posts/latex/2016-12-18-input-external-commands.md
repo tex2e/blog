@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "TeXから外部コマンドを実行する方法"
+type:          How-To
+description:   "TeXのinputコマンドにパイプ付きコマンドを渡しコンパイル時に-shell-escapeオプションを付けて外部処理の結果を埋め込む方法。"
+tags:          [latex, tex, shell-escape]
+status:        stable
+stale_after:   2023-06-20T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-18T06:53:20Z
 date:          2016-12-18
 category:      LaTeX
 author:        tex2e

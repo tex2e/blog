@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "UUID (GUID) とは"
+type:          Concept
+description:   "一意な識別子であるUUID（RFC 4122）とMicrosoftのGUIDの仕様上の違いや、バージョン別の生成方式と構造について解説します。"
+tags:          [protocol, uuid, guid, rfc4122]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-04-06T11:59:54Z
+sources:
+  - id:        ref-1
+    resource:  https://tools.ietf.org/html/rfc4122
+    title:     "RFC4122"
+  - id:        ref-2
+    resource:  https://stackoverflow.com/questions/246930/is-there-any-difference-between-a-guid-and-a-uuid
+    title:     "Is there any difference between a GUID and a UUID? - Stack Overflow"
 date:          2021-04-03
 category:      Protocol
 cover:         /assets/cover5.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Gitの使い方（コマンド）"
+type:          Reference
+description:   "Gitの基本的な作業フローに沿ってinit、clone、commit、push、branch、mergeなど主要コマンドの書式と例を整理。"
+tags:          [git, cli, version-control]
+status:        stable
+stale_after:   2019-12-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-09-23
 category:      Git
 author:        tex2e

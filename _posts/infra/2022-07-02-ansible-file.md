@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Ansible] fileモジュールでfileやdirの権限を設定する"
+type:          How-To
+description:   "Ansibleのansible.builtin.fileモジュールを使い、ディレクトリ作成、ファイルへの実行権限付与、シンボリックリンク作成を行う方法。"
+tags:          [infra, ansible, linux, permissions]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-10T13:10:20Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/latest/collections/ansible/builtin/file_module.html
+    title:     "ansible.builtin.file module – Manage files and file properties — Ansible Documentation"
 date:          2022-07-02
 category:      Infrastructure
 cover:         /assets/cover14.jpg

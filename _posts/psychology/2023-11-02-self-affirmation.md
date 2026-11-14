@@ -1,6 +1,26 @@
 ---
 layout:        post
 title:         "自己肯定感・自己効力感"
+type:          Concept
+description:   "自尊感情や自己受容感、自己効力感、自己信頼感、自己決定感、自己有用感など自己肯定感を構成する6つの感覚を整理して解説。"
+tags:          [psychology, self-affirmation, self-efficacy, self-esteem]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2023-11-04T04:06:23Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3QJRSEq
+    title:     "何があっても「大丈夫。」と思えるようになる 自己肯定感の教科書"
+  - id:        ref-2
+    resource:  https://amzn.to/45TRurr
+    title:     "コーチング心理学ガイドブック"
+  - id:        ref-3
+    resource:  https://amzn.to/3sjFLod
+    title:     "教育課程コアカリキュラムに対応した教育心理学"
+  - id:        ref-4
+    resource:  https://www.youtube.com/watch?v=CrXbb7X9xIc
+    title:     "【自己肯定感の育て方】スタンフォード式 親子でできるメンタルトレーニング／危険な自己肯定感・求めるべき自己肯定感／最新の脳科学・心理学200以上の研究論文に裏打ちされた子育てメソッド - YouTube"
 date:          2023-11-02
 category:      Psychology
 cover:         /assets/cover14.jpg

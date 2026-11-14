@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Windows] WinSCPでファイルダウンロードを自動化する"
+type:          How-To
+description:   "WinSCP.exeの/console・/commandオプションとopen・get・putコマンドを使い、バッチからファイル転送を自動化する方法を解説。"
+tags:          [windows-batch, winscp, cmd, automation]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-08-13T08:26:31Z
+sources:
+  - id:        ref-1
+    resource:  "https://osdn.net/projects/winscp/wiki/script_commands#option"
+    title:     "コマンドリファレンス - WinSCP Wiki - WinSCP - OSDN"
+  - id:        ref-2
+    resource:  https://winscp.net/eng/docs/scripting
+    title:     "Scripting and Task Automation :: WinSCP"
 date:          2020-08-13
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

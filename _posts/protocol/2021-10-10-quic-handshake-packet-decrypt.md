@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "QUIC の Handshake Packet を復号する"
+type:          How-To
+description:   "QUICのInitial Packetで交換したDiffie-Hellman公開鍵から共有鍵とTLS鍵スケジュールを導出し、Handshake PacketをPythonで復号する手順を解説します。"
+tags:          [protocol, quic, tls13, python]
+status:        stable
+stale_after:   2025-03-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-09T14:17:09Z
+sources:
+  - id:        ref-1
+    resource:  https://datatracker.ietf.org/doc/html/rfc8446
+    title:     "RFC 8446"
+  - id:        ref-2
+    resource:  https://datatracker.ietf.org/doc/html/rfc5869
+    title:     "RFC 5869"
+  - id:        ref-3
+    resource:  "https://datatracker.ietf.org/doc/html/rfc5869#section-1"
+    title:     "RFC 5869"
+  - id:        ref-4
+    resource:  "https://datatracker.ietf.org/doc/html/rfc8446#section-7.1"
+    title:     "RFC 8446 - 7.1"
+  - id:        ref-5
+    resource:  https://github.com/tex2e/elliptic-curves
+    title:     "tex2e/elliptic-curves"
+  - id:        ref-6
+    resource:  https://github.com/tex2e/mako-tls13/blob/master/protocol_tlscontext.py
+    title:     "mako-tls13/protocol_tlscontext.py"
 date:          2021-10-10
 category:      Protocol
 cover:         /assets/cover5.jpg

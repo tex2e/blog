@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] ローカルのAdministratorsグループに所属するアカウントの確認"
+type:          How-To
+description:   "コマンドプロンプトのnet localgroup administratorsでローカル管理者グループ所属アカウントを確認し不要ユーザを削除する方法を解説。"
+tags:          [windows, cmd, administration, security]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T07:38:55Z
 date:          2021-11-18
 category:      Windows
 cover:         /assets/cover14.jpg

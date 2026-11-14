@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[VB.NET] 文字列を指定のバイト数で切り取る"
+type:          How-To
+description:   "VB.NETのShift_JISエンコーディングで漢字の途中分断を回避しつつ、文字列を指定バイト数以内に切り取る関数の実装を解説。"
+tags:          [vb-net, dotnet, string, encoding]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-03-14T12:29:55Z
 date:          2021-03-10
 category:      VB.NET
 cover:         /assets/cover14.jpg

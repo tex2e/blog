@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[VB.NET] DataTableから条件に合う行だけを更新する"
+type:          How-To
+description:   "VB.NETのDataTable.Selectで条件に合う行を抽出し、元テーブルへの参照を活かして該当行の値のみを更新する方法を解説。"
+tags:          [vb-net, dotnet, datatable, ado-net]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-07T12:41:19Z
 date:          2020-07-05
 category:      VB.NET
 cover:         /assets/cover14.jpg

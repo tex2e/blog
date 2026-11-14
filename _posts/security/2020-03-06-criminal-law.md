@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "コンピュータ関連犯罪を裁く法律"
+type:          Reference
+description:   "日本の刑法から電磁的記録不正作出や不正指令電磁的記録、電子計算機損壊等業務妨害などコンピュータ関連犯罪の条文を抜粋。"
+tags:          [security, law, cybercrime, penal-code]
+status:        stable
+stale_after:   2027-12-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-03-06T10:24:18Z
+sources:
+  - id:        ref-1
+    resource:  https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=140AC0000000045
+    title:     "刑法 - e-Gov"
+  - id:        ref-2
+    resource:  https://ja.wikibooks.org/wiki/%E3%82%B3%E3%83%B3%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%AB%E5%88%91%E6%B3%95
+    title:     "コンメンタール刑法 - Wikibooks"
 date:          2020-03-06
 category:      Security
 cover:         /assets/cover14.jpg

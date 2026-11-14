@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "nmcliコマンドでLinuxサーバの固定IPの変更をすぐに反映する"
+type:          How-To
+description:   "nmtuiで変更したLinuxサーバの固定IPアドレス設定をnmcli device connectコマンドで即時反映する手順。"
+tags:          [infra, linux, nmcli, network]
+status:        stable
+stale_after:   2027-11-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-30T02:57:13Z
 date:          2024-11-27
 category:      Infrastructure
 cover:         /assets/cover14.jpg

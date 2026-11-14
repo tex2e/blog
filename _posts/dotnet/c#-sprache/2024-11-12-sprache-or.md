@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで複数の選択肢を読み取る (Or)"
+type:          Reference
+description:   "C#のSpracheで複数の解析候補を切り替えるOrとバックトラックを抑制するXOrの違いやメソッド仕様、使用例をまとめたリファレンス。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-10T03:27:49Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2020-03-30-sprache4-or/
+    title:     "Sprache Part 4: Or and XOr - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L432"
+    title:     "Sprache/src/Sprache/Parse.cs -- Or"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L477"
+    title:     "Sprache/src/Sprache/Parse.cs -- XOr"
 date:          2024-11-12
 category:      Dotnet
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "入出力リダイレクタでファイルを上書き更新する"
+type:          How-To
+description:   "一時ファイルを作成せずBashの入出力リダイレクタとtrやsedを組み合わせて、ファイルを直接上書き更新する方法と仕組みの考察を解説します。"
+tags:          [shell, bash, redirection, sed]
+status:        stable
+stale_after:   2023-01-04T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-01-04T10:19:20Z
 date:          2020-01-04
 category:      Shell
 cover:         /assets/cover14.jpg

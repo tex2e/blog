@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "SELinuxのポリシーパッケージ (.pp) を CIL に変換して中身を確認する"
+type:          How-To
+description:   "バイナリ形式のSELinuxポリシーパッケージ(.pp)を/usr/libexec/selinux/hll/ppコマンドで可読なCIL形式に変換し、内容を確認する方法を解説します。"
+tags:          [selinux, linux, cil, policy-package]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-01-23T13:32:00Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/SELinuxProject/selinux-notebook
+    title:     "SELinuxProject/selinux-notebook: The SELinux Notebook"
+  - id:        ref-2
+    resource:  https://github.com/SELinuxProject/selinux-notebook/blob/main/src/types_of_policy.md
+    title:     "SELinux Notebook -- Types of SELinux Policy"
 date:          2022-01-21
 category:      SELinux
 cover:         /assets/cover6.jpg

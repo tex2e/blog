@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "BINDで再帰問い合わせを無効化する"
+type:          How-To
+description:   "DNS増幅攻撃対策としてBINDのnamed.confでrecursion noを設定し、再帰問い合わせを無効化する手順と動作の違いを解説します。"
+tags:          [linux, bind, dns, security]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-28T14:45:43Z
 date:          2021-11-06
 category:      Linux
 cover:         /assets/cover14.jpg

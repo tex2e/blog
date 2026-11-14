@@ -2,8 +2,19 @@
 layout:        post
 title:         "Postfix & Dovecot のサーバ構築"
 menutitle:     "Postfix & Dovecot のサーバ構築"
+type:          How-To
+description:   "CentOS環境にPostfixとDovecotをインストールしてMaildir形式を用いたSMTPおよびPOP3メールサーバを構築・疎通確認する手順。"
+tags:          [linux, postfix, dovecot, mail-server, centos]
+status:        stable
+stale_after:   2024-10-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-09T05:05:36Z
+sources:
+  - id:        ref-1
+    resource:  https://qiita.com/d-ebi/items/0809dd1aaed763b7eb66
+    title:     "SMTPサーバとPOPサーバの実験を交えた詳解"
 date:          2019-03-09
-tags:          Linux
 category:      Linux
 author:        tex2e
 cover:         /assets/cover14.jpg

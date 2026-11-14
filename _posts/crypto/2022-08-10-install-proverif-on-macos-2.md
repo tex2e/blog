@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[ProVerif] MacOS (Monterey) にProVerifをインストールする"
+type:          How-To
+description:   "macOS MontereyへHomebrewとOPAMを用いて形式検証ツールProVerif 2.04をインストールするコマンド手順と実行ログ。"
+tags:          [crypto, proverif, macos, opam, installation]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-08-14T00:01:07Z
 date:          2022-08-10
 category:      Crypto
 cover:         /assets/cover4.jpg

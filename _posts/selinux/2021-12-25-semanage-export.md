@@ -2,6 +2,18 @@
 layout:        post
 title:         "SELinuxで個別追加した設定を別のサーバにも適用する"
 menutitle:     "SELinuxで個別追加した設定を別のサーバにも適用する (semanage export/import)"
+type:          How-To
+description:   "semanage exportとsemanage importを使い、SELinuxに追加した個別設定をテキスト出力して別のサーバへ移行・適用する方法を解説します。"
+tags:          [selinux, linux, semanage, migration]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-25T13:17:09Z
+sources:
+  - id:        ref-1
+    resource:  https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/8/html/using_selinux/transferring-selinux-settings-to-another-system-with-semanage_deploying-the-same-selinux-configuration-on-multiple-systems
+    title:     "9.3. Transferring SELinux settings to another system with semanage Red Hat Enterprise Linux 8 \\| Red Hat Customer Portal"
 date:          2021-12-25
 category:      SELinux
 cover:         /assets/cover6.jpg

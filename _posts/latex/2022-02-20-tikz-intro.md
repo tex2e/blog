@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "LaTeX + TikZ を使った画像作成"
+type:          How-To
+description:   "LaTeXとTikZパッケージを用いてPDFやPNG形式の画像を生成し直線やベジェ曲線、円などの図形を描画する方法を解説。"
+tags:          [latex, tikz, graphics]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-02-20T06:56:32Z
 date:          2022-02-20
 category:      LaTeX
 cover:         /assets/cover14.jpg

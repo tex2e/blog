@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Ansible] lineinfileモジュールでファイルに行を追加する"
+type:          How-To
+description:   "Ansibleのansible.builtin.lineinfileモジュールを使い、正規表現マッチによる行置換や新規行の追加を設定ファイルに行う方法。"
+tags:          [infra, ansible, linux]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-16T03:40:53Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/latest/modules/lineinfile_module.html
+    title:     "lineinfile – Manage lines in text files — Ansible Documentation"
 date:          2022-07-15
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] バッチのfor文で変数を遅延展開する"
+type:          How-To
+description:   "Windowsバッチのfor文内で最新の変数値を得るため、EnableDelayedExpansionを有効化し!変数名!で遅延展開する手順を解説。"
+tags:          [windows-batch, cmd, for-loop, delayed-expansion]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-09T02:35:41Z
 date:          2022-07-09
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

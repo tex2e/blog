@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[ProVerif] MacOSにProVerifをインストールする"
+type:          How-To
+description:   "macOSへHomebrewとOPAMでProVerifをインストールする手順と、lablgtkのlibffiエラー解消法を解説。"
+tags:          [crypto, proverif, macos, opam, installation]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-09-02T10:37:26Z
+sources:
+  - id:        ref-1
+    resource:  https://prosecco.gforge.inria.fr/personal/bblanche/proverif/manual.pdf
+    title:     "ProVerif 2.00: Automatic Cryptographic Protocol Verifier, User Manual and Tutorial"
+  - id:        ref-2
+    resource:  https://prosecco.gforge.inria.fr/personal/bblanche/proverif/
+    title:     "ProVerif: Cryptographic protocol verifier in the formal model"
+  - id:        ref-3
+    resource:  http://lablgtk.forge.ocamlcore.org/
+    title:     "LablGtk is an OCaml interface to GTK+ 1.2, 2.x, and 3.x."
+  - id:        ref-4
+    resource:  https://github.com/lovell/sharp/issues/1603
+    title:     "Package libffi was not found in the pkg-config search path #1603"
 date:          2019-09-02
 category:      Crypto
 author:        tex2e

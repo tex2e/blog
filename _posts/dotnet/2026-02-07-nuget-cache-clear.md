@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "NuGetパッケージのキャッシュをクリアする方法"
+type:          How-To
+description:   "NuGetの最新パッケージが取得できない場合に備え、Visual Studioの設定画面およびdotnet nuget localsコマンドからローカルキャッシュを削除する手順を解説します。"
+tags:          [dotnet, nuget, visual-studio, cache]
+status:        stable
+stale_after:   2029-02-08T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2026-02-08T00:11:23Z
 date:          2026-02-07
 category:      Dotnet
 cover:         /assets/cover14.jpg

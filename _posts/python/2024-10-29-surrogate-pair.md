@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Python] サロゲートペアのバイト列を文字列に変換する方法"
+type:          How-To
+description:   "PythonでUTF-16のサロゲートペアを含む文字列やバイト列をencodeのsurrogatepass指定やdecodeで文字変換する方法。"
+tags:          [python, unicode, surrogate-pair, utf-16]
+status:        stable
+stale_after:   2027-10-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-29T07:56:18Z
+sources:
+  - id:        ref-1
+    resource:  https://stackoverflow.com/questions/38147259/how-can-i-convert-surrogate-pairs-to-normal-string-in-python
+    title:     "How can I convert surrogate pairs to normal string in Python? - Stack Overflow"
+  - id:        ref-2
+    resource:  https://www.tohoho-web.com/ex/charset.html
+    title:     "とほほの文字コード入門 - とほほのWWW入門"
 date:          2024-10-29
 category:      Python
 cover:         /assets/cover14.jpg

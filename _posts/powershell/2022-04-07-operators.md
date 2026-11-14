@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] 演算子の使い方の一覧"
+type:          Reference
+description:   "PowerShell独自の比較・パターンマッチ・正規表現・型判定・論理・ビット・算術などの各演算子の意味と使用例を一覧で解説します。"
+tags:          [powershell, operators, syntax]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-07T11:23:16Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/42fi9yD
+    title:     "Windows PowerShellクックブック"
 date:          2022-04-07
 category:      PowerShell
 cover:         /assets/cover14.jpg

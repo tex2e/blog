@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "マイナンバー制度と情報連携（団体内統合宛名）"
+type:          Concept
+description:   "自治体における団体内統合宛名機能と機関別符号の仕組み、中間サーバを介した副本登録および他機関との情報照会（情報連携）の流れを解説します。"
+tags:          [protocol, mynumber, information-linkage, government]
+status:        stable
+stale_after:   2027-12-26T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-07-08T02:02:52Z
+sources:
+  - id:        ref-1
+    resource:  https://www.digital.go.jp/policies/mynumber/explanation
+    title:     "マイナンバー制度とは（デジタル庁）"
+  - id:        ref-2
+    resource:  https://www.moj.go.jp/content/001154671.pdf
+    title:     "1-1マイナンバー付番の仕組み（法務省）"
+  - id:        ref-3
+    resource:  https://www.soumu.go.jp/main_content/000767707.pdf
+    title:     "住民基本台帳ネットワークシステムについて（総務省）令和3年9月2日 総務省自治行政局"
+  - id:        ref-4
+    resource:  https://www.soumu.go.jp/main_content/000429540.pdf
+    title:     "マイナンバー制度における情報連携について（総務省）平成28年5月 総務省個人番号企画室"
+  - id:        ref-5
+    resource:  https://www.soumu.go.jp/main_content/000691748.pdf
+    title:     "マイナンバー制度による情報連携（総務省）令和2年5月 内閣官房番号制度推進室, 総務省大臣官房個人番号企画室"
+  - id:        ref-6
+    resource:  https://www.digital.go.jp/policies/local_governments/common-feature-specification
+    title:     "共通機能の標準仕様｜デジタル庁"
 date:          2023-07-10
 category:      Protocol
 cover:         /assets/cover14.jpg

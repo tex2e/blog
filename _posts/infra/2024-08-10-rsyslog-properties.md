@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[rsyslog] ifやテンプレートで使えるプロパティの一覧"
+type:          Reference
+description:   "rsyslogのテンプレートや条件式で利用可能なメッセージプロパティ、システムプロパティ、時間関連プロパティの一覧と用途を解説。"
+tags:          [infra, rsyslog, linux, logging]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-08T12:50:48Z
+sources:
+  - id:        ref-1
+    resource:  https://www.rsyslog.com/doc/configuration/properties.html
+    title:     "rsyslog Properties — Rsyslog documentation"
 date:          2024-08-10
 category:      Infrastructure
 cover:         /assets/cover14.jpg

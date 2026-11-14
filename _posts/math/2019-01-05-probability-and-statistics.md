@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "確率統計 公式一覧"
+type:          Reference
+description:   "条件付き確率とベイズの定理、分散や共分散・相関係数、離散・連続確率分布、中心極限定理、区間推定と統計的検定までの公式をまとめています。"
+tags:          [math, probability, statistics, formulas]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-01-11T07:59:30Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3XEkSxz
+    title:     "新確率統計 - 大日本図書"
 date:          2019-01-05
 category:      Math
 cover:         /assets/cover14.jpg

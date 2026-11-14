@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] ConvertFrom-CSVでタブ区切り (TSV) をforeachで1行ずつ処理する"
+type:          How-To
+description:   "PowerShellでヒアドキュメントのTSV文字列をConvertFrom-CSVで変換し、foreachで1行ずつ処理する方法を示します。"
+tags:          [powershell, convertfrom-csv, tsv, csv]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-05T23:44:18Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/Microsoft.PowerShell.Utility/ConvertFrom-Csv?view=powershell-7.2
+    title:     "ConvertFrom-Csv (Microsoft.PowerShell.Utility) - PowerShell \\| Microsoft Docs"
 date:          2022-03-03
 category:      PowerShell
 cover:         /assets/cover14.jpg

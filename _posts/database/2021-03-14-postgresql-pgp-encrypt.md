@@ -1,6 +1,30 @@
 ---
 layout:        post
 title:         "[PostgreSQL] 共通鍵によるデータ暗号化・復号"
+type:          How-To
+description:   "PostgreSQLのpgcrypto拡張を導入し、pgp_sym_encryptとpgp_sym_decrypt関数やbytea型を使って共通鍵でデータを暗号化・復号する方法を解説します。"
+tags:          [database, postgresql, pgcrypto, encryption, sql]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-03-14T12:31:31Z
+sources:
+  - id:        ref-1
+    resource:  https://www.postgresql.jp/document/9.4/html/pgcrypto.html
+    title:     "pgcrypto (日本語)"
+  - id:        ref-2
+    resource:  https://www.postgresql.org/docs/9.3/pgcrypto.html
+    title:     "PostgreSQL: Documentation: 9.3: pgcrypto (英語公式)"
+  - id:        ref-3
+    resource:  https://dev.classmethod.jp/articles/data-encryption-on-rds-for-postgresql/
+    title:     "RDS for PostgreSQLでデータを暗号化する \\| DevelopersIO"
+  - id:        ref-4
+    resource:  https://qiita.com/niharu/items/f812ca3ba924ed94eefd
+    title:     "PostgreSQLでpgcryptoを使ったデータ暗号化 - Qiita"
+  - id:        ref-5
+    resource:  https://www.postgresql.jp/document/9.2/html/sql-createfunction.html
+    title:     "CREATE FUNCTION"
 date:          2021-03-14
 category:      Database
 cover:         /assets/cover14.jpg

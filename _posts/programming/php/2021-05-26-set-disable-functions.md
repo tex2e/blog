@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PHP] php.iniで危険な関数を無効化する"
+type:          How-To
+description:   "PHPのWebシェルや任意コード実行を防ぐため、php.iniのdisable_functionsでevalやexecなど危険な関数を無効化する設定方法と各関数の概要を解説します。"
+tags:          [programming, php, security, php-ini]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-05-27T11:13:16Z
+sources:
+  - id:        ref-1
+    resource:  https://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html
+    title:     "Linux 25 PHP Security Best Practices For Sys Admins - nixCraft"
 date:          2021-05-26
 category:      Programming
 cover:         /assets/cover14.jpg

@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "QUIC の TLS ClientHello を解析する"
+type:          How-To
+description:   "QUICのCRYPTOフレームに格納されたTLSハンドシェイクメッセージ（ClientHello・ServerHelloやQUIC拡張）をPythonで解析する方法を解説します。"
+tags:          [protocol, quic, tls13, python]
+status:        stable
+stale_after:   2025-03-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-08-16T06:46:18Z
+sources:
+  - id:        ref-1
+    resource:  "https://www.rfc-editor.org/rfc/rfc9001#section-a.2"
+    title:     "RFC 9001 - A.2. Client Initial"
+  - id:        ref-2
+    resource:  "https://www.rfc-editor.org/rfc/rfc9000.html#section-16"
+    title:     "可変長整数エンコード (Variable-Length Integer Encoding)"
+  - id:        ref-3
+    resource:  "https://www.rfc-editor.org/rfc/rfc9000.html#section-19.6"
+    title:     "RFC 9000 - 19.6. CRYPTO Frames"
+  - id:        ref-4
+    resource:  "https://www.rfc-editor.org/rfc/rfc9000.html#section-19.3"
+    title:     "RFC 9000 - 19.3. ACK Frames"
+  - id:        ref-5
+    resource:  "https://www.rfc-editor.org/rfc/rfc9000#section-19.1"
+    title:     "RFC 9000 - 19.1. PADDING Frames"
+  - id:        ref-6
+    resource:  "https://www.rfc-editor.org/rfc/rfc9000#section-8.1"
+    title:     "RFC 9000 - 8.1. Address Validation during Connection Establishment"
 date:          2021-08-16
 category:      Protocol
 cover:         /assets/cover5.jpg

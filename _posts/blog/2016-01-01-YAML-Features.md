@@ -2,8 +2,24 @@
 layout:        post
 title:         "YAML Custom Features"
 menutitle:     "JekyllDecent : YAML Features"
+type:          Template
+description:   "Documents custom YAML front matter fields in Jekyll Decent including menutitle, redirect_from, cover, and language."
+tags:          [blog, jekyll, yaml, front-matter, demo]
+status:        draft
+generated:
+  by:          human:jwillmer
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  http://www.w3schools.com/tags/ref_language_codes.asp
+    title:     "language codes"
+  - id:        ref-2
+    resource:  https://disqus.com/
+    title:     "disqus"
+  - id:        ref-3
+    resource:  https://jekyllrb.com/docs/frontmatter/
+    title:     "YAML Front Matter documentation"
 date:          2016-04-06 00:40:00 +0300
-tags:          Jekyll YAML Features Explained
 category:      Blog
 author:        jwillmer
 cover:         /assets/cover1.jpg

@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "Dirty Pipeの脆弱性をSELinuxで緩和する"
+type:          How-To
+description:   "Linuxカーネルの脆弱性Dirty Pipe(CVE-2022-0847)に対し、SELinuxユーザの制限ドメインを用いてPoCによる権限昇格を緩和する検証と対策を解説します。"
+tags:          [selinux, cve-2022-0847, dirty-pipe, privilege-escalation, linux]
+status:        stable
+stale_after:   2023-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-15T14:15:30Z
+sources:
+  - id:        ref-1
+    resource:  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0847
+    title:     "CVE-2022-0847"
+  - id:        ref-2
+    resource:  https://dirtypipe.cm4all.com/
+    title:     "The Dirty Pipe Vulnerability — The Dirty Pipe Vulnerability documentation"
+  - id:        ref-3
+    resource:  https://www.exploit-db.com/exploits/50808
+    title:     "Linux Kernel 5.8 < 5.16.11 - Local Privilege Escalation (DirtyPipe) - Linux local Exploit"
+  - id:        ref-4
+    resource:  https://knqyf263.hatenablog.com/entry/2022/03/11/105130
+    title:     "20分で分かるDirty Pipe（CVE-2022-0847） - knqyf263's blog"
+  - id:        ref-5
+    resource:  https://security.sios.com/vulnerability/kernel-security-vulnerability-20220309.html
+    title:     "Linux Kernelの脆弱性(Important: CVE-2022-0847 (Dirty Pipe)) - security.sios.com"
+  - id:        ref-6
+    resource:  https://access.redhat.com/security/vulnerabilities/RHSB-2022-002
+    title:     "RHSB-2022-002 Dirty Pipe - kernel arbitrary file manipulation - (CVE-2022-0847) - Red Hat Customer Portal"
 date:          2022-03-15
 category:      SELinux
 cover:         /assets/cover6.jpg

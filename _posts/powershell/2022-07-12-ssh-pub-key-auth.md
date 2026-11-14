@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] コンソールでSSH公開鍵認証をする"
+type:          How-To
+description:   "Windows 10のPowerShell標準のOpenSSHを使い、SSH鍵生成からサーバへの公開鍵登録、秘密鍵を指定したSSH接続手順を説明します。"
+tags:          [powershell, ssh, windows, public-key-auth]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-12T13:50:22Z
 date:          2022-07-12
 category:      PowerShell
 cover:         /assets/cover14.jpg

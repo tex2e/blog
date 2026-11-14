@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] Pythonのtelnetlibでメールを送信する"
+type:          How-To
+description:   "Pythonのtelnetlibを使ってSMTPプロトコルでメール送信テストを行う手順と、検証用Postfixサーバの構築・確認方法。"
+tags:          [python, smtp, postfix, telnetlib]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-04T12:52:10Z
 date:          2021-11-04
 category:      Python
 cover:         /assets/cover14.jpg

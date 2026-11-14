@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "systemdからinit.dのスクリプトを呼び出すまでの流れ"
+type:          Concept
+description:   "起動時にsystemd-sysv-generatorが/etc/rc?.d配下のinit.dスクリプトをユニットへ変換しsystemctlから制御可能にする仕組みを解説します。"
+tags:          [linux, systemd, initd]
+status:        stable
+stale_after:   2026-11-12T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-11-12T01:23:11Z
+sources:
+  - id:        ref-1
+    resource:  https://unix.stackexchange.com/questions/233468/how-does-systemd-use-etc-init-d-scripts
+    title:     "How does systemd use /etc/init.d scripts? - Unix & Linux Stack Exchange"
+  - id:        ref-2
+    resource:  https://www.veritas.com/support/ja_JP/article.100036901
+    title:     "systemd を採用した Linux に NetBackup をインストールすると、NetBackup サービスは自動的に起動しません。"
 date:          2023-11-13
 category:      Linux
 cover:         /assets/cover14.jpg

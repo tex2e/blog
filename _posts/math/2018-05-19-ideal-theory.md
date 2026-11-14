@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "イデアル論入門の英語用語集"
+type:          Reference
+description:   "『イデアル論入門』に沿って群・環・イデアル・素イデアル・準素イデアル・ネーター環に関する数学用語の日本語と英語の対訳をまとめた用語集です。"
+tags:          [math, algebra, ideal-theory, glossary]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2018-05-19T02:41:26Z
 date:          2018-05-19
 category:      Math
 author:        tex2e

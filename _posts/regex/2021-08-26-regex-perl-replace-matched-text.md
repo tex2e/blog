@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Regex] Perlでマッチした文字列を式や関数を使って変換する"
+type:          How-To
+description:   "Perlの正規表現置換s///にeオプションを付与し、キャプチャした文字列を式や関数で動的に加工して置換する方法を解説。"
+tags:          [regex, perl, programming]
+status:        stable
+stale_after:   2026-02-19T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-09-03T10:14:18Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3IxSBV4
+    title:     "詳説 正規表現 第3版 - O'Reilly Japan"
 date:          2021-08-26
 category:      Programming
 cover:         /assets/cover14.jpg

@@ -2,6 +2,14 @@
 layout:        post
 title:         "ApacheとNginxプロセスのSELinuxコンテキスト"
 menutitle:     "ApacheとNginxプロセスのSELinuxコンテキスト (httpd_tタイプ) "
+type:          Concept
+description:   "ApacheとNginxはどちらもSELinux上で同じhttpd_tドメインで動作し、http_port_tや関連ブール値が共通適用されることをps -eZで確認します。"
+tags:          [selinux, apache, nginx, httpd]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-23T09:34:38Z
 date:          2021-10-21
 category:      SELinux
 cover:         /assets/cover6.jpg

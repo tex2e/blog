@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] マルチスレッド処理：スレッドセーフなキュー (ConcurrentQueue)"
+type:          How-To
+description:   "C#のConcurrentQueueを用いたProducer-Consumerパターンの実装方法と、Enqueue・TryDequeue・TryPeekの使い方およびnull返却時の注意点を解説します。"
+tags:          [dotnet, csharp, multithreading, concurrentqueue]
+status:        stable
+stale_after:   2028-05-25T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-25T13:23:48Z
 date:          2025-05-21
 category:      Dotnet
 cover:         /assets/cover14.jpg

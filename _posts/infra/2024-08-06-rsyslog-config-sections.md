@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[rsyslog] rsyslog.conf の構成と書き方"
+type:          Reference
+description:   "rsyslog.confを構成するグローバル設定、テンプレート、フィルタとアクションによるルールの基本構文と記述例を解説。"
+tags:          [infra, rsyslog, linux, logging]
+status:        stable
+stale_after:   2027-08-06T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-06T03:44:52Z
+sources:
+  - id:        ref-1
+    resource:  https://www.rsyslog.com/doc/index.html
+    title:     "Welcome to Rsyslog — Rsyslog documentation"
 date:          2024-08-06
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,23 @@
 ---
 layout:        post
 title:         "プライバシー保護技術 (PETs)"
+type:          Concept
+description:   "データ利活用とプライバシー保護を両立するPETs（差分プライバシー・統合分析・準同型暗号・秘密分散・ゼロ知識証明）を解説。"
+tags:          [crypto, privacy, pets, differential-privacy, zkp]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-02-03T12:53:38Z
+sources:
+  - id:        ref-1
+    resource:  https://www.nri-secure.co.jp/blog/pets
+    title:     "【解説】プライバシー保護の技術｜PETs（Privacy-enhancing technologies）とは？｜ブログ｜NRIセキュア"
+  - id:        ref-2
+    resource:  https://amzn.to/42rIrO9
+    title:     "佐久間 淳『データ解析におけるプライバシー保護 (機械学習プロフェッショナルシリーズ)』講談社 (2016/8/25)"
+  - id:        ref-3
+    resource:  https://amzn.to/4br9iOD
+    title:     "デロイトトーマツ『ゼロ知識証明入門』翔泳社 (2021/4/1)"
 date:          2024-02-01
 category:      Crypto
 cover:         /assets/cover4.jpg

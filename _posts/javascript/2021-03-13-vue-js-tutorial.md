@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Vue] Vue.jsを初めて使う人のための入門"
+type:          How-To
+description:   "Vue.jsの基本的な使い方としてデータ展開やv-bind・v-model・v-on・v-if・v-for・computedなどの主要ディレクティブを解説。"
+tags:          [javascript, vuejs, frontend, tutorial]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-03-14T12:30:57Z
 date:          2021-03-13
 category:      JavaScript
 cover:         /assets/cover14.jpg

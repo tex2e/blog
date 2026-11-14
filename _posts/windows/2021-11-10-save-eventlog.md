@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] イベントログを保存する"
+type:          How-To
+description:   "Windowsのイベントビューアーで期間フィルターを適用したセキュリティログをevtx形式および日本語表示情報付きで保存する手順を解説。"
+tags:          [windows, event-log, security-log]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-07T23:30:00Z
 date:          2021-11-10
 category:      Windows
 cover:         /assets/cover14.jpg

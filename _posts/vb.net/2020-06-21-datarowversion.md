@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[VB.NET] DataRow変更前後の値をDataRowVersionで取得する"
+type:          How-To
+description:   "VB.NETでAcceptChangesやBeginEdit/EndEditを使い、DataRowVersionを指定して編集前後の行の値を取得する方法。"
+tags:          [vb-net, dotnet, datarow, ado-net]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-06-21T01:17:09Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/en-us/dotnet/api/system.data.datarowversion?view=netcore-3.1
+    title:     "DataRowVersion Enum (System.Data) \\| Microsoft Docs"
 date:          2020-06-21
 category:      VB.NET
 cover:         /assets/cover14.jpg

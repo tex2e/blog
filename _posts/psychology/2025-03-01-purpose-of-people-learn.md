@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "人が学ぶ目的"
+type:          Concept
+description:   "アドラー心理学の目的論や共同体感覚、ポジティブ心理学の視点から、自己成長・社会貢献・幸福の追求という学びの目的を解説。"
+tags:          [psychology, learning, adlerian-psychology, positive-psychology]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2025-03-16T09:08:57Z
 date:          2025-03-01
 category:      Psychology
 cover:         /assets/cover14.jpg

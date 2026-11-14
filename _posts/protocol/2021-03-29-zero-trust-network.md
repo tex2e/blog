@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "ゼロトラストネットワークとは"
+type:          Concept
+description:   "境界防御の限界を背景に生まれたゼロトラストネットワークの目的、基本7原則、動的な信用度評価に基づく認証フロー、関連技術を解説します。"
+tags:          [protocol, zero-trust, network-security, architecture]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-04-02T14:53:32Z
+sources:
+  - id:        ref-1
+    resource:  https://csrc.nist.gov/publications/detail/sp/800-207/final
+    title:     "SP 800-207, Zero Trust Architecture \\| CSRC"
+  - id:        ref-2
+    resource:  https://cio.go.jp/dp2020_03
+    title:     "政府情報システムにおけるゼロトラスト適用に向けた考え方 \\| 政府CIOポータル"
 date:          2021-03-29
 category:      Protocol
 cover:         /assets/cover5.jpg

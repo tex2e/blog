@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "AutoHotKeyでMacOS風のキーボード"
+type:          How-To
+description:   "Windows上でAutoHotkeyを使い変換・無変換でのIME切替やCtrlカーソル移動などMac風のキー操作を実現する設定方法。"
+tags:          [keyboard, autohotkey, macos, windows]
+status:        stable
+stale_after:   2023-05-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-05-17T08:54:39Z
 date:          2020-05-18
 category:      Keyboard
 cover:         /assets/cover14.jpg

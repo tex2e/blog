@@ -2,6 +2,18 @@
 layout:        post
 title:         "ファイルのデフォルトSELinuxコンテキストを確認する"
 menutitle:     "ファイルのデフォルトSELinuxコンテキストを確認する (matchpathcon -V)"
+type:          How-To
+description:   "matchpathconコマンドを使ってファイルやディレクトリの現在のSELinuxコンテキストがポリシールールのデフォルトと一致するか検証する方法を解説します。"
+tags:          [selinux, linux, matchpathcon, restorecon]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-23T09:43:28Z
+sources:
+  - id:        ref-1
+    resource:  "https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-security-enhanced_linux-working_with_selinux-maintaining_selinux_labels_#sect-Security-Enhanced_Linux-Maintaining_SELinux_Labels_-Checking_the_Default_SELinux_Context"
+    title:     "4.10.3. デフォルトの SELinux コンテキストの確認 Red Hat Enterprise Linux 7 \\| Red Hat Customer Portal"
 date:          2021-10-25
 category:      SELinux
 cover:         /assets/cover6.jpg

@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "GitHubへTCP/443番ポートでssh接続を行う"
+type:          Troubleshooting
+description:   "TCP/22番ポートが遮断された環境でssh.github.comの443番ポート経由でGitHubへSSH接続するための~/.ssh/config設定。"
+tags:          [git, github, ssh, network]
+status:        stable
+stale_after:   2026-10-14T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-10-14T04:14:48Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.github.com/en/authentication/troubleshooting-ssh/using-ssh-over-the-https-port
+    title:     "Using SSH over the HTTPS port - GitHub Docs"
+  - id:        ref-2
+    resource:  https://qiita.com/yuikoito/items/672cd9e2c62a5d897b72
+    title:     "githubでssh: connect to host github.com port 22エラーが発生した - Qiita"
 date:          2023-10-14
 category:      Git
 cover:         /assets/cover14.jpg

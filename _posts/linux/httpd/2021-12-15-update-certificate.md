@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Apache/Nginxのサーバ証明書を更新する"
+type:          How-To
+description:   "OpenSSLでのCSR・自己証明書作成から、Apache/Nginx設定ファイル上の配置パス調査およびサーバ証明書・秘密鍵の更新手順を解説します。"
+tags:          [linux, openssl, ssl-tls, apache, nginx]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-10T09:19:02Z
 date:          2021-12-15
 category:      Linux
 cover:         /assets/cover14.jpg

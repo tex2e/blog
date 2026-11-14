@@ -2,6 +2,17 @@
 layout:        post
 title:         "ラプラス変換 公式一覧"
 menutitle:     "応用数学 ラプラス変換 公式一覧"
+type:          Reference
+description:   "ラプラス変換の定義と主要関数の変換表、線形性・移動法則・微積分法則、微分方程式・畳み込み・線形システム・デルタ関数への応用をまとめています。"
+tags:          [math, laplace-transform, calculus, formulas]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-17T06:39:52Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3XM6xPE
+    title:     "新 応用数学 - 大日本図書"
 date:          2019-01-04
 category:      Math
 cover:         /assets/cover14.jpg

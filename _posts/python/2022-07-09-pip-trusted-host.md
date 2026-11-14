@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "pip installでCERTIFICATE_VERIFY_FAILEDが出る時の対処法"
+type:          Troubleshooting
+description:   "SSLインスペクション環境でpip install時にCERTIFICATE_VERIFY_FAILEDが出る原因と、trusted-host指定での対処法。"
+tags:          [python, pip, ssl, troubleshooting]
+status:        stable
+stale_after:   2023-10-14T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-09T08:02:06Z
 date:          2022-07-09
 category:      Python
 cover:         /assets/cover14.jpg

@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "微分積分I 公式一覧"
+type:          Reference
+description:   "関数の極限と導関数、ロピタルの定理や高次導関数などの微分応用、置換・部分積分や面積・体積の計算まで微分積分Iの公式を体系的にまとめています。"
+tags:          [math, calculus, formulas]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-17T06:39:52Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3YHObkh
+    title:     "新微分積分1 - 大日本図書"
 date:          2019-01-01
 category:      Math
 cover:         /assets/cover14.jpg

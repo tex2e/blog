@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "CentOSのApacheでModSecurityを動かす"
+type:          How-To
+description:   "CentOSのApacheへオンラインまたはオフラインでModSecurityとCRSを導入し、WAFを有効化してSQLインジェクション遮断を検証する手順を解説します。"
+tags:          [linux, centos, apache, modsecurity, waf]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-28T07:46:21Z
 date:          2021-12-07
 category:      Linux
 cover:         /assets/cover14.jpg

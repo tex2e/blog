@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "XCOM のモットー「Vigilo Confido」の意味"
+type:          Essay
+description:   "ゲームXCOMのラテン語モットー「Vigilo Confido」の語源と英訳を比較し、評議会とXCOMの関係性から意味を考察する記事。"
+tags:          [english, latin, etymology, xcom]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2021-10-11T04:28:24Z
+sources:
+  - id:        ref-1
+    resource:  https://killscreen.com/previously/articles/author-in-the-machine-an-xcom-2-review/
+    title:     "Author in the machine: An XCOM 2 Review - Kill Screen - Previously"
 date:          2017-01-27
 category:      English
 author:        tex2e

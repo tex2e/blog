@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Ansible] copyモジュールでファイルコピーする"
+type:          How-To
+description:   "Ansibleのansible.builtin.copyモジュールでローカルまたはリモート内のファイルコピーとbackupオプションを使う手順。"
+tags:          [infra, ansible, linux]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-10T13:11:46Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html
+    title:     "ansible.builtin.copy module – Copy files to remote locations — Ansible Documentation"
 date:          2022-07-03
 category:      Infrastructure
 cover:         /assets/cover14.jpg

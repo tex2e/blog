@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "PowerShellにおける変数の定義・読み書き"
+type:          Reference
+description:   "PowerShellにおける大文字小文字を区別しない変数、記号を含む変数名、ファイル読み書き変数、型付け、動的取得の仕様をまとめます。"
+tags:          [powershell, variables, syntax]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-01T22:15:57Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3QwwEsn
+    title:     "Windows PowerShellクックブック"
 date:          2022-04-03
 category:      PowerShell
 cover:         /assets/cover14.jpg

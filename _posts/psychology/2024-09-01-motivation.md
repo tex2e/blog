@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "動機づけ・モチベーション"
+type:          Concept
+description:   "内発的・外発的動機づけや自己決定理論、成長マインドセット、自己効力感、知的好奇心など動機づけの主要理論を解説。"
+tags:          [psychology, motivation, self-determination-theory, mindset]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-09-01T14:02:54Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/46MhkiQ
+    title:     "ウェルビーイングの設計論-人がよりよく生きるための情報技術"
+  - id:        ref-2
+    resource:  https://techbookfest.org/product/4876492056035328?productVariantID=6086807632478208
+    title:     "理論と事例でわかるモチベーション：教育心理学を学ぶ会"
+  - id:        ref-3
+    resource:  https://www.jstor.org/stable/1128110
+    title:     "Effects of Extrinsic Rewards on Children’s Subsequent Intrinsic Interest."
+  - id:        ref-4
+    resource:  https://www.sciencedirect.com/science/article/pii/S0361476X99910202
+    title:     "Intrinsic and Extrinsic Motivations: Classic Definitions and New Directions"
+  - id:        ref-5
+    resource:  https://amzn.to/3Maqw7p
+    title:     "『マインドセット「やればできる! 」の研究』"
+  - id:        ref-6
+    resource:  https://amzn.to/4duCwN2
+    title:     "モティベーションをまなぶ12の理論"
 date:          2024-09-01
 category:      Psychology
 cover:         /assets/cover14.jpg

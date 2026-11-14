@@ -2,6 +2,17 @@
 layout:        post
 title:         "ヴェイユペアリングと3者間DH鍵共有"
 menutitle:     "ヴェイユペアリング (Weil pairing) と3者間DH鍵共有"
+type:          Concept
+description:   "nねじれ群とヴェイユペアリングの性質、Balasubramanian-Koblitzの定理、および3者間DH鍵共有のSageMath実装を解説。"
+tags:          [crypto, weil-pairing, elliptic-curve, diffie-hellman, sagemath]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-16T01:29:28Z
+sources:
+  - id:        ref-1
+    resource:  http://www.sagemath.org/files/thesis/hansen-thesis-2009.pdf
+    title:     "Pairing-based Cryptography -- A short signature scheme using the Weil pairing"
 date:          2020-02-16
 category:      Crypto
 cover:         /assets/cover4.jpg

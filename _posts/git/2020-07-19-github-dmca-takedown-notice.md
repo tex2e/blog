@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "GitHubからDMCA takedownが来たときの対応手順"
+type:          How-To
+description:   "GitHubからDMCAテイクダウン通知を受けた際に該当ファイルを履歴から削除し、.gitignore追加や強制push、返信を行う手順。"
+tags:          [git, github, dmca, history]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-19T02:19:34Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository
+    title:     "Removing sensitive data from a repository - GitHub Docs"
 date:          2020-07-19
 category:      Git
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "logrotateの設定ファイル"
+type:          Reference
+description:   "Linuxの/etc/logrotate.confおよび/etc/logrotate.d配下で使うローテーション間隔、世代数、圧縮、スクリプト実行などの設定項目を解説。"
+tags:          [infra, logrotate, linux, logging]
+status:        stable
+stale_after:   2027-08-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-12T08:48:16Z
 date:          2024-08-12
 category:      Infrastructure
 cover:         /assets/cover14.jpg

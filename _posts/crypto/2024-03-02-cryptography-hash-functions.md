@@ -1,6 +1,17 @@
 ---
 layout:        book
 title:         "[暗号技術入門] ハッシュ関数"
+type:          Book Chapter
+description:   "暗号学的ハッシュ関数の性質とSHA-2・SHA-3・BLAKE2・RIPEMD-160の特徴、およびPoWなどの利用例を解説。"
+tags:          [crypto, hash-function, sha-2, sha-3, blake2]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-03-14T02:09:28Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Merkle%E2%80%93Damg%C3%A5rd_construction
+    title:     "Merkle–Damgård構築"
 date:          2024-03-02
 category:      Crypto
 cover:         /assets/cover4.jpg

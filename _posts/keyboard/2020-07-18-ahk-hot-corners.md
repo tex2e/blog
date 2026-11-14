@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "AutoHotkeyでMacのホットコーナーを実装する"
+type:          How-To
+description:   "Windows上でマウスポインタを画面四隅に移動した際にアクションを実行するMac風ホットコーナーをAutoHotkeyで実装する手順。"
+tags:          [keyboard, autohotkey, windows]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-18T02:15:41Z
 date:          2020-07-18
 category:      Keyboard
 cover:         /assets/cover14.jpg

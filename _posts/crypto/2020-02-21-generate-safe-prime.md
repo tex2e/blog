@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "安全素数の生成方法"
+type:          Concept
+description:   "p-1法への耐性を持つ安全素数p=2q+1の性質と、Miller-Rabin素数判定法を用いたPythonでの生成方法を解説。"
+tags:          [crypto, safe-prime, primality-test, number-theory, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-21T08:16:26Z
+sources:
+  - id:        ref-1
+    resource:  https://ja.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E7%B4%A0%E6%95%B0
+    title:     "安全素数 - Wikipedia"
+  - id:        ref-2
+    resource:  https://doc.lagout.org/network/3_Cryptography/CRC%20Press%20-%20Handbook%20of%20applied%20Cryptography.pdf
+    title:     "Handbook of Applied Cryptography"
 date:          2020-02-21
 category:      Crypto
 cover:         /assets/cover4.jpg

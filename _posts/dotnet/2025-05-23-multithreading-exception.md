@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] マルチスレッド処理：例外処理とAggregateException"
+type:          Concept
+description:   "C#のTask内で発生した例外がTask.WaitではAggregateExceptionに包まれawaitでは直接スローされる違いと、Handleメソッドでの処理方法を解説します。"
+tags:          [dotnet, csharp, async-await, exception-handling, task]
+status:        stable
+stale_after:   2028-05-25T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-25T13:24:36Z
 date:          2025-05-23
 category:      Dotnet
 cover:         /assets/cover14.jpg

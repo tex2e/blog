@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "lsofでファイルを開いているプログラムを特定する"
+type:          How-To
+description:   "lsofコマンドを使って指定ファイルやディレクトリ・PID・ソケットを開いているプロセスを特定する方法とssとの使い分けを説明します。"
+tags:          [linux, lsof, ss, troubleshooting]
+status:        stable
+stale_after:   2025-10-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-30T04:14:10Z
+sources:
+  - id:        ref-1
+    resource:  https://atmarkit.itmedia.co.jp/ait/articles/1904/18/news033.html
+    title:     "【 lsof 】コマンド――オープンしているファイルを一覧表示する：Linux基本コマンドTips（298） - ＠IT"
+  - id:        ref-2
+    resource:  https://sadservers.com/scenarios
+    title:     "SadServers - Troubleshooting Linux Servers"
 date:          2022-10-29
 category:      Linux
 cover:         /assets/cover14.jpg

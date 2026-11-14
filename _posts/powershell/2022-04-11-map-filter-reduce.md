@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] Map, Filter, Reduceの使い方"
+type:          How-To
+description:   "PowerShellでforeachやwhere、スクリプトブロックのbegin・process・endを用いてMap・Filter・Reduceを実装する方法を示します。"
+tags:          [powershell, pipeline, functional]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-11T02:44:25Z
 date:          2022-04-11
 category:      PowerShell
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[SELinux] Webやメールサーバのプロセスのドメイン"
+type:          Reference
+description:   "sshdやhttpd、named、postfix、dovecot、mysqld、dockerなど主要サーバプロセスのSELinuxドメイン一覧をまとめたリファレンスです。"
+tags:          [selinux, linux, domains, daemon]
+status:        stable
+stale_after:   2027-07-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-13T12:10:41Z
 date:          2021-11-18
 category:      SELinux
 cover:         /assets/cover6.jpg

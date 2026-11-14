@@ -2,6 +2,14 @@
 layout:        book
 title:         "1. セキュリティとアクセス制御"
 menutitle:     "1. SELinux/セキュリティとアクセス制御"
+type:          Book Chapter
+description:   "SELinux入門 第1章 セキュリティとアクセス制御"
+tags:          [selinux, linux, access-control, mac, dac]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-02-19T04:09:36Z
 date:          2022-02-27
 category:      SELinux
 cover:         /assets/cover6.jpg
@@ -12,7 +20,6 @@ latex:         false
 photoswipe:    true
 # sitemap: true
 # feed: true
-description:   "SELinux入門 第1章 セキュリティとアクセス制御"
 section_number: 1
 sections:
   - [./1-access-control, セキュリティとアクセス制御]

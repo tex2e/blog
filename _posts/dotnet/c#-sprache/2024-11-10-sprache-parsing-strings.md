@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで文字列を読み取る"
+type:          Reference
+description:   "C#の構文解析ライブラリSpracheでStringやText、Number、Decimal、Tokenなど文字列を読み取るメソッド群の仕様と使用例を解説。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-10T02:56:37Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2020-03-16-sprache2-strings/
+    title:     "Sprache Part 2: Parsing Strings - Justin Pealing"
+  - id:        ref-3
+    resource:  https://justinpealing.me.uk/post/2020-04-29-sprache8-token-etc/
+    title:     "Sprache Part 8: Token, Contained, Identifier, LineTerminator - Justin Pealing"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L196"
+    title:     "Sprache/src/Sprache/Parse.cs -- String"
+  - id:        ref-5
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L420"
+    title:     "Sprache/src/Sprache/Parse.cs -- Text"
+  - id:        ref-6
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L129"
+    title:     "Sprache/src/Sprache/Parse.cs -- IgnoreCase(char)"
 date:          2024-11-10
 category:      Dotnet
 cover:         /assets/cover14.jpg

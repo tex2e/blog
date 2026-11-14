@@ -2,6 +2,13 @@
 layout:        post
 title:         "NumPyでRing-LWEによる鍵共有"
 menutitle:     "NumPyを使ったRing-LWEによる鍵共有"
+type:          Concept
+description:   "NumPyの多項式演算を用いて有限体上の多項式環を実装し、Ring-LWE格子暗号による鍵共有を動かす方法を解説。"
+tags:          [crypto, lattice, ring-lwe, post-quantum, numpy]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-05-13T13:23:05Z
 date:          2019-05-13
 category:      Crypto
 author:        tex2e

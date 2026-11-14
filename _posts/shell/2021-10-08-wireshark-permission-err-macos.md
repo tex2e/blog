@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "MacOSのWiresharkが権限エラーでキャプチャできないとき"
+type:          Troubleshooting
+description:   "macOSのWiresharkでlo0キャプチャ時に権限エラーが出る原因と、/dev/bpfの所有者変更による対処法を解説。"
+tags:          [shell, wireshark, macos, troubleshooting]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-08T14:09:45Z
 date:          2021-10-08
 category:      Shell
 cover:         /assets/cover14.jpg

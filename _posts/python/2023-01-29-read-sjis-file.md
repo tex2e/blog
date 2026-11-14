@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Python] Windowsで作成されたShift-JISファイルを開く方法"
+type:          How-To
+description:   "Windows由来のShift-JISファイルをPythonで開く際に、shift_jisではなくencoding=cp932とnewline指定を使う理由と方法。"
+tags:          [python, shift-jis, cp932, windows]
+status:        stable
+stale_after:   2027-06-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-01-29T06:23:24Z
+sources:
+  - id:        ref-1
+    resource:  https://snowtree-injune.com/2020/05/15/codec-py003/
+    title:     "Python♪Windowsの「Shift JIS」の落とし穴 \\| Snow Tree in June"
 date:          2023-01-29
 category:      Python
 cover:         /assets/cover14.jpg

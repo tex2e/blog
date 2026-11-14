@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxユーザのデフォルトマッピングを変更する"
 menutitle:     "SELinuxユーザのデフォルトマッピングを変更する (semanage login -m)"
+type:          How-To
+description:   "新規Linuxユーザー作成時のデフォルトSELinuxユーザをunconfined_uからuser_uへsemanage loginで変更し、権限昇格リスクを低減する手順を解説します。"
+tags:          [selinux, linux, semanage, hardening]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-25T11:52:53Z
 date:          2021-10-29
 category:      SELinux
 cover:         /assets/cover6.jpg

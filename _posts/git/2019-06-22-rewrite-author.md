@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "Gitの履歴内のコミットしたユーザ名を全て変更する"
+type:          How-To
+description:   "git filter-branchの--env-filterを使い、過去すべてのコミットに含まれるAuthorとCommitterのユーザ名を一括変更する方法。"
+tags:          [git, filter-branch, history]
+status:        stable
+stale_after:   2022-06-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-06-23T08:39:03Z
+sources:
+  - id:        ref-1
+    resource:  https://git-scm.com/docs/git-filter-branch
+    title:     "Git - git-filter-branch Documentation"
+  - id:        ref-2
+    resource:  https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi
+    title:     "How to change the author and committer name and e-mail of multiple commits in Git?"
 date:          2019-06-22
 category:      Git
 author:        tex2e

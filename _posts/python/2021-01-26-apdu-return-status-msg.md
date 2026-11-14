@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "APDUコマンドの返り値をメッセージで表示する"
+type:          Reference
+description:   "ICカードへのAPDUコマンド送信で返るSW1・SW2の2バイトステータスコード一覧と、意味を文字列で返すPythonデバッグ関数。"
+tags:          [protocol, python, apdu, ic-card]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-24T13:32:03Z
+sources:
+  - id:        ref-1
+    resource:  https://www.eftlab.com/knowledge-base/complete-list-of-apdu-responses/
+    title:     "Complete list of APDU responses - EFTLab - Breakthrough Payment Technologies"
 date:          2021-01-26
 category:      Protocol
 cover:         /assets/cover14.jpg

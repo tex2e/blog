@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Kubernetes] リソースの一覧"
+type:          Concept
+description:   "C#のOOP設計との対比を交えながら、KubernetesのContainer、Pod、Service、Label、Namespaceの概念と役割を解説。"
+tags:          [infra, kubernetes, architecture, containers]
+status:        stable
+stale_after:   2027-11-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-28T02:51:00Z
 date:          2024-11-21
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Docker] composeインストール後のエラー「error while loading shared libraries: libz.so.1」の対処法"
+type:          Troubleshooting
+description:   "docker-compose実行時のlibz.so.1読み込みエラーについて、/tmpのnoexecマウント設定をexecに変更して解決する対処法。"
+tags:          [infra, docker, docker-compose, linux, troubleshooting]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:44:35Z
+sources:
+  - id:        ref-1
+    resource:  https://mebee.info/2020/06/26/post-12662/
+    title:     "docker-composeインストール時に「docker-compose: error while loading shared libraries: libz.so.1: failed to map segment from shared object: Operation"
 date:          2021-12-04
 category:      Infrastructure
 cover:         /assets/cover14.jpg

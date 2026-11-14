@@ -1,6 +1,26 @@
 ---
 layout:        post
 title:         "ElGamal暗号と乗法準同型性"
+type:          Concept
+description:   "ElGamal暗号の鍵生成・暗号化・復号アルゴリズムと原始元判定、および乗法準同型性のPython実装と数式確認を解説。"
+tags:          [crypto, elgamal, homomorphic-encryption, public-key, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-21T08:17:46Z
+sources:
+  - id:        ref-1
+    resource:  https://ja.wikipedia.org/wiki/ElGamal%E6%9A%97%E5%8F%B7
+    title:     "ElGamal暗号 - Wikipedia"
+  - id:        ref-2
+    resource:  https://ja.wikipedia.org/wiki/%E6%BA%96%E5%90%8C%E5%9E%8B%E6%9A%97%E5%8F%B7
+    title:     "準同型暗号 - Wikipedia"
+  - id:        ref-3
+    resource:  "https://github.com/dlitz/pycrypto/blob/master/lib/Crypto/PublicKey/ElGamal.py#L120"
+    title:     "pycrypto/ElGamal.py at master · dlitz/pycrypto"
+  - id:        ref-4
+    resource:  https://arxiv.org/pdf/1509.01504.pdf
+    title:     "Insecure primitive elements in an ElGamal signature protocol"
 date:          2020-02-22
 category:      Crypto
 cover:         /assets/cover4.jpg

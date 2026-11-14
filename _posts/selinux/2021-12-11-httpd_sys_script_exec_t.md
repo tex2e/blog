@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinux上でhttpdがファイルを実行可能にする"
 menutitle:     "SELinux上でhttpdがファイルを実行可能にする (httpd_sys_script_exec_t)"
+type:          How-To
+description:   "SELinux有効環境でhttpdがスクリプトを実行できるよう、実行ファイルのコンテキストをhttpd_sys_script_exec_tに変更して検証する手順を解説します。"
+tags:          [selinux, httpd, apache, chcon]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-02T14:09:08Z
 date:          2021-12-11
 category:      SELinux
 cover:         /assets/cover6.jpg

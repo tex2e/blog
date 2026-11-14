@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Ruby] インスタンス変数の初期化をメタプロする"
+type:          How-To
+description:   "Rubyのコンストラクタでハッシュ引数とObject#sendを使い、多数のインスタンス変数の初期化をメタプログラミングで簡潔化する手法。"
+tags:          [ruby, metaprogramming, class]
+status:        stable
+stale_after:   2020-12-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-08-21T09:56:32Z
 date:          2017-07-23
 category:      Ruby
 author:        tex2e

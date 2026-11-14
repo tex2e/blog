@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[ブラウザ] Markdown/HTML用のリンクを生成するブックマークレット"
+type:          How-To
+description:   "閲覧中ページのタイトルとURLからMarkdown・HTML・テキスト形式のリンクを生成してコピーするブックマークレットの作成手順。"
+tags:          [javascript, bookmarklet, markdown, browser]
+status:        stable
+stale_after:   2025-10-14T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-03-05T04:35:58Z
+sources:
+  - id:        ref-1
+    resource:  https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference
+    title:     "JavaScript リファレンス - JavaScript \\| MDN"
+  - id:        ref-2
+    resource:  https://javascript-minifier.com/
+    title:     "JavaScript Minifier"
+  - id:        ref-3
+    resource:  https://qiita.com/kyo_nanba/items/81d81164360347fb3732
+    title:     "ブックマークレットでmarkdown用のリンクを生成する - Qiita"
 date:          2020-04-25
 category:      JavaScript
 cover:         /assets/cover14.jpg

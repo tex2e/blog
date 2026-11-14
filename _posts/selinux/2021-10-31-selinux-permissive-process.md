@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxによるドメインに対する制限を無くす"
 menutitle:     "SELinuxによるドメインに対する制限を無くす (semanage permissive)"
+type:          How-To
+description:   "システム全体ではなくhttpd_tなど特定のSELinuxドメインのみをsemanage permissiveコマンドでPermissiveモードに設定・解除する方法を解説します。"
+tags:          [selinux, linux, semanage, permissive]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-26T14:53:05Z
 date:          2021-10-31
 category:      SELinux
 cover:         /assets/cover6.jpg

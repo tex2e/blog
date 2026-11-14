@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[JavaScript] sleep関数の作り方"
+type:          How-To
+description:   "JavaScriptのPromiseとsetTimeoutを組み合わせて非同期待機を行うsleep関数を実装し利用する方法を解説。"
+tags:          [javascript, promise, async, sleep]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-06-16
 category:      JavaScript
 author:        tex2e

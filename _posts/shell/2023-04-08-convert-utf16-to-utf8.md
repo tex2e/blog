@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "iconvでエンコードをUTF16をUTF8に変換する"
+type:          How-To
+description:   "fileコマンドでUTF-16LEを判定し、iconvを使って複数テキストファイルの文字コードをUTF-8へ一括変換する手順。"
+tags:          [shell, bash, iconv, utf8]
+status:        stable
+stale_after:   2026-04-09T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-04-09T10:12:37Z
 date:          2023-04-08
 category:      Shell
 cover:         /assets/cover14.jpg

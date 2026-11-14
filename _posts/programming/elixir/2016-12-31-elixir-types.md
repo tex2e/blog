@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Elixir] Typespecs（型の一覧）"
+type:          Reference
+description:   "ElixirにおけるAtom・String・List・Keyword・Map・Struct・Tuple・Binary・Bitstring・Functionなどの型とリテラル表記をまとめた一覧です。"
+tags:          [programming, elixir, types]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-31T12:43:59Z
+sources:
+  - id:        ref-1
+    resource:  "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#%3C%3C%3E%3E/1"
+    title:     "Binary"
 date:          2016-12-01
 category:      Programming
 author:        tex2e

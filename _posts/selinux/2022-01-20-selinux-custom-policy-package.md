@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "SELinuxでカスタムポリシーパッケージを作成・適用する"
+type:          How-To
+description:   "teファイルの作成からcheckmodule・semodule_packageでのコンパイル、semoduleによるカーネルへの適用・無効化・削除までの手順を解説します。"
+tags:          [selinux, linux, semodule, custom-policy]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-01-21T23:13:36Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/SELinuxProject/selinux-notebook/blob/main/src/avc_rules.md
+    title:     "SELinux Notebook -- Access Vector Rules"
+  - id:        ref-2
+    resource:  https://github.com/SELinuxProject/selinux-notebook/blob/main/src/object_classes_permissions.md
+    title:     "SELinux Notebook -- Appendix A - Object Classes and Permissions"
+  - id:        ref-3
+    resource:  https://github.com/SELinuxProject/selinux-notebook
+    title:     "SELinuxProject/selinux-notebook: The SELinux Notebook"
 date:          2022-01-20
 category:      SELinux
 cover:         /assets/cover6.jpg

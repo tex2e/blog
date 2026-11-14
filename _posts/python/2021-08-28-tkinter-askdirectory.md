@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Python] tkinterでフォルダ指定画面を作成する"
+type:          How-To
+description:   "Pythonのtkinter.filedialog.askdirectoryでフォルダ選択画面を作る手順と、WindowsのCOMスレッド競合によるフリーズ回避法。"
+tags:          [python, tkinter, windows, gui]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-09-03T10:14:40Z
+sources:
+  - id:        ref-1
+    resource:  https://qiita.com/dgkmtu/items/2367a73f7e2d498e6075
+    title:     "【Python】tkinterでファイル&フォルダパス指定画面を作成する - Qiita"
+  - id:        ref-2
+    resource:  https://github.com/pywinauto/pywinauto/issues/517
+    title:     "Tkinter filedialog.askdirectory() freezing when importing pywinauto · Issue #517 · pywinauto/pywinauto"
 date:          2021-08-28
 category:      Python
 cover:         /assets/cover14.jpg

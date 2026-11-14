@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] json.dumps()で日本語が\\uXXXXになるときの対処法"
+type:          Troubleshooting
+description:   "Pythonのjson.dumpsで日本語が\\uXXXX形式にエスケープされる原因と、引数ensure_ascii=Falseを指定する対処法。"
+tags:          [python, json, unicode, troubleshooting]
+status:        stable
+stale_after:   2026-01-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-01-29T06:23:08Z
 date:          2023-01-29
 category:      Python
 cover:         /assets/cover14.jpg

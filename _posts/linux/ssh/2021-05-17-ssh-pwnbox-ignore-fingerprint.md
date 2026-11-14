@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "PwnBoxへのSSH接続時にフィンガープリントの警告をなくす"
+type:          How-To
+description:   "Hack The BoxのPwnBox接続時に毎回発生するSSHホスト鍵確認を、~/.ssh/configのStrictHostKeyChecking等で抑止する方法を説明します。"
+tags:          [linux, ssh, hackthebox, ssh-config]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-05-17T10:19:16Z
 date:          2021-05-17
 category:      Linux
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "認証認可におけるクレデンシャルの共有"
+type:          Concept
+description:   "アプリケーションにユーザ名とパスワードを直接渡す認証パターンの問題点（中間者攻撃リスクや識別不能性）と、それを解決するOAuthの役割を解説します。"
+tags:          [protocol, oauth, authentication, security]
+status:        stable
+stale_after:   2025-06-19T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-06-19T10:18:35Z
 date:          2022-06-18
 category:      Protocol
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "ネットワーク構築入門講座の参加メモ"
+type:          Reference
+description:   "ネットワーク構築講座で扱ったCisco Catalyst L2/L3スイッチの初期化、VLAN、ルーティング、ACL等の設定コマンドメモ。"
+tags:          [infra, network, cisco, vlan, routing]
+status:        stable
+stale_after:   2027-12-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-02-24T13:40:41Z
+sources:
+  - id:        ref-1
+    resource:  https://beginners-network.com/cisco-catalyst-command/
+    title:     "Ciscoルータ/Catalystコマンド一覧 - ネットワーク入門サイト"
 date:          2019-02-24
 category:      Infrastructure
 author:        tex2e

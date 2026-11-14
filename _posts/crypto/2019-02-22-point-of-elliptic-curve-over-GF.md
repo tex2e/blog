@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "有限体上の楕円曲線の点集合"
+type:          Concept
+description:   "有限体上の楕円曲線の定義と加算演算、オイラーの規準を使って曲線上の点集合をPythonで列挙する方法を解説。"
+tags:          [crypto, elliptic-curve, finite-field, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-02-21T11:20:58Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Legendre_symbol
+    title:     "Legendre symbol -- Wikipedia"
+  - id:        ref-2
+    resource:  https://crypto.stackexchange.com/questions/20993/significance-of-3mod4-in-squares-and-square-roots-mod-n
+    title:     "Significance of 3mod4 in squares and square roots mod n? -- StackExchange"
 date:          2019-02-22
 category:      Crypto
 author:        tex2e

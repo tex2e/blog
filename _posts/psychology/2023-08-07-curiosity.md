@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "非認知能力における好奇心"
+type:          Concept
+description:   "知的好奇心や知覚的好奇心などの分類と探索行動が起こる覚醒メカニズム、好奇心を伸ばす方法を整理した非認知能力の解説。"
+tags:          [psychology, non-cognitive-skills, curiosity, motivation]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2023-07-29T14:33:48Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3Q0cND7
+    title:     "非認知能力: 概念・測定と教育の可能性"
 date:          2023-08-07
 category:      Psychology
 cover:         /assets/cover14.jpg

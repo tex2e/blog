@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "PowerShellでhead, tail (Get-Content) を使う"
+type:          Reference
+description:   "Linuxのheadやtailコマンド相当の先頭行・末尾行取得をPowerShellのGet-Contentの-TotalCountと-Tailで行う方法を説明します。"
+tags:          [powershell, get-content, head, tail]
+status:        stable
+stale_after:   2025-04-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-13T12:39:01Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.2
+    title:     "Get-Content (Microsoft.PowerShell.Management) - PowerShell \\| Microsoft Docs"
 date:          2022-04-13
 category:      PowerShell
 cover:         /assets/cover14.jpg

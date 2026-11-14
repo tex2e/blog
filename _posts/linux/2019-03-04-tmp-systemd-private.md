@@ -2,6 +2,14 @@
 layout:        post
 title:         "/tmp/systemd-private-* の意味について"
 menutitle:     "/tmp/systemd-private-* の意味について (PrivateTmp)"
+type:          Concept
+description:   "systemdのPrivateTmp=trueにより生成される/tmp/systemd-private-*ディレクトリの仕組みとLinux名前空間による分離効果を解説。"
+tags:          [linux, systemd, namespace, security]
+status:        stable
+stale_after:   2025-02-27T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-05T08:03:02Z
 date:          2019-03-04
 category:      Linux
 author:        tex2e

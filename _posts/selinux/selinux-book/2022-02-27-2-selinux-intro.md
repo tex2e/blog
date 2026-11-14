@@ -2,6 +2,24 @@
 layout:        book
 title:         "2. SELinux入門"
 menutitle:     "2. SELinux/SELinux入門"
+type:          Book Chapter
+description:   "SELinux入門 第2章 SELinuxの使い方"
+tags:          [selinux, linux, mac, domain-transition]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-02-19T04:09:36Z
+sources:
+  - id:        ref-1
+    resource:  https://gtfobins.github.io/
+    title:     "GTFOBins"
+  - id:        ref-2
+    resource:  https://github.com/SELinuxProject/selinux-notebook
+    title:     "SELinux Notebook"
+  - id:        ref-3
+    resource:  https://github.com/SELinuxProject/selinux-notebook/blob/main/src/object_classes_permissions.md
+    title:     "Appendix A - Object Classes and Permissions \\| SELinuxProject/selinux-notebook"
 date:          2022-02-27
 category:      SELinux
 cover:         /assets/cover14.jpg
@@ -12,7 +30,6 @@ latex:         false
 photoswipe:    true
 # sitemap: true
 # feed: true
-description:   "SELinux入門 第2章 SELinuxの使い方"
 section_number: 2
 sections:
   - [./1-access-control, セキュリティとアクセス制御]

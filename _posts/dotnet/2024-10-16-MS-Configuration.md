@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[C#] プログラム実行時の構成 (Configuration) の読み込み"
+type:          How-To
+description:   "Microsoft.Extensions.Configurationを用いてInMemory構成やJSONファイルから設定値を読み込み、オプションの入力検証を行う方法を解説します。"
+tags:          [dotnet, csharp, configuration, json, validation]
+status:        stable
+stale_after:   2027-10-14T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-14T01:38:21Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/core/extensions/configuration
+    title:     "構成 - .NET \\| Microsoft Learn"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.componentmodel.dataannotations.regularexpressionattribute?view=net-8.0
+    title:     "RegularExpressionAttribute クラス (System.ComponentModel.DataAnnotations) \\| Microsoft Learn"
+  - id:        ref-3
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=net-8.0
+    title:     "RangeAttribute クラス (System.ComponentModel.DataAnnotations) \\| Microsoft Learn"
 date:          2024-10-16
 category:      Dotnet
 cover:         /assets/cover14.jpg

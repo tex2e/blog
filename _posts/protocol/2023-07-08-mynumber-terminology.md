@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "マイナンバー制度の用語集"
+type:          Reference
+description:   "マイナンバー制度の住民記録分野および医療保険分野で使用される宛名番号・符号・住基ネット・中間サーバなどの専門用語をまとめた用語集です。"
+tags:          [protocol, mynumber, terminology, jpki]
+status:        stable
+stale_after:   2026-10-31T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-07-08T02:02:52Z
+sources:
+  - id:        ref-1
+    resource:  https://www.soumu.go.jp/main_content/000882881.pdf
+    title:     "住⺠記録システム標準仕様書【第 4.0 版】"
+  - id:        ref-2
+    resource:  https://www.mhlw.go.jp/bunya/iryouhoken/mynumber_kenpo/dl/ke_furoku01.pdf
+    title:     "付録1　用語集 -- 厚生労働省"
+  - id:        ref-3
+    resource:  https://www.fujitsu.com/jp/solutions/industry/public-sector/local-government/mynumber/glossary/
+    title:     "マイナンバー制度に関する用語集 - 富士通"
 date:          2023-07-08
 category:      Protocol
 cover:         /assets/cover14.jpg

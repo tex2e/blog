@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[PowerShell] エスケープシーケンスで特殊文字を表現する"
+type:          Reference
+description:   "PowerShellのエスケープ文字であるバッククォートを使った行継続、特殊文字の一覧、クォート文字の二重記述ルールを解説します。"
+tags:          [powershell, escape-sequence, syntax]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-04T10:37:39Z
+sources:
+  - id:        ref-1
+    resource:  "https://ufcpp.net/study/powershell/string.html#format"
+    title:     "文字列 - Windows PowerShell \\| ++C++; // 未確認飛行 C"
+  - id:        ref-2
+    resource:  https://amzn.to/3QwwEsn
+    title:     "Windows PowerShellクックブック"
 date:          2022-04-04
 category:      PowerShell
 cover:         /assets/cover14.jpg

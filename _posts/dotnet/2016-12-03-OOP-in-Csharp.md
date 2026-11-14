@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] オブジェクト指向プログラミング"
+type:          Reference
+description:   "C#におけるクラス定義、コンストラクタ、プロパティ、継承、抽象クラス、インターフェース、ジェネリクス、拡張メソッドなどオブジェクト指向構文を網羅的にまとめます。"
+tags:          [dotnet, csharp, oop, syntax]
+status:        stable
+stale_after:   2027-07-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-12-03
 category:      Dotnet
 author:        tex2e

@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "LWE格子暗号による鍵共有"
+type:          Concept
+description:   "耐量子暗号であるLWE格子暗号の基礎概念と、シグナル関数を用いた1ビットおよび複数ビット鍵共有のPython実装を解説。"
+tags:          [crypto, lattice, lwe, post-quantum, key-exchange]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-05-04T11:16:02Z
+sources:
+  - id:        ref-1
+    resource:  http://inaz2.hatenablog.com/entry/2017/05/27/003343
+    title:     "LWE格子暗号による暗号化をやってみる - ももいろテクノロジー"
+  - id:        ref-2
+    resource:  https://eprint.iacr.org/2012/688.pdf
+    title:     "A Simple Provably Secure Key Exchange Scheme Based on the Learning with Errors Problem"
+  - id:        ref-3
+    resource:  https://www.cryptrec.go.jp/exreport/cryptrec-ex-2404-2014.pdf
+    title:     "格子問題等の困難性に関する調査 (pdf) - 暗号技術調査 (暗号解析評価) ワーキンググループ"
+  - id:        ref-4
+    resource:  https://www.cryptrec.go.jp/report/cryptrec-tr-2001-2018.pdf
+    title:     "耐量子計算機暗号の研究動向調査報告書 (pdf) - CRYPTREC 暗号技術調査 WG (暗号解析評価)"
+  - id:        ref-5
+    resource:  https://en.wikipedia.org/wiki/Quantum_Fourier_transform
+    title:     "Quantum Fourier transform - Wikipedia"
+  - id:        ref-6
+    resource:  https://cims.nyu.edu/~regev/papers/qcrypto.pdf
+    title:     "On lattices, learning with errors, random linear codes, and cryptography"
 date:          2019-05-04
 category:      Crypto
 author:        tex2e

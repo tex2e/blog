@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "マイナンバー制度と住民基本台帳"
+type:          Concept
+description:   "住民基本台帳と住基ネットの仕組み、住民票コードからマイナンバーへの変換・付番および副本登録の流れ、引越し手続オンラインサービスを解説します。"
+tags:          [protocol, mynumber, juki-net, government]
+status:        stable
+stale_after:   2027-06-03T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-07-08T02:02:52Z
+sources:
+  - id:        ref-1
+    resource:  https://www.moj.go.jp/content/001154671.pdf
+    title:     "地方公共団体における番号制度の導入ガイドライン"
+  - id:        ref-2
+    resource:  https://www.soumu.go.jp/main_content/000824654.pdf
+    title:     "マイナポータル等を通じたオンラインによる転出届・転入（転居）予約の実現に向けた取り組みについて -- デジタル庁"
 date:          2023-07-09
 category:      Protocol
 cover:         /assets/cover14.jpg

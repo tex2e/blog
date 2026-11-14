@@ -1,6 +1,26 @@
 ---
 layout:        post
 title:         "「理解する」とは何か？"
+type:          Concept
+description:   "認知過程や認知言語学、メンタル・モデル、学習の転移、素朴理論、意味ネットワークモデルから「理解」を解説した備忘録。"
+tags:          [psychology, cognitive-science, mental-model, learning]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2023-09-17T23:43:55Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3LqnewK
+    title:     "鍋島 弘治朗, ブルックス マイケル『英日翻訳の技術 - 認知言語学的発想』2020/6"
+  - id:        ref-2
+    resource:  https://amzn.to/3t45IYL
+    title:     "小田 理一郎『「学習する組織」入門』2017/6"
+  - id:        ref-3
+    resource:  https://amzn.to/3rgb3f4
+    title:     "守 一雄『教育課程コアカリキュラムに対応した教育心理学』2019/3"
+  - id:        ref-4
+    resource:  https://amzn.to/46bSeZm
+    title:     "鈴木 宏昭『私たちはどう学んでいるのか: 創発から見る認知の変化』ちくまプリマー新書 403, 2022/6"
 date:          2023-08-01
 category:      Psychology
 cover:         /assets/cover14.jpg

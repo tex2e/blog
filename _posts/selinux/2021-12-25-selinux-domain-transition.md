@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxのドメイン遷移の一覧を表示する"
 menutitle:     "SELinuxのドメイン遷移の一覧を表示する (sepolicy transition)"
+type:          How-To
+description:   "sepolicy transitionコマンドでSELinuxのドメイン遷移ルール一覧を表示する方法と、sshd_tやhttpd_tを例に出力形式の読み方を解説します。"
+tags:          [selinux, linux, sepolicy, domain-transition]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-25T09:18:08Z
 date:          2021-12-25
 category:      SELinux
 cover:         /assets/cover6.jpg

@@ -1,6 +1,26 @@
 ---
 layout:        post
 title:         "Miller-Rabin素数判定法"
+type:          Concept
+description:   "確率的素数判定アルゴリズムであるMiller-Rabin素数判定法の手順、誤判定確率の評価、およびPython実装を解説。"
+tags:          [crypto, primality-test, miller-rabin, number-theory, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-20T10:35:39Z
+sources:
+  - id:        ref-1
+    resource:  https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%A9%E3%83%BC%E2%80%93%E3%83%A9%E3%83%93%E3%83%B3%E7%B4%A0%E6%95%B0%E5%88%A4%E5%AE%9A%E6%B3%95
+    title:     "ミラー–ラビン素数判定法 - Wikipedia"
+  - id:        ref-2
+    resource:  "https://rosettacode.org/wiki/Miller%E2%80%93Rabin_primality_test#Python:_Probably_correct_answers"
+    title:     "Miller–Rabin primality test - Rosetta Code"
+  - id:        ref-3
+    resource:  http://fuee.u-fukui.ac.jp/~hirose/lectures/crypto_security/slides/01number_algebra.pdf
+    title:     "廣瀬勝一. 整数論と代数の初歩, p. 42"
+  - id:        ref-4
+    resource:  https://www.ipa.go.jp/files/000013662.pdf
+    title:     "素数生成アルゴリズムの調査・開発 調査報告書 -- 情報処理振興事業協会 セキュリティセンター (2003)"
 date:          2020-02-20
 category:      Crypto
 cover:         /assets/cover4.jpg

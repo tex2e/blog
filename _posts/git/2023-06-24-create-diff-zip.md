@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Gitでブランチ間の差分ファイルだけをZipにする方法"
+type:          How-To
+description:   "git diff --name-onlyとgit archiveを組み合わせ、ブランチ間の差分ファイルだけをZip圧縮するLinuxとPowerShellの手順。"
+tags:          [git, archive, powershell, linux]
+status:        stable
+stale_after:   2026-06-24T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-06-24T10:12:14Z
 date:          2023-06-24
 category:      Git
 cover:         /assets/cover14.jpg

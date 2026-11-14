@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Rocky Linux における nmcil によるIPアドレス固定"
+type:          How-To
+description:   "Rocky Linuxでnmcli conn modを使いIPv4アドレス指定後にmethodをmanualへ変更してIPアドレスを固定化する手順を解説します。"
+tags:          [linux, rocky-linux, nmcli, networking]
+status:        stable
+stale_after:   2027-02-03T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-02-03T12:52:12Z
 date:          2024-01-29
 category:      Linux
 cover:         /assets/cover14.jpg

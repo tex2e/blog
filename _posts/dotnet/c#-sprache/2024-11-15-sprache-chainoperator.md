@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで左結合・右結合を解析する (ChainOperator)"
+type:          Reference
+description:   "C#のSpracheで左結合と右結合の演算子を解析するChainOperator系メソッド4種の仕様とエラー挙動の違いをまとめた解説。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-11T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-11T13:51:00Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2020-04-20-sprache7-operators/
+    title:     "Sprache Part 7: ChainOperator and ChainRightOperator - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L656"
+    title:     "Sprache/src/Sprache/Parse.cs -- ChainOperator"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L676"
+    title:     "Sprache/src/Sprache/Parse.cs -- XChainOperator"
+  - id:        ref-5
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L712"
+    title:     "Sprache/src/Sprache/Parse.cs -- ChainRightOperator"
+  - id:        ref-6
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L732"
+    title:     "Sprache/src/Sprache/Parse.cs -- XChainRightOperator"
 date:          2024-11-15
 category:      Dotnet
 cover:         /assets/cover14.jpg

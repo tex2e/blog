@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "Python/FlaskでOpenID Connectと通信する"
+type:          How-To
+description:   "PythonとFlaskを使い、GoogleのOpenID Connectの認可・トークン・UserInfo各エンドポイントと通信してユーザ情報を取得する手順を解説します。"
+tags:          [protocol, openid-connect, oauth2, python, flask]
+status:        stable
+stale_after:   2023-12-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-08-12T07:59:14Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/oauth-example
+    title:     "tex2e/oauth-example: Google OAuth Example (For Study Purpose Only)"
+  - id:        ref-2
+    resource:  https://github.com/googleapis/google-api-python-client
+    title:     "googleapis/google-api-python-client: 🐍 The official Python client library for Google's discovery based APIs."
+  - id:        ref-3
+    resource:  https://github.com/tex2e/openid-connect-example
+    title:     "tex2e/openid-connect-example: Google OAuth Example (For Study Purpose Only)"
 date:          2022-08-12
 category:      Protocol
 cover:         /assets/cover14.jpg

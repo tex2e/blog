@@ -2,6 +2,18 @@
 layout:        post
 title:         "ptrace を SELinux で無効化する"
 menutitle:     "ptrace を SELinux で無効化する (deny_ptrace)"
+type:          How-To
+description:   "メモリ改ざん攻撃への対策として、SELinuxのdeny_ptraceブール値を用いて全ユーザーのptraceシステムコール利用を禁止する設定方法を解説します。"
+tags:          [selinux, linux, ptrace, hardening]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-23T09:43:28Z
+sources:
+  - id:        ref-1
+    resource:  https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-security-enhanced_linux-working_with_selinux-disable_ptrace
+    title:     "4.15. ptrace() の無効化 Red Hat Enterprise Linux 7 \\| Red Hat Customer Portal"
 date:          2021-10-26
 category:      SELinux
 cover:         /assets/cover6.jpg

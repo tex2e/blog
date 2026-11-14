@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Rust] 16進数ダンプ (Hexdump) 関数の作り方"
+type:          How-To
+description:   "Rustでu8スライスを受け取り、オフセット・16進数表記・ASCII文字表記の形式で出力するhexdump関数の実装方法を解説します。"
+tags:          [programming, rust, hexdump]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-09-27T14:08:37Z
+sources:
+  - id:        ref-1
+    resource:  https://trentmay.medium.com/writing-a-hex-dump-utility-in-rust-e98b3355e530
+    title:     "Writing a Hex Dump Utility in Rust \\| by Trent May \\| Medium"
+  - id:        ref-2
+    resource:  https://qiita.com/benki/items/3a1baf90bbb744bd5b86
+    title:     "Rust でバイト列を16進数な文字列に変換する（Hex dump in Rust） - Qiita"
 date:          2021-09-27
 category:      Programming
 cover:         /assets/cover14.jpg

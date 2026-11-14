@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "SageMathをUbuntu 16.04にインストール"
+type:          How-To
+description:   "Ubuntu 16.04へPPA経由でSageMathをインストールし、暗いターミナル向けにコンソール配色を変更する手順を解説。"
+tags:          [crypto, sagemath, ubuntu, installation]
+status:        stable
+stale_after:   2024-09-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-08-11T02:24:59Z
+sources:
+  - id:        ref-1
+    resource:  https://web.archive.org/web/20210816123743/https://www.unixmen.com/install-sage-on-ubuntu/
+    title:     "How to install mathematical application Sage on Ubuntu Linux \\| Unixmen"
+  - id:        ref-2
+    resource:  https://ask.sagemath.org/question/10060/sage-terminal-colors/
+    title:     "sage terminal colors - ASKSAGE: Sage Q&amp;A Forum"
 date:          2019-08-11
 category:      Crypto
 author:        tex2e

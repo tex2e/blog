@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "ガロア拡大体 GF(2^m) のベクトル表現"
+type:          Reference
+description:   "ガロア拡大体GF(2^4)およびGF(2^8)のべき表現・多項式表現・ベクトル表現の対応一覧表とSageMath生成コードを掲載。"
+tags:          [crypto, galois-field, finite-field, sagemath]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-12-15T04:35:22Z
+sources:
+  - id:        ref-1
+    resource:  https://kouyama.sci.u-toyama.ac.jp/main/education/2007/infomath/pdf/text/app01.pdf
+    title:     "付録A - ガロア拡大体 GF(2^m)"
 date:          2019-12-15
 category:      Crypto
 cover:         /assets/cover4.jpg

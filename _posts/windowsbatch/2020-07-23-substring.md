@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Windows] バッチファイルで固定長・可変長の文字列切り取り"
+type:          How-To
+description:   "Windowsバッチファイルで:~構文を使った固定長の文字列切り取りや、call・遅延環境変数展開を組み合わせて可変長で部分抽出する方法を解説。"
+tags:          [windows-batch, windows, cmd, string]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-23T00:09:15Z
+sources:
+  - id:        ref-1
+    resource:  https://ss64.com/nt/syntax-substring.html
+    title:     "variable substring - Windows CMD - SS64.com"
+  - id:        ref-2
+    resource:  "https://qiita.com/yz2cm/items/8058d503a1b84688af09#%E6%96%87%E5%AD%97%E5%88%97%E3%81%AE%E5%88%87%E5%87%BA%E3%81%97"
+    title:     "バッチファイルでの試行錯誤を回避するためのメモ - Qiita"
 date:          2020-07-23
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

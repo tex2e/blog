@@ -1,6 +1,29 @@
 ---
 layout:        post
 title:         "成功するために必要なこと（2. 行動編）"
+type:          Essay
+description:   "失敗を糧に成果を出すための行動指針として、高速な検証サイクルの回し方や記録と共有、現場観察による改善を述べます。"
+tags:          [misc, mindset, productivity, self-improvement]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2022-01-19T12:52:14Z
+sources:
+  - id:        ref-1
+    resource:  https://www.youtube.com/watch?v=Ev_hMJPHyBk
+    title:     "PDCA と OODA の関係 - YouTube"
+  - id:        ref-2
+    resource:  https://www.countand1.com/2020/09/pdca-and-ooda-combination.html
+    title:     "PDCA と OODA ループは ｢合わせ技｣ からの相乗効果が正解｜読むとマーケティングがおもしろくなるブログ"
+  - id:        ref-3
+    resource:  https://kosen-teachers.tumblr.com/post/37778909039/%E7%A6%8F%E5%B1%B1%E9%9B%85%E6%B2%BB%E3%81%AB%E3%81%AA%E3%82%8B%E6%96%B9%E6%B3%95
+    title:     "Kosen Advent Calendar By Teachers"
+  - id:        ref-4
+    resource:  https://www.youtube.com/watch?v=P1gfrviGtTo&ab_channel=%E5%BF%83%E7%90%86%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BB%E3%83%A9%E3%83%BC%E3%80%90%E5%85%AC%E8%AA%8D%E5%BF%83%E7%90%86%E5%B8%AB%E3%80%91%E6%A9%8B%E6%9C%AC%E7%BF%94%E5%A4%AA%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%AA%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%81
+    title:     "回避性パーソナリティ障害／人生停滞、めんどくさい、傷つくのが怖い、ひきこもり問題 - YouTube"
+  - id:        ref-5
+    resource:  https://note.com/shinshinohara/n/ne5e09b2ae5ba
+    title:     "呪いを解除し、失敗を楽しむ｜shinshinohara｜note"
 date:          2022-01-20
 category:      Misc
 cover:         /assets/cover14.jpg

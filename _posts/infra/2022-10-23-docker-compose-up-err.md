@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Docker] compose up時のエラー「Couldn't connect to Docker daemon at http+docker://localhost - is it running?」の対処法"
+type:          Troubleshooting
+description:   "Dockerデーモン稼働中にdocker-compose upが接続エラーになる原因と、実行ユーザをdockerグループへ追加して解消する手順。"
+tags:          [infra, docker, docker-compose, linux, troubleshooting]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-23T09:53:21Z
+sources:
+  - id:        ref-1
+    resource:  https://offlo.in/blog/error-docker-daemon.html
+    title:     "【エラー】Docker使用時「Couldn't connect to Docker daemon at http+docker://localhost - is it running?」の対処 \\| offlo.in（オフロイン）"
 date:          2022-10-23
 category:      Infrastructure
 cover:         /assets/cover14.jpg

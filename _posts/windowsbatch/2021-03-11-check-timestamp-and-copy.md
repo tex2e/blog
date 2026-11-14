@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] 更新時間が異なるときにファイルコピーする"
+type:          How-To
+description:   "Windowsバッチでfor文と%~ti展開を用いてファイルの更新日時を取得・比較し、差分がある場合のみxcopyでコピーする処理と複数ファイル対応を解説。"
+tags:          [windows-batch, cmd, xcopy, timestamp]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-03-14T12:30:18Z
 date:          2021-03-12
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

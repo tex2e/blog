@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] N日経過したファイルを削除する"
+type:          How-To
+description:   "PowerShellのGet-ChildItemとLastWriteTimeプロパティ、AddDaysを組み合わせて、更新から指定日数経過したファイルを削除する方法を解説します。"
+tags:          [powershell, windows, file-management]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-11-11T01:53:23Z
 date:          2023-11-11
 category:      PowerShell
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Podman] Rocky LinuxにDocker/Podman Composeをインストールする"
+type:          How-To
+description:   "Rocky Linux環境でpodman composeコマンドを実行するためにpodman-composeやdocker-composeを導入する手順を解説。"
+tags:          [infra, podman, docker-compose, rocky-linux]
+status:        stable
+stale_after:   2027-11-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-30T02:53:37Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/docker/compose/releases
+    title:     "Releases · docker/compose"
 date:          2024-11-26
 category:      Infrastructure
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "systemd のユニットファイルの作り方"
+type:          How-To
+description:   "CentOSでUnit・Service・Installセクションの構造を解説しつつ自作サービス用のsystemdユニットファイルを作成し起動する手順。"
+tags:          [linux, systemd, centos]
+status:        stable
+stale_after:   2026-09-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-05T08:05:14Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3rkScj9
+    title:     "サーバ構築研究会『CentOS8で作るネットワークサーバ構築ガイド』2020/8"
 date:          2019-03-05
 category:      Linux
 author:        tex2e

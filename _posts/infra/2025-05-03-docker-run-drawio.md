@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Docker] drawioコンテナを起動する"
+type:          How-To
+description:   "DockerやPodmanコマンドを用いてdraw.ioの公式コンテナをローカルポート18080で起動する手順。"
+tags:          [infra, docker, podman, drawio]
+status:        stable
+stale_after:   2028-05-03T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-03T01:58:49Z
+sources:
+  - id:        ref-1
+    resource:  https://www.drawio.com/blog/diagrams-docker-app
+    title:     "Blog - Run your own draw.io server with Docker"
 date:          2025-05-03
 category:      Infrastructure
 cover:         /assets/cover14.jpg

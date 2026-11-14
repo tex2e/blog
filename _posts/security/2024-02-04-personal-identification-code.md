@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "個人情報保護法における個人識別符号とは"
+type:          Concept
+description:   "個人情報保護法における「特定」と「識別」の違いを整理し、個人識別符号の定義や該当例、判断基準について解説します。"
+tags:          [security, privacy, appi, personal-identification-code]
+status:        stable
+stale_after:   2027-02-04T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-02-04T02:30:32Z
+sources:
+  - id:        ref-1
+    resource:  https://kokkai.ndl.go.jp/simple/txt/118904889X00420150508/15
+    title:     "答弁"
+  - id:        ref-2
+    resource:  https://amzn.to/42rIrO9
+    title:     "佐久間 淳『データ解析におけるプライバシー保護 (機械学習プロフェッショナルシリーズ)』講談社 (2016/8/25)"
+  - id:        ref-3
+    resource:  https://hourei.ndl.go.jp/simple/detail?lawId=0000136796&current=-1
+    title:     "個人情報の保護に関する法律及び行政手続における特定の個人を識別するための番号の利用等に関する法律の一部を改正する法律 平成27年9月9日法律第65号 \\| 日本法令索引"
 date:          2024-02-04
 category:      Security
 cover:         /assets/cover14.jpg

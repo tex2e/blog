@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[C#] ファイルストリームをUTF16で高速読み書きする"
+type:          How-To
+description:   "C#(.NET 8)のFileStreamとRFC 2781の上位・下位サロゲートペア判定を用いて、UTF-16ファイルを省メモリかつ高速に1文字ずつバイナリ読み書きする実装を解説します。"
+tags:          [dotnet, csharp, utf-16, filestream, encoding]
+status:        stable
+stale_after:   2027-06-16T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-15T08:09:01Z
+sources:
+  - id:        ref-1
+    resource:  https://datatracker.ietf.org/doc/html/rfc2781
+    title:     "RFC 2781 - UTF-16, an encoding of ISO 10646"
+  - id:        ref-2
+    resource:  "https://www.unicode.org/versions/Unicode15.1.0/ch03.pdf#G2630"
+    title:     "Section 3.8, Surrogates. -- Unicode.org"
 date:          2024-06-14
 category:      Dotnet
 cover:         /assets/cover14.jpg

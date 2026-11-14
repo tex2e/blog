@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[AWS] CLIで起動中のEC2インスタンスID一覧を表示＆EC2を起動・停止する"
+type:          How-To
+description:   "AWS CLIのec2サブコマンドで起動中EC2インスタンスのID一覧をフィルタ取得し、インスタンスの起動と停止を行う方法。"
+tags:          [infra, aws, ec2, aws-cli]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-14T14:08:10Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.aws.amazon.com/cli/latest/reference/ec2/
+    title:     "{ \"AmiLaunchIndex\": 0, \"ImageId\": \"ami-00011223344556677\", \"InstanceId\": \"i-0012"
+  - id:        ref-2
+    resource:  https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
+    title:     "describe-instances — AWS CLI 1.25.91 Command Reference"
+  - id:        ref-3
+    resource:  https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html
+    title:     "start-instances — AWS CLI 1.25.91 Command Reference"
+  - id:        ref-4
+    resource:  https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html
+    title:     "stop-instances — AWS CLI 1.25.91 Command Reference"
 date:          2022-10-14
 category:      Infrastructure
 cover:         /assets/cover14.jpg

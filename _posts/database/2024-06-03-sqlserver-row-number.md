@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[SQLServer] SELECTした行に連番を振る (ROW_NUMBER)"
+type:          How-To
+description:   "SQL ServerでSELECT結果の行に連番を振るROW_NUMBER()関数の使い方と、PARTITION BY句でグループごとに番号を振り直すSQL例を解説します。"
+tags:          [database, sqlserver, tsql, window-function, sql]
+status:        stable
+stale_after:   2027-08-04T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-03T13:56:05Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/sql/t-sql/functions/row-number-transact-sql?view=sql-server-ver16
+    title:     "ROW_NUMBER (Transact-SQL) - SQL Server \\| Microsoft Learn"
 date:          2024-06-03
 category:      Database
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "HTB easy (Linux): searchsploit > msf"
+type:          How-To
+description:   "Hack The BoxのLame（Linux）を対象に、nmapとsearchsploitでSamba 3.0.20の脆弱性を特定しMetasploitで攻略した手順。"
+tags:          [security, htb, metasploit, samba]
+status:        stable
+stale_after:   2023-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-08-07T08:21:58Z
 date:          2021-05-25
 category:      Security
 cover:         /assets/cover14.jpg

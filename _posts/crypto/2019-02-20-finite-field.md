@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "有限体(ガロア体)をPythonで実装する"
+type:          Concept
+description:   "有限体（ガロア体）の定義を説明し、Pythonの演算子オーバーロードを用いて素数位数GF(p)の四則演算を実装。"
+tags:          [crypto, finite-field, galois-field, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-02-19T13:09:56Z
 date:          2019-02-20
 category:      Crypto
 author:        tex2e

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] 自動変数の使い方"
+type:          Reference
+description:   "PowerShellで自動的に定義される$_や$args、$Error、$matches、$profileなどの自動変数の意味と用途をまとめます。"
+tags:          [powershell, automatic-variables, syntax]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-09T00:45:44Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.2
+    title:     "自動変数について - PowerShell \\| Microsoft Docs"
 date:          2022-04-09
 category:      PowerShell
 cover:         /assets/cover14.jpg

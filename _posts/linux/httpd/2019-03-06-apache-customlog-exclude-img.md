@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "Apache で画像やJSやフォントなどのログを除外する"
+type:          How-To
+description:   "ApacheのSetEnvIfとCustomLogを使い、画像・CSS・JS・フォントなどへのアクセスを通常ログから除外または別ログへ分離する方法を解説します。"
+tags:          [linux, apache, logging, httpd]
+status:        stable
+stale_after:   2022-06-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-06T05:46:10Z
+sources:
+  - id:        ref-1
+    resource:  http://httpd.apache.org/docs/current/mod/mod_log_config.html
+    title:     "mod_log_config"
 date:          2019-03-06
 category:      Linux
 author:        tex2e

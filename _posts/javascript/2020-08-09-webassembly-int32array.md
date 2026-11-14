@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[JavaScript] WebAssemblyで32bit整数配列をC言語で処理する"
+type:          How-To
+description:   "Emscriptenの導入からC言語の配列演算関数をWebAssemblyへコンパイルしJavaScriptのInt32Arrayで連携する手順。"
+tags:          [javascript, webassembly, c, emscripten]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-08-10T13:42:22Z
+sources:
+  - id:        ref-1
+    resource:  https://marcoselvatici.github.io/WASM_tutorial/
+    title:     "WASM Tutorial"
+  - id:        ref-2
+    resource:  https://emscripten.org/docs/api_reference/preamble.js.html
+    title:     "preamble.js — Emscripten 1.40.1 documentation"
+  - id:        ref-3
+    resource:  https://developer.mozilla.org/ja/docs/WebAssembly/C_to_wasm
+    title:     "C/C++からWebAssemblyにコンパイルする - WebAssembly \\| MDN"
+  - id:        ref-4
+    resource:  https://qiita.com/soramimi_jp/items/1b7ed0ddcefb0f4a7172
+    title:     "WebAssemblyでC++とJavaScript間のやり取り - Qiita"
 date:          2020-08-09
 category:      JavaScript
 cover:         /assets/cover14.jpg

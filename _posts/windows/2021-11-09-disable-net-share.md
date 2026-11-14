@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] ユーザ端末間のファイル共有を禁止する"
+type:          How-To
+description:   "WindowsでAutoShareWksを0に設定し管理共有を無効化するGPO・レジストリ編集手順と、FirewallによるSMBアクセス制限法を解説。"
+tags:          [windows, smb, registry, group-policy]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-07T00:53:46Z
 date:          2021-11-09
 category:      Windows
 cover:         /assets/cover14.jpg

@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Windows] バッチファイルの引数の文字列置換・パス展開"
+type:          Reference
+description:   "Windowsバッチファイルの引数展開（%~d1・%~dp1・%~nx1・%~t1等）、%~a1の属性表記、および変数の文字列置換構文の仕様一覧。"
+tags:          [windows-batch, cmd, variables, syntax]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-03-14T12:30:40Z
+sources:
+  - id:        ref-1
+    resource:  http://cplusplus.bordoon.com/cmd_exe_variables.html
+    title:     "Variable substitutions in cmd.exe"
+  - id:        ref-2
+    resource:  https://ss64.com/nt/syntax-args.html
+    title:     "Parameters / Arguments - Windows CMD - SS64.com"
 date:          2021-03-12
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

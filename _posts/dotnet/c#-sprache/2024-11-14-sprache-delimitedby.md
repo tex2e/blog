@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで可変長引数を解析する (DelimitedBy)"
+type:          Reference
+description:   "C#のSpracheでカンマ区切りなどの可変長要素を解析するDelimitedByとXDelimitedByの仕様や末尾区切り文字の注意点を解説。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-10T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-10T03:40:29Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2020-04-13-sprache6-delimitedby/
+    title:     "Sprache Part 6: DelimitedBy - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.Sequence.cs#L34"
+    title:     "Sprache/src/Sprache/Parse.Sequence.cs -- DelimitedBy"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.Sequence.cs#L56"
+    title:     "Sprache/src/Sprache/Parse.Sequence.cs -- XDelimitedBy"
 date:          2024-11-14
 category:      Dotnet
 cover:         /assets/cover14.jpg

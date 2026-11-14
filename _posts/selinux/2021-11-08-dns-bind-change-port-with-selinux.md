@@ -2,6 +2,14 @@
 layout:        post
 title:         "ポート番号を変更したBINDをSELinuxで許可する"
 menutitle:     "ポート番号を変更したBINDをSELinuxで許可する (dns_port_t)"
+type:          How-To
+description:   "BINDの待受ポートを53から5353へ変更した際に発生するSELinux拒否をsealertで確認し、semanage portでdns_port_tに許可設定する手順を解説します。"
+tags:          [selinux, bind, dns, semanage]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-04T12:51:46Z
 date:          2021-11-08
 category:      SELinux
 cover:         /assets/cover6.jpg

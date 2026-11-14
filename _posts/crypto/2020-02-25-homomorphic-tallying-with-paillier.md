@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "Paillier暗号(加法準同型暗号)と電子投票"
+type:          Concept
+description:   "Paillier暗号の加法準同型性を応用して投票内容を復号せずに集計する電子投票システムの仕組みとPython実装を解説。"
+tags:          [crypto, paillier, homomorphic-encryption, e-voting, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-25T12:34:10Z
+sources:
+  - id:        ref-1
+    resource:  http://security.hsr.ch/msevote/seminar-papers/HS09_Homomorphic_Tallying_with_Paillier.pdf
+    title:     "Homomorphic Tallying with Paillier Cryptosystem"
+  - id:        ref-2
+    resource:  https://file.scirp.org/pdf/CS_2016082314213901.pdf
+    title:     "A Homomorphic Crypto System for Electronic Election Schemes"
+  - id:        ref-3
+    resource:  https://crypto.stackexchange.com/questions/60493/anonymity-of-paillier-cryptosystem-in-e-voting-system
+    title:     "homomorphic encryption - Anonymity of Paillier cryptosystem in e-voting system - Cryptography Stack Exchange"
+  - id:        ref-4
+    resource:  https://web.archive.org/web/20150315165852/https://nlp.cs.nyu.edu/meyers/controversial-wikipedia-corpus/japanese-html/main/main_0219.xml.html
+    title:     "電子投票 - Wikipedia"
+  - id:        ref-5
+    resource:  https://github.com/ozsaygin/elgamal-evoting
+    title:     "ozsaygin/elgamal-evoting： ElGamal E-Voting Scheme Implementation"
+  - id:        ref-6
+    resource:  https://github.com/data61/python-paillier
+    title:     "data61/python-paillier： A library for Partially Homomorphic Encryption in Python"
 date:          2020-02-25
 category:      Crypto
 cover:         /assets/cover4.jpg

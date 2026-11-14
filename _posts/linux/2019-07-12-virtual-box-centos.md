@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "技術検証用にCentOS7を仮想環境にインストールする"
+type:          How-To
+description:   "VirtualBox上にCentOS 7をインストールしネットワーク設定やSSH公開鍵認証、クローンによる複数台検証環境を構築する手順。"
+tags:          [linux, centos, virtualbox, ssh]
+status:        stable
+stale_after:   2023-11-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-07-12T12:47:10Z
+sources:
+  - id:        ref-1
+    resource:  http://isoredirect.centos.org/centos/7/isos/x86_64/
+    title:     "CentOSのミラーサイト一覧"
 date:          2019-07-12
 category:      Linux
 author:        tex2e

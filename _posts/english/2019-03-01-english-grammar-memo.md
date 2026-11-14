@@ -2,6 +2,13 @@
 layout:        post
 title:         "英語の文法のメモ"
 menutitle:     "英語の文法のメモ（自分用）"
+type:          Reference
+description:   "不定詞・動名詞の意味上の主語や現在完了・過去完了・受動態完了形、助動詞+have+過去分詞の用法と例文をまとめた文法メモ。"
+tags:          [english, grammar]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-03-01T00:35:58Z
 date:          2019-03-01
 category:      English
 author:        tex2e

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "ギリシャ文字・ドイツ文字・花文字・筆記体のLaTeX数式の書き方"
+type:          Reference
+description:   "LaTeX数式で使用するギリシャ文字の大小・変体文字、mathscrによる花文字、mathcalの筆記体、mathfrakのドイツ文字のコマンド一覧をまとめています。"
+tags:          [math, latex, symbols]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-15T07:36:28Z
 date:          2020-02-15
 category:      Math
 cover:         /assets/cover14.jpg

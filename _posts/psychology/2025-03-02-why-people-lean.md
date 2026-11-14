@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "人が学ぶ理由"
+type:          Concept
+description:   "PERMAモデルや内発的動機、成長マインドセット、社会的つながりなど、ポジティブ心理学の観点から人が学ぶ理由を解説。"
+tags:          [psychology, learning, positive-psychology, growth-mindset]
+status:        draft
+generated:
+  by:          human:tex2e
+  at:          2025-03-16T09:09:17Z
 date:          2025-03-02
 category:      Psychology
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] 複数ファイルを一つにまとめる (Get-Content)"
+type:          How-To
+description:   "PowerShellのGet-ContentとSet-Contentで文字化けを防ぎつつ複数ファイルを結合し、ソートや重複排除して保存する方法を説明します。"
+tags:          [powershell, get-content, set-content, encoding]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-23T08:40:56Z
 date:          2022-04-20
 category:      PowerShell
 cover:         /assets/cover14.jpg

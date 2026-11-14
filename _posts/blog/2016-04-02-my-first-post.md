@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "ブログ始めました"
+type:          Essay
+description:   "ブログ開設の動機と、2020年・2021年・2023年の年間アクセス数推移や運営方針の振り返りをまとめた記事。"
+tags:          [blog, retrospective, analytics]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  https://tex2e.github.io/rfc-translater/html/
+    title:     "RFC対訳サイト"
 date:          2016-04-02
 category:      Blog
 author:        tex2e

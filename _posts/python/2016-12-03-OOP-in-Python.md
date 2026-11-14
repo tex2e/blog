@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] オブジェクト指向プログラミング"
+type:          Reference
+description:   "Python3のクラス定義、コンストラクタ、クラス・スタティックメソッド、ネームマングリング、演算子、継承、デコレータの構文まとめ。"
+tags:          [python, oop, decorators, syntax]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-12-03
 category:      Python
 author:        tex2e

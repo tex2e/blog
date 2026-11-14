@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Gitレポジトリの中にいるか確認する方法"
+type:          How-To
+description:   "シェルスクリプトやコマンドラインで現在位置がGitリポジトリ内かをgit rev-parseで判定する方法と関数化例を解説。"
+tags:          [git, shell, cli]
+status:        stable
+stale_after:   2019-12-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-05-21
 category:      Git
 author:        tex2e

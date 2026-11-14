@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "エラーメッセージ表示用の関数"
+type:          Reference
+description:   "シェルスクリプトでANSIエスケープシーケンスにより色付きで警告・エラー・成功・失敗メッセージを出力するwarn/error/success/failed関数集です。"
+tags:          [shell, bash, ansi-colors, logging]
+status:        stable
+stale_after:   2026-08-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-04-14
 category:      Shell
 cover:         /assets/cover14.jpg

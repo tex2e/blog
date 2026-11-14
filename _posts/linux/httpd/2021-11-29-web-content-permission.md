@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Webコンテンツの所有者・書き込み権限を確認する"
+type:          How-To
+description:   "DocumentRoot配下のファイル所有者をrootへ統一し、その他ユーザに書き込み権限があるディレクトリをfindで検出・修正する方法を説明します。"
+tags:          [linux, web-security, permissions, hardening]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:44:12Z
 date:          2021-11-29
 category:      Linux
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] クリック時のイベントハンドラを設定する"
+type:          How-To
+description:   "ASP.NET Core Blazorのボタンに@onclick属性を設定してイベントハンドラを紐づける方法と、ラムダ式での引数渡しおよび非同期実行の実装方法を解説します。"
+tags:          [dotnet, csharp, blazor, event-handling]
+status:        stable
+stale_after:   2027-10-08T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-08T01:16:51Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-10-02
 category:      Dotnet
 cover:         /assets/cover14.jpg

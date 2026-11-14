@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[JavaScript] Webページでコマンド例の「$」の部分をコピペさせない"
+type:          How-To
+description:   "CSSのuser-select: noneやPrism.jsのトークン定義を使ってWeb上のコマンド例からプロンプト記号のコピーを防ぐ方法。"
+tags:          [javascript, css, prismjs, web]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-07-02T10:08:49Z
 date:          2019-07-02
 category:      JavaScript
 author:        tex2e

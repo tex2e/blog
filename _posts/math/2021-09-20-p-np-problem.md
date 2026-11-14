@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "P問題とNP問題の違い"
+type:          Concept
+description:   "多項式時間で解を発見できるP問題と解を検証できるNP問題の違い、P⊆NPの関係、およびP≠NP予想が意味する計算複雑性の課題を解説します。"
+tags:          [math, complexity-theory, p-vs-np]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2021-09-20T07:00:42Z
+sources:
+  - id:        ref-1
+    resource:  https://ja.wikipedia.org/wiki/%E8%A4%87%E9%9B%91%E6%80%A7%E3%82%AF%E3%83%A9%E3%82%B9
+    title:     "複雑性クラス - Wikipedia"
 date:          2021-09-20
 category:      Math
 cover:         /assets/cover14.jpg

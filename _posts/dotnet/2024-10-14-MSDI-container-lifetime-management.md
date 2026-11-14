@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[C#] 依存注入のためのMS.DIコンテナの生存管理 (Transient/Singleton/Scoped)"
+type:          Concept
+description:   "Microsoft.Extensions.DependencyInjectionにおけるTransient・Singleton・Scopedの3種類のインスタンス生存期間の違いと登録メソッドの挙動を解説します。"
+tags:          [dotnet, csharp, dependency-injection, msdi]
+status:        stable
+stale_after:   2027-10-14T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-13T00:36:56Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-usage
+    title:     "Use dependency injection - .NET \\| Microsoft Learn"
 date:          2024-10-14
 category:      Dotnet
 cover:         /assets/cover14.jpg

@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "httpd に関するSELinuxブール値"
+type:          Reference
+description:   "ApacheやNginxなどのhttpdでよく使うSELinuxブール値の名前・デフォルト値・機能と主要なSELinuxタイプをまとめたリファレンスです。"
+tags:          [selinux, httpd, apache, boolean]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-11T14:44:32Z
+sources:
+  - id:        ref-1
+    resource:  https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-managing_confined_services-the_apache_http_server-booleans
+    title:     "14.3. ブール値 Red Hat Enterprise Linux 7 \\| Red Hat Customer Portal"
 date:          2021-11-14
 category:      SELinux
 cover:         /assets/cover6.jpg

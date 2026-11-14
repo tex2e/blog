@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] プログラムで画面遷移する (NavigationManager)"
+type:          How-To
+description:   "ASP.NET Core BlazorでNavigationManagerを依存注入し、NavigateToメソッドを呼び出してプログラム側から指定URLへ画面遷移させる方法を解説します。"
+tags:          [dotnet, csharp, blazor, routing, navigation]
+status:        stable
+stale_after:   2027-10-11T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-11T23:23:54Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-10-11
 category:      Dotnet
 cover:         /assets/cover14.jpg

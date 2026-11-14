@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "自分がデバッグするときの考え方"
+type:          Essay
+description:   "記録・再現・観察と仮説・修正検証・収束判定という5段階のプロセスに沿った、著者自身のデバッグの考え方と実践ポイントをまとめています。"
+tags:          [programming, debugging, methodology]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-05-18T03:47:03Z
 date:          2024-05-06
 category:      Programming
 cover:         /assets/cover14.jpg

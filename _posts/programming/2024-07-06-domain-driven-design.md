@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "ドメイン駆動設計 (Domain-Driven Design)"
+type:          Concept
+description:   "ドメインモデルやユビキタス言語、エンティティ、値オブジェクト、サービス、リポジトリといったドメイン駆動設計（DDD）の中核概念を解説します。"
+tags:          [programming, ddd, architecture, software-design]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-07-06T03:31:21Z
+sources:
+  - id:        ref-1
+    resource:  https://knowledge.sakura.ad.jp/36776/
+    title:     "フロントエンドの複雑さに立ち向かう 〜DDDとClean Architectureを携えて〜 \\| さくらのナレッジ"
+  - id:        ref-2
+    resource:  https://techblog.yahoo.co.jp/entry/2021011230061115/
+    title:     "ドメイン駆動設計で保守性をあげたリニューアル事例 〜 ショッピングクーポンの設計紹介 - Yahoo! JAPAN Tech Blog"
 date:          2024-07-06
 category:      Programming
 cover:         /assets/cover14.jpg

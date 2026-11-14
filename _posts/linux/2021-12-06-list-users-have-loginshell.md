@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "ログインシェルが存在するユーザ一覧を表示する"
+type:          How-To
+description:   "/etc/passwdからログインシェルが有効なユーザをgrepで抽出し、不要アカウントをusermod -sで無効化する方法を説明します。"
+tags:          [linux, user-management, hardening, ssh]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-25T13:04:38Z
 date:          2021-12-06
 category:      Linux
 cover:         /assets/cover14.jpg

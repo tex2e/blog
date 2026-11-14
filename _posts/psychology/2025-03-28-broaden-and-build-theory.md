@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "拡大形成理論と自己効力感"
+type:          Concept
+description:   "ポジティブ感情が認知の幅を広げて心理的・社会的資源を築く拡大形成理論と、自己効力感を高める相互作用の仕組みを解説。"
+tags:          [psychology, positive-psychology, broaden-and-build, self-efficacy]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2025-03-16T09:09:45Z
 date:          2025-03-28
 category:      Psychology
 cover:         /assets/cover14.jpg

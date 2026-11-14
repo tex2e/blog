@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Windows] TeraTermマクロでリモートログイン自動化"
+type:          How-To
+description:   "TeraTermマクロ（TTL）のstrconcat・connect・waitコマンドを使い、SSHリモートログインとパスワード入力を自動化する方法を解説。"
+tags:          [windows-batch, teraterm, ssh, automation]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-08-13T12:52:24Z
+sources:
+  - id:        ref-1
+    resource:  https://ttssh2.osdn.jp/manual/4/ja/macro/command/index.html
+    title:     "TTL コマンドリファレンス"
+  - id:        ref-2
+    resource:  https://ttssh2.osdn.jp/manual/4/ja/macro/syntax/index.html
+    title:     "マクロ言語 \"Tera Term Language (TTL)\""
 date:          2020-08-12
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

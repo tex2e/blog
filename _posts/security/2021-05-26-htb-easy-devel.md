@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "HTB easy (Win): ftp > webshell > msf > recon"
+type:          How-To
+description:   "Hack The BoxのDevel（Windows）に対し、匿名FTP経由のWebシェル設置とMetasploitの権限昇格候補検索で攻略した手順。"
+tags:          [security, htb, windows, metasploit]
+status:        stable
+stale_after:   2023-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-08-07T08:21:58Z
 date:          2021-05-26
 category:      Security
 cover:         /assets/cover14.jpg

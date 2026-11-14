@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] 標準出力に色付けをする (Write-Host)"
+type:          How-To
+description:   "PowerShellのWrite-Hostコマンドレットで-ForegroundColorと-BackgroundColorを指定し出力文字に色を付ける方法を解説します。"
+tags:          [powershell, write-host, console]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-15T10:48:32Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-host?view=powershell-7.2
+    title:     "Write-Host (Microsoft.PowerShell.Utility) - PowerShell \\| Microsoft Docs"
 date:          2022-04-15
 category:      PowerShell
 cover:         /assets/cover14.jpg

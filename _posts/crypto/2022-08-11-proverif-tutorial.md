@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[ProVerif] プロトコル形式的安全検証ツール入門"
+type:          How-To
+description:   "形式検証ツールProVerifの基本構文、query・eventによる検証、暗号プリミティブ定義と中間者攻撃検出の入門手順を解説。"
+tags:          [crypto, proverif, formal-verification, protocol]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-08-14T00:01:52Z
+sources:
+  - id:        ref-1
+    resource:  https://bblanche.gitlabpages.inria.fr/proverif/manual.pdf
+    title:     "ProVerifのユーザマニュアル"
+  - id:        ref-2
+    resource:  https://bblanche.gitlabpages.inria.fr/proverif/
+    title:     "ProVerif: Cryptographic protocol verifier in the formal model"
 date:          2022-08-10
 category:      Crypto
 cover:         /assets/cover4.jpg

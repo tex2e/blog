@@ -1,6 +1,23 @@
 ---
 layout:        post
 title:         "アドラー心理学"
+type:          Concept
+description:   "アドラー心理学における幸せと貢献感、自己受容、他者信頼、勇気づけ、人生のタスクなど基本概念を体系的に整理した解説。"
+tags:          [psychology, adlerian-psychology, interpersonal-relationships]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2022-04-04T10:37:15Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3KAFOCB
+    title:     "嫌われる勇気 自己啓発の源流「アドラー」の教え"
+  - id:        ref-2
+    resource:  https://amzn.to/3Geb1bV
+    title:     "幸せになる勇気 自己啓発の源流「アドラー」の教えII"
+  - id:        ref-3
+    resource:  https://amzn.to/3M9JxI7
+    title:     "教師・保育者のためのカウンセリングの理論と方法"
 date:          2022-02-25
 category:      Psychology
 cover:         /assets/cover14.jpg

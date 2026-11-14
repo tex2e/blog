@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] Windowsイベントログを収集する"
+type:          How-To
+description:   "PowerShellのGet-EventlogとExport-Clixmlを組み合わせ、WindowsのアプリケーションやシステムイベントログをXML形式で収集する方法を解説します。"
+tags:          [powershell, windows, eventlog, xml]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-14T14:18:47Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-eventlog?view=powershell-5.1
+    title:     "Get-EventLog (Microsoft.PowerShell.Management) - PowerShell \\| Microsoft Learn"
 date:          2024-06-05
 category:      PowerShell
 cover:         /assets/cover14.jpg

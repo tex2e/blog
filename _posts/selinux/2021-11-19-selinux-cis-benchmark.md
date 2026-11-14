@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "CIS Benchmarkを元にSELinuxの設定をする"
+type:          How-To
+description:   "CIS Benchmarkに基づき、SELinuxの有効化やブートローダー設定、Enforceモード、不要パッケージ削除の確認・修正方法を解説します。"
+tags:          [selinux, cis-benchmark, centos, hardening]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-13T12:11:17Z
+sources:
+  - id:        ref-1
+    resource:  "https://downloads.cisecurity.org/#/"
+    title:     "CIS Benchmark Downloads"
+  - id:        ref-2
+    resource:  https://www.cisecurity.org/cis-benchmarks/
+    title:     "CIS Benchmarks"
 date:          2021-11-19
 category:      SELinux
 cover:         /assets/cover6.jpg

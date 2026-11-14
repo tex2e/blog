@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Windowsで作成したZIPファイルをmacOSで解凍する"
+type:          How-To
+description:   "Windowsで作成したZIPファイルをmacOSで解凍するため、dittoコマンドの-V・-x・-kや--passwordオプションの使い方を解説。"
+tags:          [windows, macos, zip, ditto]
+status:        stable
+stale_after:   2024-03-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-05-12T12:11:33Z
 date:          2020-05-12
 category:      Windows
 cover:         /assets/cover14.jpg

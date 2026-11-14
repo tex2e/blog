@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "踏み台サーバ経由の多段SSH"
+type:          How-To
+description:   "~/.ssh/configのProxyCommandにssh -Wを指定し、踏み台サーバ経由で別サーバへ多段SSH接続する設定方法を説明します。"
+tags:          [linux, ssh, proxycommand, bastion]
+status:        stable
+stale_after:   2025-05-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-01-20T06:19:42Z
 date:          2019-01-20
 category:      Linux
 author:        tex2e

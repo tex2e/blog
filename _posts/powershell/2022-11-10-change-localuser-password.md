@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[PowerShell] ローカルユーザのパスワードを変更する"
+type:          How-To
+description:   "PowerShellのGet-LocalUserとConvertTo-SecureString、Set-LocalUserを用いてローカルユーザのパスワードを変更する方法を解説します。"
+tags:          [powershell, windows, local-user, password]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-11-12T09:12:25Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.localaccounts/set-localuser?view=powershell-5.1
+    title:     "Set-LocalUser (Microsoft.PowerShell.LocalAccounts) - PowerShell \\| Microsoft Learn"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/convertto-securestring?view=powershell-7.3
+    title:     "ConvertTo-SecureString (Microsoft.PowerShell.Security) - PowerShell \\| Microsoft Learn"
 date:          2022-11-10
 category:      PowerShell
 cover:         /assets/cover14.jpg

@@ -2,8 +2,15 @@
 layout:        post
 title:         "RPMパッケージのダウンロードとインストール"
 menutitle:     "RPMパッケージのダウンロードとインストール (downloadonly, rpm -i / -ql)"
+type:          How-To
+description:   "Red Hat系Linuxでyumのdownloadonlyプラグインを用いてRPMパッケージを取得しrpmコマンドで導入・更新・確認・削除する方法。"
+tags:          [linux, rpm, yum, centos]
+status:        stable
+stale_after:   2025-01-12T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-07T00:40:43Z
 date:          2019-03-07
-tags:          Linux
 category:      Linux
 author:        tex2e
 cover:         /assets/cover14.jpg

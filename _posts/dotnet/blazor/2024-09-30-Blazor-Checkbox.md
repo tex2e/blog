@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Blazor] チェックボックスで双方向データバインディングする"
+type:          How-To
+description:   "ASP.NET Core Blazorのチェックボックスに@bind属性を指定し、真偽値メンバー変数と選択状態を双方向データバインディングで連携させる方法を解説します。"
+tags:          [dotnet, csharp, blazor, data-binding, forms]
+status:        stable
+stale_after:   2027-10-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-09-29T10:42:14Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/BlazorSample
+    title:     "tex2e/BlazorSample: Blazorの検証環境"
 date:          2024-09-30
 category:      Dotnet
 cover:         /assets/cover14.jpg

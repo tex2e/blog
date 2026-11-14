@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "SageMathをUbuntu 20.04にインストール"
+type:          How-To
+description:   "Ubuntu 20.04で古いPPAエラーを回避してaptからSageMathをインストールし、コンソール配色を変更する手順。"
+tags:          [crypto, sagemath, ubuntu, installation]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-09-12T13:10:50Z
+sources:
+  - id:        ref-1
+    resource:  https://askubuntu.com/questions/1031170/failing-to-install-sagemath-on-ubuntu-18-04-lts
+    title:     "software installation - failing to install sagemath on ubuntu 18.04 LTS - Ask Ubuntu"
+  - id:        ref-2
+    resource:  https://ask.sagemath.org/question/10060/sage-terminal-colors/
+    title:     "sage terminal colors - ASKSAGE: Sage Q&A Forum"
 date:          2020-09-13
 category:      Crypto
 cover:         /assets/cover4.jpg

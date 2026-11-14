@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Ubuntu22.04で固定IPの設定やDNSの変更をする (netplan)"
+type:          How-To
+description:   "Ubuntu 22.04のNetplan設定YAMLを編集し、固定IPアドレス・DNSサーバ・デフォルトゲートウェイを設定して適用する手順を解説します。"
+tags:          [linux, ubuntu, netplan, networking]
+status:        stable
+stale_after:   2026-05-01T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-05-01T14:28:39Z
 date:          2023-05-01
 category:      Linux
 cover:         /assets/cover14.jpg

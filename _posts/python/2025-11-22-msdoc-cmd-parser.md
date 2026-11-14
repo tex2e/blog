@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Python] LarkでMS-DOSコマンドの構文解析"
+type:          Concept
+description:   "PythonのパーサーライブラリLarkとEBNF文法定義grammar.larkを使い、MS-DOSコマンドを構文解析してASTを得る設計解説。"
+tags:          [python, lark, parser, batch]
+status:        stable
+stale_after:   2027-01-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-11-22T03:51:25Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tex2e/msdos-cmd-parser
+    title:     "tex2e/msdos-cmd-parser: MS-DOS Command Parser"
 date:          2025-11-22
 category:      Python
 cover:         /assets/cover14.jpg

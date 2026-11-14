@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] サブフォルダも含めた全てのファイルの更新時間を出力"
+type:          How-To
+description:   "Windowsバッチのfor /rループと~t変数展開を使い、サブフォルダ配下を含む全ファイルの更新時間一覧を出力する方法を解説。"
+tags:          [windows-batch, cmd, for-loop, timestamp]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-03-27T02:15:21Z
 date:          2021-03-27
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

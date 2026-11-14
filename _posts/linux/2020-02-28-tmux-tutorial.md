@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "tmuxの使い方の概要"
+type:          Reference
+description:   "ターミナルマルチプレクサtmuxのセッション復帰デモとセッション・ウィンドウ・ペイン操作のコマンドやショートカット一覧。"
+tags:          [linux, tmux, terminal, reference]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-02-29T03:27:04Z
+sources:
+  - id:        ref-1
+    resource:  https://tmuxcheatsheet.com/
+    title:     "Tmux Cheat Sheet & Quick Reference"
+  - id:        ref-2
+    resource:  https://qiita.com/nmrmsys/items/03f97f5eabec18a3a18b
+    title:     "tmuxチートシート - Qiita"
+  - id:        ref-3
+    resource:  https://blog.nijohando.jp/post/tmux-2.6-and-reattach-to-user-namespace/
+    title:     "tmux 2.6とreattach-user-namespace"
 date:          2020-02-28
 category:      Linux
 cover:         /assets/cover14.jpg

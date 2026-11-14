@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Apacheで不要な設定ファイルを削除する"
+type:          How-To
+description:   "Apacheのautoindexやwelcome・userdir・WebDAV・CGIの不要な設定ファイルをリネームして無効化し、セキュリティを強化する手順を解説します。"
+tags:          [linux, apache, httpd, hardening]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:44:26Z
 date:          2021-11-30
 category:      Linux
 cover:         /assets/cover14.jpg

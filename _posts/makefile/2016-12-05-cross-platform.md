@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "クロスプラットフォームで make"
+type:          How-To
+description:   "Makefile内で$(shell uname)の実行結果とifeqディレクティブを使い、macOS・Linux・Cygwinごとに処理を分岐させる方法を説明します。"
+tags:          [makefile, gnu-make, cross-platform]
+status:        stable
+stale_after:   2019-12-05T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-12-05
 category:      Makefile
 author:        tex2e

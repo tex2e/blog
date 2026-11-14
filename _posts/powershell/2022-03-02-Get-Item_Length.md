@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] Get-Itemでファイルサイズを取得する"
+type:          How-To
+description:   "PowerShellのGet-ItemとLengthプロパティでファイルサイズを取得し、再帰的に空ファイルを検索する方法を解説します。"
+tags:          [powershell, get-item, file-system]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-05T23:43:48Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-item
+    title:     "Get-Item (Microsoft.PowerShell.Management) - PowerShell \\| Microsoft Docs"
 date:          2022-03-02
 category:      PowerShell
 cover:         /assets/cover14.jpg

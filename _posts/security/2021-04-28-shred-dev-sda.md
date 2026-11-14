@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "shredコマンドでHDD完全消去"
+type:          How-To
+description:   "Ubuntuのブータブルメディアからfdiskとshredコマンドを実行してHDDのデータをゼロ塗り・完全消去する手順と注意点。"
+tags:          [security, linux, shred, hdd]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-05-05T09:42:17Z
+sources:
+  - id:        ref-1
+    resource:  https://www.mm2d.net/main/tech/linux/hdd_clear-01.html
+    title:     "Linuxを利用したHDDの完全消去 - Linux解説 - 碧色工房"
 date:          2021-04-28
 category:      Security
 cover:         /assets/cover14.jpg

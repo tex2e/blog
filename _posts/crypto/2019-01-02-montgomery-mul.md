@@ -1,6 +1,29 @@
 ---
 layout:        post
 title:         "Pythonでモンゴメリ乗算"
+type:          Concept
+description:   "除算回数を減らすモンゴメリリダクションとモンゴメリ乗算のアルゴリズム、およびPython3での実装と速度検証を解説。"
+tags:          [crypto, montgomery-multiplication, modular-arithmetic, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-01-02T04:04:05Z
+sources:
+  - id:        ref-1
+    resource:  https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%A1%E3%83%AA%E4%B9%97%E7%AE%97
+    title:     "モンゴメリ乗算 (Wikipedia)"
+  - id:        ref-2
+    resource:  "https://en.wikipedia.org/wiki/Montgomery_modular_multiplication#Side_channel_attacks"
+    title:     "Side channel attacks -- Montgomery modular multiplication (Wikipedia)"
+  - id:        ref-3
+    resource:  https://www.nayuki.io/page/montgomery-reduction-algorithm
+    title:     "Source code -- Montgomery reduction algorithm"
+  - id:        ref-4
+    resource:  "https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%A1%E3%83%AA%E4%B9%97%E7%AE%97#%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0"
+    title:     "アルゴリズム -- モンゴメリ乗算（Wikipedia）"
+  - id:        ref-5
+    resource:  "https://github.com/Legrandin/pycryptodome/blob/d13e46b02d/src/montgomery.c#L202-L258"
+    title:     "montgomery.c -- Legrandin/pycryptodome"
 date:          2019-01-02
 category:      Crypto
 author:        tex2e

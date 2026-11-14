@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "firewalldコマンド集 (firewall-cmd)"
+type:          Reference
+description:   "firewall-cmdを使ったゾーンやサービスの一覧確認・ポートの一時開閉・設定の恒久化など基本操作コマンドをまとめた一覧です。"
+tags:          [linux, firewall, firewalld]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-13T12:11:40Z
 date:          2021-11-21
 category:      Linux
 cover:         /assets/cover14.jpg

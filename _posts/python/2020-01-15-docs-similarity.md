@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] 文書のコサイン類似度を求める"
+type:          How-To
+description:   "コサイン類似度の定義式と、Pythonのscikit-learnでTF-IDFベクトルから文書間の類似度行列を計算する方法。"
+tags:          [python, scikit-learn, cosine-similarity, tf-idf]
+status:        stable
+stale_after:   2025-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-01-15T09:27:19Z
 date:          2020-01-15
 category:      Python
 cover:         /assets/cover14.jpg

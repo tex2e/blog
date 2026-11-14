@@ -2,6 +2,14 @@
 layout:        post
 title:         "[C言語] map と reduce を実装する"
 menutitle:     "[C言語] map と reduce を実装する"
+type:          How-To
+description:   "C言語の関数ポインタを用いて数値配列向けのmap関数とreduce関数を実装し、利用例を紹介する記事。"
+tags:          [c, functional-programming, function-pointer]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-12-03
 category:      C
 author:        tex2e

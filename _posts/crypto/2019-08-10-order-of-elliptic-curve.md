@@ -1,6 +1,17 @@
 ---
 layout:        post
 title:         "ルジャンドル記号による楕円曲線の位数計算"
+type:          Concept
+description:   "ルジャンドル記号を用いて有限体上の楕円曲線の位数（曲線上の全点の個数）を計算する数式とPython実装を解説。"
+tags:          [crypto, elliptic-curve, legendre-symbol, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-08-10T04:10:08Z
+sources:
+  - id:        ref-1
+    resource:  https://www.morikita.co.jp/books/book/2213
+    title:     "辻井 重男, 笠原 正雄, 有田 正剛, 境 隆一, 只木 孝太郎, 趙 晋輝, 松尾 和人: 暗号理論と楕円曲線. 森北出版, 2008"
 date:          2019-08-10
 category:      Crypto
 author:        tex2e

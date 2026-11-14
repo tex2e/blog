@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] ログイン・ログアウトのイベントログを取得する"
+type:          How-To
+description:   "PowerShellのGet-EventLogでWindowsのシステムログからログイン・ログアウトのイベント時刻を抽出する方法を紹介します。"
+tags:          [powershell, event-log, get-eventlog, windows]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-31T14:10:38Z
+sources:
+  - id:        ref-1
+    resource:  https://sid-500.com/2018/04/30/powershell-building-objects-with-custom-properties/
+    title:     "PowerShell: Building Objects with Custom Properties with Select-Object – SID-500.COM"
 date:          2021-02-02
 category:      PowerShell
 cover:         /assets/cover1.jpg

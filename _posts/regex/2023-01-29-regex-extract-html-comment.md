@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Regex] 正規表現でHTMLのコメントを抽出する"
+type:          How-To
+description:   "改行を含むHTMLコメントを抽出する正規表現について、控えめな量指定子を使う記法と使えない環境向けの基本記法を解説。"
+tags:          [regex, html, programming]
+status:        stable
+stale_after:   2026-02-19T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-01-29T06:23:44Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3IxSBV4
+    title:     "詳説 正規表現 第3版 - O'Reilly Japan"
 date:          2023-01-29
 category:      Programming
 cover:         /assets/cover14.jpg

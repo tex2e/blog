@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "Latin Greek（英単語でギリシャとラテンに起源を持つ単語）"
+type:          Reference
+description:   "ギリシャ語とラテン語に起源を持つ英単語の語根や接頭辞・接尾辞の意味を語源別に整理した語彙リファレンス一覧。"
+tags:          [english, vocabulary, etymology, latin, greek]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2023-12-10T02:38:40Z
 date:          2016-01-01
 category:      English
 cover:         /assets/cover14.jpg

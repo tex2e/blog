@@ -2,6 +2,23 @@
 layout:        post
 title:         "Tonelli-Shanks Algorithm"
 menutitle:     "Tonelli-Shanks Algorithm (平方剰余の根を求めるアルゴリズム)"
+type:          Concept
+description:   "奇素数を法とする平方剰余の平方根を求めるTonelli-ShanksアルゴリズムのPython実装とテスト例を紹介。"
+tags:          [crypto, number-theory, tonelli-shanks, quadratic-residue, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-08-15T13:33:48Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Tonelli%E2%80%93Shanks_algorithm
+    title:     "Tonelli–Shanks algorithm -- Wikipedia"
+  - id:        ref-2
+    resource:  "https://rosettacode.org/wiki/Tonelli-Shanks_algorithm#Python"
+    title:     "Tonelli-Shanks algorithm -- Rosetta Code"
+  - id:        ref-3
+    resource:  https://github.com/sympy/sympy/blob/master/sympy/ntheory/residue_ntheory.py
+    title:     "sympy/residue_ntheory.py at master · sympy/sympy"
 date:          2019-08-15
 category:      Crypto
 author:        tex2e

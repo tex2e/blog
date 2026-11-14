@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] マルチスレッド処理：Threadクラスで並列処理"
+type:          How-To
+description:   "C#でプロセスとスレッドの基礎知識を踏まえ、Threadクラスによるスレッドの起動・待機方法と過剰生成による負荷・スレッドプールとの違いを解説します。"
+tags:          [dotnet, csharp, multithreading, thread]
+status:        stable
+stale_after:   2028-05-25T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-25T13:22:50Z
 date:          2025-05-18
 category:      Dotnet
 cover:         /assets/cover14.jpg

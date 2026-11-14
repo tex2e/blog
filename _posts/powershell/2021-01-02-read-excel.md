@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[PowerShell] Excelを読み込む"
+type:          How-To
+description:   "PowerShellからExcel.ApplicationのCOMオブジェクトを操作してExcelファイルのセル値を読み込む方法を解説します。"
+tags:          [powershell, excel, com, windows]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-02T03:19:52Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/office/vba/api/excel.workbooks.open
+    title:     "Open メソッド (Excel) \\| Microsoft Docs"
 date:          2021-01-02
 category:      PowerShell
 cover:         /assets/cover1.jpg

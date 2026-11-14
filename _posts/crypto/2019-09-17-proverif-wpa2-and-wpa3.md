@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[ProVerif] WPA3プロトコルの安全性を検証する"
+type:          How-To
+description:   "形式検証ツールProVerifの記法を解説し、WPA2とWPA3の秘匿性・認証・オフライン攻撃耐性・前方秘匿性を検証。"
+tags:          [crypto, proverif, wpa3, formal-verification]
+status:        stable
+stale_after:   2027-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-09-17T02:48:03Z
+sources:
+  - id:        ref-1
+    resource:  https://prosecco.gforge.inria.fr/personal/bblanche/proverif/
+    title:     "B.Blanchet(Project leader), \"ProVerif: Cryptographic protocol verifier in the formal model\""
+  - id:        ref-2
+    resource:  https://prosecco.gforge.inria.fr/personal/bblanche/proverif/manual.pdf
+    title:     "B.Blanchet, B.Smyth, and V.Cheval, \"ProVerif 2.00: Automatic Cryptographic Protocol Verifier, User Manual and Tutorial\""
+  - id:        ref-3
+    resource:  https://www.cs.huji.ac.il/~dolev/pubs/dolev-yao-ieee-01056650.pdf
+    title:     "D.Dolev and A.Yao, \"On the Security of Public Key Protocols,\" IEEE Transactions on Information Theory, Vol.29(2), pp.198–208, 1983."
 date:          2019-09-17
 category:      Crypto
 author:        tex2e

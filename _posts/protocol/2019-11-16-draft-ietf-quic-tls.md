@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "draft-ietf-quic-tls の概要"
+type:          Concept
+description:   "QUICの暗号化を定義するdraft-ietf-quic-tls（RFC 9001）について、TLS 1.3メッセージの運搬方法や鍵スケジュール、パケット保護の仕組みをまとめています。"
+tags:          [protocol, quic, tls13, rfc9001]
+status:        stable
+stale_after:   2024-08-16T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-11-16T08:31:19Z
+sources:
+  - id:        ref-1
+    resource:  https://www.rfc-editor.org/rfc/rfc9001.html
+    title:     "Using TLS to Secure QUIC"
+  - id:        ref-2
+    resource:  https://tools.ietf.org/html/rfc8439
+    title:     "RFC8439 - ChaCha20 and Poly1305 for IETF Protocols"
 date:          2019-11-16
 category:      Protocol
 author:        tex2e

@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "マイナンバーカードとAPDUで通信して署名データ作成"
+type:          How-To
+description:   "マイナンバーカードとAPDUコマンドで通信し、証明書の取得やDigestInfoを用いた秘密鍵署名、OpenSSL検証、個人番号等の読み取り手順を解説します。"
+tags:          [protocol, mynumber, apdu, jpki, smartcard]
+status:        stable
+stale_after:   2026-09-29T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-16T14:46:37Z
+sources:
+  - id:        ref-1
+    resource:  http://eternalwindows.jp/security/scard/scard08.html
+    title:     "ファイル構造 -- EternalWindows"
+  - id:        ref-2
+    resource:  https://www.nmda.or.jp/nmda/ic-card/iso10536/sec4.html
+    title:     "ISO 10536 - 4章"
+  - id:        ref-3
+    resource:  http://eternalwindows.jp/security/scard/scard00.html
+    title:     "セキュリティ / スマートカード - EternalWindows"
+  - id:        ref-4
+    resource:  https://cardwerk.com/smart-card-standard-iso7816-4-section-6-basic-interindustry-commands/
+    title:     "ISO7816 part 4 section 6 with Basic Interindustry Commands (APDU level)"
+  - id:        ref-5
+    resource:  https://kikakurui.com/x6/X6319-3-2011-01.html
+    title:     "JISX6319-3:2011 ＩＣカード実装仕様－第３部：共通コマンド"
+  - id:        ref-6
+    resource:  "https://tools.ietf.org/html/rfc2315#section-9.4"
+    title:     "RFC 2315: PKCS #7"
 date:          2021-01-16
 category:      Protocol
 cover:         /assets/cover5.jpg

@@ -1,6 +1,29 @@
 ---
 layout:        post
 title:         "修正ElGamal暗号の加法準同型性"
+type:          Concept
+description:   "暗号文に乗法準同型性から加法準同型性を持たせる修正ElGamal暗号とBaby-step Giant-step法による復号のPython実装を解説。"
+tags:          [crypto, elgamal, homomorphic-encryption, bsgs, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-22T03:42:46Z
+sources:
+  - id:        ref-1
+    resource:  https://ja.wikipedia.org/wiki/%E6%BA%96%E5%90%8C%E5%9E%8B%E6%9A%97%E5%8F%B7
+    title:     "準同型暗号 - Wikipedia"
+  - id:        ref-2
+    resource:  https://en.wikipedia.org/wiki/Homomorphic_encryption
+    title:     "Homomorphic encryption - Wikipedia"
+  - id:        ref-3
+    resource:  https://tjkendev.github.io/procon-library/python/math/baby-step-giant-step.html
+    title:     "離散対数問題 (Baby-step giant-step) - yaketake08's 実装メモ"
+  - id:        ref-4
+    resource:  https://en.wikipedia.org/wiki/Baby-step_giant-step
+    title:     "Baby-step giant-step - Wikipedia"
+  - id:        ref-5
+    resource:  https://ja.wikipedia.org/wiki/%E9%9B%A2%E6%95%A3%E5%AF%BE%E6%95%B0
+    title:     "離散対数 - Wikipedia"
 date:          2020-02-23
 category:      Crypto
 cover:         /assets/cover4.jpg

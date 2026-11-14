@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Elixir] オブジェクト指向プログラミング"
+type:          Reference
+description:   "Elixirでオブジェクト指向的な構造を表現するための構造体やモジュール関数、プロトコルなどの構文と実装パターンを項目別にまとめています。"
+tags:          [programming, elixir, oop, struct]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
 date:          2016-12-03
 category:      Programming
 author:        tex2e

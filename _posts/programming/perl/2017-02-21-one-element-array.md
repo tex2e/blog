@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Perl6] Raku で要素が一つの配列の作り方"
+type:          Troubleshooting
+description:   "Perl6（Raku）で要素が1つのハッシュ配列や2次元配列を定義した際にPair配列になる問題の原因と、末尾カンマによる解決法を解説します。"
+tags:          [programming, raku, perl6, array]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-02-23T08:38:11Z
 date:          2017-02-21
 category:      Programming
 author:        tex2e

@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheで0回または1回出現する文字列にマッチさせる (Optional)"
+type:          Reference
+description:   "C#のSpracheで0回または1回出現する省略可能なパターンを解析するOptionalとXOptionalの仕様、IOptionの扱い方を解説。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-11T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-11T13:53:12Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2021-02-14-sprache10-optional/
+    title:     "Sprache Part 10: Optional and XOptional - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.Optional.cs#L16"
+    title:     "Sprache/src/Sprache/Parse.Optional.cs -- Optional"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.Optional.cs#L38"
+    title:     "Sprache/src/Sprache/Parse.Optional.cs -- XOptional"
 date:          2024-11-17
 category:      Dotnet
 cover:         /assets/cover14.jpg

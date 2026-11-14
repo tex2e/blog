@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[MySQL] 1〜Nの数列をSQLで扱う"
+type:          How-To
+description:   "MySQLでUNIONやテーブルの直積(CROSS JOIN)とユーザー変数のインクリメントを組み合わせ、1からNまでの連番数列をSQLで生成する方法を解説します。"
+tags:          [database, mysql, sql, sequence]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-11T02:20:56Z
 date:          2019-03-10
 category:      Database
 author:        tex2e

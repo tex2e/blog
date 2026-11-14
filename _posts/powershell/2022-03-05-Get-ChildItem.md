@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "PowerShellでfind (Get-ChildItem) を使う"
+type:          Reference
+description:   "Linuxのfindコマンドにおけるファイル名検索や深さ制限、更新時間指定などの処理をPowerShellのGet-ChildItemで実現する対応例集です。"
+tags:          [powershell, get-childitem, find]
+status:        stable
+stale_after:   2028-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-03-05T23:45:48Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-childitem
+    title:     "Get-ChildItem (Microsoft.PowerShell.Management) - PowerShell \\| Microsoft Docs"
 date:          2022-03-05
 category:      PowerShell
 cover:         /assets/cover14.jpg

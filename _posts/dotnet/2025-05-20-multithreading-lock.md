@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] マルチスレッド処理：lockによる変数へのアクセス排他制御"
+type:          How-To
+description:   "C#のマルチスレッド処理で複数スレッドが共有変数へ同時アクセスする際のデータ破損を防ぐため、lockステートメントで排他制御を行う方法と注意点を解説します。"
+tags:          [dotnet, csharp, multithreading, lock, synchronization]
+status:        stable
+stale_after:   2028-05-25T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-25T13:23:14Z
 date:          2025-05-20
 category:      Dotnet
 cover:         /assets/cover14.jpg

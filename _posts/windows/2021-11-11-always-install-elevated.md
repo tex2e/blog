@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Windows] AlwaysInstallElevatedのレジストリ値を確認する"
+type:          How-To
+description:   "Windowsの権限昇格につながるAlwaysInstallElevated設定の有無をreg queryコマンドで確認し、無効化を促す手順を解説。"
+tags:          [windows, registry, security, privilege-escalation]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-11T14:44:16Z
 date:          2021-11-11
 category:      Windows
 cover:         /assets/cover14.jpg

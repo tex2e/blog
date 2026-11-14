@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[C#] 構文解析器Spracheの便利メソッド一覧 (Ref, Named, End, Not, Except, Then, Where, Preview, Concat)"
+type:          Reference
+description:   "C#のSpracheで循環参照を解決するRefやNamed、End、Not、Except、Then、Whereなど補助メソッド群の仕様と使用例を整理。"
+tags:          [dotnet, csharp, sprache, parser]
+status:        stable
+stale_after:   2027-11-12T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-11-12T14:53:19Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/sprache/Sprache
+    title:     "sprache/Sprache: A tiny, friendly, C# parser construction library"
+  - id:        ref-2
+    resource:  https://justinpealing.me.uk/post/2021-04-14-sprache12-ref-etc/
+    title:     "Sprache Part 12: Ref, Named, End, Not, Except, Then, Where, Preview, Concat - Justin Pealing"
+  - id:        ref-3
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L387"
+    title:     "Sprache/src/Sprache/Parse.cs -- Ref"
+  - id:        ref-4
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L459"
+    title:     "Sprache/src/Sprache/Parse.cs -- Named"
+  - id:        ref-5
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L336"
+    title:     "Sprache/src/Sprache/Parse.cs -- End"
+  - id:        ref-6
+    resource:  "https://github.com/sprache/Sprache/blob/9d1721bb0dea638e35b9bbb2334fea6f99bf778e/src/Sprache/Parse.cs#L216"
+    title:     "Sprache/src/Sprache/Parse.cs -- Not"
 date:          2024-11-19
 category:      Dotnet
 cover:         /assets/cover14.jpg

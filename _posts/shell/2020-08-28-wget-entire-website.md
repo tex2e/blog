@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "wgetでサイト全体をダウンロードする"
+type:          How-To
+description:   "wgetの--mirrorや--convert-links・--page-requisites・--waitオプションを使い、Webサイト全体をローカルへミラーリングする方法を解説します。"
+tags:          [shell, wget, crawling, cli]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-08-29T07:28:40Z
 date:          2020-08-28
 category:      Shell
 cover:         /assets/cover14.jpg

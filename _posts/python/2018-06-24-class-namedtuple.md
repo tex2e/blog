@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] 構造体を継承してコンストラクタをなくす"
+type:          How-To
+description:   "Python3のcollections.namedtupleをクラス継承に使い、制約のないフィールドを持つクラスのコンストラクタを省略する方法。"
+tags:          [python, namedtuple, class, oop]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2018-06-24T08:14:50Z
 date:          2018-06-24
 category:      Python
 author:        tex2e

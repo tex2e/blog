@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "findの -or オプションで複数条件の検索"
+type:          How-To
+description:   "Linuxのfindコマンドで-orオプションを使い、複数のファイル名やディレクトリ名の条件のいずれかに一致する対象を検索する方法を解説します。"
+tags:          [shell, linux, find, search]
+status:        stable
+stale_after:   2026-08-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-20T11:53:31Z
 date:          2017-06-12
 category:      Shell
 cover:         /assets/cover14.jpg

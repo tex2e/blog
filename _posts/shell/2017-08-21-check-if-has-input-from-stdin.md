@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Bashでパイプからの入力があるかどうかを確認する方法"
+type:          How-To
+description:   "Bashスクリプトでtest -p /dev/stdinを使い、パイプやFIFOを通じた標準入力の有無を判定する方法について解説します。"
+tags:          [shell, bash, stdin, pipe]
+status:        stable
+stale_after:   2026-08-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-08-21T09:57:18Z
 date:          2017-08-21
 category:      Shell
 cover:         /assets/cover14.jpg

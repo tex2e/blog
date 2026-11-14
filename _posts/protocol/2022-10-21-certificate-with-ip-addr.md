@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "サーバ名がIPアドレスの場合の証明書作成 / サブジェクト代替名 (SAN) の設定方法"
+type:          How-To
+description:   "IPアドレス直接アクセスのHTTPS通信で証明書検証を成功させるため、OpenSSLでSANにIPを設定した証明書を作成する手順とRFC 2818の背景を解説します。"
+tags:          [protocol, tls, x509, openssl, san]
+status:        stable
+stale_after:   2025-10-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-10-22T05:51:14Z
+sources:
+  - id:        ref-1
+    resource:  https://datatracker.ietf.org/doc/html/rfc2818
+    title:     "RFC 2818 - HTTP Over TLS"
+  - id:        ref-2
+    resource:  "https://datatracker.ietf.org/doc/html/rfc2818#section-3.1"
+    title:     "RFC 2818 - HTTP Over TLS"
+  - id:        ref-3
+    resource:  https://blog.sa2taka.com/post/chrome-certifificate-creation/
+    title:     "Chromeで使える証明書の作成方法"
 date:          2022-10-21
 category:      Protocol
 cover:         /assets/cover14.jpg

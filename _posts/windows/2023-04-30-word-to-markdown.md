@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "pandocでWordファイル(.docx)をMarkdownへ変換する"
+type:          How-To
+description:   "pandocコマンドでWordファイル（.docx）をGFM形式のMarkdownへ変換し、折り返し無効化や埋め込み画像抽出を行うオプションを解説。"
+tags:          [windows, pandoc, markdown, docx]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-04-30T00:03:29Z
+sources:
+  - id:        ref-1
+    resource:  https://pandoc.org/MANUAL.html
+    title:     "Pandoc - Pandoc User’s Guide"
+  - id:        ref-2
+    resource:  https://gist.github.com/tomo-makes/b03e910ea7095bbe2c98de5be828dfba
+    title:     "Wordファイル(.docx)をMarkdownへ変換する"
 date:          2023-04-30
 category:      Windows
 cover:         /assets/cover14.jpg

@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxでユーザのファイル実行を制限する"
 menutitle:     "SELinuxでユーザのファイル実行を制限する (user_exec_content)"
+type:          How-To
+description:   "SELinuxのsysadm_exec_contentなどのブール値を用いて、ユーザのホームディレクトリや/tmp配下のファイル実行を制限する設定と検証結果を解説します。"
+tags:          [selinux, linux, setsebool, hardening]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-14T01:35:16Z
 date:          2021-11-23
 category:      SELinux
 cover:         /assets/cover6.jpg

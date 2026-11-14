@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "各入力ファイルのディレクトリが別々で、出力ディレクトリが同じときのMakefileルールの書き方"
+type:          How-To
+description:   "複数ディレクトリ配下の入力ファイルを単一の出力ディレクトリへ変換するため、wildcard・notdir・foreach・eval・callでMakefileルールを動的生成する方法を解説します。"
+tags:          [makefile, gnu-make, pattern-rules]
+status:        stable
+stale_after:   2022-11-08T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-11-07T10:26:14Z
 date:          2019-11-07
 category:      Makefile
 author:        tex2e

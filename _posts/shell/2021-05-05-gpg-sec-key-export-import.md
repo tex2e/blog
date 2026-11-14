@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "GPG秘密鍵を別PCに移動させる"
+type:          How-To
+description:   "GPG秘密鍵をエクスポートして別PCへインポートし、公開鍵の信用値設定やGitタグ署名を有効にする手順を解説。"
+tags:          [shell, gpg, git, encryption]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-05-05T09:42:48Z
+sources:
+  - id:        ref-1
+    resource:  https://web.archive.org/web/20201101014836/https://qiita.com/sprout2000/items/e67053e09380c2227500
+    title:     "Git Bash for Windows で構築する GitHub・GnuPG の環境（自分用メモ） - Qiita"
+  - id:        ref-2
+    resource:  https://web.archive.org/web/20190511014248/http://www.nina.jp/server/windows/gpg/commands.html
+    title:     "GnuPGのコマンド"
+  - id:        ref-3
+    resource:  https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9%E3%81%B8%E3%81%AE%E7%BD%B2%E5%90%8D
+    title:     "Git - 作業内容への署名"
+  - id:        ref-4
+    resource:  https://qiita.com/growsic/items/ed67e03fda5ab7ef9d08
+    title:     "git tagの使い方まとめ - Qiita"
 date:          2021-05-05
 category:      Shell
 cover:         /assets/cover14.jpg

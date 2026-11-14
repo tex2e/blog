@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "AutoHotKeyでアンダースコアをShiftなしで入力する"
+type:          How-To
+description:   "Windows上でAutoHotkeyを使いShiftキーを押さずにアンダースコアを入力するためのキー割り当て設定とバージョン別の記述法。"
+tags:          [keyboard, autohotkey, windows]
+status:        stable
+stale_after:   2023-05-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-05-17T06:49:46Z
+sources:
+  - id:        ref-1
+    resource:  https://qiita.com/totto357/items/5d86ee80a654dd9ec95f
+    title:     "AutoHotKeyの1.1.27.07にしたらInvalid hotkeyエラー - Qiita"
+  - id:        ref-2
+    resource:  "https://www.autohotkey.com/docs/AHKL_ChangeLog.htm#v1.1.27.00"
+    title:     "Changes & New Features \\| AutoHotkey"
 date:          2020-05-16
 category:      Keyboard
 cover:         /assets/cover14.jpg

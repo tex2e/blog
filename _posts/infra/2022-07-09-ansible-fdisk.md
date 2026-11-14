@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Ansible] fdiskを使ってパーティションを設定する"
+type:          How-To
+description:   "fdiskを標準入力パイプで非対話実行し、AnsibleのshellモジュールからディスクにLinux LVMパーティションを作成する方法。"
+tags:          [infra, ansible, linux, fdisk, lvm]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-07-11T14:24:35Z
+sources:
+  - id:        ref-1
+    resource:  https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/managing-local-storage-using-rhel-system-roles_managing-file-systems
+    title:     "Chapter 2. Managing local storage using RHEL System Roles Red Hat Enterprise Linux 8 \\| Red Hat Customer Portal"
+  - id:        ref-2
+    resource:  https://www.xmodulo.com/how-to-run-fdisk-in-non-interactive-batch-mode.html
+    title:     "How to run fdisk in non-interactive batch mode"
 date:          2022-07-09
 category:      Infrastructure
 cover:         /assets/cover14.jpg

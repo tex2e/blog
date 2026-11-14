@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "UID / GID の重複を検出するためのシェルスクリプト"
+type:          How-To
+description:   "Linuxの/etc/passwdや/etc/groupからUIDとGIDの重複を検出するBashスクリプトとnewusersの注意点を紹介。"
+tags:          [shell, linux, bash, security]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:45:00Z
 date:          2021-11-18
 category:      Shell
 cover:         /assets/cover14.jpg

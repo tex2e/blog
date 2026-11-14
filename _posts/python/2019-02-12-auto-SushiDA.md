@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[Python] タイピングゲーム「寿司打」の自動化"
+type:          Concept
+description:   "PyAutoGUIの画像認識とTesseract（PyOCR）の2値化前処理を組み合わせてタイピングゲーム「寿司打」を自動化した構成と工夫。"
+tags:          [python, pyautogui, ocr, rpa]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-02-12T03:38:41Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/tesseract-ocr/tesseract
+    title:     "Tesseract"
+  - id:        ref-2
+    resource:  https://gitlab.gnome.org/World/OpenPaperwork/pyocr
+    title:     "PyOCR"
+  - id:        ref-3
+    resource:  https://www.jstage.jst.go.jp/article/jasmin/2017s/0/2017s_201/_pdf/-char/ja
+    title:     "RPA(Robotic Process Automation)の可能性 --ホワイトカラーの生産性向上に向けて-- (pdf)"
+  - id:        ref-4
+    resource:  https://www.nri.com/-/media/Corporate/jp/Files/PDF/knowledge/publication/it_solution/2017/10/ITSF171003.pdf
+    title:     "RPAが実現する新しい業務改革 --効果的な導入と失敗しない運用ポイント-- (pdf)"
+  - id:        ref-5
+    resource:  https://www.oreilly.co.jp/books/9784873117782/
+    title:     "O'Reilly Japan - 退屈なことはPythonにやらせよう"
+  - id:        ref-6
+    resource:  https://inventwithpython.com/blog/2014/12/17/programming-a-bot-to-play-the-sushi-go-round-flash-game/
+    title:     "Programming a Bot to Play the \"Sushi Go Round\" Flash Game"
 date:          2019-02-12
 category:      Python
 author:        tex2e

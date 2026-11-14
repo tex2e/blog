@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "フェルマーの素因数分解"
+type:          Concept
+description:   "平方根に近い素因数を持つ合成数を平方数の差N=x^2-y^2で表して分解するフェルマーの素因数分解とgmpy2実装を解説。"
+tags:          [crypto, factorization, fermat-method, number-theory, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-09-13T02:16:23Z
+sources:
+  - id:        ref-1
+    resource:  "https://en.wikipedia.org/wiki/Fermat%27s_factorization_method#Fermat's_and_trial_division"
+    title:     "Fermat's factorization method - Wikipedia"
+  - id:        ref-2
+    resource:  http://fussy.web.fc2.com/algo/math11_factorization1.htm
+    title:     "数値演算法 (11) 素因数分解 -1-"
 date:          2020-09-14
 category:      Crypto
 cover:         /assets/cover4.jpg

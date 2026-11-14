@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[SQLServer] 全ての接続元セッションを切断するためのSQL"
+type:          How-To
+description:   "SQL ServerでDBリネームなどの操作前に特定データベースへ接続中の全セッションを特定し、KILLコマンドで強制切断するためのT-SQLクエリを紹介します。"
+tags:          [database, sqlserver, tsql, session, sql]
+status:        stable
+stale_after:   2027-08-04T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-04T04:20:25Z
+sources:
+  - id:        ref-1
+    resource:  https://www.neko3cs.net/entry/how-to-disconnect-sql-server-db-connection
+    title:     "T-SQLで特定DBへの接続をすべて切断する - ねこさんのぶろぐ"
 date:          2024-08-03
 category:      Database
 cover:         /assets/cover14.jpg

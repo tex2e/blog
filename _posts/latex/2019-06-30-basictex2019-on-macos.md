@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "BasicTex2019 on MacOS"
+type:          How-To
+description:   "macOSでHomebrewとtlmgrを使ってBasicTeX 2019へアップデートし日本語環境やヒラギノフォント等を設定する手順。"
+tags:          [latex, basictex, macos, tlmgr]
+status:        stable
+stale_after:   2022-06-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-06-30T07:08:05Z
+sources:
+  - id:        ref-1
+    resource:  https://doratex.hatenablog.jp/entry/20190502/1556775026
+    title:     "MacTeX 2019 のインストール＆日本語環境構築法 - TeX Alchemist Online"
 date:          2019-06-30
 category:      LaTeX
 author:        tex2e

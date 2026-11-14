@@ -2,6 +2,18 @@
 layout:        post
 title:         "SELinuxユーザによる権限昇格対策"
 menutitle:     "SELinuxユーザによる権限昇格対策 (unconfined_u, staff_u, user_u)"
+type:          Concept
+description:   "sysadm_uやstaff_u、user_uなどSELinuxユーザごとの権限一覧と、suやsudoの制限による権限昇格対策の仕組みを検証とともに解説します。"
+tags:          [selinux, linux, privilege-escalation, semanage]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-25T11:52:26Z
+sources:
+  - id:        ref-1
+    resource:  https://gtfobins.github.io/
+    title:     "GTFOBins"
 date:          2021-10-28
 category:      SELinux
 cover:         /assets/cover6.jpg

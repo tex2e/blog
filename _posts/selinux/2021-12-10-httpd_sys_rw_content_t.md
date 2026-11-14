@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinux上でhttpdがファイル書き込み可能にする"
 menutitle:     "SELinux上でhttpdがファイル書き込み可能にする (httpd_sys_rw_content_t)"
+type:          How-To
+description:   "Apache(httpd)が特定ディレクトリへ書き込めるように、対象のSELinuxコンテキストをhttpd_sys_rw_content_tへ変更し動作検証する手順を解説します。"
+tags:          [selinux, httpd, apache, chcon]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-02T14:08:43Z
 date:          2021-12-10
 category:      SELinux
 cover:         /assets/cover6.jpg

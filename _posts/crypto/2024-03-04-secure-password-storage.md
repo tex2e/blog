@@ -1,6 +1,23 @@
 ---
 layout:        book
 title:         "[暗号技術入門] 安全なパスワードの保存方法"
+type:          Book Chapter
+description:   "平文保存や単純ハッシュの危険性を解説し、ソルト付きハッシュやArgon2・ScryptなどKDFを用いた安全なパスワード保存手法を説明します。"
+tags:          [crypto, password, kdf, hashing, authentication]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-03-14T05:34:35Z
+sources:
+  - id:        ref-1
+    resource:  https://en.wikipedia.org/wiki/Length_extension_attack
+    title:     "伸長攻撃"
+  - id:        ref-2
+    resource:  https://ja.wikipedia.org/wiki/CAPTCHA
+    title:     "**CAPTCHA**"
+  - id:        ref-3
+    resource:  https://ja.wikipedia.org/wiki/Challenge%E2%80%93response_authentication
+    title:     "チャレンジレスポンス"
 date:          2024-03-04
 category:      Crypto
 cover:         /assets/cover4.jpg

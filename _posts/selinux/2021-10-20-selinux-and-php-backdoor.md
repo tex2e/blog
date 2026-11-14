@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "SELinuxによるPHPバックドア(WebShell)の<br>OSコマンド実行拒否と例外ルール作成"
+type:          How-To
+description:   "SELinux環境下でPHP製WebShellによるcurl実行が拒否される挙動を検証し、audit2allowやブール値で例外ルールを作成する手順を解説します。"
+tags:          [selinux, linux, httpd, audit2allow, webshell]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-23T09:34:26Z
+sources:
+  - id:        ref-1
+    resource:  https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/index
+    title:     "SELinux ユーザーおよび管理者のガイド Red Hat Enterprise Linux 7 \\| Red Hat Customer Portal"
+  - id:        ref-2
+    resource:  https://www.tohoho-web.com/ex/selinux.html
+    title:     "とほほのSELinux入門 - とほほのWWW入門"
 date:          2021-10-20
 category:      SELinux
 cover:         /assets/cover6.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "SELinuxのアクセス拒否の監査ログ(audit.log)の読み方"
+type:          Reference
+description:   "SELinuxのaudit.logに出力されるavc: deniedログのフォーマットと、operation・scontext・tcontext・tclassなど各項目の意味を解説します。"
+tags:          [selinux, linux, audit-log, avc]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-23T08:52:54Z
 date:          2021-11-24
 category:      SELinux
 cover:         /assets/cover6.jpg

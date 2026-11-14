@@ -2,6 +2,14 @@
 layout:        post
 title:         "SELinuxでApacheで/var/wwwから変更した先のパスも許可する"
 menutitle:     "SELinuxでApacheで/var/wwwから変更した先のパスも許可する (semanage fcontext -e)"
+type:          How-To
+description:   "Apacheのドキュメントルートを/var/wwwから変更した際に、semanage fcontext -eとrestoreconで新しいパスをSELinux上で許可する手順を解説します。"
+tags:          [selinux, apache, httpd, semanage]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-26T14:53:16Z
 date:          2021-11-01
 category:      SELinux
 cover:         /assets/cover6.jpg

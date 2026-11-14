@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[C#] マルチスレッド処理：Taskクラスで並列処理"
+type:          How-To
+description:   "C#でスレッドプールを活用するTask.Runを使い、返り値なしTaskや返り値ありジェネリクスTaskの起動・待機、ThreadPool直接呼び出しとの比較を解説します。"
+tags:          [dotnet, csharp, multithreading, task, threadpool]
+status:        stable
+stale_after:   2028-05-26T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-25T13:23:01Z
+sources:
+  - id:        ref-1
+    resource:  https://codewithshadman.com/c-multithreading/
+    title:     "C# Multithreading - Code with Shadman"
 date:          2025-05-19
 category:      Dotnet
 cover:         /assets/cover14.jpg

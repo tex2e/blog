@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "API Blueprint の書き方"
+type:          How-To
+description:   "Markdown形式でWeb API設計書を記述できるAPI Blueprintについて、リソース定義やアクション、グループ化などの書き方を解説します。"
+tags:          [programming, api-blueprint, web-api, markdown]
+status:        stable
+stale_after:   2027-10-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2016-12-05T14:01:50Z
+sources:
+  - id:        ref-1
+    resource:  https://apiblueprint.org/
+    title:     "API Blueprint"
+  - id:        ref-2
+    resource:  https://github.com/apiaryio/api-blueprint
+    title:     "apiaryio/api-blueprint"
 date:          2016-04-04
 category:      Programming
 author:        tex2e

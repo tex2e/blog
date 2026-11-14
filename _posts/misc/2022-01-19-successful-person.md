@@ -1,6 +1,23 @@
 ---
 layout:        post
 title:         "成功するために必要なこと（1. 思考編）"
+type:          Essay
+description:   "失敗や苦痛を乗り越えて成長するための思考法として、成長マインドセットやメタ認知、複数の視点を持つ考え方を解説します。"
+tags:          [misc, mindset, psychology, self-improvement]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2022-01-19T12:52:14Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3Wisw3k
+    title:     "キャロル・S・ドゥエック (著), 今西 康子 (訳)『マインドセット：「やればできる！」の研究』"
+  - id:        ref-2
+    resource:  https://www.youtube.com/watch?v=hmfZP9C67ho
+    title:     "#0204 人は「変態化」しなければ成長しない！　苦痛を快に変換する人間の心の不思議な機能 - YouTube"
+  - id:        ref-3
+    resource:  https://www.youtube.com/watch?v=F76PINX2VUE
+    title:     "#0171 2つめの人格を持つ　自分を変えたい人のための心理学 （期間限定公開） - YouTube"
 date:          2022-01-19
 category:      Misc
 cover:         /assets/cover14.jpg

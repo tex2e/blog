@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "[Windows] Windowsサービスが使用するポート番号の一覧"
+type:          Reference
+description:   "Kerberos、RPC、NetBIOS、SMB、LDAP、MSSQL、RDPなどWindowsサービスが使用するTCP/UDPポート番号を一覧で整理。"
+tags:          [windows, ports, networking, pentest]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-07-19T14:03:14Z
+sources:
+  - id:        ref-1
+    resource:  https://book.hacktricks.xyz/pentesting/7-tcp-udp-pentesting-echo
+    title:     "Echo"
+  - id:        ref-2
+    resource:  https://book.hacktricks.xyz/pentesting/pentesting-ftp
+    title:     "FTP"
+  - id:        ref-3
+    resource:  https://book.hacktricks.xyz/pentesting/pentesting-telnet
+    title:     "Telnet"
+  - id:        ref-4
+    resource:  https://book.hacktricks.xyz/pentesting/pentesting-smtp
+    title:     "SMTP"
+  - id:        ref-5
+    resource:  https://book.hacktricks.xyz/pentesting/pentesting-dns
+    title:     "DNS"
+  - id:        ref-6
+    resource:  https://book.hacktricks.xyz/pentesting/69-udp-tftp
+    title:     "TFTP"
 date:          2021-07-09
 category:      Windows
 cover:         /assets/cover14.jpg

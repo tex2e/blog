@@ -2,6 +2,14 @@
 layout:        post
 title:         "監査ログからSELinuxアクセス拒否を一括で許可する"
 menutitle:     "監査ログからSELinuxアクセス拒否を一括で許可する (audit2allow, semodule -i)"
+type:          How-To
+description:   "audit2allowコマンドで監査ログの原因確認や許可ルール生成を行い、semodule -iでカスタムポリシーモジュールを適用する手順を解説します。"
+tags:          [selinux, linux, audit2allow, semodule]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-27T13:13:49Z
 date:          2021-11-04
 category:      SELinux
 cover:         /assets/cover6.jpg

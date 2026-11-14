@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "BINDによるDNSサーバの構築"
+type:          How-To
+description:   "CentOSでBINDを用いたDNSサーバを構築し、正引き・逆引きゾーンの設定とdigやnslookupでの動作確認を行う手順を解説します。"
+tags:          [linux, centos, bind, dns]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-28T14:45:33Z
 date:          2021-11-05
 category:      Linux
 cover:         /assets/cover14.jpg

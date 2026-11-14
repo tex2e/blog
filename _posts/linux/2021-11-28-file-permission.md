@@ -2,6 +2,14 @@
 layout:        post
 title:         "Linuxで重要なファイルの権限を確認する"
 menutitle:     "Linuxで重要なファイルの権限を確認する (shadow, ssh_key)"
+type:          How-To
+description:   "passwd・shadow・group・PATH配下・cron・SSH秘密鍵といった重要ファイルの権限を確認・修正する堅牢化手順を解説します。"
+tags:          [linux, permissions, hardening, security]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:44:12Z
 date:          2021-11-28
 category:      Linux
 cover:         /assets/cover14.jpg

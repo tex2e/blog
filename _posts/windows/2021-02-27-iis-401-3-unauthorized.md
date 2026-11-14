@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Windows] IISのサイトでHTTPエラー401.3 Unauthorized"
+type:          Troubleshooting
+description:   "IISでHTTPエラー401.3 Unauthorizedが発生する原因を説明し、対象フォルダのセキュリティ設定へIUSRを追加して解消する手順を解説。"
+tags:          [windows, iis, permissions, troubleshooting]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-03-06T12:00:34Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/ja-jp/troubleshoot/iis/default-permissions-user-rights
+    title:     "IIS での既定のアクセス許可とユーザー権限 - Internet Information Services \\| Microsoft Docs"
+  - id:        ref-2
+    resource:  https://sk44.hatenablog.com/entry/20180808/1533699138
+    title:     "IIS でのフォルダーアクセス権限を設定する - hd 5.0"
 date:          2021-02-27
 category:      Windows
 cover:         /assets/cover14.jpg

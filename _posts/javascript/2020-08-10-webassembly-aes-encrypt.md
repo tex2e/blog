@@ -1,6 +1,24 @@
 ---
 layout:        post
 title:         "[JavaScript] WebAssemblyでAES暗号 (+CryptoJSと実行速度比較)"
+type:          How-To
+description:   "C言語で実装したAES暗号化処理をEmscriptenでWebAssembly化してブラウザから呼び出しCryptoJSと速度比較した記録。"
+tags:          [javascript, webassembly, aes, cryptojs, emscripten]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-08-10T13:42:41Z
+sources:
+  - id:        ref-1
+    resource:  https://marcoselvatici.github.io/WASM_tutorial/
+    title:     "WASM Tutorial"
+  - id:        ref-2
+    resource:  https://developer.mozilla.org/ja/docs/Web/API/Performance
+    title:     "Performance - Web API \\| MDN"
+  - id:        ref-3
+    resource:  https://github.com/tex2e/AES
+    title:     "tex2e/AES: AES implementation in C"
 date:          2020-08-10
 category:      JavaScript
 cover:         /assets/cover14.jpg

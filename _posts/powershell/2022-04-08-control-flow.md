@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] 制御フロー (if, switch, for, foreach) の使い方"
+type:          Reference
+description:   "PowerShellにおけるif-elseif-else、正規表現やファイル入力に対応したswitch、for、foreach、while文の構文を説明します。"
+tags:          [powershell, control-flow, syntax]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-04-09T00:45:05Z
 date:          2022-04-08
 category:      PowerShell
 cover:         /assets/cover14.jpg

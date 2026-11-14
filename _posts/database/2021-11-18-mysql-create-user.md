@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[MySQL] MariaDBでユーザ作成と権限付与をする"
+type:          How-To
+description:   "MySQLやMariaDBのコンソールでCREATE USERとGRANT ALL PRIVILEGESを実行し、新規データベースユーザーを作成して権限を付与する手順を解説します。"
+tags:          [database, mysql, mariadb, user-management, sql]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-18T12:42:34Z
 date:          2021-11-18
 category:      Database
 cover:         /assets/cover14.jpg

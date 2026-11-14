@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "マイナンバーカードの技術仕様"
+type:          Concept
+description:   "マイナンバーカードの券面偽造対策、ICチップ規格、4つのカードAP、公的個人認証の電子証明書と利用上の注意点を解説。"
+tags:          [crypto, mynumber-card, jpki, pki, smartcard]
+status:        stable
+stale_after:   2026-04-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-07-15T10:26:40Z
+sources:
+  - id:        ref-1
+    resource:  https://www.mhlw.go.jp/stf/newpage_08277.html
+    title:     "マイナンバーカードの保険証利用について (被保険者証利用について) -- 厚生労働省"
+  - id:        ref-2
+    resource:  https://www.mhlw.go.jp/content/10200000/000663427.pdf
+    title:     "オンライン資格確認の導入で事務コストの削減とより良い医療の提供を ～データヘルスの基盤として～ -- 厚生労働省保険局"
+  - id:        ref-3
+    resource:  https://www.digital.go.jp/policies/mynumber_faq_07/
+    title:     "よくある質問：今後のスケジュール等について｜デジタル庁"
+  - id:        ref-4
+    resource:  https://www.digital.go.jp/councils/Pwml-5Z0/
+    title:     "ワーキンググループ（第3回）｜デジタル庁"
+  - id:        ref-5
+    resource:  https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/168c651a-a326-4f2d-8a8f-1fe58d205425/20220317_meeting_mynumber_outline_01.pdf
+    title:     "利用者目線の行政サービス実現に向けたトータルデザインの検討について \\| デジタル庁"
+  - id:        ref-6
+    resource:  https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/168c651a-a326-4f2d-8a8f-1fe58d205425/20220317_meeting_mynumber_outline_02.pdf
+    title:     "マイナンバー制度の利活用について \\| デジタル庁"
 date:          2019-07-15
 category:      Crypto
 author:        tex2e

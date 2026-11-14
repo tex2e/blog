@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "systemctlで有効・無効なサービス一覧を表示する"
+type:          How-To
+description:   "systemctl list-unit-filesとgrepを組み合わせて、起動時に有効化または無効化されているサービス一覧を表示する方法を説明します。"
+tags:          [linux, systemd, systemctl]
+status:        stable
+stale_after:   2026-09-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-12T23:47:50Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3rkScj9
+    title:     "サーバ構築研究会『CentOS8で作るネットワークサーバ構築ガイド』2020/8"
 date:          2021-11-16
 category:      Linux
 cover:         /assets/cover14.jpg

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "有限体Fp上の楕円曲線のグラフ"
+type:          Concept
+description:   "実数体上と有限体Fp上の楕円曲線のグラフを複数のパラメータでSageMath描画し、離散的な点集合になる様子を比較。"
+tags:          [crypto, elliptic-curve, finite-field, sagemath]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2020-02-09T06:31:15Z
 date:          2020-02-10
 category:      Crypto
 cover:         /assets/cover4.jpg

@@ -1,6 +1,27 @@
 ---
 layout:        post
 title:         "[Blazor] EditFormによるフォームの入力検証チェック"
+type:          How-To
+description:   "ASP.NET Core BlazorのEditFormとDataAnnotationsValidatorを使い、モデル検証結果をValidationSummaryやValidationMessageで表示する方法を解説します。"
+tags:          [dotnet, csharp, blazor, validation, forms]
+status:        stable
+stale_after:   2027-10-26T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-10-26T03:51:47Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/microsoft.aspnetcore.components.forms.validationsummary?view=aspnetcore-8.0
+    title:     "ValidationSummary クラス (Microsoft.AspNetCore.Components.Forms) \\| Microsoft Learn"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/microsoft.aspnetcore.components.forms.validationmessage-1?view=aspnetcore-8.0
+    title:     "ValidationMessage\\<TValue\\> クラス (Microsoft.AspNetCore.Components.Forms) \\| Microsoft Learn"
+  - id:        ref-3
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/microsoft.aspnetcore.components.forms.dataannotationsvalidator?view=aspnetcore-8.0
+    title:     "DataAnnotationsValidator クラス (Microsoft.AspNetCore.Components.Forms) \\| Microsoft Learn"
+  - id:        ref-4
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/microsoft.aspnetcore.components.forms.editform?view=aspnetcore-8.0
+    title:     "EditForm クラス (Microsoft.AspNetCore.Components.Forms) \\| Microsoft Learn"
 date:          2024-10-25
 category:      Dotnet
 cover:         /assets/cover14.jpg

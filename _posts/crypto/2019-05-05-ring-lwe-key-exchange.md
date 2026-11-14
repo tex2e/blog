@@ -2,6 +2,26 @@
 layout:        post
 title:         "SageMathでRing-LWEによる鍵共有"
 menutitle:     "SageMathを使ったRing-LWEによる鍵共有"
+type:          Concept
+description:   "有限体上の多項式環を用いるRing-LWE問題の仕組みと、RLWE-KEX鍵共有プロトコルのSageMath実装を解説。"
+tags:          [crypto, lattice, ring-lwe, post-quantum, sagemath]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-05-05T07:20:53Z
+sources:
+  - id:        ref-1
+    resource:  https://eprint.iacr.org/2012/688.pdf
+    title:     "A Simple Provably Secure Key Exchange Scheme Based on the Learning with Errors Problem"
+  - id:        ref-2
+    resource:  https://github.com/amir734jj/LWE-KEX
+    title:     "amir734jj/LWE-KEX: LWE-KEX implementations all using SageMath -- GitHub"
+  - id:        ref-3
+    resource:  https://www.cryptrec.go.jp/exreport/cryptrec-ex-2404-2014.pdf
+    title:     "格子問題等の困難性に関する調査 - 暗号技術調査 (暗号解析評価) ワーキンググループ"
+  - id:        ref-4
+    resource:  "https://en.wikipedia.org/wiki/Ring_learning_with_errors_key_exchange#Parameter_choices"
+    title:     "Parameter choices -- Ring learning with errors key exchange (Wikipedia)"
 date:          2019-05-05
 category:      Crypto
 author:        tex2e

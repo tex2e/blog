@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Java] コレクション・Streamを操作するメソッド一覧"
+type:          Reference
+description:   "JavaのListやMapなどのコレクション操作とStream APIによるフィルタリングや変換処理のメソッド一覧。"
+tags:          [java, collection, stream-api, reference]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-25T10:29:41Z
 date:          2020-07-25
 category:      Java
 cover:         /assets/cover14.jpg

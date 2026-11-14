@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "awkでCSVのN番目の列だけを置換する"
+type:          How-To
+description:   "awkコマンドの-F、OFS、gsubを使い、CSVやタブ区切りファイルで指定したN番目の列だけを置換する方法を解説。"
+tags:          [shell, awk, csv, bash]
+status:        stable
+stale_after:   2026-04-09T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-04-09T10:12:37Z
 date:          2023-04-07
 category:      Shell
 cover:         /assets/cover14.jpg

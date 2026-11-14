@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Python] 文字コードの判定と変換"
+type:          How-To
+description:   "Python3のcChardetライブラリを用いてShift_JISやUTF-8のバイト列から文字コードを自動判定しデコードする方法。"
+tags:          [python, cchardet, encoding, shift-jis]
+status:        stable
+stale_after:   2025-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-01-13T13:48:18Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/PyYoshi/cChardet
+    title:     "cChardet"
 date:          2020-01-12
 category:      Python
 cover:         /assets/cover14.jpg

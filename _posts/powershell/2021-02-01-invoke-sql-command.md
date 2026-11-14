@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] SQLコマンドを実行する"
+type:          How-To
+description:   "PowerShellからOleDbでSQL Serverに接続し、Windows認証やSQL認証でSQLを実行して表形式で出力する方法を解説します。"
+tags:          [powershell, sql-server, database, windows]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-31T14:10:14Z
 date:          2021-01-31
 category:      PowerShell
 cover:         /assets/cover1.jpg

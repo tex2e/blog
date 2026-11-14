@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[AWS] CLIでIAMユーザの多要素認証を無効化する方法"
+type:          How-To
+description:   "AWS CLIでIAMユーザに紐づくMFAデバイスのARNを取得し、STS一時認証の有無それぞれで多要素認証を無効化する手順。"
+tags:          [infra, aws, iam, mfa, aws-cli]
+status:        stable
+stale_after:   2025-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-11-04T04:06:31Z
+sources:
+  - id:        ref-1
+    resource:  https://dev.classmethod.jp/articles/disable-iam-user-mfa-with-aws-cli/
+    title:     "IAMユーザーのMFAをAWS CLIで無効化する \\| DevelopersIO"
+  - id:        ref-2
+    resource:  https://repost.aws/ja/knowledge-center/authenticate-mfa-cli
+    title:     "AWS CLI 経由で MFA を使用してアクセスを認証する \\| AWS re:Post"
 date:          2023-11-03
 category:      Infrastructure
 cover:         /assets/cover14.jpg

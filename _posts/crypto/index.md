@@ -1,0 +1,71 @@
+# crypto
+
+Parent: [All Categories](../index.md)
+
+## Articles (65)
+
+- [AES-NI 命令を用いた AES-128 暗号化の実装方法](./2026-04-27-aes-ni.md) (`How-To | stable | stale_after: 2029-04-27`) — C言語でwmmintrin.hのIntel組み込み関数を使い、AES-NI命令によるAES-128の鍵拡張とECBモード暗号化を実装・コンパイルする手順を解説します。
+- [CPUID命令を利用してCPUがAES-NIに対応しているか確認する方法](./2026-04-26-check-cpu-support-aes.md) (`How-To | stable | stale_after: 2029-04-26`) — C言語の__get_cpuid関数でCPUID命令を実行してCPUのAES-NI対応を動的に判定する方法と、Linuxの/proc/cpuinfoでの確認手順を解説します。
+- [楕円曲線 NIST P-256 と secp256r1 の違い](./2026-02-05-secp256r1-nistp256.md) (`Concept | stable`) — 楕円曲線secp256r1、prime256v1、NIST P-256が同一の曲線を指す別名である理由をSECG・ANSI・NISTの規格とRFC 8422の対応表で解説します。
+- [[暗号技術入門] 共通鍵暗号](./2024-03-07-symmetric-key-ciphers.md) (`Book Chapter | stable`) — ブロック暗号とストリーム暗号の違いを軸に、AESやChaCha20などの主要アルゴリズム、暗号利用モード、MACを組み合わせた認証付き暗号を解説します。
+- [[暗号技術入門] 鍵共有・鍵交換](./2024-03-06-key-exchange.md) (`Book Chapter | stable`) — 鍵合意・鍵輸送の基本概念から、色の混合の例え、離散対数問題に基づくDiffie-Hellman鍵交換(DHKE)やECDHの仕組みを解説します。
+- [[暗号技術入門] 暗号学的に安全な擬似乱数生成器 (CSPRNG)](./2024-03-05-secure-random-generators.md) (`Book Chapter | stable`) — 暗号技術における乱数とエントロピーの役割を解説し、疑似乱数生成器(PRNG)と暗号学的に安全なCSPRNGの仕組みと利用指針を紹介します。
+- [[暗号技術入門] 安全なパスワードの保存方法](./2024-03-04-secure-password-storage.md) (`Book Chapter | stable`) — 平文保存や単純ハッシュの危険性を解説し、ソルト付きハッシュやArgon2・ScryptなどKDFを用いた安全なパスワード保存手法を説明します。
+- [[暗号技術入門] メッセージ認証コード (MAC) と鍵導出関数](./2024-03-03-mac-and-key-derivation.md) (`Book Chapter | stable`) — MACやHMACによる改ざん検知とAEADでの役割、およびPBKDF2・Scrypt・Argon2など鍵導出関数（KDF）を解説。
+- [[暗号技術入門] ハッシュ関数](./2024-03-02-cryptography-hash-functions.md) (`Book Chapter | stable`) — 暗号学的ハッシュ関数の性質とSHA-2・SHA-3・BLAKE2・RIPEMD-160の特徴、およびPoWなどの利用例を解説。
+- [[暗号技術入門] 現代の暗号技術の概要](./2024-03-01-cryptography-overview.md) (`Book Chapter | stable`) — 暗号技術の基礎として対称・非対称暗号、デジタル署名、メッセージ認証、安全な乱数、鍵交換、ハッシュ、攪拌と拡散を概説。
+- [暗号における識別不可能性](./2024-02-04-indistinguishability.md) (`Concept | stable`) — 暗号における識別不可能性の概念を説明し、情報論的識別不可能性と確率的多項式時間による計算量的識別不可能性を定式化。
+- [ゼロ知識証明とシュノアプロトコル](./2024-02-03-zero-knowledge-proof-schnorr-protocol.md) (`Concept | stable`) — ゼロ知識証明の3つの性質（完全性・健全性・ゼロ知識性）と、離散対数問題を用いたシュノアプロトコルの流れを解説。
+- [パスワードをハッシュ値する方法（ソルト、ストレッチング）](./2024-02-02-hashed-password.md) (`Concept | stable`) — パスワードのハッシュ化におけるSHA-2やSHA-3の選択、ソルト付与、およびストレッチングによる解読困難化を解説。
+- [プライバシー保護技術 (PETs)](./2024-02-01-privacy-protection.md) (`Concept | stable`) — データ利活用とプライバシー保護を両立するPETs（差分プライバシー・統合分析・準同型暗号・秘密分散・ゼロ知識証明）を解説。
+- [[ProVerif] プロトコル形式的安全検証ツール入門](./2022-08-11-proverif-tutorial.md) (`How-To | stable | stale_after: 2027-08-07`) — 形式検証ツールProVerifの基本構文、query・eventによる検証、暗号プリミティブ定義と中間者攻撃検出の入門手順を解説。
+- [[ProVerif] MacOS (Monterey) にProVerifをインストールする](./2022-08-10-install-proverif-on-macos-2.md) (`How-To | stable | stale_after: 2027-08-07`) — macOS MontereyへHomebrewとOPAMを用いて形式検証ツールProVerif 2.04をインストールするコマンド手順と実行ログ。
+- [楕円曲線上の離散対数問題に対する攻撃手法 (SageMath)](./2020-12-10-ECDLP.md) (`Concept | stable`) — 楕円曲線上の離散対数問題（ECDLP）に対するBSGS法・Pollardのrho法・Pohlig-Hellman法の解説とSageMath実装。
+- [離散対数問題に対する攻撃手法 (Python & SageMath)](./2020-12-09-DLP.md) (`Concept | stable`) — 有限体上の離散対数問題（DLP）に対するBSGS法・Pollardのrho法・Pohlig-Hellman法・指数計算法の理論と実装を解説。
+- [素数位数となる楕円曲線のパラメータ生成](./2020-11-23-elliptic-curves-of-prime-order.md) (`How-To | stable`) — Pohlig-Hellman法への対策として素数位数となる有限体上の楕円曲線パラメータをSageMathで生成する方法と実例集。
+- [フェルマーの素因数分解](./2020-09-14-fermat-factorization-method.md) (`Concept | stable`) — 平方根に近い素因数を持つ合成数を平方数の差N=x^2-y^2で表して分解するフェルマーの素因数分解とgmpy2実装を解説。
+- [SageMathをUbuntu 20.04にインストール](./2020-09-13-install-sage-on-ubuntu20.04.md) (`How-To | stable | stale_after: 2025-03-13`) — Ubuntu 20.04で古いPPAエラーを回避してaptからSageMathをインストールし、コンソール配色を変更する手順。
+- [LWE格子暗号による加法準同型性](./2020-03-28-lwe-additively-homomorphic.md) (`Concept | stable`) — 平文空間Z_8におけるLWE格子暗号の暗号化と暗号文同士の加算による加法準同型性の仕組みとPython実装を解説。
+- [LWE格子暗号による暗号化・復号](./2020-03-27-lwe-encrypt.md) (`Concept | stable`) — Regev・Peikert方式に基づくLWE格子暗号の1ビットおよび複数ビット暗号化・復号アルゴリズムとNumPy実装を解説。
+- [ナップザック暗号](./2020-03-23-knapsack-cryptosystem.md) (`Concept | stable`) — 部分和問題と超増加数列を用いたナップザック暗号（Merkle-Hellman暗号）の構成と、解読された安全性上の理由を解説。
+- [Paillier暗号(加法準同型暗号)と電子投票](./2020-02-25-homomorphic-tallying-with-paillier.md) (`Concept | stable`) — Paillier暗号の加法準同型性を応用して投票内容を復号せずに集計する電子投票システムの仕組みとPython実装を解説。
+- [Paillier暗号と準同型性](./2020-02-24-paillier-cryptosystem.md) (`Concept | stable`) — 加法準同型性を持つ公開鍵暗号Paillier暗号の鍵生成・暗号化・復号アルゴリズムと、暗号文同士の演算のPython実装を解説。
+- [修正ElGamal暗号の加法準同型性](./2020-02-23-modified-elgamal-encryption.md) (`Concept | stable`) — 暗号文に乗法準同型性から加法準同型性を持たせる修正ElGamal暗号とBaby-step Giant-step法による復号のPython実装を解説。
+- [ElGamal暗号と乗法準同型性](./2020-02-22-elgamal-encryption.md) (`Concept | stable`) — ElGamal暗号の鍵生成・暗号化・復号アルゴリズムと原始元判定、および乗法準同型性のPython実装と数式確認を解説。
+- [安全素数の生成方法](./2020-02-21-generate-safe-prime.md) (`Concept | stable`) — p-1法への耐性を持つ安全素数p=2q+1の性質と、Miller-Rabin素数判定法を用いたPythonでの生成方法を解説。
+- [Miller-Rabin素数判定法](./2020-02-20-miller-rabin-test.md) (`Concept | stable`) — 確率的素数判定アルゴリズムであるMiller-Rabin素数判定法の手順、誤判定確率の評価、およびPython実装を解説。
+- [中国人剰余定理](./2020-02-17-crt.md) (`Concept | stable`) — 中国人剰余定理の数学的定義と連立合同方程式を解くアルゴリズムを説明し、孫子算経を例にPython実装を解説。
+- [ヴェイユペアリングと3者間DH鍵共有](./2020-02-16-weil-pairing.md) (`Concept | stable`) — nねじれ群とヴェイユペアリングの性質、Balasubramanian-Koblitzの定理、および3者間DH鍵共有のSageMath実装を解説。
+- [楕円曲線上の加算・2倍算のグラフを作成する](./2020-02-14-graph-of-point-addition-on-EC.md) (`How-To | stable | stale_after: 2024-09-03`) — SageMathのnotebook上で楕円曲線上の点の加算と2倍算を対話的にグラフ描画するワークシートの作成手順を解説。
+- [有限体Fp上の楕円曲線のグラフ](./2020-02-10-elliptic-curve-over-fp.md) (`Concept | stable`) — 実数体上と有限体Fp上の楕円曲線のグラフを複数のパラメータでSageMath描画し、離散的な点集合になる様子を比較。
+- [ヒル暗号をPythonで実装する](./2019-12-18-hill-cipher.md) (`Concept | stable`) — 線形代数の行列演算に基づく古典暗号「ヒル暗号」の定義、暗号化・復号の例、Python実装および安全性の課題を解説。
+- [ガロア拡大体 GF(2^m) のベクトル表現](./2019-12-15-galois-extension-field.md) (`Reference | stable`) — ガロア拡大体GF(2^4)およびGF(2^8)のべき表現・多項式表現・ベクトル表現の対応一覧表とSageMath生成コードを掲載。
+- [AES (Rijndael) の MixColumns を理解する](./2019-12-12-aes-mix-columns.md) (`Concept | stable`) — AES暗号のMixColumnsおよびInvMixColumnsにおけるGF(2^8)多項式環演算とMDS行列のC・SageMath実装を解説。
+- [剰余の逆元 (modinv) の手計算](./2019-12-04-calc-modinv-by-hand.md) (`How-To | stable`) — 連立一次合同式の係数の差が1になるよう式変形して、剰余の乗法逆元（modinv）を手計算で求める手順を解説。
+- [アルファベット出現率](./2019-12-01-letter-frequency.md) (`Reference | stable`) — 暗号解読の頻度解析やカシスキーテストで用いられる英語アルファベット1〜3文字の出現率一覧表をまとめたリファレンス。
+- [[ProVerif] WPA3プロトコルの安全性を検証する](./2019-09-17-proverif-wpa2-and-wpa3.md) (`How-To | stable | stale_after: 2027-08-07`) — 形式検証ツールProVerifの記法を解説し、WPA2とWPA3の秘匿性・認証・オフライン攻撃耐性・前方秘匿性を検証。
+- [WPA3 の規格と脆弱性](./2019-09-06-wifi-wpa3.md) (`Concept | stable | stale_after: 2026-07-09`) — Wi-Fi暗号化規格WPA3のSAE（Dragonfly鍵交換）、Hunting and Pecking、既知の脆弱性とCNSA準拠を解説。
+- [[ProVerif] MacOSにProVerifをインストールする](./2019-09-02-install-proverif-on-macos.md) (`How-To | stable | stale_after: 2027-08-07`) — macOSへHomebrewとOPAMでProVerifをインストールする手順と、lablgtkのlibffiエラー解消法を解説。
+- [Tonelli-Shanks Algorithm](./2019-08-15-tonelli-shanks-algorithm.md) (`Concept | stable`) — 奇素数を法とする平方剰余の平方根を求めるTonelli-ShanksアルゴリズムのPython実装とテスト例を紹介。
+- [ラグランジュの定理と群の位数](./2019-08-11-lagranges-theorem.md) (`Concept | stable`) — 有限群におけるラグランジュの定理を説明し、楕円曲線上の点が生成する巡回部分群の位数の性質を具体例で解説。
+- [SageMathをUbuntu 16.04にインストール](./2019-08-11-install-sage-on-ubuntu.md) (`How-To | stable | stale_after: 2024-09-10`) — Ubuntu 16.04へPPA経由でSageMathをインストールし、暗いターミナル向けにコンソール配色を変更する手順を解説。
+- [ルジャンドル記号による楕円曲線の位数計算](./2019-08-10-order-of-elliptic-curve.md) (`Concept | stable`) — ルジャンドル記号を用いて有限体上の楕円曲線の位数（曲線上の全点の個数）を計算する数式とPython実装を解説。
+- [平方剰余とルジャンドル記号とヤコビ記号](./2019-08-09-legendre-and-jacobi-symbls.md) (`Concept | stable`) — 平方剰余の判定に用いるオイラーの規準・ルジャンドル記号・ヤコビ記号の定義と、平方剰余の相互法則に基づくPython実装を解説。
+- [マイナンバーカードの技術仕様](./2019-07-15-my-number-card.md) (`Concept | stable | stale_after: 2026-04-23`) — マイナンバーカードの券面偽造対策、ICチップ規格、4つのカードAP、公的個人認証の電子証明書と利用上の注意点を解説。
+- [誕生日攻撃 (Birthday Attack)](./2019-06-12-birthday-attack.md) (`Concept | stable`) — 誕生日のパラドックスの確率導出から、ハッシュ関数の衝突を探索する誕生日攻撃の計算量を数式で解説。
+- [数論変換(NTT)による有限体上の多項式環の乗算](./2019-05-31-ntt-polynomial-multiplication.md) (`Concept | stable`) — 数論変換（NTT）と高速フーリエ変換を用いて有限体上の多項式環の乗算を高速化する手順とPython・NumPy実装を解説。
+- [ChaCha20-Poly1305の解説と実装](./2019-05-17-chacha20poly1305.md) (`Concept | stable`) — AEAD暗号ChaCha20-Poly1305の採用背景と、ChaCha20・Poly1305の内部アルゴリズム、暗号化・検証の流れを解説。
+- [なぜマイニングをするとお金が支払われるのか](./2019-05-14-cryptocurrency-mining.md) (`Concept | stable`) — ブロックチェーンの構造とProof-of-Workマイニングの仕組み、および報酬が改ざん抑止と安全性をもたらす理由を解説。
+- [NumPyでRing-LWEによる鍵共有](./2019-05-13-ring-lwe-key-exchange-with-numpy.md) (`Concept | stable`) — NumPyの多項式演算を用いて有限体上の多項式環を実装し、Ring-LWE格子暗号による鍵共有を動かす方法を解説。
+- [SageMathでRing-LWEによる鍵共有](./2019-05-05-ring-lwe-key-exchange.md) (`Concept | stable`) — 有限体上の多項式環を用いるRing-LWE問題の仕組みと、RLWE-KEX鍵共有プロトコルのSageMath実装を解説。
+- [LWE格子暗号による鍵共有](./2019-05-04-lwe-key-exchange.md) (`Concept | stable`) — 耐量子暗号であるLWE格子暗号の基礎概念と、シグナル関数を用いた1ビットおよび複数ビット鍵共有のPython実装を解説。
+- [有限体上の楕円曲線上のスカラー倍算](./2019-02-23-elliptic-curve-scala-mul.md) (`Concept | stable`) — 有限体上の楕円曲線における点の加算・2倍算・スカラー倍算をPythonで実装し、secp256k1のテストベクタを検証。
+- [有限体上の楕円曲線の点集合](./2019-02-22-point-of-elliptic-curve-over-GF.md) (`Concept | stable`) — 有限体上の楕円曲線の定義と加算演算、オイラーの規準を使って曲線上の点集合をPythonで列挙する方法を解説。
+- [平方剰余問題とオイラーの規準](./2019-02-21-quadratic-residues.md) (`Concept | stable`) — 数論における平方剰余問題の定義と、奇素数を法とする場合にオイラーの規準で平方剰余を判定するPython実装を解説。
+- [有限体(ガロア体)をPythonで実装する](./2019-02-20-finite-field.md) (`Concept | stable`) — 有限体（ガロア体）の定義を説明し、Pythonの演算子オーバーロードを用いて素数位数GF(p)の四則演算を実装。
+- [Pythonでモジュラ逆数を求める (modinv)](./2019-02-19-modular-mul-inverse.md) (`Concept | stable`) — 拡張ユークリッドの互除法とベズーの等式を用いてモジュラ逆数を求める原理とPython実装を解説。
+- [Pythonでモンゴメリ乗算](./2019-01-02-montgomery-mul.md) (`Concept | stable`) — 除算回数を減らすモンゴメリリダクションとモンゴメリ乗算のアルゴリズム、およびPython3での実装と速度検証を解説。
+- [公開鍵暗号の安全性レベル](./2019-01-01-pubkey-crypto-security-relation.md) (`Concept | stable`) — 公開鍵暗号の攻撃モデル（COA・KPA・CPA・CCA）と解読モデル（OW・IND・NM）の組み合わせによる安全性レベルの関係を解説。
+- [高速冪剰余計算とモンゴメリ冪乗法](./2018-12-31-montgomery-ladder.md) (`Concept | stable`) — バイナリ法とサイドチャネル攻撃耐性を持つモンゴメリ冪乗法の仕組み、およびPythonのpow関数使用時の注意点を解説。
+- [秘密分散技術とホワイトハッカ飴の解説](./2018-12-11-secret-sharing.md) (`Concept | stable`) — シャミアの秘密分散法の理論とPython実装、およびセキュリティキャンプ配布ホワイトハッカ飴の復元手順を解説。
+- [剰余の乗法の逆元とRSA暗号](./2018-12-01-invmod.md) (`Concept | stable`) — 剰余の乗法逆元の定義とRSA暗号の鍵生成における役割、拡張ユークリッドの互除法による計算方法を解説。

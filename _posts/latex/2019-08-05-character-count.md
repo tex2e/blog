@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "文字数を数えるLaTeXマクロ"
+type:          How-To
+description:   "LaTeXの@tforコマンドと一時カウンタを使い入力テキストの文字数を数えて末尾に表示する自作マクロの実装と使い方。"
+tags:          [latex, tex, macro]
+status:        stable
+stale_after:   2024-09-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-08-05T08:19:18Z
+sources:
+  - id:        ref-1
+    resource:  http://kuroworks.hatenadiary.jp/entry/2018/02/11/200753
+    title:     "メモ　LaTex　文字列を一つずつ取り出す　\\@tfor - タイトルはそのうち決める"
+  - id:        ref-2
+    resource:  http://njet.oops.jp/wordpress/2008/02/28/%E6%96%87%E5%AD%97%E6%95%B0%E3%82%92%E6%95%B0%E3%81%88%E3%82%8Blatex%E3%83%9E%E3%82%AF%E3%83%AD/
+    title:     "文字数を数えるLaTeXマクロ &#8211; Sukarabe&#039;s Easy Living"
 date:          2019-08-05
 category:      LaTeX
 author:        tex2e

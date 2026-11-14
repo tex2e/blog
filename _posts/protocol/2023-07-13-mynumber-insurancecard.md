@@ -1,6 +1,30 @@
 ---
 layout:        post
 title:         "マイナンバー制度と健康保険証"
+type:          Concept
+description:   "マイナンバーカードの健康保険証利用におけるオンライン資格確認等システムの機能、PIN無し顔認証およびPIN認証でのカード読み取りと本人確認フローを解説します。"
+tags:          [protocol, mynumber, health-insurance, jpki]
+status:        stable
+stale_after:   2026-10-31T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-07-08T02:02:52Z
+sources:
+  - id:        ref-1
+    resource:  https://www.iryohokenjyoho-portalsite.jp/news/b.html
+    title:     "【お知らせ】マイナンバーカードの照合番号（B）ロックとなった方への医療機関等受付窓口でのご対応について - オンライン資格確認・医療情報化支援基金関係 医療機関等向けポータルサイト"
+  - id:        ref-2
+    resource:  https://www.mhlw.go.jp/stf/newpage_08280.html
+    title:     "オンライン資格確認の導入について（医療機関・薬局、システムベンダ向け）｜厚生労働省"
+  - id:        ref-3
+    resource:  https://www.iryohokenjyoho-portalsite.jp/download/docs/53df93ec6fb30f2fd8a16c028458b627_3.pdf
+    title:     "https://www.iryohokenjyoho-portalsite.jp/download/docs/53df93ec6fb30f2fd8a16c028458b627_3.pdf"
+  - id:        ref-4
+    resource:  https://www.mhlw.go.jp/content/10200000/000575785.pdf
+    title:     "https://www.mhlw.go.jp/content/10200000/000575785.pdf"
+  - id:        ref-5
+    resource:  https://qiita.com/migimigi_/items/52751930ff878bc8cd2e
+    title:     "何故マイナンバーカードの保険証利用が暗証番号レスで可能なのか - Qiita"
 date:          2023-07-13
 category:      Protocol
 cover:         /assets/cover14.jpg

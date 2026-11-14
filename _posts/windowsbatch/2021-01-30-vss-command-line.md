@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Windows] VSSからファイル取得を自動化する"
+type:          How-To
+description:   "Visual SourceSafeの環境変数（SSUSER・SSPWD・SSDIR）を設定し、ss CP/GETコマンドをバッチやPowerShellで自動取得する手順。"
+tags:          [windows-batch, vss, powershell, automation]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-01-31T14:09:45Z
+sources:
+  - id:        ref-1
+    resource:  https://docs.microsoft.com/en-us/previous-versions/003ssz4z%28v=vs.80%29
+    title:     "Command Line Commands \\| Microsoft Docs"
+  - id:        ref-2
+    resource:  https://docs.microsoft.com/en-us/previous-versions/hsxzf2az%28v=vs.80%29
+    title:     "Command Options \\| Microsoft Docs"
 date:          2021-01-30
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

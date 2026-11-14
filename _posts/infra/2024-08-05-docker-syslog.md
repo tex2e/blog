@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Docker] docker-composeでログ出力先をsyslogにする"
+type:          How-To
+description:   "rsyslogのテンプレート・転送ルール設定とdocker-compose.ymlのlogging設定を行い、コンテナログをsyslogへ出力する方法。"
+tags:          [infra, docker, docker-compose, rsyslog, logging]
+status:        stable
+stale_after:   2027-08-06T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-08-05T09:07:37Z
+sources:
+  - id:        ref-1
+    resource:  https://kstoneriver.com/tech/archives/66
+    title:     "Dockerコンテナ内のログ – 技術ブログ"
+  - id:        ref-2
+    resource:  https://ngyuki.hatenablog.com/entry/2016/04/18/220724
+    title:     "rsyslog のメモ - ngyukiの日記"
 date:          2024-08-05
 category:      Infrastructure
 cover:         /assets/cover14.jpg

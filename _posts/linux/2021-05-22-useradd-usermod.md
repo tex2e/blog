@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "useradd, usermod によるLinuxグループへの追加"
+type:          How-To
+description:   "useradd -Gによる新規ユーザ作成時のグループ割り当てやusermod -aGによる既存ユーザへの追加方法と注意点を説明します。"
+tags:          [linux, user-management, useradd, usermod]
+status:        stable
+stale_after:   2027-01-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-05-23T13:39:25Z
 date:          2021-05-22
 category:      Linux
 cover:         /assets/cover14.jpg

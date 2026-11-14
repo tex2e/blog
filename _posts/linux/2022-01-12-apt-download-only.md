@@ -2,6 +2,14 @@
 layout:        post
 title:         "aptでdebのダウンロードと配置先の確認方法"
 menutitle:     "aptでdebのダウンロードと配置先の確認方法 (apt --download-only, dpkg-deb -c)"
+type:          How-To
+description:   "aptの--download-onlyオプションでdebパッケージのみを取得し、dpkg-deb -cで展開先パスと収録ファイルを確認する方法を説明します。"
+tags:          [linux, ubuntu, apt, dpkg]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2022-01-12T13:40:15Z
 date:          2022-01-12
 category:      Linux
 cover:         /assets/cover14.jpg

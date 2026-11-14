@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Python] 単語単位の言語モデルの作り方"
+type:          How-To
+description:   "PythonのMeCabとnltk（MLE）を使い、日本語コーパスから単語単位のn-gram言語モデルを構築して次単語確率を求める方法。"
+tags:          [python, nltk, mecab, n-gram]
+status:        stable
+stale_after:   2025-08-07T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-01-16T06:13:55Z
 date:          2020-01-16
 category:      Python
 cover:         /assets/cover14.jpg

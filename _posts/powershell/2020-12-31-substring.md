@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[PowerShell] 部分文字列を抽出する"
+type:          How-To
+description:   "PowerShellのSubStringで長さ超過エラーを起こさずに配列の範囲指定とJoin演算子で部分文字列を抽出する方法を解説します。"
+tags:          [powershell, string, array]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-12-31T06:30:34Z
 date:          2020-12-31
 category:      PowerShell
 cover:         /assets/cover1.jpg

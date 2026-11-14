@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[C#] 任意のコマンドを並列で実行する汎用コマンドを自作する"
+type:          How-To
+description:   "C#(.NET 8)のConcurrentQueueとProcessクラスを組み合わせ、任意の外部コマンドを複数スレッドで並列実行する汎用CLIツールを自作する方法を解説します。"
+tags:          [dotnet, csharp, multithreading, process, concurrentqueue]
+status:        stable
+stale_after:   2027-06-15T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-15T08:09:16Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.standardoutput?view=net-8.0
+    title:     "Microsoftの公式ドキュメント"
+  - id:        ref-2
+    resource:  https://learn.microsoft.com/ja-jp/dotnet/api/system.diagnostics.process?view=net-8.0
+    title:     "Process クラス (System.Diagnostics) \\| Microsoft Learn"
 date:          2024-06-15
 category:      Dotnet
 cover:         /assets/cover14.jpg

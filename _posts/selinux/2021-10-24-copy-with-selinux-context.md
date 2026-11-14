@@ -2,6 +2,21 @@
 layout:        post
 title:         "cpでSELinuxコンテキストもコピーする"
 menutitle:     "cpでSELinuxコンテキストもコピーする (cp --preserve=context)"
+type:          How-To
+description:   "cpコマンドの--preserve=contextオプションでSELinuxコンテキストを保持してコピーする方法と、mvコマンドとのコンテキスト継承の違いを解説します。"
+tags:          [selinux, linux, cp, context]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-10-23T09:43:28Z
+sources:
+  - id:        ref-1
+    resource:  "https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-security-enhanced_linux-working_with_selinux-maintaining_selinux_labels_#sect-Security-Enhanced_Linux-Maintaining_SELinux_Labels_-Copying_Files_and_Directories"
+    title:     "4.10.1. ファイルおよびディレクトリーのコピー Red Hat Enterprise Linux 7 \\| Red Hat Customer Portal"
+  - id:        ref-2
+    resource:  "https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-security-enhanced_linux-working_with_selinux-maintaining_selinux_labels_#sect-Security-Enhanced_Linux-Maintaining_SELinux_Labels_-Moving_Files_and_Directories"
+    title:     "4.10.2. ファイルおよびディレクトリーの移動 Red Hat Enterprise Linux 7 \\| Red Hat Customer Portal"
 date:          2021-10-24
 category:      SELinux
 cover:         /assets/cover6.jpg

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "パスワードをハッシュ値する方法（ソルト、ストレッチング）"
+type:          Concept
+description:   "パスワードのハッシュ化におけるSHA-2やSHA-3の選択、ソルト付与、およびストレッチングによる解読困難化を解説。"
+tags:          [crypto, password-hashing, salt, key-stretching]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-02-03T12:53:55Z
 date:          2024-02-02
 category:      Crypto
 cover:         /assets/cover4.jpg

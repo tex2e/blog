@@ -1,6 +1,33 @@
 ---
 layout:        post
 title:         "Claude Code・Codex・Antigravityでリポジトリのスキルを共有する"
+type:          How-To
+description:   "Claude Code、Codex、Antigravityで.agents/skillsとシンボリックリンクによりスキルを共有する手順を示します。"
+tags:          [misc, ai, agent-skills, claude-code, codex]
+status:        stable
+stale_after:   2027-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2026-10-23T12:33:04Z
+sources:
+  - id:        ref-1
+    resource:  https://agentskills.io/specification
+    title:     "Agent Skills"
+  - id:        ref-2
+    resource:  "https://code.claude.com/docs/en/skills#choose-where-skills-load"
+    title:     "Claude Code"
+  - id:        ref-3
+    resource:  "https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills"
+    title:     "Codex"
+  - id:        ref-4
+    resource:  https://antigravity.google/docs/skills
+    title:     "Antigravity"
+  - id:        ref-5
+    resource:  https://code.claude.com/docs/en/skills
+    title:     "Claude Code公式ドキュメント"
+  - id:        ref-6
+    resource:  "https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills"
+    title:     "OpenAI公式ドキュメント"
 date:          2026-10-23
 category:      Misc
 cover:         /assets/cover14.jpg

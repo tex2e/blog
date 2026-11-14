@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "ゼロ知識証明とシュノアプロトコル"
+type:          Concept
+description:   "ゼロ知識証明の3つの性質（完全性・健全性・ゼロ知識性）と、離散対数問題を用いたシュノアプロトコルの流れを解説。"
+tags:          [crypto, zkp, schnorr-protocol, discrete-logarithm]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-02-03T12:54:13Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/4br9iOD
+    title:     "デロイトトーマツ『ゼロ知識証明入門』翔泳社 (2021/4/1)"
+  - id:        ref-2
+    resource:  https://acompany.tech/privacytechlab/zero-knowledge-proof/
+    title:     "【技術】ゼロ知識証明とは？ "
 date:          2024-02-03
 category:      Crypto
 cover:         /assets/cover4.jpg

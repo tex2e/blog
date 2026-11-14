@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "ローカルの全てのレポジトリに同じ.gitattributesを適用する方法"
+type:          How-To
+description:   "OS混在環境向けにCRLFやLFの改行コード設定を記した.gitattributesを全ローカルリポジトリへグローバル適用する方法。"
+tags:          [git, gitattributes, windows, linux]
+status:        stable
+stale_after:   2027-01-06T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2023-12-08T23:07:34Z
+sources:
+  - id:        ref-1
+    resource:  https://git-scm.com/docs/gitattributes
+    title:     "Git - gitattributes Documentation"
 date:          2023-12-09
 category:      Git
 cover:         /assets/cover14.jpg

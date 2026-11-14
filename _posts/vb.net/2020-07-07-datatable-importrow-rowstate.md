@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[VB.NET] ImportRowしたときのRowStateの変化"
+type:          Concept
+description:   "VB.NETでDataTableのImportRowを実行した際、コピー元DataRowのRowStateがそのまま引き継がれる仕様を検証例付きで解説。"
+tags:          [vb-net, dotnet, datatable, datarow]
+status:        stable
+stale_after:   2027-07-22T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2020-07-07T12:41:51Z
 date:          2020-07-07
 category:      VB.NET
 cover:         /assets/cover14.jpg

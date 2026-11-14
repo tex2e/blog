@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "プログラム設計における原理・原則とパターン"
+type:          Concept
+description:   "SOLID原則やDRY、制御の反転（IoC）、CQRS、デザインパターンなど、保守性の高いプログラム設計に必要な基本原理と設計手法を解説します。"
+tags:          [programming, design-principles, solid, design-patterns]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-06-23T14:47:17Z
+sources:
+  - id:        ref-1
+    resource:  https://amzn.to/3zcEFh8
+    title:     "『なぜ依存を注入するのか　DIの原理・原則とパターン』マイナビ出版 (2024/5/17)"
+  - id:        ref-2
+    resource:  https://amzn.to/4czzzd6
+    title:     "結城 浩『Java言語で学ぶデザインパターン入門第3版』SBクリエイティブ (2021/11/13)"
 date:          2024-06-22
 category:      Programming
 cover:         /assets/cover14.jpg

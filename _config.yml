@@ -38,14 +38,22 @@ exclude:
   - .gitignore
   - .jekyll-metadata
   - .sass-cache
+  - .agents
+  - .claude
   - vendor
   - Gemfile
   - Gemfile.lock
   - new.sh
   - server.sh
+  - server.ps1
   - Makefile
   - LICENSE
   - README.md
+  - AGENTS.md
+  - CLAUDE.md
+  - index.md
+  - log.md
+  - scripts
   - _drafts
 keep_files:
   - api

@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "[Windows] コマンドプロンプトのhelpの閲覧方法"
+type:          How-To
+description:   "Windowsコマンドプロンプトの仕様を調べる方法として、helpコマンド、/?オプション、MS公式Learn、ss64サイトの活用法を紹介。"
+tags:          [windows-batch, cmd, windows, documentation]
+status:        stable
+stale_after:   2027-07-28T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2024-06-15T08:09:42Z
+sources:
+  - id:        ref-1
+    resource:  https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+    title:     "Windows commands \\| Microsoft Learn"
+  - id:        ref-2
+    resource:  https://ss64.com/nt/
+    title:     "An A-Z Index of Windows CMD commands - SS64.com"
 date:          2024-06-06
 category:      WindowsBatch
 cover:         /assets/cover14.jpg

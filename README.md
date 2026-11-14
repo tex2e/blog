@@ -31,6 +31,16 @@ Mako(tex2e)の技術系ブログです。
 - `sitemap: false` : sitemap.xmlにリンクを追加しない (検索エンジンから少しだけ見つかりにくくなる)
 - `feed: false` : feed.xmlにリンクを追加しない (RSSで更新情報を知らせない)
 
+### Open Knowledge Format (OKF v0.2) メタデータと AI 自動運用
+このブログは [Open Knowledge Format (OKF v0.2)](./index.md) に準拠しており、各記事のフロントマターに `type`, `description`, `tags`, `status`, `stale_after`, `generated`, `verified`, `sources` を保持しています。
+また、階層インデックス（`index.md`）、変更履歴（[log.md](./log.md)）、および共通エージェントスキル（[AGENTS.md](./AGENTS.md) / `.agents/skills/`）により、AI エージェントが記事の鮮度維持と新規執筆を自動で行えます。
+
+```bash
+ruby scripts/okf.rb validate     # OKF v0.2 メタデータと index.md の整合性検証
+ruby scripts/okf.rb stale        # stale_after 期限切れ記事の抽出
+ruby scripts/okf.rb sync-index   # 各ディレクトリの index.md を再生成
+```
+
 ### 固定ページの作成
 /_pages 以下にMarkdownファイルを作成します。
 各固定ページのメタデータの設定で `permalink: /PATH` と書くことで、指定したパスにページを配置できます。

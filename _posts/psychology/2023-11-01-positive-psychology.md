@@ -1,6 +1,32 @@
 ---
 layout:        post
 title:         "ポジティブ心理学"
+type:          Concept
+description:   "ポジティブ感情やエンゲージメント、意味・意義からウェルビーイングを探究するポジティブ心理学と実践手法を体系的に解説。"
+tags:          [psychology, positive-psychology, well-being, perma]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2023-11-04T04:06:23Z
+sources:
+  - id:        ref-1
+    resource:  https://www.viacharacter.org/Survey/Account/Register
+    title:     "VIA・強みテスト"
+  - id:        ref-2
+    resource:  https://amzn.to/47k9nR6
+    title:     "ポジティブ心理学の挑戦 \"幸福\"から\"持続的幸福\"へ"
+  - id:        ref-3
+    resource:  https://amzn.to/4bHtfQL
+    title:     "ウェルビーイングの設計論-人がよりよく生きるための情報技術"
+  - id:        ref-4
+    resource:  https://amzn.to/46YRAiz
+    title:     "コーチング心理学概論 第2版"
+  - id:        ref-5
+    resource:  https://amzn.to/49o0kjQ
+    title:     "非認知能力: 概念・測定と教育の可能性"
+  - id:        ref-6
+    resource:  https://amzn.to/3FHMU4X
+    title:     "コーチング心理学ガイドブック"
 date:          2023-11-01
 category:      Psychology
 cover:         /assets/cover14.jpg

@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "SUID/SGIDファイルをfindコマンドで見つける"
+type:          How-To
+description:   "権限昇格の踏み台になり得るSUIDやSGIDビット付きファイルをfindコマンドで検出し、不要なフラグを精査する方法を説明します。"
+tags:          [linux, find, suid, hardening]
+status:        stable
+stale_after:   2025-03-13T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-11-10T14:04:21Z
 date:          2021-11-13
 category:      Linux
 cover:         /assets/cover14.jpg

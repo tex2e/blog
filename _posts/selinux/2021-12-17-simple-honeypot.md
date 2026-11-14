@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "SELinuxとauditdでハニーポットもどきを作る"
+type:          How-To
+description:   "SELinuxのstaff_uで権限昇格を制限したSSHユーザを作成し、auditdのexecve監視ルールで実行コマンドをすべて記録する手順と検証ログを解説します。"
+tags:          [selinux, auditd, honeypot, linux]
+status:        stable
+stale_after:   2025-10-23T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2021-12-12T01:55:39Z
+sources:
+  - id:        ref-1
+    resource:  "https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/8/html-single/security_hardening/index#auditing-the-system_security-hardening"
+    title:     "セキュリティーの強化 Red Hat Enterprise Linux 8 - 第12章 システムの監査"
 date:          2021-12-17
 category:      SELinux
 cover:         /assets/cover6.jpg

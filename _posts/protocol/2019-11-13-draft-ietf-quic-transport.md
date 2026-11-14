@@ -1,6 +1,30 @@
 ---
 layout:        post
 title:         "draft-ietf-quic-transport の概要"
+type:          Concept
+description:   "QUICトランスポート仕様draft-ietf-quic-transport（RFC 9000）について、ストリーム多重化や接続管理、フロー制御、パケット構造の要点をまとめています。"
+tags:          [protocol, quic, rfc9000, transport]
+status:        stable
+stale_after:   2024-08-16T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-11-13T08:15:16Z
+sources:
+  - id:        ref-1
+    resource:  https://www.rfc-editor.org/rfc/rfc9000.html
+    title:     "QUIC: A UDP-Based Multiplexed and Secure Transport"
+  - id:        ref-2
+    resource:  https://www.rfc-editor.org/rfc/rfc9002.html
+    title:     "QUIC-RECOVERY"
+  - id:        ref-3
+    resource:  https://www.rfc-editor.org/rfc/rfc9001.html
+    title:     "QUIC-TLS"
+  - id:        ref-4
+    resource:  https://www.rfc-editor.org/info/rfc8999
+    title:     "QUIC-INVARIANTS"
+  - id:        ref-5
+    resource:  https://tools.ietf.org/html/draft-ietf-quic-recovery
+    title:     "QUIC-RECOVERY"
 date:          2019-11-13
 category:      Protocol
 author:        tex2e

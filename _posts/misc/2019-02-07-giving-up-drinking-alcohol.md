@@ -2,6 +2,32 @@
 layout:        post
 title:         "禁酒するために読むべき論文・記事"
 menutitle:     "禁酒するために読むべき論文・記事 (対飲み会用資料)"
+type:          Reference
+description:   "適量飲酒の健康リスクを示す医学論文や記事を禁酒者バイアスや海馬萎縮、脳卒中などの観点で整理した参考資料集です。"
+tags:          [misc, health, alcohol, research-notes]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-02-07T05:35:40Z
+sources:
+  - id:        ref-1
+    resource:  https://www.bmj.com/content/357/bmj.j2353
+    title:     "Moderate alcohol consumption as risk factor for adverse brain outcomes and cognitive decline: longitudinal cohort study"
+  - id:        ref-2
+    resource:  https://www.cbsnews.com/news/is-moderate-drinking-not-so-good-for-health-after-all/
+    title:     "Is moderate drinking not so good for you after all?"
+  - id:        ref-3
+    resource:  https://www.jsad.com/doi/abs/10.15288/jsad.2016.77.185
+    title:     "Do “Moderate” Drinkers Have Reduced Mortality Risk? A Systematic Review and Meta-Analysis of Alcohol Consumption and All-Cause Mortality： Jo"
+  - id:        ref-4
+    resource:  https://www.nature.com/articles/nature25154
+    title:     "Alcohol and endogenous aldehydes damage chromosomes and mutate stem cells"
+  - id:        ref-5
+    resource:  https://ccsa.ca/canadas-guidance-alcohol-and-health
+    title:     "Canada’s Guidance on Alcohol and Health \\| Canadian Centre on Substance Use and Addiction"
+  - id:        ref-6
+    resource:  https://gigazine.net/news/20230119-alcohol-guidance-cancer-risk-labels/
+    title:     "安全なアルコール量というのは存在しないので商品に「がん」の警告ラベルを貼る時が来たと専門家が主張 - GIGAZINE"
 date:          2019-02-07
 category:      Misc
 author:        tex2e

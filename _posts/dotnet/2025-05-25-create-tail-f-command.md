@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[C#] tail -f コマンドをC#プログラムで自作する"
+type:          How-To
+description:   "C#でFileStreamやStreamReaderとConsole.CancelKeyPressを組み合わせ、ファイル末尾の追記をリアルタイムに監視・出力するtail -f互換プログラムの自作例を解説します。"
+tags:          [dotnet, csharp, file-io, cli]
+status:        stable
+stale_after:   2028-05-25T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-25T13:25:43Z
 date:          2025-05-25
 category:      Dotnet
 cover:         /assets/cover14.jpg

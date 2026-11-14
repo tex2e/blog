@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[MySQL] SQLでFizzBuzzを出力する"
+type:          How-To
+description:   "MySQLで1から100の数列を生成するサブクエリとCASE式を組み合わせ、SQLクエリのみでFizzBuzzの結果を出力する実装例を紹介します。"
+tags:          [database, mysql, sql, fizzbuzz]
+status:        stable
+stale_after:   2027-07-21T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-03-11T02:21:10Z
 date:          2019-03-11
 category:      Database
 author:        tex2e

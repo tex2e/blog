@@ -1,6 +1,20 @@
 ---
 layout:        post
 title:         "数論変換(NTT)による有限体上の多項式環の乗算"
+type:          Concept
+description:   "数論変換（NTT）と高速フーリエ変換を用いて有限体上の多項式環の乗算を高速化する手順とPython・NumPy実装を解説。"
+tags:          [crypto, ntt, lattice, polynomial, python]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-05-31T13:52:46Z
+sources:
+  - id:        ref-1
+    resource:  https://vitalik.ca/general/2019/05/12/fft.html
+    title:     "Fast Fourier Transforms -- Vitalik Buterin's website"
+  - id:        ref-2
+    resource:  https://eprint.iacr.org/2014/646.pdf
+    title:     "High-speed Polynomial Multiplication Architecture for Ring-LWE and SHE Cryptosystems"
 date:          2019-05-31
 category:      Crypto
 author:        tex2e

@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "16 Boring Words & What to Use Instead"
+type:          Reference
+description:   "prettyやbig、goodなど単調になりがちな基本英単語16語について、代わりに使える豊富な類語と日本語訳をまとめた一覧。"
+tags:          [english, vocabulary, synonyms, writing]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2018-11-14T12:56:41Z
 date:          2018-09-30
 category:      English
 author:        tex2e

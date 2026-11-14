@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "Makefileから別のMakefileをimportする・実行する"
+type:          How-To
+description:   "Makefileからincludeディレクティブで別ファイルを読み込む方法と、サブディレクトリへ移動してmakeを実行する際の$(PWD)指定法を説明します。"
+tags:          [makefile, gnu-make]
+status:        stable
+stale_after:   2026-09-17T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2017-12-09T03:41:08Z
 date:          2017-12-09
 category:      Makefile
 author:        tex2e

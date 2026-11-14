@@ -1,6 +1,21 @@
 ---
 layout:        post
 title:         "AIに「異能たちの会議」をさせる"
+type:          How-To
+description:   "GeminiのGem機能を使い、哲学や歴史、科学など多彩な専門家ペルソナに与えられたテーマを議論させるプロンプト作成例を紹介します。"
+tags:          [misc, ai, gemini, prompt-engineering]
+status:        stable
+stale_after:   2027-01-25T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2026-01-25T09:08:33Z
+sources:
+  - id:        ref-1
+    resource:  https://happiness-planet.org/service/fira/
+    title:     "FIRA - Happiness Planet"
+  - id:        ref-2
+    resource:  https://youtu.be/UnHPLZNd_VI?t=455
+    title:     "こちらの動画"
 date:          2026-01-25
 category:      Misc
 cover:         /assets/cover14.jpg

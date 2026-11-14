@@ -1,6 +1,14 @@
 ---
 layout:        post
 title:         "[Bash] /dev/tcpを使用してサーバのポートが開いているか確認する"
+type:          How-To
+description:   "telnetが使えない環境でBashの仮想デバイス/dev/tcpを用いて指定IPとポートへのTCP疎通を定期監視するスクリプトを解説。"
+tags:          [shell, bash, tcp, networking]
+status:        stable
+stale_after:   2028-05-12T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2025-05-12T12:56:49Z
 date:          2025-05-12
 category:      Shell
 cover:         /assets/cover14.jpg

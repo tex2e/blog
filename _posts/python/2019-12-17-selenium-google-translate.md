@@ -1,6 +1,18 @@
 ---
 layout:        post
 title:         "[Python] SeleniumでGoogle翻訳を自動化する"
+type:          How-To
+description:   "PythonとSeleniumのヘッドレスFirefoxを使い、Google翻訳のWebページからCSSセレクタで翻訳結果を自動取得する方法。"
+tags:          [python, selenium, web-scraping, translation]
+status:        stable
+stale_after:   2025-07-30T00:00:00Z
+generated:
+  by:          human:tex2e
+  at:          2019-12-17T10:42:37Z
+sources:
+  - id:        ref-1
+    resource:  https://github.com/ssut/py-googletrans
+    title:     "Googletrans"
 date:          2019-12-17
 category:      Python
 cover:         /assets/cover14.jpg

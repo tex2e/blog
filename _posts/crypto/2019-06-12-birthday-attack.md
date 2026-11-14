@@ -1,6 +1,13 @@
 ---
 layout:        post
 title:         "誕生日攻撃 (Birthday Attack)"
+type:          Concept
+description:   "誕生日のパラドックスの確率導出から、ハッシュ関数の衝突を探索する誕生日攻撃の計算量を数式で解説。"
+tags:          [crypto, birthday-attack, hash-function, probability]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2019-06-11T07:25:08Z
 date:          2019-06-12
 category:      Crypto
 author:        tex2e

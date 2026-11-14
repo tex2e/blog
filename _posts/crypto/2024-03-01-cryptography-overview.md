@@ -1,6 +1,13 @@
 ---
 layout:        book
 title:         "[暗号技術入門] 現代の暗号技術の概要"
+type:          Book Chapter
+description:   "暗号技術の基礎として対称・非対称暗号、デジタル署名、メッセージ認証、安全な乱数、鍵交換、ハッシュ、攪拌と拡散を概説。"
+tags:          [crypto, cryptography, symmetric-key, public-key, digital-signature]
+status:        stable
+generated:
+  by:          human:tex2e
+  at:          2024-03-13T12:59:53Z
 date:          2024-03-01
 category:      Crypto
 cover:         /assets/cover4.jpg
